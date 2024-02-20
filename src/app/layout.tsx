@@ -1,8 +1,28 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Oswald, Raleway } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
+import NoiseBg from "@/components/NoiseBg/NoiseBg";
 
 const inter = Inter({ subsets: ["latin"] });
+const oswald = Oswald({
+  subsets: ["latin"],
+  style: ["normal"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--oswald",
+});
+const raleway = Raleway({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  style: ["normal"],
+  variable: "--raleway",
+});
+
+// const messina = localFont({
+//   src: "../public/fonts/Messina.ttf",
+//   variable: "--messina",
+//   display: "swap",
+// });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -11,12 +31,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang='en'>
+      <body className={`${oswald.variable} ${raleway.variable}`}>
+        <NoiseBg>{children}</NoiseBg>
+      </body>
     </html>
   );
 }
