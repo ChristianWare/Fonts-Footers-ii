@@ -19,9 +19,9 @@ const raleway = Raleway({
   variable: "--raleway",
 });
 
-// const messina = localFont({
-//   src: "../public/fonts/Messina.ttf",
-//   variable: "--messina",
+// const nyghtSerif = localFont({
+//   src: "../../public/fonts/NyghtSerif.otf",
+//   variable: "--nyghtSerif",
 //   display: "swap",
 // });
 

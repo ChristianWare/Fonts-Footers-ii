@@ -69,11 +69,6 @@ function Nav() {
     <header className={styles.header}>
       <TopNav />
       <nav className={styles.navbar}>
-        {/* <div className={styles.logo}>
-          <Link href='/' className={styles.logo}>
-            Chris Ware
-          </Link>
-        </div> */}
         <ul
           className={
             isOpen === false
@@ -112,7 +107,7 @@ function Nav() {
         )}
         <div className={styles.btnContainer}>
           <Button href={"/"} text='Contact Us' btnType='secondary' />
-          <Button href={"/"} text='Schedule a call' btnType='secondary' />
+          <Button href={"/"} text='Schedule a call' btnType='primary' />
         </div>
         <span
           className={

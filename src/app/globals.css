@@ -1,7 +1,8 @@
 :root {
   --black: #2a2a2a;
-  --green: #AEFF12;
+  --green: #295f4e;
   --green2: #6db193;
+  --green3: #aeff12;
   --tan: #f2ecdd;
   --white: #ffffff;
 }
@@ -99,7 +100,7 @@ textarea {
   font-weight: 400;
   hyphens: auto;
   font-size: 1.6rem;
-  line-height: 120%;
+  line-height: 150%;
 }
 
 input:focus {

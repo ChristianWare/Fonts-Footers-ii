@@ -22,26 +22,24 @@
 }
 
 .primary {
-  color: var(--black);
-  background-color: var(--green2);
-  border: 1px solid var(--green2);
+  color: var(--green);
+  background-color: var(--green3);
+  border: 2px solid var(--green);
 }
 
-.primary:hover,
-.navBtn:hover {
+.primary:hover {
   background-color: var(--green);
-  color: var(--green2);
+  color: var(--green3);
 }
 
 .secondary {
-  color: var(--black);
-  border: 2px solid var(--black);
+  color: var(--green);
+  border: 2px solid var(--green);
 }
 
-.secondary:hover,
-.navBtnii:hover {
-  background-color: var(--black);
-  color: var(--white);
+.secondary:hover {
+  background-color: var(--green3);
+  color: var(--green);
 }
 
 .tertiary {

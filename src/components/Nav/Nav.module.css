@@ -1,5 +1,6 @@
 .header {
-  border-bottom: 2px solid var(--black);
+  border-bottom: 2px solid var(--green);
+  background-color: var(--tan);
 }
 
 .navbar {
@@ -10,7 +11,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 1rem;
+  padding: 1rem 8rem;
   z-index: 1000;
 }
 
@@ -19,30 +20,6 @@
   align-items: center;
   justify-content: center;
   gap: 5rem;
-}
-
-.logo {
-  font-size: 2.6rem;
-  color: var(--black);
-  text-transform: uppercase;
-  z-index: 998;
-}
-
-.logoii {
-  font-size: 3.5rem;
-}
-
-.icon {
-  position: relative;
-  top: 5px;
-}
-
-.officialLogoMobile {
-  display: none;
-}
-
-.officialLogo {
-  margin-top: 1rem;
 }
 
 .menuItemsGroup,
@@ -58,7 +35,7 @@
   font-size: 1.6rem;
   text-transform: uppercase;
   font-family: var(--oswald);
-  color: var(--black);
+  color: var(--green);
   user-select: none;
   scroll-behavior: smooth;
   z-index: 998;
@@ -84,7 +61,7 @@
   height: 3px;
   margin: 5px auto;
   border-radius: 15px;
-  background-color: var(--black);
+  background-color: var(--green);
   transition: all 0.3s ease-in-out;
 }
 
@@ -110,17 +87,9 @@
   display: none;
 }
 
-/* @media screen and (max-width: 1168px) {
-  .menuItemsGroup,
-  .navMenu {
-    gap: 2rem;
-  }
-} */
-
-@media screen and (max-width: 868px) {
+@media screen and (max-width: 968px) {
   .navbar {
     justify-content: flex-end;
-    /* padding: 2rem 3rem; */
   }
 
   .overlay {
@@ -227,7 +196,7 @@
   .hamburger.active .whiteBar:nth-child(1) {
     -webkit-transform: translateY(8px) rotate(45deg);
     transform: translateY(8px) rotate(45deg);
-    /* background-color: var(--black); */
+    background-color: var(--green);
   }
 
   .hamburger.active .whiteBar:nth-child(2) {
@@ -237,18 +206,14 @@
   .hamburger.active .whiteBar:nth-child(3) {
     -webkit-transform: translateY(-8px) rotate(-45deg);
     transform: translateY(-8px) rotate(-45deg);
-    /* background-color: var(--black); */
+    background-color: var(--green);
   }
 }
 
 @media screen and (max-width: 568px) {
-  /* .header {
-    padding-right: 5px;
-    padding-left: 5px;
-  } */
 
   .navbar {
-    padding: 1rem 2rem;
+    padding: 10px 5px;
   }
 }
 
