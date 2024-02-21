@@ -34,14 +34,14 @@
 }
 
 .secondary {
-  color: var(--green);
-  border: 2px solid var(--green);
+  color: var(--black);
+  border: 2px solid var(--black);
 }
 
 .secondary:hover,
 .navBtnii:hover {
-  background-color: var(--green);
-  color: var(--tan);
+  background-color: var(--black);
+  color: var(--white);
 }
 
 .tertiary {

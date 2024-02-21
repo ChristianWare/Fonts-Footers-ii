@@ -1,6 +1,5 @@
 .header {
-  background-color: var(--tan);
-  border-bottom: 2px solid var(--green);
+  border-bottom: 2px solid var(--black);
 }
 
 .content {
@@ -12,21 +11,21 @@
   justify-content: space-between;
   width: 100%;
   padding: 1rem;
-  background-color: var(--tan);
   z-index: 1000;
 }
 
 .logo {
   font-family: var(--oswald);
   font-weight: 700;
-  color: var(--green);
+  color: var(--black);
   font-size: 2rem;
+  text-transform: uppercase;
 }
 
 .location {
   font-family: var(--oswald);
   /* font-weight: 700; */
-  color: var(--green);
+  color: var(--black);
 }
 
 /* @media screen and (max-width: 568px) {
