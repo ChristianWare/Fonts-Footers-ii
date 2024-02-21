@@ -4,7 +4,7 @@ import styles from "./ScrollText.module.css";
 import LayoutWrapper from "../LayoutWrapper";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import Arrow from "../../../public/icons/arrow.svg";
+import House from "../../../public/icons/house.svg";
 
 const ScrollText = () => {
   const [lettersRef, setLettersRef] = useArrayRef();
@@ -62,10 +62,10 @@ const ScrollText = () => {
             </div>
           </div>
           <div className={styles.bottom}>
-            <div className={styles.arrowContainer}>
-              <Arrow className={styles.icon} />
-              <Arrow className={styles.icon} />
-              <Arrow className={styles.icon} />
+            <div className={styles.houseContainer}>
+              <House className={styles.icon} />
+              <House className={styles.icon} />
+              <House className={styles.icon} />
             </div>
             <p className={styles.copy}>
               A tailored short-term rental website acts as your unique digital

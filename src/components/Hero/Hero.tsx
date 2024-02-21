@@ -2,8 +2,8 @@ import Image from "next/image";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Hero.module.css";
 import Img1 from "../../../public/images/hero2.png";
-import Arrow from "../../../public/icons/arrow.svg";
 import Arrow2 from "../../../public/icons/arrow2.svg";
+import ArrowCluster from "../ArrowCluster/ArrowCluster";
 
 const Hero = () => {
   return (
@@ -12,9 +12,7 @@ const Hero = () => {
         <div className={styles.top}>
           <div className={styles.topLeft}>
             <div className={styles.arrowContainer}>
-              <Arrow className={styles.icon} />
-              <Arrow className={styles.icon} />
-              <Arrow className={styles.icon} />
+              <ArrowCluster />
             </div>
             <p className={styles.copy}>
               Tired of relying solely on platforms like Airbnb or VRBO? We
@@ -24,9 +22,7 @@ const Hero = () => {
           </div>
           <div className={styles.topRight}>
             <div className={styles.arrowContainerii}>
-              <Arrow className={styles.icon} />
-              <Arrow className={styles.icon} />
-              <Arrow className={styles.icon} />
+              <ArrowCluster />
             </div>
             <h1 className={styles.heading}>
               <span className={styles.span}>Direct Booking</span> Solutions
