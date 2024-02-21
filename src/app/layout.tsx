@@ -3,6 +3,7 @@ import { Inter, Oswald, Raleway } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import NoiseBg from "@/components/NoiseBg/NoiseBg";
+import Nav from "@/components/Nav/Nav";
 
 const inter = Inter({ subsets: ["latin"] });
 const oswald = Oswald({
@@ -37,7 +38,10 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={`${oswald.variable} ${raleway.variable}`}>
-        <NoiseBg>{children}</NoiseBg>
+        <NoiseBg>
+          <Nav />
+          {children}
+        </NoiseBg>
       </body>
     </html>
   );

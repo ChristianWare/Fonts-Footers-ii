@@ -1,0 +1,38 @@
+.header {
+  background-color: var(--tan);
+  border-bottom: 2px solid var(--green);
+}
+
+.content {
+  max-width: 1500px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--tan);
+  z-index: 1000;
+}
+
+.logo {
+  font-family: var(--oswald);
+  font-weight: 700;
+  color: var(--green);
+  font-size: 2rem;
+}
+
+.location {
+  font-family: var(--oswald);
+  /* font-weight: 700; */
+  color: var(--green);
+}
+
+/* @media screen and (max-width: 568px) {
+    .header {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+} */

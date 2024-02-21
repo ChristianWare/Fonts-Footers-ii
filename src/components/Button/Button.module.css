@@ -1,0 +1,92 @@
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+.btn {
+  font-family: var(--oswald);
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  white-space: nowrap;
+  text-transform: uppercase;
+  user-select: none;
+  transition: all 0.2s ease-in;
+  display: inline-block;
+  border-radius: 50px;
+  padding: 2px 30px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  line-height: 147%;
+}
+
+.primary {
+  color: var(--black);
+  background-color: var(--green2);
+  border: 1px solid var(--green2);
+}
+
+.primary:hover,
+.navBtn:hover {
+  background-color: var(--green);
+  color: var(--green2);
+}
+
+.secondary {
+  color: var(--green);
+  border: 2px solid var(--green);
+}
+
+.secondary:hover,
+.navBtnii:hover {
+  background-color: var(--green);
+  color: var(--tan);
+}
+
+.tertiary {
+  color: var(--black);
+  background-color: var(--green2);
+  border: 1px solid var(--black);
+}
+
+.tertiary:hover {
+  background-color: var(--green);
+  color: var(--green2);
+  border: 1px solid var(--green);
+}
+
+.navBtn {
+  padding: 15px 44px;
+  background-color: var(--green2);
+  border: 1px solid var(--green2);
+  color: var(--black);
+}
+
+.navBtnii {
+  text-transform: none;
+  padding: 15px 44px;
+  background-color: var(--green);
+  border: 1px solid var(--green2);
+  color: var(--green2);
+}
+
+.learnMore {
+  border: 1px solid var(--black);
+  border-radius: 0px;
+  border-top: none;
+  padding: 2rem 5rem;
+}
+
+.github {
+  border: 1px solid var(--black);
+  border-radius: 0px;
+  border-bottom: none;
+  padding: 2rem 5rem;
+}
+
+@media screen and (max-width: 568px) {
+  .btn {
+    font-size: 2rem;
+  }
+}
