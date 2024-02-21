@@ -1,0 +1,27 @@
+.bgColor {
+  background-color: var(--green);
+}
+
+.reveal {
+  padding-left: 30%;
+  padding-top: 10rem;
+}
+
+.text {
+  line-height: 90%;
+  text-transform: uppercase;
+  letter-spacing: -3px;
+}
+
+.revealText {
+  color: transparent;
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: var(--tan);
+  filter: drop-shadow(0 0 0.06rem rgb(41, 95, 78));
+}
+
+@media screen and (max-width: 968px) {
+  .reveal {
+    padding-left: 0px;
+  }
+}

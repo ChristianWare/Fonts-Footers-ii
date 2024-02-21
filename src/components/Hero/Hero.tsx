@@ -1,7 +1,7 @@
 import Image from "next/image";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Hero.module.css";
-import Img1 from "../../../public/images/hero.jpg";
+import Img1 from "../../../public/images/hero2.png";
 import Arrow from "../../../public/icons/arrow.svg";
 import Arrow2 from "../../../public/icons/arrow2.svg";
 
@@ -23,11 +23,11 @@ const Hero = () => {
             </p>
           </div>
           <div className={styles.topRight}>
-          <div className={styles.arrowContainerii}>
-            <Arrow className={styles.icon} />
-            <Arrow className={styles.icon} />
-            <Arrow className={styles.icon} />
-          </div>
+            <div className={styles.arrowContainerii}>
+              <Arrow className={styles.icon} />
+              <Arrow className={styles.icon} />
+              <Arrow className={styles.icon} />
+            </div>
             <h1 className={styles.heading}>
               <span className={styles.span}>Direct Booking</span> Solutions
             </h1>
