@@ -32,7 +32,7 @@ const Hero = () => {
         </div>
         <div className={styles.bottom}>
           <div className={styles.imgContainer}>
-            <Image src={Img1} alt='hero' fill className={styles.img} />
+            <Image src={Img1} alt='Direct Booking Website' fill className={styles.img} />
           </div>
           <div className={styles.bottomRight}>
             <div className={styles.bottomRight1}>

@@ -1,0 +1,36 @@
+.imgContainer {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  padding: 2rem;
+}
+
+.img {
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.copyContainer {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 20px;
+  border: 2px solid var(--green);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 3rem;
+}
+
+.heading {
+  color: var(--green);
+}
+
+.copy {
+  font-weight: 600;
+  color: var(--green);
+}

@@ -1,6 +1,6 @@
 .header {
   border-bottom: 2px solid var(--green);
-  background-color: var(--tan);
+  /* background-color: var(--tan); */
 }
 
 .navbar {

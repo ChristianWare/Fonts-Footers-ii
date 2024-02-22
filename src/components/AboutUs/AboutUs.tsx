@@ -1,0 +1,39 @@
+import LayoutWrapper from "../LayoutWrapper";
+import styles from "./AboutUs.module.css";
+import Image from "next/image";
+import House2 from "../../../public/images/house2.png";
+
+const AboutUs = () => {
+  return (
+    <section>
+      <LayoutWrapper>
+        <div className={styles.content}>
+          <div className={styles.imgContainer}>
+            <Image
+              src={House2}
+              alt='Direct Booking Website'
+              fill
+              className={styles.img}
+            />
+            <div className={styles.copyContainer}>
+              <h3 className={styles.heading}>
+                How Fonts & Footers can help you
+              </h3>
+              <p className={styles.copy}>
+                Here at Fonts & Footers, we revolutionize vacation rental
+                property management with personalized, direct booking websites
+                designed to enhance the overall rental experience. Our expertise
+                in the vacation rental industry ensures tailored solutions to
+                maximize your property&apos;s potential. By choosing us, you
+                gain a direct connection with guests, fostering trust and
+                boosting bookings, unlocking the full potential of your vacation
+                rental business.
+              </p>
+            </div>
+          </div>
+        </div>
+      </LayoutWrapper>
+    </section>
+  );
+};
+export default AboutUs;
