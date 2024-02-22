@@ -1,5 +1,51 @@
 .content {
   height: 100%;
+  position: relative;
+}
+
+.textWrapper {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+  overflow: hidden;
+  border-top: 2px solid var(--green);
+  border-bottom: 2px solid var(--green);
+  transform: rotate(2deg);
+  margin-bottom: 5rem;
+}
+
+.textWrapper p {
+  font-size: 2rem;
+  font-weight: 600;
+  white-space: nowrap;
+  color: var(--green);
+  text-transform: uppercase;
+}
+
+.icon2 {
+  width: 15px;
+  height: 15px;
+  transform: rotate(90deg);
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  animation: move-rtl 10s linear infinite;
+}
+
+@keyframes move-rtl {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 .imgContainer {
@@ -57,12 +103,18 @@
 }
 
 .btnContainer {
-    display: grid;
-    /* width: 100%; */
+  display: grid;
+  /* width: 100%; */
 }
 
-/* @media screen and (max-width: 1068px) {
-    .copyContainer {
-        width: 50%;
-    }
-} */
+@media screen and (max-width: 1068px) {
+  .copyContainer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .btnContainer {
+    width: 100%;
+  }
+}

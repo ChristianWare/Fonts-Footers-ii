@@ -20,8 +20,62 @@ const AboutUs = () => {
 
   return (
     <section>
-      <LayoutWrapper>
-        <div className={styles.content}>
+      <div className={styles.content}>
+        <div className={styles.textWrapper}>
+          <div className={styles.box}>
+            <p>About Us</p>
+            <Arrow className={styles.icon2} />
+          </div>
+          <div className={styles.box}>
+            <p>About Us</p>
+            <Arrow className={styles.icon2} />
+          </div>
+          <div className={styles.box}>
+            <p>About Us</p>
+            <Arrow className={styles.icon2} />
+          </div>
+          <div className={styles.box}>
+            <p>About Us</p>
+            <Arrow className={styles.icon2} />
+          </div>
+          <div className={styles.box}>
+            <p>About Us</p>
+            <Arrow className={styles.icon2} />
+          </div>
+          <div className={styles.box}>
+            <p>About Us</p>
+            <Arrow className={styles.icon2} />
+          </div>
+          <div className={styles.box}>
+            <p>About Us</p>
+            <Arrow className={styles.icon2} />
+          </div>
+          <div className={styles.box}>
+            <p>About Us</p>
+            <Arrow className={styles.icon2} />
+          </div>
+          <div className={styles.box}>
+            <p>About Us</p>
+            <Arrow className={styles.icon2} />
+          </div>
+          <div className={styles.box}>
+            <p>About Us</p>
+            <Arrow className={styles.icon2} />
+          </div>
+          <div className={styles.box}>
+            <p>About Us</p>
+            <Arrow className={styles.icon2} />
+          </div>
+          <div className={styles.box}>
+            <p>About Us</p>
+            <Arrow className={styles.icon2} />
+          </div>
+          <div className={styles.box}>
+            <p>About Us</p>
+            <Arrow className={styles.icon2} />
+          </div>
+        </div>
+        <LayoutWrapper>
           <div className={styles.imgContainer}>
             <Image
               src={House2}
@@ -54,8 +108,8 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
-        </div>
-      </LayoutWrapper>
+        </LayoutWrapper>
+      </div>
     </section>
   );
 };
