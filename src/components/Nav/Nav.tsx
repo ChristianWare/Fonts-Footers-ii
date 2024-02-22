@@ -48,6 +48,10 @@ function Nav() {
       href: "/about",
     },
     {
+      text: "Benefits",
+      href: "/benefits",
+    },
+    {
       text: "Features",
       href: "/features",
     },
