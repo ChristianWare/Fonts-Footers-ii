@@ -4,17 +4,46 @@
 
 .benefitContainer {
   display: grid;
-  grid-template-columns: 0.5fr 3fr 2fr;
+  grid-template-columns: repeat(2, 1fr);
   margin-bottom: 3rem;
   border-bottom: 2px solid var(--green2);
   padding: 2rem 0rem;
 }
 
 .index {
-  display: block;
+  display: inline-block;
+  font-size: 3.6rem;
+  color: var(--green);
+}
+
+.heading {
+  color: var(--green);
+  line-height: 80%;
 }
 
 .description {
   color: var(--green);
   font-weight: 600;
+}
+
+.btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .benefitContainer {
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .btnContainer {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(1,1fr);
+  }
 }

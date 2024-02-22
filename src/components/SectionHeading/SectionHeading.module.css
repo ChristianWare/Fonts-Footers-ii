@@ -1,5 +1,26 @@
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10rem;
+  color: var(--green);
+}
+
+.heading {
+  color: var(--green);
+  width: 80%;
+  text-align: right;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .heading {
+    text-align: center;
+    width: 100%;
+  }
 }

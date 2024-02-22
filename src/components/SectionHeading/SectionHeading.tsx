@@ -13,7 +13,7 @@ const SectionHeading: FC<Props> = ({ text }) => {
         <ArrowCluster />
       </div>
       <div className={styles.right}>
-        <h2>{text}</h2>
+        <h2 className={styles.heading}>{text}</h2>
       </div>
     </div>
   );

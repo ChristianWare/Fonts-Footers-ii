@@ -15,10 +15,10 @@ const Hero = () => {
               <ArrowCluster />
             </div>
             <p className={styles.copy}>
-              Tired of relying solely on platforms like Airbnb or VRBO? Fonts &
-              Footers web design agency empowers property owners to take control
-              of their bookings with a custom website to showcase thier unique
-              offerings.
+              Tired of relying solely on platforms like Airbnb or VRBO? The
+              Fonts & Footers web design agency empowers property owners to take
+              control of their bookings with a custom website to showcase thier
+              unique offerings.
             </p>
           </div>
           <div className={styles.topRight}>
