@@ -62,13 +62,13 @@ export const benefits = [
 
 export const features = [
   {
-    service: "Booking and Reservation System",
+    service: "Booking Engine",
     description:
       "Implement a user-friendly booking system that allows guests to check availability, select dates, and make reservations directly on your site.",
     icon: Calendar,
   },
   {
-    service: "Guest Reviews and Testimonials",
+    service: "Guest Reviews",
     description:
       "Showcase positive reviews and testimonials from previous guests to build trust and credibility. Visitors will only be able to review once they've booked a stay on your property.",
     icon: Reviews2,
