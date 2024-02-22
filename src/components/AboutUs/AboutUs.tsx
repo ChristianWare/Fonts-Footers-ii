@@ -2,8 +2,22 @@ import LayoutWrapper from "../LayoutWrapper";
 import styles from "./AboutUs.module.css";
 import Image from "next/image";
 import House2 from "../../../public/images/house2.png";
+import Arrow from "../../../public/icons/arrow.svg";
+import Button from "../Button/Button";
 
 const AboutUs = () => {
+  const detailData = [
+    {
+      text: "Tailored Solutions for Your Property",
+    },
+    {
+      text: "Maximize Revenue with Direct Bookings",
+    },
+    {
+      text: "Professional Guidance Every Step of the Way",
+    },
+  ];
+
   return (
     <section>
       <LayoutWrapper>
@@ -29,6 +43,15 @@ const AboutUs = () => {
                 boosting bookings, unlocking the full potential of your vacation
                 rental business.
               </p>
+              {detailData.map((x, index) => (
+                <div key={index} className={styles.detailContainer}>
+                  <Arrow className={styles.icon} />
+                  <p className={styles.detail}>{x.text}</p>
+                </div>
+              ))}
+              <div className={styles.btnContainer}>
+                <Button text='More About us' href='/about' btnType='primary' />
+              </div>
             </div>
           </div>
         </div>
