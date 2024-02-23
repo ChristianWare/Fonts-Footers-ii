@@ -178,3 +178,99 @@ export const process = [
     icon: true,
   },
 ] as const;
+
+export const pricing = [
+  {
+    id: 26,
+    plan: "Basic",
+    for: "Your Direct Booking Starting Point",
+    description:
+      "Ideal for individual owners with one property who are looking to get started.",
+    price: 175,
+    includes: [
+      {
+        id: 26.1,
+        feature: "5 page website",
+      },
+      {
+        id: 26.2,
+        feature: "Hosting",
+      },
+      {
+        id: 26.3,
+        feature: "SEO",
+      },
+      {
+        id: 27.3,
+        feature: "Payment Processing",
+      },
+      {
+        id: 27.5,
+        feature: "12 Blog Articles",
+      },
+    ],
+    btnType: "primary",
+  },
+  {
+    id: 27,
+    plan: "Advanced",
+    for: "Advanced Savings & Strategy",
+    description:
+      "Perfect for growing businesses with 2 to 9 properties that need additional features.",
+    price: 249,
+    includes: [
+      {
+        id: 26.1,
+        feature: "Everything in Starter, plus:",
+      },
+      {
+        id: 26.3,
+        feature: "Analytics and Reporting",
+      },
+      {
+        id: 27.3,
+        feature: "Dynamic Pricing Engine",
+      },
+      {
+        id: 27.4,
+        feature: "Customer Support Enhancements",
+      },
+      {
+        id: 27.6,
+        feature: "24 Blog Articles",
+      },
+    ],
+    btnType: "secondary",
+  },
+  {
+    id: 28,
+    plan: "Enterprise",
+    for: "All-Inclusive Direct Booking Suite",
+    description:
+      "For large-scale organizations with at least 10 or more rental properties.",
+    price: "349",
+    includes: [
+      {
+        id: 28.1,
+        feature: "Everything in Advanced, plus:",
+      },
+      {
+        id: 28.2,
+        feature: "Geographical Expansion",
+      },
+      {
+        id: 28.3,
+        feature: "Enterprise-Level Scalability",
+      },
+      {
+        id: 28.3,
+        feature: "Advanced SEO Services",
+      },
+      {
+        id: 28.5,
+        feature: "Unlimited Blog Articles",
+      },
+    ],
+    btnType: "tertiary",
+  },
+] as const;

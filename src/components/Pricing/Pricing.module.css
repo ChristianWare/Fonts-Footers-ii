@@ -1,0 +1,103 @@
+.top {
+  margin-top: 5rem;
+  margin-bottom: 7rem;
+}
+
+.heading {
+  color: var(--green);
+  width: 100%;
+  text-align: center;
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+}
+
+.priceContainer {
+  border-radius: 20px;
+  padding: 1rem;
+  border: 2px solid var(--green);
+}
+
+.pcTop {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+  background-color: var(--green3);
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+.planName {
+  font-size: 2.6rem;
+  color: var(--green);
+}
+
+.for {
+  color: var(--green);
+}
+
+.pcBottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.kFTitile {
+  margin-top: 2rem;
+  color: var(--green);
+  font-size: 2.3rem;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+  width: 100%;
+}
+
+.feature {
+  font-weight: 600;
+  color: var(--green);
+  border-bottom: 2px solid var(--green2);
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.description {
+  font-weight: 600;
+  color: var(--green);
+}
+
+.price {
+  font-family: var(--oswald);
+  font-weight: 600;
+  font-size: 3.6rem;
+  color: var(--green);
+}
+
+.btnContainer {
+  display: grid;
+  width: 100%;
+}
+
+@media screen and (max-width: 1068px) {
+  .bottom {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bottom {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

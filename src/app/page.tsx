@@ -11,11 +11,11 @@ import Pricing from "@/components/Pricing/Pricing";
 export default function Home() {
   return (
     <main>
-      <Hero />
+      {/* <Hero />
       <ScrollText />
       <Benefits />
       <AboutUs />
-      <Features />
+      <Features /> */}
       <Process />
       <Pricing />
     </main>
