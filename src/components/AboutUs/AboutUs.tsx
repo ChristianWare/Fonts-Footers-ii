@@ -84,9 +84,7 @@ const AboutUs = () => {
               className={styles.img}
             />
             <div className={styles.copyContainer}>
-              <h3 className={styles.heading}>
-                How Fonts & Footers can help you
-              </h3>
+              <h3 className={styles.heading}>Who are Fonts & Footers?</h3>
               <p className={styles.copy}>
                 Here at Fonts & Footers, we revolutionize vacation rental
                 property management with personalized, direct booking websites

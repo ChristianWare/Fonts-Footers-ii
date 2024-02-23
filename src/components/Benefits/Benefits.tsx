@@ -14,16 +14,18 @@ const Benefits = () => {
         <div className={styles.bottom}>
           {benefits.slice(0, 3).map((benefit, i) => (
             <div key={i} className={styles.benefitContainer}>
-              <h3 className={styles.heading}>
-                <span className={styles.index}>{i + 1}. </span>
-                {" "}{benefit.heading}
-              </h3>
+              <div className={styles.headingContainer}>
+                <h3 className={styles.heading}>
+                  <span className={styles.index}>{i + 1}. </span>{" "}
+                  {benefit.heading}
+                </h3>
+              </div>
               <p className={styles.description}>{benefit.description}</p>
             </div>
           ))}
         </div>
         <div className={styles.btnContainer}>
-          <Button text='see all benefits' href='/' btnType="primary" />
+          <Button text='see all benefits' href='/' btnType='primary' />
         </div>
       </LayoutWrapper>
     </section>
