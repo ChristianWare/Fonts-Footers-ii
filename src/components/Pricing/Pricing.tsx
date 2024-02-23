@@ -8,7 +8,10 @@ const Pricing = () => {
     <section>
       <LayoutWrapper>
         <div className={styles.top}>
-          <h2 className={styles.heading}>Affordable Pricing</h2>
+          <h2 className={styles.heading}>
+            How much does a direct booking website cost?
+          </h2>
+          <p>It depends on what you need...</p>
         </div>
         <div className={styles.bottom}>
           {pricing.map((x) => (
@@ -27,7 +30,7 @@ const Pricing = () => {
                   ))}
                 </ul>
                 <p className={styles.description}>{x.description}</p>
-                <span className={styles.price}>$ {x.price}</span>
+                <span className={styles.price}>$ {x.price} / month</span>
                 <div className={styles.btnContainer}>
                   <Button text='Exploire Plan' href='/' btnType='primary' />
                 </div>

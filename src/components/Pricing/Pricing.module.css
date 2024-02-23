@@ -1,12 +1,19 @@
 .top {
   margin-top: 5rem;
   margin-bottom: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
 }
 
 .heading {
   color: var(--green);
-  width: 100%;
+  width: 50%;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .bottom {
@@ -39,6 +46,7 @@
 
 .for {
   color: var(--green);
+  margin-top: 1rem;
 }
 
 .pcBottom {
@@ -88,6 +96,7 @@
 .btnContainer {
   display: grid;
   width: 100%;
+  margin-top: 1rem;
 }
 
 @media screen and (max-width: 1068px) {
@@ -97,6 +106,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .heading {
+    width: 100%;
+  }
+
   .bottom {
     grid-template-columns: repeat(1, 1fr);
   }

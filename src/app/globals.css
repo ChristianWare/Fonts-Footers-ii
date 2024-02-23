@@ -18,7 +18,7 @@
   scroll-behavior: smooth;
   scroll-margin-top: 40px;
   -webkit-tap-highlight-color: transparent;
-  /* color: var(--black); */
+  color: var(--green);
 }
 
 html {
@@ -64,7 +64,7 @@ h1 {
 
 h2 {
   font-size: 4.2rem;
-  line-height: 100%;
+  line-height: 120%;
   letter-spacing: -1px;
 }
 
@@ -96,7 +96,7 @@ button {
 p,
 input,
 textarea {
-  font-weight: 400;
+  font-weight: 600;
   hyphens: auto;
   font-size: 1.6rem;
   line-height: 150%;

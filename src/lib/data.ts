@@ -26,7 +26,7 @@ import Data from "../../public/icons/data.png";
 import Client from "../../public/icons/client.png";
 import Innovation from "../../public/icons/innovation.png";
 import Elite from "../../public/images/elite.png";
-import House from "../../public/icons/house.svg";
+import Project1 from "../../public/images/img1.jpg";
 
 export const benefits = [
   {
@@ -77,13 +77,13 @@ export const features = [
   {
     service: "Admin Panel",
     description:
-      "Admin panel will allow you to create, update, and delete listings on your personalized booking websites. View the number of bookings, and make any updates as needed.",
+      "Your admin panel will allow you to create, update, and delete listings on your personalized booking websites. View the number of bookings, and make any updates as needed.",
     icon: Admin4,
   },
   {
     service: "Payment Processing",
     description:
-      "Stripe payment processing enables secure online transactions, integrating a trusted payment gateway for businesses to accept credit card payments.",
+      "We use Stripe payment processing so that you'll be able to secure online transactions, integrating a trusted payment gateway for businesses to accept credit card payments.",
     icon: CC,
   },
   {
@@ -272,5 +272,38 @@ export const pricing = [
       },
     ],
     btnType: "tertiary",
+  },
+] as const;
+
+export const projects = [
+  {
+    src: Project1,
+    title: "Taco Bell Redesign",
+    description:
+      "This project is a redesign of Taco Bell's website. The front end was built with next.js, and the CMS is Sanity.io. The styling was done with CSS Modules so that I can have the most flexibility for design. Each menu item has its slug page where more details are given on that particular item.",
+    client:
+      "This client is in the hospitality industry and they recently purchased an investment property for short term rental. They needed a website to perfectly reflect their online brand and allow their guests to easily book future stays.",
+    href: "https://www.livemas.dev/",
+    github: "https://github.com/ChristianWare/Tacobell-ii",
+    status: [
+      {
+        id: 350,
+        statTitle: "Traffic 45%",
+        statDetails:
+          "This website saw an increase in web traffic by a very impressive 45%",
+      },
+      {
+        id: 351,
+        statTitle: "Traffic 45%",
+        statDetails:
+          "This website saw an increase in web traffic by a very impressive 45%",
+      },
+      {
+        id: 352,
+        statTitle: "Traffic 45%",
+        statDetails:
+          "This website saw an increase in web traffic by a very impressive 45%",
+      },
+    ],
   },
 ] as const;

@@ -3,6 +3,7 @@ import styles from "./Process.module.css";
 import { process } from "@/lib/data";
 import Image from "next/image";
 import House from "../../../public/icons/house.svg";
+import Button from "../Button/Button";
 
 const Process = () => {
   return (
@@ -30,6 +31,12 @@ const Process = () => {
             <h2 className={styles.heading}>
               Our Process for building direct booking websites
             </h2>
+          </div>
+        </div>
+        <div className={styles.ctaContainer}>
+          <h4 className={styles.cta}>ready to get started?</h4>
+          <div className={styles.btnContainer}>
+            <Button text='Schedule a call' href='/contact' btnType='primary' />
           </div>
         </div>
       </LayoutWrapper>
