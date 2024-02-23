@@ -134,10 +134,11 @@
   .navItem {
     font-size: 3rem;
     color: var(--black2);
-    font-family: var(--staatliches);
+    font-family: var(--raleway);
+    font-weight: 600;
     line-height: 0.8;
     text-transform: uppercase;
-    letter-spacing: -2px;
+    letter-spacing: -1px;
   }
 
   .bottomDesktop {
@@ -211,7 +212,6 @@
 }
 
 @media screen and (max-width: 568px) {
-
   .navbar {
     padding: 10px 5px;
   }

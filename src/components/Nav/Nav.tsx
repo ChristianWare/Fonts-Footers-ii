@@ -93,8 +93,13 @@ function Nav() {
           ))}
           {isOpen && (
             <div className={styles.btnContainerMobile}>
-              <Button href={"/"} text='Contact Us' btnType='secondary' />
-              <Button href={"/"} text='Schedule a call' btnType='secondary' />
+              <Button href={"/"} text='Contact Us' btnType='secondary' arrow />
+              <Button
+                href={"/"}
+                text='Schedule a call'
+                btnType='secondary'
+                arrow
+              />
             </div>
           )}
         </ul>
