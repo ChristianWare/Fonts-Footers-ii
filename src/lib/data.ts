@@ -26,6 +26,7 @@ import Data from "../../public/icons/data.png";
 import Client from "../../public/icons/client.png";
 import Innovation from "../../public/icons/innovation.png";
 import Elite from "../../public/images/elite.png";
+import House from "../../public/icons/house.svg";
 
 export const benefits = [
   {
@@ -140,34 +141,40 @@ export const process = [
     id: 58,
     processName: "",
     processDescription: "",
+    icon: true,
   },
   {
     id: 59,
     processName: "Initial Consultation",
     processDescription:
       "We arrange a Zoom meeting to discuss your vacation rental needs, gather information, and send a tailored service contract afterward.",
+    icon: false,
   },
   {
     id: 60,
     processName: "Onboarding",
     processDescription:
       "Once the Contract is signed and returned, you gain access to the client dashboard. Here, you complete a detailed questionnaire to inform our copywriting process.",
+    icon: false,
   },
   {
     id: 61,
     processName: "Design & Development",
     processDescription:
       "Choose from five designs for your website, then track progress with a temporary link, ensuring a flawless, responsive design with captivating details and animations.",
+    icon: false,
   },
   {
     id: 62,
     processName: "Deployment and Going Live",
     processDescription:
       "Once your website meets approval, we'll deploy your booking application globally and provide a brief training session on using the dashboard.",
+    icon: false,
   },
   {
     id: 63,
     processName: "",
     processDescription: "",
+    icon: true,
   },
 ] as const;

@@ -1,7 +1,12 @@
+.container {
+  background-color: var(--green);
+}
+
 .content {
   display: flex;
   flex-direction: column-reverse;
   gap: 5rem;
+  padding-top: 10rem;
 }
 
 .left {
@@ -11,7 +16,7 @@
 
 .processContainer {
   border-radius: 20px;
-  border: 2px solid var(--green);
+  border: 2px solid var(--tan);
   padding: 3rem;
   display: flex;
   flex-direction: column;
@@ -19,6 +24,20 @@
   justify-content: flex-start;
   gap: 2rem;
 }
+
+.houseContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.icon {
+  width: 150px;
+  height: 150px;
+  color: var(--green3);
+}
+
 
 .processContainer:nth-child(1),
 .processContainer:nth-child(6) {
@@ -51,17 +70,17 @@
 }
 
 .processName {
-  color: var(--green);
+  color: var(--tan);
   font-size: 2.6rem;
 }
 
 .processDescription {
-  color: var(--green);
+  color: var(--tan);
   font-weight: 600;
 }
 
 .heading {
-  color: var(--green);
+  color: var(--tan);
   margin-bottom: 3rem;
   width: 50%;
   line-height: 120%;
