@@ -32,7 +32,12 @@ const Pricing = () => {
                 <p className={styles.description}>{x.description}</p>
                 <span className={styles.price}>$ {x.price} / month</span>
                 <div className={styles.btnContainer}>
-                  <Button text='Exploire Plan' href='/' btnType='primary' />
+                  <Button
+                    text='Explore Plan'
+                    href='/'
+                    btnType='primary'
+                    arrow
+                  />
                 </div>
               </div>
             </div>

@@ -1,4 +1,3 @@
-import { StaticImageData } from "next/image";
 import { ReactNode } from "react";
 
 export interface ButtonProps {
@@ -7,14 +6,7 @@ export interface ButtonProps {
   btnType: string;
   target?: string;
   download?: boolean;
-}
-
-export interface ImageGridProps {
-  src1: StaticImageData;
-  src2: StaticImageData;
-  src3: StaticImageData;
-  src4: StaticImageData;
-  src5: StaticImageData;
+  arrow?: boolean
 }
 
 export interface PageIntroProps {

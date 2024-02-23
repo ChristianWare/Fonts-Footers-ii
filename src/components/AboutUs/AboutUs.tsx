@@ -48,7 +48,12 @@ const AboutUs = () => {
                 </div>
               ))}
               <div className={styles.btnContainer}>
-                <Button text='More About us' href='/about' btnType='primary' />
+                <Button
+                  text='More About us'
+                  href='/about'
+                  btnType='primary'
+                  arrow
+                />
               </div>
             </div>
           </div>

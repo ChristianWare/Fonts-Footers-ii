@@ -5,7 +5,6 @@ import Image from "next/image";
 import Button from "../Button/Button";
 import House2 from "../../../public/images/house2.png";
 
-
 const Features = () => {
   return (
     <section>
@@ -37,7 +36,6 @@ const Features = () => {
                 fill
                 className={styles.img}
               />
-              
             </div>
             <div className={styles.box2}>
               <h4>Lorem ipsum dolor sit amet earum illo</h4>
@@ -53,6 +51,7 @@ const Features = () => {
                   text=' all features'
                   href='/features'
                   btnType='primary'
+                  arrow
                 />
               </div>
             </div>

@@ -36,7 +36,12 @@ const Process = () => {
         <div className={styles.ctaContainer}>
           <h4 className={styles.cta}>ready to get started?</h4>
           <div className={styles.btnContainer}>
-            <Button text='Schedule a call' href='/contact' btnType='primary' />
+            <Button
+              text='Schedule a call'
+              href='/contact'
+              btnType='primary'
+              arrow
+            />
           </div>
         </div>
       </LayoutWrapper>

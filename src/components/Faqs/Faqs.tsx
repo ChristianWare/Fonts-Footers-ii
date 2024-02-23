@@ -37,10 +37,15 @@ const Faqs = () => {
           </div>
           <div className={styles.topRight}>
             <div className={styles.btnContainer}>
-              <Button text='See all FAQs' href='/faq' btnType='primary' />
+              <Button text='See all FAQs' href='/faq' btnType='primary' arrow />
             </div>
             <div className={styles.btnContainer}>
-              <Button text='Contact Us' href='/contact' btnType='tertiary' />
+              <Button
+                text='Contact Us'
+                href='/contact'
+                btnType='tertiary'
+                arrow
+              />
             </div>
           </div>
         </div>

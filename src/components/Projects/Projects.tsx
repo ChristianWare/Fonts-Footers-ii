@@ -56,8 +56,13 @@ const Projects = () => {
                 </div>
               </div> */}
               <div className={styles.btnContainer}>
-                <Button text='live site' href='/' btnType='primary' />
-                <Button text='more details' href='/' btnType='secondary' />
+                <Button text='live site' href='/' btnType='primary' arrow />
+                <Button
+                  text='more details'
+                  href='/'
+                  btnType='secondary'
+                  arrow
+                />
               </div>
             </div>
           ))}

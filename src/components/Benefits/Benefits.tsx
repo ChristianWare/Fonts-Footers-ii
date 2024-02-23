@@ -25,7 +25,7 @@ const Benefits = () => {
           ))}
         </div>
         <div className={styles.btnContainer}>
-          <Button text='see all benefits' href='/' btnType='primary' />
+          <Button text='see all benefits' href='/' btnType='primary' arrow />
         </div>
       </LayoutWrapper>
     </section>

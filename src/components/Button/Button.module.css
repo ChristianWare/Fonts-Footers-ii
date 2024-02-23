@@ -11,14 +11,39 @@
   white-space: nowrap;
   text-transform: uppercase;
   user-select: none;
-  transition: all 0.2s ease-in;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+  gap: 2rem;
   border-radius: 50px;
-  padding: 8px 30px;
+  padding: 8px 12px;
+  padding-right: 45px;
   position: relative;
   z-index: 1;
   width: 100%;
   line-height: 147%;
+  transition: background-color 0.1s ease-in, color 0.1s ease-in;
+}
+
+.icon2 {
+  width: 30px;
+  height: 30px;
+  background-color: var(--green3);
+  border-radius: 50%;
+  border: 2px solid var(--green);
+  padding: 5px;
+  color: var(--green);
+  position: absolute;
+  top: 5px;
+  right: 6px;
+  
+  transition: all 0.1s ease-in-out;
+}
+
+.btn:hover .icon2 {
+  transform: rotate(-45deg);
 }
 
 .primary {
@@ -34,10 +59,9 @@
   padding: 2px 30px;
 }
 
-.primary:hover,
-.primaryNav:hover {
+.primary:hover {
   background-color: var(--green);
-  color: var(--green3);
+  color: var(--tan);
 }
 
 .secondary {
@@ -51,7 +75,8 @@
   padding: 2px 30px;
 }
 
-.secondary:hover, .secondaryNav:hover {
+.secondary:hover,
+.secondaryNav:hover {
   background-color: var(--green3);
   color: var(--green);
 }
@@ -68,38 +93,8 @@
   border: 1px solid var(--green);
 }
 
-.navBtn {
-  padding: 15px 44px;
-  background-color: var(--green2);
-  border: 1px solid var(--green2);
-  color: var(--black);
-}
-
-.navBtnii {
-  text-transform: none;
-  padding: 15px 44px;
-  background-color: var(--green);
-  border: 1px solid var(--green2);
-  color: var(--green2);
-}
-
-.learnMore {
-  border: 1px solid var(--black);
-  border-radius: 0px;
-  border-top: none;
-  padding: 2rem 5rem;
-}
-
-.github {
-  border: 1px solid var(--black);
-  border-radius: 0px;
-  border-bottom: none;
-  padding: 2rem 5rem;
-}
-
 @media screen and (max-width: 568px) {
   .btn {
     font-size: 2rem;
-    /* padding: 10px 30px; */
   }
 }
