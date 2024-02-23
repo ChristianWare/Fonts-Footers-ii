@@ -2,7 +2,6 @@
 
 import styles from "./Footer.module.css";
 import Link from "next/link";
-import { useState } from "react";
 import { footer } from "@/lib/data";
 import Instagram from "../../../public/icons/instagram.svg";
 import LinkedIn from "../../../public/icons/linkedin.svg";
