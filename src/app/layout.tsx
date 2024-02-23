@@ -4,7 +4,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import NoiseBg from "@/components/NoiseBg/NoiseBg";
 import Nav from "@/components/Nav/Nav";
-import Footer from "@/components/Footer/Footer";
+import FinalCta from "@/components/FinalCTA/FinalCTA";
 
 const inter = Inter({ subsets: ["latin"] });
 const oswald = Oswald({
@@ -42,7 +42,7 @@ export default function RootLayout({
         <NoiseBg>
           <Nav />
           {children}
-          <Footer />
+          <FinalCta />
         </NoiseBg>
       </body>
     </html>

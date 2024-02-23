@@ -1,38 +1,44 @@
-import Link from "next/link";
-import LayoutWrapper from "../LayoutWrapper";
+"use client";
+
 import styles from "./Footer.module.css";
+import Link from "next/link";
+import { useState } from "react";
 import { footer } from "@/lib/data";
+import Instagram from "../../../public/icons/instagram.svg";
+import LinkedIn from "../../../public/icons/linkedin.svg";
+import Twitter from "../../../public/icons/twitter.svg";
+import Facebook from "../../../public/icons/facebook.svg";
+import Logo from "../Logo/Logo";
 
 const Footer = () => {
   return (
     <footer className={styles.container}>
-      <div className={styles.top}>
-        <div className={styles.left}>
-          <Link href='/' className={styles.logo}>
-            Fonts & Footers
-          </Link>
-          <span className={styles.tagline}>Direct Booking Specialists</span>
-        </div>
+      <div className={styles.content}>
         <div className={styles.right}>
-          {footer.map((x, index) => (
-            <div key={x.id} className={styles.links}>
-              <div className={styles.heading}>{x.heading}</div>
-              {x.section.map((y) => (
-                <div key={y.id}>
-                  <Link href={y.href} className={styles.link}>
-                    {y.name}
-                  </Link>
-                </div>
-              ))}
-            </div>
-          ))}
+          <div className={styles.middleDesktop}>
+            {footer.map((f, index) => (
+              <div key={index} className={styles.headingContainer}>
+                <Link href={f.href} className={styles.heading}>
+                  {f.heading}
+                </Link>
+              </div>
+            ))}
+          </div>
+          <div className={styles.lb2}>
+            <Instagram width={15} height={15} className={styles.icon} />
+            <LinkedIn width={15} height={15} className={styles.icon} />
+            <Twitter width={15} height={15} className={styles.icon} />
+            <Facebook width={15} height={15} className={styles.icon} />
+          </div>
         </div>
-      </div>
-      <div className={styles.bottom}>
-        <div className={styles.left}>
-          2024 Fonts & Footers, All Rights Reserved
+        <div className={styles.bottomDesktop}>
+          <Logo />
+          <div className={styles.bottomLeft}>
+            <p className={styles.copy}>
+              &copy; 2024 Fonts & Footers - All Rights Reserved
+            </p>
+          </div>
         </div>
-        <div className={styles.pp}>Privacy Policy</div>
       </div>
     </footer>
   );
