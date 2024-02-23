@@ -110,8 +110,8 @@ function Nav() {
           ></div>
         )}
         <div className={styles.btnContainer}>
-          <Button href={"/"} text='Contact Us' btnType='secondary' />
-          <Button href={"/"} text='Schedule a call' btnType='primary' />
+          <Button href={"/"} text='Contact Us' btnType='secondaryNav' />
+          <Button href={"/"} text='Schedule a call' btnType='primaryNav' />
         </div>
         <span
           className={

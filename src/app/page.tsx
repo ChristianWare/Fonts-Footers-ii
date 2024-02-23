@@ -7,6 +7,7 @@ import Features from "@/components/Features/Features";
 import Process from "@/components/Process/Process";
 import Pricing from "@/components/Pricing/Pricing";
 import Projects from "@/components/Projects/Projects";
+import Faqs from "@/components/Faqs/Faqs";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Process />
       <Pricing />
       <Projects />
+      <Faqs />
     </main>
   );
 }
