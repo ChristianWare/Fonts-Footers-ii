@@ -45,14 +45,10 @@ const Faqs = () => {
           </div>
         </div>
         <div className={styles.bottom}>
-          {faqs.map((x, i) => (
+          {faqs.slice(0, 4).map((x, i) => (
             <div
               key={x.id}
-              className={
-                selected === i
-                  ? styles.qaContainer + " " + styles.showBorder
-                  : styles.qaContainer
-              }
+              className={styles.qaContainer}
               onClick={() => toggle(i)}
             >
               <div className={styles.headingArrowContainer}>
@@ -63,9 +59,17 @@ const Faqs = () => {
                   </h3>
                 </div>
                 {selected === i ? (
-                  <Arrow2 className={styles.iconFlip} width={20} height={20} />
+                  <div className={styles.iconBox}>
+                    <Arrow2
+                      className={styles.iconFlip}
+                      width={25}
+                      height={25}
+                    />
+                  </div>
                 ) : (
-                  <Arrow2 className={styles.icon} width={20} height={20} />
+                  <div className={styles.iconBox}>
+                    <Arrow2 className={styles.icon} width={25} height={25} />
+                  </div>
                 )}
               </div>
               <div

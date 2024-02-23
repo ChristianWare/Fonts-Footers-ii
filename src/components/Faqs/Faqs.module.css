@@ -30,21 +30,20 @@
   width: 60%;
 }
 
+.bottom {
+  margin-top: 5rem;
+  margin-left: 15rem;
+  margin-right: 15rem;
+}
 
 .qaContainer {
   padding: 3rem 2rem;
-  background-color: var(--tan);
-  border-radius: 8px;
+  border: 2px solid var(--green);
+  border-radius: 20px;
   width: 100%;
   cursor: pointer;
   user-select: none;
-}
-
-.showBorder {
-  border-radius: 10px;
-  box-shadow: var(--shadow);
-  background-color: var(--white);
-  border: 1px solid var(--border);
+  margin-bottom: 2rem;
 }
 
 .answerContainer {
@@ -69,17 +68,27 @@
   gap: 1rem;
 }
 
+.iconBox {
+  width: 35px;
+  height: 35px;
+  background-color: var(--green3);
+  border-radius: 50%;
+  border: 2px solid var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
 .icon {
-  color: var(--black);
-  opacity: 0.7;
+  color: var(--green);
   cursor: pointer;
   transition: all 0.4s ease-in-out;
 }
 
 .iconFlip {
   transform: rotate(180deg);
-  color: var(--black);
-  opacity: 0.7;
+  color: var(--green);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
@@ -88,6 +97,7 @@
   font-size: 2.6rem;
   font-weight: 700;
   line-height: 120%;
+  width: 80%;
   hyphens: auto;
   color: var(--text3);
 }
@@ -101,9 +111,15 @@
 .answer {
   color: var(--text2);
   margin-top: 2rem;
-  font-weight: 500;
   hyphens: auto;
   width: 100%;
+}
+
+@media screen and (max-width: 1268px) {
+  .bottom {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
 }
 
 @media screen and (max-width: 968px) {
@@ -114,11 +130,21 @@
   .btnContainer {
     width: 100%;
   }
+
+  .bottom {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .top {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 5rem;
+  }
+
+  .bottom {
+    margin-left: 0rem;
+    margin-right: 0rem;
   }
 }
