@@ -10,11 +10,6 @@
   background-color: transparent;
 }
 
-.yellow {
-  background-color: var(--yellow);
-
-}
-
 @media screen and (max-width: 568px) {
   .layout {
     padding-right: 5px;
