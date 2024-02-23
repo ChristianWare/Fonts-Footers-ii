@@ -45,6 +45,7 @@
 
 .span {
   color: var(--green3);
+  line-height: 100%;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: var(--green);
 }
