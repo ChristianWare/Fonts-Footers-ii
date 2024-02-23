@@ -88,9 +88,9 @@
 }
 
 .tertiary:hover {
-  background-color: var(--green);
-  color: var(--green2);
-  border: 1px solid var(--green);
+  background-color: var(--green3);
+  color: var(--green);
+  /* border: 1px solid var(--green3); */
 }
 
 @media screen and (max-width: 568px) {
