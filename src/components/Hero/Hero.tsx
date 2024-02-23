@@ -30,25 +30,25 @@ const Hero = () => {
           </div>
           <div className={styles.leftBottom}>
             <Link
-              href='https://www.linkedin.com/in/christian-ware/'
+              href='https://www.linkedin.com/'
               target='_blank'
               className={styles.detail}
             >
               LinkedIn
             </Link>
             <Link
-              href='https://www.linkedin.com/in/christian-ware/'
+              href='https://www.facebook.com/'
               target='_blank'
               className={styles.detail}
             >
               Facebook
             </Link>
             <Link
-              href='https://github.com/ChristianWare'
+              href='https://instagram.com/'
               target='_blank'
               className={styles.detail}
             >
-              Git Hub
+              Instagram
             </Link>
           </div>
         </div>
