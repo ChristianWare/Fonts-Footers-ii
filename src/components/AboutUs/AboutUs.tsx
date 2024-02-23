@@ -21,60 +21,6 @@ const AboutUs = () => {
   return (
     <section>
       <div className={styles.content}>
-        <div className={styles.textWrapper}>
-          <div className={styles.box}>
-            <p>About Us</p>
-            <Arrow className={styles.icon2} />
-          </div>
-          <div className={styles.box}>
-            <p>About Us</p>
-            <Arrow className={styles.icon2} />
-          </div>
-          <div className={styles.box}>
-            <p>About Us</p>
-            <Arrow className={styles.icon2} />
-          </div>
-          <div className={styles.box}>
-            <p>About Us</p>
-            <Arrow className={styles.icon2} />
-          </div>
-          <div className={styles.box}>
-            <p>About Us</p>
-            <Arrow className={styles.icon2} />
-          </div>
-          <div className={styles.box}>
-            <p>About Us</p>
-            <Arrow className={styles.icon2} />
-          </div>
-          <div className={styles.box}>
-            <p>About Us</p>
-            <Arrow className={styles.icon2} />
-          </div>
-          <div className={styles.box}>
-            <p>About Us</p>
-            <Arrow className={styles.icon2} />
-          </div>
-          <div className={styles.box}>
-            <p>About Us</p>
-            <Arrow className={styles.icon2} />
-          </div>
-          <div className={styles.box}>
-            <p>About Us</p>
-            <Arrow className={styles.icon2} />
-          </div>
-          <div className={styles.box}>
-            <p>About Us</p>
-            <Arrow className={styles.icon2} />
-          </div>
-          <div className={styles.box}>
-            <p>About Us</p>
-            <Arrow className={styles.icon2} />
-          </div>
-          <div className={styles.box}>
-            <p>About Us</p>
-            <Arrow className={styles.icon2} />
-          </div>
-        </div>
         <LayoutWrapper>
           <div className={styles.imgContainer}>
             <Image
