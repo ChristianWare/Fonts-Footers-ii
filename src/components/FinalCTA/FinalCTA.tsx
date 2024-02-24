@@ -11,7 +11,9 @@ const FinalCta = () => {
         <div className={styles.content}>
           <div className={styles.bottom}>
             <div className={styles.left}>
-              <h2 className={styles.heading}>Contact Us</h2>
+              <h2 className={styles.heading}>
+                We&apos;d love to hear from you
+              </h2>
 
               <p className={styles.topText}>
                 Reach out to us today to see how you can begin to take advantage

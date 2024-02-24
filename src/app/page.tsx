@@ -17,7 +17,7 @@ export default function Home() {
       <Hero />
       <ScrollText />
       <Benefits />
-      <ScrollHorizontalText />
+      {/* <ScrollHorizontalText /> */}
       <AboutUs />
       <Features />
       <Process />

@@ -1,120 +1,36 @@
-.content {
-  height: 100%;
-  position: relative;
-  margin-top: 10rem;
-}
-
-.textWrapper {
-  display: flex;
-  justify-content: flex-start;
-  gap: 2rem;
-  overflow: hidden;
-  border-top: 2px solid var(--green);
-  border-bottom: 2px solid var(--green);
-  /* transform: rotate(2deg); */
-  margin-bottom: 5rem;
-}
-
-.textWrapper p {
-  font-size: 2rem;
-  font-weight: 600;
-  white-space: nowrap;
-  color: var(--green);
-  text-transform: uppercase;
-}
-
-.icon2 {
-  width: 15px;
-  height: 15px;
-  transform: rotate(90deg);
-}
-
-.box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  animation: move-rtl 10s linear infinite;
-}
-
-@keyframes move-rtl {
-  0% {
-    transform: translateX(0%);
-  }
-  50% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
+.bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
 }
 
 .imgContainer {
-  display: flex;
-  align-items: stretch;
   position: relative;
-  padding: 2rem;
+  width: 100%;
+  height: 100%;
 }
 
 .img {
-  flex: 1;
+  border-radius: 20px;
   object-fit: cover;
-  border-radius: 20px;
-}
-
-.copyContainer {
-  background-color: var(--white);
-  padding: 2rem;
-  border-radius: 20px;
-  border: 2px solid var(--green);
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 3rem;
-  z-index: 999;
 }
 
 .heading {
-  color: var(--green);
+  font-size: 5rem;
+}
+
+.span {
+  color: var(--green3);
+  line-height: 100%;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--green);
 }
 
 .copy {
-  font-weight: 600;
-  color: var(--green);
-}
-
-.detailContainer {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-
-.icon {
-  width: 20px;
-  height: 20px;
-  transform: rotate(90deg);
-}
-
-.detail {
-  font-weight: 600;
-  color: var(--green);
+  margin-top: 2rem;
+  
 }
 
 .btnContainer {
-  display: grid;
-  /* width: 100%; */
-}
-
-@media screen and (max-width: 1068px) {
-  .copyContainer {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 568px) {
-  .btnContainer {
-    width: 100%;
-  }
+  margin-top: 3rem;
 }

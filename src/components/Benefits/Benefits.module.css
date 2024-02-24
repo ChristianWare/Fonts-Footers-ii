@@ -13,10 +13,26 @@
 .benefitContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
   border: 2px solid var(--green2);
   border-radius: 20px;
   padding: 3rem;
+}
+
+.benefitContainer:nth-child(1) {
+  border-bottom: none;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.benefitContainer:nth-child(2) {
+  border-bottom: none;
+  border-radius: 0px;
+}
+
+.benefitContainer:nth-child(3) {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
 .index {
@@ -46,6 +62,7 @@
   align-items: center;
   justify-content: flex-end;
   width: 100%;
+  margin-top: 3rem;
 }
 
 @media screen and (max-width: 768px) {

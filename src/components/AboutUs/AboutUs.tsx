@@ -20,45 +20,38 @@ const AboutUs = () => {
 
   return (
     <section>
-      <div className={styles.content}>
-        <LayoutWrapper>
-          <div className={styles.imgContainer}>
-            <Image
-              src={House2}
-              alt='Direct Booking Website'
-              fill
-              className={styles.img}
-            />
-            <div className={styles.copyContainer}>
-              <h3 className={styles.heading}>Who are Fonts & Footers?</h3>
-              <p className={styles.copy}>
-                Here at Fonts & Footers, we revolutionize vacation rental
-                property management with personalized, direct booking websites
-                designed to enhance the overall rental experience. Our expertise
-                in the vacation rental industry ensures tailored solutions to
-                maximize your property&apos;s potential. By choosing us, you
-                gain a direct connection with guests, fostering trust and
-                boosting bookings, unlocking the full potential of your vacation
-                rental business.
-              </p>
-              {detailData.map((x, index) => (
-                <div key={index} className={styles.detailContainer}>
-                  <Arrow className={styles.icon} />
-                  <p className={styles.detail}>{x.text}</p>
-                </div>
-              ))}
-              <div className={styles.btnContainer}>
-                <Button
-                  text='More About us'
-                  href='/about'
-                  btnType='primaryii'
-                  arrow
-                />
-              </div>
+      <LayoutWrapper>
+        <div className={styles.bottom}>
+          <div className={styles.left}>
+            <div className={styles.imgContainer}>
+              <Image src={House2} alt='image' fill className={styles.img} />
             </div>
           </div>
-        </LayoutWrapper>
-      </div>
+          <div className={styles.right}>
+            <h2 className={styles.heading}>
+              About <br />
+              <span className={styles.span}>Fonts & Footers</span>
+            </h2>
+            <p className={styles.copy}>
+              Here at Fonts & Footers, we revolutionize vacation rental property
+              management with personalized, direct booking websites designed to
+              enhance the overall rental experience. Our expertise in the
+              vacation rental industry ensures tailored solutions to maximize
+              your property&apos;s potential. By choosing us, you gain a direct
+              connection with guests, fostering trust and boosting bookings,
+              unlocking the full potential of your vacation rental business.
+            </p>
+            <div className={styles.btnContainer}>
+              <Button
+                text='More About us'
+                href='/about'
+                btnType='primaryii'
+                arrow
+              />
+            </div>
+          </div>
+        </div>
+      </LayoutWrapper>
     </section>
   );
 };
