@@ -23,15 +23,23 @@ const AboutUs = () => {
       <LayoutWrapper>
         <div className={styles.bottom}>
           <div className={styles.left}>
+            <div className={styles.headingContainerii}>
+              <h2 className={styles.heading}>
+                About <br />
+                <span className={styles.span}>Fonts & Footers</span>
+              </h2>
+            </div>
             <div className={styles.imgContainer}>
               <Image src={House2} alt='image' fill className={styles.img} />
             </div>
           </div>
           <div className={styles.right}>
-            <h2 className={styles.heading}>
-              About <br />
-              <span className={styles.span}>Fonts & Footers</span>
-            </h2>
+            <div className={styles.headingContainer}>
+              <h2 className={styles.heading}>
+                About <br />
+                <span className={styles.span}>Fonts & Footers</span>
+              </h2>
+            </div>
             <p className={styles.copy}>
               Here at Fonts & Footers, we revolutionize vacation rental property
               management with personalized, direct booking websites designed to
