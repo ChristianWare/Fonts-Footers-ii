@@ -51,7 +51,7 @@ const AboutUs = () => {
                 <Button
                   text='More About us'
                   href='/about'
-                  btnType='primary'
+                  btnType='primaryii'
                   arrow
                 />
               </div>

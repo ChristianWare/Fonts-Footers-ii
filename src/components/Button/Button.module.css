@@ -38,7 +38,7 @@
   position: absolute;
   top: 5px;
   right: 6px;
-  
+
   transition: all 0.1s ease-in-out;
 }
 
@@ -51,17 +51,29 @@
   background-color: var(--green3);
   border: 2px solid var(--green);
 }
+.primaryii {
+  color: var(--green3);
+  background-color: var(--green);
+  border: 2px solid var(--green);
+}
+
+.primaryii:hover {
+  color: var(--green);
+  background-color: transparent;
+  border: 2px solid var(--green);
+}
+
+.primary:hover {
+  background-color: var(--green);
+  color: var(--green3);
+  border: 2px solid var(--green3);
+}
 
 .primaryNav {
   color: var(--green);
   background-color: var(--green3);
   border: 2px solid var(--green);
   padding: 2px 30px;
-}
-
-.primary:hover {
-  background-color: var(--green);
-  color: var(--tan);
 }
 
 .secondary {
@@ -88,9 +100,9 @@
 }
 
 .tertiary:hover {
-  background-color: var(--green3);
+  background-color: var(--tan);
   color: var(--green);
-  /* border: 1px solid var(--green3); */
+  border: 2px solid var(--tan);
 }
 
 @media screen and (max-width: 568px) {

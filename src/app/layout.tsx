@@ -20,11 +20,11 @@ const raleway = Raleway({
   variable: "--raleway",
 });
 
-// const nyghtSerif = localFont({
-//   src: "../../public/fonts/NyghtSerif.otf",
-//   variable: "--nyghtSerif",
-//   display: "swap",
-// });
+const adedisplay = localFont({
+  src: "../../public/fonts/adedisplay.otf",
+  variable: "--adedisplay",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -38,7 +38,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={`${oswald.variable} ${raleway.variable}`}>
+      <body className={`${oswald.variable} ${raleway.variable} ${adedisplay.variable}`}>
         <NoiseBg>
           <Nav />
           {children}

@@ -25,7 +25,7 @@ const Hero = () => {
             offerings.
           </p>
           <div className={styles.btnContainer}>
-            <Button text='Schedule a call' href='/' btnType='primary' arrow />
+            <Button text='Schedule a call' href='/' btnType='primaryii' arrow />
             <Button text='view our work' href='/' btnType='secondary' arrow />
           </div>
           <div className={styles.leftBottom}>
@@ -61,7 +61,7 @@ const Hero = () => {
               className={styles.img}
             />
           </div>
-          <div className={styles.infoBox}>
+          {/* <div className={styles.infoBox}>
             <div className={styles.infoLeft}>
               <ul>
                 <li>Elevate your rental business</li>
@@ -70,58 +70,13 @@ const Hero = () => {
               </ul>
             </div>
             <Link href='/' className={styles.infoRight}>
-              Direct Booking Benefits
+              More Direct Booking Benefits
               <Arrow2 className={styles.icon2} />
             </Link>
-          </div>
+          </div> */}
         </div>
       </section>
     </LayoutWrapper>
   );
 };
 export default Hero;
-
-{
-  /* <LayoutWrapper>
-  <div className={styles.top}>
-    <div className={styles.topLeft}>
-      <div className={styles.arrowContainer}>
-        <ArrowCluster />
-      </div>
-      <p className={styles.copy}>
-        Tired of relying solely on platforms like Airbnb or VRBO? The Fonts &
-        Footers web design agency empowers property owners to take control of
-        their bookings with a custom website to showcase thier unique offerings.
-      </p>
-    </div>
-    <div className={styles.topRight}>
-      <div className={styles.arrowContainerii}>
-        <ArrowCluster />
-      </div>
-      <h1 className={styles.heading}>
-        <span className={styles.span}>Direct Booking</span> Solutions
-      </h1>
-    </div>
-  </div>
-  <div className={styles.bottom}>
-    <div className={styles.imgContainer}>
-      <Image
-        src={Img1}
-        alt='Direct Booking Website'
-        fill
-        className={styles.img}
-      />
-    </div>
-    <div className={styles.bottomRight}>
-      <div className={styles.bottomRight1}>
-        <Arrow2 className={styles.icon2} />
-        CTA One
-      </div>
-      <div className={styles.bottomRight2}>
-        <Arrow2 className={styles.icon2} />
-        CTA Two
-      </div>
-    </div>
-  </div>
-</LayoutWrapper>; */
-}

@@ -19,8 +19,8 @@
 
 .projectTitle {
   color: var(--green);
-  margin-bottom: 2rem;
-  text-decoration: underline;
+  margin-bottom: 1rem;
+  /* text-decoration: underline; */
 }
 
 .stats {

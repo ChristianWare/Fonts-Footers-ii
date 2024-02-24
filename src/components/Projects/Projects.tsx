@@ -56,7 +56,7 @@ const Projects = () => {
                 </div>
               </div> */}
               <div className={styles.btnContainer}>
-                <Button text='live site' href='/' btnType='primary' arrow />
+                <Button text='live site' href='/' btnType='primaryii' arrow />
                 <Button
                   text='more details'
                   href='/'

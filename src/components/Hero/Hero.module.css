@@ -89,6 +89,10 @@
   font-weight: 600;
 }
 
+.infoLeft {
+  background-color: var(--green3);
+}
+
 .infoLeft ul {
   display: flex;
   flex-direction: column;
