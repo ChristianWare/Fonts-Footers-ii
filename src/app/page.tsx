@@ -10,6 +10,7 @@ import Projects from "@/components/Projects/Projects";
 import Faqs from "@/components/Faqs/Faqs";
 import BlogSection from "@/components/BlogSection/BlogSection";
 import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
+import Testimonials from "@/components/Testimonials/Testimonials";
 
 export default function Home() {
   return (
@@ -17,12 +18,12 @@ export default function Home() {
       <Hero />
       <ScrollText />
       <Benefits />
-      {/* <ScrollHorizontalText /> */}
       <AboutUs />
       <Features />
       <Process />
       <Pricing />
       <Projects />
+      <Testimonials />
       <Faqs />
       <BlogSection />
     </main>
