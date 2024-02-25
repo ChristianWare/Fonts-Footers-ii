@@ -3,7 +3,7 @@ import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Projects.module.css";
 import Image from "next/image";
 import ArrowCluster from "../ArrowCluster/ArrowCluster";
-import Button from "../Button/Button";
+import Link from "next/link";
 
 const Projects = () => {
   return (
@@ -29,10 +29,18 @@ const Projects = () => {
               </div>
               <div className={styles.rightBottom}>
                 <div className={styles.rbLeft}>
-                  <h3 className={styles.titleii}>More Details</h3>
+                  <Link href='/' className={styles.titleii}>
+                    More Details
+                  </Link>
                 </div>
                 <div className={styles.rbRight}>
-                  <h3 className={styles.titleii}>Live Site</h3>
+                  <Link
+                    href={x.href}
+                    target='_blank'
+                    className={styles.titleii}
+                  >
+                    Live Site
+                  </Link>
                 </div>
               </div>
             </div>

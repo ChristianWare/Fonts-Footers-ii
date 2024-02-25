@@ -73,6 +73,12 @@
 
 .titleii {
   text-align: center;
+  font-family: var(--oswald);
+  text-transform: uppercase;
+  font-size: 3.1rem;
+  line-height: 130%;
+  font-weight: 600;
+  letter-spacing: -1px;
 }
 
 @media screen and (max-width: 968px) {
