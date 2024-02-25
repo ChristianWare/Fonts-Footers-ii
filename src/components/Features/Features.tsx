@@ -3,7 +3,7 @@ import styles from "./Features.module.css";
 import { features } from "@/lib/data";
 import Image from "next/image";
 import Button from "../Button/Button";
-import House2 from "../../../public/images/house2.png";
+import House from "../../../public/images/hero2.png";
 
 const Features = () => {
   return (
@@ -31,7 +31,7 @@ const Features = () => {
           <div className={styles.left}>
             <div className={styles.box1}>
               <Image
-                src={House2}
+                src={House}
                 alt='Direct Booking Website'
                 fill
                 className={styles.img}
