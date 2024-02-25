@@ -4,6 +4,7 @@ import styles from "./Projects.module.css";
 import Image from "next/image";
 import ArrowCluster from "../ArrowCluster/ArrowCluster";
 import Link from "next/link";
+import Button from "../Button/Button";
 
 const Projects = () => {
   return (
@@ -46,6 +47,9 @@ const Projects = () => {
             </div>
           </div>
         ))}
+        <div className={styles.btnContainer}>
+          <Button text='see all projects' href='/' btnType='primaryii' arrow />
+        </div>
       </LayoutWrapper>
     </section>
   );

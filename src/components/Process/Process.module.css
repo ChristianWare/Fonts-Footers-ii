@@ -132,3 +132,38 @@
     text-align: center;
   }
 }
+
+@media screen and (max-width: 568px) {
+  .left {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .processContainer {
+    padding: 2rem;
+  }
+
+  .processContainer:nth-child(1),
+  .processContainer:nth-child(6) {
+    display: none;
+  }
+
+  .processContainer:nth-child(2) {
+    top:4px;
+  }
+
+  .processContainer:nth-child(3) {
+    left: 0px;
+    top: 2px;
+    border-radius: 0px;
+  }
+
+  .processContainer:nth-child(4) {
+    right: 2px;
+    top: 0;
+    border-radius: 0px;
+  }
+
+  .processContainer:nth-child(5) {
+    left: 0px !important;
+    bottom: 2px;
+  }
+}
