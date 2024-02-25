@@ -35,7 +35,7 @@ const Pricing = () => {
                   <Button
                     text='Explore Plan'
                     href='/'
-                    btnType='primary'
+                    btnType='primaryii'
                     arrow
                   />
                 </div>

@@ -285,26 +285,6 @@ export const projects = [
       "This client is in the hospitality industry and they recently purchased an investment property for short term rental. They needed a website to perfectly reflect their online brand and allow their guests to easily book future stays.",
     href: "https://www.livemas.dev/",
     github: "https://github.com/ChristianWare/Tacobell-ii",
-    status: [
-      {
-        id: 350,
-        statTitle: "Traffic 45%",
-        statDetails:
-          "This website saw an increase in web traffic by a very impressive 45%",
-      },
-      {
-        id: 351,
-        statTitle: "Traffic 45%",
-        statDetails:
-          "This website saw an increase in web traffic by a very impressive 45%",
-      },
-      {
-        id: 352,
-        statTitle: "Traffic 45%",
-        statDetails:
-          "This website saw an increase in web traffic by a very impressive 45%",
-      },
-    ],
   },
 ] as const;
 
