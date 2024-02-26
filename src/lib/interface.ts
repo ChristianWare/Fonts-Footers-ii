@@ -50,4 +50,6 @@ export interface fullBlog {
   title: string;
   content: any;
   titleImage: any;
+  smallDescription: string;
+  publishedAt: string;
 }

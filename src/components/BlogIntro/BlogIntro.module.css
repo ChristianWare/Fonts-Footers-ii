@@ -1,0 +1,48 @@
+.top {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-bottom: 3rem;
+}
+
+.heading {
+  width: 70%;
+}
+
+.desc {
+  width: 60%;
+  margin-bottom: 3rem;
+}
+
+.imgContainer {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.img {
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.authorDate {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.author {
+  border-radius: 50%;
+  border: 2px solid var(--green);
+  padding: 0.5rem;
+}
+
+.authName {
+  font-weight: 900;
+  line-height: 100%;
+}
+
+.date {
+  font-weight: 400;
+}
