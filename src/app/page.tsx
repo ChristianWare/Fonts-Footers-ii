@@ -12,6 +12,15 @@ import BlogSection from "@/components/BlogSection/BlogSection";
 import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
 import Testimonials from "@/components/Testimonials/Testimonials";
 
+async function getData() {
+  const query = `
+    *[_type == 'blog'] | order(_createdAt desc) {
+      title,
+      smallDescription,
+      "currentSlug": slug.current
+    }`;
+}
+
 export default function Home() {
   return (
     <main>
