@@ -18,12 +18,12 @@
   flex: 1;
   gap: 2rem;
   border-radius: 50px;
-  padding: 8px 12px;
+  padding: 12px;
   padding-right: 45px;
   position: relative;
   z-index: 1;
   width: 100%;
-  line-height: 147%;
+  line-height: 107%;
   transition: background-color 0.1s ease-in, color 0.1s ease-in;
 }
 

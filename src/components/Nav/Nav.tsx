@@ -44,7 +44,7 @@ function Nav() {
       href: "/",
     },
     {
-      text: "About",
+      text: "About US",
       href: "/about",
     },
     {

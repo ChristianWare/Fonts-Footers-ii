@@ -1,8 +1,5 @@
-import Image from "next/image";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./BlogSection.module.css";
-import { urlFor } from "@/lib/sanity";
-import Button from "../Button/Button";
 import BlogCard from "../BlogCard/BlogCard";
 import { simpleBlogCard } from "@/lib/interface";
 
