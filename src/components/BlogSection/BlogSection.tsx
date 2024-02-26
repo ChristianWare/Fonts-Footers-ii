@@ -1,7 +1,16 @@
+import Image from "next/image";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./BlogSection.module.css";
+import { urlFor } from "@/lib/sanity";
+import Button from "../Button/Button";
+import BlogCard from "../BlogCard/BlogCard";
+import { simpleBlogCard } from "@/lib/interface";
 
-const BlogSection = () => {
+interface BlogSectionProps {
+  data: simpleBlogCard[];
+}
+
+const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
   return (
     <section>
       <LayoutWrapper>
@@ -9,7 +18,10 @@ const BlogSection = () => {
           <h2 className={styles.header}>Insights from Fonts & Footers</h2>
         </div>
         <div className={styles.bottom}>
-          
+          {data?.length > 0 &&
+            data?.map((data: simpleBlogCard) => (
+              <BlogCard data={data} key={data.title} />
+            ))}
         </div>
       </LayoutWrapper>
     </section>

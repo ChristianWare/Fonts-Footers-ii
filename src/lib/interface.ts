@@ -6,7 +6,7 @@ export interface ButtonProps {
   btnType: string;
   target?: string;
   download?: boolean;
-  arrow?: boolean
+  arrow?: boolean;
 }
 
 export interface PageIntroProps {
@@ -35,4 +35,12 @@ export interface BlogData {
 export interface BlogPreviewProps {
   mapData: BlogData;
   key: number;
+}
+
+export interface simpleBlogCard {
+  title: string;
+  smallDescription: string;
+  currentSlug: string;
+  publishedAt: string;
+  titleImage: any;
 }
