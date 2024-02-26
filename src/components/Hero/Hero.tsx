@@ -57,22 +57,10 @@ const Hero = () => {
               src={Img1}
               alt='Direct Booking Website'
               fill
+              priority
               className={styles.img}
             />
           </div>
-          {/* <div className={styles.infoBox}>
-            <div className={styles.infoLeft}>
-              <ul>
-                <li>Elevate your rental business</li>
-                <li>Stand out from the crowd</li>
-                <li>Maximize your profits with our tailored solutions</li>
-              </ul>
-            </div>
-            <Link href='/' className={styles.infoRight}>
-              More Direct Booking Benefits
-              <Arrow2 className={styles.icon2} />
-            </Link>
-          </div> */}
         </div>
       </section>
     </LayoutWrapper>
