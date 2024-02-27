@@ -4,8 +4,8 @@
   margin-bottom: 3rem;
 }
 
-.heading {
-  width: 70%;
+.arrowContainer {
+  margin-left: auto;
 }
 
 .desc {
@@ -45,4 +45,22 @@
 
 .date {
   font-weight: 400;
+}
+
+@media screen and (max-width: 968px) {
+  .top {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+
+  .arrowContainer {
+    margin-left: 0px;
+  }
+
+  .desc {
+    width: 100%;
+  }
 }

@@ -1,7 +1,7 @@
 .bottom {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-gap: 3rem;
+  grid-gap: 5rem;
 }
 
 .left p {
@@ -22,4 +22,41 @@
 .img {
   object-fit: cover;
   border-radius: 20px;
+}
+
+.right span {
+  font-weight: 600;
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.btnContainer {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  width: 100%;
+}
+
+@media screen and (max-width: 968px) {
+  .bottom {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .rightContent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .rightContent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .rightContent {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

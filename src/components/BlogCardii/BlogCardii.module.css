@@ -1,32 +1,17 @@
-.header {
-  color: var(--green);
-}
-
-.top {
-  margin-bottom: 5rem;
-}
-
-.bottom {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 3rem;
-}
-
 .card {
-  border: 2px solid var(--green);
-  padding: 2rem;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   gap: 2rem;
+  margin-bottom: 5rem;
 }
 
 .imgContainer {
   position: relative;
   width: 100%;
-  height: 275px;
+  height: 240px;
 }
 
 .img {
@@ -34,9 +19,19 @@
   border-radius: 20px;
 }
 
+.titleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .blogTitle {
   font-family: var(--raleway);
   font-size: 2rem;
+  text-transform: none;
+  letter-spacing: normal;
+  gap: 2rem;
 }
 
 .desc {
@@ -50,5 +45,6 @@
 
 .btnContainer {
   display: grid;
+  grid-template-columns: repeat(1, 1fr);
   width: 100%;
 }

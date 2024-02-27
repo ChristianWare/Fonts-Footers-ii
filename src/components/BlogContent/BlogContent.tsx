@@ -5,7 +5,7 @@ import { PortableText } from "@portabletext/react";
 import Image from "next/image";
 import { urlForImage } from "@/lib/image";
 import LayoutWrapper from "../LayoutWrapper";
-import BlogCard from "../BlogCard/BlogCard";
+import BlogCardii from "../BlogCardii/BlogCardii";
 
 interface BlogContentProps {
   data: fullBlog;
@@ -32,10 +32,13 @@ const BlogContent: React.FC<BlogContentProps> = ({ data, dataii }) => {
             />
           </div>
           <div className={styles.right}>
-            {dataii?.length > 0 &&
-              dataii?.map((data: simpleBlogCard) => (
-                <BlogCard data={data} key={data.title} />
-              ))}
+            <span>Popular Posts</span>
+            <div className={styles.rightContent}>
+              {dataii?.length > 0 &&
+                dataii?.map((data: simpleBlogCard) => (
+                  <BlogCardii data={data} key={data.title} />
+                ))}
+            </div>
             <div>See All Blog Posts</div>
           </div>
         </div>

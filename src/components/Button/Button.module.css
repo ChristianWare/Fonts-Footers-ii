@@ -80,6 +80,11 @@
   border: 2px solid var(--green);
 }
 
+.secondaryii {
+  color: #729187;
+  border: 2px solid #729187;
+}
+
 .secondaryNav {
   color: var(--green);
   border: 2px solid var(--green);
@@ -87,7 +92,7 @@
 }
 
 .secondary:hover,
-.secondaryNav:hover {
+.secondaryNav:hover, .secondaryii:hover {
   background-color: var(--green3);
   color: var(--green);
 }

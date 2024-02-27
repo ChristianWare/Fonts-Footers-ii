@@ -17,7 +17,9 @@ const BlogIntro: React.FC<BlogIntroProps> = ({ text, desc, src, date }) => {
     <section className={styles.container}>
       <div className={styles.top}>
         <h1 className={styles.heading}>{text}</h1>
-        <ArrowCluster />
+        <div className={styles.arrowContainer}>
+          <ArrowCluster />
+        </div>
       </div>
       <div className={styles.bottom}>
         <p className={styles.desc}>{desc}</p>
