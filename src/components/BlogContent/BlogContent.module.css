@@ -2,10 +2,46 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-gap: 5rem;
+  margin-top: 10rem;
+}
+
+.left {
+  max-width: 750px;
+}
+
+.left h2,
+.left h3 {
+  /* font-family: var(--raleway); */
+  /* text-transform: none; */
+  margin-bottom: 3rem;
+  line-height: 100%;
+  font-weight: 600;
+}
+
+.left h2 {
+  font-size: 3.2rem;
+}
+
+.left h3 {
+  font-size: 2.4rem;
+  line-height: 120%;
 }
 
 .left p {
   margin-bottom: 3rem;
+}
+
+.left ul {
+  margin-bottom: 3rem;
+}
+
+.left li {
+  font-family: var(--raleway);
+  font-weight: 600;
+  hyphens: auto;
+  font-size: 1.6rem;
+  line-height: 150%;
+  margin-left: 3rem;
 }
 
 .left blockquote {

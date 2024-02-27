@@ -37,6 +37,8 @@
 .blogTitle {
   font-family: var(--raleway);
   font-size: 2rem;
+  letter-spacing: -.5px;
+  text-transform: none;
 }
 
 .desc {

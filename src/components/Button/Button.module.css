@@ -72,7 +72,7 @@
   color: var(--green);
   background-color: var(--green3);
   border: 2px solid var(--green);
-  padding: 2px 30px;
+  padding: 5px 30px;
 }
 
 .secondary {
@@ -88,7 +88,7 @@
 .secondaryNav {
   color: var(--green);
   border: 2px solid var(--green);
-  padding: 2px 30px;
+  padding: 5px 30px;
 }
 
 .secondary:hover,
