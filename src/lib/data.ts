@@ -375,3 +375,83 @@ export const footer = [
     href: "/blog",
   },
 ] as const;
+
+export const reviews = [
+  {
+    id: 71,
+    review:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum obcaecati, repudiandae nisi veniam dicta repellat quos temporibus assumenda eaque qui similique fugit reprehenderit alias necessitatibus natus, explicabo nostrum dignissimos distinctio!",
+    reviewer: "Linda R.",
+    company: "Gilbert, AZ",
+  },
+  {
+    id: 72,
+    review:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum obcaecati, repudiandae nisi veniam dicta repellat quos temporibus assumenda eaque qui similique fugit reprehenderit alias necessitatibus natus, explicabo nostrum dignissimos distinctio!",
+    reviewer: "Linda R.",
+    company: "Gilbert, AZ",
+  },
+  {
+    id: 73,
+    review:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum obcaecati, repudiandae nisi veniam dicta repellat quos temporibus assumenda eaque qui similique fugit reprehenderit alias necessitatibus natus, explicabo nostrum dignissimos distinctio!",
+    reviewer: "Linda R.",
+    company: "Gilbert, AZ",
+  },
+  {
+    id: 74,
+    review:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum obcaecati, repudiandae nisi veniam dicta repellat quos temporibus assumenda eaque qui similique fugit reprehenderit alias necessitatibus natus, explicabo nostrum dignissimos distinctio!",
+    reviewer: "Linda R.",
+    company: "Gilbert, AZ",
+  },
+  {
+    id: 75,
+    review:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum obcaecati, repudiandae nisi veniam dicta repellat quos temporibus assumenda eaque qui similique fugit reprehenderit alias necessitatibus natus, explicabo nostrum dignissimos distinctio!",
+    reviewer: "Linda R.",
+    company: "Gilbert, AZ",
+  },
+  {
+    id: 76,
+    review:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum obcaecati, repudiandae nisi veniam dicta repellat quos temporibus assumenda eaque qui similique fugit reprehenderit alias necessitatibus natus, explicabo nostrum dignissimos distinctio!",
+    reviewer: "Linda R.",
+    company: "Gilbert, AZ",
+  },
+  {
+    id: 77,
+    review:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum obcaecati, repudiandae nisi veniam dicta repellat quos temporibus assumenda eaque qui similique fugit reprehenderit alias necessitatibus natus, explicabo nostrum dignissimos distinctio!",
+    reviewer: "Linda R.",
+    company: "Gilbert, AZ",
+  },
+  {
+    id: 78,
+    review:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum obcaecati, repudiandae nisi veniam dicta repellat quos temporibus assumenda eaque qui similique fugit reprehenderit alias necessitatibus natus, explicabo nostrum dignissimos distinctio!",
+    reviewer: "Linda R.",
+    company: "Gilbert, AZ",
+  },
+  {
+    id: 79,
+    review:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum obcaecati, repudiandae nisi veniam dicta repellat quos temporibus assumenda eaque qui similique fugit reprehenderit alias necessitatibus natus, explicabo nostrum dignissimos distinctio!",
+    reviewer: "Linda R.",
+    company: "Gilbert, AZ",
+  },
+  {
+    id: 80,
+    review:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum obcaecati, repudiandae nisi veniam dicta repellat quos temporibus assumenda eaque qui similique fugit reprehenderit alias necessitatibus natus, explicabo nostrum dignissimos distinctio!",
+    reviewer: "Linda R.",
+    company: "Gilbert, AZ",
+  },
+  {
+    id: 81,
+    review:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum obcaecati, repudiandae nisi veniam dicta repellat quos temporibus assumenda eaque qui similique fugit reprehenderit alias necessitatibus natus, explicabo nostrum dignissimos distinctio!",
+    reviewer: "Linda R.",
+    company: "Gilbert, AZ",
+  },
+] as const;
