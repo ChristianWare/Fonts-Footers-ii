@@ -6,6 +6,12 @@
   gap: 2rem;
 }
 
+.center {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .copy {
   width: 60%;
 }
