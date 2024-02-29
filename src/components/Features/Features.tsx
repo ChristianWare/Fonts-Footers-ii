@@ -40,11 +40,11 @@ const Features = () => {
             <div className={styles.box2}>
               <h4>Lorem ipsum dolor sit amet earum illo</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Explicabo necessitatibus voluptatem perferendis aperiam aliquid
-                dolor optio harum obcaecati nesciunt nihil aut earum illo ipsum
-                nobis quo cum eveniet quasi tempore, vero sapiente quos beatae
-                provident accusantium similique.
+                Having certain expected features on your direct booking vacation
+                rental website is crucial for ensuring a positive user
+                experience and maximizing conversions. Meeting these expectations not
+                only enhances customer satisfaction but also establishes
+                credibility and fosters repeat business.
               </p>
               <div className={styles.btnContainer}>
                 <Button
