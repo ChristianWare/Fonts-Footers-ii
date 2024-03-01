@@ -5,6 +5,8 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Button from "../Button/Button";
 import TopNav from "../TopNav/TopNav";
+import { usePathname } from "next/navigation";
+import Arrow from "../../../public/icons/arrow.svg";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,10 +41,10 @@ function Nav() {
   }, [isOpen]);
 
   const navItems = [
-    {
-      text: "Home",
-      href: "/",
-    },
+    // {
+    //   text: "Home",
+    //   href: "/",
+    // },
     {
       text: "About US",
       href: "/about",
@@ -69,6 +71,8 @@ function Nav() {
     },
   ];
 
+  const pathname = usePathname();
+
   return (
     <header className={styles.header}>
       <TopNav />
@@ -80,6 +84,18 @@ function Nav() {
               : `${styles.navMenu} ${styles.active}`
           }
         >
+          <li className={styles.navItem} onClick={() => setIsOpen(false)}>
+            <Link href='/' className={styles.navItem}>
+              {pathname === "/" ? (
+                <>
+                  <Arrow className={styles.icon} /> 
+                  Home
+                </>
+              ) : (
+                "Home"
+              )}
+            </Link>
+          </li>
           {navItems.map((navItem, index) => (
             <li
               key={index}
@@ -87,7 +103,13 @@ function Nav() {
               onClick={() => setIsOpen(false)}
             >
               <Link href={navItem.href} className={styles.navItem}>
-                {navItem.text}
+                {pathname.includes(navItem.href) && (
+                  <>
+                    <Arrow className={styles.icon} />
+                    {navItem.text}
+                  </>
+                )}
+                {!pathname.includes(navItem.href) && navItem.text}{" "}
               </Link>
             </li>
           ))}
