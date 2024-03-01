@@ -12,6 +12,7 @@ import BlogSection from "@/components/BlogSection/BlogSection";
 import Testimonials from "@/components/Testimonials/Testimonials";
 import { client } from "@/lib/sanity";
 import { simpleBlogCard } from "@/lib/interface";
+import WhatWeDo from "@/components/WhatWeDo/WhatWeDo";
 
 async function getData() {
   const query = `
@@ -39,6 +40,7 @@ export default async function Home() {
       <ScrollText />
       <Benefits />
       <AboutUs />
+      <WhatWeDo />
       <Features />
       <Process />
       <Pricing />
