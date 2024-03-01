@@ -1,9 +1,14 @@
 import ContentPadding from "../ContentPadding/ContentPadding";
 import styles from "./LayoutWrapper.module.css";
 
-const LayoutWrapper = ({ children }: { children: React.ReactNode }) => {
+interface Props {
+  color?: string;
+  children: React.ReactNode;
+}
+
+const LayoutWrapper = ({ children, color = "" }: Props) => {
   return (
-    <div className={styles.layout}>
+    <div className={`${styles.layout} ${styles[color]}`}>
       <ContentPadding>{children}</ContentPadding>
     </div>
   );

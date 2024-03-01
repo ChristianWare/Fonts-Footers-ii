@@ -1,18 +1,19 @@
 .header {
-  border-bottom: 2px solid var(--green);
-  /* background-color: var(--tan); */
+  border-bottom: 1px solid var(--green2);
 }
 
 .navbar {
-  max-width: 1500px;
+  max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 1rem 8rem;
+  padding: 1rem 5.2rem;
   z-index: 1000;
+  border-left: 1px solid var(--green2);
+  border-right: 1px solid var(--green2);
 }
 
 .navBarLeft {

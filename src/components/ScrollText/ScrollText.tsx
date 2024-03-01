@@ -44,7 +44,7 @@ const ScrollText = () => {
 
   return (
     <div className={styles.bgColor}>
-      <LayoutWrapper>
+      <LayoutWrapper color='green3'>
         <div className={styles.content}>
           <div className={styles.reveal}>
             <div ref={triggerRef}>

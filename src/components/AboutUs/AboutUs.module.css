@@ -1,3 +1,8 @@
+.parent {
+  border-top: 1px solid var(--green2);
+  border-bottom: 1px solid var(--green2);
+}
+
 .bottom {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -58,7 +63,7 @@
   .heading {
     text-align: center;
   }
-  
+
   .btnContainer {
     display: grid;
     width: 100%;

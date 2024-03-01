@@ -19,7 +19,7 @@ const AboutUs = () => {
   ];
 
   return (
-    <section>
+    <section className={styles.parent}>
       <LayoutWrapper>
         <div className={styles.bottom}>
           <div className={styles.left}>

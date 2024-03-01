@@ -7,7 +7,7 @@ import Person from '../../../public/icons/person.svg'
 const Testimonials = () => {
   return (
     <section className={styles.container}>
-      <LayoutWrapper>
+      <LayoutWrapper color="tan">
         <div className={styles.content}>
           <div className={styles.top}>
             <h2 className={styles.heading}>Reviews</h2>

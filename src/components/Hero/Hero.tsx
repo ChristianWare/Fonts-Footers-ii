@@ -27,7 +27,7 @@ const Hero = () => {
             <Button text='Schedule a call' href='/' btnType='primaryii' arrow />
             <Button text='view our work' href='/' btnType='secondary' arrow />
           </div>
-          <div className={styles.leftBottom}>
+          {/* <div className={styles.leftBottom}>
             <Link
               href='https://www.linkedin.com/'
               target='_blank'
@@ -49,7 +49,7 @@ const Hero = () => {
             >
               Instagram
             </Link>
-          </div>
+          </div> */}
         </div>
         <div className={styles.right}>
           <div className={styles.imgContainer}>

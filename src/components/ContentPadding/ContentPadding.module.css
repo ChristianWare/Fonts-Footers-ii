@@ -1,12 +1,12 @@
 .container {
-  padding: 5rem;
+  padding: 2rem;
   padding-top: 4rem;
   background-color: transparent;
 }
 
 @media screen and (max-width: 870px) {
   .container {
-    padding: 3rem;
+    padding: 1rem;
     padding-top: 5rem;
   }
 }
