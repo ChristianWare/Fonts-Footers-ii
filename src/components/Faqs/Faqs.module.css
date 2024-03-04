@@ -116,18 +116,15 @@
   line-height: 120%;
   width: 80%;
   hyphens: auto;
-  color: var(--text3);
   transition: all 0.2s ease-in;
 }
 
 .index {
-  color: var(--text);
   margin-right: 1rem;
   font-size: 2.6rem;
 }
 
 .answer {
-  color: var(--text2);
   margin-top: 2rem;
   hyphens: auto;
   width: 80%;

@@ -5,6 +5,9 @@ import Img1 from "../../../public/images/house3.png";
 import ArrowCluster from "../ArrowCluster/ArrowCluster";
 import Button from "../Button/Button";
 import Link from "next/link";
+import Insta from "../../../public/icons/instagram.svg";
+import LinkedIn from "../../../public/icons/linkedin.svg";
+import Facebook from "../../../public/icons/facebook.svg";
 
 const Hero = () => {
   return (
@@ -27,29 +30,29 @@ const Hero = () => {
             <Button text='Schedule a call' href='/' btnType='primaryii' arrow />
             <Button text='view our work' href='/' btnType='secondary' arrow />
           </div>
-          {/* <div className={styles.leftBottom}>
+          <div className={styles.leftBottom}>
             <Link
               href='https://www.linkedin.com/'
               target='_blank'
               className={styles.detail}
             >
-              LinkedIn
+              <LinkedIn className={styles.icon} width={15} height={15} />
             </Link>
             <Link
               href='https://www.facebook.com/'
               target='_blank'
               className={styles.detail}
             >
-              Facebook
+              <Facebook className={styles.icon} width={15} height={15} />
             </Link>
             <Link
               href='https://instagram.com/'
               target='_blank'
               className={styles.detail}
             >
-              Instagram
+              <Insta className={styles.icon} width={15} height={15} />
             </Link>
-          </div> */}
+          </div>
         </div>
         <div className={styles.right}>
           <div className={styles.imgContainer}>

@@ -1,0 +1,17 @@
+
+
+
+.child {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5rem;
+  /* padding-left: 5rem; */
+  padding-bottom: 1rem;
+}
+
+
+
+.detail {
+  font-weight: 600;
+}
