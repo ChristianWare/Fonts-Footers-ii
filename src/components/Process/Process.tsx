@@ -13,11 +13,11 @@ const Process = () => {
           <div className={styles.left}>
             {process.map((x, index) => (
               <div key={x.id} className={styles.processContainer}>
-                {x.icon && (
+                {/* {x.icon && (
                   <div className={styles.houseContainer}>
                     <House className={styles.icon} />
                   </div>
-                )}
+                )} */}
                 <h3 className={styles.processName}>
                   {x.processName.length >= 1 ? index + "." : ""} {x.processName}
                 </h3>
@@ -29,7 +29,7 @@ const Process = () => {
           </div>
           <div className={styles.right}>
             <h2 className={styles.heading}>
-              Our Process for building direct booking websites
+              Our Process When working with you
             </h2>
           </div>
         </div>

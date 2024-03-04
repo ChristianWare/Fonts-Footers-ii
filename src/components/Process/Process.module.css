@@ -71,6 +71,7 @@
 .processName {
   color: var(--tan);
   font-size: 2.6rem;
+  text-transform: capitalize;
 }
 
 .processDescription {
@@ -147,7 +148,7 @@
   }
 
   .processContainer:nth-child(2) {
-    top:4px;
+    top: 4px;
   }
 
   .processContainer:nth-child(3) {

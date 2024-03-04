@@ -13,19 +13,17 @@ const Features = () => {
           <div className={styles.left}>
             <div className={styles.lTop}>
               <h2 className={styles.heading}>
-                Features of our direct booking websites
+                Our direct booking websites include:
               </h2>
-              {features.slice(0, 4).map((x, index) => (
-                <div key={index} className={styles.featureContainer}>
-                  <div className={styles.iconContainer}>
+              <div className={styles.test}>
+                {features.slice(0, 4).map((x, index) => (
+                  <div key={index} className={styles.featureContainer}>
                     <Image src={x.icon} alt='icon' width={30} height={30} />
-                  </div>
-                  <div className={styles.box}>
                     <h3 className={styles.service}>{x.service}</h3>
                     <p className={styles.description}>{x.description}</p>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
           <div className={styles.left}>
@@ -42,9 +40,9 @@ const Features = () => {
               <p>
                 Having certain expected features on your direct booking vacation
                 rental website is crucial for ensuring a positive user
-                experience and maximizing conversions. Meeting these expectations not
-                only enhances customer satisfaction but also establishes
-                credibility and fosters repeat business.
+                experience and maximizing conversions. Meeting these
+                expectations not only enhances customer satisfaction but also
+                establishes credibility and fosters repeat business.
               </p>
               <div className={styles.btnContainer}>
                 <Button

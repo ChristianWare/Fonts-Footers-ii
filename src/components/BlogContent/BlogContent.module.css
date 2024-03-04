@@ -16,18 +16,19 @@
   margin-bottom: 3rem;
   line-height: 120%;
   font-weight: 600;
-  font-family: var(--raleway);
-  text-transform: capitalize;
 }
 
 .left h2 {
   font-size: 4rem;
+  text-transform: uppercase;
 }
 
 .left h3 {
   font-size: 2.4rem;
   line-height: 120%;
   width: fit-content;
+  font-family: var(--raleway);
+  text-transform: capitalize;
 }
 
 .left p {
