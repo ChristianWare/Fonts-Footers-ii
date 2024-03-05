@@ -85,6 +85,7 @@
 .box2 {
   background-color: var(--green);
   display: flex;
+  align-items: flex-start;
   flex-direction: column;
   gap: 5rem;
 }
@@ -92,6 +93,7 @@
 .box2 p,
 .box2 h4 {
   color: var(--tan);
+  text-align: left;
 }
 
 .box2 p {
