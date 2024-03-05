@@ -1,9 +1,13 @@
+
+
 .header {
   border-bottom: 1px solid var(--green2);
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .navbar {
-  max-width: 1500px;
+  max-width: 1440px;
   margin-right: auto;
   margin-left: auto;
   display: flex;
@@ -16,14 +20,6 @@
   border-right: 1px solid var(--green2);
 }
 
-.navBarLeft {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5rem;
-}
-
-.menuItemsGroup,
 .navMenu {
   display: flex;
   justify-content: space-between;
@@ -221,6 +217,11 @@
 }
 
 @media screen and (max-width: 568px) {
+  .header {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  
   .navbar {
     padding: 10px 5px;
   }

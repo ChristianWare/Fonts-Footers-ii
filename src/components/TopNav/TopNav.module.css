@@ -1,10 +1,11 @@
 .header {
   border-bottom: 1px solid var(--green2);
-  /* background-color: var(--tan); */
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .content {
-  max-width: 1500px;
+  max-width: 1440px;
   margin-right: auto;
   margin-left: auto;
   display: flex;
@@ -32,6 +33,11 @@
 }
 
 @media screen and (max-width: 568px) {
+  .header {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  
   .content {
     padding: 10px 15px;
   }
