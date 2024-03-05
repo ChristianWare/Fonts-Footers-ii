@@ -24,13 +24,6 @@ const Features = () => {
                   </div>
                 ))}
               </div>
-              {/* {features.slice(5, 6).map((x, index) => (
-                  <div key={index} className={styles.featureContainerii}>
-                    <Image src={x.icon} alt='icon' width={30} height={30} />
-                    <h3 className={styles.service}>{x.service}</h3>
-                    <p className={styles.description}>{x.description}</p>
-                  </div>
-                ))} */}
             </div>
           </div>
           <div className={styles.left}>

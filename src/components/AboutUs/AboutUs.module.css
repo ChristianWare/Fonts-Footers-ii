@@ -6,7 +6,8 @@
 .bottom {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 3rem;
+  grid-gap: 5rem;
+  padding: 10rem;
 }
 
 .headingContainerii {
@@ -40,10 +41,17 @@
   margin-top: 3rem;
 }
 
+@media screen and (max-width: 1068px) {
+  .bottom {
+    padding: 5rem;
+  }
+}
+
 @media screen and (max-width: 968px) {
   .bottom {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 1rem;
+    padding: 0rem;
   }
 
   .headingContainerii {
