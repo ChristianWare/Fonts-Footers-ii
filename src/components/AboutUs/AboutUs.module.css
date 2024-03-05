@@ -37,11 +37,24 @@
   margin-top: 2rem;
 }
 
-.btnContainer {
-  margin-top: 3rem;
+.detailDataBox {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
-@media screen and (max-width: 1068px) {
+.icon {
+  width: 30px;
+  height: 30px;
+  color: var(--green);
+}
+
+.btnContainer {
+  /* margin-top: 3rem; */
+}
+
+@media screen and (max-width: 1268px) {
   .bottom {
     padding: 5rem;
   }

@@ -2,21 +2,33 @@ import LayoutWrapper from "../LayoutWrapper";
 import styles from "./AboutUs.module.css";
 import Image from "next/image";
 import House2 from "../../../public/images/house2.png";
-import Arrow from "../../../public/icons/arrow.svg";
 import Button from "../Button/Button";
+import Focus from "../../../public/icons/focus.svg";
 
 const AboutUs = () => {
-  const detailData = [
-    {
-      text: "Tailored Solutions for Your Property",
-    },
-    {
-      text: "Maximize Revenue with Direct Bookings",
-    },
-    {
-      text: "Professional Guidance Every Step of the Way",
-    },
-  ];
+  // const detailData = [
+  //   {
+  //     title: "Client Focus",
+  //     description: "Your success is our commitment",
+  //     icon: <Focus />,
+  //   },
+  //   {
+  //     title: "Integrity",
+  //     description: "Your success is our commitment",
+  //     icon: <Focus />,
+  //   },
+  //   {
+  //     title: "Innovation",
+  //     description:
+  //       "Innovation is our driving force, propelling continuous improvement and a forward-thinking approach. ",
+  //     icon: <Focus />,
+  //   },
+  //   {
+  //     title: "Creativity",
+  //     description: "Your success is our commitment",
+  //     icon: <Focus />,
+  //   },
+  // ];
 
   return (
     <section className={styles.parent}>
@@ -49,6 +61,15 @@ const AboutUs = () => {
               connection with guests, fostering trust and boosting bookings,
               unlocking the full potential of your vacation rental business.
             </p>
+            <div className={styles.detailDataBox}>
+              {/* {detailData.map((x, index) => (
+                <div key={index}>
+                  <div className={styles.icon}>{x.icon}</div>
+                  <h3>{x.title}</h3>
+                  <p>{x.description}</p>
+                </div>
+              ))} */}
+            </div>
             <div className={styles.btnContainer}>
               <Button
                 text='More About us'
