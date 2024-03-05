@@ -21,6 +21,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: 1rem;
+  padding-bottom: 2rem;
 }
 
 .imgContainer {
@@ -40,6 +41,10 @@
   letter-spacing: -0.5px;
   text-transform: none;
   margin-top: 1rem;
+}
+
+.blogTitle:hover {
+  text-decoration: underline;
 }
 
 .desc {

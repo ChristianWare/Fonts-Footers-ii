@@ -1,5 +1,6 @@
 .container {
   background-color: var(--green);
+  /* padding-bottom: 10rem; */
 }
 
 .content {
@@ -7,6 +8,7 @@
   flex-direction: column-reverse;
   gap: 5rem;
   padding-top: 10rem;
+  /* padding-bottom: 10rem; */
 }
 
 .left {
@@ -134,7 +136,7 @@
   }
 }
 
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 668px) {
   .left {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -166,5 +168,16 @@
   .processContainer:nth-child(5) {
     left: 0px !important;
     bottom: 2px;
+  }
+
+  .cta {
+    text-align: center;
+    width: 100%;
+  }
+
+  .btnContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
   }
 }

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./BlogCard.module.css";
 import Button from "../Button/Button";
 import { urlFor } from "@/lib/sanity";
@@ -12,14 +13,18 @@ const BlogCard = ({ data }: Props) => {
   return (
     <article className={styles.card}>
       <div className={styles.imgContainer}>
-        <Image
-          src={urlFor(data.titleImage).url()}
-          alt='image'
-          fill
-          className={styles.img}
-        />
+        <Link href={`/blog/${data?.currentSlug}`}>
+          <Image
+            src={urlFor(data.titleImage).url()}
+            alt='image'
+            fill
+            className={styles.img}
+          />
+        </Link>
       </div>
-      <h3 className={styles.blogTitle}>{data?.title}</h3>
+      <Link href={`/blog/${data?.currentSlug}`} className={styles.link}>
+        <h3 className={styles.blogTitle}>{data?.title}</h3>
+      </Link>
       <p className={styles.desc}>
         {new Date(data?.publishedAt).toDateString()}
       </p>
@@ -28,7 +33,7 @@ const BlogCard = ({ data }: Props) => {
         <Button
           text='Read Article'
           href={`/blog/${data?.currentSlug}`}
-          btnType='primaryii'
+          btnType='secondary'
           arrow
         />
       </div>

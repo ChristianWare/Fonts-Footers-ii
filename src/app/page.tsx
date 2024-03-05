@@ -15,7 +15,7 @@ import { simpleBlogCard } from "@/lib/interface";
 
 async function getData() {
   const query = `
-    *[_type == 'blog'] | order(_createdAt desc) {
+    *[_type == 'blog'][0...2] | order(_createdAt desc) {
       title,
       smallDescription,
       publishedAt,
