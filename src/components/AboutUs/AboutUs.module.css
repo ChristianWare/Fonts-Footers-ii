@@ -50,10 +50,6 @@
   color: var(--green);
 }
 
-.btnContainer {
-  /* margin-top: 3rem; */
-}
-
 @media screen and (max-width: 1268px) {
   .bottom {
     padding: 5rem;

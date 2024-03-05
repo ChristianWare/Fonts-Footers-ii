@@ -56,6 +56,14 @@
   width: 100%;
   padding: 5rem;
   transition: all 0.2s ease-in;
+  text-align: center;
+  color: var(--green);
+  font-family: var(--oswald);
+  text-transform: uppercase;
+  font-size: 3.1rem;
+  line-height: 130%;
+  font-weight: 600;
+  letter-spacing: -1px;
 }
 
 .rbLeft:hover,
@@ -76,10 +84,8 @@
   width: 100%;
   padding: 5rem;
   transition: all 0.2s ease-in;
-}
-
-.titleii {
   text-align: center;
+  color: var(--green);
   font-family: var(--oswald);
   text-transform: uppercase;
   font-size: 3.1rem;

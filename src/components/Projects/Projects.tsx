@@ -29,20 +29,12 @@ const Projects = () => {
                 <p className={styles.desc}>{x.description}</p>
               </div>
               <div className={styles.rightBottom}>
-                <div className={styles.rbLeft}>
-                  <Link href='/' className={styles.titleii}>
+                <Link href='/' className={styles.rbLeft}>
                     More Details
-                  </Link>
-                </div>
-                <div className={styles.rbRight}>
-                  <Link
-                    href={x.href}
-                    target='_blank'
-                    className={styles.titleii}
-                  >
-                    Live Site
-                  </Link>
-                </div>
+                </Link>
+                <Link href={x.href} target='_blank' className={styles.rbRight}>
+                  Live Site
+                </Link>
               </div>
             </div>
           </div>
