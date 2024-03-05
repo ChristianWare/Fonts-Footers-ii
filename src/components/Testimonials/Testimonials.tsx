@@ -7,16 +7,19 @@ import Person from '../../../public/icons/person.svg'
 const Testimonials = () => {
   return (
     <section className={styles.container}>
-      <LayoutWrapper color="tan">
+      <LayoutWrapper color='tan'>
         <div className={styles.content}>
-          <div className={styles.top}>
-            <h2 className={styles.heading}>Reviews</h2>
-            <p className={styles.copy}>
-              Read What Our Clients Have to Say About Their Journey with Us
-            </p>
-            <StarCluster color='tan' />
-          </div>
           <div className={styles.bottom}>
+            <div className={styles.top}>
+              <h2 className={styles.heading}>Reviews</h2>
+              <p className={styles.copy}>
+                Read What Our Clients Have to Say About Their Journey with Us.
+                We use the latest technologies and tools to ensure that our
+                solutions are scalable, efficient, and secure. Our team follows
+                agile methodologies to deliver projects on time and on budget.
+              </p>
+              <StarCluster color='tan' />
+            </div>
             <div className={styles.cardContainer1}>
               {reviews.map((x) => (
                 <div key={x.id} className={styles.card}>
