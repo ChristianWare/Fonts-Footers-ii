@@ -5,6 +5,7 @@ import "./globals.css";
 import NoiseBg from "@/components/NoiseBg/NoiseBg";
 import Nav from "@/components/Nav/Nav";
 import FinalCta from "@/components/FinalCTA/FinalCTA";
+import CallToAction from "@/components/CallToAction/CallToAction";
 
 const oswald = Oswald({
   subsets: ["latin"],
@@ -43,6 +44,7 @@ export default function RootLayout({
         <NoiseBg>
           <Nav />
           {children}
+          <CallToAction />
           <FinalCta />
         </NoiseBg>
       </body>
