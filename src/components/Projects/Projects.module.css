@@ -1,3 +1,7 @@
+.contentParent {
+  padding-top: 5rem;
+}
+
 .top {
   margin-bottom: 7rem;
   display: flex;

@@ -7,7 +7,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 5rem;
-  padding: 10rem;
+  /* padding: 5rem 0rem 10rem 0rem; */
 }
 
 .headingContainerii {
@@ -53,6 +53,7 @@
 @media screen and (max-width: 1268px) {
   .bottom {
     padding: 5rem;
+    padding-bottom: 15rem;
   }
 }
 
@@ -60,7 +61,6 @@
   .bottom {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 1rem;
-    padding: 0rem;
   }
 
   .headingContainerii {

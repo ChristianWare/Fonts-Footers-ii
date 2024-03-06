@@ -4,7 +4,6 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  padding: 10rem 0rem;
 }
 
 .heading {
@@ -37,7 +36,7 @@
 @media screen and (max-width: 568px) {
   .btnContainer {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     width: 100%;
   }
 }

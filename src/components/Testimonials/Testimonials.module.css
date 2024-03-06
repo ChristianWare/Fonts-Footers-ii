@@ -1,6 +1,9 @@
 .container {
   background-color: var(--green);
-  margin-bottom: 8rem;
+}
+
+.content {
+  padding-top: 5rem;
 }
 
 .heading,
@@ -28,6 +31,7 @@
   margin-top: 8rem;
   border: 2px solid var(--tan);
   padding: 5rem;
+  /* padding-bottom: 15rem; */
   border-radius: 20px;
 }
 
@@ -121,7 +125,8 @@
     justify-content: center;
   }
 
-  .heading, .copy {
+  .heading,
+  .copy {
     text-align: center;
   }
 }

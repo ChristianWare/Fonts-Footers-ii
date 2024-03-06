@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-gap: 10rem;
+  padding-top: 5rem;
 }
 
 .heading {
@@ -121,10 +122,8 @@
     grid-gap: 2rem;
   }
 
-  .featureContainer {
-    gap: 2rem;
-    border: 2px solid var(--green2);
-    padding: 2rem;
+  .featureContainer:nth-child(1),
+  .featureContainer:nth-child(4) {
     border-radius: 20px;
   }
 }
@@ -137,8 +136,34 @@
 
   .test {
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
+    grid-gap: 0rem;
     margin-bottom: 2rem;
+  }
+
+  .featureContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2.5rem;
+  }
+
+  .featureContainer:nth-child(1),
+  .featureContainer:nth-child(4) {
+    border: 2px solid var(--green2);
+    border-radius: 20px;
+  }
+
+  .featureContainer:nth-child(1) {
+    border-bottom-right-radius: 0px;
+  }
+
+  .featureContainer:nth-child(4) {
+    border-top-left-radius: 0px;
+    position: relative;
+    left: -2px;
+    top: -2px;
   }
 
   .heading {
@@ -163,5 +188,14 @@
 @media screen and (max-width: 568px) {
   .test {
     grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+
+  .featureContainer:nth-child(1),
+  .featureContainer:nth-child(2),
+  .featureContainer:nth-child(3),
+  .featureContainer:nth-child(4) {
+    border: 2px solid var(--green2);
+    border-radius: 20px;
   }
 }
