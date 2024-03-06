@@ -50,6 +50,8 @@ export default function RootLayout({
             style: {
               border: "2px solid #295f4e",
               borderRadius: "50px",
+              textAlign: "center",
+              whiteSpace: "nowrap",
             },
           }}
         />
