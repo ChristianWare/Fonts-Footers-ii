@@ -1,12 +1,15 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
+const SEND_EMAIL = "chris.ware.dev@gmail.com";
+const PASSWORD = "eayw aboq lrso ugqx";
+
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
   port: 465,
   auth: {
-    user: process.env.SEND_EMAIL,
-    pass: process.env.PASS,
+    user: SEND_EMAIL,
+    pass: PASSWORD,
   },
 });
 
@@ -14,10 +17,17 @@ export async function POST(request: Request) {
   const data = await request.json();
   const info = await transporter.sendMail({
     from: data.email, // sender address
-    to: process.env.SEND_EMAIL, // list of receivers
-    subject: "Hello ✔", // Subject line
-    text: "Hello world?", // plain text body
-    html: `<b>Name: ${data?.fullName}</b><br/><b>Name: ${data?.email}</b><br/><b>Budget: ${data?.budget}</b><br/><b>Description: ${data?.description}</b><b>Contact No: ${data?.number}</b>`, // html body
+    to: SEND_EMAIL, // list of receivers
+    subject: "Fonts & Footers Contact Form Submission", // Subject line
+    text: "Hello world?",
+    html: `<b>First Name:</b> <br/> 
+            ${data?.firstName} <br/> <br/>
+            <b>Last Name:</b> <br/> 
+            ${data?.lastName} <br/> <br/>
+            <b>Email:</b> </b> <br/> 
+            ${data?.email} <br/> <br/>
+            <b>Message:</b> </b> 
+            ${data?.message}`,
   });
 
   return NextResponse.json({
