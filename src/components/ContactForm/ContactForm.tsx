@@ -56,7 +56,7 @@ const ContactForm = () => {
                 />
                 {errors.firstName && (
                   <span className={styles.error}>
-                    *** This field is required
+                    *** First Name is required
                   </span>
                 )}
               </div>
@@ -69,7 +69,7 @@ const ContactForm = () => {
                 />
                 {errors.lastName && (
                   <span className={styles.error}>
-                    *** This field is required
+                    *** Last Name is required
                   </span>
                 )}
               </div>
@@ -91,9 +91,7 @@ const ContactForm = () => {
                   maxLength={500}
                 />
                 {errors.email && (
-                  <span className={styles.error}>
-                    *** This field is required
-                  </span>
+                  <span className={styles.error}>*** Email is required</span>
                 )}
               </div>
 
@@ -108,9 +106,7 @@ const ContactForm = () => {
                   placeholder='No solicitations, please.'
                 />
                 {errors.message && (
-                  <span className={styles.error}>
-                    *** This field is required
-                  </span>
+                  <span className={styles.error}>*** Message is required</span>
                 )}
               </div>
             </div>
