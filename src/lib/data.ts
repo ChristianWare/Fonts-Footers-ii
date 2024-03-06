@@ -186,7 +186,16 @@ export const pricing = [
     for: "Your Direct Booking Starting Point",
     description:
       "Ideal for individual owners with one property who are looking to get started.",
-    price: 175,
+    prices: [
+      {
+        id: 1,
+        price: "175 / month",
+      },
+      {
+        id: 2,
+        price: "1,680 / Year",
+      },
+    ],
     includes: [
       {
         id: 26.1,
@@ -217,7 +226,16 @@ export const pricing = [
     for: "Advanced Savings & Strategy",
     description:
       "Perfect for growing businesses with 2 to 9 properties that need additional features.",
-    price: 249,
+    prices: [
+      {
+        id: 1,
+        price: "175 / Month",
+      },
+      {
+        id: 2,
+        price: "1,680 / Year",
+      },
+    ],
     includes: [
       {
         id: 26.1,
@@ -248,7 +266,16 @@ export const pricing = [
     for: "All-Inclusive Direct Booking Suite",
     description:
       "For large-scale organizations with at least 10 or more rental properties.",
-    price: "349",
+    prices: [
+      {
+        id: 1,
+        price: "175 / Month",
+      },
+      {
+        id: 2,
+        price: "1,680 / Year",
+      },
+    ],
     includes: [
       {
         id: 28.1,
