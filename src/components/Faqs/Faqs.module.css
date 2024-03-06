@@ -49,6 +49,7 @@
 
 .img {
   object-fit: cover;
+  border: 1px solid var(--green2);
   border-radius: 20px;
 }
 

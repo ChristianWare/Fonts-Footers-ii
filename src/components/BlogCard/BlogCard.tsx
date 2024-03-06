@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./BlogCard.module.css";
-import Button from "../Button/Button";
 import { urlFor } from "@/lib/sanity";
 import { simpleBlogCard } from "@/lib/interface";
 
@@ -29,14 +28,7 @@ const BlogCard = ({ data }: Props) => {
         {new Date(data?.publishedAt).toDateString()}
       </p>
       <p className={styles.desc}>{data?.smallDescription}</p>
-      <div className={styles.btnContainer}>
-        <Button
-          text='Read Article'
-          href={`/blog/${data?.currentSlug}`}
-          btnType='secondary'
-          arrow
-        />
-      </div>
+      
     </article>
   );
 };
