@@ -107,8 +107,9 @@ textarea:focus {
   outline: none;
 }
 
-.blog {
-  font-size: 1.6rem;
+.toastFont {
+  font-family: var(--raleway);
+  font-weight: 700;
 }
 
 /* ::-webkit-scrollbar-thumb {

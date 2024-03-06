@@ -31,9 +31,9 @@ const ContactForm = () => {
     }).then((res) => res.json());
 
     if (response.messageId) {
-      toast("Email send successfully!!!");
+      toast.success("Email sent successfully");
     } else {
-      toast("Please try again sometime");
+      toast.error("Please try again sometime");
     }
 
     reset();

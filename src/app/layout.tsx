@@ -6,6 +6,7 @@ import NoiseBg from "@/components/NoiseBg/NoiseBg";
 import Nav from "@/components/Nav/Nav";
 import FinalCta from "@/components/FinalCTA/FinalCTA";
 import CallToAction from "@/components/CallToAction/CallToAction";
+import { Toaster } from "react-hot-toast";
 
 const oswald = Oswald({
   subsets: ["latin"],
@@ -41,6 +42,17 @@ export default function RootLayout({
       <body
         className={`${oswald.variable} ${raleway.variable} ${adedisplay.variable}`}
       >
+        <Toaster
+          position='top-center'
+          toastOptions={{
+            className: "toastFont",
+            duration: 6000,
+            style: {
+              border: "2px solid #295f4e",
+              borderRadius: "50px",
+            },
+          }}
+        />
         <NoiseBg>
           <Nav />
           {children}
