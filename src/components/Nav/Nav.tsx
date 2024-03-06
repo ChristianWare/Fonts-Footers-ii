@@ -46,16 +46,16 @@ function Nav() {
     //   href: "/",
     // },
     {
-      text: "About US",
-      href: "/about",
-    },
-    {
       text: "Benefits",
       href: "/benefits",
     },
     {
-      text: "Features",
+      text: "How It Works",
       href: "/features",
+    },
+    {
+      text: "About US",
+      href: "/about",
     },
     {
       text: "FAQS",

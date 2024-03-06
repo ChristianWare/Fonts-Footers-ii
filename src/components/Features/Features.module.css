@@ -8,6 +8,7 @@
 .heading {
   color: var(--green);
   margin-bottom: 5rem;
+  width: 60%;
 }
 
 .test {
@@ -115,7 +116,17 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .heading {
+    width: 80%;
+  }
+}
+
 @media screen and (max-width: 1068px) {
+  .heading {
+    width: 100%;
+  }
+
   .content {
     grid-template-columns: repeat(2, 1fr);
   }
