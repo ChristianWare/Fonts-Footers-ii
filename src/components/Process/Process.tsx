@@ -22,7 +22,13 @@ const Process = () => {
             ))}
           </div>
           <div className={styles.right}>
-            <h2 className={styles.heading}>Stages of work</h2>
+            <h2 className={styles.heading}>4 Stages of work</h2>
+            <p className={styles.copy}>
+              With these steps, you not only streamline the contract process but
+              also provide a dedicated and efficient platform for communication,
+              fostering a transparent and collaborative relationship with the
+              vacation rental owner.
+            </p>
           </div>
         </div>
         <div className={styles.ctaContainer}>
