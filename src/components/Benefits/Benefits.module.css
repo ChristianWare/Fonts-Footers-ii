@@ -54,6 +54,8 @@
   color: var(--green);
   line-height: 80%;
   text-transform: capitalize;
+  font-family: var(--raleway);
+  font-weight: 700;
 }
 
 .description {
