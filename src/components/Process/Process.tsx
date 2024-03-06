@@ -22,7 +22,7 @@ const Process = () => {
             ))}
           </div>
           <div className={styles.right}>
-            <h2 className={styles.heading}>4 Stages of work</h2>
+            <h2 className={styles.heading}>A Simple, 4-part process</h2>
             <p className={styles.copy}>
               With these steps, you not only streamline the contract process but
               also provide a dedicated and efficient platform for communication,

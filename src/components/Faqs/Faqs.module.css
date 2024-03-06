@@ -37,7 +37,7 @@
 .bottom {
   margin-top: 10rem;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
 }
 
@@ -138,8 +138,15 @@
   margin-top: 2rem;
   hyphens: auto;
   width: 80%;
-  margin-left: 5rem;
+  /* margin-left: 5rem; */
 }
+
+@media screen and (max-width: 1268px) {
+  .bottom {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
 
 @media screen and (max-width: 968px) {
   .copy {

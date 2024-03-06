@@ -72,7 +72,7 @@ const Faqs = () => {
                 >
                   <div className={styles.headingArrowContainer}>
                     <div className={styles.h3Container}>
-                      <span className={styles.index}>0{i + 1}. </span>
+                      {/* <span className={styles.index}>0{i + 1}. </span> */}
                       <h3 className={styles.question} lang='en'>
                         {x.question}
                       </h3>

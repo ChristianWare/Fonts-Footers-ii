@@ -11,9 +11,7 @@ const FinalCta = () => {
         <div className={styles.content}>
           <div className={styles.bottom}>
             <div className={styles.left}>
-              <h2 className={styles.heading}>
-                We&apos;d love to hear from you
-              </h2>
+              <h2 className={styles.heading}>Let&apos;s Chat</h2>
               <p className={styles.topText}>
                 Reach out to us today to see how you can begin to take advantage
                 of the benefits of having your own direct booking website for
