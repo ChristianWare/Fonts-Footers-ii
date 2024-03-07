@@ -1,5 +1,5 @@
 .content {
-  padding-top: 5rem;
+  padding-top: 10rem;
 }
 
 .top {
@@ -10,7 +10,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 5rem;
+  margin-bottom: 2rem;
+  /* margin: 5rem; */
 }
 
 .heading {
@@ -50,7 +51,6 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 3rem;
 }
-
 
 .bottom {
   /* margin-top: 10rem; */
@@ -170,9 +170,9 @@
     width: 100%;
   }
 
-  .btnContainer {
+  /* .btnContainer {
     width: 100%;
-  }
+  } */
 
   .bottom {
     grid-template-columns: repeat(1, 1fr);
@@ -183,9 +183,10 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .top {
+@media screen and (max-width: 668px) {
+  .btnContainer {
+    display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 5rem;
+    width: 100%;
   }
 }

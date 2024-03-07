@@ -7,7 +7,7 @@ import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Faqs.module.css";
 import { faqs } from "@/lib/data";
 import Arrow2 from "../../../public/icons/arrow2.svg";
-import House from "../../../public/images/house4.png";
+import House from "../../../public/images/faqs.png";
 import Image from "next/image";
 
 const Faqs = () => {
@@ -38,26 +38,21 @@ const Faqs = () => {
                 If you don&apos;t see your questions here, call us any time.
               </p>
             </div>
-              <div className={styles.btnContainer}>
-                <div className={styles.btnChild}>
-                  <Button
-                    text='See all Questions'
-                    href='/faq'
-                    btnType='primary'
-                    arrow
-                  />
-                </div>
-                <div className={styles.btnChild}>
-                  <Button
-                    text='Contact Us'
-                    href='/contact'
-                    btnType='tertiary'
-                    arrow
-                  />
-                </div>
-              </div>
-            <div className={styles.topRight}>
+            <div className={styles.btnContainer}>
+              <Button
+                text='See all Questions'
+                href='/faq'
+                btnType='primary'
+                arrow
+              />
+              <Button
+                text='Contact Us'
+                href='/contact'
+                btnType='tertiary'
+                arrow
+              />
             </div>
+            <div className={styles.topRight}></div>
           </div>
           <div className={styles.bottom}>
             <div className={styles.left}>
