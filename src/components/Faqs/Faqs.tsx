@@ -27,6 +27,9 @@ const Faqs = () => {
         <div className={styles.content}>
           <div className={styles.top}>
             <div className={styles.topLeft}>
+              <div className={styles.arrowContainer}>
+                <ArrowCluster />
+              </div>
               <h2 className={styles.heading}>
                 Direct Booking Frequently asked questions
               </h2>
@@ -34,27 +37,26 @@ const Faqs = () => {
                 Here are some commonly asked questions and their answers below.
                 If you don&apos;t see your questions here, call us any time.
               </p>
-              <div className={styles.arrowContainer}>
-                <ArrowCluster />
-              </div>
             </div>
+              <div className={styles.btnContainer}>
+                <div className={styles.btnChild}>
+                  <Button
+                    text='See all Questions'
+                    href='/faq'
+                    btnType='primary'
+                    arrow
+                  />
+                </div>
+                <div className={styles.btnChild}>
+                  <Button
+                    text='Contact Us'
+                    href='/contact'
+                    btnType='tertiary'
+                    arrow
+                  />
+                </div>
+              </div>
             <div className={styles.topRight}>
-              <div className={styles.btnContainer}>
-                <Button
-                  text='See all FAQs'
-                  href='/faq'
-                  btnType='primary'
-                  arrow
-                />
-              </div>
-              <div className={styles.btnContainer}>
-                <Button
-                  text='Contact Us'
-                  href='/contact'
-                  btnType='tertiary'
-                  arrow
-                />
-              </div>
             </div>
           </div>
           <div className={styles.bottom}>

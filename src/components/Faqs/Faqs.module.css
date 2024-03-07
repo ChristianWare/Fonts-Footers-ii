@@ -6,19 +6,35 @@
   padding: 3rem;
   background-color: var(--green);
   border-radius: 20px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem;
 }
 
 .heading {
   color: var(--tan);
   margin-bottom: 3rem;
+  text-align: center;
 }
 
 .copy {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   color: var(--tan);
   width: 60%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.arrowContainer {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .topRight {
@@ -31,11 +47,13 @@
 
 .btnContainer {
   display: grid;
-  width: 60%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
 }
 
+
 .bottom {
-  margin-top: 10rem;
+  /* margin-top: 10rem; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
@@ -61,7 +79,7 @@
 
 .qaContainer {
   padding: 3rem 2rem;
-  border: 2px solid var(--green);
+  border: 1px solid var(--green);
   border-radius: 20px;
   width: 100%;
   cursor: pointer;
@@ -96,7 +114,7 @@
   height: 35px;
   background-color: var(--green3);
   border-radius: 50%;
-  border: 2px solid var(--green);
+  border: 1px solid var(--green);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -146,7 +164,6 @@
     grid-template-columns: 1fr 2fr;
   }
 }
-
 
 @media screen and (max-width: 968px) {
   .copy {

@@ -27,7 +27,7 @@
 
 .featureContainer:nth-child(1),
 .featureContainer:nth-child(4) {
-  border: 2px solid var(--green2);
+  border: 1px solid var(--green2);
   border-radius: 20px;
 }
 
@@ -38,8 +38,8 @@
 .featureContainer:nth-child(4) {
   border-top-left-radius: 0px;
   position: relative;
-  left: -2px;
-  top: -2px;
+  left: -1px;
+  top: -1px;
 }
 
 .icon {
@@ -165,7 +165,7 @@
 
   .featureContainer:nth-child(1),
   .featureContainer:nth-child(4) {
-    border: 2px solid var(--green2);
+    border: 1px solid var(--green2);
     border-radius: 20px;
   }
 
@@ -176,8 +176,8 @@
   .featureContainer:nth-child(4) {
     border-top-left-radius: 0px;
     position: relative;
-    left: -2px;
-    top: -2px;
+    left: -1px;
+    top: -1px;
   }
 
   .heading {
@@ -209,7 +209,7 @@
   .featureContainer:nth-child(2),
   .featureContainer:nth-child(3),
   .featureContainer:nth-child(4) {
-    border: 2px solid var(--green2);
+    border: 1px solid var(--green2);
     border-radius: 20px;
   }
 }
