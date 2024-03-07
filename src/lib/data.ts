@@ -225,7 +225,7 @@ export const pricing = [
     plan: "Advanced",
     for: "6 to 10 properties",
     description:
-      "Perfect for growing businesses with 6 to 10 properties that need additional features.",
+      "For growing businesses with 6 to 10 properties that need additional features.",
     prices: [
       {
         id: 1,

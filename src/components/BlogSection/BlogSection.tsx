@@ -10,7 +10,7 @@ interface BlogSectionProps {
 
 const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
   return (
-    <section>
+    <section className={styles.parent}>
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.top}>

@@ -5,7 +5,7 @@ import styles from "./CallToAction.module.css";
 
 const CallToAction = () => {
   return (
-    <section>
+    <section className={styles.parent}>
       <LayoutWrapper>
         <section className={styles.content}>
           <div className={styles.arrowContainer}>
