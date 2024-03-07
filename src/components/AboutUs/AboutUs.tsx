@@ -1,7 +1,7 @@
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./AboutUs.module.css";
 import Image from "next/image";
-import House2 from "../../../public/images/house2.png";
+import House2 from "../../../public/images/house3.png";
 import Button from "../Button/Button";
 import Focus from "../../../public/icons/focus.svg";
 
