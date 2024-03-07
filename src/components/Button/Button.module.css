@@ -33,7 +33,7 @@
   height: 30px;
   background-color: var(--green3);
   border-radius: 50%;
-  border: 2px solid var(--green);
+  border: 1px solid var(--green);
   padding: 5px;
   color: var(--green);
   position: absolute;
@@ -49,46 +49,46 @@
 .primary {
   color: var(--green);
   background-color: var(--green3);
-  border: 2px solid var(--green);
+  border: 1px solid var(--green);
 }
 .primaryii {
   color: var(--green3);
   background-color: var(--green);
-  border: 2px solid var(--green);
+  border: 1px solid var(--green);
 }
 
 .primaryii:hover {
   color: var(--green);
   background-color: transparent;
-  border: 2px solid var(--green);
+  border: 1px solid var(--green);
 }
 
 .primary:hover {
   background-color: var(--green);
   color: var(--green3);
-  border: 2px solid var(--green3);
+  border: 1px solid var(--green3);
 }
 
 .primaryNav {
   color: var(--green);
   background-color: var(--green3);
-  border: 2px solid var(--green);
+  border: 1px solid var(--green);
   padding: 5px 30px;
 }
 
 .secondary {
   color: var(--green);
-  border: 2px solid var(--green);
+  border: 1px solid var(--green);
 }
 
 .secondaryii {
   color: #729187;
-  border: 2px solid #729187;
+  border: 1px solid #729187;
 }
 
 .secondaryNav {
   color: var(--green);
-  border: 2px solid var(--green);
+  border: 1px solid var(--green);
   padding: 5px 30px;
 }
 
@@ -101,13 +101,13 @@
 .tertiary {
   color: var(--tan);
   background-color: var(--green);
-  border: 2px solid var(--tan);
+  border: 1px solid var(--tan);
 }
 
 .tertiary:hover {
   background-color: var(--tan);
   color: var(--green);
-  border: 2px solid var(--tan);
+  border: 1px solid var(--tan);
 }
 
 @media screen and (max-width: 568px) {

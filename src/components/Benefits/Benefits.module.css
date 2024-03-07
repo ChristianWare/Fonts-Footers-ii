@@ -68,7 +68,7 @@
   margin-top: 3rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 968px) {
   .bottom {
     margin: 3rem;
   }
