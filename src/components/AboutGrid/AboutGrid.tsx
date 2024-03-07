@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const AboutGrid = () => {
   return (
-    <section>
+    <section className={styles.parent}>
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.grid}>
