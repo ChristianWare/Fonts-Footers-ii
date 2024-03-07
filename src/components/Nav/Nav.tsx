@@ -50,7 +50,7 @@ function Nav() {
       href: "/benefits",
     },
     {
-      text: "How It Works",
+      text: "Features",
       href: "/features",
     },
     {

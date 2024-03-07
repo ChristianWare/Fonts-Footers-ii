@@ -16,9 +16,9 @@
 .text {
   line-height: 90%;
   text-transform: uppercase;
-  letter-spacing: -3px;
+  letter-spacing: -2px;
   width: 75%;
-  font-size: 5.5rem;
+  font-size: 5rem;
 }
 
 .revealText {

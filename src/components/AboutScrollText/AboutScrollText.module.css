@@ -53,3 +53,10 @@
   font-size: 2rem;
   font-weight: 700;
 }
+
+
+@media screen and (max-width: 968px) {
+  .text {
+    width: 100%;
+  }
+}
