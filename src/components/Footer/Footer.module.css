@@ -68,7 +68,7 @@
   color: var(--tan);
   font: 1.2rem;
   width: 100%;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
 }
 
 .lb2 {
@@ -85,7 +85,7 @@
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 @media screen and (max-width: 1068px) {
@@ -115,8 +115,12 @@
   }
 
   .bottomDesktop {
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .logoContainer {
+    margin-top: 2rem;
   }
 }
 
@@ -153,5 +157,12 @@
 
   .copy {
     text-align: center;
+  }
+
+  .bottomDesktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }

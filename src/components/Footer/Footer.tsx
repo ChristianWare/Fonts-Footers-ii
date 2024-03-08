@@ -31,7 +31,9 @@ const Footer = () => {
           </div>
         </div>
         <div className={styles.bottomDesktop}>
-          <Logo />
+          <div className={styles.logoContainer}>
+            <Logo />
+          </div>
           <div className={styles.bottomLeft}>
             <p className={styles.copy}>
               &copy; 2024 Fonts & Footers - All Rights Reserved
