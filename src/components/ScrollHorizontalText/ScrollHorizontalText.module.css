@@ -3,8 +3,8 @@
 } */
 
 .sliderContainer {
-  border-top: 2px solid var(--green);
-  border-bottom: 2px solid var(--green);
+  border-top: 1px solid var(--green);
+  border-bottom: 1px solid var(--green);
 }
 
 .slider {
@@ -16,7 +16,7 @@
 .slider h2 {
   margin: 0;
   color: var(--green);
-  font-size: 7rem;
+  font-size: 2rem;
   padding-bottom: 1rem;
 }
 
@@ -26,9 +26,10 @@
 }
 
 .icon2 {
-  width: 35px;
-  height: 35px;
+  width: 15px;
+  height: 15px;
   transform: rotate(90deg);
-  margin-bottom: 1rem;
-  margin-left: 1rem;
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 0.5rem;
 }

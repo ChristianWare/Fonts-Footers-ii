@@ -45,85 +45,85 @@ const ScrollHorizontalText = () => {
     <section className={styles.sliderContainer}>
       <div ref={slider} className={styles.slider}>
         <h2 ref={firstText}>
-          About us{" "}
+          Fonts & Footers{" "}
           <span>
             <Arrow className={styles.icon2} />
           </span>{" "}
-          About us{" "}
+          Fonts & Footers{" "}
           <span>
             <Arrow className={styles.icon2} />
           </span>{" "}
-          About us{" "}
+          Fonts & Footers{" "}
           <span>
             <Arrow className={styles.icon2} />
           </span>{" "}
-          About us{" "}
+          Fonts & Footers{" "}
           <span>
             <Arrow className={styles.icon2} />
           </span>{" "}
-          About us{" "}
+          Fonts & Footers{" "}
           <span>
             <Arrow className={styles.icon2} />
           </span>{" "}
-          About us{" "}
+          Fonts & Footers{" "}
           <span>
             <Arrow className={styles.icon2} />
           </span>{" "}
-          About us{" "}
+          Fonts & Footers{" "}
           <span>
             <Arrow className={styles.icon2} />
           </span>{" "}
-          About us{" "}
+          Fonts & Footers{" "}
           <span>
             <Arrow className={styles.icon2} />
           </span>{" "}
-          About us{" "}
+          Fonts & Footers{" "}
           <span>
             <Arrow className={styles.icon2} />
           </span>{" "}
-          About us{" "}
+          Fonts & Footers{" "}
           <span>
             <Arrow className={styles.icon2} />
           </span>{" "}
         </h2>
         <h2 ref={secondText}>
-          About us{" "}
+          Fonts & Footers{" "}
           <span>
             <Arrow className={styles.icon2} />
           </span>{" "}
-          About us{" "}
+          Fonts & Footers{" "}
           <span>
             <Arrow className={styles.icon2} />
           </span>{" "}
-          About us{" "}
+          Fonts & Footers{" "}
           <span>
             <Arrow className={styles.icon2} />
           </span>{" "}
-          About us{" "}
+          Fonts & Footers{" "}
           <span>
             <Arrow className={styles.icon2} />
           </span>{" "}
-          About us{" "}
+          Fonts & Footers{" "}
           <span>
             <Arrow className={styles.icon2} />
           </span>{" "}
-          About us{" "}
+          Fonts & Footers{" "}
           <span>
             <Arrow className={styles.icon2} />
           </span>{" "}
-          About us{" "}
+          Fonts & Footers{" "}
           <span>
             <Arrow className={styles.icon2} />
           </span>{" "}
-          About us{" "}
+          Fonts & Footers{" "}
           <span>
             <Arrow className={styles.icon2} />
           </span>{" "}
-          About us{" "}
+          Fonts & Footers{" "}
           <span>
             <Arrow className={styles.icon2} />
           </span>{" "}
-          About us{" "}
+          Fonts & Footers{" "}
           <span>
             <Arrow className={styles.icon2} />
           </span>{" "}

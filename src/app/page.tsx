@@ -12,6 +12,7 @@ import BlogSection from "@/components/BlogSection/BlogSection";
 import Testimonials from "@/components/Testimonials/Testimonials";
 import { client } from "@/lib/sanity";
 import { simpleBlogCard } from "@/lib/interface";
+import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
 
 async function getData() {
   const query = `
@@ -36,6 +37,7 @@ export default async function Home() {
   return (
     <main>
       <Hero />
+      <ScrollHorizontalText />
       <ScrollText />
       <Benefits />
       <AboutUs />
