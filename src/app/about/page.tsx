@@ -4,6 +4,7 @@ import { client } from "@/lib/sanity";
 import { simpleBlogCard } from "@/lib/interface";
 import BlogSection from "@/components/BlogSection/BlogSection";
 import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
+import AboutGrid from "@/components/AboutGrid/AboutGrid";
 
 async function getData() {
   const query = `
@@ -34,6 +35,7 @@ export default async function AboutPage() {
       />
       <ScrollHorizontalText />
       <AboutScrollText />
+      {/* <AboutGrid /> */}
       <BlogSection data={data} />
     </>
   );
