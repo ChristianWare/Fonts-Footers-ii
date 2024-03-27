@@ -2,6 +2,7 @@
   border-bottom: 1px solid var(--green2);
   padding-left: 30px;
   padding-right: 30px;
+  /* background-color: var(--tan2); */
 }
 
 .navbar {
@@ -30,6 +31,7 @@
   font-size: 1.6rem;
   text-transform: uppercase;
   font-family: var(--oswald);
+  font-weight: 500;
   color: var(--green);
   user-select: none;
   scroll-behavior: smooth;

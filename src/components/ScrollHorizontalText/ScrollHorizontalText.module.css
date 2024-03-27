@@ -5,7 +5,7 @@
 .sliderContainer {
   border-top: 1px solid var(--green);
   border-bottom: 1px solid var(--green);
-  background-color: var(--tan2);
+  /* background-color: var(--tan2); */
 }
 
 .slider {
