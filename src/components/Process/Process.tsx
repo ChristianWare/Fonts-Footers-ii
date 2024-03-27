@@ -22,9 +22,7 @@ const Process = () => {
             ))}
           </div>
           <div className={styles.right}>
-            <h2 className={styles.heading}>
-              A Simple, <br /> 4-step process
-            </h2>
+            <h2 className={styles.heading}>Our Simple 4-step process</h2>
             <p className={styles.copy}>
               These are the steps we take to build your site. We keep you in the
               loop 100% of the way. 
