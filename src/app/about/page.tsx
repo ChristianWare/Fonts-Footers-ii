@@ -7,6 +7,7 @@ import BlogSection from "@/components/BlogSection/BlogSection";
 import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
 import Experience from "@/components/Experience/Experience";
 import Mission from "@/components/Mission/Mission";
+import Faqs from "@/components/Faqs/Faqs";
 
 async function getData() {
   const query = `
@@ -40,6 +41,7 @@ export default async function AboutPage() {
       <AboutScrollText />
       <Experience />
       <Mission />
+      <Faqs />
       <BlogSection data={data} />
     </>
   );
