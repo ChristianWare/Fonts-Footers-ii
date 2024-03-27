@@ -37,7 +37,7 @@ export default async function AboutPage() {
       />
       <ScrollHorizontalText />
       <AboutScrollText />
-      <AboutGrid />
+      {/* <AboutGrid /> */}
       <BlogSection data={data} />
     </>
   );
