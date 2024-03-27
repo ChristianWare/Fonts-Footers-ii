@@ -4,6 +4,24 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: 2rem;
+
+  z-index: 999;
+}
+
+.container {
+  position: relative;
+}
+
+.imgOverlay {
+  z-index: 2;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(10, 7, 27, 0.7), rgba(10, 7, 27, 0.7));
+}
+
+.img {
+  object-fit: cover;
 }
 
 .center {
@@ -12,15 +30,25 @@
   text-align: center;
 }
 
+.arrowContainer,
+.heading,
+.copy {
+  z-index: 999;
+}
+
+.heading {
+  color: var(--tan);
+}
+
 .copy {
   width: 60%;
+  color: var(--tan);
 }
 
 .span {
   color: var(--green3);
   line-height: 100%;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--green);
+  
 }
 
 @media screen and (max-width: 968px) {
