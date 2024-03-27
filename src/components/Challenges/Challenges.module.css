@@ -5,8 +5,7 @@
 .middle {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* grid-gap: 3rem; */
-  margin-top: 5rem;
+  margin-top: 7rem;
   padding: 0rem 10rem;
 }
 
@@ -79,7 +78,7 @@
   }
 }
 
-@media screen and (max-width:668px) {
+@media screen and (max-width: 668px) {
   .middle {
     grid-template-columns: repeat(1, 1fr);
     padding: 0rem;
