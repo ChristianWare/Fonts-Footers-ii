@@ -37,10 +37,8 @@ const AboutUs = () => {
           <div className={styles.left}>
             <div className={styles.headingContainerii}>
               <h2 className={styles.heading}>
-                We Build <br />
-                <span className={styles.span}>Direct Booking</span>
-                <br />
-                Websites
+                We help you solve this problesm with a{" "}
+                <span className={styles.span}>Direct Booking</span> Website
               </h2>
             </div>
             <div className={styles.imgContainer}>
@@ -50,10 +48,8 @@ const AboutUs = () => {
           <div className={styles.right}>
             <div className={styles.headingContainer}>
               <h2 className={styles.heading}>
-                We Build <br />
-                <span className={styles.span}>Direct Booking</span>
-                <br />
-                Websites
+                We help you solve this problesm with a{" "}
+                <span className={styles.span}>Direct Booking</span> Website
               </h2>
             </div>
             <p className={styles.copy}>

@@ -5,7 +5,6 @@ import Img1 from "../../../public/images/house8.png";
 import ArrowCluster from "../ArrowCluster/ArrowCluster";
 import Button from "../Button/Button";
 
-
 const Hero = () => {
   return (
     <LayoutWrapper>
@@ -19,15 +18,15 @@ const Hero = () => {
             <ArrowCluster />
           </div>
           <p className={styles.copy}>
-            Tired of using sites like Air BNB or VRBO for your short-term rental
-            properties? Have your guests book directly with you to give them the
-            best hospitality experience.
+            Stop depending on sites like Air BNB or VRBO for short-term rental
+            listings. Enhance guest satisfaction, get repeat stays, and
+            eliminate all commission fees by having guests book directly with
+            you.
           </p>
           <div className={styles.btnContainer}>
             <Button text='Schedule a call' href='/' btnType='primaryii' arrow />
             <Button text='view our work' href='/' btnType='secondary' arrow />
           </div>
-          
         </div>
         <div className={styles.right}>
           <div className={styles.imgContainer}>
