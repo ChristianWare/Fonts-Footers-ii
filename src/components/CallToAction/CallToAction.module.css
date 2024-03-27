@@ -25,6 +25,7 @@
   line-height: 100%;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--green);
+  font-size: 5rem;
 }
 
 .btnContainer {

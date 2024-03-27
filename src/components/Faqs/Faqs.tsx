@@ -30,9 +30,7 @@ const Faqs = () => {
               <div className={styles.arrowContainer}>
                 <ArrowCluster />
               </div>
-              <h2 className={styles.heading}>
-                Direct Booking Frequently asked questions
-              </h2>
+              <h2 className={styles.heading}>Frequently asked questions</h2>
               <p className={styles.copy}>
                 Here are some commonly asked questions and their answers below.
                 If you don&apos;t see your questions here, call us any time.

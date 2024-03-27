@@ -38,11 +38,11 @@ const Features = () => {
             <div className={styles.box2}>
               <h4>Our Features</h4>
               <p>
-                Having certain expected features on your direct booking vacation
-                rental website is crucial for ensuring a positive user
-                experience and maximizing conversions. Meeting these
-                expectations not only enhances customer satisfaction but also
-                establishes credibility and fosters repeat business.
+                Having certain expected features on your direct booking site is
+                crucial for ensuring a positive user experience and maximizing
+                conversions. Meeting these expectations not only enhances
+                customer satisfaction but also establishes credibility and
+                fosters repeat business.
               </p>
               <div className={styles.btnContainer}>
                 <Button

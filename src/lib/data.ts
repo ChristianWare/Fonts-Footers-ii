@@ -147,7 +147,7 @@ export const process = [
     id: 59,
     processName: "Initial Consultation",
     processDescription:
-      "We arrange a Zoom meeting to discuss your vacation rental needs, gather information, and send a tailored service contract afterward.",
+      "We arrange a Zoom meeting to discuss your business needs, gather information, and send a tailored service contract afterward.",
     icon: false,
   },
   {
@@ -161,7 +161,7 @@ export const process = [
     id: 61,
     processName: "Design & Development",
     processDescription:
-      "Choose from five designs for your website, then track progress with a temporary link, ensuring a flawless, responsive design with captivating details and animations.",
+      "Once your website meets approval, we'll deploy your booking application globally and provide a brief training session on using the dashboard.",
     icon: false,
   },
   {
@@ -265,7 +265,7 @@ export const pricing = [
     plan: "Enterprise",
     for: "11 or more Properties",
     description:
-      "For large-scale organizations with at least 11 or more rental properties.",
+      "For large-scale organizations with at least 11 or more properties.",
     prices: [
       {
         id: 1,
@@ -318,25 +318,27 @@ export const projects = [
 export const faqs = [
   {
     id: 36,
-    question: "Why should I use a direct booking website instead of Airbnb?",
+    question:
+      "Why should I have my own website instead of relying on listing platforms like Airbnb?",
     answer:
-      "Direct booking websites offer more control over your property, lower fees, and personalized branding. You have direct communication with guests and can build a loyal customer base.",
+      "This allows you to have more control over your property, lower fees, and personalized branding. You have direct communication with guests and can build a loyal customer base.",
   },
   {
     id: 36.1,
-    question: "How does the booking process work on a direct booking website?",
+    question:
+      "How do guests make reservations on a website that allows direct bookings?",
     answer:
       "Guests can browse your property, view details, and make reservations directly through your website. You have the flexibility to set your own booking policies and payment processes.",
   },
   {
     id: 36.2,
-    question: "What features can I customize on my direct booking website?",
+    question: "What customizbile features do you offer?",
     answer:
       "You can customize the website design, branding elements, property details, pricing, and policies. We offer flexibility to tailor the platform to your unique needs.",
   },
   {
     id: 36.3,
-    question: "Is it easy for guests to find my direct booking website?",
+    question: "Will it be easy for guests to find my website?",
     answer:
       "We implement SEO strategies to improve the visibility of your website on search engines. Additionally, we can assist with marketing strategies to drive traffic to your platform.",
   },

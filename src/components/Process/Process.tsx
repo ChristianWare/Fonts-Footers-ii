@@ -26,10 +26,8 @@ const Process = () => {
               A Simple, <br /> 4-step process
             </h2>
             <p className={styles.copy}>
-              With these steps, you not only streamline the contract process but
-              also provide a dedicated and efficient platform for communication,
-              fostering a transparent and collaborative relationship with the
-              vacation rental owner.
+              These are the steps we take to build your site. We keep you in the
+              loop 100% of the way. 
             </p>
           </div>
         </div>

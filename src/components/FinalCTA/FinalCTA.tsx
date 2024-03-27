@@ -14,8 +14,8 @@ const FinalCta = () => {
               <h2 className={styles.heading}>Let&apos;s Chat</h2>
               <p className={styles.topText}>
                 Reach out to us today to see how you can begin to take advantage
-                of the benefits of having your own direct booking website for
-                your rental property.
+                of the benefits of having your own website for your rental
+                property.
               </p>
             </div>
             <div className={styles.right}>

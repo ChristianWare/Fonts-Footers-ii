@@ -16,8 +16,8 @@ const Pricing = () => {
           <div className={styles.top}>
             <h2 className={styles.heading}>Pricing</h2>
             <p className={styles.copy}>
-              Subscription based pricing. No contracts. Pause or cancel whenever you&rsquo;d
-              like.
+              Subscription based pricing. No contracts. Pause or cancel whenever
+              you&rsquo;d like.
             </p>
             <div className={styles.optionsBox}>
               <span className={styles.option}>Monthly</span>
@@ -30,7 +30,9 @@ const Pricing = () => {
                   ></span>
                 </label>
               </div>
-              <span className={styles.option}>Annually</span>
+              <span className={styles.option}>
+                Annually <small>(Save 20%)</small>
+              </span>
             </div>
           </div>
           <div className={styles.bottom}>
