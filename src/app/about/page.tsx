@@ -6,6 +6,7 @@ import Img from "../../../public/images/aboutHouse.png";
 import BlogSection from "@/components/BlogSection/BlogSection";
 import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
 import AboutGrid from "@/components/AboutGrid/AboutGrid";
+import Experience from "@/components/Experience/Experience";
 
 async function getData() {
   const query = `
@@ -38,6 +39,7 @@ export default async function AboutPage() {
       <ScrollHorizontalText />
       <AboutScrollText />
       {/* <AboutGrid /> */}
+      <Experience />
       <BlogSection data={data} />
     </>
   );

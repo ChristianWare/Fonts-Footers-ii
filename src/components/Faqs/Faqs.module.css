@@ -11,7 +11,6 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 2rem;
-  /* margin: 5rem; */
 }
 
 .heading {
@@ -53,7 +52,6 @@
 }
 
 .bottom {
-  /* margin-top: 10rem; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
