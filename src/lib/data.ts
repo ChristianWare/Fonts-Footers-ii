@@ -32,7 +32,7 @@ export const benefits = [
   {
     heading: "Lower Fees",
     description:
-      "Airbnb and VRBO charge hosts various fees, including service fees, host fees, and payment processing fees. These can significantly eat into your profits. With your own website, you can avoid or minimize these fees",
+      "OTA's charge hosts various fees, including service fees, host fees, and payment processing fees. These can significantly eat into your profits. With your own website, you can avoid or minimize these fees.",
   },
   {
     heading: "Greater Control",

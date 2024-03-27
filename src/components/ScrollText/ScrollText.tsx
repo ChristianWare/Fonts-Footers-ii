@@ -23,7 +23,7 @@ const ScrollText = () => {
   gsap.registerPlugin(ScrollTrigger);
 
   const text =
-    "While Airbnb and VRBO can boost your property's exposure, you should also consider developing your own direct booking website. This can help you build a personalized online presence, and enhance the reservation process for your guests, making it easier for them to book their stay directly with you.";
+    "While online travel authorities can boost your property's exposure, you should also consider developing your own direct booking website. This can help you build a personalized online presence, and enhance the reservation process for your guests, making it easier for them to book their stay directly with you.";
 
   useEffect(() => {
     const anim = gsap.to(lettersRef.current, {
@@ -68,12 +68,12 @@ const ScrollText = () => {
               <House className={styles.icon} />
             </div>
             <p className={styles.copy}>
-              A tailored short-term rental website acts as your unique digital
-              storefront, enhancing guest experience and brand visibility. By
-              enabling direct bookings, you attract guests who prefer booking
-              directly, avoiding commission fees. Professional vacation rental
-              web design services can optimize functionality and aesthetic
-              appeal, setting your property apart in the competitive market.
+              A customized website for your vacation rental home acts as your
+              unique digital storefront, enhancing guest experience and brand
+              visibility. By enabling direct bookings, you attract guests who
+              prefer booking directly, avoiding commission fees. Having your own
+              website that optimizes functionality and aesthetic appeal will set
+              your property apart in the competitive market.
             </p>
           </div>
         </div>

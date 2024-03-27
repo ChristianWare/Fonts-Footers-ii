@@ -1,7 +1,7 @@
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./AboutUs.module.css";
 import Image from "next/image";
-import House2 from "../../../public/images/house3.png";
+import House2 from "../../../public/images/house17.png";
 import Button from "../Button/Button";
 import Focus from "../../../public/icons/focus.svg";
 
@@ -37,8 +37,10 @@ const AboutUs = () => {
           <div className={styles.left}>
             <div className={styles.headingContainerii}>
               <h2 className={styles.heading}>
-                About <br />
-                <span className={styles.span}>Fonts & Footers</span>
+                We Build <br />
+                <span className={styles.span}>Direct Booking</span>
+                <br />
+                Websites
               </h2>
             </div>
             <div className={styles.imgContainer}>
@@ -48,18 +50,19 @@ const AboutUs = () => {
           <div className={styles.right}>
             <div className={styles.headingContainer}>
               <h2 className={styles.heading}>
-                About <br />
-                <span className={styles.span}>Fonts & Footers</span>
+                We Build <br />
+                <span className={styles.span}>Direct Booking</span>
+                <br />
+                Websites
               </h2>
             </div>
             <p className={styles.copy}>
-              Here at Fonts & Footers, we revolutionize vacation rental property
-              management with personalized, direct booking websites designed to
-              enhance the overall rental experience. Our expertise in the
-              vacation rental industry ensures tailored solutions to maximize
-              your property&apos;s potential. By choosing us, you gain a direct
+              Here at Fonts & Footers, we build personalized direct booking
+              sites designed to enhance your guests online booking experience.
+              As experts, we ensure tailored solutions to maximize your
+              property&apos;s potential. By choosing us, you gain a direct
               connection with guests, fostering trust and boosting bookings,
-              unlocking the full potential of your vacation rental business.
+              unlocking the full potential of your vacation/STR business.
             </p>
             <div className={styles.detailDataBox}>
               {/* {detailData.map((x, index) => (
