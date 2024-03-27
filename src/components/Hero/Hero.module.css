@@ -54,31 +54,7 @@
   border-radius: 20px;
 }
 
-.leftBottom {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 2rem;
-}
 
-.detail {
-  border: 1px solid var(--green);
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s ease-in;
-}
-
-.icon {
-  color: var(--green);
-}
-
-.detail:hover {
-  background-color: var(--green3);
-}
 
 @media screen and (max-width: 1068px) {
   .container {
