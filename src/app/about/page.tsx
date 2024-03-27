@@ -5,8 +5,8 @@ import { simpleBlogCard } from "@/lib/interface";
 import Img from "../../../public/images/aboutHouse.png";
 import BlogSection from "@/components/BlogSection/BlogSection";
 import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
-import AboutGrid from "@/components/AboutGrid/AboutGrid";
 import Experience from "@/components/Experience/Experience";
+import Mission from "@/components/Mission/Mission";
 
 async function getData() {
   const query = `
@@ -38,8 +38,8 @@ export default async function AboutPage() {
       />
       <ScrollHorizontalText />
       <AboutScrollText />
-      {/* <AboutGrid /> */}
       <Experience />
+      <Mission />
       <BlogSection data={data} />
     </>
   );
