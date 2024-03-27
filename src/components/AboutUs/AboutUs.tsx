@@ -6,30 +6,6 @@ import Button from "../Button/Button";
 import Focus from "../../../public/icons/focus.svg";
 
 const AboutUs = () => {
-  // const detailData = [
-  //   {
-  //     title: "Client Focus",
-  //     description: "Your success is our commitment",
-  //     icon: <Focus />,
-  //   },
-  //   {
-  //     title: "Integrity",
-  //     description: "Your success is our commitment",
-  //     icon: <Focus />,
-  //   },
-  //   {
-  //     title: "Innovation",
-  //     description:
-  //       "Innovation is our driving force, propelling continuous improvement and a forward-thinking approach. ",
-  //     icon: <Focus />,
-  //   },
-  //   {
-  //     title: "Creativity",
-  //     description: "Your success is our commitment",
-  //     icon: <Focus />,
-  //   },
-  // ];
-
   return (
     <section className={styles.parent}>
       <LayoutWrapper>
@@ -37,8 +13,8 @@ const AboutUs = () => {
           <div className={styles.left}>
             <div className={styles.headingContainerii}>
               <h2 className={styles.heading}>
-                We help you solve this problesm with a{" "}
-                <span className={styles.span}>Direct Booking</span> Website
+                Solution: Invest in a <span className={styles.span}>Direct Booking</span>{" "}
+                Website
               </h2>
             </div>
             <div className={styles.imgContainer}>
@@ -48,8 +24,8 @@ const AboutUs = () => {
           <div className={styles.right}>
             <div className={styles.headingContainer}>
               <h2 className={styles.heading}>
-                We help you solve this problesm with a{" "}
-                <span className={styles.span}>Direct Booking</span> Website
+                Solution: Invest in a <span className={styles.span}>Direct Booking</span>{" "}
+                Website
               </h2>
             </div>
             <p className={styles.copy}>
