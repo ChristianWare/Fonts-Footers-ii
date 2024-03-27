@@ -10,15 +10,13 @@ const Benefits = () => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.top}>
-            <SectionHeading text='Direct Booking Benefits' />
+            <SectionHeading text='Benefits of having your own Direct Booking Website' />
           </div>
           <div className={styles.bottom}>
             {benefits.slice(0, 3).map((benefit, i) => (
               <div key={i} className={styles.benefitContainer}>
                 <div className={styles.headingContainer}>
-                  <h3 className={styles.heading}>
-                    {benefit.heading}
-                  </h3>
+                  <h3 className={styles.heading}>{benefit.heading}</h3>
                 </div>
                 <p className={styles.description}>{benefit.description}</p>
               </div>

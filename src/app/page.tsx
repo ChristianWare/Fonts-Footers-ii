@@ -42,8 +42,8 @@ export default async function Home() {
       <ScrollText />
       <Challenges />
       <AboutUs />
-      {/* <Benefits /> */}
       <Features />
+      <Benefits />
       <Process />
       <Pricing />
       <Projects />
