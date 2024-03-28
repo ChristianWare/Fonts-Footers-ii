@@ -45,9 +45,18 @@
   color: var(--tan);
 }
 
+.green {
+  color: var(--green);
+}
+
 .span {
   color: var(--green3);
   line-height: 100%;
+}
+
+.greenOutline {
+  -webkit-text-stroke-width: 1.3px;
+  -webkit-text-stroke-color: var(--green);
 }
 
 @media screen and (max-width: 968px) {

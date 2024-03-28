@@ -4,14 +4,26 @@ import styles from "./PageIntro.module.css";
 import Image, { StaticImageData } from "next/image";
 
 interface Props {
+  h1Color?: string;
+  h1OutlineColor?: string;
   text: string;
   copy: string;
+  copyColor?: string;
   span: string;
   center?: string;
   src?: StaticImageData;
 }
 
-const PageIntro = ({ text, copy, span, center = "", src }: Props) => {
+const PageIntro = ({
+  h1Color = "",
+  h1OutlineColor = "",
+  text,
+  copy,
+  copyColor = "",
+  span,
+  center = "",
+  src,
+}: Props) => {
   return (
     <section className={styles.container}>
       {src && (
@@ -33,14 +45,14 @@ const PageIntro = ({ text, copy, span, center = "", src }: Props) => {
           <div className={styles.arrowContainer}>
             <ArrowCluster />
           </div>
-          <h1 className={styles.heading}>
+          <h1 className={`${styles.heading} ${styles[h1Color]}`}>
             {text}
-            <span className={styles.span}>
+            <span className={`${styles.span} ${styles[h1OutlineColor]}`}>
               {" "}
               <br /> {span}
             </span>
           </h1>
-          <p className={styles.copy}>{copy}</p>
+          <p className={`${styles.copy} ${styles[copyColor]}`}>{copy}</p>
         </div>
       </LayoutWrapper>
     </section>
