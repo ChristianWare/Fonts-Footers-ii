@@ -13,6 +13,10 @@
   padding-top: 5rem;
 }
 
+.heading {
+  width: 40%;
+}
+
 .copy {
   width: 60%;
 }
