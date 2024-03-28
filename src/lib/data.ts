@@ -1,14 +1,4 @@
 import Calendar from "../../public/icons/calendar.png";
-import Next from "../../public/icons/nextjs.png";
-import Mongo from "../../public/icons/mongodb.png";
-import Cloudinary from "../../public/icons/cloudinary.png";
-import NextAuth from "../../public/icons/nextAuth.png";
-import Node from "../../public/icons/nodejs.png";
-import Stripe from "../../public/icons/stripe.png";
-import Vercel from "../../public/icons/vercel.png";
-import Google from "../../public/icons/google.png";
-import Booking from "../../public/icons/booking.png";
-import Profile from "../../public/icons/profile.png";
 import Reviews2 from "../../public/icons/reviews2.png";
 import Admin4 from "../../public/icons/Admin4.png";
 import CC from "../../public/icons/cc.png";
@@ -20,12 +10,7 @@ import Blog from "../../public/icons/blog.png";
 import Sitemap from "../../public/icons/sitemap.png";
 import Social from "../../public/icons/social.png";
 import Index from "../../public/icons/index.png";
-import Diverse from "../../public/icons/diverse.png";
-import Fee from "../../public/icons/fee.png";
-import Data from "../../public/icons/data.png";
-import Client from "../../public/icons/client.png";
-import Innovation from "../../public/icons/innovation.png";
-import Elite from "../../public/images/elite.png";
+
 import Project1 from "../../public/images/img1.jpg";
 
 export const benefits = [

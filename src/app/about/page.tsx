@@ -9,6 +9,7 @@ import Experience from "@/components/Experience/Experience";
 import Mission from "@/components/Mission/Mission";
 import Faqs from "@/components/Faqs/Faqs";
 import Values from "@/components/Values/Values";
+import TechStack from "@/components/TechStack/TechStack";
 
 async function getData() {
   const query = `
@@ -43,6 +44,7 @@ export default async function AboutPage() {
       <Experience />
       <Mission />
       <Values />
+      <TechStack />
       <Faqs />
       <BlogSection data={data} />
     </>

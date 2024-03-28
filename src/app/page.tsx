@@ -14,7 +14,6 @@ import { client } from "@/lib/sanity";
 import { simpleBlogCard } from "@/lib/interface";
 import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
 import Challenges from "@/components/Challenges/Challenges";
-import Processii from "@/components/Processii/Processii";
 
 async function getData() {
   const query = `
@@ -39,14 +38,13 @@ export default async function Home() {
   return (
     <main>
       <Hero />
-      {/* <ScrollHorizontalText /> */}
+      <ScrollHorizontalText />
       <ScrollText />
       <Challenges />
       <AboutUs />
       <Features />
       <Benefits />
       <Process />
-      {/* <Processii /> */}
       <Pricing />
       <Projects />
       <Testimonials />

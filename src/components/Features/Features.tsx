@@ -7,7 +7,7 @@ import House from "../../../public/images/hero2.png";
 
 const Features = () => {
   return (
-    <section>
+    <section className={styles.parent}>
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.left}>
