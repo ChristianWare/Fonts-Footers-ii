@@ -1,3 +1,8 @@
+.container {
+  border-top: 1px solid var(--green2);
+  border-bottom: 1px solid var(--green2);
+}
+
 .top {
   margin: 5rem 0rem;
   display: flex;
@@ -6,7 +11,6 @@
   justify-content: center;
   gap: 3rem;
 }
-
 
 .heading {
   text-align: center;
