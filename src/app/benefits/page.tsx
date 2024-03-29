@@ -1,4 +1,5 @@
 import BenefitsIntro from "@/components/BenefitsIntro/BenefitsIntro";
+import HigherMargins from "@/components/HigherMargins/HigherMargins";
 import PageIntro from "@/components/PageIntro/PageIntro";
 
 const page = () => {
@@ -14,6 +15,7 @@ const page = () => {
         center='center'
       />
       <BenefitsIntro />
+      <HigherMargins />
     </>
   );
 };

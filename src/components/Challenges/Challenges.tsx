@@ -36,7 +36,9 @@ const Challenges = () => {
     <LayoutWrapper>
       <div className={styles.content}>
         <div className={styles.top}>
-          <h2 className={styles.heading}>Do you encounter these challenges?</h2>
+          <h2 className={styles.heading}>
+            Have you encountered any of these challenges?
+          </h2>
           <p className={styles.copy}>
             As a short-term rental owner, you may be experiencing these common
             issues:

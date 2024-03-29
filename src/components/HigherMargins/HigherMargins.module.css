@@ -1,0 +1,13 @@
+.container {
+  background-color: var(--green);
+}
+
+.heading,
+.title,
+.desc {
+  color: var(--tan);
+}
+
+.icon {
+  color: var(--tan);
+}
