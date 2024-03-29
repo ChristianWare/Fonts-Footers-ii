@@ -1,6 +1,5 @@
 .container {
   border-top: 1px solid var(--green2);
-  border-bottom: 1px solid var(--green2);
 }
 
 .top {
@@ -61,4 +60,19 @@
 
 .desc {
   opacity: 0.8;
+}
+
+@media screen and (max-width: 668px) {
+  .copy {
+    width: 100%;
+  }
+
+  .bottom {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 3rem;
+  }
+
+  .card:nth-child(even) {
+    border-left: none;
+  }
 }
