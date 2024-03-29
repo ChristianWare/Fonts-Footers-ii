@@ -15,9 +15,9 @@
 
 .benefitButtonContainer {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
   flex-wrap: wrap;
 }
 
@@ -41,9 +41,3 @@
     width: 100%;
   }
 }
-
-/* @media screen and (max-width: 568px) {
-  .content {
-    padding: 2rem;
-  }
-} */

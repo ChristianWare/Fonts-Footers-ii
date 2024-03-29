@@ -51,9 +51,28 @@
   justify-content: center;
 }
 
-@media screen and (max-width: 1168px) {
+.imgContainer {
+  position: relative;
+  width: 80%;
+  height: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+}
+
+.img {
+  object-fit: cover;
+  border-radius: 20px;
+  border: 1px solid var(--green2);
+}
+
+@media screen and (max-width: 1268px) {
   .bottom {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .imgContainer {
+    width: 100%;
   }
 }
 
@@ -61,10 +80,6 @@
   .heading {
     text-align: center;
     margin-top: 5rem;
-  }
-  
-  .bottom {
-    grid-template-columns: repeat(2, 1fr);
   }
 }
 

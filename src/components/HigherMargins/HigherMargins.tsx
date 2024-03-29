@@ -1,6 +1,8 @@
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./HigherMargins.module.css";
 import House from "../../../public/icons/house.svg";
+import Image from "next/image";
+import Img from "../../../public/images/house19.png";
 
 const HigherMargins = () => {
   const data = [
@@ -41,6 +43,9 @@ const HigherMargins = () => {
               <p className={styles.desc}>{x.description}</p>
             </div>
           ))}
+        </div>
+        <div className={styles.imgContainer}>
+          <Image src={Img} alt='image' fill className={styles.img} />
         </div>
       </LayoutWrapper>
     </section>
