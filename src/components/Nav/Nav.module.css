@@ -31,7 +31,7 @@
   text-transform: uppercase;
   font-family: var(--raleway);
   font-weight: 700;
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
   color: var(--green);
   user-select: none;
   scroll-behavior: smooth;
@@ -55,7 +55,7 @@
 .hamburger {
   display: none;
   padding: 1rem;
-  border-radius: 10px;
+  border-radius: 20px;
   z-index: 999;
   position: relative;
 }

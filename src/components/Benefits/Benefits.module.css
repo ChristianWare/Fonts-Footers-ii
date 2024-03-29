@@ -73,7 +73,7 @@
   .bottom {
     margin: 3rem;
   }
-  
+
   .benefitContainer {
     grid-template-columns: 1fr;
     grid-gap: 3rem;
@@ -88,11 +88,11 @@
   .top {
     margin-bottom: 5rem;
   }
-  
-  .bottom { 
+
+  .bottom {
     margin: 0rem;
   }
-  
+
   .btnContainer {
     display: grid;
     width: 100%;

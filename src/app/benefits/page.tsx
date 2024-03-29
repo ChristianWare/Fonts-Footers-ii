@@ -3,7 +3,9 @@ import BrandPresence from "@/components/BrandPresence/BrandPresence";
 import DirectCommunication from "@/components/DirectCommunication/DirectCommunication";
 import EnhancedMarketing from "@/components/EnhancedMarketing/EnhancedMarketing";
 import HigherMargins from "@/components/HigherMargins/HigherMargins";
+import LongTermRelationships from "@/components/LongTermRelationships/LongTermRelationships";
 import PageIntro from "@/components/PageIntro/PageIntro";
+import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
 
 const page = () => {
   return (
@@ -17,11 +19,13 @@ const page = () => {
         copyColor='green'
         center='center'
       />
+      <ScrollHorizontalText />
       <BenefitsIntro />
       <HigherMargins />
       <BrandPresence />
       <DirectCommunication />
       <EnhancedMarketing />
+      <LongTermRelationships />
     </>
   );
 };

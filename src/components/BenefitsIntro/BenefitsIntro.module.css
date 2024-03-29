@@ -1,6 +1,7 @@
 .content {
   background-color: var(--tan);
   padding: 5rem;
+  margin-top: 10rem;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
