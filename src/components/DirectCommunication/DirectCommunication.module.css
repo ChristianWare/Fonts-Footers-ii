@@ -1,8 +1,10 @@
 .container {
   border-top: 1px solid var(--green2);
+  background-color: var(--tan);
 }
 
 .top {
+  padding-top: 5rem;
   margin-top: 5rem;
   display: flex;
   flex-direction: column;
@@ -24,7 +26,6 @@
   margin-top: 7rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* grid-gap: 2rem; */
 }
 
 .card {

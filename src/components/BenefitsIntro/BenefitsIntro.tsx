@@ -8,7 +8,8 @@ const BenefitsIntro = () => {
       <LayoutWrapper>
         <div className={styles.content}>
           <h2 className={styles.heading}>
-            Tap into the benefits that come with owning your digital platform.
+            Tap into the benefits that come with having your own digital
+            platform.
           </h2>
           <div className={styles.benefitButtonContainer}>
             <FalseButton text='Higher Margins' btnType='primary' />
