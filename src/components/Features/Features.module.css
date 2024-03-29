@@ -46,6 +46,10 @@
   top: -1px;
 }
 
+.desc {
+  opacity: 0.8;
+}
+
 .icon {
   width: 20px;
   height: 20px;

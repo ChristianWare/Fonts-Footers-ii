@@ -24,6 +24,7 @@
   background-color: var(--tan);
   padding: 3rem;
   border-radius: 20px;
+  border: 1px solid var(--green2);
 }
 
 .card:nth-child(1) {
@@ -65,6 +66,10 @@
 .title,
 .desc {
   color: var(--green);
+}
+
+.desc {
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 1268px) {

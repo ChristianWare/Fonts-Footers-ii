@@ -1,0 +1,64 @@
+.container {
+  border-top: 1px solid var(--green2);
+  border-bottom: 1px solid var(--green2);
+}
+
+.top {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.heading {
+  text-align: center;
+}
+
+.copy {
+  width: 60%;
+  text-align: center;
+}
+
+.bottom {
+  margin-top: 7rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-gap: 2rem; */
+}
+
+.card {
+  display: flex;
+  gap: 3rem;
+  padding: 3rem;
+}
+
+.card:nth-child(even) {
+  border-left: 1px solid var(--green);
+}
+
+.iconContainer {
+  width: 35px;
+  height: 35px;
+  background-color: var(--green3);
+  border-radius: 50%;
+  border: 1px solid var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.icon {
+  color: var(--green);
+  transition: all 0.4s ease-in-out;
+}
+
+.title {
+  margin-bottom: 1rem;
+}
+
+.desc {
+  opacity: 0.8;
+}

@@ -1,6 +1,5 @@
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Features.module.css";
-// import { features } from "@/lib/data";
 import Image from "next/image";
 import Button from "../Button/Button";
 import House from "../../../public/images/hero2.png";
@@ -51,7 +50,7 @@ const Features = () => {
                   <div key={index} className={styles.featureContainer}>
                     {x.icon}
                     <h3 className={styles.service}>{x.service}</h3>
-                    <p className={styles.description}>{x.description}</p>
+                    <p className={styles.desc}>{x.description}</p>
                   </div>
                 ))}
               </div>

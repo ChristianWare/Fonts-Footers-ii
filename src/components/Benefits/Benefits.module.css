@@ -58,6 +58,7 @@
 .description {
   color: var(--green);
   font-weight: 600;
+  opacity: 0.8;
 }
 
 .btnContainer {

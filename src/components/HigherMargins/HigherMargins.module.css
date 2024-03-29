@@ -13,6 +13,10 @@
   color: var(--tan);
 }
 
+.desc {
+  opacity: 0.8;
+}
+
 .bottom {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -27,8 +31,8 @@
   padding-top: 4rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   gap: 1.5rem;
   position: relative;
 }
@@ -36,12 +40,7 @@
 .iconContainer {
   position: absolute;
   top: -25px;
-}
-
-.title {
-  font-size: 2.8rem;
-  text-align: center;
-}
+} 
 
 .icon {
   color: var(--green);

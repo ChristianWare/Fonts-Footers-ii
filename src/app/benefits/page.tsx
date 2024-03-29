@@ -1,5 +1,6 @@
 import BenefitsIntro from "@/components/BenefitsIntro/BenefitsIntro";
 import BrandPresence from "@/components/BrandPresence/BrandPresence";
+import DirectCommunication from "@/components/DirectCommunication/DirectCommunication";
 import HigherMargins from "@/components/HigherMargins/HigherMargins";
 import PageIntro from "@/components/PageIntro/PageIntro";
 
@@ -18,6 +19,7 @@ const page = () => {
       <BenefitsIntro />
       <HigherMargins />
       <BrandPresence />
+      <DirectCommunication />
     </>
   );
 };

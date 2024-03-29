@@ -8,19 +8,19 @@ const BrandPresence = () => {
       icon: <House width={30} height={30} className={styles.icon} />,
       title: "Branding Control",
       description:
-        "With a direct booking website, you have complete control over the branding elements, including logos, colors, fonts, and messaging. This ensures consistency with the overall brand identity and creates a cohesive experience for visitors.",
+        "You have complete control over the branding elements - logos, colors, and messaging - ensuring consistency with your brand identity.",
     },
     {
       icon: <House width={30} height={30} className={styles.icon} />,
       title: "Unique Content",
       description:
-        "Owners can showcase their property's unique features, amenities, and attractions through compelling visual content, descriptions, and virtual tours. This helps differentiate the brand from competitors and highlights the property's value proposition.",
+        "Showcase you property's unique features, amenities, and attractions through compelling visual content, descriptions, and virtual tours.",
     },
     {
       icon: <House width={30} height={30} className={styles.icon} />,
       title: "Personalization",
       description:
-        "Direct booking websites enable personalized communication and experiences for guests. Owners can greet visitors by name, recommend tailored recommendations based on their preferences, and offer customized packages or promotions, enhancing brand loyalty and satisfaction.",
+        "Greet visitors by name, and offer customized packages or promotions, enhancing brand loyalty and satisfaction.",
     },
     {
       icon: "",
@@ -31,13 +31,13 @@ const BrandPresence = () => {
       icon: <House width={30} height={30} className={styles.icon} />,
       title: "Guest Reviews",
       description:
-        "Integrating guest reviews and testimonials on the website provides social proof and builds credibility. Positive reviews from satisfied guests enhance trust and encourage new visitors to book directly with confidence.",
+        "This provides social proof and builds credibility, enhancing trust and encouraging new visitors to book directly with confidence.",
     },
     {
       icon: <House width={30} height={30} className={styles.icon} />,
       title: "Online Visibility",
       description:
-        "Optimizing the direct booking website for search engines improves online visibility and attracts organic traffic. By targeting relevant keywords, creating valuable content, and implementing SEO best practices, owners can increase brand exposure and reach a broader audience.",
+        "Improve your online visibility and attract organic traffic with SEO. Target relevant keywords to attract more visitors.",
     },
   ];
   return (
