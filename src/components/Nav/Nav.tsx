@@ -41,10 +41,6 @@ function Nav() {
   }, [isOpen]);
 
   const navItems = [
-    // {
-    //   text: "Home",
-    //   href: "/",
-    // },
     {
       text: "Benefits",
       href: "/benefits",
