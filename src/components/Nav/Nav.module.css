@@ -2,7 +2,6 @@
   border-bottom: 1px solid var(--green2);
   padding-left: 30px;
   padding-right: 30px;
-  /* background-color: var(--tan2); */
 }
 
 .navbar {
@@ -30,8 +29,9 @@
 .navItem {
   font-size: 1.6rem;
   text-transform: uppercase;
-  font-family: var(--oswald);
-  font-weight: 500;
+  font-family: var(--raleway);
+  font-weight: 700;
+  letter-spacing: -.5px;
   color: var(--green);
   user-select: none;
   scroll-behavior: smooth;
@@ -44,6 +44,8 @@
   transform: rotate(90deg);
   color: var(--green);
   margin-right: 1rem;
+  position: relative;
+  top: 2px;
 }
 
 .bottom {

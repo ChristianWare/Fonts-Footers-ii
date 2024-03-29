@@ -35,8 +35,8 @@ const HigherMargins = () => {
         <h2 className={styles.heading}>Higher Margins</h2>
         <div className={styles.bottom}>
           {data.map((x, index) => (
-            <div key={index}>
-              {x.icon}
+            <div key={index} className={styles.card}>
+              <div className={styles.iconContainer}>{x.icon}</div>
               <h3 className={styles.title}>{x.title}</h3>
               <p className={styles.desc}>{x.description}</p>
             </div>
