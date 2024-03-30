@@ -24,7 +24,6 @@ const Experience = () => {
       <div className={styles.container}>
         <div className={styles.left}>
           <span className={styles.span}>OUR EXPERIENCE</span>
-
           <h2 className={styles.heading}>
             We bring ideas to life by combining
           </h2>
