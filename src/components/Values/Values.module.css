@@ -19,16 +19,27 @@
 
 .box:nth-child(even) .right {
   order: -1;
-  position: relative;
-  right: -1px;
-  top: -1px;
-  border-left: 0px;
-  border-bottom: 0px;
+  border: 0px;
 }
 
 .box:nth-child(odd) .right {
-  border-top: 0px;
-  border-right: 0px;
+  border: 0px;
+}
+
+.box:nth-child(1) .left {
+  border: 1px solid var(--green2);
+  border-radius: 20px;
+  position: relative;
+  right: -1px;
+  border-bottom-right-radius: 0px;
+}
+
+.box:nth-child(2) .left {
+  border: 1px solid var(--green2);
+  border-radius: 20px;
+  position: relative;
+  top: -1px;
+  border-top-left-radius: 0px;
 }
 
 .bottom {
@@ -80,6 +91,11 @@
 @media screen and (max-width: 968px) {
   .top {
     margin-bottom: 1rem;
+    padding-top: 5rem;
+  }
+
+  .topCopy {
+    margin-bottom: 3rem;
   }
 
   .bottom,
@@ -103,6 +119,14 @@
 
   .imgContainer {
     height: 300px;
+  }
+
+  .box:nth-child(1) .left {
+    border-bottom-right-radius: 20px;
+  }
+
+  .box:nth-child(2) .left {
+    border-top-left-radius: 20px;
   }
 }
 

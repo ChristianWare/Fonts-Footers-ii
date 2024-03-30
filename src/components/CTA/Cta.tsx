@@ -21,7 +21,12 @@ const Cta = () => {
             </p>
           </div>
           <div className={styles.btnContainer}>
-            <Button text='Leanr More' href='/' btnType='primary' arrow />
+            <Button
+              text='Leanr More'
+              href='/blog/direct-booking-websites-an-airbnb-alternative-for-your-short-term-rentals'
+              btnType='primary'
+              arrow
+            />
             <Button
               text='Contact Us'
               href='/contact'
