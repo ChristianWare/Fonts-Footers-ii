@@ -142,4 +142,13 @@
   .imgContainer {
     height: 300px;
   }
+
+  .top, .arrowContainerii {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .heading, .copy {
+    text-align: left;
+  }
 }
