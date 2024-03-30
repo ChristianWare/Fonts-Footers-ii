@@ -2,6 +2,7 @@ import Image from "next/image";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./LongTermRelationships.module.css";
 import Img from "../../../public/images/house22.png";
+import ArrowCluster from "../ArrowCluster/ArrowCluster";
 
 const LongTermRelationships = () => {
   const data = [
@@ -37,6 +38,9 @@ const LongTermRelationships = () => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.top}>
+            <div className={styles.arrowContainer}>
+              <ArrowCluster />
+            </div>
             <h2 className={styles.heading}>Long Term Relationships</h2>
           </div>
           <div className={styles.bottom}>

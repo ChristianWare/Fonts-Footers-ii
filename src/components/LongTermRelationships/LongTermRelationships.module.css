@@ -29,6 +29,14 @@
   z-index: 999;
 }
 
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
 .heading {
   color: var(--tan);
   text-align: center;
@@ -41,8 +49,8 @@
 }
 
 .card {
-  background-color: var(--tan);
-  border: 1px solid var(--green2);
+  /* background-color: var(--tan); */
+  border: 1px solid var(--tan);
   border-radius: 20px;
   padding: 4rem;
 }
@@ -59,10 +67,12 @@
 
 .title {
   margin-bottom: 2rem;
+  color: var(--tan);
 }
 
 .desc {
   opacity: 0.8;
+  color: var(--tan);
 }
 
 @media screen and (max-width: 1068px) {

@@ -12,9 +12,7 @@ const Projects = () => {
       <LayoutWrapper>
         <div className={styles.contentParent}>
           <div className={styles.top}>
-            <h2 className={styles.heading}>
-              Our Portfolio of Direct Booking projects
-            </h2>
+            <h2 className={styles.heading}>Recent Work</h2>
             <ArrowCluster />
           </div>
           {projects.map((x) => (
