@@ -17,10 +17,10 @@
 .content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 2rem;
-  padding-top: 5rem;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  padding-top: 7rem;
   z-index: 999;
 }
 
@@ -31,16 +31,83 @@
 
 .heading {
   color: var(--tan);
+  text-align: center;
+  width: 100%;
 }
 
 .bottom {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
 }
 
 .card {
   background-color: var(--tan);
+  border: 1px solid var(--green2);
   border-radius: 20px;
-  padding: 3rem;
+  padding: 4rem;
+}
+
+.card:nth-child(2) {
+  position: relative;
+  left: -1px;
+}
+
+.card:nth-child(3) {
+  position: relative;
+  left: -2px;
+}
+
+.title {
+  margin-bottom: 2rem;
+}
+
+.desc {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 1068px) {
+  .bottom {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card:nth-child(1) {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .card:nth-child(2) {
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+
+  .card:nth-child(3) {
+    position: relative;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    left: 0;
+    top: -1px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bottom {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card:nth-child(1) {
+    border-top-right-radius: 20px;
+  }
+
+  .card:nth-child(2) {
+    position: relative;
+    top: -2px;
+    left: 0;
+    border-radius: 0px;
+  }
+
+  .card:nth-child(3) {
+    position: relative;
+    top: -3px;
+  }
 }

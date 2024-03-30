@@ -20,7 +20,6 @@
 .bottom {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  grid-gap: 1rem;
   margin-top: 7rem;
 }
 
@@ -35,6 +34,35 @@
   justify-content: flex-start;
   gap: 1.5rem;
   position: relative;
+}
+
+.card:nth-child(1) {
+  border-bottom-right-radius: 0px;
+}
+
+.card:nth-child(2) {
+  position: relative;
+  left: -1px;
+}
+
+.card:nth-child(3) {
+  position: relative;
+  border-bottom-left-radius: 0px;
+  left: -1px;
+}
+
+.card:nth-child(4) {
+  position: relative;
+  top: -1px;
+  border-top-right-radius: 0px;
+}
+
+.card:nth-child(5) {
+  position: relative;
+  top: -1px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-left: 0px;
 }
 
 .iconContainer {
@@ -64,11 +92,39 @@
 
 .img {
   object-fit: cover;
+  border-bottom: none;
   border-radius: 20px;
-  border: 1px solid var(--green2);
+  padding: 1rem;
 }
 
 @media screen and (max-width: 1268px) {
+  .card:nth-child(1) {
+    border-bottom-left-radius: 0px;
+  }
+
+  .card:nth-child(3) {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+    left: 0px;
+    top: 0;
+  }
+
+  .card:nth-child(4) {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-left: 0px;
+  }
+
+  .card:nth-child(5) {
+    border-top-left-radius: 0px;
+    border-left: 1px solid var(--green2);
+    top: -2px;
+  }
+
   .bottom {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -92,6 +148,22 @@
 
   .card {
     padding-top: 6rem;
+  }
+
+  .card:nth-child(1) {
+    margin-bottom: 1rem;
+  }
+
+  .card:nth-child(3) {
+    border-top: 1px solid var(--green2);
+    margin-top: 1rem;
+  }
+
+  .card:nth-child(3),
+  .card:nth-child(4) {
+    border-left: 1px solid var(--green2);
+    border-right: 1px solid var(--green2);
+    border-bottom-right-radius: 0px;
   }
 
   .imgContainer {

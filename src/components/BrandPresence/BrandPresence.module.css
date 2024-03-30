@@ -11,7 +11,7 @@
 .bottom {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
+  /* grid-gap: 1rem; */
   margin-top: 7rem;
   padding-bottom: 10rem;
 }
@@ -22,24 +22,41 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: 2rem;
-  background-color: var(--tan);
   padding: 3rem;
   border-radius: 20px;
+  border: 1px solid var(--green2);
 }
 
 .card:nth-child(1) {
-  position: relative;
-  top: 25rem;
+  border-bottom-right-radius: 0px;
 }
 
 .card:nth-child(2) {
   position: relative;
-  top: 10rem;
+  left: -1px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.card:nth-child(3) {
+  position: relative;
+  left: -2px;
+  border-bottom-left-radius: 0px;
 }
 
 .card:nth-child(5) {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
   position: relative;
-  top: 10rem;
+  top: -1px;
+  left: -1px;
+}
+
+.card:nth-child(6) {
+  position: relative;
+  left: -2px;
+  top: -1px;
+  border-top-left-radius: 0px;
 }
 
 .card:nth-child(4) {
@@ -80,6 +97,7 @@
   .card:nth-child(1) {
     position: relative;
     top: 0rem;
+    border-bottom-left-radius: 0px;
   }
 
   .card:nth-child(2) {
@@ -87,9 +105,24 @@
     top: 0rem;
   }
 
+  .card:nth-child(3) {
+    position: relative;
+    left: 0px;
+    top: -1px;
+    border-radius: 0px;
+  }
+
   .card:nth-child(5) {
     position: relative;
-    top: 0rem;
+    top: -2px;
+    left: 0px;
+    border-right: 0px;
+  }
+
+  .card:nth-child(6) {
+    position: relative;
+    top: -2px;
+    left: -1px;
   }
 }
 
@@ -111,7 +144,32 @@
     align-items: center;
     justify-content: center;
   }
+
+  .card:nth-child(2) {
+    border-radius: 0px;
+    left: 0;
+    top: -1px;
+  }
+
+  .card:nth-child(3) {
+    top: -2px;
+  }
+
   .card:nth-child(4) {
     display: none;
+  }
+
+  .card:nth-child(5) {
+    position: relative;
+    border-radius: 0px;
+    border-right: 1px solid var(--green2);
+    top: -3px;
+  }
+
+  .card:nth-child(6) {
+    position: relative;
+    top: -4px;
+    left: 0px;
+    border-top-right-radius: 0px;
   }
 }

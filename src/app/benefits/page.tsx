@@ -1,4 +1,5 @@
 import BenefitsIntro from "@/components/BenefitsIntro/BenefitsIntro";
+import BlogSection from "@/components/BlogSection/BlogSection";
 import BrandPresence from "@/components/BrandPresence/BrandPresence";
 import DirectCommunication from "@/components/DirectCommunication/DirectCommunication";
 import EnhancedMarketing from "@/components/EnhancedMarketing/EnhancedMarketing";
@@ -6,8 +7,30 @@ import HigherMargins from "@/components/HigherMargins/HigherMargins";
 import LongTermRelationships from "@/components/LongTermRelationships/LongTermRelationships";
 import PageIntro from "@/components/PageIntro/PageIntro";
 import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
+import { simpleBlogCard } from "@/lib/interface";
+import { client } from "@/lib/sanity";
 
-const page = () => {
+async function getData() {
+  const query = `
+    *[_type == 'blog'][0...2] | order(_createdAt desc) {
+      title,
+      smallDescription,
+      publishedAt,
+      "currentSlug": slug.current,
+      titleImage
+    }`;
+
+  const data = await client.fetch(query);
+
+  return data;
+}
+
+export const revalidate = 10;
+
+
+export default async function  BenefitsPage() {
+    const data: simpleBlogCard[] = await getData();
+
   return (
     <>
       <PageIntro
@@ -26,7 +49,8 @@ const page = () => {
       <DirectCommunication />
       <EnhancedMarketing />
       <LongTermRelationships />
+      <BlogSection data={data} />
     </>
   );
 };
-export default page;
+
