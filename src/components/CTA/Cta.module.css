@@ -1,8 +1,7 @@
 .top {
   margin-top: 10rem;
   padding: 3rem;
-  background-color: var(--tan);
-  border: 1px solid var(--green2);
+  background-color: var(--green);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -12,7 +11,7 @@
 }
 
 .heading {
-  color: var(--green);
+  color: var(--tan);
   margin-bottom: 3rem;
   text-align: center;
   width: 70%;
@@ -22,7 +21,7 @@
 
 .copy {
   margin-bottom: 3rem;
-  color: var(--green);
+  color: var(--tan);
   width: 60%;
   text-align: center;
   margin-left: auto;
