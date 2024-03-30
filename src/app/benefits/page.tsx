@@ -1,6 +1,7 @@
 import BenefitsIntro from "@/components/BenefitsIntro/BenefitsIntro";
 import BlogSection from "@/components/BlogSection/BlogSection";
 import BrandPresence from "@/components/BrandPresence/BrandPresence";
+import Cta from "@/components/CTA/Cta";
 import DirectCommunication from "@/components/DirectCommunication/DirectCommunication";
 import EnhancedMarketing from "@/components/EnhancedMarketing/EnhancedMarketing";
 import HigherMargins from "@/components/HigherMargins/HigherMargins";
@@ -27,9 +28,8 @@ async function getData() {
 
 export const revalidate = 10;
 
-
-export default async function  BenefitsPage() {
-    const data: simpleBlogCard[] = await getData();
+export default async function BenefitsPage() {
+  const data: simpleBlogCard[] = await getData();
 
   return (
     <>
@@ -50,7 +50,7 @@ export default async function  BenefitsPage() {
       <EnhancedMarketing />
       <LongTermRelationships />
       <BlogSection data={data} />
+      <Cta />
     </>
   );
-};
-
+}

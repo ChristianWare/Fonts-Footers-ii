@@ -1,0 +1,59 @@
+.top {
+  margin-top: 10rem;
+  padding: 3rem;
+  background-color: var(--tan);
+  border: 1px solid var(--green2);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.heading {
+  color: var(--green);
+  margin-bottom: 3rem;
+  text-align: center;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.copy {
+  margin-bottom: 3rem;
+  color: var(--green);
+  width: 60%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.arrowContainer {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.topRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+.btnContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+}
+
+@media screen and (max-width: 968px) {
+  .heading {
+    width: 100%;
+  }
+}
