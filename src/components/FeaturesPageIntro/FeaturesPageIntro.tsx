@@ -11,6 +11,9 @@ const FeaturesPageIntro = () => {
       <LayoutWrapper>
         <div className={styles.top}>
           <div className={styles.box1}>
+            <div className={styles.arrowContainerii}>
+              <ArrowCluster />
+            </div>
             <h1 className={styles.heading}>
               {" "}
               <span className={styles.span}>Features</span> of our Direct
