@@ -9,7 +9,7 @@ interface Props {
   text: string;
   copy: string;
   copyColor?: string;
-  span: string;
+  span?: string;
   center?: string;
   src?: StaticImageData;
 }

@@ -30,6 +30,12 @@
   text-align: center;
 }
 
+.right {
+  align-items: right;
+  justify-content: flex-end;
+  text-align: right;
+}
+
 .arrowContainer,
 .heading,
 .copy {

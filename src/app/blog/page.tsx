@@ -1,7 +1,10 @@
+import PageIntro from "@/components/PageIntro/PageIntro";
+import Img from "../../../public/images/house23.png";
+
 export default function BlogPage() {
   return (
-    <div>
-      <h1>Blog Page</h1>
-    </div>
+    <>
+      <PageIntro text='Our Blog' src={Img} copy='' span='blog' />
+    </>
   );
 }
