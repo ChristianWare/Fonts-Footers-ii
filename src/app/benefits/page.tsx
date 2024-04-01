@@ -49,8 +49,8 @@ export default async function BenefitsPage() {
       <DirectCommunication />
       <EnhancedMarketing />
       <LongTermRelationships />
-      <BlogSection data={data} />
       <Cta />
+      <BlogSection data={data} />
     </>
   );
 }

@@ -2,25 +2,120 @@ import LayoutWrapper from "../LayoutWrapper";
 import styles from "./IndividualFeature.module.css";
 import Image from "next/image";
 import Img from "../../../public/images/house23.png";
+import House from "../../../public/icons/house.svg";
 
 const IndividualFeature = () => {
-  const data = [
+  const individulaFeatures = [
     {
       image: Img,
-      title: "Feature Title Here",
+      title: "List Multiple Properties on One Website",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, quia porro. Porro, error dolore iure accusamus nulla nisi eaque1 quaerat magni adipisci minima pariatur ducimus. Debitis illo alias officia minus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, quia porro. Porro, error dolore iure accusamus nulla nisi eaque1 quaerat magni adipisci minima pariatur ducimus. Debitis illo alias officia minus.",
-      whyImportant:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, quia porrt.",
+        "Focus your marketing, SEO, and promotions on one platform to reach a wider audience and maximize exposure for all properties, enabling guests to easily compare amenities, locations, and pricing, enhancing user experience, promoting brand cohesion, and simplifying administrative tasks.",
+      whyImportant: [
+        {
+          title: "Streamlined Marketing",
+        },
+        {
+          title: "Enhanced User Experience",
+        },
+        {
+          title: "Brand Cohesion",
+        },
+        {
+          title: "Simplified Management",
+        },
+      ],
     },
-  ];
+    {
+      image: Img,
+      title: "Booking Engine",
+      description:
+        "Integrating a booking engine for your properties enables direct bookings, control over pricing and availability, enhances guest experience, allows customization and personalization, provides valuable data insights, streamlines operations, boosts revenue and occupancy, and builds brand loyalty and trust.",
+      whyImportant: [
+        {
+          title: "Control over Pricing and Availability",
+        },
+        {
+          title: "Enhanced Guest Experience",
+        },
+        {
+          title: "Customization and Personalization",
+        },
+        {
+          title: "Streamlined Operations",
+        },
+      ],
+    },
+    {
+      image: Img,
+      title: "Interactive Map",
+      description:
+        "Adding an interactive map feature for your properties enhances the user experience by providing visual representation, improving decision-making, increasing engagement, differentiating your listings, enhancing marketing efforts, and ultimately boosting guest satisfaction and bookings.",
+      whyImportant: [
+        {
+          title: "Visual Representation",
+        },
+        {
+          title: "Improved Decision Making",
+        },
+        {
+          title: "Increased Engagement",
+        },
+        {
+          title: "Enhanced Marketing",
+        },
+      ],
+    },
+    {
+      image: Img,
+      title: "User Dashboard",
+      description:
+        "Adding a user dashboard for your property provides guests with a personalized and convenient experience, allowing them to manage bookings, update profiles, communicate efficiently, leave feedback, access information, enjoy special offers, and receive support—all contributing to enhanced guest satisfaction and loyalty.",
+      whyImportant: [
+        {
+          title: "Personalized Experience",
+        },
+        {
+          title: "Booking Management",
+        },
+        {
+          title: "Profile Updates",
+        },
+        {
+          title: "Support and Assistance",
+        },
+      ],
+    },
+    {
+      image: Img,
+      title: "Amin Dashboard",
+      description:
+        "An admin dashboard for your property facilitates centralized management of bookings, operations, data analytics, financial tasks, marketing efforts, guest communication, property maintenance, and security and compliance, enhancing efficiency, decision-making, and overall property success.",
+      whyImportant: [
+        {
+          title: "Efficient Operations",
+        },
+        {
+          title: "Data and Analytics",
+        },
+        {
+          title: "Financial Management",
+        },
+        {
+          title: "Guest Communication",
+        },
+      ],
+    },
+  ] as const;
+
   return (
     <section className={styles.container}>
       <LayoutWrapper>
-        {data.map((x, index) => (
+        {individulaFeatures.map((x, index) => (
           <div key={index}>
             <div className={styles.content}>
               <div className={styles.left}>
+                <h3 className={styles.titleMobile}>{x.title}</h3>
                 <div className={styles.imgContainer}>
                   <Image
                     src={x.image}
@@ -33,7 +128,15 @@ const IndividualFeature = () => {
               <div className={styles.right}>
                 <h3 className={styles.title}>{x.title}</h3>
                 <p className={styles.desc}>{x.description}</p>
-                {/* <span>{x.whyImportant}</span> */}
+                <span className={styles.span}>Why is this important?</span>
+                <ul className={styles.box}>
+                  {x.whyImportant.map((y, index) => (
+                    <li key={index}>
+                      <House className={styles.icon} width={30} height={30} />
+                      <h4 className={styles.reasonnTitle}>{y.title}</h4>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>

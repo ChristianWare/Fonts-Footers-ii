@@ -25,10 +25,10 @@ const FeaturesPageIntro = () => {
               <ArrowCluster />
             </div>
             <p className={styles.copy}>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias,
-              quia porro. Porro, error dolore iure accusamus nulla nisi eaque1
-              quaerat magni adipisci minima pariatur ducimus. Debitis illo alias
-              officia minus.
+              Here are the features we offer on on our direct booking websites.
+              Enhance guest experience, convenience, and overall property
+              success by integrating features such as user and admin dashboards,
+              interactive maps, and a booking engine on a single platform.
             </p>
           </div>
         </div>
