@@ -1,0 +1,149 @@
+.container {
+  border-top: 1px solid var(--green2);
+  border-bottom: 1px solid var(--green2);
+}
+
+.bottom {
+  padding: 0rem 15rem;
+  margin-top: 7rem;
+}
+
+.imgContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.img {
+  object-fit: cover;
+  border: 1px solid var(--green2);
+  border-radius: 20px;
+}
+
+.right {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.qaContainer {
+  padding: 3rem 2rem;
+  border: 1px solid var(--green2);
+  border-top: 0px;
+  width: 100%;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s ease-in;
+}
+
+.qaContainer:nth-child(1) {
+  border-top: 1px solid var(--green2);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.qaContainer:last-child {
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.answerContainer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
+}
+
+.answerContainer.show {
+  max-height: 350px;
+}
+
+.headingArrowContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.h3Container {
+  display: flex;
+  gap: 1rem;
+}
+
+.iconBox {
+  width: 35px;
+  height: 35px;
+  background-color: var(--green3);
+  border-radius: 50%;
+  border: 1px solid var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.icon {
+  color: var(--green);
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.iconFlip {
+  transform: rotate(180deg);
+  color: var(--green);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.question {
+  font-family: var(--raleway);
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 120%;
+  /* width: 90%; */
+  hyphens: auto;
+  transition: all 0.2s ease-in;
+  text-transform: none;
+}
+
+.index {
+  margin-right: 1rem;
+  font-size: 2.4rem;
+  font-family: var(--raleway);
+  font-weight: 700;
+}
+
+.answer {
+  margin-top: 2rem;
+  hyphens: auto;
+  width: 80%;
+  /* margin-left: 5rem; */
+}
+
+@media screen and (max-width: 1268px) {
+  .bottom {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .copy {
+    width: 100%;
+  }
+
+  /* .btnContainer {
+    width: 100%;
+  } */
+
+  .bottom {
+    padding: 0rem 5rem;
+  }
+
+  .imgContainer {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  .bottom {
+    padding: 0rem;
+  }
+}
