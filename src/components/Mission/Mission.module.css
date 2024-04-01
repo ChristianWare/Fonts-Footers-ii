@@ -106,15 +106,36 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--green);
     padding: 3rem;
     border-radius: 20px;
+    border: 1px solid var(--green2);
+  }
+
+  .card:nth-child(1) {
+    border-bottom-left-radius: 0px;
+  }
+
+  .card:nth-child(2),
+  .card:nth-child(3) {
+    border-radius: 0px;
+    position: relative;
+    top: -1px;
+  }
+
+  .card:nth-child(3) {
+    top: -2px;
+  }
+
+  .card:nth-child(4) {
+    border-top-right-radius: 0px;
+    position: relative;
+    top: -3px;
+    left: 0;
   }
 
   .description,
   .title,
   .icon {
     text-align: center;
-    color: var(--green3);
   }
 }
