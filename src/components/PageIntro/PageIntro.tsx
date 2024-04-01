@@ -31,7 +31,7 @@ const PageIntro = ({
           <div className={styles.imgOverlay}></div>
           <Image
             src={src}
-            alt='Nier Transportation'
+            alt='image'
             fill
             className={styles.img}
             priority
