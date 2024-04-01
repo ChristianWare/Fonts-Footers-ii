@@ -1,0 +1,25 @@
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.detail {
+  border: 1px solid var(--tan);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in;
+}
+
+.icon {
+  color: var(--tan);
+}
+
+.detail:hover {
+  background-color: var(--green3);
+}
