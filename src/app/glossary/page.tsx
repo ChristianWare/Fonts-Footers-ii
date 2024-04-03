@@ -3,6 +3,7 @@ import styles from "./GlossaryPage.module.css";
 import LayoutWrapper from "@/components/LayoutWrapper";
 import { glossaryMenu } from "@/lib/data";
 import Link from "next/link";
+import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
 
 export default function GlossaryPage() {
   return (
@@ -12,9 +13,10 @@ export default function GlossaryPage() {
         h1OutlineColor='greenOutline'
         text='Direct Booking'
         span='Glossary'
-        copyColor='green'
-        orientation='right'
       />
+      <ScrollHorizontalText />
+      <br />
+      <br />
       <LayoutWrapper>
         <div className={styles.top}>
           {glossaryMenu.map((x, index) => (
