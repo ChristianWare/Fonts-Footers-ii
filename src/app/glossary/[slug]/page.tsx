@@ -6,7 +6,6 @@ import styles from "./GlossarySlugPage.module.css";
 import SlugHeading from "@/components/SlugHeading/SlugHeading";
 import SlugConclusion from "@/components/SlugConclusion/SlugConclusion";
 import LayoutWrapper from "@/components/LayoutWrapper";
-import FinalCTA from "@/components/FinalCTA/FinalCTA";
 import GlossarySlugIntro from "@/components/GlossarySlugIntro/GlossarySlugIntro";
 import { glossaryMenu } from "@/lib/data";
 import Link from "next/link";
@@ -75,7 +74,7 @@ export async function generateMetadata({
   };
 }
 
-const components = {  SlugHeading, SlugConclusion };
+const components = { SlugHeading, SlugConclusion };
 
 export default function Page({ params }: any) {
   const props = getPost(params);
@@ -91,51 +90,49 @@ export default function Page({ params }: any) {
         category={props.frontMatter.category}
       />
       <LayoutWrapper>
-          <div className={styles.container}>
-            <div className={styles.left}>
-              <div className={styles.tocContainer}>
-                <span className={styles.tocHeadingTitle}>In This Article</span>
-                {props.frontMatter.toc.map((x: any, index: number) => (
-                  <div key={index}>
-                    <p className={styles.heading}>{x.heading}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className={styles.mdxContent}>
-              <MDXRemote source={props.content} components={components} />
-            </div>
-            <div className={styles.farRight}>
-              <div className={styles.tocContainer}>
-                <span className={styles.tocHeadingTitle}>Similar Words</span>
-                {glossaryMenu
-                  .filter(
-                    (x) =>
-                      x.letter.toUpperCase() === selectedLetter.toUpperCase()
-                  )
-                  .map((x: any, index: number) => (
-                    <div key={index} className={styles.similarContainer}>
-                      {x.section
-                        .filter((y: any) => y.term !== props.frontMatter.title)
-                        .map((y: any, index: number) => (
-                          <div key={index}>
-                            <Link
-                              href={`/glossary/${y.term
-                                .toLowerCase()
-                                .replace(/\s+/g, "-")}`}
-                              className={styles.similar}
-                            >
-                              {y.term}
-                            </Link>
-                          </div>
-                        ))}
-                    </div>
-                  ))}
-              </div>
+        <div className={styles.container}>
+          <div className={styles.left}>
+            <div className={styles.tocContainer}>
+              <span className={styles.tocHeadingTitle}>In This Article</span>
+              {props.frontMatter.toc.map((x: any, index: number) => (
+                <div key={index}>
+                  <p className={styles.heading}>{x.heading}</p>
+                </div>
+              ))}
             </div>
           </div>
+          <div className={styles.mdxContent}>
+            <MDXRemote source={props.content} components={components} />
+          </div>
+          <div className={styles.farRight}>
+            <div className={styles.tocContainer}>
+              <span className={styles.tocHeadingTitle}>Similar Words</span>
+              {glossaryMenu
+                .filter(
+                  (x) => x.letter.toUpperCase() === selectedLetter.toUpperCase()
+                )
+                .map((x: any, index: number) => (
+                  <div key={index} className={styles.similarContainer}>
+                    {x.section
+                      .filter((y: any) => y.term !== props.frontMatter.title)
+                      .map((y: any, index: number) => (
+                        <div key={index}>
+                          <Link
+                            href={`/glossary/${y.term
+                              .toLowerCase()
+                              .replace(/\s+/g, "-")}`}
+                            className={styles.similar}
+                          >
+                            {y.term}
+                          </Link>
+                        </div>
+                      ))}
+                  </div>
+                ))}
+            </div>
+          </div>
+        </div>
       </LayoutWrapper>
-      <FinalCTA />
     </main>
   );
 }

@@ -13,20 +13,20 @@
   top: 20px;
   max-height: calc(100vh - 70px);
   overflow: auto;
-  border: 1px solid var(--black);
-  background-color: var(--tan2);
-  border-radius: 5px;
+  border: 1px solid var(--green2);
+  background-color: var(--tan);
+  border-radius: 20px;
   padding: 3rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .tocHeadingTitle {
   font-size: 2.1rem;
-  border-bottom: thick double #bcbcbc;
+  border-bottom: thick double var(--green2);
   width: 100%;
   margin-bottom: 1rem;
   padding-bottom: 1rem;
@@ -42,31 +42,42 @@
 }
 
 .similar {
-  color: var(--black);
-  font-family: var(--ppMoriSemiBold);
-  border: 1px solid var(--black);
+  font-family: var(--oswald);
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  white-space: nowrap;
+  text-transform: uppercase;
+  user-select: none;
+  gap: 2rem;
   border-radius: 50px;
-  padding: 0.5rem 1rem;
-  padding-top: 0.8rem;
-  margin-bottom: 10rem;
-  height: 100%;
-  transition: all 0.2s ease-in;
+  padding: 3px 30px;
+  width: fit-content;
+  transition: all 0.3s ease-in;
+  color: var(--green);
+  background-color: var(--green3);
+  border: 1px solid var(--green);
 }
 
 .similar:hover {
-  background-color: var(--green);
-  color: var(--tan);
+  background-color: var(--tan);
 }
 
 .heading {
-  color: var(--black);
-  font-family: var(--ppMoriSemiBold);
+  color: var(--green);
+  font-weight: 700;
 }
 
 .mdxContent {
   margin-top: 2.3rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+.mdxContent h2 {
+  font-size: 2.4rem;
+  font-family: var(--raleway);
+  text-transform: capitalize;
 }
 
 .right {
@@ -125,28 +136,6 @@
   font-size: 2rem;
   margin-left: 1rem;
   opacity: 0.8;
-}
-
-.relatedArticlesHeading {
-  border-bottom: thick double #bcbcbc;
-  margin-bottom: 2rem;
-  padding-bottom: 1rem;
-  position: relative;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 100%;
-  letter-spacing: 1px;
-}
-
-.relatedArticlesHeading::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 7px;
-  background-color: var(--red);
-  bottom: 0;
-  left: 0;
 }
 
 .relatedArticles {

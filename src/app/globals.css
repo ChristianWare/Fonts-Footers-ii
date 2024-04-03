@@ -15,7 +15,7 @@
   text-decoration: none;
   line-height: 120%;
   font-family: var(--raleway);
-  overscroll-behavior: none;
+  /* overscroll-behavior: none; */
   scroll-behavior: smooth;
   scroll-margin-top: 40px;
   -webkit-tap-highlight-color: transparent;
@@ -24,7 +24,7 @@
 html {
   font-size: 62.5%;
   height: 100%;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 
 ::-webkit-scrollbar {

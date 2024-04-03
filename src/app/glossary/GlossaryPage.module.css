@@ -1,16 +1,20 @@
+.topContainer {
+  position: relative;
+}
+
 .top {
   display: flex;
-  align-items: center;
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
   background-color: var(--green);
-  border: 1px solid var(--black);
   padding: 5rem;
-  border-radius: 5px;
-  width: fit-content;
+  border-radius: 20px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 10rem;
+  margin-top: 5rem;
+  width: fit-content;
   align-self: flex-start;
   position: -webkit-sticky;
   position: sticky;
@@ -37,36 +41,36 @@
 .sBottom {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
+  grid-gap: 1rem;
   margin-top: 2rem;
   margin-bottom: 10rem;
   background-size: 10px 10px;
   border-radius: 5px;
-  padding: 3rem;
   border: 1px solid var(--borderii);
 }
 
 .section {
   border: 1px solid var(--borderii);
   background-color: var(--gray);
-  border-radius: 5px;
+  border-radius: 20px;
+  border: 1px solid var(--green2);
   padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   gap: 2rem;
-  transition: all 0.3s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .section:hover {
-  background-color: var(--green);
+  background-color: var(--green3);
 }
 
 .section:hover,
 .section:hover .title,
 .section:hover .desc {
-  color: var(--tan);
+  color: var(--green);
 }
 
 .box {
@@ -78,31 +82,34 @@
   gap: 1rem;
 }
 
-.letter,
-.letter1 {
-  color: var(--black);
-  font-family: var(--ppMoriSemiBold);
+.letter {
+  color: var(--green);
+  font-weight: 700;
   user-select: none;
-  border-bottom: thick double #bcbcbc;
+  border-bottom: thick double var(--green);
+  padding-bottom: 0.5rem;
 }
 
 .letter1 {
   color: var(--tan);
-  border-bottom: thick double #fbf7f1;
+  border-bottom: thick double var(--tan);
+  font-size: 2rem;
 }
 
 .term {
   margin-bottom: 1rem;
+  font-weight: 500;
+  color: var(--green);
 }
 
 .title {
   font-size: 2.1rem;
-  transition: all 0.3s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .desc {
-  color: var(--blackiii);
-  transition: all 0.3s ease-in;
+  opacity: 0.8;
+  transition: all 0.2s ease-in;
 }
 
 @media screen and (max-width: 1068px) {

@@ -15,15 +15,20 @@ export default function GlossaryPage() {
         span='Glossary'
       />
       <ScrollHorizontalText />
-      <br />
-      <br />
+
       <LayoutWrapper>
-        <div className={styles.top}>
-          {glossaryMenu.map((x, index) => (
-            <Link href={`#${x.letter}`} key={index} className={styles.letter1}>
-              {x.letter}
-            </Link>
-          ))}
+        <div className={styles.topContainer}>
+          <div className={styles.top}>
+            {glossaryMenu.map((x, index) => (
+              <Link
+                href={`#${x.letter}`}
+                key={index}
+                className={styles.letter1}
+              >
+                {x.letter}
+              </Link>
+            ))}
+          </div>
         </div>
         <div className={styles.bottom}>
           <div className={styles.bottomLeft}>
