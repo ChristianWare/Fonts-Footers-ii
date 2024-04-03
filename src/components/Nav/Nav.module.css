@@ -24,6 +24,7 @@
   align-items: center;
   gap: 3rem;
   list-style: none;
+  position: relative;
 }
 
 .navItem {
@@ -37,6 +38,15 @@
   user-select: none;
   scroll-behavior: smooth;
   z-index: 998;
+}
+
+.hovering {
+  position: absolute;
+  top: 12px;
+  width: 600px;
+  background-color: red;
+  overflow: hidden;
+  transition: all 0.2s ease-in;
 }
 
 .icon {
@@ -95,7 +105,7 @@
   display: none;
 }
 
-@media screen and (max-width: 1168px) {
+@media screen and (max-width: 1268px) {
   .navbar {
     justify-content: flex-end;
   }

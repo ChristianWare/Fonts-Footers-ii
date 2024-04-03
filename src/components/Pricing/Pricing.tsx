@@ -17,7 +17,9 @@ const Pricing = () => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.top}>
-            <h2 className={styles.heading}>Pricing</h2>
+            <h2 className={styles.heading}>
+              Pricing - Based on how many proprties you have
+            </h2>
             <p className={styles.copy}>
               Subscription based pricing. No contracts. Pause or cancel whenever
               you&rsquo;d like.
@@ -63,7 +65,12 @@ const Pricing = () => {
           </div>
           {pathname !== "/pricing" && (
             <div className={styles.btnContainer}>
-              <Button text='More Details' href='/pricing' btnType='primaryii' arrow />
+              <Button
+                text='More Details'
+                href='/pricing'
+                btnType='primaryii'
+                arrow
+              />
             </div>
           )}
         </div>

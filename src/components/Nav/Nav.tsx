@@ -46,12 +46,12 @@ function Nav() {
       href: "/benefits",
     },
     {
-      text: "Features",
-      href: "/features",
-    },
-    {
       text: "About US",
       href: "/about",
+    },
+    {
+      text: "Pricing",
+      href: "/pricing",
     },
     {
       text: "FAQS",
@@ -62,16 +62,12 @@ function Nav() {
       href: "/blog",
     },
     {
-      text: "Contact",
-      href: "/contact",
-    },
-    {
       text: "Glossary",
       href: "/glossary",
     },
     {
-      text: "Pricing",
-      href: "/pricing",
+      text: "Contact",
+      href: "/contact",
     },
   ];
 

@@ -157,6 +157,9 @@ const IndividualFeature = () => {
   return (
     <section className={styles.container}>
       <LayoutWrapper>
+        <h2 className={styles.heading}>
+          Features of our Direct Booking Websites
+        </h2>
         {individulaFeatures.map((x, index) => (
           <div key={index}>
             <div className={styles.content}>

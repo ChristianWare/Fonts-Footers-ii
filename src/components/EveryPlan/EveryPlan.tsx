@@ -63,14 +63,14 @@ const EveryPlan = () => {
             </div>
           ))}
         </div>
-        <div className={styles.btnContainer}>
+        {/* <div className={styles.btnContainer}>
           <Button
             text='See All Features'
             href='/pricing'
             btnType='primary'
             arrow
           />
-        </div>
+        </div> */}
       </LayoutWrapper>
     </section>
   );
