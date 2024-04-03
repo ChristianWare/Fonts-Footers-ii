@@ -1,0 +1,6 @@
+.heading {
+  font-size: 3rem;
+  text-transform: uppercase;
+  line-height: 140%;
+  color: var(--black);
+}
