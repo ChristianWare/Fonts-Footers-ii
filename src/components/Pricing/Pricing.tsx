@@ -5,9 +5,12 @@ import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Pricing.module.css";
 import Button from "../Button/Button";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 const Pricing = () => {
   const [isMonthly, setIsMonthly] = useState(false);
+
+  const pathname = usePathname();
 
   return (
     <section>
@@ -43,7 +46,6 @@ const Pricing = () => {
                   <span className={styles.for}>{x.for}</span>
                 </div>
                 <div className={styles.pcBottom}>
-                  {/* <span className={styles.kFTitile}>Key Features</span> */}
                   <ul className={styles.features}>
                     {x.includes.slice(0, 3).map((y) => (
                       <li key={y.id} className={styles.feature}>
@@ -55,18 +57,15 @@ const Pricing = () => {
                   <span className={styles.price}>
                     ${!isMonthly ? x.prices[0].price : x.prices[1].price}
                   </span>
-                  <div className={styles.btnContainer}>
-                    <Button
-                      text='Explore Plan'
-                      href='/'
-                      btnType='primaryii'
-                      arrow
-                    />
-                  </div>
                 </div>
               </div>
             ))}
           </div>
+          {pathname !== "/pricing" && (
+            <div className={styles.btnContainer}>
+              <Button text='More Details' href='/pricing' btnType='primaryii' arrow />
+            </div>
+          )}
         </div>
       </LayoutWrapper>
     </section>

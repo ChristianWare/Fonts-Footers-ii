@@ -225,7 +225,7 @@ export const pricing = [
     includes: [
       {
         id: 26.1,
-        feature: "Everything in Starter, plus:",
+        feature: "Everything in Basic, plus:",
       },
       {
         id: 26.3,

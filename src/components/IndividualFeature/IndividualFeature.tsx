@@ -7,6 +7,7 @@ import Booking from "../../../public/images/booking.png";
 import Map from "../../../public/images/map.png";
 import Admin from "../../../public/images/admin.png";
 import User from "../../../public/images/user.png";
+import Img from "../../../public/images/house25.png";
 import House from "../../../public/icons/house.svg";
 
 const IndividualFeature = () => {
@@ -32,26 +33,6 @@ const IndividualFeature = () => {
       ],
     },
     {
-      image: Multiple,
-      title: "List Multiple Properties on One Website",
-      description:
-        "Focus your marketing, SEO, and promotions on one platform to reach a wider audience and maximize exposure for all properties, enabling guests to easily compare amenities, locations, and pricing, enhancing user experience, promoting brand cohesion, and simplifying administrative tasks.",
-      whyImportant: [
-        {
-          title: "Streamlined Marketing",
-        },
-        {
-          title: "Enhanced User Experience",
-        },
-        {
-          title: "Brand Cohesion",
-        },
-        {
-          title: "Simplified Management",
-        },
-      ],
-    },
-    {
       image: Booking,
       title: "Booking Engine",
       description:
@@ -68,6 +49,26 @@ const IndividualFeature = () => {
         },
         {
           title: "Streamlined Operations",
+        },
+      ],
+    },
+    {
+      image: Img,
+      title: "Guest Reviews",
+      description:
+        "Guest reviews on your direct booking website enhance transparency, build trust, provide valuable feedback for improvement, manage reputation, serve as social proof, offer SEO benefits, and ultimately increase bookings and occupancy rates for your property.",
+      whyImportant: [
+        {
+          title: "Transparency",
+        },
+        {
+          title: "Trust Building",
+        },
+        {
+          title: "Feedback and Improvement",
+        },
+        {
+          title: "Reputation Management",
         },
       ],
     },
@@ -128,6 +129,26 @@ const IndividualFeature = () => {
         },
         {
           title: "Guest Communication",
+        },
+      ],
+    },
+    {
+      image: Multiple,
+      title: "List Multiple Properties on One Website",
+      description:
+        "Focus your marketing, SEO, and promotions on one platform to reach a wider audience and maximize exposure for all properties, enabling guests to easily compare amenities, locations, and pricing, enhancing user experience, promoting brand cohesion, and simplifying administrative tasks.",
+      whyImportant: [
+        {
+          title: "Streamlined Marketing",
+        },
+        {
+          title: "Enhanced User Experience",
+        },
+        {
+          title: "Brand Cohesion",
+        },
+        {
+          title: "Simplified Management",
         },
       ],
     },
