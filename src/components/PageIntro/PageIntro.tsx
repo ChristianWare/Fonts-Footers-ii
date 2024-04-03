@@ -7,10 +7,10 @@ interface Props {
   h1Color?: string;
   h1OutlineColor?: string;
   text: string;
-  copy: string;
+  copy?: string;
   copyColor?: string;
   span?: string;
-  center?: string;
+  orientation?: string;
   src?: StaticImageData;
 }
 
@@ -21,7 +21,7 @@ const PageIntro = ({
   copy,
   copyColor = "",
   span,
-  center = "",
+  orientation = "",
   src,
 }: Props) => {
   return (
@@ -41,7 +41,7 @@ const PageIntro = ({
         </>
       )}
       <LayoutWrapper>
-        <div className={`${styles.content} ${styles[center]}`}>
+        <div className={`${styles.content} ${styles[orientation]}`}>
           <div className={styles.arrowContainer}>
             <ArrowCluster />
           </div>

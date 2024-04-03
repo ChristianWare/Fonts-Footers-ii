@@ -40,7 +40,7 @@ export default async function BenefitsPage() {
         span='direct booking'
         copy='Having your own direct booking website empowers you to establish a stronger online presence, enhance customer relationships, increase revenue, and maintain greater control over your operations and branding.'
         copyColor='green'
-        center='center'
+        orientation='center'
       />
       <ScrollHorizontalText />
       <BenefitsIntro />

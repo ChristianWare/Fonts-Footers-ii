@@ -65,6 +65,10 @@ function Nav() {
       text: "Contact",
       href: "/contact",
     },
+    {
+      text: "Glossary",
+      href: "/glossary",
+    },
   ];
 
   const pathname = usePathname();
