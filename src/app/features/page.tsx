@@ -4,6 +4,7 @@ import FeaturesPageIntro from "@/components/FeaturesPageIntro/FeaturesPageIntro"
 import IndividualFeature from "@/components/IndividualFeature/IndividualFeature";
 import Pricing from "@/components/Pricing/Pricing";
 import Process from "@/components/Process/Process";
+import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
 import { simpleBlogCard } from "@/lib/interface";
 import { client } from "@/lib/sanity";
 
@@ -30,6 +31,8 @@ export default async function FeaturesPages() {
   return (
     <>
       <FeaturesPageIntro />
+      <ScrollHorizontalText />
+
       <IndividualFeature />
       <Process />
       <Pricing />

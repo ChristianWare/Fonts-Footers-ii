@@ -1,7 +1,6 @@
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./IndividualFeature.module.css";
 import Image from "next/image";
-import Img from "../../../public/images/house23.png";
 import Stripe from "../../../public/images/stripe.png";
 import Multiple from "../../../public/images/multiple.png";
 import Booking from "../../../public/images/booking.png";
