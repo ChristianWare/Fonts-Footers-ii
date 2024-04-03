@@ -77,7 +77,7 @@ const Features = () => {
               <div className={styles.btnContainer}>
                 <Button
                   text=' all features'
-                  href='/features'
+                  href='/pricing/#features'
                   btnType='primary'
                   arrow
                 />

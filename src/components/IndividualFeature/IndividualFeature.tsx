@@ -155,7 +155,7 @@ const IndividualFeature = () => {
   ] as const;
 
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id='features'>
       <LayoutWrapper>
         <h2 className={styles.heading}>
           Features of our Direct Booking Websites
