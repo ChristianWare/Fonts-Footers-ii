@@ -23,9 +23,9 @@
 .span {
   color: var(--green3);
   line-height: 100%;
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: var(--green);
-  font-size: 5rem;
+  font-size: 6rem;
 }
 
 .btnContainer {
