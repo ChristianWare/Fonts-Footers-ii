@@ -7,6 +7,8 @@ import Image from "next/image";
 import Img from "../../../public/images/house11.png";
 import { faqs } from "@/lib/data";
 import Arrow2 from "../../../public/icons/arrow2.svg";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../animation/variants";
 
 const Experience = () => {
   const [selected, setSelected] = useState<null | number>(null);
@@ -38,11 +40,17 @@ const Experience = () => {
               onClick={() => toggle(i)}
             >
               <div className={styles.headingArrowContainer}>
-                <div className={styles.h3Container}>
+                <motion.div
+                  variants={fadeIn("right", 0.3)}
+                  initial='hidden'
+                  whileInView={"show"}
+                  viewport={{ once: false, amount: 0.3 }}
+                  className={styles.h3Container}
+                >
                   <h3 className={styles.question} lang='en'>
                     {x.question}
                   </h3>
-                </div>
+                </motion.div>
                 {selected === i ? (
                   <div className={styles.iconBox}>
                     <Arrow2
@@ -71,11 +79,17 @@ const Experience = () => {
             </div>
           ))}
         </div>
-        <div className={styles.right}>
+        <motion.div
+          variants={fadeIn("left", 0.3)}
+          initial='hidden'
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          className={styles.right}
+        >
           <div className={styles.imgContainer}>
             <Image src={Img} alt='image' fill className={styles.img} />
           </div>
-        </div>
+        </motion.div>
       </div>
     </LayoutWrapper>
   );

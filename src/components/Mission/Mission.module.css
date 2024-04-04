@@ -69,6 +69,10 @@
   border-top-left-radius: 0px;
 }
 
+.description {
+  opacity: 0.8;
+}
+
 .icon {
   color: var(--green);
   margin-bottom: 1rem;

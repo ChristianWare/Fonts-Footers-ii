@@ -1,9 +1,13 @@
+"use client";
+
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Values.module.css";
 import Image from "next/image";
 import House from "../../../public/icons/house.svg";
 import Img1 from "../../../public/images/house17.png";
 import Img2 from "../../../public/images/aboutHouse.png";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../animation/variants";
 
 const Values = () => {
   const data = [
@@ -55,7 +59,13 @@ const Values = () => {
         <div className={styles.bottom}>
           {data.map((x, index) => (
             <div key={index} className={styles.box}>
-              <div className={styles.left}>
+              <motion.div
+                variants={fadeIn(index % 2 === 0 ? "up" : "left", 0.3)}
+                initial='hidden'
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.3 }}
+                className={styles.left}
+              >
                 <h3>{x.title}</h3>
                 <p>{x.description}</p>
                 {x.features.map((y, index) => (
@@ -64,7 +74,7 @@ const Values = () => {
                     <p className={styles.detail}>{y.detail}</p>
                   </div>
                 ))}
-              </div>
+              </motion.div>
               <div className={styles.right}>
                 <div className={styles.imgContainer}>
                   <Image src={x.src} alt='image' fill className={styles.img} />

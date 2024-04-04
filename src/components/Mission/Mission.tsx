@@ -1,6 +1,10 @@
+"use client";
+
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Mission.module.css";
 import House from "../../../public/icons/house.svg";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../animation/variants";
 
 const Mission = () => {
   const data = [
@@ -52,11 +56,18 @@ const Mission = () => {
           </div>
           <div className={styles.right}>
             {data.map((x, index) => (
-              <div key={index} className={styles.card}>
+              <motion.div
+                variants={fadeIn(index % 2 === 0 ? "up" : "left", 0.3)}
+                initial='hidden'
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.3 }}
+                key={index}
+                className={styles.card}
+              >
                 {x.icon}
                 <h4 className={styles.title}>{x.title}</h4>
                 <p className={styles.description}>{x.description}</p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>

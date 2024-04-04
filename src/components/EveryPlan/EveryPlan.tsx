@@ -1,7 +1,10 @@
+"use client";
+
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./EveryPlan.module.css";
 import House from "../../../public/icons/house.svg";
-import Button from "../Button/Button";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../animation/variants";
 
 const EveryPlan = () => {
   const data = [
@@ -56,21 +59,20 @@ const EveryPlan = () => {
         </div>
         <div className={styles.bottom}>
           {data.map((x, index) => (
-            <div className={styles.card} key={index}>
+            <motion.div
+              variants={fadeIn(index % 2 === 0 ? "up" : "left", 0.3)}
+              initial='hidden'
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.3 }}
+              className={styles.card}
+              key={index}
+            >
               {x.icon && <div className={styles.iconContainer}>{x.icon}</div>}
               <h3 className={styles.title}>{x.title}</h3>
               <p className={styles.desc}>{x.description}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
-        {/* <div className={styles.btnContainer}>
-          <Button
-            text='See All Features'
-            href='/pricing'
-            btnType='primary'
-            arrow
-          />
-        </div> */}
       </LayoutWrapper>
     </section>
   );

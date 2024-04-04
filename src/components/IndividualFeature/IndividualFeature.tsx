@@ -1,3 +1,5 @@
+"use client";
+
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./IndividualFeature.module.css";
 import Image from "next/image";
@@ -9,6 +11,8 @@ import Admin from "../../../public/images/admin.png";
 import User from "../../../public/images/user.png";
 import Img from "../../../public/images/house25.png";
 import House from "../../../public/icons/house.svg";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../animation/variants";
 
 const IndividualFeature = () => {
   const individulaFeatures = [
@@ -163,7 +167,13 @@ const IndividualFeature = () => {
         {individulaFeatures.map((x, index) => (
           <div key={index}>
             <div className={styles.content}>
-              <div className={styles.left}>
+              <motion.div
+                variants={fadeIn("right", 0.3)}
+                initial='hidden'
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.3 }}
+                className={styles.left}
+              >
                 <h3 className={styles.titleMobile}>{x.title}</h3>
                 <div className={styles.imgContainer}>
                   <Image
@@ -173,17 +183,39 @@ const IndividualFeature = () => {
                     className={styles.img}
                   />
                 </div>
-              </div>
+              </motion.div>
               <div className={styles.right}>
-                <h3 className={styles.title}>{x.title}</h3>
-                <p className={styles.desc}>{x.description}</p>
+                <motion.h3
+                  variants={fadeIn("left", 0.3)}
+                  initial='hidden'
+                  whileInView={"show"}
+                  viewport={{ once: false, amount: 0.3 }}
+                  className={styles.title}
+                >
+                  {x.title}
+                </motion.h3>
+                <motion.p
+                  variants={fadeIn("left", 0.3)}
+                  initial='hidden'
+                  whileInView={"show"}
+                  viewport={{ once: false, amount: 0.3 }}
+                  className={styles.desc}
+                >
+                  {x.description}
+                </motion.p>
                 <span className={styles.span}>Why is this important?</span>
                 <ul className={styles.box}>
                   {x.whyImportant.map((y, index) => (
-                    <li key={index}>
+                    <motion.li
+                      variants={fadeIn(index % 2 === 0 ? "up" : "left", 0.3)}
+                      initial='hidden'
+                      whileInView={"show"}
+                      viewport={{ once: false, amount: 0.3 }}
+                      key={index}
+                    >
                       <House className={styles.icon} width={30} height={30} />
                       <h4 className={styles.reasonnTitle}>{y.title}</h4>
-                    </li>
+                    </motion.li>
                   ))}
                 </ul>
               </div>

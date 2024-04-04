@@ -1,14 +1,15 @@
+"use client";
+
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./TechStack.module.css";
 import NextJS from "../../../public/icons/next.svg";
-import Mongo from "../../../public/icons/mongo.svg";
-import Cloudinary from "../../../public/icons/cloudinary.svg";
 import NextAuth from "../../../public/icons/nextAuth.svg";
 import Node from "../../../public/icons/node.svg";
 import Stripe from "../../../public/icons/stripe.svg";
 import Vercel from "../../../public/icons/vercel.svg";
 import GoogleAnalytics from "../../../public/icons/googleAnalytics.svg";
-import Sanity from "../../../public/icons/sanity.svg";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../animation/variants";
 
 const TechStack = () => {
   const data = [
@@ -24,18 +25,6 @@ const TechStack = () => {
       description:
         "A cloud platform that enables developers to deploy, host, and scale websites and applications with ease.",
     },
-    // {
-    //   icon: <Mongo width={50} height={50} />,
-    //   name: "Mongo",
-    //   description:
-    //     "A NoSQL database that provides flexibility and scalability for storing and managing data in a variety of applications.",
-    // },
-    // {
-    //   icon: <Cloudinary width={50} height={50} />,
-    //   name: "Cloudinary",
-    //   description:
-    //     "A cloud platform that enables developers to deploy, host, and scale websites and applications with ease.",
-    // },
     {
       icon: <NextAuth width={50} height={50} />,
       name: "Next Auth",
@@ -54,12 +43,6 @@ const TechStack = () => {
       description:
         "A cloud platform that enables developers to deploy, host, and scale websites and applications with ease.",
     },
-    // {
-    //   icon: <Sanity width={50} height={50} />,
-    //   name: "Sanity. io",
-    //   description:
-    //     "A cloud platform that enables developers to deploy, host, and scale websites and applications with ease.",
-    // },
     {
       icon: <Stripe width={50} height={50} />,
       name: "Stripe",
@@ -72,9 +55,11 @@ const TechStack = () => {
     <section className={styles.container}>
       <LayoutWrapper>
         <div className={styles.top}>
-          <h2 className={styles.heading}>Tools we use to build the perfect website</h2>
+          <h2 className={styles.heading}>
+            Tools we use to build the perfect website
+          </h2>
           <p className={styles.copy}>
-          We use cutting-edge technology to craft websites that outperform
+            We use cutting-edge technology to craft websites that outperform
             those built on platforms like Wordpress, Wix, or Godaddy, which
             often rely on older, slower, and outdated technology. Our approach
             involves using pure HTML, CSS, and Javascript code, ensuring a sleek
@@ -84,11 +69,18 @@ const TechStack = () => {
         </div>
         <div className={styles.bottom}>
           {data.map((x, index) => (
-            <div key={index} className={styles.box}>
+            <motion.div
+              variants={fadeIn(index % 2 === 0 ? "up" : "left", 0.3)}
+              initial='hidden'
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.3 }}
+              key={index}
+              className={styles.box}
+            >
               {x.icon}
               <h3>{x.name}</h3>
-              <p>{x.description}</p>
-            </div>
+              <p className={styles.desc}>{x.description}</p>
+            </motion.div>
           ))}
         </div>
       </LayoutWrapper>

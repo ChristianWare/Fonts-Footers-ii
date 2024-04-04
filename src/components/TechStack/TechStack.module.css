@@ -46,6 +46,10 @@
   top: -6rem;
 }
 
+.desc {
+  opacity: 0.8;
+}
+
 @media screen and (max-width: 968px) {
   .copy {
     width: 100%;
