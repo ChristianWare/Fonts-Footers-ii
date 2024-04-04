@@ -5,7 +5,7 @@
 .top {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
   flex-wrap: wrap;
   background-color: var(--green);
   padding: 5rem;
@@ -14,7 +14,7 @@
   margin-right: auto;
   margin-bottom: 10rem;
   margin-top: 5rem;
-  width: fit-content;
+  width: 90%;
   align-self: flex-start;
   position: -webkit-sticky;
   position: sticky;
@@ -91,9 +91,21 @@
 }
 
 .letter1 {
-  color: var(--tan);
-  border-bottom: thick double var(--tan);
-  font-size: 2rem;
+  color: var(--green3);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--green3);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.1s ease-in;
+}
+
+.letter1:hover {
+  background-color: var(--green3);
+  color: var(--green);
 }
 
 .term {
