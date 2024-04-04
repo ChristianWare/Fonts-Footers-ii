@@ -1,6 +1,10 @@
+"use client";
+
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./BrandPresence.module.css";
 import House from "../../../public/icons/house.svg";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../animation/variants";
 
 const BrandPresence = () => {
   const data = [
@@ -54,11 +58,17 @@ const BrandPresence = () => {
         </div>
         <div className={styles.bottom}>
           {data.map((x, index) => (
-            <div className={styles.card} key={index}>
+            <motion.div
+              variants={fadeIn(index % 2 === 0 ? "down" : "right", 0.3)}
+              initial='hidden'
+              whileInView={"show"}
+              className={styles.card}
+              key={index}
+            >
               {x.icon && <div className={styles.iconContainer}>{x.icon}</div>}
               <h3 className={styles.title}>{x.title}</h3>
               <p className={styles.desc}>{x.description}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </LayoutWrapper>

@@ -1,8 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./LongTermRelationships.module.css";
 import Img from "../../../public/images/house22.png";
 import ArrowCluster from "../ArrowCluster/ArrowCluster";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../animation/variants";
 
 const LongTermRelationships = () => {
   const data = [
@@ -21,7 +25,7 @@ const LongTermRelationships = () => {
       description:
         "Build an email subscriber list through direct bookings and use email marketing campaigns to nurture relationships with past guests and prospects. Send personalized offers, newsletters, and updates to encourage repeat bookings and drive revenue.",
     },
-  ] as const; 
+  ] as const;
 
   return (
     <section className={styles.container}>
@@ -45,10 +49,17 @@ const LongTermRelationships = () => {
           </div>
           <div className={styles.bottom}>
             {data.map((x, index) => (
-              <div key={index} className={styles.card}>
+              <motion.div
+                variants={fadeIn(index % 2 === 0 ? "up" : "left", 0.3)}
+                initial='hidden'
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.3 }}
+                key={index}
+                className={styles.card}
+              >
                 <h3 className={styles.title}>{x.title}</h3>
                 <p className={styles.desc}>{x.description}</p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>

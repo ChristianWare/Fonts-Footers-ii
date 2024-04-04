@@ -1,6 +1,10 @@
+"use client";
+
 import FalseButton from "../FalseButton/FalseButton";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./BenefitsIntro.module.css";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../animation/variants";
 
 const BenefitsIntro = () => {
   return (
@@ -8,10 +12,16 @@ const BenefitsIntro = () => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.left}>
-            <h2 className={styles.heading}>
+            <motion.h2
+              variants={fadeIn("right", 0.3)}
+              initial='hidden'
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.3 }}
+              className={styles.heading}
+            >
               Tap into the benefits that come with having your own digital
               platform.
-            </h2>
+            </motion.h2>
           </div>
           <div className={styles.right}>
             <div className={styles.benefitButtonContainer}>
@@ -22,13 +32,19 @@ const BenefitsIntro = () => {
               <FalseButton text='Long-term Relationships' btnType='primary' />
               <FalseButton text='Competitive Advantage' btnType='primary' />
             </div>
-            <p className={styles.copy}>
+            <motion.p
+              variants={fadeIn("left", 0.3)}
+              initial='hidden'
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.3 }}
+              className={styles.copy}
+            >
               Imagine waving goodbye to hefty service fees and welcoming a surge
               in profitability for your rental home. The secret? Tapping into
               the benefits that come with owning your digital platform. In an
               era where every penny counts, a vacation rental direct website
               might be the edge you need.
-            </p>
+            </motion.p>
           </div>
         </div>
       </LayoutWrapper>

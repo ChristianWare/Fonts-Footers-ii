@@ -1,7 +1,11 @@
+"use client";
+
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./EnhancedMarketing.module.css";
 import Image from "next/image";
 import Img from "../../../public/images/house18.png";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../animation/variants";
 
 const EnhancedMarketing = () => {
   const data = [
@@ -25,12 +29,24 @@ const EnhancedMarketing = () => {
     <section className={styles.container}>
       <LayoutWrapper>
         <div className={styles.content}>
-          <div className={styles.left}>
+          <motion.div
+            variants={fadeIn("right", 0.3)}
+            initial='hidden'
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.3 }}
+            className={styles.left}
+          >
             <div className={styles.imgContainer}>
               <Image src={Img} alt='image' fill className={styles.img} />
             </div>
-          </div>
-          <div className={styles.right}>
+          </motion.div>
+          <motion.div
+            variants={fadeIn("left", 0.3)}
+            initial='hidden'
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.3 }}
+            className={styles.right}
+          >
             <div className={styles.rightTop}>
               <h2 className={styles.heading}>Enhanced Marketing</h2>
               <p className={styles.copy}>
@@ -51,7 +67,7 @@ const EnhancedMarketing = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </motion.div>
         </div>
       </LayoutWrapper>
     </section>

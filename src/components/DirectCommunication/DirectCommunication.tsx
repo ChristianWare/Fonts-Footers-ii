@@ -1,6 +1,10 @@
+"use client";
+
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./DirectCommunication.module.css";
 import Arrow from "../../../public/icons/arrow2.svg";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../animation/variants";
 
 const DirectCommunication = () => {
   const data = [
@@ -53,8 +57,24 @@ const DirectCommunication = () => {
                 <Arrow className={styles.icon} width={25} height={25} />
               </div>
               <div>
-                <h3 className={styles.title}>{x.title}</h3>
-                <p className={styles.desc}>{x.description}</p>
+                <motion.h3
+                  variants={fadeIn(index % 2 === 0 ? "right" : "left", 0.3)}
+                  initial='hidden'
+                  whileInView={"show"}
+                  viewport={{ once: false, amount: 0.3 }}
+                  className={styles.title}
+                >
+                  {x.title}
+                </motion.h3>
+                <motion.p
+                  variants={fadeIn(index % 2 === 0 ? "right" : "left", 0.3)}
+                  initial='hidden'
+                  whileInView={"show"}
+                  viewport={{ once: false, amount: 0.3 }}
+                  className={styles.desc}
+                >
+                  {x.description}
+                </motion.p>
               </div>
             </div>
           ))}

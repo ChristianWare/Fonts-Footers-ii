@@ -1,9 +1,13 @@
+"use client";
+
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./HigherMargins.module.css";
 import House from "../../../public/icons/house.svg";
 import Image from "next/image";
 import Img from "../../../public/images/house19.png";
 import Img2 from "../../../public/images/house20.png";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../animation/variants";
 
 const HigherMargins = () => {
   const data = [
@@ -44,16 +48,27 @@ const HigherMargins = () => {
           {data.map((x, index) => (
             <>
               {x.src && (
-                <div className={styles.imgContainer}>
+                <motion.div
+                  variants={fadeIn(index % 2 === 0 ? "up" : "left", 0.3)}
+                  initial='hidden'
+                  whileInView={"show"}
+                  className={styles.imgContainer}
+                >
                   <Image src={x.src} alt='image' fill className={styles.img} />
-                </div>
+                </motion.div>
               )}
               {x.icon && x.title && x.description && (
-                <div key={index} className={styles.card}>
+                <motion.div
+                  variants={fadeIn(index % 2 === 0 ? "up" : "left", 0.3)}
+                  initial='hidden'
+                  whileInView={"show"}
+                  key={index}
+                  className={styles.card}
+                >
                   <div className={styles.iconContainer}>{x.icon}</div>
                   <h3 className={styles.title}>{x.title}</h3>
                   <p className={styles.desc}>{x.description}</p>
-                </div>
+                </motion.div>
               )}
             </>
           ))}

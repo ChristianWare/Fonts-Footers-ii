@@ -51,26 +51,16 @@ const Features = () => {
               </h2>
               <div className={styles.test}>
                 {features.slice(0, 4).map((x, index) => (
-                  <div key={index} className={styles.featureContainer}>
-                    <motion.div
-                      variants={fadeIn("down", 0.3)}
-                      initial='hidden'
-                      whileInView={"show"}
-                      viewport={{ once: false, amount: 0.3 }}
-                    >
-                      {x.icon}
-                    </motion.div>
-                    <motion.h3
-                      variants={fadeIn(index % 2 === 0 ? "right" : "left", 0.3)}
-                      initial='hidden'
-                      whileInView={"show"}
-                      viewport={{ once: false, amount: 0.3 }}
-                      className={styles.service}
-                    >
-                      {x.service}
-                    </motion.h3>
+                  <motion.div 
+                  variants={fadeIn(index % 2 === 0 ? "right" : "left", 0.3)}
+                initial='hidden'
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.3 }}
+                  key={index} className={styles.featureContainer}>
+                    <div>{x.icon}</div>
+                    <h3 className={styles.service}>{x.service}</h3>
                     <p className={styles.desc}>{x.description}</p>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </div>

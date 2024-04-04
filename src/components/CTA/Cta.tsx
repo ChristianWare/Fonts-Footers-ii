@@ -1,13 +1,23 @@
+"use client";
+
 import ArrowCluster from "../ArrowCluster/ArrowCluster";
 import Button from "../Button/Button";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Cta.module.css";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../animation/variants";
 
 const Cta = () => {
   return (
     <section className={styles.container}>
       <LayoutWrapper>
-        <div className={styles.top}>
+        <motion.div
+          variants={fadeIn("down", 0.3)}
+          initial='hidden'
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          className={styles.top}
+        >
           <div className={styles.topLeft}>
             <div className={styles.arrowContainer}>
               <ArrowCluster />
@@ -34,7 +44,7 @@ const Cta = () => {
               arrow
             />
           </div>
-        </div>
+        </motion.div>
       </LayoutWrapper>
     </section>
   );
