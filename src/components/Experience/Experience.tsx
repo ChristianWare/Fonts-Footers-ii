@@ -9,6 +9,7 @@ import { faqs } from "@/lib/data";
 import Arrow2 from "../../../public/icons/arrow2.svg";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../animation/variants";
+import FalseButton from "../FalseButton/FalseButton";
 
 const Experience = () => {
   const [selected, setSelected] = useState<null | number>(null);
@@ -25,7 +26,7 @@ const Experience = () => {
     <LayoutWrapper>
       <div className={styles.container}>
         <div className={styles.left}>
-          <span className={styles.span}>OUR EXPERIENCE</span>
+          <FalseButton text='OUR EXPERIENCE' btnType='primary' />
           <h2 className={styles.heading}>
             We bring ideas to life by combining
           </h2>

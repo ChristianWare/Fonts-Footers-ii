@@ -11,19 +11,19 @@ import { fadeIn } from "../../../animation/variants";
 const LongTermRelationships = () => {
   const data = [
     {
-      title: "Targeted Advertising",
+      title: "Personalized Communication",
       description:
-        "Utilize data analytics and guest insights to create targeted advertising campaigns. Segment your audience based on demographics, preferences, and booking behaviors to deliver personalized messages that resonate with potential guests.",
+        "Direct communication through the website allows you to address clients' specific needs, preferences, and feedback, creating a personalized experience that fosters loyalty and trust.",
     },
     {
-      title: "Content Marketing",
+      title: "Consistent Brand Experience",
       description:
-        "Create compelling content such as blog posts, videos, and guides related to your destination or property. Share valuable information, travel tips, and local insights to engage visitors and establish your expertise in the industry.",
+        "A direct booking website provides a consistent brand experience from booking to post-stay follow-ups, reinforcing your brand identity and building a sense of reliability and familiarity with clients.",
     },
     {
-      title: "Email Marketing",
+      title: "Customized Offers",
       description:
-        "Build an email subscriber list through direct bookings and use email marketing campaigns to nurture relationships with past guests and prospects. Send personalized offers, newsletters, and updates to encourage repeat bookings and drive revenue.",
+        "You can offer customized packages, discounts, or loyalty rewards directly through your website, incentivizing clients to return for future stays and increasing repeat bookings.",
     },
   ] as const;
 

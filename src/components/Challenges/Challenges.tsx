@@ -12,25 +12,25 @@ import { fadeIn } from "../../../animation/variants";
 const Challenges = () => {
   const data = [
     {
-      title: "Dependence on OTAs and their unpredictable algorithms",
+      title: "Relying on OTA's and their unpredictable algorithms",
       description:
         "This can leave businesses vulnerable to sudden changes in visibility and booking opportunities. Diversifying marketing strategies and investing in a direct booking website can help mitigate the risks associated with OTA dependency.",
       icon: <Algorithm width={75} height={75} />,
     },
     {
-      title: "High commission fees eating into your profits",
+      title: "High commission fees that eat into your profits",
       description:
         "High commission fees from third-party platforms can significantly diminish your profits. Exploring alternative distribution channels and optimizing direct bookings can help maximize your revenue potential.",
       icon: <Fees width={75} height={75} />,
     },
     {
-      title: "Lack of control over your bookings and brand",
+      title: "No control over your company branding",
       description:
         "Struggling with limited control over bookings and brand representation can hinder business autonomy. Investing in a robust booking management system and prioritizing direct customer interactions can enhance control and brand consistency.",
       icon: <Brand width={75} height={75} />,
     },
     {
-      title: "Difficulty standing out in a saturated market",
+      title: "Struggling to standout in a crowded rental market",
       description:
         "Facing challenges in standing out amidst a saturated market can hinder business growth. Implementing unique branding strategies and emphasizing distinctive value propositions can help overcome this obstacle.",
       icon: <Crowd width={75} height={75} />,

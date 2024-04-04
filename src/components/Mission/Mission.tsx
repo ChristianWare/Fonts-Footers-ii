@@ -5,6 +5,7 @@ import styles from "./Mission.module.css";
 import House from "../../../public/icons/house.svg";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../animation/variants";
+import FalseButton from "../FalseButton/FalseButton";
 
 const Mission = () => {
   const data = [
@@ -37,7 +38,8 @@ const Mission = () => {
     <section className={styles.container}>
       <LayoutWrapper>
         <div className={styles.top}>
-          <span>OUR MISSION</span>
+          <FalseButton text='OUR MISSION' btnType='primary' />
+
           <h2 className={styles.heading}>
             Your business will be transformed into a memorable brand when you
             work with us.

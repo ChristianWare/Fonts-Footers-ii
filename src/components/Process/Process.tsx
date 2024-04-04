@@ -6,6 +6,7 @@ import { process } from "@/lib/data";
 import Button from "../Button/Button";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../animation/variants";
+import FalseButton from "../FalseButton/FalseButton";
 
 const Process = () => {
   return (
@@ -21,9 +22,18 @@ const Process = () => {
                 key={x.id}
                 className={styles.processContainer}
               >
-                <h3 className={styles.processName}>
+                {/* <h3 className={styles.processName}>
                   {x.processName.length >= 1 ? index + "." : ""} {x.processName}
-                </h3>
+                </h3> */}
+                {x.processName.length >= 1 && (
+                  <FalseButton
+                    text={`${x.processName.length >= 1 ? index + "." : ""} ${
+                      x.processName
+                    }`}
+                    btnType='primary'
+                  />
+                )}
+
                 <p className={styles.processDescription}>
                   {x.processDescription}
                 </p>

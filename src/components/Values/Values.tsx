@@ -8,6 +8,7 @@ import Img1 from "../../../public/images/house17.png";
 import Img2 from "../../../public/images/aboutHouse.png";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../animation/variants";
+import FalseButton from "../FalseButton/FalseButton";
 
 const Values = () => {
   const data = [
@@ -48,7 +49,7 @@ const Values = () => {
     <section className={styles.container}>
       <LayoutWrapper>
         <div className={styles.top}>
-          <span className={styles.span}>CORE PRINCIPLES AND BELIEFS</span>
+          <FalseButton text='CORE PRINCIPLES AND BELIEFS' btnType='primary' />
           <h2 className={styles.heading}>Our Values</h2>
           <p className={styles.topCopy}>
             Our values act as a set of guiding principles and fundamental

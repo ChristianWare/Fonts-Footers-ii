@@ -11,6 +11,7 @@
 }
 
 .heading {
+  margin-top: 1.5rem;
   margin-bottom: 3rem;
 }
 .copy {
@@ -136,6 +137,13 @@
 }
 
 @media screen and (max-width: 968px) {
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
   .container {
     grid-template-columns: repeat(1, 1fr);
   }

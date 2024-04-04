@@ -10,6 +10,7 @@ import Vercel from "../../../public/icons/vercel.svg";
 import GoogleAnalytics from "../../../public/icons/googleAnalytics.svg";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../animation/variants";
+import FalseButton from "../FalseButton/FalseButton";
 
 const TechStack = () => {
   const data = [
@@ -55,6 +56,8 @@ const TechStack = () => {
     <section className={styles.container}>
       <LayoutWrapper>
         <div className={styles.top}>
+          <FalseButton text='Our Technical Stack' btnType='primary' />
+
           <h2 className={styles.heading}>
             Tools we use to build the perfect website
           </h2>
