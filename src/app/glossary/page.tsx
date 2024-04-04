@@ -1,9 +1,13 @@
+"use client";
+
 import PageIntro from "@/components/PageIntro/PageIntro";
 import styles from "./GlossaryPage.module.css";
 import LayoutWrapper from "@/components/LayoutWrapper";
 import { glossaryMenu } from "@/lib/data";
 import Link from "next/link";
 import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../animation/variants";
 
 export default function GlossaryPage() {
   return (
@@ -18,7 +22,13 @@ export default function GlossaryPage() {
 
       <LayoutWrapper>
         <div className={styles.topContainer}>
-          <div className={styles.top}>
+          <motion.div
+            variants={fadeIn("up", 0.3)}
+            initial='hidden'
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.3 }}
+            className={styles.top}
+          >
             {glossaryMenu.map((x, index) => (
               <Link
                 href={`#${x.letter}`}
@@ -28,7 +38,7 @@ export default function GlossaryPage() {
                 {x.letter}
               </Link>
             ))}
-          </div>
+          </motion.div>
         </div>
         <div className={styles.bottom}>
           <div className={styles.bottomLeft}>

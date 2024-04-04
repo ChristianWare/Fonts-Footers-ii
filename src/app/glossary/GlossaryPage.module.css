@@ -4,17 +4,17 @@
 
 .top {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
   gap: 1rem;
   flex-wrap: wrap;
-  background-color: var(--green);
   padding: 5rem;
   border-radius: 20px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 10rem;
   margin-top: 5rem;
-  width: 90%;
+  margin-bottom: 5rem;
+  width: 70%;
   align-self: flex-start;
   position: -webkit-sticky;
   position: sticky;
@@ -84,27 +84,36 @@
 
 .letter {
   color: var(--green);
-  font-weight: 700;
-  user-select: none;
-  border-bottom: thick double var(--green);
-  padding-bottom: 0.5rem;
-}
-
-.letter1 {
-  color: var(--green3);
+  background-color: var(--green3);
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid var(--green3);
+  border: 1px solid var(--green);
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.1s ease-in;
+  font-weight: 700;
+  user-select: none;
+  margin-bottom: 1rem;
+}
+
+.letter1 {
+  color: var(--green);
+  background-color: var(--green3);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--green);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in;
 }
 
 .letter1:hover {
-  background-color: var(--green3);
+  background-color: transparent;
   color: var(--green);
 }
 
@@ -125,6 +134,11 @@
 }
 
 @media screen and (max-width: 1068px) {
+  .top {
+    width: 100%;
+    padding: 3rem;
+  }
+
   .bottom {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -139,6 +153,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .top {
+    padding: 0rem;
+  }
+
   .sBottom {
     grid-template-columns: repeat(2, 1fr);
     padding: 2rem;

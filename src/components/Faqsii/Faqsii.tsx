@@ -4,11 +4,9 @@ import { useState } from "react";
 import LayoutWrapper from "../LayoutWrapper";
 import { faqs } from "@/lib/data";
 import Arrow2 from "../../../public/icons/arrow2.svg";
-import House from "../../../public/images/faqs.png";
-import Image from "next/image";
 import styles from "./Faqsii.module.css";
-import ArrowCluster from "../ArrowCluster/ArrowCluster";
-import Button from "../Button/Button";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../animation/variants";
 
 const Faqsii = () => {
   const [selected, setSelected] = useState<null | number>(null);
@@ -33,11 +31,17 @@ const Faqsii = () => {
                   onClick={() => toggle(i)}
                 >
                   <div className={styles.headingArrowContainer}>
-                    <div className={styles.h3Container}>
+                    <motion.div
+                      variants={fadeIn("right", 0.3)}
+                      initial='hidden'
+                      whileInView={"show"}
+                      viewport={{ once: false, amount: 0.3 }}
+                      className={styles.h3Container}
+                    >
                       <h3 className={styles.question} lang='en'>
                         {x.question}
                       </h3>
-                    </div>
+                    </motion.div>
                     {selected === i ? (
                       <div className={styles.iconBox}>
                         <Arrow2
