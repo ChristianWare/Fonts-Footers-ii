@@ -1,3 +1,5 @@
+"use client";
+
 import { projects } from "@/lib/data";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Projects.module.css";
@@ -5,6 +7,8 @@ import Image from "next/image";
 import ArrowCluster from "../ArrowCluster/ArrowCluster";
 import Link from "next/link";
 import Button from "../Button/Button";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../animation/variants";
 
 const Projects = () => {
   return (
@@ -17,7 +21,13 @@ const Projects = () => {
           </div>
           {projects.map((x) => (
             <div key={x.title} className={styles.content}>
-              <div className={styles.left}>
+              <motion.div
+                variants={fadeIn("right", 0.3)}
+                initial='hidden'
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.3 }}
+                className={styles.left}
+              >
                 <div className={styles.imgContainer}>
                   <Image
                     src={x.src}
@@ -26,8 +36,14 @@ const Projects = () => {
                     className={styles.img}
                   />
                 </div>
-              </div>
-              <div className={styles.right}>
+              </motion.div>
+              <motion.div
+                variants={fadeIn("left", 0.3)}
+                initial='hidden'
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.3 }}
+                className={styles.right}
+              >
                 <div className={styles.rightTop}>
                   <h3 className={styles.title}>{x.title}</h3>
                   <p className={styles.desc}>{x.description}</p>
@@ -44,7 +60,7 @@ const Projects = () => {
                     Live Site
                   </Link>
                 </div>
-              </div>
+              </motion.div>
             </div>
           ))}
           <div className={styles.btnContainer}>

@@ -1,3 +1,5 @@
+"use client";
+
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Features.module.css";
 import Image from "next/image";
@@ -7,6 +9,8 @@ import Calendar from "../../../public//icons/calendar.svg";
 import Admin from "../../../public//icons/admin.svg";
 import Review from "../../../public//icons/review.svg";
 import CreditCard from "../../../public//icons/creditCard.svg";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../animation/variants";
 
 const Features = () => {
   const features = [
@@ -48,8 +52,23 @@ const Features = () => {
               <div className={styles.test}>
                 {features.slice(0, 4).map((x, index) => (
                   <div key={index} className={styles.featureContainer}>
-                    {x.icon}
-                    <h3 className={styles.service}>{x.service}</h3>
+                    <motion.div
+                      variants={fadeIn("down", 0.3)}
+                      initial='hidden'
+                      whileInView={"show"}
+                      viewport={{ once: false, amount: 0.3 }}
+                    >
+                      {x.icon}
+                    </motion.div>
+                    <motion.h3
+                      variants={fadeIn(index % 2 === 0 ? "right" : "left", 0.3)}
+                      initial='hidden'
+                      whileInView={"show"}
+                      viewport={{ once: false, amount: 0.3 }}
+                      className={styles.service}
+                    >
+                      {x.service}
+                    </motion.h3>
                     <p className={styles.desc}>{x.description}</p>
                   </div>
                 ))}

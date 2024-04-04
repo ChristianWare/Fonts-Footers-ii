@@ -1,9 +1,13 @@
+"use client";
+
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Challenges.module.css";
 import Algorithm from "../../../public/icons/algorithm.svg";
 import Brand from "../../../public/icons/brand.svg";
 import Crowd from "../../../public/icons/crowd.svg";
 import Fees from "../../../public/icons/fees.svg";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../animation/variants";
 
 const Challenges = () => {
   const data = [
@@ -48,17 +52,18 @@ const Challenges = () => {
           {data.map((x, index) => (
             <div key={index} className={styles.box}>
               {x.icon}
-              <h3 className={styles.title}>{x.title}</h3>
+              <motion.h3
+                variants={fadeIn(index % 2 === 0 ? "right" : "left", 0.3)}
+                initial='hidden'
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.3 }}
+                className={styles.title}
+              >
+                {x.title}
+              </motion.h3>
             </div>
           ))}
         </div>
-        {/* <div className={styles.bottom}>
-          <p className={styles.copyBottom}>
-            Embrace the freedom of direct bookings, take control of your brand,
-            and let&apos;s transform these challenges into opportunities
-            together.
-          </p>
-        </div> */}
       </div>
     </LayoutWrapper>
   );

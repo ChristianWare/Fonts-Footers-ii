@@ -6,6 +6,8 @@ import styles from "./Pricing.module.css";
 import Button from "../Button/Button";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../animation/variants";
 
 const Pricing = () => {
   const [isMonthly, setIsMonthly] = useState(false);
@@ -41,8 +43,15 @@ const Pricing = () => {
             </div>
           </div>
           <div className={styles.bottom}>
-            {pricing.map((x) => (
-              <div key={x.id} className={styles.priceContainer}>
+            {pricing.map((x, index) => (
+              <motion.div
+                variants={fadeIn(index % 2 === 0 ? "right" : "left", 0.3)}
+                initial='hidden'
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.3 }}
+                key={x.id}
+                className={styles.priceContainer}
+              >
                 <div className={styles.pcTop}>
                   <h3 className={styles.planName}>{x.plan}</h3>
                   <span className={styles.for}>{x.for}</span>
@@ -60,7 +69,7 @@ const Pricing = () => {
                     ${!isMonthly ? x.prices[0].price : x.prices[1].price}
                   </span>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
           {pathname !== "/pricing" && (

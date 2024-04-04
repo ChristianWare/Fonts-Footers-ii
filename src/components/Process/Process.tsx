@@ -1,8 +1,11 @@
+"use client";
+
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Process.module.css";
 import { process } from "@/lib/data";
-
 import Button from "../Button/Button";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../animation/variants";
 
 const Process = () => {
   return (
@@ -11,21 +14,27 @@ const Process = () => {
         <div className={styles.content}>
           <div className={styles.left}>
             {process.map((x, index) => (
-              <div key={x.id} className={styles.processContainer}>
+              <motion.div
+                variants={fadeIn(index % 2 === 0 ? "up" : "left", 0.3)}
+                initial='hidden'
+                whileInView={"show"}
+                key={x.id}
+                className={styles.processContainer}
+              >
                 <h3 className={styles.processName}>
                   {x.processName.length >= 1 ? index + "." : ""} {x.processName}
                 </h3>
                 <p className={styles.processDescription}>
                   {x.processDescription}
                 </p>
-              </div>
+              </motion.div>
             ))}
           </div>
           <div className={styles.right}>
             <h2 className={styles.heading}>Our Simple 4-step process</h2>
             <p className={styles.copy}>
               These are the steps we take to build your site. We keep you in the
-              loop 100% of the way. 
+              loop 100% of the way.
             </p>
           </div>
         </div>

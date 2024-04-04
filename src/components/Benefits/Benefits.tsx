@@ -1,8 +1,12 @@
+"use client";
+
 import { benefits } from "@/lib/data";
 import LayoutWrapper from "../LayoutWrapper";
 import SectionHeading from "../SectionHeading/SectionHeading";
 import styles from "./Benefits.module.css";
 import Button from "../Button/Button";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../animation/variants";
 
 const Benefits = () => {
   return (
@@ -16,9 +20,25 @@ const Benefits = () => {
             {benefits.slice(0, 3).map((benefit, i) => (
               <div key={i} className={styles.benefitContainer}>
                 <div className={styles.headingContainer}>
-                  <h3 className={styles.heading}>{benefit.heading}</h3>
+                  <motion.h3
+                    variants={fadeIn("right", 0.3)}
+                    initial='hidden'
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.3 }}
+                    className={styles.heading}
+                  >
+                    {benefit.heading}
+                  </motion.h3>
                 </div>
-                <p className={styles.description}>{benefit.description}</p>
+                <motion.p
+                  variants={fadeIn("left", 0.3)}
+                  initial='hidden'
+                  whileInView={"show"}
+                  viewport={{ once: false, amount: 0.3 }}
+                  className={styles.description}
+                >
+                  {benefit.description}
+                </motion.p>
               </div>
             ))}
           </div>
