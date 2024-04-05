@@ -504,14 +504,9 @@ export const glossaryMenu = [
     letter: "B",
     section: [
       {
-        term: "Booking Engine",
+        term: "Backup Booking System",
         description:
-          "Software that allows guests to book vacation rentals directly from the website.",
-      },
-      {
-        term: "Brand Identity",
-        description:
-          "The visual and conceptual representation of a vacation rental brand.",
+          "Alternative arrangements put in place by property owners in case of unexpected issues.",
       },
       {
         term: "Booking Confirmation",
@@ -519,9 +514,9 @@ export const glossaryMenu = [
           "Formal acknowledgment sent to guests after they make a reservation with you.",
       },
       {
-        term: "Business Intelligence",
+        term: "Booking Engine",
         description:
-          "The process of gathering and analyzing data to make informed business decisions.",
+          "Software that allows guests to book vacation rentals directly from the website.",
       },
       {
         term: "Booking Fee",
@@ -529,9 +524,14 @@ export const glossaryMenu = [
           "Fee charged to guests by vacation rental platforms or property owners/managers for each booking.",
       },
       {
-        term: "Backup Booking System",
+        term: "Brand Identity",
         description:
-          "Alternative arrangements put in place by property owners in case of unexpected issues.",
+          "The visual and conceptual representation of a vacation rental brand.",
+      },
+      {
+        term: "Business Intelligence",
+        description:
+          "The process of gathering and analyzing data to make informed business decisions.",
       },
     ],
   },
@@ -544,10 +544,40 @@ export const glossaryMenu = [
           "A contactless check-in process implemented to minimize physical interactions between guests and staff.",
       },
       {
+        term: "Channel Manager",
+        description:
+          "Tool used by vacation rental owners to manage their listings across multiple online platforms.",
+      },
+    ],
+  },
+  {
+    letter: "D",
+    section: [
+      {
         term: "Dynamic Pricing",
         description:
           "A pricing strategy that adjusts rental rates based on demand, seasonality, and market trends.",
       },
+      {
+        term: "Direct Booking",
+        description:
+          "Allowing guests to book vacation rentals directly from the property owner or manager.",
+      },
+      {
+        term: "Digital Key",
+        description:
+          "A virtual key that allows guests to access vacation rental properties using their smartphones.",
+      },
+      {
+        term: "Data Analytics",
+        description:
+          "Using data to analyze guest behavior, market trends, and performance metrics in the vacation rental industry.",
+      },
+    ],
+  },
+  {
+    letter: "E",
+    section: [
       {
         term: "Enhanced Listing",
         description:
@@ -573,31 +603,6 @@ export const glossaryMenu = [
         description:
           "Monitoring and tracking expenses related to managing vacation rental properties.",
       },
-    ],
-  },
-  {
-    letter: "D",
-    section: [
-      {
-        term: "Direct Booking",
-        description:
-          "Allowing guests to book vacation rentals directly from the property owner or manager.",
-      },
-      {
-        term: "Digital Key",
-        description:
-          "A virtual key that allows guests to access vacation rental properties using their smartphones.",
-      },
-      {
-        term: "Data Analytics",
-        description:
-          "Using data to analyze guest behavior, market trends, and performance metrics in the vacation rental industry.",
-      },
-    ],
-  },
-  {
-    letter: "E",
-    section: [
       {
         term: "Email Marketing",
         description:
@@ -628,16 +633,16 @@ export const glossaryMenu = [
         description:
           "Services provided to guests at the front desk of vacation rental properties, including check-in, check-out, and assistance.",
       },
-      {
-        term: "Guest Feedback",
-        description:
-          "Reviews, ratings, and comments provided by guests about their experience staying at a vacation rental property.",
-      },
     ],
   },
   {
     letter: "G",
     section: [
+      {
+        term: "Guest Feedback",
+        description:
+          "Reviews, ratings, and comments provided by guests about their experience staying at a vacation rental property.",
+      },
       {
         term: "Golf Cart",
         description:
@@ -933,16 +938,16 @@ export const glossaryMenu = [
         description:
           "Additional services and amenities provided to guests to enhance their stay and overall experience.",
       },
-      {
-        term: "Website Design",
-        description:
-          "The visual and functional design of vacation rental websites to attract visitors and facilitate bookings.",
-      },
     ],
   },
   {
     letter: "W",
     section: [
+      {
+        term: "Website Design",
+        description:
+          "The visual and functional design of vacation rental websites to attract visitors and facilitate bookings.",
+      },
       {
         term: "Wireless Internet Access",
         description:
@@ -958,6 +963,11 @@ export const glossaryMenu = [
         description:
           "Providing guests with weather forecasts and information to help them plan their activities and stay.",
       },
+    ],
+  },
+  {
+    letter: "X",
+    section: [
       {
         term: "XML Integration",
         description:

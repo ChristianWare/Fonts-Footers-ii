@@ -21,25 +21,7 @@ export default function GlossaryPage() {
       <ScrollHorizontalText />
 
       <LayoutWrapper>
-        <div className={styles.topContainer}>
-          <motion.div
-            variants={fadeIn("up", 0.3)}
-            initial='hidden'
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
-            className={styles.top}
-          >
-            {glossaryMenu.map((x, index) => (
-              <Link
-                href={`#${x.letter}`}
-                key={index}
-                className={styles.letter1}
-              >
-                {x.letter}
-              </Link>
-            ))}
-          </motion.div>
-        </div>
+        <div className={styles.topContainer}></div>
         <div className={styles.bottom}>
           <div className={styles.bottomLeft}>
             {glossaryMenu.map((x, index) => (
@@ -47,17 +29,34 @@ export default function GlossaryPage() {
                 <Link href={`#${x.letter}`} className={styles.letter}>
                   {x.letter}
                 </Link>
-                <div className={styles.term}>
+                <ul className={styles.term}>
                   {x.section.map((y, index) => (
-                    <div key={index} className={styles.term}>
+                    <li key={index} className={styles.term}>
                       {y.term}
-                    </div>
+                    </li>
                   ))}
-                </div>
+                </ul>
               </div>
             ))}
           </div>
           <div className={styles.bottomRight}>
+            <motion.div
+              variants={fadeIn("up", 0.3)}
+              initial='hidden'
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.3 }}
+              className={styles.top}
+            >
+              {glossaryMenu.map((x, index) => (
+                <Link
+                  href={`#${x.letter}`}
+                  key={index}
+                  className={styles.letter1}
+                >
+                  {x.letter}
+                </Link>
+              ))}
+            </motion.div>
             {glossaryMenu.map((x, index) => (
               <div
                 key={index}
