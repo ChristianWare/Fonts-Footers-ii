@@ -54,7 +54,7 @@
   background-color: var(--gray);
   border-radius: 20px;
   border: 1px solid var(--green2);
-  padding: 2rem;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -80,6 +80,7 @@
   align-items: flex-start;
   justify-content: center;
   gap: 1rem;
+  
 }
 
 .letter {
@@ -124,7 +125,9 @@
 }
 
 .title {
-  font-size: 2.1rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: var(--raleway);
   transition: all 0.2s ease-in;
 }
 

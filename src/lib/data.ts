@@ -475,29 +475,28 @@ export const glossaryMenu = [
     letter: "A",
     section: [
       {
-        term: "API",
-        description: "Application Programming Interface.",
-      },
-
-      {
-        term: "Availability Calendar",
-        description:
-          "A visual representation of a vacation rental property's open dates for booking",
-      },
-      {
-        term: "Advanced Pricing Strategies",
-        description:
-          "Using data analytics, market trends, and demand forecasting to implement dynamic pricing.",
-      },
-      {
         term: "Accommodation Types",
         description:
           "Different kinds of properties available for vacation rental.",
       },
       {
+        term: "Advanced Pricing Strategies",
+        description:
+          "Using various kinds of data to implement dynamic pricing.",
+      },
+      {
+        term: "API",
+        description: "Application Programming Interface.",
+      },
+      {
         term: "Automated Guest Communication",
         description:
-          "The use of email templates, chatbots, and messaging platforms to send automated messages to guests.",
+          "The use of email or messaging platforms to send messages to guests.",
+      },
+      {
+        term: "Availability Calendar",
+        description:
+          "A visual representation of a vacation rental property's open dates for booking",
       },
     ],
   },
@@ -513,6 +512,26 @@ export const glossaryMenu = [
         term: "Brand Identity",
         description:
           "The visual and conceptual representation of a vacation rental brand.",
+      },
+      {
+        term: "Booking Confirmation",
+        description:
+          "Formal acknowledgment sent to guests after they make a reservation with you.",
+      },
+      {
+        term: "Business Intelligence",
+        description:
+          "The process of gathering and analyzing data to make informed business decisions.",
+      },
+      {
+        term: "Booking Fee",
+        description:
+          "Fee charged to guests by vacation rental platforms or property owners/managers for each booking.",
+      },
+      {
+        term: "Backup Booking System",
+        description:
+          "Alternative arrangements put in place by property owners in case of unexpected issues.",
       },
     ],
   },
