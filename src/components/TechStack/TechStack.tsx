@@ -18,37 +18,37 @@ const TechStack = () => {
       icon: <NextJS width={50} height={50} />,
       name: "Next Js",
       description:
-        "Aframework that allows developers to build server-side rendered and statically generated web applications.",
+        "A framework that allows developers to build server-side rendered and statically generated web applications.",
     },
     {
       icon: <Vercel width={100} height={100} />,
       name: "Vercel",
       description:
-        "A cloud platform that enables developers to deploy, host, and scale websites and applications with ease.",
+        "Cloud platform that enables developers to deploy, host, and scale websites and applications with ease.",
     },
     {
       icon: <NextAuth width={50} height={50} />,
       name: "Next Auth",
       description:
-        "A cloud platform that enables developers to deploy, host, and scale websites and applications with ease.",
+        "Authentication library for Next.js applications, offering various authentication strategies like OAuth, JWT, and others with easy integration and configuration.",
     },
     {
       icon: <Node width={50} height={50} />,
       name: "Node",
       description:
-        "A cloud platform that enables developers to deploy, host, and scale websites and applications with ease.",
+        "Runtime environment that allows you to run JavaScript code on the server side, enabling the development of scalable and efficient web applications.",
     },
     {
       icon: <GoogleAnalytics width={50} height={50} />,
       name: "Google Analytics",
       description:
-        "A cloud platform that enables developers to deploy, host, and scale websites and applications with ease.",
+        "Web analytics service provided by Google that tracks and reports website traffic, providing insights into user behavior, audience demographics, and the effectiveness of marketing campaigns.",
     },
     {
       icon: <Stripe width={50} height={50} />,
       name: "Stripe",
       description:
-        "A cloud platform that enables developers to deploy, host, and scale websites and applications with ease.",
+        "Payment processing platform that allows businesses to accept payments online, manage subscriptions, handle invoices, and perform other financial transactions securely and efficiently.",
     },
   ] as const;
 
