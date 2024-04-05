@@ -784,9 +784,9 @@ export const glossaryMenu = [
           "A smaller suite or room with additional amenities designed for younger guests or smaller groups.",
       },
       {
-        term: "Joint Venture (JV)",
+        term: "JV",
         description:
-          "Partnership between two or more entities to collaborate on a specific rental property/portfolio.",
+          "Joint Venture is a partnership between two or more entities to collaborate on a specific rental property.",
       },
     ],
   },
@@ -934,7 +934,7 @@ export const glossaryMenu = [
           "High-quality photos taken by professional photographers to showcase vacation rental properties.",
       },
       {
-        term: "Property Management System (PMS)",
+        term: "Property Management System",
         description:
           "Software used by vacation rental owners and managers to oversee all aspects of property operations.",
       },
