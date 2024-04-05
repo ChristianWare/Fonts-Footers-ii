@@ -8,8 +8,6 @@
   justify-content: flex-start;
   gap: 1rem;
   flex-wrap: wrap;
-  /* margin-left: auto; */
-  /* margin-right: auto; */
   margin-bottom: 12rem;
   width: 90%;
   align-self: flex-start;
@@ -28,7 +26,7 @@
 
 .bottomLeft {
   background-color: var(--tan);
-  border: 1px solid #dfdddd;
+  border: 1px solid var(--gray);
   padding: 2rem;
   border-radius: 20px;
   height: fit-content;
@@ -39,7 +37,7 @@
 }
 
 .heading {
-  border-bottom: 1px solid #dfdddd;
+  border-bottom: 1px solid var(--gray);
   padding-bottom: 1rem;
 }
 
@@ -56,7 +54,6 @@
 
 .section {
   border: 1px solid var(--borderii);
-  background-color: var(--gray);
   border-radius: 20px;
   border: 1px solid var(--green2);
   padding: 3rem;

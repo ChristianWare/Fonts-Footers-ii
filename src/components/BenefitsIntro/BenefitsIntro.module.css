@@ -1,5 +1,6 @@
 .content {
   background-color: var(--tan);
+  border: 1px solid var(--gray);
   padding: 5rem;
   margin-top: 10rem;
   border-radius: 20px;
