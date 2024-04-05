@@ -476,33 +476,28 @@ export const glossaryMenu = [
     section: [
       {
         term: "API",
-        description:
-          "An API (Application Programming Interface) is a set of protocols, routines, and tools that allow different software applications to communicate with each other.",
+        description: "Application Programming Interface.",
       },
-      {
-        term: "Automation",
-        description:
-          "The use of technology to streamline and automate repetitive tasks in vacation rental management, saving time, reducing errors, and improving efficiency.",
-      },
+
       {
         term: "Availability Calendar",
         description:
-          "A visual representation of a vacation rental property's open dates for booking. It allows guests to see which dates are available for their stay and helps property owners/managers manage reservations effectively.",
+          "A visual representation of a vacation rental property's open dates for booking",
       },
       {
         term: "Advanced Pricing Strategies",
         description:
-          "Advanced pricing strategies involve using data analytics, market trends, and demand forecasting to implement dynamic pricing for vacation rental properties. This approach allows owners/managers to adjust rates based on factors like seasonality, local events, competitor pricing, and guest demand, maximizing revenue potential.",
+          "Using data analytics, market trends, and demand forecasting to implement dynamic pricing.",
       },
       {
         term: "Accommodation Types",
         description:
-          "Accommodation types refer to the different kinds of properties available for vacation rental, such as apartments, houses, condos, villas, cabins, cottages, and unique accommodations like treehouses or yurts. Offering a variety of accommodation types can attract a diverse range of guests and cater to different preferences and group sizes.",
+          "Different kinds of properties available for vacation rental.",
       },
       {
         term: "Automated Guest Communication",
         description:
-          "This involves using software tools like email templates, chatbots, and messaging platforms to send automated messages to guests at various stages of their booking journey. This includes booking confirmations, check-in instructions, reminders, and post-stay feedback requests, enhancing the guest experience and reducing manual communication efforts.",
+          "The use of email templates, chatbots, and messaging platforms to send automated messages to guests.",
       },
     ],
   },
