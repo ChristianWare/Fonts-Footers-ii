@@ -80,6 +80,10 @@
   text-transform: capitalize;
 }
 
+.mdxContent p {
+  text-align: justify;
+}
+
 .right {
   align-self: flex-start;
   position: -webkit-sticky;

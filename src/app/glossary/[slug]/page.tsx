@@ -10,6 +10,7 @@ import GlossarySlugIntro from "@/components/GlossarySlugIntro/GlossarySlugIntro"
 import { glossaryMenu } from "@/lib/data";
 import Link from "next/link";
 import { Metadata } from "next";
+import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
 
 export async function generateStaticParams() {
   const files = fs.readdirSync(path.join("glossary"));
@@ -89,7 +90,10 @@ export default function Page({ params }: any) {
         date={props.frontMatter.date}
         category={props.frontMatter.category}
       />
+      <ScrollHorizontalText />
       <LayoutWrapper>
+        <br />
+        <br />
         <div className={styles.container}>
           <div className={styles.left}>
             <div className={styles.tocContainer}>
