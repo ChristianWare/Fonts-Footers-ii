@@ -10,7 +10,6 @@ import Map from "../../../public/images/map.png";
 import Admin from "../../../public/images/admin.png";
 import User from "../../../public/images/user.png";
 import Img from "../../../public/images/house25.png";
-import House from "../../../public/icons/house.svg";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../animation/variants";
 
@@ -203,7 +202,8 @@ const IndividualFeature = () => {
                 >
                   {x.description}
                 </motion.p>
-                <span className={styles.span}>Why is this important?</span>
+                <br />
+                <span className={styles.span}>Benefits:</span>
                 <ul className={styles.box}>
                   {x.whyImportant.map((y, index) => (
                     <motion.li
@@ -213,7 +213,6 @@ const IndividualFeature = () => {
                       viewport={{ once: false, amount: 0.3 }}
                       key={index}
                     >
-                      <House className={styles.icon} width={30} height={30} />
                       <h4 className={styles.reasonnTitle}>{y.title}</h4>
                     </motion.li>
                   ))}

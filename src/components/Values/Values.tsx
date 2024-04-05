@@ -4,6 +4,9 @@ import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Values.module.css";
 import Image from "next/image";
 import House from "../../../public/icons/house.svg";
+import Understand from "../../../public/icons/understand.svg";
+import Ok from "../../../public/icons/ok.svg";
+import Scale from "../../../public/icons/scale.svg";
 import Img1 from "../../../public/images/house17.png";
 import Img2 from "../../../public/images/aboutHouse.png";
 import { motion } from "framer-motion";
@@ -17,11 +20,11 @@ const Values = () => {
       description: "Client success is our unwavering commitment.",
       features: [
         {
-          icon: <House width={50} height={50} className={styles.icon} />,
+          icon: <Understand width={50} height={50} className={styles.icon} />,
           detail: "We prioritize deep understanding",
         },
         {
-          icon: <House width={50} height={50} className={styles.icon} />,
+          icon: <Ok width={50} height={50} className={styles.icon} />,
           detail: "We deliver solutions that exceed expectations",
         },
       ],
@@ -33,7 +36,7 @@ const Values = () => {
         "Integrity is our business's bedrock, guiding us with unwavering ethical standards.",
       features: [
         {
-          icon: <House width={50} height={50} className={styles.icon} />,
+          icon: <Scale width={50} height={50} className={styles.icon} />,
           detail:
             "Transparency, honesty, and accountability shape our interactions",
         },
