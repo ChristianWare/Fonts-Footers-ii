@@ -475,22 +475,34 @@ export const glossaryMenu = [
     letter: "A",
     section: [
       {
-        term: "Ace",
-        description: "Another term for a hole-in-one.",
-      },
-      {
-        term: "Address",
+        term: "API",
         description:
-          "The golfer's stance and position with the club before taking a shot.",
+          "An API (Application Programming Interface) is a set of protocols, routines, and tools that allow different software applications to communicate with each other.",
       },
       {
-        term: "Albatross",
-        description: "Scoring three strokes under par on a hole.",
-      },
-      {
-        term: "Approach Shot",
+        term: "Automation",
         description:
-          "A shot played towards the green, typically from the fairway.",
+          "The use of technology to streamline and automate repetitive tasks in vacation rental management, saving time, reducing errors, and improving efficiency.",
+      },
+      {
+        term: "Availability Calendar",
+        description:
+          "A visual representation of a vacation rental property's open dates for booking. It allows guests to see which dates are available for their stay and helps property owners/managers manage reservations effectively.",
+      },
+      {
+        term: "Advanced Pricing Strategies",
+        description:
+          "Advanced pricing strategies involve using data analytics, market trends, and demand forecasting to implement dynamic pricing for vacation rental properties. This approach allows owners/managers to adjust rates based on factors like seasonality, local events, competitor pricing, and guest demand, maximizing revenue potential.",
+      },
+      {
+        term: "Accommodation Types",
+        description:
+          "Accommodation types refer to the different kinds of properties available for vacation rental, such as apartments, houses, condos, villas, cabins, cottages, and unique accommodations like treehouses or yurts. Offering a variety of accommodation types can attract a diverse range of guests and cater to different preferences and group sizes.",
+      },
+      {
+        term: "Automated Guest Communication",
+        description:
+          "This involves using software tools like email templates, chatbots, and messaging platforms to send automated messages to guests at various stages of their booking journey. This includes booking confirmations, check-in instructions, reminders, and post-stay feedback requests, enhancing the guest experience and reducing manual communication efforts.",
       },
     ],
   },
@@ -498,26 +510,14 @@ export const glossaryMenu = [
     letter: "B",
     section: [
       {
-        term: "Backswing",
+        term: "Booking Engine",
         description:
-          "The initial part of the golf swing where the club is moved away from the ball.",
+          "Software that allows guests to book vacation rentals directly from the website.",
       },
       {
-        term: "Ball Marker",
+        term: "Brand Identity",
         description:
-          "A small object used to mark the position of a golfer's ball on the green.",
-      },
-      {
-        term: "Birdie",
-        description: "Scoring one stroke under par on a hole.",
-      },
-      {
-        term: "Blow-up Hole",
-        description: "A hole where a golfer scores much higher than usual.",
-      },
-      {
-        term: "Bunker",
-        description: "A hazard on the golf course filled with sand.",
+          "The visual and conceptual representation of a vacation rental brand.",
       },
     ],
   },
@@ -525,23 +525,39 @@ export const glossaryMenu = [
     letter: "C",
     section: [
       {
-        term: "Caddy",
+        term: "Contactless Check-In",
         description:
-          "A person who carries a golfer's clubs and provides assistance during a round.",
+          "A contactless check-in process implemented to minimize physical interactions between guests and staff.",
       },
       {
-        term: "Chip Shot",
-        description: "A short shot played near the green with a lofted club.",
+        term: "Dynamic Pricing",
+        description:
+          "A pricing strategy that adjusts rental rates based on demand, seasonality, and market trends.",
       },
       {
-        term: "Cup",
+        term: "Enhanced Listing",
         description:
-          "The hole on the putting green where the ball is ultimately intended to go.",
+          "An optimized listing with attractive features, photos, and descriptions to attract more guests.",
       },
       {
-        term: "Cut Shot",
+        term: "Electronic Signature",
         description:
-          "A shot intentionally shaped to move from left to right (for a right-handed golfer).",
+          "A digital signature used to sign rental agreements and other documents electronically.",
+      },
+      {
+        term: "Escrow Service",
+        description:
+          "A secure payment service that holds funds until the rental transaction is completed.",
+      },
+      {
+        term: "Experiential Marketing",
+        description:
+          "A marketing approach that focuses on creating memorable experiences for guests.",
+      },
+      {
+        term: "Expense Tracking",
+        description:
+          "Monitoring and tracking expenses related to managing vacation rental properties.",
       },
     ],
   },
@@ -549,17 +565,19 @@ export const glossaryMenu = [
     letter: "D",
     section: [
       {
-        term: "Divot",
-        description: "A piece of turf or sod displaced by a golf shot.",
-      },
-      {
-        term: "Driver",
-        description: "The club used for the longest shots from the tee.",
-      },
-      {
-        term: "Draw",
+        term: "Direct Booking",
         description:
-          "A shot that curves gently from right to left (for a right-handed golfer).",
+          "Allowing guests to book vacation rentals directly from the property owner or manager.",
+      },
+      {
+        term: "Digital Key",
+        description:
+          "A virtual key that allows guests to access vacation rental properties using their smartphones.",
+      },
+      {
+        term: "Data Analytics",
+        description:
+          "Using data to analyze guest behavior, market trends, and performance metrics in the vacation rental industry.",
       },
     ],
   },
@@ -567,17 +585,19 @@ export const glossaryMenu = [
     letter: "E",
     section: [
       {
-        term: "Eagle",
-        description: "Scoring two strokes under par on a hole.",
-      },
-      {
-        term: "Etiquette",
-        description: "The customary code of behavior on the golf course.",
-      },
-      {
-        term: "Escape Shot",
+        term: "Email Marketing",
         description:
-          "A shot played from a difficult lie or situation to get out of trouble.",
+          "Using email campaigns to promote vacation rental properties, discounts, and special offers to potential guests.",
+      },
+      {
+        term: "Extra Guest Fee",
+        description:
+          "Additional charges for accommodating more guests than the standard occupancy limit in vacation rental properties.",
+      },
+      {
+        term: "Exit Cleaning",
+        description:
+          "Cleaning services provided after guests check out to prepare the vacation rental property for the next guests.",
       },
     ],
   },
@@ -586,26 +606,18 @@ export const glossaryMenu = [
     section: [
       {
         term: "Fairway",
-        description: "The mowed area between the tee and the green.",
-      },
-      {
-        term: "Fade",
         description:
-          "A controlled shot that moves from left to right (for a right-handed golfer).",
+          "The part of the golf course between the tee and the green.",
       },
       {
-        term: "Flagstick",
+        term: "Front Desk Services",
         description:
-          "The marker, usually a pole with a flag, that indicates the location of the hole on the green.",
+          "Services provided to guests at the front desk of vacation rental properties, including check-in, check-out, and assistance.",
       },
       {
-        term: "Fore",
-        description: "A warning shout to alert others of an incoming ball.",
-      },
-      {
-        term: "Four-Ball",
+        term: "Guest Feedback",
         description:
-          "A type of golf competition where two teams of two players compete, and the lower score of each team is used for each hole.",
+          "Reviews, ratings, and comments provided by guests about their experience staying at a vacation rental property.",
       },
     ],
   },
@@ -613,27 +625,19 @@ export const glossaryMenu = [
     letter: "G",
     section: [
       {
-        term: "Green",
-        description: "The finely manicured area surrounding the hole.",
-      },
-      {
-        term: "Grip",
-        description: "The way a golfer holds the club.",
-      },
-      {
-        term: "Groove",
+        term: "Golf Cart",
         description:
-          "The indentations on the face of a golf club that affect ball spin and control.",
+          "A small vehicle used to transport golfers and equipment around the golf course.",
       },
       {
-        term: "Gimme",
+        term: "Guest Communication",
         description:
-          "An agreement between players to count a short putt as made without actually holing out.",
+          "Communicating with guests before, during, and after their stay to provide information, answer questions, and address concerns.",
       },
       {
-        term: "Grain",
+        term: "Guest Experience Management",
         description:
-          "The direction in which the blades of grass on the putting green are growing, which can affect the roll of the ball.",
+          "Managing and enhancing the overall experience for guests staying at vacation rental properties.",
       },
     ],
   },
@@ -641,28 +645,19 @@ export const glossaryMenu = [
     letter: "H",
     section: [
       {
-        term: "Handicap",
-        description: "A measure of a golfer's ability.",
+        term: "Home Automation",
+        description:
+          "Automating tasks and controls within vacation rental properties using smart home technology.",
       },
       {
-        term: "Hazard",
+        term: "House Rules",
         description:
-          "A general term for bunkers or water obstacles on the course.",
+          "Rules and guidelines established by property owners or managers for guests staying at vacation rental properties.",
       },
       {
-        term: "Hook",
+        term: "High-Speed Internet",
         description:
-          "A shot that curves sharply from right to left (for a right-handed golfer).",
-      },
-      {
-        term: "Hole-in-One",
-        description:
-          "A shot that goes directly into the hole from the tee, completing the hole in one stroke.",
-      },
-      {
-        term: "Hosel Rocket",
-        description:
-          "A shot where the ball is struck near the hosel of the club, often resulting in a poor outcome.",
+          "Fast and reliable internet access provided to guests staying at vacation rental properties.",
       },
     ],
   },
@@ -670,22 +665,14 @@ export const glossaryMenu = [
     letter: "I",
     section: [
       {
-        term: "Iron",
-        description: "A type of golf club with a flat, metal head.",
-      },
-      {
-        term: "In the Hole",
-        description: "When the ball is successfully holed.",
-      },
-      {
-        term: "Interlocking Grip",
+        term: "Instant Booking",
         description:
-          "A style of gripping the golf club where the little finger of the bottom hand is hooked around the index finger of the top hand.",
+          "Allowing guests to book vacation rentals instantly without waiting for approval from the property owner or manager.",
       },
       {
-        term: "Impact",
+        term: "Inventory Management",
         description:
-          "The moment when the clubface contacts the ball during the swing.",
+          "Managing and tracking the availability and status of vacation rental properties and their amenities.",
       },
     ],
   },
@@ -693,18 +680,9 @@ export const glossaryMenu = [
     letter: "J",
     section: [
       {
-        term: "Jigger",
-        description: "An obsolete term for a low-lofted iron club.",
-      },
-      {
-        term: "Jointed Club",
+        term: "Junior Suite",
         description:
-          "A type of golf club with a hinged or jointed shaft, designed to be collapsible for easy transport.",
-      },
-      {
-        term: "Jumping the Ball",
-        description:
-          "A shot where the ball is struck on the upswing, resulting in a higher trajectory and increased distance.",
+          "A smaller suite or room with additional amenities designed for younger guests or smaller groups.",
       },
     ],
   },
@@ -712,19 +690,14 @@ export const glossaryMenu = [
     letter: "K",
     section: [
       {
-        term: "Knockdown",
+        term: "Keyless Entry Systems",
         description:
-          "A shot played with a lower trajectory to control distance and wind.",
+          "Systems that allow guests to access vacation rental properties using digital codes or mobile apps without physical keys.",
       },
       {
-        term: "Kick Point",
+        term: "Kitchenette",
         description:
-          "The point on the shaft of a golf club where it bends the most during the swing, influencing the trajectory of the shot.",
-      },
-      {
-        term: "Knee-Knocker",
-        description:
-          "A short putt, usually three feet or less, that is considered easy but can be missed if not focused on.",
+          "A small kitchen area in vacation rental properties equipped with basic cooking facilities.",
       },
     ],
   },
@@ -732,23 +705,19 @@ export const glossaryMenu = [
     letter: "L",
     section: [
       {
-        term: "Lie",
-        description: "The position of the ball on the ground.",
+        term: "Landing Page",
+        description:
+          "A web page designed to capture visitor's attention and encourage them to take a specific action, such as booking a vacation rental.",
       },
       {
-        term: "Lag Putt",
+        term: "Late Checkout",
         description:
-          "A long putt played with the intention of leaving the ball close to the hole, rather than trying to make it.",
+          "Allowing guests to check out of vacation rental properties later than the standard checkout time for an additional fee.",
       },
       {
-        term: "Lob Shot",
+        term: "Local Attractions",
         description:
-          "A high, short shot typically played with a wedge, causing the ball to land softly on the green.",
-      },
-      {
-        term: "Local Rule",
-        description:
-          "A rule or condition set by a golf course that may differ from the official rules of golf.",
+          "Points of interest, activities, and attractions near vacation rental properties that guests may want to visit.",
       },
     ],
   },
@@ -756,22 +725,19 @@ export const glossaryMenu = [
     letter: "M",
     section: [
       {
-        term: "Mulligan",
-        description: "A do-over, typically not allowed in official play.",
-      },
-      {
-        term: "Mid-Iron",
+        term: "Multi-Property Management",
         description:
-          "A golf club with moderate loft, typically including clubs numbered 3 through 6.",
+          "Managing multiple vacation rental properties from a single platform or software.",
       },
       {
-        term: "Marker",
+        term: "Mobile Compatibility",
         description:
-          "A device or object used to identify the location of a golfer's ball on the green.",
+          "Ensuring that vacation rental websites and platforms are optimized for mobile devices and provide a seamless user experience.",
       },
       {
-        term: "Mashie",
-        description: "An obsolete term for a medium-lofted iron club.",
+        term: "Market Analysis",
+        description:
+          "Analyzing market trends, competition, demand, and pricing strategies in the vacation rental industry.",
       },
     ],
   },
@@ -779,186 +745,235 @@ export const glossaryMenu = [
     letter: "N",
     section: [
       {
-        term: "Nine Iron",
-        description: "A type of iron club with a moderate loft.",
+        term: "Net Revenue",
+        description:
+          "The total revenue generated from vacation rental properties after deducting expenses, taxes, and other costs.",
       },
       {
-        term: "Nassau",
+        term: "Niche Market",
         description:
-          "A type of golf betting game that is played over three separate matches: front nine, back nine, and overall 18 holes.",
+          "Targeting a specific segment or niche within the vacation rental market, such as luxury rentals, pet-friendly properties, or eco-friendly accommodations.",
       },
     ],
   },
-
   {
     letter: "O",
     section: [
       {
-        term: "Open Face",
+        term: "Occupancy Rate",
         description:
-          "A clubface that is angled to the right for a right-handed golfer.",
+          "The percentage of time that vacation rental properties are occupied by guests compared to their availability.",
       },
       {
-        term: "Out of Bounds",
+        term: "Online Payment Processing",
         description:
-          "Areas outside the boundaries of the golf course where play is not allowed.",
+          "Accepting payments from guests for bookings and reservations through online payment gateways.",
+      },
+      {
+        term: "Owner Portal",
+        description:
+          "A secure online portal for property owners to manage their vacation rental properties, bookings, and financials.",
       },
     ],
   },
-
   {
     letter: "P",
     section: [
       {
-        term: "Par",
+        term: "Payment Gateway",
         description:
-          "The standard number of strokes a skilled golfer should take to complete a hole.",
+          "A secure platform that processes payments from guests for bookings and reservations.",
       },
       {
-        term: "Pitch Shot",
+        term: "Peak Season Pricing",
         description:
-          "A shot played with a higher trajectory than a chip but lower than a full swing.",
+          "Adjusting rental rates during peak seasons or high-demand periods for vacation rental properties.",
       },
       {
-        term: "Plugged Lie",
+        term: "Professional Photography",
         description:
-          "A ball that is partially or fully buried in its own pitch mark, often occurring in soft ground.",
+          "High-quality photos taken by professional photographers to showcase vacation rental properties.",
       },
     ],
   },
-
   {
     letter: "Q",
     section: [
       {
-        term: "Qualifier",
+        term: "Quality Assurance",
         description:
-          "A tournament round used to determine eligibility for an event.",
+          "Ensuring that vacation rental properties meet high standards of cleanliness, maintenance, and guest satisfaction.",
       },
     ],
   },
-
   {
     letter: "R",
     section: [
       {
-        term: "Rough",
-        description: "The longer grass on the sides of the fairway.",
+        term: "Reservation Management",
+        description:
+          "Handling bookings, reservations, and guest inquiries for vacation rental properties.",
       },
       {
-        term: "Ryder Cup",
+        term: "Review Management",
         description:
-          "A biennial men's golf competition between teams from Europe and the United States.",
+          "Monitoring and responding to guest reviews and feedback for vacation rental properties.",
+      },
+      {
+        term: "Revenue Management",
+        description:
+          "Strategies for maximizing revenue and profitability for vacation rental properties.",
+      },
+      {
+        term: "Rate Parity",
+        description:
+          "Maintaining consistent pricing for vacation rental properties across different distribution channels.",
       },
     ],
   },
-
   {
     letter: "S",
     section: [
       {
-        term: "Sand Trap",
-        description: "A hazard filled with sand, also known as a bunker.",
+        term: "Search Engine Optimization",
+        description:
+          "Optimizing vacation rental websites and content to improve visibility and ranking in search engine results.",
       },
       {
-        term: "Slice",
+        term: "Security Deposits",
         description:
-          "A shot that curves sharply to the right for a right-handed golfer.",
+          "Refundable deposits collected from guests to cover damages or losses during their stay.",
       },
       {
-        term: "Stance",
+        term: "Social Media Marketing",
         description:
-          "The position of a golfer's feet before and during a shot.",
+          "Promoting vacation rental properties and engaging with guests through social media platforms.",
+      },
+      {
+        term: "Superhost",
+        description:
+          "A designation on Airbnb for hosts who provide exceptional hospitality and meet certain criteria.",
       },
     ],
   },
-
   {
     letter: "T",
     section: [
       {
-        term: "Tee",
-        description: "The designated area to start each hole.",
+        term: "Trust and Safety Measures",
+        description:
+          "Policies and protocols implemented to ensure the safety and security of guests at vacation rental properties.",
       },
       {
-        term: "Three-Putt",
+        term: "Trip Planning Tools",
         description:
-          "Taking three strokes to complete a hole on the putting green.",
+          "Tools and resources provided to guests to plan their trips, activities, and itineraries.",
       },
       {
-        term: "Topspin",
+        term: "Technology Integration",
         description:
-          "A type of spin applied to the golf ball that causes it to roll forward upon landing.",
+          "Incorporating digital tools and platforms into vacation rental operations for efficiency and guest experience.",
+      },
+      {
+        term: "Terms and Conditions",
+        description:
+          "Legal terms and policies governing guest stays, payments, cancellations, and property rules.",
       },
     ],
   },
-
   {
     letter: "U",
     section: [
       {
-        term: "Up and Down",
+        term: "User Experience",
         description:
-          "Completing a hole in two strokes from just off the green.",
+          "The overall experience and satisfaction of guests using vacation rental platforms and services.",
+      },
+      {
+        term: "Upselling",
+        description:
+          "Offering additional services, upgrades, or amenities to guests to enhance their experience and increase revenue.",
+      },
+      {
+        term: "Unique Selling Proposition",
+        description:
+          "Distinctive features or benefits that set vacation rental properties apart from competitors and attract guests.",
       },
     ],
   },
-
   {
     letter: "V",
     section: [
       {
-        term: "Vardon Grip",
+        term: "Vacation Rental Management Software",
         description:
-          "A grip style named after golfer Harry Vardon, with the little finger of the bottom hand overlapping the index finger of the top hand.",
+          "Software platforms designed to manage bookings, reservations, and operations for vacation rental properties.",
+      },
+      {
+        term: "Virtual Tours",
+        description:
+          "Interactive virtual tours that showcase vacation rental properties and amenities to potential guests.",
+      },
+      {
+        term: "Value-added Services",
+        description:
+          "Additional services and amenities provided to guests to enhance their stay and overall experience.",
+      },
+      {
+        term: "Website Design",
+        description:
+          "The visual and functional design of vacation rental websites to attract visitors and facilitate bookings.",
       },
     ],
   },
-
   {
     letter: "W",
     section: [
       {
-        term: "Wedge",
-        description: "A type of club designed for short, high shots.",
-      },
-      {
-        term: "Whiff",
+        term: "Wireless Internet Access",
         description:
-          "A swing and miss, where the club fails to make contact with the ball.",
+          "Providing fast and reliable internet connectivity to guests staying at vacation rental properties.",
       },
-    ],
-  },
-
-  {
-    letter: "X",
-    section: [
       {
-        term: "None",
-        description: "No X yet",
+        term: "Welcome Packages",
+        description:
+          "Personalized packages or amenities provided to guests upon their arrival to enhance their welcome and experience.",
+      },
+      {
+        term: "Weather Information",
+        description:
+          "Providing guests with weather forecasts and information to help them plan their activities and stay.",
+      },
+      {
+        term: "XML Integration",
+        description:
+          "Integrating vacation rental systems and platforms using XML technology for seamless data exchange.",
       },
     ],
   },
-
   {
     letter: "Y",
     section: [
       {
-        term: "Yips",
+        term: "Yield Management",
         description:
-          "A nervous condition that causes a golfer to twitch or flinch during a shot.",
+          "Strategies and techniques for optimizing pricing and revenue for vacation rental properties.",
       },
     ],
   },
-
   {
     letter: "Z",
     section: [
       {
-        term: "Zoomie",
+        term: "Zero Contact Check-In",
         description:
-          "A drive that goes further than most drives ever hit by the golfer who smacked it.",
+          "Implementing contactless check-in processes to minimize physical interactions between guests and staff.",
+      },
+      {
+        term: "Zone-Based Pricing",
+        description:
+          "Adjusting rental rates based on different geographic zones or areas within a destination.",
       },
     ],
   },
-];
+] as const;
