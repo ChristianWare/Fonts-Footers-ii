@@ -22,9 +22,6 @@ const Process = () => {
                 key={x.id}
                 className={styles.processContainer}
               >
-                {/* <h3 className={styles.processName}>
-                  {x.processName.length >= 1 ? index + "." : ""} {x.processName}
-                </h3> */}
                 {x.processName.length >= 1 && (
                   <FalseButton
                     text={`${x.processName.length >= 1 ? index + "." : ""} ${

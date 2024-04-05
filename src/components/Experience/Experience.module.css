@@ -91,7 +91,7 @@
   font-weight: 700;
   font-size: 2rem;
   line-height: 120%;
-  width: 90%;
+  /* width: 90%; */
   hyphens: auto;
   transition: all 0.2s ease-in;
   text-transform: none;
@@ -107,7 +107,7 @@
 .answer {
   margin-top: 2rem;
   hyphens: auto;
-  width: 80%;
+  width: 90%;
 }
 
 .imgContainer {

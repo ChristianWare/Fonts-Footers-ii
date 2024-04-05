@@ -10,7 +10,6 @@ import Blog from "../../public/icons/blog.png";
 import Sitemap from "../../public/icons/sitemap.png";
 import Social from "../../public/icons/social.png";
 import Index from "../../public/icons/index.png";
-import Img from "../../public/images/house23.png";
 
 import Project1 from "../../public/images/img1.jpg";
 

@@ -7,16 +7,15 @@
   margin: 5rem 0rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+  justify-content: flex-end;
   gap: 3rem;
 }
 
 .heading {
-  text-align: center;
-  width: 70%;
+  text-align: right;
+  width: 60%;
   margin-left: auto;
-  margin-right: auto;
 }
 
 .bottom {
@@ -45,7 +44,6 @@
 .right {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* grid-gap: 3rem; */
 }
 
 .card {
@@ -83,8 +81,14 @@
 }
 
 @media screen and (max-width: 968px) {
+  .top {
+    align-items: center;
+    justify-content: center;
+  }
+
   .heading {
     width: 100%;
+    text-align: center;
   }
 
   .bottom {
@@ -97,6 +101,15 @@
 }
 
 @media screen and (max-width: 568px) {
+  .top {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .heading {
+    text-align: left;
+  }
+
   .bottom {
     grid-gap: 3rem;
   }

@@ -5,7 +5,6 @@ import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Experience.module.css";
 import Image from "next/image";
 import Img from "../../../public/images/house11.png";
-import { faqs } from "@/lib/data";
 import Arrow2 from "../../../public/icons/arrow2.svg";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../animation/variants";
@@ -22,23 +21,49 @@ const Experience = () => {
     setSelected(i);
   };
 
+  const faqs = [
+    {
+      question: "Industry Knowledge",
+      answer:
+        "With a background in hospitality and technology, we have a comprehensive understanding of the unique challenges and opportunities in the vacation rental market. Our team stays updated on industry trends, best practices, and innovative solutions to deliver results that exceed your expectations.",
+    },
+    {
+      question: "Proven Track Record",
+      answer:
+        "We have successfully worked with numerous vacation rental property owners, helping them launch and optimize their direct booking websites. Our track record of delivering quality solutions and achieving measurable results speaks for itself.",
+    },
+    {
+      question: "Tailored Solutions",
+      answer:
+        "We understand that every property is unique, and we tailor our services to fit your specific needs and goals. Whether you have a single property or a portfolio of rentals, we design custom direct booking websites that showcase your properties and drive bookings.",
+    },
+    {
+      question: "Technology Expertise",
+      answer:
+        "Our team consists of experienced developers, designers, and digital marketers who specialize in building user-friendly, responsive websites with advanced booking engines, secure payment gateways, and seamless integrations. We leverage cutting-edge technology to enhance the guest experience and streamline your operations.",
+    },
+    
+  ];
+
   return (
     <LayoutWrapper>
       <div className={styles.container}>
         <div className={styles.left}>
           <FalseButton text='OUR EXPERIENCE' btnType='primary' />
           <h2 className={styles.heading}>
-            We bring ideas to life by combining
+            Elevate Your Vacation Rental Business with Our Expertise
           </h2>
           <p className={styles.copy}>
-            Quickly cultivate optimal processes and tactical architectures
-            completely iterate covalent strategic theme areas.
+            At Fonts & Footers, we bring years of expertise and a deep
+            understanding of the vacation rental industry to help property
+            owners like you succeed. Here&lsquo;s why our experience sets us
+            apart:
           </p>
-          {faqs.slice(0, 4).map((x, i) => (
+          {faqs.map((x, index) => (
             <div
-              key={x.id}
+              key={index}
               className={styles.qaContainer}
-              onClick={() => toggle(i)}
+              onClick={() => toggle(index)}
             >
               <div className={styles.headingArrowContainer}>
                 <motion.div
@@ -52,7 +77,7 @@ const Experience = () => {
                     {x.question}
                   </h3>
                 </motion.div>
-                {selected === i ? (
+                {selected === index ? (
                   <div className={styles.iconBox}>
                     <Arrow2
                       className={styles.iconFlip}
@@ -68,7 +93,7 @@ const Experience = () => {
               </div>
               <div
                 className={
-                  selected === i
+                  selected === index
                     ? styles.answerContainer + " " + styles.show
                     : styles.answerContainer
                 }

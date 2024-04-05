@@ -14,32 +14,33 @@ const Values = () => {
   const data = [
     {
       title: "Client Focus",
-      description:
-        "Our values act as a set of guiding principles and fundamental beliefs that influence the behaviors we demonstrate, which shape the decisions we collectively make as a team.",
+      description: "Client success is our unwavering commitment.",
       features: [
         {
           icon: <House width={50} height={50} className={styles.icon} />,
-          detail: "Our values act as a set of guiding principles",
+          detail: "We prioritize deep understanding",
         },
         {
           icon: <House width={50} height={50} className={styles.icon} />,
-          detail: "Our values act as a set of guiding principles",
+          detail: "We deliver solutions that exceed expectations",
         },
       ],
       src: Img1,
     },
     {
-      title: "Client Focus",
+      title: "Integrity",
       description:
-        "Our values act as a set of guiding principles and fundamental beliefs that influence the behaviors we demonstrate, which shape the decisions we collectively make as a team.",
+        "Integrity is our business's bedrock, guiding us with unwavering ethical standards.",
       features: [
         {
           icon: <House width={50} height={50} className={styles.icon} />,
-          detail: "Our values act as a set of guiding principles",
+          detail:
+            "Transparency, honesty, and accountability shape our interactions",
         },
         {
           icon: <House width={50} height={50} className={styles.icon} />,
-          detail: "Our values act as a set of guiding principles",
+          detail:
+            "We foster a positive work culture, and establish enduring credibility",
         },
       ],
       src: Img2,

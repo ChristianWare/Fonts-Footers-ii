@@ -11,49 +11,49 @@ const Mission = () => {
   const data = [
     {
       icon: <House width={50} height={50} className={styles.icon} />,
-      title: "Analysis",
+      title: "Trust & Transparency",
       description:
-        "World productive that buy-in driver's. Enable decisions dangerous rundown.",
+        "We prioritize trust and transparency, building a reliable and secure environment for vacation rental owners.",
     },
     {
       icon: <House width={50} height={50} className={styles.icon} />,
-      title: "Research",
+      title: "User-Friendly",
       description:
-        "World productive that buy-in driver's. Enable decisions dangerous rundown.",
+        "We strive to offer a personalized and user-friendly experience, tailoring our services to meet the unique needs of each host.",
     },
     {
       icon: <House width={50} height={50} className={styles.icon} />,
-      title: "Resource",
+      title: "Growth",
       description:
-        "World productive that buy-in driver's. Enable decisions dangerous rundown.",
+        "Our mission is to contribute to the growth of vacation rental businesses, enabling hosts to thrive in a competitive marketplace.",
     },
     {
       icon: <House width={50} height={50} className={styles.icon} />,
-      title: "Management",
+      title: "Personalization",
       description:
-        "World productive that buy-in driver's. Enable decisions dangerous rundown.",
+        "Continuously enhance user experience by offering personalized solutions that cater to the specific requirements of each vacation rental owner.",
     },
   ];
   return (
     <section className={styles.container}>
       <LayoutWrapper>
         <div className={styles.top}>
-          <FalseButton text='OUR MISSION' btnType='primary' />
-
+          <FalseButton text='OUR MISSION explained' btnType='primary' />
           <h2 className={styles.heading}>
-            Your business will be transformed into a memorable brand when you
-            work with us.
+            Empowering Vacation Rental Owners Through Trust, Transparency, and
+            Growth
           </h2>
         </div>
         <div className={styles.bottom}>
           <div className={styles.left}>
-            <span className={styles.span}>PROCESS OF WORK</span>
-            <h3 className={styles.headingii}>
-              Well make your brand memorable.
-            </h3>
+            <FalseButton text='Mission Statement' btnType='primary' />
             <p className={styles.leftCopy}>
-              World productive that buy-in drivers. Enable decisions dangerous
-              rundown opportunity files.
+              Empowering vacation rental owners with personalized and
+              user-friendly direct booking websites, our mission is to liberate
+              hosts from intermediary platforms, fostering independence, trust,
+              and growth in their businesses, as we redefine the vacation rental
+              experience away from Airbnb. Here are the four ways we plan on
+              accomplishing that goal:
             </p>
           </div>
           <div className={styles.right}>
