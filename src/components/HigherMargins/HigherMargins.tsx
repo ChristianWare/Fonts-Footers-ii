@@ -3,6 +3,10 @@
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./HigherMargins.module.css";
 import House from "../../../public/icons/house.svg";
+import Money from "../../../public/icons/money.svg";
+import Control from "../../../public/icons/control.svg";
+import Promotion from "../../../public/icons/promotion.svg";
+import Repeat from "../../../public/icons/repeat.svg";
 import Image from "next/image";
 import Img from "../../../public/images/house19.png";
 import Img2 from "../../../public/images/house20.png";
@@ -12,26 +16,26 @@ import { fadeIn } from "../../../animation/variants";
 const HigherMargins = () => {
   const data = [
     {
-      icon: <House width={30} height={30} className={styles.icon} />,
+      icon: <Money width={32} height={32} className={styles.icon} />,
       title: "Elimination of Third-Party Fees",
       description:
         "Bypass commission fees charged by third-party booking platforms and keep a larger portion of the rental income.",
     },
     {
       src: Img,
-      icon: <House width={30} height={30} className={styles.icon} />,
+      icon: <Control width={30} height={30} className={styles.icon} />,
       title: "Control Over Pricing",
       description:
         "Set your own pricing without being constrained by platform fees or price restrictions imposed by third-party sites. Adjust prices based on demand, seasonality, and market conditions, maximizing revenue potential.",
     },
     {
-      icon: <House width={30} height={30} className={styles.icon} />,
+      icon: <Promotion width={27} height={27} className={styles.icon} />,
       title: "Promotional Offers",
       description:
         "Create and promote special offers, discounts, and packages directly on your website to attract guests and increase bookings. Without third-party platform restrictions, you can implement targeted promotions that align with your marketing strategies and revenue goals.",
     },
     {
-      icon: <House width={30} height={30} className={styles.icon} />,
+      icon: <Repeat width={30} height={30} className={styles.icon} />,
       title: "Repeat Bookings",
       description:
         "Direct communication with guests fosters stronger relationships and encourages repeat bookings. By offering excellent service, personalized experiences, and loyalty incentives, you can increase guest retention and generate recurring revenue without incurring additional booking fees.",

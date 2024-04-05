@@ -2,7 +2,10 @@
 
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Mission.module.css";
-import House from "../../../public/icons/house.svg";
+import Trust from "../../../public/icons/trust.svg";
+import User from "../../../public/icons/user.svg";
+import Grow from "../../../public/icons/grow.svg";
+import Unique from "../../../public/icons/unique.svg";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../animation/variants";
 import FalseButton from "../FalseButton/FalseButton";
@@ -10,25 +13,25 @@ import FalseButton from "../FalseButton/FalseButton";
 const Mission = () => {
   const data = [
     {
-      icon: <House width={50} height={50} className={styles.icon} />,
+      icon: <Trust width={50} height={50} className={styles.icon} />,
       title: "Trust & Transparency",
       description:
         "We prioritize trust and transparency, building a reliable and secure environment for vacation rental owners.",
     },
     {
-      icon: <House width={50} height={50} className={styles.icon} />,
+      icon: <User width={50} height={50} className={styles.icon} />,
       title: "User-Friendly",
       description:
         "We strive to offer a personalized and user-friendly experience, tailoring our services to meet the unique needs of each host.",
     },
     {
-      icon: <House width={50} height={50} className={styles.icon} />,
+      icon: <Grow width={53} height={53} className={styles.icon} />,
       title: "Growth",
       description:
         "Our mission is to contribute to the growth of vacation rental businesses, enabling hosts to thrive in a competitive marketplace.",
     },
     {
-      icon: <House width={50} height={50} className={styles.icon} />,
+      icon: <Unique width={50} height={50} className={styles.icon} />,
       title: "Personalization",
       description:
         "Continuously enhance user experience by offering personalized solutions that cater to the specific requirements of each vacation rental owner.",
