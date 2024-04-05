@@ -1,16 +1,3 @@
-import Calendar from "../../public/icons/calendar.png";
-import Reviews2 from "../../public/icons/reviews2.png";
-import Admin4 from "../../public/icons/Admin4.png";
-import CC from "../../public/icons/cc.png";
-import Responsive from "../../public/icons/responsive.png";
-import Accessibility from "../../public/icons/accessibility.png";
-import SEO from "../../public/icons/seo.png";
-import Page from "../../public/icons/page.png";
-import Blog from "../../public/icons/blog.png";
-import Sitemap from "../../public/icons/sitemap.png";
-import Social from "../../public/icons/social.png";
-import Index from "../../public/icons/index.png";
-
 import Project1 from "../../public/images/img1.jpg";
 
 export const benefits = [
@@ -51,73 +38,61 @@ export const features = [
     service: "Booking Engine",
     description:
       "Implement a user-friendly booking system that allows guests to check availability, select dates, and make reservations directly on your site.",
-    icon: Calendar,
   },
   {
     service: "Guest Reviews",
     description:
       "Showcase positive reviews and testimonials from previous guests to build trust and credibility. Visitors will only be able to review once they've booked a stay on your property.",
-    icon: Reviews2,
   },
   {
     service: "Admin Panel",
     description:
       "Your admin panel will allow you to create, update, and delete listings on your personalized booking websites. View the number of bookings, and make any updates as needed.",
-    icon: Admin4,
   },
   {
     service: "Payment Processing",
     description:
       "We use Stripe payment processing so that you'll be able to secure online transactions, integrating a trusted payment gateway for businesses to accept credit card payments.",
-    icon: CC,
   },
   {
     service: "Mobile Resposive",
     description:
       "Designed to adapt and display optimally on various devices and screen sizes, providing an optimal user experience by adjusting its layout and content dynamically.",
-    icon: Responsive,
   },
   {
     service: "Accessible",
     description:
       "Ensures that people with disabilities can perceive, understand, navigate, and interact with its content, features, and functionalities effectively.",
-    icon: Accessibility,
   },
   {
     service: "Search Engine Optomization",
     description:
       "A search engine optimized website is configured to enhance its visibility and ranking on search engine results pages.",
-    icon: SEO,
   },
   {
     service: "Page Speed Optmization",
     description:
       "Ensure that webite pages load quickly and efficiently and has fast loading times for its pages and content, improving user experience search engine rankings.",
-    icon: Page,
   },
   {
     service: "Blog Articles",
     description:
       "Blog articles enhance website visibility by providing fresh, relevant, and keyword-rich content that boosts organic search rankings, and engages potential clients.",
-    icon: Blog,
   },
   {
     service: "Site Map",
     description:
       "Site maps increase website visibility by helping search engines to understand the site's structure, improving rankings and ensuring that all pages are easily accessible.",
-    icon: Sitemap,
   },
   {
     service: "Social Media Intergration",
     description:
       "Enhances website visibility by connecting your website to social platforms, enabling easy sharing of content, ultimately expanding the online reach of your business.",
-    icon: Social,
   },
   {
     service: "Google Indexing",
     description:
       "Allows google to crawl and analyze the content of your website, and then indexes it in its database, ensuring that your website is eligible to appear in Google search results.",
-    icon: Index,
   },
 ] as const;
 

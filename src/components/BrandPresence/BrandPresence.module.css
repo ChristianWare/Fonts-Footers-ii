@@ -25,6 +25,7 @@
   padding: 3rem;
   border-radius: 20px;
   border: 1px solid var(--green2);
+  background-color: var(--white);
 }
 
 .card:nth-child(1) {
