@@ -80,6 +80,13 @@
   text-transform: capitalize;
 }
 
+.mdxContent h3 {
+  font-weight: 700;
+  font-size: 2rem;
+  font-family: var(--raleway);
+  text-transform: capitalize;
+}
+
 .mdxContent p {
   text-align: justify;
 }
