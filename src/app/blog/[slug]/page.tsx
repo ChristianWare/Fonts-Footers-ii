@@ -19,7 +19,7 @@ async function getData(slug: string) {
 
 async function getDataii() {
   const query = `
-    *[_type == 'blog'][0...2] | order(_createdAt desc) {
+    *[_type == 'blog'][0...3] | order(_createdAt desc) {
       title,
       smallDescription,
       publishedAt,

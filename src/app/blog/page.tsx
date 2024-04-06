@@ -7,7 +7,7 @@ import Faqs from "@/components/Faqs/Faqs";
 
 async function getData() {
   const query = `
-    *[_type == 'blog'][0...2] | order(_createdAt desc) {
+    *[_type == 'blog'][0...3] | order(_createdAt desc) {
       title,
       smallDescription,
       publishedAt,
