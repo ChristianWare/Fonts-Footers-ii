@@ -27,6 +27,7 @@
 
 .secondary {
   color: var(--green);
+  background-color: var(--white);
   border: 1px solid var(--green);
   padding: 5px 30px;
 }

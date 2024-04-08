@@ -21,6 +21,21 @@ const LongTermRelationships = () => {
         "A direct booking website provides a consistent brand experience from booking to post-stay follow-ups, reinforcing your brand identity and building a sense of reliability and familiarity with clients.",
     },
     {
+      title: "",
+      description:
+        "",
+    },
+    {
+      title: "",
+      description:
+        "",
+    },
+    {
+      title: "",
+      description:
+        "",
+    },
+    {
       title: "Customized Offers",
       description:
         "You can offer customized packages, discounts, or loyalty rewards directly through your website, incentivizing clients to return for future stays and increasing repeat bookings.",
