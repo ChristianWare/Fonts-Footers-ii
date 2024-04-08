@@ -30,7 +30,7 @@ const CallToAction = () => {
           >
             Fonts & Footers <br />
             <span className={styles.span}>
-              Direct Booking Specialits
+              Direct Booking Specialists
               <br />
             </span>
           </motion.h2>
