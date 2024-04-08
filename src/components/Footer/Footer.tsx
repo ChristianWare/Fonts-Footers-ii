@@ -7,7 +7,7 @@ import Instagram from "../../../public/icons/instagram.svg";
 import LinkedIn from "../../../public/icons/linkedin.svg";
 import Twitter from "../../../public/icons/twitter.svg";
 import Facebook from "../../../public/icons/facebook.svg";
-import Logo from "../Logo/Logo";
+import Logo from "../../../public/icons/fnfloglofooter.svg";
 
 const Footer = () => {
   return (
@@ -32,7 +32,7 @@ const Footer = () => {
         </div>
         <div className={styles.bottomDesktop}>
           <div className={styles.logoContainer}>
-            <Logo />
+            <Logo className={styles.logo} />
           </div>
           <div className={styles.bottomLeft}>
             <p className={styles.copy}>

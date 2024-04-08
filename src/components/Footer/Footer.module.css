@@ -64,6 +64,15 @@
   padding-top: 1rem;
 }
 
+.logoContainer {
+  margin-top: 1rem;
+}
+
+.logo {
+  width: 209px;
+  height: 18px;
+}
+
 .copy {
   color: var(--tan);
   font: 1.2rem;
