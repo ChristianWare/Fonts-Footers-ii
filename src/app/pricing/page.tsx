@@ -7,6 +7,7 @@ import Pricing from "@/components/Pricing/Pricing";
 import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
 import { simpleBlogCard } from "@/lib/interface";
 import { client } from "@/lib/sanity";
+import { Metadata } from "next";
 
 async function getData() {
   const query = `
@@ -24,6 +25,10 @@ async function getData() {
 }
 
 export const revalidate = 10;
+
+export const metadata: Metadata = {
+  title: "Pricing",
+};
 
 export default async function PricingPage() {
   const data: simpleBlogCard[] = await getData();

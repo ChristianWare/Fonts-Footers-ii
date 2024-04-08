@@ -10,6 +10,7 @@ import Mission from "@/components/Mission/Mission";
 import Faqs from "@/components/Faqs/Faqs";
 import Values from "@/components/Values/Values";
 import TechStack from "@/components/TechStack/TechStack";
+import { Metadata } from "next";
 
 async function getData() {
   const query = `
@@ -27,6 +28,10 @@ async function getData() {
 }
 
 export const revalidate = 10;
+
+export const metadata: Metadata = {
+  title: "About Us",
+};
 
 export default async function AboutPage() {
   const data: simpleBlogCard[] = await getData();

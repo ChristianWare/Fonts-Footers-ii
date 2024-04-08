@@ -10,6 +10,7 @@ import PageIntro from "@/components/PageIntro/PageIntro";
 import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
 import { simpleBlogCard } from "@/lib/interface";
 import { client } from "@/lib/sanity";
+import { Metadata } from "next";
 
 async function getData() {
   const query = `
@@ -27,6 +28,10 @@ async function getData() {
 }
 
 export const revalidate = 10;
+
+export const metadata: Metadata = {
+  title: "Benefits",
+};
 
 export default async function BenefitsPage() {
   const data: simpleBlogCard[] = await getData();

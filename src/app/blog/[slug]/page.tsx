@@ -1,6 +1,7 @@
 import { fullBlog, simpleBlogCard } from "@/lib/interface";
 import { client } from "@/lib/sanity";
 import BlogContent from "@/components/BlogContent/BlogContent";
+import { Metadata } from "next";
 
 async function getData(slug: string) {
   const query = `
@@ -33,6 +34,25 @@ async function getDataii() {
 }
 
 export const revalidate = 10;
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<Metadata> {
+  const data: fullBlog = await getData(params.slug);
+  return {
+    title: data.title,
+    description: data.smallDescription,
+    openGraph: {
+      images: [
+        {
+          url: data.titleImage.toLocaleString(),
+        },
+      ],
+    },
+  };
+}
 
 export default async function BlogArticle({
   params,

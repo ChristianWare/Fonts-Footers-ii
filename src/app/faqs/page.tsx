@@ -4,6 +4,7 @@ import PageIntro from "@/components/PageIntro/PageIntro";
 import Pricing from "@/components/Pricing/Pricing";
 import { simpleBlogCard } from "@/lib/interface";
 import { client } from "@/lib/sanity";
+import { Metadata } from "next";
 
 async function getData() {
   const query = `
@@ -19,6 +20,10 @@ async function getData() {
 
   return data;
 }
+
+export const metadata: Metadata = {
+  title: "FAQ's",
+};
 
 export default async function FAQPage() {
   const data: simpleBlogCard[] = await getData();

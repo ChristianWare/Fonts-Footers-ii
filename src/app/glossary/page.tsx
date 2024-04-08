@@ -8,6 +8,11 @@ import Link from "next/link";
 import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../animation/variants";
+import { Metadata } from "next";
+
+// export const metadata: Metadata = {
+//   title: "Glossary",
+// };
 
 export default function GlossaryPage() {
   return (
