@@ -1,3 +1,4 @@
+import { GetStaticPaths } from "next";
 import { fullBlog, simpleBlogCard } from "@/lib/interface";
 import { client } from "@/lib/sanity";
 import BlogContent from "@/components/BlogContent/BlogContent";
@@ -35,6 +36,15 @@ async function getDataii() {
 
 export const revalidate = 10;
 
+export async function generateStaticParams() {
+  const query = `*[_type == 'blog'] { 'slug': slug.current }`;
+  const slugs = await client.fetch(query);
+  const paths = slugs.map((slug: { slug: string }) => ({
+    params: { slug: slug.slug },
+  }));
+  return paths;
+}
+
 export async function generateMetadata({
   params,
 }: {
@@ -61,5 +71,6 @@ export default async function BlogArticle({
 }) {
   const data: fullBlog = await getData(params.slug);
   const dataii: simpleBlogCard[] = await getDataii();
+
   return <BlogContent data={data} dataii={dataii} />;
 }
