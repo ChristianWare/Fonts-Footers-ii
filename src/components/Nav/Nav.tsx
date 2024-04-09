@@ -117,13 +117,13 @@ function Nav() {
             {isOpen && (
               <div className={styles.btnContainerMobile}>
                 <Button
-                  href={"/"}
-                  text='Contact Us'
+                  href='/contact'
+                  text='Call Us'
                   btnType='secondary'
                   arrow
                 />
                 <Button
-                  href={"/"}
+                  href='/contact/#schedule'
                   text='Schedule a call'
                   btnType='secondary'
                   arrow
@@ -143,8 +143,12 @@ function Nav() {
             ></div>
           )}
           <div className={styles.btnContainer}>
-            <Button href={"/"} text='Contact Us' btnType='secondaryNav' />
-            <Button href={"/"} text='Schedule a call' btnType='primaryNav' />
+            <Button href={"/"} text='email us' btnType='secondaryNav' />
+            <Button
+              href='/contact/#schedule'
+              text='Schedule a call'
+              btnType='primaryNav'
+            />
           </div>
           <span
             className={

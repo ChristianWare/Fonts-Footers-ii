@@ -52,7 +52,12 @@ const Hero = () => {
             viewport={{ once: false, amount: 0.9 }}
             className={styles.btnContainer}
           >
-            <Button text='Schedule a call' href='/' btnType='primaryii' arrow />
+            <Button
+              text='Schedule a call'
+              href='/contact/#schedule'
+              btnType='primaryii'
+              arrow
+            />
             <Button text='view our work' href='/' btnType='secondary' arrow />
           </motion.div>
         </div>

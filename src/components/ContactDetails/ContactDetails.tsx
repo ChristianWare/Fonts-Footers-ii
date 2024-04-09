@@ -7,6 +7,7 @@ import Img from "../../../public/images/house25.png";
 import SocialsContainer from "../SocialsContainer/SocialsContainer";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../animation/variants";
+import { InlineWidget } from "react-calendly";
 
 const ContactDetails = () => {
   return (
@@ -49,6 +50,17 @@ const ContactDetails = () => {
               <SocialsContainer />
             </div>
           </motion.div>
+        </div>
+        <div className={styles.calBox} id='schedule'>
+          <InlineWidget
+            url='https://calendly.com/chris-ware-dev/discovery-call'
+            styles={{
+              height: "775px",
+              border: "1px solid #6db193",
+              borderRadius: "20px",
+              padding: "30px",
+            }}
+          />
         </div>
       </LayoutWrapper>
     </section>

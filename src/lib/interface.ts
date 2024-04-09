@@ -7,6 +7,7 @@ export interface ButtonProps {
   target?: string;
   download?: boolean;
   arrow?: boolean;
+  onClick?: any;
 }
 
 export interface PageIntroProps {

@@ -14,9 +14,15 @@ const Button: FC<ButtonProps> = ({
   target = "",
   download,
   arrow,
+  onClick,
 }) => {
   return (
-    <button className={styles.container}>
+    <button
+      className={styles.container}
+      onClick={() => {
+        if (onClick) onClick(); // Call the onClick prop if it exists
+      }}
+    >
       <Link
         href={href}
         className={`${styles.btn} ${styles[btnType]}`}
