@@ -11,6 +11,7 @@ import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizo
 import { simpleBlogCard } from "@/lib/interface";
 import { client } from "@/lib/sanity";
 import { Metadata } from "next";
+import Carousel from "@/components/Carousel/Carousel";
 
 async function getData() {
   const query = `
@@ -54,6 +55,7 @@ export default async function BenefitsPage() {
       <DirectCommunication />
       <EnhancedMarketing />
       <LongTermRelationships />
+      <Carousel />
       <Cta />
       <BlogSection data={data} />
     </>

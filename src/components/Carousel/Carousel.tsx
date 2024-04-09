@@ -1,6 +1,5 @@
 "use client";
 
-import Button from "../Button/Button";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Carousel.module.css";
 import Image from "next/image";
@@ -33,19 +32,19 @@ const Carousel = () => {
 
   const texts = [
     {
-      title: "Immersive Gaming Experience",
+      title: "Reduced Dependency",
       description:
-        "slfgsfljgh slfgh klsjfghlks jfh lsakjhfg lajgfd;g'bh ;dkb. dgj lfsgib jlsd;fib",
+        "By reducing reliance on third-party platforms like Airbnb or VRBO, you can lower booking fees, maintain autonomy over business decisions, and mitigate risks associated with policy changes on external platforms.",
     },
     {
-      title: "Title 2",
+      title: "Customization and Innovation",
       description:
-        "slfgsfljgh slfgh klsjfghlks jfh lsakjhfg lajgfd;g'bh ;dkb. dgj lfsgib jlsd;fib",
+        "You can innovate with features like interactive maps, virtual tours, loyalty programs, and targeted marketing campaigns, enhancing the overall guest experience and attracting a wider audience.",
     },
     {
-      title: "Title 3",
+      title: "Flexibility in Offerings",
       description:
-        "slfgsfljgh slfgh klsjfghlks jfh lsakjhfg lajgfd;g'bh ;dkb. dgj lfsgib jlsd;fib",
+        "You can easily showcase multiple properties, offer add-on services, and create customized packages to meet diverse guest preferences and market demands.",
     },
   ];
 
@@ -72,6 +71,7 @@ const Carousel = () => {
   return (
     <section className={styles.container}>
       <LayoutWrapper>
+        <h2 className={styles.title}>Competitive Advantage</h2>
         <motion.div
           className={styles.content}
           key={activeIndex}
@@ -80,20 +80,12 @@ const Carousel = () => {
           animate='visible'
         >
           <div className={styles.left}>
-            <motion.h2 variants={textVariants} className={styles.heading}>
+            <motion.h3 variants={textVariants} className={styles.heading}>
               {texts[activeIndex].title}
-            </motion.h2>
+            </motion.h3>
             <motion.p variants={textVariants} className={styles.copy}>
               {texts[activeIndex].description}
             </motion.p>
-            <div className={styles.btnContainer}>
-              <Button
-                text='Schedule a call'
-                href='/contact/#schedule'
-                btnType='primaryii'
-                arrow
-              />
-            </div>
           </div>
           <div className={styles.right}>
             <motion.div
