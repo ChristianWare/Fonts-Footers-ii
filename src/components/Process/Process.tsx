@@ -50,7 +50,7 @@ const Process = () => {
           <div className={styles.btnContainer}>
             <Button
               text='Schedule a call'
-              href='/contact'
+              href='/contact/#schedule'
               btnType='primary'
               arrow
             />
