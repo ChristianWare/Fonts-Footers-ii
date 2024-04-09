@@ -14,6 +14,7 @@ import { client } from "@/lib/sanity";
 import { simpleBlogCard } from "@/lib/interface";
 import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
 import Challenges from "@/components/Challenges/Challenges";
+import Carousel from "@/components/Carousel/Carousel";
 
 async function getData() {
   const query = `
@@ -37,7 +38,7 @@ export default async function Home() {
 
   return (
     <main>
-      <Hero />
+      {/* <Hero />
       <ScrollHorizontalText />
       <ScrollText />
       <Challenges />
@@ -46,10 +47,11 @@ export default async function Home() {
       <Benefits />
       <Process />
       <Pricing />
-      <Projects />
-      <Testimonials />
+      <Projects /> */}
+      <Carousel />
+      {/* <Testimonials />
       <Faqs />
-      <BlogSection data={data} />
+      <BlogSection data={data} /> */}
     </main>
   );
 }
