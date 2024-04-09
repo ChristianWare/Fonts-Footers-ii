@@ -5,7 +5,7 @@ import styles from "./Carousel.module.css";
 import Image from "next/image";
 import Img from "../../../public/images/house14.png";
 import Img2 from "../../../public/images/house15.png";
-import Img3 from "../../../public/images/house20.png";
+import Img3 from "../../../public/images/house4.png";
 import Arrow from "../../../public/icons/arrow2.svg";
 import { motion } from "framer-motion";
 import { useState } from "react";
