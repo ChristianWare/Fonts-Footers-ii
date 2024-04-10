@@ -24,7 +24,7 @@ const Hero = () => {
             Empower your property with a{" "}
             <span className={styles.span}>Direct Booking</span> Website
           </motion.h1>
-          <motion.div
+          {/* <motion.div
             variants={fadeIn("down", 0.5)}
             initial='hidden'
             whileInView={"show"}
@@ -32,7 +32,7 @@ const Hero = () => {
             className={styles.arrowContainer}
           >
             <ArrowCluster />
-          </motion.div>
+          </motion.div> */}
           <motion.p
             variants={fadeIn("down", 0.6)}
             initial='hidden'
