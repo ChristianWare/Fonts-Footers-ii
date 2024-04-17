@@ -8,6 +8,7 @@ import Crowd from "../../../public/icons/crowd.svg";
 import Fees from "../../../public/icons/fees.svg";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../animation/variants";
+import FalseButton from "../FalseButton/FalseButton";
 
 const Challenges = () => {
   const data = [
@@ -40,13 +41,12 @@ const Challenges = () => {
     <LayoutWrapper>
       <div className={styles.content}>
         <div className={styles.top}>
+          <div className={styles.btnContainer}>
+            <FalseButton text='OTA Obstacles' btnType='primary' />
+          </div>
           <h2 className={styles.heading}>
             Have you encountered any of these challenges?
           </h2>
-          <p className={styles.copy}>
-            As a short-term rental owner, you may be experiencing these common
-            issues:
-          </p>
         </div>
         <div className={styles.middle}>
           {data.map((x, index) => (
