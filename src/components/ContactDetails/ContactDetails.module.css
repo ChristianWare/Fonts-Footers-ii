@@ -35,12 +35,24 @@
 }
 
 .calBox {
-  margin-top: 5rem;
+  margin-top: 15rem;
+}
+
+.heading {
+  text-align: center;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (max-width: 1068px) {
   .content {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .heading {
+    width: 70%;
+    margin-bottom: 2rem;
   }
 }
 
@@ -55,5 +67,10 @@
 
   .imgContainer {
     height: 300px;
+  }
+
+  .heading {
+    width: 100%;
+    margin-bottom: 3rem;
   }
 }

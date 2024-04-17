@@ -52,13 +52,14 @@ const ContactDetails = () => {
           </motion.div>
         </div>
         <div className={styles.calBox} id='schedule'>
+          <h2 className={styles.heading}>
+            Calendly: Scehdule a Discovery Call with us
+          </h2>
           <InlineWidget
             url='https://calendly.com/chris-ware-dev/discovery-call'
             styles={{
               height: "775px",
-              border: "1px solid #6db193",
               borderRadius: "20px",
-              padding: "30px",
             }}
           />
         </div>
