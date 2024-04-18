@@ -5,12 +5,17 @@
 .content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+
 }
 
 .heading,
 .title,
 .desc {
   color: var(--tan);
+}
+
+.heading {
+  margin-top: 5rem;
 }
 
 .desc {
