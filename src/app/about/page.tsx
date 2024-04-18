@@ -2,7 +2,7 @@ import AboutScrollText from "@/components/AboutScrollText/AboutScrollText";
 import PageIntro from "@/components/PageIntro/PageIntro";
 import { client } from "@/lib/sanity";
 import { simpleBlogCard } from "@/lib/interface";
-import Img from "../../../public/images/aboutHouse.png";
+import Img from "../../../public/images/house18.png";
 import BlogSection from "@/components/BlogSection/BlogSection";
 import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
 import Experience from "@/components/Experience/Experience";

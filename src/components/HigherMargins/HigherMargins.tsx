@@ -2,14 +2,13 @@
 
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./HigherMargins.module.css";
-import House from "../../../public/icons/house.svg";
 import Money from "../../../public/icons/money.svg";
 import Control from "../../../public/icons/control.svg";
 import Promotion from "../../../public/icons/promotion.svg";
 import Repeat from "../../../public/icons/repeat.svg";
 import Image from "next/image";
-import Img from "../../../public/images/house19.png";
-import Img2 from "../../../public/images/house20.png";
+import Img from "../../../public/images/house18.png";
+import Img2 from "../../../public/images/house4.png";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../animation/variants";
 
