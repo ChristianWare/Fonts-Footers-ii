@@ -20,7 +20,7 @@ const FinalCta = () => {
                 viewport={{ once: false, amount: 0.3 }}
                 className={styles.heading}
               >
-                Let&apos;s Chat
+                Let&apos;s Have a conversation
               </motion.h2>
               <motion.p
                 variants={fadeIn("right", 0.3)}
