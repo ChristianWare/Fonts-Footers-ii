@@ -32,7 +32,9 @@
 .featureContainer:nth-child(1),
 .featureContainer:nth-child(4) {
   border: 1px solid var(--green2);
+  background-color: var(--white);
   border-radius: 20px;
+  position: relative;
 }
 
 .featureContainer:nth-child(1) {
@@ -41,7 +43,6 @@
 
 .featureContainer:nth-child(4) {
   border-top-left-radius: 0px;
-  position: relative;
   left: -1px;
   top: -1px;
 }
@@ -51,9 +52,7 @@
 }
 
 .icon {
-  width: 20px;
-  height: 20px;
-  transform: rotate(90deg);
+  color: var(--green);
 }
 
 .service {

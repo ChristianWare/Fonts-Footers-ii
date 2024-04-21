@@ -24,15 +24,6 @@ const Hero = () => {
             Empower your property with a{" "}
             <span className={styles.span}>Direct Booking</span> Website
           </motion.h1>
-          {/* <motion.div
-            variants={fadeIn("down", 0.5)}
-            initial='hidden'
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
-            className={styles.arrowContainer}
-          >
-            <ArrowCluster />
-          </motion.div> */}
           <motion.p
             variants={fadeIn("down", 0.6)}
             initial='hidden'
@@ -58,7 +49,12 @@ const Hero = () => {
               btnType='primaryii'
               arrow
             />
-            <Button text='view our work' href='/' btnType='secondary' arrow />
+            <Button
+              text='Direct Booking Benefits'
+              href='/benefits'
+              btnType='secondary'
+              arrow
+            />
           </motion.div>
         </div>
         <div className={styles.right}>

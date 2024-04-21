@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Hero from "@/components/Hero/Hero";
 import ScrollText from "@/components/ScrollText/ScrollText";
 import Benefits from "@/components/Benefits/Benefits";

@@ -36,7 +36,7 @@
 }
 
 .card:nth-child(even) {
-  border-left: 1px solid var(--green);
+  border-left: 1px solid var(--green2);
 }
 
 .iconContainer {
