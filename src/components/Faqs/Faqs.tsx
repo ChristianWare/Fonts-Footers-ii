@@ -41,7 +41,7 @@ const Faqs = () => {
             <div className={styles.btnContainer}>
               <Button
                 text='See all Questions'
-                href='/faq'
+                href='/faqs'
                 btnType='primary'
                 arrow
               />
