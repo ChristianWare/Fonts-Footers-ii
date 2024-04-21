@@ -14,7 +14,6 @@ import { client } from "@/lib/sanity";
 import { simpleBlogCard } from "@/lib/interface";
 import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
 import Challenges from "@/components/Challenges/Challenges";
-import SendSms from "@/components/SendSms/SendSms";
 
 async function getData() {
   const query = `

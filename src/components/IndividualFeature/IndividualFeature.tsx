@@ -2,23 +2,20 @@
 
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./IndividualFeature.module.css";
-import Image from "next/image";
-import Stripe from "../../../public/images/stripe.png";
-import Multiple from "../../../public/images/multiple.png";
-import Booking from "../../../public/images/booking.png";
-import Map from "../../../public/images/map.png";
-import Admin from "../../../public/images/admin.png";
-import User from "../../../public/images/user.png";
-import Img from "../../../public/images/house25.png";
+import Talk from "../../../public/icons/talk.svg";
+import Booking from "../../../public/icons/booking.svg";
+import Payment from "../../../public/icons/payment.svg";
+import Map from "../../../public/icons/map.svg";
+import User from "../../../public/icons/dashboard.svg";
+import Cog from "../../../public/icons/cog.svg";
+import Multiple from "../../../public/icons/multiple.svg";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../animation/variants";
-import Modal from "../Modal/Modal";
-import { useState } from "react";
 
 const IndividualFeature = () => {
   const individulaFeatures = [
     {
-      image: Stripe,
+      icon: <Payment width={150} height={150} className={styles.icon} />,
       title: "Stripe Payment Gateway",
       description:
         "Integrating Stripe as your payment gateway for your property ensures secure transactions, supports multiple payment methods, automates payments, expands global reach, provides real-time reporting, offers easy integration, enhances the guest experience, and ensures compliance, all contributing to the success and efficiency of your vacation rental business.",
@@ -46,7 +43,7 @@ const IndividualFeature = () => {
       ],
     },
     {
-      image: Booking,
+      icon: <Booking width={150} height={150} className={styles.icon} />,
       title: "Booking Engine",
       description:
         "Integrating a booking engine for your properties enables direct bookings, control over pricing and availability, enhances guest experience, allows customization and personalization, provides valuable data insights, streamlines operations, boosts revenue and occupancy, and builds brand loyalty and trust.",
@@ -74,7 +71,7 @@ const IndividualFeature = () => {
       ],
     },
     {
-      image: Img,
+      icon: <Talk width={150} height={150} className={styles.icon} />,
       title: "Guest Reviews",
       description:
         "Guest reviews on your direct booking website enhance transparency, build trust, provide valuable feedback for improvement, manage reputation, serve as social proof, offer SEO benefits, and ultimately increase bookings and occupancy rates for your property.",
@@ -102,7 +99,7 @@ const IndividualFeature = () => {
       ],
     },
     {
-      image: Map,
+      icon: <Map width={150} height={150} className={styles.icon} />,
       title: "Interactive Map",
       description:
         "Adding an interactive map feature for your properties enhances the user experience by providing visual representation, improving decision-making, increasing engagement, differentiating your listings, enhancing marketing efforts, and ultimately boosting guest satisfaction and bookings.",
@@ -130,7 +127,7 @@ const IndividualFeature = () => {
       ],
     },
     {
-      image: User,
+      icon: <User width={150} height={150} className={styles.icon} />,
       title: "User Dashboard",
       description:
         "Adding a user dashboard for your property provides guests with a personalized and convenient experience, allowing them to manage bookings, update profiles, communicate efficiently, leave feedback, access information, enjoy special offers, and receive support—all contributing to enhanced guest satisfaction and loyalty.",
@@ -158,7 +155,7 @@ const IndividualFeature = () => {
       ],
     },
     {
-      image: Admin,
+      icon: <Cog width={150} height={150} className={styles.icon} />,
       title: "Amin Dashboard",
       description:
         "An admin dashboard for your property facilitates centralized management of bookings, operations, data analytics, financial tasks, marketing efforts, guest communication, property maintenance, and security and compliance, enhancing efficiency, decision-making, and overall property success.",
@@ -186,7 +183,7 @@ const IndividualFeature = () => {
       ],
     },
     {
-      image: Multiple,
+      icon: <Multiple width={150} height={150} className={styles.icon} />,
       title: "List Multiple Properties on One Website",
       description:
         "Focus your marketing, SEO, and promotions on one platform to reach a wider audience and maximize exposure for all properties, enabling guests to easily compare amenities, locations, and pricing, enhancing user experience, promoting brand cohesion, and simplifying administrative tasks.",
@@ -233,14 +230,7 @@ const IndividualFeature = () => {
                 className={styles.left}
               >
                 <h3 className={styles.titleMobile}>{x.title}</h3>
-                <div className={styles.imgContainer}>
-                  <Image
-                    src={x.image}
-                    alt='image'
-                    fill
-                    className={styles.img}
-                  />
-                </div>
+                <div className={styles.iconContainer}>{x.icon}</div>
               </motion.div>
               <div className={styles.right}>
                 <motion.h3
