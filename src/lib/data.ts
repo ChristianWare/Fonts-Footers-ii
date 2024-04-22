@@ -265,13 +265,12 @@ export const pricing = [
 export const projects = [
   {
     src: Project1,
-    title: "Taco Bell Redesign",
+    title: "Elite Retreat Rentals",
     description:
-      "This project is a redesign of Taco Bell's website. The front end was built with next.js, and the CMS is Sanity.io. The styling was done with CSS Modules so that I can have the most flexibility for design. Each menu item has its slug page where more details are given on that particular item.",
-    client:
-      "This client is in the hospitality industry and they recently purchased an investment property for short term rental. They needed a website to perfectly reflect their online brand and allow their guests to easily book future stays.",
-    href: "https://www.livemas.dev/",
-    github: "https://github.com/ChristianWare/Tacobell-ii",
+      "Elite Retreat Rentals is a Phonenix, AZ based company that provides lodging services to travelers at an affordable price.",
+    moreDetails:
+      "Elite Retreat Rentals is a Phonenix, AZ based company that provides lodging services to travelers at an affordable price. Elite Retreat Rentals is a Phonenix, AZ based company that provides lodging services to travelers at an affordable price. Elite Retreat Rentals is a Phonenix, AZ based company that provides lodging services to travelers at an affordable price. Elite Retreat Rentals is a Phonenix, AZ based company that provides lodging services to travelers at an affordable price.",
+    href: "https://case-study-one.vercel.app/",
   },
 ] as const;
 

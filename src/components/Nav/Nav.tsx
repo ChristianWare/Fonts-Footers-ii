@@ -143,7 +143,11 @@ function Nav() {
             ></div>
           )}
           <div className={styles.btnContainer}>
-            <Button href={"/"} text='email us' btnType='secondaryNav' />
+            <Button
+              href='mailto:hello@fontsandfooters.com'
+              text='email us'
+              btnType='secondaryNav'
+            />
             <Button
               href='/contact/#schedule'
               text='Schedule a call'
