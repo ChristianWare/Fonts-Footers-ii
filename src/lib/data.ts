@@ -344,23 +344,38 @@ export const footer = [
   },
   {
     id: 6,
-    heading: "About",
+    heading: "Benefits",
+    href: "/benefits",
+  },
+  {
+    id: 11,
+    heading: "About Us",
     href: "/about",
   },
   {
     id: 11,
-    heading: "Features",
-    href: "/features",
+    heading: "Pricing",
+    href: "/pricing",
   },
   {
-    id: 16,
-    heading: "Contact",
-    href: "/contact",
+    id: 11,
+    heading: "FAQs",
+    href: "/faqs",
   },
   {
     id: 17,
     heading: "Blog",
     href: "/blog",
+  },
+  {
+    id: 17,
+    heading: "Glossary",
+    href: "/glossary",
+  },
+  {
+    id: 16,
+    heading: "Contact",
+    href: "/contact",
   },
 ] as const;
 

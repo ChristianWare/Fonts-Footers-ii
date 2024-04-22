@@ -3,9 +3,8 @@
 import styles from "./Footer.module.css";
 import Link from "next/link";
 import { footer } from "@/lib/data";
-import Instagram from "../../../public/icons/instagram.svg";
+import Insta from "../../../public/icons/instagram.svg";
 import LinkedIn from "../../../public/icons/linkedin.svg";
-import Twitter from "../../../public/icons/twitter.svg";
 import Facebook from "../../../public/icons/facebook.svg";
 import Logo from "../../../public/icons/fnfloglofooter.svg";
 
@@ -23,11 +22,28 @@ const Footer = () => {
               </div>
             ))}
           </div>
-          <div className={styles.lb2}>
-            <Instagram width={15} height={15} className={styles.icon} />
-            <LinkedIn width={15} height={15} className={styles.icon} />
-            <Twitter width={15} height={15} className={styles.icon} />
-            <Facebook width={15} height={15} className={styles.icon} />
+          <div className={styles.leftBottom}>
+            <Link
+              href='https://www.linkedin.com/'
+              target='_blank'
+              className={styles.detail}
+            >
+              <LinkedIn className={styles.icon} width={12} height={12} />
+            </Link>
+            <Link
+              href='https://www.facebook.com/'
+              target='_blank'
+              className={styles.detail}
+            >
+              <Facebook className={styles.icon} width={12} height={12} />
+            </Link>
+            <Link
+              href='https://instagram.com/'
+              target='_blank'
+              className={styles.detail}
+            >
+              <Insta className={styles.icon} width={12} height={12} />
+            </Link>
           </div>
         </div>
         <div className={styles.bottomDesktop}>

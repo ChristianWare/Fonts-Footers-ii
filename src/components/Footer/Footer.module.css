@@ -44,7 +44,9 @@
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+  flex: 1;
 }
 
 .heading {
@@ -77,24 +79,33 @@
   color: var(--tan);
   font: 1.2rem;
   width: 100%;
-  /* margin-top: 2rem; */
 }
 
-.lb2 {
-  padding: 2rem;
-  font-size: 0;
+.leftBottom {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 2rem;
+  flex: 1;
 }
 
-.icon {
+.detail {
+  border: 1px solid var(--green3);
   color: var(--green3);
-  background-color: var(--green3);
-  width: 25px;
-  height: 25px;
   border-radius: 50%;
-  padding: 0.5rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.detail:hover {
+  background-color: var(--green3);
+  color: var(--green);
 }
 
 @media screen and (max-width: 1068px) {
@@ -150,6 +161,11 @@
   .leftBorder3 {
     display: block;
     margin-top: 3rem;
+  }
+
+  .middleDesktop {
+    align-items: center;
+    justify-content: center;
   }
 
   .heading {
