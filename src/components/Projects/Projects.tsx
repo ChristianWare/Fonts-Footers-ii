@@ -9,14 +9,19 @@ import Link from "next/link";
 import Button from "../Button/Button";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../animation/variants";
+import { useState } from "react";
+import Modal from "../Modal/Modal";
+import FalseButton from "../FalseButton/FalseButton";
 
 const Projects = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <section>
       <LayoutWrapper>
         <div className={styles.contentParent}>
           <div className={styles.top}>
-            <h2 className={styles.heading}>Recent Work</h2>
+            <h2 className={styles.heading}>Recent Projects</h2>
             <ArrowCluster />
           </div>
           {projects.map((x) => (
@@ -49,9 +54,12 @@ const Projects = () => {
                   <p className={styles.desc}>{x.description}</p>
                 </div>
                 <div className={styles.rightBottom}>
-                  <Link href='/' className={styles.rbLeft}>
+                  <div
+                    className={styles.rbLeft}
+                    onClick={() => setIsModalOpen(true)}
+                  >
                     More Details
-                  </Link>
+                  </div>
                   <Link
                     href={x.href}
                     target='_blank'
@@ -61,16 +69,33 @@ const Projects = () => {
                   </Link>
                 </div>
               </motion.div>
+              <Modal
+                isOpen={isModalOpen}
+                onClose={() => {
+                  setIsModalOpen(false);
+                }}
+              >
+                <p>{x.moreDetails}</p>
+                <div className={styles.falseBtnContainer}>
+                  <FalseButton
+                    text='Close'
+                    btnType='primary'
+                    onClose={() => {
+                      setIsModalOpen(false);
+                    }}
+                  />
+                </div>
+              </Modal>
             </div>
           ))}
-          <div className={styles.btnContainer}>
+          {/* <div className={styles.btnContainer}>
             <Button
               text='see all projects'
               href='/'
               btnType='primaryii'
               arrow
             />
-          </div>
+          </div> */}
         </div>
       </LayoutWrapper>
     </section>

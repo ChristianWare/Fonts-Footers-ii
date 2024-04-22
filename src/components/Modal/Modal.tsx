@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import styles from "./Modal.module.css";
+import Close from "../../../public/icons/close.svg";
 
 interface Props {
   isOpen: Boolean;
@@ -18,11 +19,7 @@ export default function Modal({ isOpen, onClose, children }: Props) {
     };
 
     window.addEventListener("keydown", handleKeyDown);
-
-    // Add CSS to disable scrolling when the modal is open
     document.body.style.overflow = isOpen ? "hidden" : "auto";
-
-    // Cleanup function to remove the event listener and reset body overflow
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
       document.body.style.overflow = "auto";
@@ -34,7 +31,9 @@ export default function Modal({ isOpen, onClose, children }: Props) {
   return (
     <div className={styles.modalBackdrop}>
       <div className={styles.modalContent}>
-        <button onClick={onClose}>Close</button>
+        {/* <button onClick={onClose}>
+          <Close className={styles.icon} />
+        </button> */}
         {children}
       </div>
     </div>

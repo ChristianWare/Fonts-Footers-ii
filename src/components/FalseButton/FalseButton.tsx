@@ -7,9 +7,10 @@ import { fadeIn } from "../../../animation/variants";
 interface Props {
   text: string;
   btnType: string;
+  onClose?: () => void;
 }
 
-const FalseButton = ({ text, btnType }: Props) => {
+const FalseButton = ({ text, btnType, onClose }: Props) => {
   return (
     <motion.div
       variants={fadeIn("left", 0.3)}
@@ -17,6 +18,7 @@ const FalseButton = ({ text, btnType }: Props) => {
       whileInView={"show"}
       viewport={{ once: false, amount: 0.3 }}
       className={`${styles.btn} ${styles[btnType]}`}
+      onClick={onClose}
     >
       {text}
     </motion.div>

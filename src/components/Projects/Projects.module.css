@@ -72,6 +72,7 @@
   line-height: 130%;
   font-weight: 600;
   letter-spacing: -1px;
+  cursor: pointer;
 }
 
 .rbLeft:hover,
@@ -108,6 +109,11 @@
   align-items: center;
   justify-content: flex-end;
   width: 100%;
+}
+
+.falseBtnContainer {
+  margin-top: 3rem;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 968px) {

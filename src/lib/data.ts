@@ -368,79 +368,79 @@ export const reviews = [
   {
     id: 71,
     review:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum obcaecati, repudiandae nisi veniam dicta repellat quos temporibus assumenda eaque qui similique fugit reprehenderit alias necessitatibus natus, explicabo nostrum dignissimos distinctio!",
-    reviewer: "Linda R.",
+      "Fonts & Footers transformed our vacation rental business! Their direct booking website is sleek, user-friendly, and has significantly increased our bookings.",
+    reviewer: "Jason W.",
     company: "Gilbert, AZ",
   },
   {
     id: 72,
     review:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum obcaecati, repudiandae nisi veniam dicta repellat quos temporibus assumenda eaque qui similique fugit reprehenderit alias necessitatibus natus, explicabo nostrum dignissimos distinctio!",
+      "Working with Fonts & Footers was a game-changer for us. Their expertise in creating direct booking websites helped streamline our rental process and boost our revenue.",
     reviewer: "Linda R.",
-    company: "Gilbert, AZ",
+    company: "Mesa, AZ",
   },
   {
     id: 73,
     review:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum obcaecati, repudiandae nisi veniam dicta repellat quos temporibus assumenda eaque qui similique fugit reprehenderit alias necessitatibus natus, explicabo nostrum dignissimos distinctio!",
-    reviewer: "Linda R.",
-    company: "Gilbert, AZ",
+      "Impressed with the results! Fonts & Footers designed a custom booking platform that perfectly showcases our properties and has made managing bookings a breeze.",
+    reviewer: "Michael S.",
+    company: "Chandler, AZ",
   },
   {
     id: 74,
     review:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum obcaecati, repudiandae nisi veniam dicta repellat quos temporibus assumenda eaque qui similique fugit reprehenderit alias necessitatibus natus, explicabo nostrum dignissimos distinctio!",
-    reviewer: "Linda R.",
-    company: "Gilbert, AZ",
+      "Fonts & Footers exceeded our expectations with our new direct booking website. It's professional, easy to navigate, and has improved our guests' booking experience.",
+    reviewer: "Daniel P.",
+    company: "Brooklyn, NY",
   },
   {
     id: 75,
     review:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum obcaecati, repudiandae nisi veniam dicta repellat quos temporibus assumenda eaque qui similique fugit reprehenderit alias necessitatibus natus, explicabo nostrum dignissimos distinctio!",
-    reviewer: "Linda R.",
-    company: "Gilbert, AZ",
+      "Highly recommend Fonts & Footers for anyone in the vacation rental industry. Their direct booking websites are top-notch, and the support team is fantastic.",
+    reviewer: "Kirk U.",
+    company: "Queens, NY",
   },
   {
     id: 76,
     review:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum obcaecati, repudiandae nisi veniam dicta repellat quos temporibus assumenda eaque qui similique fugit reprehenderit alias necessitatibus natus, explicabo nostrum dignissimos distinctio!",
-    reviewer: "Linda R.",
-    company: "Gilbert, AZ",
+      "Thanks to Fonts & Footers, we now have a modern, efficient direct booking website. Our guests love the seamless booking process, and so do we!",
+    reviewer: "Reggie R.",
+    company: "Houston, Tx",
   },
   {
     id: 77,
     review:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum obcaecati, repudiandae nisi veniam dicta repellat quos temporibus assumenda eaque qui similique fugit reprehenderit alias necessitatibus natus, explicabo nostrum dignissimos distinctio!",
-    reviewer: "Linda R.",
-    company: "Gilbert, AZ",
+      "Fonts & Footers took our online presence to the next level. Our direct booking website is visually stunning and has helped us attract more guests than ever.",
+    reviewer: "Indar R.",
+    company: "Los Angeles, CA",
   },
   {
     id: 78,
     review:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum obcaecati, repudiandae nisi veniam dicta repellat quos temporibus assumenda eaque qui similique fugit reprehenderit alias necessitatibus natus, explicabo nostrum dignissimos distinctio!",
-    reviewer: "Linda R.",
-    company: "Gilbert, AZ",
+      "Great experience working with Fonts & Footers. They tailored our direct booking website to our specific needs, and the results have been phenomenal.",
+    reviewer: "Lawrence S.",
+    company: "Portland, Or",
   },
   {
     id: 79,
     review:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum obcaecati, repudiandae nisi veniam dicta repellat quos temporibus assumenda eaque qui similique fugit reprehenderit alias necessitatibus natus, explicabo nostrum dignissimos distinctio!",
-    reviewer: "Linda R.",
-    company: "Gilbert, AZ",
+      "Fonts & Footers' direct booking solution has simplified our business operations. It's user-friendly for both us and our guests, resulting in increased bookings.",
+    reviewer: "Jared U.",
+    company: "Trenton, NJ",
   },
   {
     id: 80,
     review:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum obcaecati, repudiandae nisi veniam dicta repellat quos temporibus assumenda eaque qui similique fugit reprehenderit alias necessitatibus natus, explicabo nostrum dignissimos distinctio!",
-    reviewer: "Linda R.",
-    company: "Gilbert, AZ",
+      "Impressive work from Fonts & Footers. Our new direct booking website is generating more leads and conversions, making our rental business more profitable.",
+    reviewer: "William S.",
+    company: "Sacramento, CA",
   },
   {
     id: 81,
     review:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum obcaecati, repudiandae nisi veniam dicta repellat quos temporibus assumenda eaque qui similique fugit reprehenderit alias necessitatibus natus, explicabo nostrum dignissimos distinctio!",
-    reviewer: "Linda R.",
-    company: "Gilbert, AZ",
+      "Fonts & Footers delivered exactly what we needed for our vacation rental business. Our direct booking website is professional, efficient, and has boosted our online presence.",
+    reviewer: "Chris N.",
+    company: "Las Vegas, NV",
   },
 ] as const;
 
