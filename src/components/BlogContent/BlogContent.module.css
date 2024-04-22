@@ -19,7 +19,7 @@
 
 .left h2 {
   font-size: 4rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   margin-bottom: 3rem;
 }
 
@@ -28,22 +28,28 @@
   line-height: 120%;
   width: fit-content;
   font-family: var(--raleway);
-  text-transform: capitalize;
+  text-transform: none;
   margin-bottom: 1rem;
 }
 
 .left p {
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
   font-weight: 500;
 }
 
 .left ul {
   margin-bottom: 3rem;
+  border: 1px solid var(--green2);
+  background-color: var(--white);
+  border-radius: 20px;
+  padding: 3rem;
+  padding-bottom: 2rem;
 }
 
 .left li {
   font-family: var(--raleway);
-  font-weight: 600;
+  color: var(--green);
+  font-weight: 700;
   hyphens: auto;
   font-size: 1.6rem;
   line-height: 150%;

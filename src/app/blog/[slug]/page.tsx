@@ -1,4 +1,3 @@
-import { GetStaticPaths } from "next";
 import { fullBlog, simpleBlogCard } from "@/lib/interface";
 import { client } from "@/lib/sanity";
 import BlogContent from "@/components/BlogContent/BlogContent";
