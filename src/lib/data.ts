@@ -639,489 +639,489 @@ export const glossaryMenu = [
       },
     ],
   },
-  {
-    letter: "F",
-    section: [
-      {
-        term: "Flexible Booking Policies",
-        description:
-          "Accommodation options that offer guests more flexibility for reservations.",
-      },
-      {
-        term: "Front Desk Services",
-        description:
-          "Services provided to guests at the front desk of vacation rental properties, including check-in, check-out, and assistance.",
-      },
-      {
-        term: "Fraud Prevention",
-        description:
-          "Strategies and technologies implemented to protect vacation rental businesses and guests from fraudulent activities.",
-      },
-      {
-        term: "Financial Reporting",
-        description:
-          "Generation of financial statements and reports related to vacation rental properties.",
-      },
-    ],
-  },
-  {
-    letter: "G",
-    section: [
-      {
-        term: "Guest Reviews",
-        description:
-          "Reviews, ratings, and comments provided by guests about their experience staying at a vacation rental property.",
-      },
-      {
-        term: "GDS",
-        description:
-          "A Global Distribution System is a network enabling travel agents and online booking platforms to access and sell inventor.",
-      },
-      {
-        term: "Guest Communication",
-        description:
-          "Communicating with guests before, during, and after their stay to provide information, answer questions, and address concerns.",
-      },
-      {
-        term: "Guest Experience Management",
-        description:
-          "Managing and enhancing the overall experience for guests staying at vacation rental properties.",
-      },
-      {
-        term: "Google Analytics",
-        description:
-          "Web analytics tool provided by Google that allows website owners to track and analyze visitor traffic.",
-      },
-      {
-        term: "Guest Verification",
-        description:
-          "Process of verifying the identity and credentials of guests before confirming bookings.",
-      },
-    ],
-  },
-  {
-    letter: "H",
-    section: [
-      {
-        term: "Home Automation",
-        description:
-          "Automating tasks and controls within vacation rental properties using smart home technology.",
-      },
-      {
-        term: "House Rules",
-        description:
-          "Rules established by property owners or managers for guests staying at vacation rental properties.",
-      },
-      {
-        term: "High-Speed Internet",
-        description:
-          "Fast and reliable internet access provided to guests staying at vacation rental properties.",
-      },
-      {
-        term: "Hospitality Services",
-        description:
-          "Amenities, services, and experiences provided to guests during their stay at a vacation rental property.",
-      },
-      {
-        term: "Hospitality Management Software",
-        description:
-          "A tool used by vacation rental owners/managers to manage all aspects of property operations.",
-      },
-    ],
-  },
-  {
-    letter: "I",
-    section: [
-      {
-        term: "Instant Booking",
-        description:
-          "Allowing guests to book vacation rentals instantly without waiting for approval from the property owner or manager.",
-      },
-      {
-        term: "Inventory Management",
-        description:
-          "Managing and tracking the availability and status of vacation rental properties and their amenities.",
-      },
-      {
-        term: "Integration",
-        description:
-          "Combining different software systems, tools, or platforms to work together seamlessly.",
-      },
-      {
-        term: "Insurance Coverage",
-        description:
-          "Policies that protect owners/managers against potential risks and liabilitie.",
-      },
-      {
-        term: "Interactive Map",
-        description:
-          "Feature allowing guests to view the location of rental properties on a map interface.",
-      },
-      {
-        term: "Integrated Payment Gateway",
-        description:
-          "Secure system that allows vacation rental websites to accept online payments from guests.",
-      },
-    ],
-  },
-  {
-    letter: "J",
-    section: [
-      {
-        term: "Junior Suite",
-        description:
-          "A smaller suite or room with additional amenities designed for younger guests or smaller groups.",
-      },
-      {
-        term: "JV",
-        description:
-          "Joint Venture is a partnership between two or more entities to collaborate on a specific rental property.",
-      },
-    ],
-  },
-  {
-    letter: "K",
-    section: [
-      {
-        term: "Keyless Entry Systems",
-        description:
-          "Systems that allow guests to access vacation rental properties using digital codes without physical keys.",
-      },
-      {
-        term: "Kitchenette",
-        description:
-          "A small kitchen area in vacation rental properties equipped with basic cooking facilities.",
-      },
-    ],
-  },
-  {
-    letter: "L",
-    section: [
-      {
-        term: "Landing Page",
-        description:
-          "A web page designed to capture visitor's attention and encourage them to take a specific action, such as booking a vacation rental.",
-      },
-      {
-        term: "Listing Optimization",
-        description:
-          "Strategies and techniques used to enhance the visibility, attractiveness, and performance of vacation rental properties.",
-      },
-      {
-        term: "Local Regulations",
-        description:
-          "Laws, ordinances, and regulations imposed by local governments or authorities that govern vacation rental properties.",
-      },
-      {
-        term: "Loyalty Programs",
-        description:
-          "Initiatives implemented by vacation rental businesses to reward and incentivize repeat bookings by guests.",
-      },
-      {
-        term: "Late Checkout",
-        description:
-          "Allows guests to check out of vacation rental properties later than the standard checkout time for an additional fee.",
-      },
-      {
-        term: "Local Attractions",
-        description:
-          "Points of interest, activities, and attractions near vacation rental properties that guests may want to visit.",
-      },
-      {
-        term: "Long-Term Rentals",
-        description:
-          "Rental properties that are rented out for extended periods.",
-      },
-    ],
-  },
-  {
-    letter: "M",
-    section: [
-      {
-        term: "Multi-Property Management",
-        description:
-          "Managing multiple vacation rental properties from a single platform or software.",
-      },
-      {
-        term: "Mobile Compatibility",
-        description:
-          "Ensurs that vacation rental websites and platforms are optimized for mobile devices.",
-      },
-      {
-        term: "Market Analysis",
-        description:
-          "Analyzing market trends, competition, demand, and pricing strategies in the vacation rental industry.",
-      },
-      {
-        term: "Maintenance Services",
-        description:
-          "Regular upkeep, repairs, and maintenance tasks to ensure that rental properties are in good condition for guests.",
-      },
-    ],
-  },
-  {
-    letter: "N",
-    section: [
-      {
-        term: "Net Revenue",
-        description:
-          "The total revenue generated from vacation rental properties after deducting expenses, taxes, and other costs.",
-      },
-      {
-        term: "Niche Market",
-        description:
-          "Targeting a specific segment or niche within the vacation rental market.",
-      },
-      {
-        term: "Notification System",
-        description:
-          "Feature in vacation rental websites and booking platforms that provides alerts, updates, and notifications.",
-      },
-    ],
-  },
-  {
-    letter: "O",
-    section: [
-      {
-        term: "Occupancy Rate",
-        description:
-          "The percentage of time that vacation rental properties are occupied by guests compared to their availability.",
-      },
-      {
-        term: "Online Payment Processing",
-        description:
-          "Accepting payments from guests for bookings and reservations through online payment gateways.",
-      },
-      {
-        term: "Owner Portal",
-        description:
-          "Secure online portal for property owners to manage their vacation rental properties, bookings, and financials.",
-      },
-      {
-        term: "Occupancy Calendar",
-        description:
-          "Visual representation of a vacation rental property's availability over a specific period.",
-      },
-    ],
-  },
-  {
-    letter: "P",
-    section: [
-      {
-        term: "Payment Gateway",
-        description:
-          "A secure platform that processes payments from guests for bookings and reservations.",
-      },
-      {
-        term: "Peak Season Pricing",
-        description:
-          "Adjusting rental rates during peak seasons or high-demand periods for vacation rental properties.",
-      },
-      {
-        term: "Professional Photography",
-        description:
-          "High-quality photos taken by professional photographers to showcase vacation rental properties.",
-      },
-      {
-        term: "Property Management System",
-        description:
-          "Software used by vacation rental owners and managers to oversee all aspects of property operations.",
-      },
-      {
-        term: "Promotional Offers",
-        description:
-          "Discounts, deals, or special promotions offered to attract guests and increase bookings.",
-      },
-    ],
-  },
-  {
-    letter: "Q",
-    section: [
-      {
-        term: "Quality Assurance",
-        description:
-          "Ensuring that vacation rental properties meet high standards of cleanliness, maintenance, and guest satisfaction.",
-      },
-      {
-        term: "QR Code",
-        description:
-          "An array of black and white squares or pixels set in a grid that stores data for a machine to read.",
-      },
-    ],
-  },
-  {
-    letter: "R",
-    section: [
-      {
-        term: "Reservation Management",
-        description:
-          "Handling bookings, reservations, and guest inquiries for vacation rental properties.",
-      },
-      {
-        term: "Review Management",
-        description:
-          "Monitoring and responding to guest reviews and feedback for vacation rental properties.",
-      },
-      {
-        term: "Revenue Management",
-        description:
-          "Strategies for maximizing revenue and profitability for vacation rental properties.",
-      },
-      {
-        term: "Rate Parity",
-        description:
-          "Maintaining consistent pricing for vacation rental properties across different distribution channels.",
-      },
-    ],
-  },
-  {
-    letter: "S",
-    section: [
-      {
-        term: "Search Engine Optimization",
-        description:
-          "Optimizing vacation rental websites and content to improve visibility and ranking in search engine results.",
-      },
-      {
-        term: "Security Deposits",
-        description:
-          "Refundable deposits collected from guests to cover damages or losses during their stay.",
-      },
-      {
-        term: "Social Media Marketing",
-        description:
-          "Promoting vacation rental properties and engaging with guests through social media platforms.",
-      },
-      {
-        term: "Superhost",
-        description:
-          "A designation on Airbnb for hosts who provide exceptional hospitality and meet certain criteria.",
-      },
-    ],
-  },
-  {
-    letter: "T",
-    section: [
-      {
-        term: "Trust and Safety Measures",
-        description:
-          "Policies and protocols implemented to ensure the safety and security of guests.",
-      },
-      {
-        term: "Trip Planning Tools",
-        description:
-          "Tools and resources provided to guests to plan their trips, activities, and itineraries.",
-      },
-      {
-        term: "Technology Integration",
-        description:
-          "Incorporating digital tools and platforms into vacation rental operations for efficiency and guest experience.",
-      },
-      {
-        term: "Terms and Conditions",
-        description:
-          "Legal terms and policies governing guest stays, payments, cancellations, and property rules.",
-      },
-    ],
-  },
-  {
-    letter: "U",
-    section: [
-      {
-        term: "User Experience",
-        description:
-          "The overall experience and satisfaction of guests using vacation rental platforms and services.",
-      },
-      {
-        term: "Upselling",
-        description:
-          "Offering additional services to guests to enhance their experience and increase revenue.",
-      },
-      {
-        term: "Unique Selling Proposition",
-        description:
-          "Distinctive features that set vacation rental properties apart from competitors and attract guests.",
-      },
-    ],
-  },
-  {
-    letter: "V",
-    section: [
-      {
-        term: "Vacation Rental Management Software",
-        description:
-          "Software platforms designed to manage bookings, reservations, and operations for vacation rental properties.",
-      },
-      {
-        term: "Virtual Tours",
-        description:
-          "Interactive virtual tours that showcase vacation rental properties and amenities to potential guests.",
-      },
-      {
-        term: "Value-added Services",
-        description:
-          "Additional services and amenities provided to guests to enhance their stay and overall experience.",
-      },
-    ],
-  },
-  {
-    letter: "W",
-    section: [
-      {
-        term: "Website Design",
-        description:
-          "The visual and functional design of vacation rental websites to attract visitors and facilitate bookings.",
-      },
-      {
-        term: "Wireless Internet Access",
-        description:
-          "Providing fast and reliable internet connectivity to guests staying at vacation rental properties.",
-      },
-      {
-        term: "Welcome Packages",
-        description:
-          "Personalized packages or amenities provided to guests upon their arrival to enhance their welcome and experience.",
-      },
-      {
-        term: "Weather Information",
-        description:
-          "Providing guests with weather forecasts and information to help them plan their activities and stay.",
-      },
-    ],
-  },
-  {
-    letter: "X",
-    section: [
-      {
-        term: "XML Integration",
-        description:
-          "Integrating vacation rental systems and platforms using XML technology for seamless data exchange.",
-      },
-    ],
-  },
-  {
-    letter: "Y",
-    section: [
-      {
-        term: "Yield Management",
-        description:
-          "Strategies and techniques for optimizing pricing and revenue for vacation rental properties.",
-      },
-    ],
-  },
-  {
-    letter: "Z",
-    section: [
-      {
-        term: "Zero Contact Check-In",
-        description:
-          "Implementing contactless check-in processes to minimize physical interactions between guests and staff.",
-      },
-      {
-        term: "Zone-Based Pricing",
-        description:
-          "Adjusting rental rates based on different geographic zones or areas within a destination.",
-      },
-    ],
-  },
+  // {
+  //   letter: "F",
+  //   section: [
+  //     {
+  //       term: "Flexible Booking Policies",
+  //       description:
+  //         "Accommodation options that offer guests more flexibility for reservations.",
+  //     },
+  //     {
+  //       term: "Front Desk Services",
+  //       description:
+  //         "Services provided to guests at the front desk of vacation rental properties, including check-in, check-out, and assistance.",
+  //     },
+  //     {
+  //       term: "Fraud Prevention",
+  //       description:
+  //         "Strategies and technologies implemented to protect vacation rental businesses and guests from fraudulent activities.",
+  //     },
+  //     {
+  //       term: "Financial Reporting",
+  //       description:
+  //         "Generation of financial statements and reports related to vacation rental properties.",
+  //     },
+  //   ],
+  // },
+  // {
+  //   letter: "G",
+  //   section: [
+  //     {
+  //       term: "Guest Reviews",
+  //       description:
+  //         "Reviews, ratings, and comments provided by guests about their experience staying at a vacation rental property.",
+  //     },
+  //     {
+  //       term: "GDS",
+  //       description:
+  //         "A Global Distribution System is a network enabling travel agents and online booking platforms to access and sell inventor.",
+  //     },
+  //     {
+  //       term: "Guest Communication",
+  //       description:
+  //         "Communicating with guests before, during, and after their stay to provide information, answer questions, and address concerns.",
+  //     },
+  //     {
+  //       term: "Guest Experience Management",
+  //       description:
+  //         "Managing and enhancing the overall experience for guests staying at vacation rental properties.",
+  //     },
+  //     {
+  //       term: "Google Analytics",
+  //       description:
+  //         "Web analytics tool provided by Google that allows website owners to track and analyze visitor traffic.",
+  //     },
+  //     {
+  //       term: "Guest Verification",
+  //       description:
+  //         "Process of verifying the identity and credentials of guests before confirming bookings.",
+  //     },
+  //   ],
+  // },
+  // {
+  //   letter: "H",
+  //   section: [
+  //     {
+  //       term: "Home Automation",
+  //       description:
+  //         "Automating tasks and controls within vacation rental properties using smart home technology.",
+  //     },
+  //     {
+  //       term: "House Rules",
+  //       description:
+  //         "Rules established by property owners or managers for guests staying at vacation rental properties.",
+  //     },
+  //     {
+  //       term: "High-Speed Internet",
+  //       description:
+  //         "Fast and reliable internet access provided to guests staying at vacation rental properties.",
+  //     },
+  //     {
+  //       term: "Hospitality Services",
+  //       description:
+  //         "Amenities, services, and experiences provided to guests during their stay at a vacation rental property.",
+  //     },
+  //     {
+  //       term: "Hospitality Management Software",
+  //       description:
+  //         "A tool used by vacation rental owners/managers to manage all aspects of property operations.",
+  //     },
+  //   ],
+  // },
+  // {
+  //   letter: "I",
+  //   section: [
+  //     {
+  //       term: "Instant Booking",
+  //       description:
+  //         "Allowing guests to book vacation rentals instantly without waiting for approval from the property owner or manager.",
+  //     },
+  //     {
+  //       term: "Inventory Management",
+  //       description:
+  //         "Managing and tracking the availability and status of vacation rental properties and their amenities.",
+  //     },
+  //     {
+  //       term: "Integration",
+  //       description:
+  //         "Combining different software systems, tools, or platforms to work together seamlessly.",
+  //     },
+  //     {
+  //       term: "Insurance Coverage",
+  //       description:
+  //         "Policies that protect owners/managers against potential risks and liabilitie.",
+  //     },
+  //     {
+  //       term: "Interactive Map",
+  //       description:
+  //         "Feature allowing guests to view the location of rental properties on a map interface.",
+  //     },
+  //     {
+  //       term: "Integrated Payment Gateway",
+  //       description:
+  //         "Secure system that allows vacation rental websites to accept online payments from guests.",
+  //     },
+  //   ],
+  // },
+  // {
+  //   letter: "J",
+  //   section: [
+  //     {
+  //       term: "Junior Suite",
+  //       description:
+  //         "A smaller suite or room with additional amenities designed for younger guests or smaller groups.",
+  //     },
+  //     {
+  //       term: "JV",
+  //       description:
+  //         "Joint Venture is a partnership between two or more entities to collaborate on a specific rental property.",
+  //     },
+  //   ],
+  // },
+  // {
+  //   letter: "K",
+  //   section: [
+  //     {
+  //       term: "Keyless Entry Systems",
+  //       description:
+  //         "Systems that allow guests to access vacation rental properties using digital codes without physical keys.",
+  //     },
+  //     {
+  //       term: "Kitchenette",
+  //       description:
+  //         "A small kitchen area in vacation rental properties equipped with basic cooking facilities.",
+  //     },
+  //   ],
+  // },
+  // {
+  //   letter: "L",
+  //   section: [
+  //     {
+  //       term: "Landing Page",
+  //       description:
+  //         "A web page designed to capture visitor's attention and encourage them to take a specific action, such as booking a vacation rental.",
+  //     },
+  //     {
+  //       term: "Listing Optimization",
+  //       description:
+  //         "Strategies and techniques used to enhance the visibility, attractiveness, and performance of vacation rental properties.",
+  //     },
+  //     {
+  //       term: "Local Regulations",
+  //       description:
+  //         "Laws, ordinances, and regulations imposed by local governments or authorities that govern vacation rental properties.",
+  //     },
+  //     {
+  //       term: "Loyalty Programs",
+  //       description:
+  //         "Initiatives implemented by vacation rental businesses to reward and incentivize repeat bookings by guests.",
+  //     },
+  //     {
+  //       term: "Late Checkout",
+  //       description:
+  //         "Allows guests to check out of vacation rental properties later than the standard checkout time for an additional fee.",
+  //     },
+  //     {
+  //       term: "Local Attractions",
+  //       description:
+  //         "Points of interest, activities, and attractions near vacation rental properties that guests may want to visit.",
+  //     },
+  //     {
+  //       term: "Long-Term Rentals",
+  //       description:
+  //         "Rental properties that are rented out for extended periods.",
+  //     },
+  //   ],
+  // },
+  // {
+  //   letter: "M",
+  //   section: [
+  //     {
+  //       term: "Multi-Property Management",
+  //       description:
+  //         "Managing multiple vacation rental properties from a single platform or software.",
+  //     },
+  //     {
+  //       term: "Mobile Compatibility",
+  //       description:
+  //         "Ensurs that vacation rental websites and platforms are optimized for mobile devices.",
+  //     },
+  //     {
+  //       term: "Market Analysis",
+  //       description:
+  //         "Analyzing market trends, competition, demand, and pricing strategies in the vacation rental industry.",
+  //     },
+  //     {
+  //       term: "Maintenance Services",
+  //       description:
+  //         "Regular upkeep, repairs, and maintenance tasks to ensure that rental properties are in good condition for guests.",
+  //     },
+  //   ],
+  // },
+  // {
+  //   letter: "N",
+  //   section: [
+  //     {
+  //       term: "Net Revenue",
+  //       description:
+  //         "The total revenue generated from vacation rental properties after deducting expenses, taxes, and other costs.",
+  //     },
+  //     {
+  //       term: "Niche Market",
+  //       description:
+  //         "Targeting a specific segment or niche within the vacation rental market.",
+  //     },
+  //     {
+  //       term: "Notification System",
+  //       description:
+  //         "Feature in vacation rental websites and booking platforms that provides alerts, updates, and notifications.",
+  //     },
+  //   ],
+  // },
+  // {
+  //   letter: "O",
+  //   section: [
+  //     {
+  //       term: "Occupancy Rate",
+  //       description:
+  //         "The percentage of time that vacation rental properties are occupied by guests compared to their availability.",
+  //     },
+  //     {
+  //       term: "Online Payment Processing",
+  //       description:
+  //         "Accepting payments from guests for bookings and reservations through online payment gateways.",
+  //     },
+  //     {
+  //       term: "Owner Portal",
+  //       description:
+  //         "Secure online portal for property owners to manage their vacation rental properties, bookings, and financials.",
+  //     },
+  //     {
+  //       term: "Occupancy Calendar",
+  //       description:
+  //         "Visual representation of a vacation rental property's availability over a specific period.",
+  //     },
+  //   ],
+  // },
+  // {
+  //   letter: "P",
+  //   section: [
+  //     {
+  //       term: "Payment Gateway",
+  //       description:
+  //         "A secure platform that processes payments from guests for bookings and reservations.",
+  //     },
+  //     {
+  //       term: "Peak Season Pricing",
+  //       description:
+  //         "Adjusting rental rates during peak seasons or high-demand periods for vacation rental properties.",
+  //     },
+  //     {
+  //       term: "Professional Photography",
+  //       description:
+  //         "High-quality photos taken by professional photographers to showcase vacation rental properties.",
+  //     },
+  //     {
+  //       term: "Property Management System",
+  //       description:
+  //         "Software used by vacation rental owners and managers to oversee all aspects of property operations.",
+  //     },
+  //     {
+  //       term: "Promotional Offers",
+  //       description:
+  //         "Discounts, deals, or special promotions offered to attract guests and increase bookings.",
+  //     },
+  //   ],
+  // },
+  // {
+  //   letter: "Q",
+  //   section: [
+  //     {
+  //       term: "Quality Assurance",
+  //       description:
+  //         "Ensuring that vacation rental properties meet high standards of cleanliness, maintenance, and guest satisfaction.",
+  //     },
+  //     {
+  //       term: "QR Code",
+  //       description:
+  //         "An array of black and white squares or pixels set in a grid that stores data for a machine to read.",
+  //     },
+  //   ],
+  // },
+  // {
+  //   letter: "R",
+  //   section: [
+  //     {
+  //       term: "Reservation Management",
+  //       description:
+  //         "Handling bookings, reservations, and guest inquiries for vacation rental properties.",
+  //     },
+  //     {
+  //       term: "Review Management",
+  //       description:
+  //         "Monitoring and responding to guest reviews and feedback for vacation rental properties.",
+  //     },
+  //     {
+  //       term: "Revenue Management",
+  //       description:
+  //         "Strategies for maximizing revenue and profitability for vacation rental properties.",
+  //     },
+  //     {
+  //       term: "Rate Parity",
+  //       description:
+  //         "Maintaining consistent pricing for vacation rental properties across different distribution channels.",
+  //     },
+  //   ],
+  // },
+  // {
+  //   letter: "S",
+  //   section: [
+  //     {
+  //       term: "Search Engine Optimization",
+  //       description:
+  //         "Optimizing vacation rental websites and content to improve visibility and ranking in search engine results.",
+  //     },
+  //     {
+  //       term: "Security Deposits",
+  //       description:
+  //         "Refundable deposits collected from guests to cover damages or losses during their stay.",
+  //     },
+  //     {
+  //       term: "Social Media Marketing",
+  //       description:
+  //         "Promoting vacation rental properties and engaging with guests through social media platforms.",
+  //     },
+  //     {
+  //       term: "Superhost",
+  //       description:
+  //         "A designation on Airbnb for hosts who provide exceptional hospitality and meet certain criteria.",
+  //     },
+  //   ],
+  // },
+  // {
+  //   letter: "T",
+  //   section: [
+  //     {
+  //       term: "Trust and Safety Measures",
+  //       description:
+  //         "Policies and protocols implemented to ensure the safety and security of guests.",
+  //     },
+  //     {
+  //       term: "Trip Planning Tools",
+  //       description:
+  //         "Tools and resources provided to guests to plan their trips, activities, and itineraries.",
+  //     },
+  //     {
+  //       term: "Technology Integration",
+  //       description:
+  //         "Incorporating digital tools and platforms into vacation rental operations for efficiency and guest experience.",
+  //     },
+  //     {
+  //       term: "Terms and Conditions",
+  //       description:
+  //         "Legal terms and policies governing guest stays, payments, cancellations, and property rules.",
+  //     },
+  //   ],
+  // },
+  // {
+  //   letter: "U",
+  //   section: [
+  //     {
+  //       term: "User Experience",
+  //       description:
+  //         "The overall experience and satisfaction of guests using vacation rental platforms and services.",
+  //     },
+  //     {
+  //       term: "Upselling",
+  //       description:
+  //         "Offering additional services to guests to enhance their experience and increase revenue.",
+  //     },
+  //     {
+  //       term: "Unique Selling Proposition",
+  //       description:
+  //         "Distinctive features that set vacation rental properties apart from competitors and attract guests.",
+  //     },
+  //   ],
+  // },
+  // {
+  //   letter: "V",
+  //   section: [
+  //     {
+  //       term: "Vacation Rental Management Software",
+  //       description:
+  //         "Software platforms designed to manage bookings, reservations, and operations for vacation rental properties.",
+  //     },
+  //     {
+  //       term: "Virtual Tours",
+  //       description:
+  //         "Interactive virtual tours that showcase vacation rental properties and amenities to potential guests.",
+  //     },
+  //     {
+  //       term: "Value-added Services",
+  //       description:
+  //         "Additional services and amenities provided to guests to enhance their stay and overall experience.",
+  //     },
+  //   ],
+  // },
+  // {
+  //   letter: "W",
+  //   section: [
+  //     {
+  //       term: "Website Design",
+  //       description:
+  //         "The visual and functional design of vacation rental websites to attract visitors and facilitate bookings.",
+  //     },
+  //     {
+  //       term: "Wireless Internet Access",
+  //       description:
+  //         "Providing fast and reliable internet connectivity to guests staying at vacation rental properties.",
+  //     },
+  //     {
+  //       term: "Welcome Packages",
+  //       description:
+  //         "Personalized packages or amenities provided to guests upon their arrival to enhance their welcome and experience.",
+  //     },
+  //     {
+  //       term: "Weather Information",
+  //       description:
+  //         "Providing guests with weather forecasts and information to help them plan their activities and stay.",
+  //     },
+  //   ],
+  // },
+  // {
+  //   letter: "X",
+  //   section: [
+  //     {
+  //       term: "XML Integration",
+  //       description:
+  //         "Integrating vacation rental systems and platforms using XML technology for seamless data exchange.",
+  //     },
+  //   ],
+  // },
+  // {
+  //   letter: "Y",
+  //   section: [
+  //     {
+  //       term: "Yield Management",
+  //       description:
+  //         "Strategies and techniques for optimizing pricing and revenue for vacation rental properties.",
+  //     },
+  //   ],
+  // },
+  // {
+  //   letter: "Z",
+  //   section: [
+  //     {
+  //       term: "Zero Contact Check-In",
+  //       description:
+  //         "Implementing contactless check-in processes to minimize physical interactions between guests and staff.",
+  //     },
+  //     {
+  //       term: "Zone-Based Pricing",
+  //       description:
+  //         "Adjusting rental rates based on different geographic zones or areas within a destination.",
+  //     },
+  //   ],
+  // },
 ] as const;
