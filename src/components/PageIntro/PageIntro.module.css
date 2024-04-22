@@ -66,8 +66,24 @@
   -webkit-text-stroke-color: var(--green);
 }
 
+.btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
 @media screen and (max-width: 968px) {
   .copy {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .btnContainer {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
   }
 }

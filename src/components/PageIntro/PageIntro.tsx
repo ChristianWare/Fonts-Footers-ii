@@ -6,6 +6,7 @@ import styles from "./PageIntro.module.css";
 import Image, { StaticImageData } from "next/image";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../animation/variants";
+import Button from "../Button/Button";
 
 interface Props {
   h1Color?: string;
@@ -16,6 +17,7 @@ interface Props {
   span?: string;
   orientation?: string;
   src?: StaticImageData;
+  notFound?: string;
 }
 
 const PageIntro = ({
@@ -27,6 +29,7 @@ const PageIntro = ({
   span,
   orientation = "",
   src,
+  notFound,
 }: Props) => {
   return (
     <section className={styles.container}>
@@ -77,6 +80,17 @@ const PageIntro = ({
           >
             {copy}
           </motion.p>
+          {notFound && (
+            <div className={styles.btnContainer}>
+              <Button text='Home' href='/' btnType='secondary' arrow />
+              <Button
+                text='contact'
+                href='/contact'
+                btnType='primaryii'
+                arrow
+              />
+            </div>
+          )}
         </div>
       </LayoutWrapper>
     </section>
