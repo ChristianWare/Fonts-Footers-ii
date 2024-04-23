@@ -51,6 +51,7 @@
 }
 
 @media screen and (max-width: 968px) {
+  .heading,
   .copy {
     width: 100%;
   }
