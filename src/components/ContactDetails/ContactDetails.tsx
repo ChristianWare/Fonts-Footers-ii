@@ -22,7 +22,7 @@ const ContactDetails = () => {
             <div className={styles.top}>
               <div className={styles.box}>
                 <h2 className={styles.title}>Phone</h2>
-                <Link href='tel:+6236326780' className={styles.detail}>
+                <Link href='tel:+62363267800' className={styles.detail}>
                   623-632-6780
                 </Link>
               </div>
@@ -56,7 +56,7 @@ const ContactDetails = () => {
             Calendly: Scehdule a Discovery Call with us
           </h2>
           <InlineWidget
-            url='https://calendly.com/chris-ware-dev/discovery-call'
+            url='https://calendly.com/fontsandfooters/discovery-call'
             styles={{
               height: "775px",
               borderRadius: "20px",
