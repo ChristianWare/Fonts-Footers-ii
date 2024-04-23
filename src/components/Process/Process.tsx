@@ -15,13 +15,7 @@ const Process = () => {
         <div className={styles.content}>
           <div className={styles.left}>
             {process.map((x, index) => (
-              <motion.div
-                variants={fadeIn(index % 2 === 0 ? "up" : "left", 0.3)}
-                initial='hidden'
-                whileInView={"show"}
-                key={x.id}
-                className={styles.processContainer}
-              >
+              <div key={x.id} className={styles.processContainer}>
                 {x.processName.length >= 1 && (
                   <FalseButton
                     text={`${x.processName.length >= 1 ? index + "." : ""} ${
@@ -34,7 +28,7 @@ const Process = () => {
                 <p className={styles.processDescription}>
                   {x.processDescription}
                 </p>
-              </motion.div>
+              </div>
             ))}
           </div>
           <div className={styles.right}>

@@ -50,17 +50,10 @@ const Challenges = () => {
         </div>
         <div className={styles.middle}>
           {data.map((x, index) => (
-            <motion.div
-              variants={fadeIn(index % 2 === 0 ? "right" : "left", 0.3)}
-              initial='hidden'
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.3 }}
-              key={index}
-              className={styles.box}
-            >
+            <div key={index} className={styles.box}>
               {x.icon}
               <h3 className={styles.title}>{x.title}</h3>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

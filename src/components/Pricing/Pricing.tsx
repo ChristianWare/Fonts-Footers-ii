@@ -44,14 +44,7 @@ const Pricing = () => {
           </div>
           <div className={styles.bottom}>
             {pricing.map((x, index) => (
-              <motion.div
-                variants={fadeIn(index % 2 === 0 ? "right" : "left", 0.3)}
-                initial='hidden'
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0.3 }}
-                key={x.id}
-                className={styles.priceContainer}
-              >
+              <div key={x.id} className={styles.priceContainer}>
                 <div className={styles.pcTop}>
                   <h3 className={styles.planName}>{x.plan}</h3>
                   <span className={styles.for}>{x.for}</span>
@@ -69,7 +62,7 @@ const Pricing = () => {
                     ${!isMonthly ? x.prices[0].price : x.prices[1].price}
                   </span>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
           {pathname !== "/pricing" && (

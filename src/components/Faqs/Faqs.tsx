@@ -9,8 +9,6 @@ import { faqs } from "@/lib/data";
 import Arrow2 from "../../../public/icons/arrow2.svg";
 import House from "../../../public/images/faqs.png";
 import Image from "next/image";
-import { motion } from "framer-motion";
-import { fadeIn } from "../../../animation/variants";
 
 const Faqs = () => {
   const [selected, setSelected] = useState<null | number>(null);
@@ -55,17 +53,11 @@ const Faqs = () => {
             <div className={styles.topRight}></div>
           </div>
           <div className={styles.bottom}>
-            <motion.div
-              variants={fadeIn("right", 0.3)}
-              initial='hidden'
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.3 }}
-              className={styles.left}
-            >
+            <div className={styles.left}>
               <div className={styles.imgContainer}>
                 <Image src={House} alt='image' fill className={styles.img} />
               </div>
-            </motion.div>
+            </div>
             <div className={styles.right}>
               {faqs.slice(0, 4).map((x, i) => (
                 <div
@@ -74,17 +66,11 @@ const Faqs = () => {
                   onClick={() => toggle(i)}
                 >
                   <div className={styles.headingArrowContainer}>
-                    <motion.div
-                      variants={fadeIn("left", 0.3)}
-                      initial='hidden'
-                      whileInView={"show"}
-                      viewport={{ once: false, amount: 0.3 }}
-                      className={styles.h3Container}
-                    >
+                    <div className={styles.h3Container}>
                       <h3 className={styles.question} lang='en'>
                         {x.question}
                       </h3>
-                    </motion.div>
+                    </div>
                     {selected === i ? (
                       <div className={styles.iconBox}>
                         <Arrow2

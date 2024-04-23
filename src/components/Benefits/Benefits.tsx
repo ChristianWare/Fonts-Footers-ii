@@ -20,25 +20,9 @@ const Benefits = () => {
             {benefits.slice(0, 3).map((benefit, i) => (
               <div key={i} className={styles.benefitContainer}>
                 <div className={styles.headingContainer}>
-                  <motion.h3
-                    variants={fadeIn("right", 0.3)}
-                    initial='hidden'
-                    whileInView={"show"}
-                    viewport={{ once: false, amount: 0.3 }}
-                    className={styles.heading}
-                  >
-                    {benefit.heading}
-                  </motion.h3>
+                  <h3 className={styles.heading}>{benefit.heading}</h3>
                 </div>
-                <motion.p
-                  variants={fadeIn("left", 0.3)}
-                  initial='hidden'
-                  whileInView={"show"}
-                  viewport={{ once: false, amount: 0.3 }}
-                  className={styles.description}
-                >
-                  {benefit.description}
-                </motion.p>
+                <p className={styles.description}>{benefit.description}</p>
               </div>
             ))}
           </div>

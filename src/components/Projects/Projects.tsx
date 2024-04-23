@@ -6,9 +6,6 @@ import styles from "./Projects.module.css";
 import Image from "next/image";
 import ArrowCluster from "../ArrowCluster/ArrowCluster";
 import Link from "next/link";
-import Button from "../Button/Button";
-import { motion } from "framer-motion";
-import { fadeIn } from "../../../animation/variants";
 import { useState } from "react";
 import Modal from "../Modal/Modal";
 import FalseButton from "../FalseButton/FalseButton";
@@ -26,13 +23,7 @@ const Projects = () => {
           </div>
           {projects.map((x) => (
             <div key={x.title} className={styles.content}>
-              <motion.div
-                variants={fadeIn("right", 0.3)}
-                initial='hidden'
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0.3 }}
-                className={styles.left}
-              >
+              <div className={styles.left}>
                 <div className={styles.imgContainer}>
                   <Image
                     src={x.src}
@@ -41,14 +32,8 @@ const Projects = () => {
                     className={styles.img}
                   />
                 </div>
-              </motion.div>
-              <motion.div
-                variants={fadeIn("left", 0.3)}
-                initial='hidden'
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0.3 }}
-                className={styles.right}
-              >
+              </div>
+              <div className={styles.right}>
                 <div className={styles.rightTop}>
                   <h3 className={styles.title}>{x.title}</h3>
                   <p className={styles.desc}>{x.description}</p>
@@ -68,7 +53,7 @@ const Projects = () => {
                     Live Site
                   </Link>
                 </div>
-              </motion.div>
+              </div>
               <Modal
                 isOpen={isModalOpen}
                 onClose={() => {
@@ -88,14 +73,6 @@ const Projects = () => {
               </Modal>
             </div>
           ))}
-          {/* <div className={styles.btnContainer}>
-            <Button
-              text='see all projects'
-              href='/'
-              btnType='primaryii'
-              arrow
-            />
-          </div> */}
         </div>
       </LayoutWrapper>
     </section>
