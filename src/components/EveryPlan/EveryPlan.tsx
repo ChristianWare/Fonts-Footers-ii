@@ -2,15 +2,12 @@
 
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./EveryPlan.module.css";
-import House from "../../../public/icons/house.svg";
 import Gaii from "../../../public/icons/gaii.svg";
 import Edit from "../../../public/icons/edit.svg";
 import Hosting from "../../../public/icons/cloud.svg";
 import Listing from "../../../public/icons/listing.svg";
 import Design from "../../../public/icons/design.svg";
 import Clock from "../../../public/icons/clock.svg";
-import { motion } from "framer-motion";
-import { fadeIn } from "../../../animation/variants";
 
 const EveryPlan = () => {
   const data = [
@@ -65,18 +62,14 @@ const EveryPlan = () => {
         </div>
         <div className={styles.bottom}>
           {data.map((x, index) => (
-            <motion.div
-              variants={fadeIn(index % 2 === 0 ? "up" : "left", 0.3)}
-              initial='hidden'
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.3 }}
+            <div
               className={styles.card}
               key={index}
             >
               {x.icon && <div className={styles.iconContainer}>{x.icon}</div>}
               <h3 className={styles.title}>{x.title}</h3>
               <p className={styles.desc}>{x.description}</p>
-            </motion.div>
+            </div>
           ))}
         </div>
       </LayoutWrapper>

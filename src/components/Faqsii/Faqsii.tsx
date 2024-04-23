@@ -5,8 +5,6 @@ import LayoutWrapper from "../LayoutWrapper";
 import { faqs } from "@/lib/data";
 import Arrow2 from "../../../public/icons/arrow2.svg";
 import styles from "./Faqsii.module.css";
-import { motion } from "framer-motion";
-import { fadeIn } from "../../../animation/variants";
 
 const Faqsii = () => {
   const [selected, setSelected] = useState<null | number>(null);
@@ -31,17 +29,13 @@ const Faqsii = () => {
                   onClick={() => toggle(i)}
                 >
                   <div className={styles.headingArrowContainer}>
-                    <motion.div
-                      variants={fadeIn("right", 0.3)}
-                      initial='hidden'
-                      whileInView={"show"}
-                      viewport={{ once: false, amount: 0.3 }}
+                    <div
                       className={styles.h3Container}
                     >
                       <h3 className={styles.question} lang='en'>
                         {x.question}
                       </h3>
-                    </motion.div>
+                    </div>
                     {selected === i ? (
                       <div className={styles.iconBox}>
                         <Arrow2

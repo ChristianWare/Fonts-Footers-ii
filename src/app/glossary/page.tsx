@@ -6,8 +6,6 @@ import LayoutWrapper from "@/components/LayoutWrapper";
 import { glossaryMenu } from "@/lib/data";
 import Link from "next/link";
 import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
-import { motion } from "framer-motion";
-import { fadeIn } from "../../../animation/variants";
 import { Metadata } from "next";
 
 // export const metadata: Metadata = {
@@ -45,13 +43,7 @@ export default function GlossaryPage() {
             ))}
           </div>
           <div className={styles.bottomRight}>
-            <motion.div
-              variants={fadeIn("up", 0.3)}
-              initial='hidden'
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.3 }}
-              className={styles.top}
-            >
+            <div className={styles.top}>
               {glossaryMenu.map((x, index) => (
                 <Link
                   href={`#${x.letter}`}
@@ -61,7 +53,7 @@ export default function GlossaryPage() {
                   {x.letter}
                 </Link>
               ))}
-            </motion.div>
+            </div>
             {glossaryMenu.map((x, index) => (
               <div
                 key={index}

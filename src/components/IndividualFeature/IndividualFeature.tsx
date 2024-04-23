@@ -9,8 +9,6 @@ import Map from "../../../public/icons/map.svg";
 import User from "../../../public/icons/dashboard.svg";
 import Cog from "../../../public/icons/cog.svg";
 import Multiple from "../../../public/icons/multiple.svg";
-import { motion } from "framer-motion";
-import { fadeIn } from "../../../animation/variants";
 
 const IndividualFeature = () => {
   const individulaFeatures = [
@@ -222,50 +220,22 @@ const IndividualFeature = () => {
         {individulaFeatures.map((x, index) => (
           <div key={index}>
             <div className={styles.content}>
-              <motion.div
-                variants={fadeIn("right", 0.3)}
-                initial='hidden'
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0.3 }}
-                className={styles.left}
-              >
+              <div className={styles.left}>
                 <h3 className={styles.titleMobile}>{x.title}</h3>
                 <div className={styles.iconContainer}>{x.icon}</div>
-              </motion.div>
+              </div>
               <div className={styles.right}>
-                <motion.h3
-                  variants={fadeIn("left", 0.3)}
-                  initial='hidden'
-                  whileInView={"show"}
-                  viewport={{ once: false, amount: 0.3 }}
-                  className={styles.title}
-                >
-                  {x.title}
-                </motion.h3>
-                <motion.p
-                  variants={fadeIn("left", 0.3)}
-                  initial='hidden'
-                  whileInView={"show"}
-                  viewport={{ once: false, amount: 0.3 }}
-                  className={styles.desc}
-                >
-                  {x.description}
-                </motion.p>
+                <h3 className={styles.title}>{x.title}</h3>
+                <p className={styles.desc}>{x.description}</p>
                 <br />
                 <span className={styles.span}>Benefits:</span>
-                <motion.ul
-                  variants={fadeIn("left", 0.3)}
-                  initial='hidden'
-                  whileInView={"show"}
-                  viewport={{ once: false, amount: 0.3 }}
-                  className={styles.box}
-                >
+                <ul className={styles.box}>
                   {x.whyImportant.map((y, index) => (
                     <li key={index}>
                       <h4 className={styles.reasonnTitle}>{y.title}</h4>
                     </li>
                   ))}
-                </motion.ul>
+                </ul>
               </div>
             </div>
           </div>

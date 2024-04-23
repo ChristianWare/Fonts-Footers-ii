@@ -5,8 +5,6 @@ import LayoutWrapper from "../LayoutWrapper";
 import styles from "./LongTermRelationships.module.css";
 import Img from "../../../public/images/house22.png";
 import ArrowCluster from "../ArrowCluster/ArrowCluster";
-import { motion } from "framer-motion";
-import { fadeIn } from "../../../animation/variants";
 
 const LongTermRelationships = () => {
   const data = [
@@ -22,18 +20,15 @@ const LongTermRelationships = () => {
     },
     {
       title: "",
-      description:
-        "",
+      description: "",
     },
     {
       title: "",
-      description:
-        "",
+      description: "",
     },
     {
       title: "",
-      description:
-        "",
+      description: "",
     },
     {
       title: "Customized Offers",
@@ -64,17 +59,10 @@ const LongTermRelationships = () => {
           </div>
           <div className={styles.bottom}>
             {data.map((x, index) => (
-              <motion.div
-                variants={fadeIn(index % 2 === 0 ? "up" : "left", 0.3)}
-                initial='hidden'
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0.3 }}
-                key={index}
-                className={styles.card}
-              >
+              <div key={index} className={styles.card}>
                 <h3 className={styles.title}>{x.title}</h3>
                 <p className={styles.desc}>{x.description}</p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>

@@ -6,8 +6,6 @@ import styles from "./Pricing.module.css";
 import Button from "../Button/Button";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
-import { motion } from "framer-motion";
-import { fadeIn } from "../../../animation/variants";
 
 const Pricing = () => {
   const [isMonthly, setIsMonthly] = useState(false);

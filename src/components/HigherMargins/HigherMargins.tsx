@@ -9,8 +9,6 @@ import Repeat from "../../../public/icons/repeat.svg";
 import Image from "next/image";
 import Img from "../../../public/images/house18.png";
 import Img2 from "../../../public/images/house4.png";
-import { motion } from "framer-motion";
-import { fadeIn } from "../../../animation/variants";
 
 const HigherMargins = () => {
   const data = [
@@ -51,27 +49,21 @@ const HigherMargins = () => {
           {data.map((x, index) => (
             <>
               {x.src && (
-                <motion.div
-                  variants={fadeIn(index % 2 === 0 ? "up" : "left", 0.3)}
-                  initial='hidden'
-                  whileInView={"show"}
+                <div
                   className={styles.imgContainer}
                 >
                   <Image src={x.src} alt='image' fill className={styles.img} />
-                </motion.div>
+                </div>
               )}
               {x.icon && x.title && x.description && (
-                <motion.div
-                  variants={fadeIn(index % 2 === 0 ? "up" : "left", 0.3)}
-                  initial='hidden'
-                  whileInView={"show"}
+                <div
                   key={index}
                   className={styles.card}
                 >
                   <div className={styles.iconContainer}>{x.icon}</div>
                   <h3 className={styles.title}>{x.title}</h3>
                   <p className={styles.desc}>{x.description}</p>
-                </motion.div>
+                </div>
               )}
             </>
           ))}

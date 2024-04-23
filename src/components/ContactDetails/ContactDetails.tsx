@@ -3,10 +3,8 @@
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./ContactDetails.module.css";
 import Image from "next/image";
-import Img from "../../../public/images/house25.png";
+import Img from "../../../public/images/house24.png";
 import SocialsContainer from "../SocialsContainer/SocialsContainer";
-import { motion } from "framer-motion";
-import { fadeIn } from "../../../animation/variants";
 import { InlineWidget } from "react-calendly";
 
 const ContactDetails = () => {
@@ -14,24 +12,12 @@ const ContactDetails = () => {
     <section className={styles.container}>
       <LayoutWrapper>
         <div className={styles.content}>
-          <motion.div
-            variants={fadeIn("right", 0.3)}
-            initial='hidden'
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
-            className={styles.left}
-          >
+          <div className={styles.left}>
             <div className={styles.imgContainer}>
               <Image src={Img} className={styles.img} alt='image' fill />
             </div>
-          </motion.div>
-          <motion.div
-            variants={fadeIn("left", 0.3)}
-            initial='hidden'
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
-            className={styles.right}
-          >
+          </div>
+          <div className={styles.right}>
             <div className={styles.top}>
               <div className={styles.box}>
                 <h2 className={styles.title}>Phone</h2>
@@ -49,7 +35,7 @@ const ContactDetails = () => {
             <div className={styles.bottom}>
               <SocialsContainer />
             </div>
-          </motion.div>
+          </div>
         </div>
         <div className={styles.calBox} id='schedule'>
           <h2 className={styles.heading}>
