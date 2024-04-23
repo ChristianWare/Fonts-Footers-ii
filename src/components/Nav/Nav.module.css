@@ -106,6 +106,12 @@
 }
 
 @media screen and (max-width: 1268px) {
+  .navMenu {
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 1168px) {
   .navbar {
     justify-content: flex-end;
   }
