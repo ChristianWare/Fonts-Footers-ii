@@ -20,6 +20,7 @@ const Hero = () => {
             Empower your property with a{" "}
             <span className={styles.span}>Direct Booking</span> Website
           </h1>
+     
           <p className={styles.copy}>
             Stop depending on sites like Air BNB or VRBO for short-term rental
             listings. Enhance guest satisfaction, get repeat stays, and
