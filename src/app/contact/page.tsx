@@ -1,6 +1,11 @@
 import ContactDetails from "@/components/ContactDetails/ContactDetails";
 import PageIntro from "@/components/PageIntro/PageIntro";
 import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Us",
+};
 
 export default function FAQPage() {
   return (
