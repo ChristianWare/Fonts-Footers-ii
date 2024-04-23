@@ -25,7 +25,7 @@ const ContactDetails = () => {
               </div>
               <div className={styles.box}>
                 <h2 className={styles.title}>Email</h2>
-                <p className={styles.detail}>hello@fontsandfooters.com</p>
+                <p className={styles.detail}>fontsandfooters@gmail.com</p>
               </div>
               <div className={styles.box}>
                 <h2 className={styles.title}>Calendly</h2>
