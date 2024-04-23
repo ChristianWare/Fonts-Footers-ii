@@ -4,7 +4,6 @@ import Image from "next/image";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Hero.module.css";
 import Img1 from "../../../public/images/house8.png";
-import ArrowCluster from "../ArrowCluster/ArrowCluster";
 import Button from "../Button/Button";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../animation/variants";
