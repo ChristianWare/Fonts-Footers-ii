@@ -62,12 +62,12 @@ export default function RootLayout({
             },
           }}
         />
-        {/* <NoiseBg> */}
+        <NoiseBg>
           <Nav />
           {children}
           <CallToAction />
           <FinalCta />
-        {/* </NoiseBg>  */}
+        </NoiseBg>
       </body>
     </html>
   );
