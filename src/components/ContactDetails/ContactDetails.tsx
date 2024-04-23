@@ -6,6 +6,7 @@ import Image from "next/image";
 import Img from "../../../public/images/house24.png";
 import SocialsContainer from "../SocialsContainer/SocialsContainer";
 import { InlineWidget } from "react-calendly";
+import Link from "next/link";
 
 const ContactDetails = () => {
   return (
@@ -21,15 +22,28 @@ const ContactDetails = () => {
             <div className={styles.top}>
               <div className={styles.box}>
                 <h2 className={styles.title}>Phone</h2>
-                <p className={styles.detail}>623-632-6780</p>
+                <Link href='tel:+6236326780' className={styles.detail}>
+                  623-632-6780
+                </Link>
               </div>
               <div className={styles.box}>
                 <h2 className={styles.title}>Email</h2>
-                <p className={styles.detail}>fontsandfooters@gmail.com</p>
+                <Link
+                  href='mailto:fontsandfooters@gmail.com'
+                  className={styles.detail}
+                >
+                  fontsandfooters@gmail.com
+                </Link>
               </div>
               <div className={styles.box}>
                 <h2 className={styles.title}>Calendly</h2>
-                <p className={styles.detail}>calendly.com/fontsandfooters</p>
+                <Link
+                  href='https://calendly.com/fontsandfooters'
+                  target='_blank'
+                  className={styles.detail}
+                >
+                  https://calendly.com/fontsandfooters
+                </Link>
               </div>
             </div>
             <div className={styles.bottom}>
