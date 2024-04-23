@@ -1,5 +1,8 @@
+"use client";
+
 import ContentPadding from "../ContentPadding/ContentPadding";
 import styles from "./LayoutWrapper.module.css";
+import { motion } from "framer-motion";
 
 interface Props {
   color?: string;
@@ -8,9 +11,13 @@ interface Props {
 
 const LayoutWrapper = ({ children, color = "" }: Props) => {
   return (
-    <div className={`${styles.layout} ${styles[color]}`}>
+    <motion.div
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      className={`${styles.layout} ${styles[color]}`}
+    >
       <ContentPadding>{children}</ContentPadding>
-    </div>
+    </motion.div>
   );
 };
 export default LayoutWrapper;

@@ -89,7 +89,7 @@
   .btnContainer {
     justify-content: center;
   }
-  
+
   .heading {
     width: 80%;
     text-align: center;
@@ -106,7 +106,7 @@
   .heading {
     width: 100%;
   }
-  
+
   .middle {
     padding: 0rem 5rem;
   }
@@ -117,13 +117,18 @@
     padding: 0rem 3rem;
   }
 
-  .heading, .copy {
+  .heading,
+  .copy {
     text-align: center;
     width: 100%;
   }
 }
 
 @media screen and (max-width: 668px) {
+  .heading {
+    margin-top: 3rem;
+  }
+
   .middle {
     grid-template-columns: repeat(1, 1fr);
     padding: 0rem;

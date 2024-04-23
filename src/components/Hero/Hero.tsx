@@ -5,22 +5,17 @@ import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Hero.module.css";
 import Img1 from "../../../public/images/house8.png";
 import Button from "../Button/Button";
-import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
     <LayoutWrapper>
-      <motion.section
-        initial={{ y: -100, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        className={styles.container}
-      >
+      <section className={styles.container}>
         <div className={styles.left}>
           <h1 className={styles.heading}>
             Empower your property with a{" "}
             <span className={styles.span}>Direct Booking</span> Website
           </h1>
-     
+
           <p className={styles.copy}>
             Stop depending on sites like Air BNB or VRBO for short-term rental
             listings. Enhance guest satisfaction, get repeat stays, and
@@ -49,12 +44,12 @@ const Hero = () => {
               alt='Direct Booking Website'
               fill
               priority
-              sizes='(max-width: 568px) 30vw, (max-width: 768px) 50vw, (max-width: 1200px) 100vw'
+              sizes='(max-width: 768px) 50vw, (max-width: 1200px) 100vw'
               className={styles.img}
             />
           </div>
         </div>
-      </motion.section>
+      </section>
     </LayoutWrapper>
   );
 };

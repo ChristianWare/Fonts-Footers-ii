@@ -59,6 +59,13 @@ const ScrollText = () => {
                   </span>
                 ))}
               </h2>
+              <h2 className={styles.text2}>
+                While online travel authorities can boost your property&apos;s
+                exposure, you should also consider developing your own direct
+                booking website. This can help you build a personalized online
+                presence, and enhance the reservation process for your guests,
+                making it easier for them to book their stay directly with you.
+              </h2>
             </div>
           </div>
           <div className={styles.bottom}>
