@@ -48,6 +48,7 @@ const Hero = () => {
               alt='Direct Booking Website'
               fill
               priority
+              sizes='(max-width: 568px) 30vw, (max-width: 768px) 50vw, (max-width: 1200px) 100vw'
               className={styles.img}
             />
           </div>

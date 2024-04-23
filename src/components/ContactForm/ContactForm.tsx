@@ -5,8 +5,6 @@ import styles from "./ContactForm.module.css";
 import { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import Arrow2 from "../../../public/icons/arrow2.svg";
-import { motion } from "framer-motion";
-import { fadeIn } from "../../../animation/variants";
 
 type Inputs = {
   firstName: string;
@@ -50,11 +48,7 @@ const ContactForm = () => {
             <div className={styles.namesContainer}>
               <div className={styles.labelInputBox}>
                 <label htmlFor='firstName'>First Name</label>
-                <motion.input
-                  variants={fadeIn("down", 0.3)}
-                  initial='hidden'
-                  whileInView={"show"}
-                  viewport={{ once: false, amount: 0.3 }}
+                <input
                   id='firstName'
                   type='text'
                   {...register("firstName", { required: true })}
@@ -67,11 +61,7 @@ const ContactForm = () => {
               </div>
               <div className={styles.labelInputBox}>
                 <label htmlFor='lastName'>Last Name</label>
-                <motion.input
-                  variants={fadeIn("down", 0.3)}
-                  initial='hidden'
-                  whileInView={"show"}
-                  viewport={{ once: false, amount: 0.3 }}
+                <input
                   id='lastName'
                   type='text'
                   {...register("lastName", { required: true })}
@@ -86,11 +76,7 @@ const ContactForm = () => {
             <div className={styles.everythingElse}>
               <div className={styles.labelInputBox}>
                 <label htmlFor='email'>Email</label>
-                <motion.input
-                  variants={fadeIn("down", 0.3)}
-                  initial='hidden'
-                  whileInView={"show"}
-                  viewport={{ once: false, amount: 0.3 }}
+                <input
                   id='senderEmail'
                   type='email'
                   {...register("email", {
@@ -112,11 +98,7 @@ const ContactForm = () => {
                 <label htmlFor='message'>
                   Message <span className={styles.required}>*</span>
                 </label>
-                <motion.textarea
-                  variants={fadeIn("down", 0.3)}
-                  initial='hidden'
-                  whileInView={"show"}
-                  viewport={{ once: false, amount: 0.3 }}
+                <textarea
                   id='message'
                   maxLength={5000}
                   {...register("message", { required: true })}
