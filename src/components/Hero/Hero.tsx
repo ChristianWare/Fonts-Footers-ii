@@ -4,6 +4,7 @@ import Image from "next/image";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Hero.module.css";
 import Img1 from "../../../public/images/house8.png";
+import ArrowCluster from "../ArrowCluster/ArrowCluster";
 import Button from "../Button/Button";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../animation/variants";
@@ -13,17 +14,35 @@ const Hero = () => {
     <LayoutWrapper>
       <section className={styles.container}>
         <div className={styles.left}>
-          <h1 className={styles.heading}>
+          <motion.h1
+            variants={fadeIn("down", 0.3)}
+            initial='hidden'
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.3 }}
+            className={styles.heading}
+          >
             Empower your property with a{" "}
             <span className={styles.span}>Direct Booking</span> Website
-          </h1>
-          <p className={styles.copy}>
+          </motion.h1>
+          <motion.p
+            variants={fadeIn("down", 0.6)}
+            initial='hidden'
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.6 }}
+            className={styles.copy}
+          >
             Stop depending on sites like Air BNB or VRBO for short-term rental
             listings. Enhance guest satisfaction, get repeat stays, and
             eliminate all commission fees by having guests book directly with
             you.
-          </p>
-          <div className={styles.btnContainer}>
+          </motion.p>
+          <motion.div
+            variants={fadeIn("down", 0.9)}
+            initial='hidden'
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.9 }}
+            className={styles.btnContainer}
+          >
             <Button
               text='Schedule a call'
               href='/contact/#schedule'
@@ -36,10 +55,16 @@ const Hero = () => {
               btnType='secondary'
               arrow
             />
-          </div>
+          </motion.div>
         </div>
         <div className={styles.right}>
-          <div className={styles.imgContainer}>
+          <div
+            // variants={fadeIn("down", 0.3)}
+            // initial='hidden'
+            // whileInView={"show"}
+            // viewport={{ once: false, amount: 0.3 }}
+            className={styles.imgContainer}
+          >
             <Image
               src={Img1}
               alt='Direct Booking Website'
