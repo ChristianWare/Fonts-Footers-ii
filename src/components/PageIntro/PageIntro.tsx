@@ -42,7 +42,7 @@ const PageIntro = ({
             fill
             className={styles.img}
             priority
-            sizes='s100vw'
+            sizes='(max-width: 768px) 50vw, (max-width: 1200px) 100vw'
             quality={100}
           />
         </>
