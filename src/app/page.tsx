@@ -37,8 +37,8 @@ export default async function Home() {
   return (
     <main>
       <Hero />
-      <ScrollHorizontalText />
-      <ScrollText />
+      {/* <ScrollHorizontalText /> */}
+      {/* <ScrollText /> */}
       <Challenges />
       <AboutUs />
       <Features />
