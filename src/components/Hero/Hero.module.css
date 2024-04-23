@@ -98,11 +98,6 @@
     text-align: left;
   }
 
-  .span {
-    color: var(--green);
-    line-height: 110%;
-  }
-
   .btnContainer {
     flex-direction: column;
     width: 100%;
