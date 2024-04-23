@@ -144,7 +144,7 @@
     width: 100%;
     height: 100%;
     transition: 0.3s all ease-in;
-    z-index: 999;
+    z-index: 1000;
     background-color: var(--tan);
     padding: 1rem;
     padding-left: 2rem;
@@ -156,9 +156,9 @@
   }
 
   .navItem {
-    font-size: 3rem;
-    color: var(--black2);
-    font-family: var(--raleway);
+    color: var(--green);
+    font-family: var(--oswald);
+    font-size: 4rem;
     font-weight: 600;
     line-height: 0.8;
     text-transform: uppercase;
@@ -180,6 +180,8 @@
 
   .icon {
     color: var(--black2);
+    position: relative;
+    top: -5px;
   }
 
   .btnContainerMobile {
@@ -246,7 +248,7 @@
   }
 }
 
-@media screen and (max-width: 368px) {
+/* @media screen and (max-width: 368px) {
   .navMenu {
     padding: 1rem;
   }
@@ -254,10 +256,10 @@
   .openClose {
     font-size: 1.4rem;
   }
-}
+} */
 
-@media screen and (max-width: 320px) {
+/* @media screen and (max-width: 320px) {
   .navMenu {
     padding: 1rem;
   }
-}
+} */

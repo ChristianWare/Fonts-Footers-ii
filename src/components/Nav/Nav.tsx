@@ -114,7 +114,7 @@ function Nav() {
                 </Link>
               </li>
             ))}
-            {isOpen && (
+            {/* {isOpen && (
               <div className={styles.btnContainerMobile}>
                 <Button
                   href='/contact'
@@ -129,7 +129,7 @@ function Nav() {
                   arrow
                 />
               </div>
-            )}
+            )} */}
           </ul>
           {isOpen && (
             <div
