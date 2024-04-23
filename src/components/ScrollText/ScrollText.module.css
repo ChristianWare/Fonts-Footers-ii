@@ -81,4 +81,8 @@
   .copy {
     width: 100%;
   }
+
+  .text {
+    font-size: 4rem;
+  }
 }
