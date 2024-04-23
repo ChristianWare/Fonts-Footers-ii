@@ -59,7 +59,6 @@ const Hero = () => {
         </div>
         <div className={styles.right}>
           <div
-          
             // variants={fadeIn("down", 0.3)}
             // initial='hidden'
             // whileInView={"show"}
