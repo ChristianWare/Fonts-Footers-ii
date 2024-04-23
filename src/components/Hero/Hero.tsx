@@ -58,11 +58,11 @@ const Hero = () => {
           </motion.div>
         </div>
         <div className={styles.right}>
-          <motion.div
-            variants={fadeIn("down", 0.3)}
-            initial='hidden'
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
+          <div
+            // variants={fadeIn("down", 0.3)}
+            // initial='hidden'
+            // whileInView={"show"}
+            // viewport={{ once: false, amount: 0.3 }}
             className={styles.imgContainer}
           >
             <Image
@@ -72,7 +72,7 @@ const Hero = () => {
               priority
               className={styles.img}
             />
-          </motion.div>
+          </div>
         </div>
       </section>
     </LayoutWrapper>
