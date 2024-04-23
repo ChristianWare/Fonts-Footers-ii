@@ -16,6 +16,7 @@ const TopNav = () => {
           <Link
             href='https://www.linkedin.com/'
             target='_blank'
+            aria-label='LinkedIn'
             className={styles.detail}
           >
             <LinkedIn className={styles.icon} width={12} height={12} />
@@ -23,6 +24,7 @@ const TopNav = () => {
           <Link
             href='https://www.facebook.com/'
             target='_blank'
+            aria-label='Facebook'
             className={styles.detail}
           >
             <Facebook className={styles.icon} width={12} height={12} />
@@ -30,6 +32,7 @@ const TopNav = () => {
           <Link
             href='https://instagram.com/'
             target='_blank'
+            aria-label='Instagram'
             className={styles.detail}
           >
             <Insta className={styles.icon} width={12} height={12} />
