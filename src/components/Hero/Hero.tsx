@@ -4,45 +4,29 @@ import Image from "next/image";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Hero.module.css";
 import Img1 from "../../../public/images/house8.png";
-import ArrowCluster from "../ArrowCluster/ArrowCluster";
 import Button from "../Button/Button";
 import { motion } from "framer-motion";
-import { fadeIn } from "../../../animation/variants";
 
 const Hero = () => {
   return (
     <LayoutWrapper>
-      <section className={styles.container}>
+      <motion.section
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        className={styles.container}
+      >
         <div className={styles.left}>
-          <motion.h1
-            variants={fadeIn("down", 0.3)}
-            initial='hidden'
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
-            className={styles.heading}
-          >
+          <h1 className={styles.heading}>
             Empower your property with a{" "}
             <span className={styles.span}>Direct Booking</span> Website
-          </motion.h1>
-          <motion.p
-            variants={fadeIn("down", 0.6)}
-            initial='hidden'
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.6 }}
-            className={styles.copy}
-          >
+          </h1>
+          <p className={styles.copy}>
             Stop depending on sites like Air BNB or VRBO for short-term rental
             listings. Enhance guest satisfaction, get repeat stays, and
             eliminate all commission fees by having guests book directly with
             you.
-          </motion.p>
-          <motion.div
-            variants={fadeIn("down", 0.9)}
-            initial='hidden'
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.9 }}
-            className={styles.btnContainer}
-          >
+          </p>
+          <div className={styles.btnContainer}>
             <Button
               text='Schedule a call'
               href='/contact/#schedule'
@@ -55,16 +39,10 @@ const Hero = () => {
               btnType='secondary'
               arrow
             />
-          </motion.div>
+          </div>
         </div>
         <div className={styles.right}>
-          <div
-            // variants={fadeIn("down", 0.3)}
-            // initial='hidden'
-            // whileInView={"show"}
-            // viewport={{ once: false, amount: 0.3 }}
-            className={styles.imgContainer}
-          >
+          <div className={styles.imgContainer}>
             <Image
               src={Img1}
               alt='Direct Booking Website'
@@ -74,7 +52,7 @@ const Hero = () => {
             />
           </div>
         </div>
-      </section>
+      </motion.section>
     </LayoutWrapper>
   );
 };

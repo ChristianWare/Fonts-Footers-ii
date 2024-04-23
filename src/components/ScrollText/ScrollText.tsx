@@ -43,7 +43,7 @@ const ScrollText = () => {
   }, [lettersRef]);
 
   return (
-    <div className={styles.bgColor}>
+    <section className={styles.bgColor}>
       <LayoutWrapper color='green3'>
         <div className={styles.content}>
           <div className={styles.reveal}>
@@ -78,7 +78,7 @@ const ScrollText = () => {
           </div>
         </div>
       </LayoutWrapper>
-    </div>
+    </section>
   );
 };
 export default ScrollText;

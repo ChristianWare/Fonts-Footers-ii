@@ -48,38 +48,22 @@ const PageIntro = ({
         </>
       )}
       <LayoutWrapper>
-        <div className={`${styles.content} ${styles[orientation]}`}>
-          <motion.div
-            variants={fadeIn("down", 0.2)}
-            initial='hidden'
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.2 }}
-            className={styles.arrowContainer}
-          >
+        <motion.div
+          initial={{ y: -100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          className={`${styles.content} ${styles[orientation]}`}
+        >
+          <div className={styles.arrowContainer}>
             <ArrowCluster />
-          </motion.div>
-          <motion.h1
-            variants={fadeIn("down", 0.3)}
-            initial='hidden'
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
-            className={`${styles.heading} ${styles[h1Color]}`}
-          >
+          </div>
+          <h1 className={`${styles.heading} ${styles[h1Color]}`}>
             {text}
             <span className={`${styles.span} ${styles[h1OutlineColor]}`}>
               {" "}
               <br /> {span}
             </span>
-          </motion.h1>
-          <motion.p
-            variants={fadeIn("down", 0.6)}
-            initial='hidden'
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.6 }}
-            className={`${styles.copy} ${styles[copyColor]}`}
-          >
-            {copy}
-          </motion.p>
+          </h1>
+          <p className={`${styles.copy} ${styles[copyColor]}`}>{copy}</p>
           {notFound && (
             <div className={styles.btnContainer}>
               <Button text='Home' href='/' btnType='secondary' arrow />
@@ -91,7 +75,7 @@ const PageIntro = ({
               />
             </div>
           )}
-        </div>
+        </motion.div>
       </LayoutWrapper>
     </section>
   );
