@@ -7,7 +7,6 @@
 }
 
 .text {
-  line-height: 80%;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: -2px;
@@ -15,14 +14,15 @@
   font-size: 5rem;
   margin-left: auto;
   margin-right: auto;
+  color: var(--green3);
 }
 
-.revealText {
+/* .revealText {
   color: transparent;
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: var(--tan);
   filter: drop-shadow(0 0 0.06rem rgb(41, 95, 78));
-}
+} */
 
 .span {
   color: var(--green3);
@@ -53,7 +53,6 @@
   font-size: 2rem;
   font-weight: 700;
 }
-
 
 @media screen and (max-width: 968px) {
   .text {
