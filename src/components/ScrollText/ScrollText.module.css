@@ -12,21 +12,13 @@
   padding-top: 10rem;
 }
 
-.text,
-.text2 {
-  line-height: 90%;
+.text {
   text-transform: uppercase;
-  letter-spacing: -2px;
   width: 75%;
   font-size: 5rem;
-}
-
-.text2 {
-  display: none;
-  color: var(--green3);
-  width: 100%;
-  letter-spacing: normal;
-  hyphens: auto;
+  color: var(--green4);
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: var(--tan);
 }
 
 .revealText {
@@ -86,14 +78,6 @@
 }
 
 @media screen and (max-width: 568px) {
-  .text {
-    display: none;
-  }
-
-  .text2 {
-    display: block;
-  }
-
   .copy {
     width: 100%;
   }

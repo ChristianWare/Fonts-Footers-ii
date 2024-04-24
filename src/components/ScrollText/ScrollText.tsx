@@ -48,7 +48,7 @@ const ScrollText = () => {
         <div className={styles.content}>
           <div className={styles.reveal}>
             <div ref={triggerRef}>
-              <h2 className={styles.text}>
+              {/* <h2 className={styles.text}>
                 {text.split("").map((letter, index) => (
                   <span
                     key={index}
@@ -58,8 +58,8 @@ const ScrollText = () => {
                     {letter}
                   </span>
                 ))}
-              </h2>
-              <h2 className={styles.text2}>
+              </h2> */}
+              <h2 className={styles.text}>
                 While online travel authorities can boost your property&apos;s
                 exposure, you should also consider developing your own direct
                 booking website. This can help you build a personalized online
