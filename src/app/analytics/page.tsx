@@ -75,7 +75,6 @@ const AnalyticsPage = async () => {
       />
       <LayoutWrapper>
         <section className={styles.container}>
-          <h2>Data:</h2>
           <AnalyticsDashboard
             avgVisitorsPerDay={avgVisitorsPerDay}
             amtVisitorsToday={amtVisitorsToday}
@@ -84,7 +83,7 @@ const AnalyticsPage = async () => {
           />
         </section>
       </LayoutWrapper>
-    </> 
+    </>
   );
 };
 export default AnalyticsPage;
