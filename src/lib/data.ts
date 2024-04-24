@@ -270,7 +270,7 @@ export const projects = [
       "Elite Retreat Rentals is a Phonenix, AZ based company that provides lodging services to travelers at an affordable price.",
     moreDetails:
       "Elite Retreat Rentals is a Phoenix, AZ based company that provides lodging services to travelers at an affordable price. They currently provide lodging for multiple properties in the stat of Arizona. They allow clients to booking directly on their website, instead of relying on platform such as Air bnb and VRBO. The Admin is able to see all the bookings, users, properties, and review on the Admin dashboard.",
-    href: "https://case-study-one.vercel.app/",
+    href: "https://www.eliteretreatrentals.com/",
   },
 ] as const;
 
