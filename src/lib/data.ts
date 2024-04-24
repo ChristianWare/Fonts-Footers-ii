@@ -269,7 +269,7 @@ export const projects = [
     description:
       "Elite Retreat Rentals is a Phonenix, AZ based company that provides lodging services to travelers at an affordable price.",
     moreDetails:
-      "Elite Retreat Rentals is a Phonenix, AZ based company that provides lodging services to travelers at an affordable price. Elite Retreat Rentals is a Phonenix, AZ based company that provides lodging services to travelers at an affordable price. Elite Retreat Rentals is a Phonenix, AZ based company that provides lodging services to travelers at an affordable price. Elite Retreat Rentals is a Phonenix, AZ based company that provides lodging services to travelers at an affordable price.",
+      "Elite Retreat Rentals is a Phoenix, AZ based company that provides lodging services to travelers at an affordable price. They currently provide lodging for multiple properties in the stat of Arizona. They allow clients to booking directly on their website, instead of relying on platform such as Air bnb and VRBO. The Admin is able to see all the bookings, users, properties, and review on the Admin dashboard.",
     href: "https://case-study-one.vercel.app/",
   },
 ] as const;
@@ -291,7 +291,7 @@ export const faqs = [
   },
   {
     id: 36.2,
-    question: "What customizbile features do you offer?",
+    question: "What customizable features do you offer?",
     answer:
       "You can customize the website design, branding elements, property details, pricing, and policies. We offer flexibility to tailor the platform to your unique needs.",
   },
