@@ -5,11 +5,17 @@ import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Hero.module.css";
 import Img1 from "../../../public/images/house8.png";
 import Button from "../Button/Button";
+import { motion } from "framer-motion";
+
 
 const Hero = () => {
   return (
     <LayoutWrapper>
-      <section className={styles.container}>
+      <motion.section
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        className={styles.container}
+      >
         <div className={styles.left}>
           <h1 className={styles.heading}>
             Empower your property with a{" "}
@@ -49,7 +55,7 @@ const Hero = () => {
             />
           </div>
         </div>
-      </section>
+      </motion.section>
     </LayoutWrapper>
   );
 };

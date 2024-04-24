@@ -9,8 +9,8 @@ import Ok from "../../../public/icons/ok.svg";
 import Scale from "../../../public/icons/scale.svg";
 import Img1 from "../../../public/images/house17.png";
 import Img2 from "../../../public/images/aboutHouse.png";
-import { motion } from "framer-motion";
-import { fadeIn } from "../../../animation/variants";
+// import { motion } from "framer-motion";
+// import { fadeIn } from "../../../animation/variants";
 import FalseButton from "../FalseButton/FalseButton";
 
 const Values = () => {
@@ -64,11 +64,11 @@ const Values = () => {
         <div className={styles.bottom}>
           {data.map((x, index) => (
             <div key={index} className={styles.box}>
-              <motion.div
-                variants={fadeIn(index % 2 === 0 ? "up" : "left", 0.3)}
-                initial='hidden'
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0.3 }}
+              <div
+                // variants={fadeIn(index % 2 === 0 ? "up" : "left", 0.3)}
+                // initial='hidden'
+                // whileInView={"show"}
+                // viewport={{ once: false, amount: 0.3 }}
                 className={styles.left}
               >
                 <h3>{x.title}</h3>
@@ -79,7 +79,7 @@ const Values = () => {
                     <p className={styles.detail}>{y.detail}</p>
                   </div>
                 ))}
-              </motion.div>
+              </div>
               <div className={styles.right}>
                 <div className={styles.imgContainer}>
                   <Image src={x.src} alt='image' fill className={styles.img} />

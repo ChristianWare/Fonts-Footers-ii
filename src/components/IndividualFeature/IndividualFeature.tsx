@@ -9,6 +9,7 @@ import Map from "../../../public/icons/map.svg";
 import User from "../../../public/icons/dashboard.svg";
 import Cog from "../../../public/icons/cog.svg";
 import Multiple from "../../../public/icons/multiple.svg";
+import Analytics from "../../../public/icons/analytics.svg";
 
 const IndividualFeature = () => {
   const individulaFeatures = [
@@ -205,6 +206,34 @@ const IndividualFeature = () => {
           title: "Simplified Management",
           modal:
             "Managing one website for multiple properties simplifies administrative tasks such as content updates, booking management, and customer support. It reduces the time and effort required to maintain and monitor multiple websites separately.",
+        },
+      ],
+    },
+    {
+      icon: <Analytics width={150} height={150} className={styles.icon} />,
+      title: "Custom Analytics Dashboard",
+      description:
+        "Utilizing a custom-built analytics dashboard provides insights into visitor traffic, user engagement, geographic distribution, and browsing behavior on your direct booking website. It empowers data-driven decisions, enhances marketing strategies, improves website performance, and optimizes guest experience.",
+      whyImportant: [
+        {
+          title: "Data-Driven Decisions",
+          modal:
+            "Accessing detailed analytics allows you to make informed decisions based on visitor behavior, trends, and preferences, optimizing your website and marketing strategies for better performance.",
+        },
+        {
+          title: "Enhanced Marketing Strategies",
+          modal:
+            "Insights from the analytics dashboard enable targeted marketing campaigns, personalized content, and strategic promotions that resonate with your audience, driving traffic and conversions.",
+        },
+        {
+          title: "Improved Website Performance",
+          modal:
+            "Analyzing user interactions and site performance metrics helps identify areas for improvement, such as page load times, navigation flow, and content engagement, resulting in a more user-friendly and efficient website.",
+        },
+        {
+          title: "Optimized Guest Experience",
+          modal:
+            "Understanding visitor preferences, demographics, and behavior allows you to tailor the guest experience, offering relevant content, personalized recommendations, and seamless booking journeys that increase satisfaction and loyalty.",
         },
       ],
     },

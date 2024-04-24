@@ -6,8 +6,8 @@ import styles from "./Experience.module.css";
 import Image from "next/image";
 import Img from "../../../public/images/house11.png";
 import Arrow2 from "../../../public/icons/arrow2.svg";
-import { motion } from "framer-motion";
-import { fadeIn } from "../../../animation/variants";
+// import { motion } from "framer-motion";
+// import { fadeIn } from "../../../animation/variants";
 import FalseButton from "../FalseButton/FalseButton";
 
 const Experience = () => {
@@ -66,17 +66,17 @@ const Experience = () => {
               onClick={() => toggle(index)}
             >
               <div className={styles.headingArrowContainer}>
-                <motion.div
-                  variants={fadeIn("right", 0.3)}
-                  initial='hidden'
-                  whileInView={"show"}
-                  viewport={{ once: false, amount: 0.3 }}
+                <div
+                  // variants={fadeIn("right", 0.3)}
+                  // initial='hidden'
+                  // whileInView={"show"}
+                  // viewport={{ once: false, amount: 0.3 }}
                   className={styles.h3Container}
                 >
                   <h3 className={styles.question} lang='en'>
                     {x.question}
                   </h3>
-                </motion.div>
+                </div>
                 {selected === index ? (
                   <div className={styles.iconBox}>
                     <Arrow2
@@ -105,17 +105,17 @@ const Experience = () => {
             </div>
           ))}
         </div>
-        <motion.div
-          variants={fadeIn("left", 0.3)}
-          initial='hidden'
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.3 }}
+        <div
+          // variants={fadeIn("left", 0.3)}
+          // initial='hidden'
+          // whileInView={"show"}
+          // viewport={{ once: false, amount: 0.3 }}
           className={styles.right}
         >
           <div className={styles.imgContainer}>
             <Image src={Img} alt='image' fill className={styles.img} />
           </div>
-        </motion.div>
+        </div>
       </div>
     </LayoutWrapper>
   );

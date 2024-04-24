@@ -8,8 +8,8 @@ import Node from "../../../public/icons/node.svg";
 import Stripe from "../../../public/icons/stripe.svg";
 import Vercel from "../../../public/icons/vercel.svg";
 import GoogleAnalytics from "../../../public/icons/googleAnalytics.svg";
-import { motion } from "framer-motion";
-import { fadeIn } from "../../../animation/variants";
+// import { motion } from "framer-motion";
+// import { fadeIn } from "../../../animation/variants";
 import FalseButton from "../FalseButton/FalseButton";
 
 const TechStack = () => {
@@ -72,18 +72,18 @@ const TechStack = () => {
         </div>
         <div className={styles.bottom}>
           {data.map((x, index) => (
-            <motion.div
-              variants={fadeIn(index % 2 === 0 ? "up" : "left", 0.3)}
-              initial='hidden'
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.3 }}
+            <div
+              // variants={fadeIn(index % 2 === 0 ? "up" : "left", 0.3)}
+              // initial='hidden'
+              // whileInView={"show"}
+              // viewport={{ once: false, amount: 0.3 }}
               key={index}
               className={styles.box}
             >
               {x.icon}
               <h3>{x.name}</h3>
               <p className={styles.desc}>{x.description}</p>
-            </motion.div>
+            </div>
           ))}
         </div>
       </LayoutWrapper>

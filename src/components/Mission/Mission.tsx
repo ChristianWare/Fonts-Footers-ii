@@ -6,8 +6,8 @@ import Trust from "../../../public/icons/trust.svg";
 import User from "../../../public/icons/user.svg";
 import Grow from "../../../public/icons/grow.svg";
 import Unique from "../../../public/icons/unique.svg";
-import { motion } from "framer-motion";
-import { fadeIn } from "../../../animation/variants";
+// import { motion } from "framer-motion";
+// import { fadeIn } from "../../../animation/variants";
 import FalseButton from "../FalseButton/FalseButton";
 
 const Mission = () => {
@@ -61,18 +61,18 @@ const Mission = () => {
           </div>
           <div className={styles.right}>
             {data.map((x, index) => (
-              <motion.div
-                variants={fadeIn(index % 2 === 0 ? "up" : "left", 0.3)}
-                initial='hidden'
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0.3 }}
+              <div
+                // variants={fadeIn(index % 2 === 0 ? "up" : "left", 0.3)}
+                // initial='hidden'
+                // whileInView={"show"}
+                // viewport={{ once: false, amount: 0.3 }}
                 key={index}
                 className={styles.card}
               >
                 {x.icon}
                 <h4 className={styles.title}>{x.title}</h4>
                 <p className={styles.description}>{x.description}</p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
