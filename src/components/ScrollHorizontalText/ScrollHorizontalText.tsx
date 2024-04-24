@@ -1,5 +1,3 @@
-"use client";
-
 import styles from "./ScrollHorizontalText.module.css";
 import Arrow from "../../../public/icons/arrow.svg";
 
