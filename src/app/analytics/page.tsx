@@ -84,7 +84,7 @@ const AnalyticsPage = async () => {
           />
         </section>
       </LayoutWrapper>
-    </>
+    </> 
   );
 };
 export default AnalyticsPage;
