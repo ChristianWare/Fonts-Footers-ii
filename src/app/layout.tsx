@@ -50,8 +50,8 @@ export default function RootLayout({
       <head>
         <PlausibleProvider
           domain='fontsandfooters.com'
-          trackLocalhost={true}
-          enabled={true}
+          // trackLocalhost={true}
+          // enabled={true}
         />
       </head>
       <body
