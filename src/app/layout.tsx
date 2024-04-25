@@ -7,6 +7,7 @@ import Nav from "@/components/Nav/Nav";
 import FinalCta from "@/components/FinalCTA/FinalCTA";
 import CallToAction from "@/components/CallToAction/CallToAction";
 import { Toaster } from "react-hot-toast";
+import PlausibleProvider from "next-plausible";
 
 const oswald = Oswald({
   subsets: ["latin"],
@@ -46,7 +47,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      
+      <head>
+        <PlausibleProvider
+          domain='fontsandfooters.com'
+          trackLocalhost={true}
+          enabled={true}
+        />
+      </head>
       <body
         className={`${oswald.variable} ${raleway.variable} ${adedisplay.variable}`}
       >
