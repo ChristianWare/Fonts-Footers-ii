@@ -53,13 +53,22 @@
   hyphens: auto;
   font-size: 1.6rem;
   line-height: 150%;
-  margin-left: 3rem;
+  margin-left: 2rem;
   margin-bottom: 1rem;
 }
 
 .left blockquote {
-  padding-left: 1rem;
-  border-left: 2px solid var(--green);
+  padding: 3rem;
+  border: 1px solid var(--green2);
+  border-left: 5px solid var(--green2);
+  border-radius: 20px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background-color: var(--white);
+  line-height: 160%;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--green);
 }
 
 .imgContainer {
