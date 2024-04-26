@@ -1,5 +1,5 @@
 import { fullBlog, simpleBlogCard } from "@/lib/interface";
-import { client } from "@/lib/sanity";
+import { client, urlFor } from "@/lib/sanity";
 import BlogContent from "@/components/BlogContent/BlogContent";
 import { Metadata } from "next";
 
@@ -50,13 +50,15 @@ export async function generateMetadata({
   params: { slug: string };
 }): Promise<Metadata> {
   const data: fullBlog = await getData(params.slug);
+  const imageUrl = urlFor(data.titleImage).url();
+
   return {
     title: data.title,
     description: data.smallDescription,
     openGraph: {
       images: [
         {
-          url: data.titleImage,
+          url: imageUrl,
         },
       ],
     },
