@@ -15,7 +15,7 @@ const SocialsContainer = () => {
         <LinkedIn className={styles.icon} width={12} height={12} />
       </Link>
       <Link
-        href='https://www.facebook.com/'
+        href='https://www.facebook.com/fontsandfooters'
         target='_blank'
         className={styles.detail}
       >

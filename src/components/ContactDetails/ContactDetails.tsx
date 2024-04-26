@@ -45,6 +45,16 @@ const ContactDetails = () => {
                   https://calendly.com/fontsandfooters
                 </Link>
               </div>
+              <div className={styles.box}>
+                <h2 className={styles.title}>Facebook</h2>
+                <Link
+                  href='https://www.facebook.com/fontsandfooters'
+                  target='_blank'
+                  className={styles.detail}
+                >
+                  facebook.com/fontsandfooters
+                </Link>
+              </div>
             </div>
             <div className={styles.bottom}>
               <SocialsContainer />
