@@ -1,4 +1,4 @@
-import Project1 from "../../public/images/img1.jpg";
+import Project1 from "../../public/images/elite.png";
 
 export const benefits = [
   {
