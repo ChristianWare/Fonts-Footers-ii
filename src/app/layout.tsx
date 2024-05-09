@@ -15,6 +15,7 @@ const oswald = Oswald({
   weight: ["400", "500", "600", "700"],
   variable: "--oswald",
 });
+
 const raleway = Raleway({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
