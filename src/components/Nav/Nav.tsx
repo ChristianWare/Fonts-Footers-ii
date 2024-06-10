@@ -8,6 +8,37 @@ import TopNav from "../TopNav/TopNav";
 import { usePathname } from "next/navigation";
 import Arrow from "../../../public/icons/arrow.svg";
 
+const navItems = [
+  {
+    text: "Benefits",
+    href: "/benefits",
+  },
+  {
+    text: "About US",
+    href: "/about",
+  },
+  {
+    text: "Pricing",
+    href: "/pricing",
+  },
+  {
+    text: "FAQS",
+    href: "/faqs",
+  },
+  {
+    text: "Blog",
+    href: "/blog",
+  },
+  {
+    text: "Glossary",
+    href: "/glossary",
+  },
+  {
+    text: "Contact",
+    href: "/contact",
+  },
+];
+
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   const [isOverlayVisible, setIsOverlayVisible] = useState(false);
@@ -40,36 +71,7 @@ function Nav() {
     };
   }, [isOpen]);
 
-  const navItems = [
-    {
-      text: "Benefits",
-      href: "/benefits",
-    },
-    {
-      text: "About US",
-      href: "/about",
-    },
-    {
-      text: "Pricing",
-      href: "/pricing",
-    },
-    {
-      text: "FAQS",
-      href: "/faqs",
-    },
-    {
-      text: "Blog",
-      href: "/blog",
-    },
-    {
-      text: "Glossary",
-      href: "/glossary",
-    },
-    {
-      text: "Contact",
-      href: "/contact",
-    },
-  ];
+  
 
   const pathname = usePathname();
 
