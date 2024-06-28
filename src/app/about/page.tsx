@@ -48,9 +48,9 @@ export default async function AboutPage() {
       <AboutScrollText />
       <Experience />
       <Mission />
-      <Values />
-      <TechStack />
-      <Faqs />
+      {/* <Values /> */}
+      {/* <TechStack /> */}
+      {/* <Faqs /> */}
       <BlogSection data={data} />
     </>
   );

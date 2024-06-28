@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 7rem;
+  background-color: var(--newTan);
 }
 
 .left {
@@ -12,14 +13,14 @@
 }
 
 .copy {
-  font-weight: 600;
+  /* font-weight: 600; */
   color: var(--green);
   width: 90%;
 }
 
 .heading {
   color: var(--green);
-  line-height: 110%;
+  line-height: 100%;
 }
 
 .span {

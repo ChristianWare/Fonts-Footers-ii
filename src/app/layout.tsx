@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Oswald, Raleway } from "next/font/google";
+import { Oswald, Raleway, Space_Mono } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import NoiseBg from "@/components/NoiseBg/NoiseBg";
@@ -23,9 +23,9 @@ const raleway = Raleway({
   variable: "--raleway",
 });
 
-const adedisplay = localFont({
-  src: "../../public/fonts/adedisplay.otf",
-  variable: "--adedisplay",
+const thunder = localFont({
+  src: "../../public/fonts/Thunder-SemiBoldLC.ttf",
+  variable: "--thunder",
   display: "swap",
 });
 
@@ -56,7 +56,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${oswald.variable} ${raleway.variable} ${adedisplay.variable}`}
+        className={`${oswald.variable} ${raleway.variable} ${thunder.variable}`}
       >
         <Toaster
           position='top-center'

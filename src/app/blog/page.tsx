@@ -34,7 +34,7 @@ export default async function BlogPage() {
     <>
       <PageIntro text='Insights from' src={Img} copy='' span='our blog' />
       <BlogSection data={data} />
-      <Faqs />
+      {/* <Faqs /> */}
     </>
   );
 }

@@ -6,85 +6,85 @@ const ScrollHorizontalText = () => {
     <section className={styles.sliderContainer}>
       <div className={styles.slider}>
         <h2>
-          Fonts & Footers{" "}
+          our clients{" "}
           <span>
             <Arrow className={styles.icon2} />
           </span>{" "}
-          Fonts & Footers{" "}
+          our clients{" "}
           <span>
             <Arrow className={styles.icon2} />
           </span>{" "}
-          Fonts & Footers{" "}
+          our clients{" "}
           <span>
             <Arrow className={styles.icon2} />
           </span>{" "}
-          Fonts & Footers{" "}
+          our clients{" "}
           <span>
             <Arrow className={styles.icon2} />
           </span>{" "}
-          Fonts & Footers{" "}
+          our clients{" "}
           <span>
             <Arrow className={styles.icon2} />
           </span>{" "}
-          Fonts & Footers{" "}
+          our clients{" "}
           <span>
             <Arrow className={styles.icon2} />
           </span>{" "}
-          Fonts & Footers{" "}
+          our clients{" "}
           <span>
             <Arrow className={styles.icon2} />
           </span>{" "}
-          Fonts & Footers{" "}
+          our clients{" "}
           <span>
             <Arrow className={styles.icon2} />
           </span>{" "}
-          Fonts & Footers{" "}
+          our clients{" "}
           <span>
             <Arrow className={styles.icon2} />
           </span>{" "}
-          Fonts & Footers{" "}
+          our clients{" "}
           <span>
             <Arrow className={styles.icon2} />
           </span>{" "}
         </h2>
         <h2>
-          Fonts & Footers{" "}
+          our clients{" "}
           <span>
             <Arrow className={styles.icon2} />
           </span>{" "}
-          Fonts & Footers{" "}
+          our clients{" "}
           <span>
             <Arrow className={styles.icon2} />
           </span>{" "}
-          Fonts & Footers{" "}
+          our clients{" "}
           <span>
             <Arrow className={styles.icon2} />
           </span>{" "}
-          Fonts & Footers{" "}
+          our clients{" "}
           <span>
             <Arrow className={styles.icon2} />
           </span>{" "}
-          Fonts & Footers{" "}
+          our clients{" "}
           <span>
             <Arrow className={styles.icon2} />
           </span>{" "}
-          Fonts & Footers{" "}
+          our clients{" "}
           <span>
             <Arrow className={styles.icon2} />
           </span>{" "}
-          Fonts & Footers{" "}
+          our clients{" "}
           <span>
             <Arrow className={styles.icon2} />
           </span>{" "}
-          Fonts & Footers{" "}
+          our clients{" "}
           <span>
             <Arrow className={styles.icon2} />
           </span>{" "}
-          Fonts & Footers{" "}
+          our clients{" "}
           <span>
             <Arrow className={styles.icon2} />
           </span>{" "}
-          Fonts & Footers{" "}
+          our clients{" "}
           <span>
             <Arrow className={styles.icon2} />
           </span>{" "}

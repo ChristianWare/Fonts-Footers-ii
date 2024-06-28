@@ -14,6 +14,7 @@ import { simpleBlogCard } from "@/lib/interface";
 import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
 import Challenges from "@/components/Challenges/Challenges";
 import Carouselii from "@/components/Carouselii/Carouselii";
+import Slider from "@/components/Slider/Slider";
 
 async function getData() {
   const query = `
@@ -39,16 +40,18 @@ export default async function Home() {
     <main>
       <Hero />
       <ScrollHorizontalText />
-      <ScrollText />
-      <Challenges />
+      <Slider />
+      <ScrollHorizontalText />
+      {/* <Challenges /> */}
       <AboutUs />
+      <ScrollText />
       <Features />
       <Benefits />
       <Process />
       <Pricing />
       <Projects />
-      <Testimonials />
-      <Faqs />
+      {/* <Testimonials /> */}
+      {/* <Faqs /> */}
       <BlogSection data={data} />
     </main>
   );

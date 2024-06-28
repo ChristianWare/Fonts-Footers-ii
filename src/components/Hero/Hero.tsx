@@ -6,7 +6,7 @@ import styles from "./Hero.module.css";
 import Img1 from "../../../public/images/house8.png";
 import Button from "../Button/Button";
 import { motion } from "framer-motion";
-
+import ShuffleHero from "../ShuffleHero/ShuffleHero";
 
 const Hero = () => {
   return (
@@ -18,8 +18,7 @@ const Hero = () => {
       >
         <div className={styles.left}>
           <h1 className={styles.heading}>
-            Empower your property with a{" "}
-            <span className={styles.span}>Direct Booking</span> Website
+            We build interactive and immersive websites.
           </h1>
 
           <p className={styles.copy}>
@@ -35,16 +34,16 @@ const Hero = () => {
               btnType='primaryii'
               arrow
             />
-            <Button
+            {/* <Button
               text='Direct Booking Benefits'
               href='/benefits'
               btnType='secondary'
               arrow
-            />
+            /> */}
           </div>
         </div>
         <div className={styles.right}>
-          <div className={styles.imgContainer}>
+          {/* <div className={styles.imgContainer}>
             <Image
               src={Img1}
               alt='Direct Booking Website'
@@ -53,7 +52,8 @@ const Hero = () => {
               sizes='(max-width: 768px) 50vw, (max-width: 1200px) 100vw'
               className={styles.img}
             />
-          </div>
+          </div> */}
+          <ShuffleHero />
         </div>
       </motion.section>
     </LayoutWrapper>

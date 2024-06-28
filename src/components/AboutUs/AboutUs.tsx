@@ -23,8 +23,7 @@ const AboutUs = () => {
           <div className={styles.right}>
             <div className={styles.headingContainer}>
               <h2 className={styles.heading}>
-                Solution: Invest in a{" "}
-                <span className={styles.span}>Direct Booking</span> Website
+                Solution: <br /> Invest in a Direct Booking Website
               </h2>
             </div>
             <p className={styles.copy}>

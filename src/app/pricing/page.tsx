@@ -47,7 +47,7 @@ export default async function PricingPage() {
       <Pricing />
       <EveryPlan />
       <IndividualFeature />
-      <Faqs />
+      {/* <Faqs /> */}
       <BlogSection data={data} />
     </>
   );
