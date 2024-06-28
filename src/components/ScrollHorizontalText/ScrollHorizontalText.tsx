@@ -1,96 +1,37 @@
 import styles from "./ScrollHorizontalText.module.css";
 import Arrow from "../../../public/icons/arrow.svg";
 
-const ScrollHorizontalText = () => {
+interface Props {
+  text: string;
+  bottomBorder?: boolean;
+}
+
+const ScrollHorizontalText = ({ text, bottomBorder = false }: Props) => {
+  const textWithArrows = (
+    <>
+      {text}{" "}
+      <span>
+        <Arrow className={styles.icon2} />
+      </span>
+    </>
+  );
+
   return (
-    <section className={styles.sliderContainer}>
-      <div className={styles.slider}>
-        <h2>
-          our clients{" "}
-          <span>
-            <Arrow className={styles.icon2} />
-          </span>{" "}
-          our clients{" "}
-          <span>
-            <Arrow className={styles.icon2} />
-          </span>{" "}
-          our clients{" "}
-          <span>
-            <Arrow className={styles.icon2} />
-          </span>{" "}
-          our clients{" "}
-          <span>
-            <Arrow className={styles.icon2} />
-          </span>{" "}
-          our clients{" "}
-          <span>
-            <Arrow className={styles.icon2} />
-          </span>{" "}
-          our clients{" "}
-          <span>
-            <Arrow className={styles.icon2} />
-          </span>{" "}
-          our clients{" "}
-          <span>
-            <Arrow className={styles.icon2} />
-          </span>{" "}
-          our clients{" "}
-          <span>
-            <Arrow className={styles.icon2} />
-          </span>{" "}
-          our clients{" "}
-          <span>
-            <Arrow className={styles.icon2} />
-          </span>{" "}
-          our clients{" "}
-          <span>
-            <Arrow className={styles.icon2} />
-          </span>{" "}
-        </h2>
-        <h2>
-          our clients{" "}
-          <span>
-            <Arrow className={styles.icon2} />
-          </span>{" "}
-          our clients{" "}
-          <span>
-            <Arrow className={styles.icon2} />
-          </span>{" "}
-          our clients{" "}
-          <span>
-            <Arrow className={styles.icon2} />
-          </span>{" "}
-          our clients{" "}
-          <span>
-            <Arrow className={styles.icon2} />
-          </span>{" "}
-          our clients{" "}
-          <span>
-            <Arrow className={styles.icon2} />
-          </span>{" "}
-          our clients{" "}
-          <span>
-            <Arrow className={styles.icon2} />
-          </span>{" "}
-          our clients{" "}
-          <span>
-            <Arrow className={styles.icon2} />
-          </span>{" "}
-          our clients{" "}
-          <span>
-            <Arrow className={styles.icon2} />
-          </span>{" "}
-          our clients{" "}
-          <span>
-            <Arrow className={styles.icon2} />
-          </span>{" "}
-          our clients{" "}
-          <span>
-            <Arrow className={styles.icon2} />
-          </span>{" "}
-        </h2>
+    <div
+      className={`${styles.slider} ${bottomBorder ? styles.bottomBorder : ""}`}
+    >
+      <div className={styles.track}>
+        {[...Array(20)].map((_, index) => (
+          <h2 key={index} className={styles.text}>
+            {textWithArrows}
+            {textWithArrows}
+            {textWithArrows}
+            {textWithArrows}
+          </h2>
+        ))}
       </div>
-    </section>
+    </div>
   );
 };
+
 export default ScrollHorizontalText;

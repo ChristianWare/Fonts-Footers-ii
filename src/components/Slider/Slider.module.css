@@ -3,7 +3,7 @@
   height: 50px;
   overflow: hidden;
   position: relative;
-  border-top: 1px solid var(--green);
+  /* border-top: 1px solid var(--green); */
   /* border-bottom: 1px solid var(--green); */
   padding-top: 3rem;
   padding-bottom: 10rem;
