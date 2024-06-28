@@ -21,8 +21,13 @@ const Projects = () => {
             <h2 className={styles.heading}>Recent Projects</h2>
             <ArrowCluster />
           </div>
-          {projects.map((x) => (
-            <div key={x.title} className={styles.content}>
+          {projects.map((x, index) => (
+            <div
+              key={x.title}
+              className={`${styles.content} ${
+                index % 2 !== 0 ? styles.flipped : ""
+              }`}
+            >
               <div className={styles.left}>
                 <div className={styles.imgContainer}>
                   <Image
@@ -78,4 +83,5 @@ const Projects = () => {
     </section>
   );
 };
+
 export default Projects;

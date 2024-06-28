@@ -17,6 +17,15 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.content.flipped .left {
+  order: 2;
+}
+
+.content.flipped .right {
+  order: 1;
 }
 
 .imgContainer {
