@@ -128,7 +128,7 @@
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease,
       backdrop-filter 0.3s ease;
-    backdrop-filter: blur(5px); /* Add this line */
+    backdrop-filter: blur(5px);
   }
 
   .overlay.visible {

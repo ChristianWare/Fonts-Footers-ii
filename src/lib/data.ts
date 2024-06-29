@@ -1166,13 +1166,13 @@ export const services = [
   },
   {
     id: 86,
-    processName: "Business Website",
+    processName: "Business Websites",
     processDescription:
       "Present your business’s products and services to visitors in a way that acquires new customers, clients, and/or partners.",
   },
   {
     id: 87,
-    processName: "Blog",
+    processName: "Blogs",
     processDescription:
       "Unlock your voice and reach with our bespoke blog sites, tailored for captivating content delivery and audience connection.",
   },

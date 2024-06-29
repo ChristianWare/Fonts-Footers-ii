@@ -45,12 +45,12 @@ export default async function Home() {
       <ScrollHorizontalText text='Our Clients' bottomBorder={false} />
       {/* <Process /> */}
       <ServicesSection />
+      <Projects />
+      <Features />
       <AboutUs />
       <ScrollText />
-      <Features />
       <Benefits />
       <Pricing />
-      <Projects />
       {/* <Testimonials /> */}
       {/* <Faqs /> */}
       <BlogSection data={data} />
