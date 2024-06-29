@@ -30,7 +30,7 @@
 }
 
 .processContainer:nth-child(1) {
-  cursor:default
+  cursor: default;
 }
 
 .processContainer:nth-child(1):hover {
@@ -115,7 +115,6 @@
 .processDescription {
   color: var(--tan);
   font-weight: 500;
-  /* opacity: 0.8; */
   transition: all 0.2s ease-in;
 }
 
@@ -126,10 +125,16 @@
   line-height: 120%;
 }
 
-.processContainer:hover .processName,
 .processContainer:hover .processDescription {
   color: var(--green);
   opacity: 1;
+}
+
+.processContainer:hover .processName {
+  color: var(--green3);
+  line-height: 100%;
+  -webkit-text-stroke-width: 1.3px;
+  -webkit-text-stroke-color: var(--green);
 }
 
 .copy {
@@ -144,10 +149,6 @@
   align-items: flex-end;
   justify-content: flex-end;
   margin-top: 5rem;
-}
-
-.cta {
-  color: var(--tan);
 }
 
 .btnContainer {
@@ -221,11 +222,6 @@
   .processContainer:nth-child(5) {
     left: 0px !important;
     bottom: 1px;
-  }
-
-  .cta {
-    text-align: center;
-    width: 100%;
   }
 
   .btnContainer {
