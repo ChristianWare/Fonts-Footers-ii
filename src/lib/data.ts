@@ -1145,3 +1145,35 @@ export const glossaryMenu = [
   //   ],
   // },
 ] as const;
+
+export const services = [
+  {
+    id: 82,
+    processName: "",
+    processDescription: "",
+  },
+  {
+    id: 83,
+    processName: "Landing Pages",
+    processDescription:
+      "We build you dynamic and engaging marketing websites that not only showcase your brand but also drive results.",
+  },
+  {
+    id: 85,
+    processName: "E-Commerce",
+    processDescription:
+      "Empower your online business with our expertly crafted E-Commerce websites designed for seamless shopping experiences and maximum conversion.",
+  },
+  {
+    id: 86,
+    processName: "Business Website",
+    processDescription:
+      "Present your business’s products and services to visitors in a way that acquires new customers, clients, and/or partners.",
+  },
+  {
+    id: 87,
+    processName: "Blog",
+    processDescription:
+      "Unlock your voice and reach with our bespoke blog sites, tailored for captivating content delivery and audience connection.",
+  },
+] as const;

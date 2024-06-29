@@ -45,12 +45,12 @@
 }
 
 .heading {
-  font-size: 7rem;
+  font-size: 9rem;
   line-height: 110%;
   text-transform: uppercase;
   color: var(--tan);
   margin-bottom: 3rem;
-  font-family: var(--oswald);
+  /* font-family: var(--oswald); */
 }
 
 .topText {

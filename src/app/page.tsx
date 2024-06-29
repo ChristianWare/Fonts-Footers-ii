@@ -15,6 +15,7 @@ import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizo
 import Challenges from "@/components/Challenges/Challenges";
 import Carouselii from "@/components/Carouselii/Carouselii";
 import Slider from "@/components/Slider/Slider";
+import ServicesSection from "@/components/ServicesSection/ServicesSection";
 
 async function getData() {
   const query = `
@@ -42,12 +43,12 @@ export default async function Home() {
       <ScrollHorizontalText text='Our Clients' bottomBorder={true} />
       <Slider />
       <ScrollHorizontalText text='Our Clients' bottomBorder={false} />
-      {/* <Challenges /> */}
+      {/* <Process /> */}
+      <ServicesSection />
       <AboutUs />
       <ScrollText />
       <Features />
       <Benefits />
-      <Process />
       <Pricing />
       <Projects />
       {/* <Testimonials /> */}
