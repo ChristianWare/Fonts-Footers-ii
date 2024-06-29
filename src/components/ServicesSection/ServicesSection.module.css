@@ -39,7 +39,7 @@
 }
 
 .processContainer:hover {
-  background-color: var(--tanGlass);
+  background-color: var(--green3);
   border: 1px solid var(--tanGlass);
 }
 
@@ -107,7 +107,7 @@
 }
 
 .processName {
-  color: var(--green3);
+  color: var(--tan);
   font-size: 5rem;
   transition: all 0.2s ease-in;
 }
@@ -125,16 +125,10 @@
   line-height: 120%;
 }
 
+.processContainer:hover .processName,
 .processContainer:hover .processDescription {
   color: var(--green);
   opacity: 1;
-}
-
-.processContainer:hover .processName {
-  color: var(--green3);
-  line-height: 100%;
-  -webkit-text-stroke-width: 1.3px;
-  -webkit-text-stroke-color: var(--green);
 }
 
 .copy {

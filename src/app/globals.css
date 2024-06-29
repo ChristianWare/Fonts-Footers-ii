@@ -65,28 +65,28 @@ h1 {
 }
 
 h2 {
-  font-size: 6rem;
+  font-size: 7rem;
   line-height: 120%;
   /* letter-spacing: -1px; */
 }
 
 h3 {
-  font-size: 2.5rem;
+  font-size: 5rem;
   line-height: 130%;
   font-weight: 600;
-  /* letter-spacing: -0.5px; */
+  letter-spacing: 1px;
 }
 
 h4 {
-  font-size: 1.8rem;
+  font-size: 3rem;
 }
 
 h5 {
-  font-size: 1.8rem;
+  font-size: 2.5rem;
 }
 
 h6 {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
 }
 
 button {
