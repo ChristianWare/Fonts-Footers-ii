@@ -16,7 +16,6 @@ import Challenges from "@/components/Challenges/Challenges";
 import Carouselii from "@/components/Carouselii/Carouselii";
 import Slider from "@/components/Slider/Slider";
 import ServicesSection from "@/components/ServicesSection/ServicesSection";
-import ProjectFramer from "@/components/ProjectFramer/ProjectFramer";
 
 async function getData() {
   const query = `
@@ -47,7 +46,6 @@ export default async function Home() {
       {/* <Process /> */}
       <ServicesSection />
       <Projects />
-      <ProjectFramer />
       <Features />
       <AboutUs />
       <ScrollText />
