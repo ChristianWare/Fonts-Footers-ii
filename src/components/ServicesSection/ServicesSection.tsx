@@ -32,6 +32,14 @@ const ServicesSection = () => {
                 </div>
               </div>
             ))}
+            <div className={styles.btnContainer}>
+              <Button
+                text='See All Services'
+                href='/contact/#schedule'
+                btnType='primary'
+                arrow
+              />
+            </div>
           </div>
           <div className={styles.right}>
             <h2 className={styles.heading}>Services We Offer</h2>
@@ -43,14 +51,14 @@ const ServicesSection = () => {
         </div>
         <div className={styles.ctaContainer}>
           {/* <h4 className={styles.cta}>ready to get started?</h4> */}
-          <div className={styles.btnContainer}>
+          {/* <div className={styles.btnContainer}>
             <Button
               text='See All Services'
               href='/contact/#schedule'
               btnType='primary'
               arrow
             />
-          </div>
+          </div> */}
         </div>
       </LayoutWrapper>
     </section>

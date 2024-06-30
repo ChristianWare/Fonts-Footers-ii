@@ -72,7 +72,7 @@ const ContentItem = ({
     offset: ["start end", "start start"],
   });
 
-  const scale = useTransform(itemScrollYProgress, [0, 1], [0.85, 1]);
+  const scale = useTransform(itemScrollYProgress, [0, 1], [0.55, 1]);
 
   return (
     <motion.div ref={ref} style={{ scale }} className={styles.content}>
