@@ -25,6 +25,7 @@
   z-index: 1;
   width: 100%;
   line-height: 107%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   transition: background-color 0.1s ease-in, color 0.1s ease-in;
 }
 
@@ -95,7 +96,8 @@
 }
 
 .secondary:hover,
-.secondaryNav:hover, .secondaryii:hover {
+.secondaryNav:hover,
+.secondaryii:hover {
   background-color: var(--green3);
   color: var(--green);
 }

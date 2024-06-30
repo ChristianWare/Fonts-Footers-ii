@@ -24,9 +24,7 @@ const Projects = () => {
           {projects.map((x, index) => (
             <div
               key={x.title}
-              className={`${styles.content} ${
-                index % 2 !== 0 ? styles.flipped : ""
-              }`}
+              className={styles.content}
             >
               <div className={styles.left}>
                 <div className={styles.imgContainer}>
