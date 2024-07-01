@@ -88,6 +88,15 @@ const ContentItem = ({
       </div>
       <div className={styles.right}>
         <div className={styles.rightTop}>
+          <div className={styles.falseBtnContainer}>
+            <FalseButton
+              text='Landing Page'
+              btnType='primary'
+              onClose={() => {
+                setIsModalOpen(false);
+              }}
+            />
+          </div>
           <h3 className={styles.title}>{project.title}</h3>
           <p className={styles.desc}>{project.description}</p>
         </div>

@@ -13,9 +13,10 @@
 }
 
 .copy {
-  /* font-weight: 600; */
   color: var(--green);
   width: 90%;
+  font-size: 1.8rem;
+  opacity: 0.8;
 }
 
 .heading {

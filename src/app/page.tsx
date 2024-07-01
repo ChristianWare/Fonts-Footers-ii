@@ -3,7 +3,6 @@ import ScrollText from "@/components/ScrollText/ScrollText";
 import Benefits from "@/components/Benefits/Benefits";
 import AboutUs from "@/components/AboutUs/AboutUs";
 import Features from "@/components/Features/Features";
-import Process from "@/components/Process/Process";
 import Pricing from "@/components/Pricing/Pricing";
 import Projects from "@/components/Projects/Projects";
 import Faqs from "@/components/Faqs/Faqs";
@@ -43,17 +42,16 @@ export default async function Home() {
       <ScrollHorizontalText text='Our Clients' bottomBorder={true} />
       <Slider />
       <ScrollHorizontalText text='Our Clients' bottomBorder={false} />
-      {/* <Process /> */}
+      <AboutUs />
       <ServicesSection />
       <Projects />
       <Features />
-      <AboutUs />
       <ScrollText />
       <Benefits />
       <Pricing />
       {/* <Testimonials /> */}
       {/* <Faqs /> */}
-      {/* <BlogSection data={data} /> */}
+      <BlogSection data={data} />
     </main>
   );
 }

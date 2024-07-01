@@ -10,8 +10,11 @@ const ServicesSection = () => {
     <section className={styles.container}>
       <LayoutWrapper>
         <div className={styles.content}>
+          <div className={styles.right}>
+            <h2 className={styles.heading}>What we Build</h2>
+          </div>
           <div className={styles.left}>
-            {services.map((x, index) => (
+            {services.map((x) => (
               <div key={x.id} className={styles.processContainer}>
                 <div className={styles.processTop}>
                   {x.processName.length >= 1 && (
@@ -40,24 +43,6 @@ const ServicesSection = () => {
               />
             </div>
           </div>
-          <div className={styles.right}>
-            <h2 className={styles.heading}>Services We Offer</h2>
-            {/* <p className={styles.copy}>
-              These are the steps we take to build your site. We keep you in the
-              loop 100% of the way.
-            </p> */}
-          </div>
-        </div>
-        <div className={styles.ctaContainer}>
-          {/* <h4 className={styles.cta}>ready to get started?</h4> */}
-          {/* <div className={styles.btnContainer}>
-            <Button
-              text='See All Services'
-              href='/contact/#schedule'
-              btnType='primary'
-              arrow
-            />
-          </div> */}
         </div>
       </LayoutWrapper>
     </section>

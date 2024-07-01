@@ -4,8 +4,7 @@
 
 .content {
   display: flex;
-  flex-direction: column-reverse;
-  gap: 5rem;
+  flex-direction: column;
   padding-top: 10rem;
 }
 
@@ -53,15 +52,10 @@
 .icon2 {
   width: 40px;
   height: 40px;
-  /* background-color: var(--green3);
-  border-radius: 50%;
-  border: 1px solid var(--green);
-  padding: 0.8rem; */
   color: var(--green3);
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   transform: rotate(-45deg);
-  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); */
 }
 
 .processContainer:hover .icon2 {
@@ -134,12 +128,6 @@
 .processContainer:hover .processDescription {
   color: var(--green);
   opacity: 1;
-}
-
-.copy {
-  width: 50%;
-  color: var(--tan);
-  font-size: 1.8rem;
 }
 
 .ctaContainer {

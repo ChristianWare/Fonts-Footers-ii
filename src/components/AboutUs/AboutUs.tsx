@@ -11,10 +11,7 @@ const AboutUs = () => {
         <div className={styles.bottom}>
           <div className={styles.left}>
             <div className={styles.headingContainerii}>
-              <h2 className={styles.heading}>
-                Solution: Invest in a{" "}
-                <span className={styles.span}>Direct Booking</span> Website
-              </h2>
+              <h2 className={styles.heading}>Who are we?</h2>
             </div>
             <div className={styles.imgContainer}>
               <Image src={House2} alt='image' fill className={styles.img} />
@@ -22,21 +19,17 @@ const AboutUs = () => {
           </div>
           <div className={styles.right}>
             <div className={styles.headingContainer}>
-              <h2 className={styles.heading}>
-                Solution: <br /> Invest in a Direct Booking Website
-              </h2>
+              <h2 className={styles.heading}>Who are we?</h2>
             </div>
             <p className={styles.copy}>
-              Here at Fonts & Footers, we build personalized direct booking
-              sites designed to enhance your guests online booking experience.
-              As experts, we ensure tailored solutions to maximize your
-              property&apos;s potential. By choosing us, you gain a direct
-              connection with guests, fostering trust and boosting bookings,
-              unlocking the full potential of your vacation/STR business.
+              We are Fonts and Footers™, an award-winning digital design agency focusing
+              on branding, web design, and Product designing in the heart of
+              Phoenix, AZ. We design creative brands, websites, and product that
+              deliver results.
             </p>
             <div className={styles.btnContainer}>
               <Button
-                text='More About us'
+                text='Jump Into Our World'
                 href='/about'
                 btnType='primaryii'
                 arrow

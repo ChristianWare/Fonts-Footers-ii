@@ -26,9 +26,10 @@
   position: -webkit-sticky;
   position: sticky;
   top: 90px;
-  background-color: var(--white);
+  background-color: transparent;
   padding: 3rem;
   border-radius: 25px;
+  border: 1px solid var(--gray);
 }
 
 .content.flipped .left {
@@ -54,13 +55,18 @@
 .rightTop,
 .rbLeft,
 .rbRight {
-  background-color: var(--white);
-  border: 1px solid var(--green2);
+  background-color: var(--green3);
+  border-bottom: 1px solid var(--green);
   border-radius: 20px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   padding: 8rem;
   background-size: 10px 10px;
+  border: 1px solid var(--green);
+}
+
+.rbLeft,
+.rbRight {
 }
 
 .title {
@@ -102,8 +108,8 @@
 
 .rbLeft:hover,
 .rbRight:hover {
-  background-color: var(--green3);
-  color: var(--green);
+  background-color: var(--green);
+  color: var(--green3);
 }
 
 .rbRight {
@@ -138,7 +144,7 @@
 }
 
 .falseBtnContainer {
-  margin-top: 3rem;
+  margin-bottom: 3rem;
   cursor: pointer;
 }
 
