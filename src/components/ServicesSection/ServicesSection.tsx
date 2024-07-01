@@ -1,5 +1,4 @@
 import Button from "../Button/Button";
-import FalseButton from "../FalseButton/FalseButton";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./ServicesSection.module.css";
 import { services } from "@/lib/data";
@@ -43,10 +42,10 @@ const ServicesSection = () => {
           </div>
           <div className={styles.right}>
             <h2 className={styles.heading}>Services We Offer</h2>
-            <p className={styles.copy}>
+            {/* <p className={styles.copy}>
               These are the steps we take to build your site. We keep you in the
               loop 100% of the way.
-            </p>
+            </p> */}
           </div>
         </div>
         <div className={styles.ctaContainer}>
