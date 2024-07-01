@@ -21,7 +21,7 @@ export default function GlossaryPage() {
         text='Direct Booking'
         span='Glossary'
       />
-      <ScrollHorizontalText />
+      {/* <ScrollHorizontalText /> */}
 
       <LayoutWrapper>
         <div className={styles.topContainer}></div>

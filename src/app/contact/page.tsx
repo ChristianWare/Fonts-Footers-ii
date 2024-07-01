@@ -18,7 +18,7 @@ export default function FAQPage() {
         copy="Whether you're a prospective client or have questions about our services, reaching out is simple and quick. We're ready to assist you to ensuring a seamless and personalized experience as you take the next step in transforming your vacation rental business."
         copyColor='green'
       />
-      <ScrollHorizontalText />
+      {/* <ScrollHorizontalText /> */}
       <ContactDetails />
     </>
   );

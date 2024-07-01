@@ -48,7 +48,7 @@ export default async function BenefitsPage() {
         copyColor='green'
         orientation='center'
       />
-      <ScrollHorizontalText />
+      {/* <ScrollHorizontalText /> */}
       <BenefitsIntro />
       {/* <HigherMargins /> */}
       <BrandPresence />

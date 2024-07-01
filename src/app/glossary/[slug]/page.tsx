@@ -90,7 +90,7 @@ export default function Page({ params }: any) {
         date={props.frontMatter.date}
         category={props.frontMatter.category}
       />
-      <ScrollHorizontalText />
+      {/* <ScrollHorizontalText /> */}
       <LayoutWrapper>
         <br />
         <br />

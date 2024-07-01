@@ -43,7 +43,7 @@ export default async function PricingPage() {
         copyColor='green'
         orientation='center'
       />
-      <ScrollHorizontalText />
+      {/* <ScrollHorizontalText /> */}
       <Pricing />
       <EveryPlan />
       <IndividualFeature />
