@@ -29,15 +29,6 @@
   background-color: var(--white);
   padding: 3rem;
   border-radius: 25px;
-  border: 1px solid var(--green2);
-}
-
-.content:nth-child(even) {
-  background-color: var(--tanGlass);
-}
-
-.content:nth-child(odd) {
-  background-color: var(--tanGlass);
 }
 
 .content.flipped .left {
@@ -57,15 +48,14 @@
 .img {
   object-fit: cover;
   border-radius: 20px;
-  border: 1px solid var(--green2);
   border-radius: 20px;
 }
 
 .rightTop,
 .rbLeft,
 .rbRight {
-  background-color: var(--green);
-  border: 1px solid var(--tanGlass);
+  background-color: var(--white);
+  border: 1px solid var(--green2);
   border-radius: 20px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -76,11 +66,11 @@
 .title {
   margin-bottom: 3rem;
   font-size: 3rem;
-  color: var(--tan);
+  color: var(--green);
 }
 
 .desc {
-  color: var(--tan);
+  color: var(--green);
 }
 
 .rightBottom {
@@ -100,7 +90,7 @@
   padding: 5rem;
   transition: all 0.2s ease-in;
   text-align: center;
-  color: var(--green3);
+  color: var(--green);
   font-family: var(--oswald);
   text-transform: uppercase;
   font-size: 2rem;
@@ -130,7 +120,7 @@
   padding: 5rem;
   transition: all 0.2s ease-in;
   text-align: center;
-  color: var(--green3);
+  color: var(--green);
   font-family: var(--oswald);
   text-transform: uppercase;
   font-size: 2rem;
