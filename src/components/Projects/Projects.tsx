@@ -43,16 +43,18 @@ const Projects = () => {
             <h2 className={styles.heading}>Recent Projects</h2>
             <ArrowCluster />
           </div>
-          {projects.map((project: any, index: number) => (
-            <ContentItem
-              key={project.title}
-              project={project}
-              index={index}
-              scrollYProgress={scrollYProgress}
-              isModalOpen={isModalOpen}
-              setIsModalOpen={setIsModalOpen}
-            />
-          ))}
+          <div className={styles.mapContainer}>
+            {projects.map((project: any, index: number) => (
+              <ContentItem
+                key={project.title}
+                project={project}
+                index={index}
+                scrollYProgress={scrollYProgress}
+                isModalOpen={isModalOpen}
+                setIsModalOpen={setIsModalOpen}
+              />
+            ))}
+          </div>
         </div>
       </LayoutWrapper>
     </section>
@@ -75,7 +77,7 @@ const ContentItem = ({
   const scale = useTransform(itemScrollYProgress, [0, 1], [0.55, 1]);
 
   return (
-    <motion.div ref={ref} style={{ scale }} className={styles.content}>
+    <div className={styles.content}>
       <div className={styles.left}>
         <div className={styles.imgContainer}>
           <Image
@@ -88,7 +90,7 @@ const ContentItem = ({
       </div>
       <div className={styles.right}>
         <div className={styles.rightTop}>
-          <div className={styles.falseBtnContainer}>
+          <div className={styles.falseBtnContainer1}>
             <FalseButton
               text='Landing Page'
               btnType='primary'
@@ -115,18 +117,20 @@ const ContentItem = ({
           setIsModalOpen(false);
         }}
       >
-        <p>{project.moreDetails}</p>
-        <div className={styles.falseBtnContainer}>
-          <FalseButton
-            text='Close'
-            btnType='primary'
-            onClose={() => {
-              setIsModalOpen(false);
-            }}
-          />
+        <div className={styles.modalDetails}>
+          <p>{project.moreDetails}</p>
+          <div className={styles.falseBtnContainer}>
+            <FalseButton
+              text='Close'
+              btnType='primary'
+              onClose={() => {
+                setIsModalOpen(false);
+              }}
+            />
+          </div>
         </div>
       </Modal>
-    </motion.div>
+    </div>
   );
 };
 

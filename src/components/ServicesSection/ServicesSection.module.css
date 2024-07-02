@@ -137,6 +137,10 @@
   color: var(--green3);
 }
 
+.processContainer:nth-child(3):hover .icon2 {
+  color: var(--green3);
+}
+
 .ctaContainer {
   display: flex;
   flex-direction: column;
