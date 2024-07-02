@@ -2,12 +2,13 @@ import styles from "./Testimonials.module.css";
 import LayoutWrapper from "../LayoutWrapper";
 import { reviews } from "@/lib/data";
 import StarCluster from "../StarCluster/StarCluster";
-import Person from '../../../public/icons/person.svg'
+import Person from "../../../public/icons/person.svg";
+import { Reviewsii } from "../Reviewsii/Reviewsii";
 
 const Testimonials = () => {
   return (
     <section className={styles.container}>
-      <LayoutWrapper color='tan'>
+      {/* <LayoutWrapper color='tan'>
         <div className={styles.content}>
           <div className={styles.bottom}>
             <div className={styles.top}>
@@ -41,7 +42,8 @@ const Testimonials = () => {
             </div>
           </div>
         </div>
-      </LayoutWrapper>
+      </LayoutWrapper> */}
+      <Reviewsii />
     </section>
   );
 };
