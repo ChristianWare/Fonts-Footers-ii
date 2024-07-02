@@ -4,34 +4,24 @@ import Project3 from "../../public/images/taco.jpg";
 
 export const benefits = [
   {
-    heading: "Lower Fees",
+    heading: "RESPONSIVE",
     description:
-      "OTA's charge hosts various fees, including service fees, host fees, and payment processing fees. These can significantly eat into your profits. With your own website, you can avoid or minimize these fees.",
+      "We build responsive websites that display on all of your devices and screen sizes by automatically adapting to the screen, whether it is a desktop, laptop, tablet, smartphone, or even a smart TV. With our responsive web design approach, all of the elements on your page are scaled appropriately, taking advantage of whatever screen size the user has. This means that your website will look good on any device.",
   },
   {
-    heading: "Greater Control",
+    heading: "ACCESSIBLE",
     description:
-      "When you have your own website, you have full control over your property listings, pricing, and booking policies. You can set your own rules and policies without being subject to the platforms' terms and conditions.",
+      "Our websites are accessible, meaning that they are designed and developed so that people with disabilities can use them as well. We build them in a way that allows people with disabilities to perceive, understand, navigate, and interact with your website, especially if they use screen readers. It is essential that the Web be accessible in order to provide equal access and equal opportunity to people with diverse abilities.",
   },
   {
-    heading: "No Competing Listings",
+    heading: "SEARCH ENGINE OPTIMIZED",
     description:
-      "On third-party platforms, your property is often listed alongside numerous competing properties, making it harder to stand out. On your website, you can focus solely on your property, giving it the undivided attention it deserves.",
+      "SEO means Search Engine Optimization and is the process used to optimize a website's technical configuration so its pages can become easily findable, boosting your credibility, earning you more traffic, and improving your online visibility.",
   },
   {
     heading: "Diversification",
     description:
       "Relying solely on Airbnb and VRBO can be risky, as their policies and algorithms can change at any time. Having your own website provides a level of diversification and independence.",
-  },
-  {
-    heading: "Long-Term Cost Savings",
-    description:
-      "While building and maintaining a website may involve an initial investment, it can save you money in the long run compared to paying ongoing fees to third-party platforms.",
-  },
-  {
-    heading: "Data Ownership",
-    description:
-      "When you use Airbnb and VRBO, they own and control the guest data. With your own website, you own and control this valuable information, allowing you to build a list of past guests for marketing purposes.",
   },
 ] as const;
 
@@ -1156,24 +1146,24 @@ export const services = [
     id: 83,
     processName: "Landing Pages",
     processDescription:
-      "We build you dynamic and engaging marketing websites that not only showcase your brand but also drive results.",
+      "Tailored websites that reflect your unique brand identity.",
   },
   {
     id: 85,
     processName: "E-Commerce Stores",
     processDescription:
-      "Empower your online business with our expertly crafted E-Commerce websites designed for seamless shopping experiences and maximum conversion.",
+      "Comprehensive e-commerce platforms designed to drive sales.",
   },
   {
     id: 86,
     processName: "Business Websites",
     processDescription:
-      "Present your business’s products and services to visitors in a way that acquires new customers, clients, and/or partners.",
+      "Optimize your online presence and attract more visitors.",
   },
   {
     id: 87,
     processName: "Booking Platforms",
     processDescription:
-      "Unlock your voice and reach with our bespoke blog sites, tailored for captivating content delivery and audience connection.",
+      "Innovative web applications to streamline your business operations.",
   },
 ] as const;

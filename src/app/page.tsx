@@ -47,6 +47,7 @@ export default async function Home() {
       <AboutScrollText />
       {/* <AboutUs /> */}
       <ServicesSection />
+      {/* <Benefits /> */}
       <Projects />
       <ScrollHorizontalText text='Reviews' bottomBorder={false} />
       <Testimonials />
@@ -54,7 +55,6 @@ export default async function Home() {
       <ScrollHorizontalText text='Reviews' bottomBorder={true} />
       <Pricing />
       {/* <Features /> */}
-      {/* <Benefits /> */}
       {/* <Faqs /> */}
       <BlogSection data={data} />
       <ScrollText />

@@ -48,11 +48,10 @@
 
 .heading {
   color: var(--green);
-  line-height: 80%;
-  text-transform: capitalize;
-  font-family: var(--raleway);
+  text-align: center;
+  text-transform: uppercase;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .description {
