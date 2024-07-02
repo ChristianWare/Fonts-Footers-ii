@@ -6,6 +6,7 @@ import styles from "./Pricing.module.css";
 import Button from "../Button/Button";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
+import FalseButton from "../FalseButton/FalseButton";
 
 const Pricing = () => {
   const [isMonthly, setIsMonthly] = useState(false);
@@ -17,9 +18,11 @@ const Pricing = () => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.top}>
-            <h2 className={styles.heading}>
+            {/* <h2 className={styles.heading}>
               Pricing
-            </h2>
+            </h2> */}
+            <FalseButton btnType='primary' text='Pricing' />
+
             <p className={styles.copy}>
               Subscription based pricing. No contracts. Pause or cancel whenever
               you&rsquo;d like.

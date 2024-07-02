@@ -40,8 +40,8 @@ const Projects = () => {
       <LayoutWrapper>
         <div className={styles.contentParent} ref={container}>
           <div className={styles.top}>
-            <h2 className={styles.heading}>Recent Projects</h2>
-            <ArrowCluster />
+            <FalseButton btnType='primary' text='Recent projects' />
+            {/* <ArrowCluster /> */}
           </div>
           <div className={styles.mapContainer}>
             {projects.map((project: any, index: number) => (

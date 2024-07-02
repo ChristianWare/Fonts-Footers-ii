@@ -4,6 +4,7 @@ import styles from "./ServicesSection.module.css";
 import { services } from "@/lib/data";
 import Arrow2 from "../../../public/icons/arrow2.svg";
 import Link from "next/link";
+import FalseButton from "../FalseButton/FalseButton";
 
 const ServicesSection = () => {
   return (
@@ -11,7 +12,8 @@ const ServicesSection = () => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.right}>
-            <h2 className={styles.heading}>What we Build</h2>
+            {/* <h2 className={styles.heading}>What we Build</h2> */}
+            <FalseButton btnType='primary' text='What we build' />
           </div>
           <div className={styles.left}>
             {services.map((x, index) => (
@@ -38,7 +40,7 @@ const ServicesSection = () => {
               <Button
                 text='See All Services'
                 href='/contact/#schedule'
-                btnType='primary'
+                btnType='primaryii'
                 arrow
               />
             </div>
