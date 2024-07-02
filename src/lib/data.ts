@@ -1172,7 +1172,7 @@ export const services = [
   },
   {
     id: 87,
-    processName: "Blogs",
+    processName: "Booking Platforms",
     processDescription:
       "Unlock your voice and reach with our bespoke blog sites, tailored for captivating content delivery and audience connection.",
   },

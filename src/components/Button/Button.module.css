@@ -25,7 +25,6 @@
   z-index: 1;
   width: 100%;
   line-height: 107%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   transition: background-color 0.1s ease-in, color 0.1s ease-in;
 }
 
@@ -38,7 +37,7 @@
   padding: 5px;
   color: var(--green);
   position: absolute;
-  top:6px;
+  top: 5px;
   right: 6px;
   transition: all 0.1s ease-in-out;
 }

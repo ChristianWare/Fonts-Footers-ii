@@ -10,10 +10,10 @@ const AboutScrollText = () => {
         <div className={styles.content}>
           <div className={styles.reveal}>
             <h2 className={styles.text}>
-              &ldquo;Our vision is for Homeowners to connect directly with
-              travelers, without relying on platforms like Airbnb. We help you
-              maximizing revenue, build guest relationships, and thrive in the
-              home rental industry.&rdquo;
+              We are Fonts and Footers™, an award-winning digital design agency
+              focusing on branding, web design, and Product designing in the
+              heart of Phoenix, AZ. We design creative brands, websites, and
+              product that deliver results.
             </h2>
           </div>
           <div className={styles.bottom}>

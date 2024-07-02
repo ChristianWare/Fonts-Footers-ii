@@ -71,8 +71,6 @@ function Nav() {
     };
   }, [isOpen]);
 
-  
-
   const pathname = usePathname();
 
   return (
@@ -145,11 +143,6 @@ function Nav() {
             ></div>
           )}
           <div className={styles.btnContainer}>
-            <Button
-              href='mailto:fontsandfooters@gmail.com'
-              text='email us'
-              btnType='secondaryNav'
-            />
             <Button
               href='/contact/#schedule'
               text='Schedule a call'

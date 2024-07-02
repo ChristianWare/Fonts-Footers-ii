@@ -34,12 +34,12 @@ const Hero = () => {
               btnType='primaryii'
               arrow
             />
-            {/* <Button
+            <Button
               text='Direct Booking Benefits'
               href='/benefits'
               btnType='secondary'
               arrow
-            /> */}
+            />
           </div>
         </div>
         <div className={styles.right}>
