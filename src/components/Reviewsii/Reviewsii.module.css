@@ -38,12 +38,21 @@
   left: 50%;
   top: 50%;
   cursor: pointer;
-  padding: 2rem;
+  padding-top: 0rem;
   border-radius: 10px;
   transition: all 0.1s, color 0.5s;
   z-index: 0;
   background-color: var(--tan);
   border: 1px solid var(--black);
+}
+
+.stuff {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 3rem;
+  height: 100%;
 }
 
 .testimonialCardActive {
@@ -70,8 +79,10 @@
   font-size: 0.875rem;
 }
 
-.textWhite {
-  color: white;
+.textNormal {
+  font-size: 1.6rem;
+  font-family: var(--raleway);
+  text-transform: none;
 }
 
 .textBlack {

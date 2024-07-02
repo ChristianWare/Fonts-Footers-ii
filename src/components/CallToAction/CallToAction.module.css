@@ -20,14 +20,6 @@
   text-align: center;
 }
 
-.span {
-  color: var(--green3);
-  line-height: 100%;
-  -webkit-text-stroke-width: 1.5px;
-  -webkit-text-stroke-color: var(--green);
-  font-size: 6rem;
-}
-
 .btnContainer {
   display: flex;
   gap: 3rem;

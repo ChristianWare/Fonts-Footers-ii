@@ -147,17 +147,18 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
         damping: 50,
       }}
     >
-      <span className={styles.cornerClip} />
-      <h4 className={isActive ? styles.textBlack : styles.textBlack}>
-        {testimonial.review}
-      </h4>
-      <p
-        className={`absolute bottom-8 left-8 right-8 mt-2 text-sm italic ${
-          isActive ? styles.textNeutral700 : styles.textNeutral700
-        }`}
-      >
-        - {testimonial.reviewer}, {testimonial.company}
-      </p>
+      <div className={styles.stuff}>
+        <h4 className={isActive ? styles.textBlack : styles.textNormal}>
+          {testimonial.review}
+        </h4>
+        <p
+          className={`absolute bottom-8 left-8 right-8 mt-2 text-sm italic ${
+            isActive ? styles.textNeutral700 : styles.textNeutral700
+          }`}
+        >
+          - {testimonial.reviewer}, {testimonial.company}
+        </p>
+      </div>
     </motion.div>
   );
 };

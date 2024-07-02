@@ -15,10 +15,6 @@ const CallToAction = () => {
           </div>
           <h2 className={styles.heading}>
             Fonts & Footers <br />
-            <span className={styles.span}>
-              Direct Booking Specialists
-              <br />
-            </span>
           </h2>
           <p className={styles.copy}>
             Having your own direct booking website empowers you to establish a
