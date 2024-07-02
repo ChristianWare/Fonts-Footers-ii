@@ -121,9 +121,7 @@
 
 .heading {
   color: var(--black);
-  margin-bottom: 3rem;
-  width: 50%;
-  line-height: 120%;
+  line-height: 100%;
 }
 
 .processContainer:hover .processName,

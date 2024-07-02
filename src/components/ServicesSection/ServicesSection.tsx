@@ -14,7 +14,7 @@ const ServicesSection = () => {
             <h2 className={styles.heading}>What we Build</h2>
           </div>
           <div className={styles.left}>
-            {services.map((x) => (
+            {services.map((x, index) => (
               <div key={x.id} className={styles.processContainer}>
                 <div className={styles.processTop}>
                   {x.processName.length >= 1 && (
