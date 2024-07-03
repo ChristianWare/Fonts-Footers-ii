@@ -8,13 +8,13 @@ const ScrollText = () => {
       <LayoutWrapper color='green3'>
         <div className={styles.content}>
           <div className={styles.reveal}>
-              <h2 className={styles.text}>
-                While online travel authorities can boost your property&apos;s
-                exposure, you should also consider developing your own direct
-                booking website. This can help you build a personalized online
-                presence, and enhance the reservation process for your guests,
-                making it easier for them to book their stay directly with you.
-              </h2>
+            <h2 className={styles.text}>
+              While online travel authorities can boost your property&apos;s
+              exposure, you should also consider developing your own direct
+              booking website. This can help you build a personalized online
+              presence, and enhance the reservation process for your guests,
+              making it easier for them to book their stay directly with you.
+            </h2>
           </div>
           <div className={styles.bottom}>
             <div className={styles.houseContainer}>

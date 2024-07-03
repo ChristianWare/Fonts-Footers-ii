@@ -2,11 +2,11 @@
   width: 100%;
   overflow: hidden;
   position: relative;
-  border-top: 1px solid var(--green2);
+  border-top: 1px solid var(--gray2);
 }
 
 .bottomBorder {
-  border-bottom: 1px solid var(--green2);
+  border-bottom: 1px solid var(--gray2);
 }
 
 .track {

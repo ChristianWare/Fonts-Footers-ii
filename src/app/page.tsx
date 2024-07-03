@@ -42,7 +42,7 @@ export default async function Home() {
 
   return (
     <main>
-      <Hero />
+      {/* <Hero />
       <ScrollHorizontalText text='Our Clients' bottomBorder={true} />
       <Slider />
       <ScrollHorizontalText text='Our Clients' bottomBorder={false} />
@@ -58,7 +58,7 @@ export default async function Home() {
       <BlogSection data={data} />
       <ScrollHorizontalText text='Why Choose Us?' bottomBorder={false} />
       <ScrollText />
-      <ScrollHorizontalText text='Why Choose Us?' bottomBorder={false} />
+      <ScrollHorizontalText text='Why Choose Us?' bottomBorder={false} /> */}
     </main>
   );
 }

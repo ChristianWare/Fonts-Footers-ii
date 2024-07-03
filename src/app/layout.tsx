@@ -13,6 +13,7 @@ import FinalCta from "@/components/FinalCTA/FinalCTA";
 import CallToAction from "@/components/CallToAction/CallToAction";
 import { Toaster } from "react-hot-toast";
 import PlausibleProvider from "next-plausible";
+import Footerii from "@/components/Footerii/Footerii";
 
 // const oswald = Oswald({
 //   subsets: ["latin"],
@@ -95,6 +96,7 @@ export default function RootLayout({
           {children}
           <CallToAction />
           {/* <FinalCta /> */}
+          <Footerii />
         </NoiseBg>
       </body>
     </html>
