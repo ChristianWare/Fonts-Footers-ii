@@ -10,7 +10,7 @@
   font-weight: 500;
   line-height: 150%;
   white-space: nowrap;
-  /* text-transform: uppercase; */
+  text-transform: capitalize;
   user-select: none;
   gap: 2rem;
   border-radius: 50px;
@@ -22,13 +22,13 @@
 .primary {
   color: var(--green);
   background-color: var(--green3);
-  border: 1px solid var(--green2);
+  border: 1px solid var(--gray2);
 }
 
 .secondary {
   color: var(--green);
   background-color: var(--white);
-  border: 1px solid var(--green2);
+  border: 1px solid var(--gray2);
   padding: 5px 30px;
 }
 

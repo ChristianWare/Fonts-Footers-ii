@@ -1,5 +1,5 @@
 .container {
-  background-color: var(--white);
+  background-color: var(--tan);
 }
 
 .contentParent {
@@ -9,9 +9,15 @@
 
 .top {
   margin-bottom: 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.heading {
+  width: 50%;
+  text-align: right;
+  margin-left: auto;
 }
 
 .mapContainer {
@@ -44,13 +50,13 @@
 .rbLeft,
 .rbRight {
   background-color: var(--tan);
-  border-bottom: 1px solid var(--green2);
+  /* border-bottom: 1px solid var(--green2); */
   border-radius: 20px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   padding: 3rem;
   background-size: 10px 10px;
-  border: 1px solid gray;
+  border: 1px solid var(--gray2);
 }
 
 .title {
@@ -61,6 +67,7 @@
 
 .desc {
   color: var(--green);
+  opacity: 0.8;
 }
 
 .rightBottom {
@@ -81,8 +88,7 @@
   transition: all 0.2s ease-in;
   text-align: center;
   color: var(--green);
-  font-family: var(--oswald);
-  text-transform: uppercase;
+  font-family: var(--switzer);
   font-size: 2rem;
   line-height: 130%;
   font-weight: 600;
@@ -111,8 +117,7 @@
   transition: all 0.2s ease-in;
   text-align: center;
   color: var(--green);
-  font-family: var(--oswald);
-  text-transform: uppercase;
+  font-family: var(--switzer);
   font-size: 2rem;
   line-height: 130%;
   font-weight: 600;

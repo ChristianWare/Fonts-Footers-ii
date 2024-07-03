@@ -1,5 +1,5 @@
 .container {
-  background-color: var(--blue);
+  background-color: var(--tan);
 }
 
 .content {
@@ -19,17 +19,13 @@
 }
 
 .heading {
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  color: var(--tan);
+  color: var(--black);
 }
 
 .copy {
-  line-height: 150%;
   font-weight: 700;
-  width: 90%;
-  color: var(--tan);
-  opacity: 0.7;
+  color: var(--black);
+  opacity: 0.8;
 }
 
 .bottom {
@@ -41,13 +37,20 @@
   flex: 1;
 }
 
-.qaContainer {
-  padding: 3rem 0rem;
-  border-bottom: 1px solid gray;
+.qaContainer,
+.active {
+  padding: 3rem;
+  padding-right: 4rem;
+  border-radius: 20px;
+  border: 1px solid var(--gray2);
   width: 100%;
   cursor: pointer;
   user-select: none;
   transition: all 0.2s ease-in;
+}
+
+.active {
+  background-color: var(--white);
 }
 
 .answerContainer {
@@ -66,26 +69,27 @@
   gap: 2rem;
 }
 
-.icon {
-  color: var(--green2);
+.icon,
+.iconFlip {
+  color: var(--black);
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  width: 45px;
+  height: 45px;
+  padding: 1rem;
+  border-radius: 50%;
+  border: 1px solid var(--gray2);
+  background-color: var(--green3);
 }
 
 .iconFlip {
-  color: var(--green2);
   transform: rotate(135deg);
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
 }
 
 .question {
-  font-family: var(--dashingReg);
-  color: var(--tan);
-  letter-spacing: 1px;
-  font-size: 3rem;
-  line-height: 120%;
-  hyphens: auto;
+  color: var(--black);
+  font-size: 2.4rem;
+  letter-spacing: -0.5px;
 }
 
 .answerbox {
@@ -121,17 +125,15 @@
     gap: 3rem;
   }
 
-  .heading {
-    text-align: center;
-  }
-
+  .heading,
   .copy {
+    text-align: center;
     width: 100%;
   }
 }
 
 @media screen and (max-width: 568px) {
-  .container {
+  .content {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }

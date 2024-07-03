@@ -3,10 +3,10 @@
 import styles from "./Faqsiii.module.css";
 import { faqs } from "../../lib/data";
 import { useState } from "react";
-import Plus from "../../public/icons/plus.svg";
+import Plus from "../../../public/icons/plus.svg";
 import LayoutWrapper from "../LayoutWrapper";
 
-const Faqs = () => {
+const Faqsiii = () => {
   const [selected, setSelected] = useState(0);
 
   const toggle = (i: any) => {
@@ -19,18 +19,18 @@ const Faqs = () => {
         <div className={styles.content}>
           <div className={styles.top}>
             <div className={styles.sectionIntroContainer}>
-              {/* <SectionIntro text='Frequently asked questions' /> */}
-              <h2 className={styles.heading}>• Frequently asked questions •</h2>
+              <h2 className={styles.heading}>
+                You <span className='span2'>ask, </span> we{" "}
+                <span className='span1'>answer</span>{" "}
+              </h2>
             </div>
-
-            <h2 className={styles.heading}>• You May Have Wondered •</h2>
             <p className={styles.copy}>
               Here are some common questions asked by potential employers. If
               you do not see your question here feel free to reach out.
             </p>
           </div>
           <div className={styles.bottom}>
-            {faqs.map((x, i) => (
+            {faqs.slice(0, 4).map((x, i) => (
               <div
                 key={x.id}
                 className={`${styles.qaContainer} ${
@@ -71,4 +71,4 @@ const Faqs = () => {
   );
 };
 
-export default Faqs;
+export default Faqsiii;

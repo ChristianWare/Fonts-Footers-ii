@@ -32,14 +32,14 @@
   justify-content: center;
   gap: 2rem;
   padding: 2.5rem;
-  border: 1px solid var(--gray);
+  border: 1px solid var(--gray2);
   border-radius: 20px;
   position: relative;
 }
 
 .featureContainer:nth-child(1),
 .featureContainer:nth-child(4) {
-  border: 1px solid var(--gray);
+  /* border: 1px solid var(--gray); */
   background-color: var(--white);
   position: relative;
 }

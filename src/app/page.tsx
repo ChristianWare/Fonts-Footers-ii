@@ -17,7 +17,8 @@ import Slider from "@/components/Slider/Slider";
 import ServicesSection from "@/components/ServicesSection/ServicesSection";
 import AboutScrollText from "@/components/AboutScrollText/AboutScrollText";
 import { Reviewsii } from "@/components/Reviewsii/Reviewsii";
-import Faqsiii from "@/components/Faqsii/Faqsii";
+import Faqsiii from "@/components/Faqsiii/Faqsiii";
+import EveryPlan from "@/components/EveryPlan/EveryPlan";
 
 async function getData() {
   const query = `
@@ -47,6 +48,7 @@ export default async function Home() {
       <ScrollHorizontalText text='Our Clients' bottomBorder={false} />
       <AboutScrollText />
       <ServicesSection />
+      <EveryPlan />
       <Projects />
       <ScrollHorizontalText text='Reviews' bottomBorder={false} />
       <Testimonials />

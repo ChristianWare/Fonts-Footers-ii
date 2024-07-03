@@ -1,7 +1,6 @@
 import { experince } from "@/lib/data";
 import styles from "./Experienceii.module.css";
 import Button from "../Button/Button";
-import SectionHeading from "../SectionHeading/SectionHeading";
 import FalseButton from "../FalseButton/FalseButton";
 
 const Experienceii = () => {
@@ -10,7 +9,6 @@ const Experienceii = () => {
       <div className={styles.content}>
         <div className={styles.left}>
           <div className={styles.sectionIntroContainer}></div>
-          {/* <h2 className={styles.heading}>• Experience •</h2> */}
           <FalseButton btnType='primary' text='Recent Projects' />
           <p className={styles.copy}>
             As a seasoned web developer, I have experience in creating dynamic

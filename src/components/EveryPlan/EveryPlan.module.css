@@ -8,6 +8,9 @@
 
 .heading {
   color: var(--tan);
+  width: 40%;
+  text-align: right;
+  margin-left: auto;
 }
 
 .bottom {

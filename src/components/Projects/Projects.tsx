@@ -10,6 +10,7 @@ import Modal from "../Modal/Modal";
 import FalseButton from "../FalseButton/FalseButton";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Experienceii from "../Experienceii/Experienceii";
+import Button from "../Button/Button";
 
 interface Project {
   title: string;
@@ -40,8 +41,10 @@ const Projects = () => {
       <LayoutWrapper>
         <div className={styles.contentParent} ref={container}>
           <div className={styles.top}>
-            {/* <FalseButton btnType='primary' text='Recent Projects' /> */}
-            <h2 className={styles.heading}>• Recent Projects •</h2>
+            <h2 className={styles.heading}>
+              <span className='span2'>Projects</span> highligting our{" "}
+              <span className='span1'>talent</span>
+            </h2>
           </div>
           <div className={styles.mapContainer}>
             {projects.map((project: any, index: number) => (
@@ -55,8 +58,15 @@ const Projects = () => {
               />
             ))}
           </div>
+          <div className={styles.btnContainer}>
+            <Button
+              btnType='primary'
+              href='/'
+              text='ready to stars a project?'
+              arrow
+            />
+          </div>
         </div>
-        <Experienceii />
       </LayoutWrapper>
     </section>
   );

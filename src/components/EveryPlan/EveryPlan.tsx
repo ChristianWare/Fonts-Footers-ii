@@ -48,9 +48,9 @@ const EveryPlan = () => {
     },
     {
       icon: <Gaii width={30} height={30} className={styles.icon} />,
-      title: "Google Analytics",
+      title: "Traffic Analytics",
       description:
-        "We will set up your google analytics account so that you dont have to. Focus on your business, and we will take care of the technical stuff.",
+        "We will set up your plausible analytics account so that you dont have to. Focus on your business, and we will take care of the technical stuff.",
     },
   ];
 
@@ -58,14 +58,16 @@ const EveryPlan = () => {
     <section className={styles.container}>
       <LayoutWrapper>
         <div className={styles.top}>
-          <h2 className={styles.heading}>Every Plan comes with...</h2>
+          <h2 className={styles.heading}>
+            What&apos;s <span className='span2'>included</span> in{" "}
+            <span className='span1'>every</span>{" "}
+            <span className='span1'>plan</span>
+            <span className='span2'>...</span>
+          </h2>
         </div>
         <div className={styles.bottom}>
           {data.map((x, index) => (
-            <div
-              className={styles.card}
-              key={index}
-            >
+            <div className={styles.card} key={index}>
               {x.icon && <div className={styles.iconContainer}>{x.icon}</div>}
               <h3 className={styles.title}>{x.title}</h3>
               <p className={styles.desc}>{x.description}</p>
