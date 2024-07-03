@@ -94,7 +94,7 @@ export default function RootLayout({
           <Nav />
           {children}
           <CallToAction />
-          <FinalCta />
+          {/* <FinalCta /> */}
         </NoiseBg>
       </body>
     </html>

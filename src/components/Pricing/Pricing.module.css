@@ -92,7 +92,7 @@
 .priceContainer {
   border-radius: 20px;
   padding: 1rem;
-  border: 1px solid var(--green2);
+  border: 1px solid var(--gray2);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -101,11 +101,11 @@
 .pcTop {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
   gap: 2rem;
   background-color: var(--green3);
-  border: 1px solid var(--green2);
+  border: 1px solid var(--gray2);
   padding: 2rem;
   border-radius: 15px;
 }
