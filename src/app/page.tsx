@@ -59,7 +59,6 @@ export default async function Home() {
       <ScrollHorizontalText text='Why Choose Us?' bottomBorder={false} />
       <ScrollText />
       <ScrollHorizontalText text='Why Choose Us?' bottomBorder={false} />
-      {/* <Features /> */}
     </main>
   );
 }

@@ -13,6 +13,7 @@
 
 .heading {
   text-align: center;
+  width: 60%;
 }
 
 .copy {
@@ -26,6 +27,7 @@
 }
 
 @media screen and (max-width: 968px) {
+  .heading,
   .copy {
     width: 100%;
   }

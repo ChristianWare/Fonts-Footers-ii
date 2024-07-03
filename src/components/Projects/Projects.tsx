@@ -43,7 +43,7 @@ const Projects = () => {
           <div className={styles.top}>
             <h2 className={styles.heading}>
               <span className='span2'>Projects</span> highligting our{" "}
-              <span className='span1'>talent</span>
+              <span className='span1'>expertise</span>
             </h2>
           </div>
           <div className={styles.mapContainer}>

@@ -7,8 +7,6 @@
 }
 
 .text {
-  /* text-transform: uppercase; */
-  /* text-align: center; */
   letter-spacing: -1.5px;
   width: 60%;
   font-size: 4rem;
@@ -44,7 +42,6 @@
   border-radius: 50%;
   border: 2px solid var(--green3);
   padding: 0.5rem;
-
 }
 
 .authorDetails {

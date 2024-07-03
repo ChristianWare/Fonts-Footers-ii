@@ -3,11 +3,12 @@
 }
 
 .content {
-  padding-top: 3rem;
+  padding-top: 5rem;
 }
 
 .header {
   color: var(--green);
+  text-align: right;
 }
 
 .top {

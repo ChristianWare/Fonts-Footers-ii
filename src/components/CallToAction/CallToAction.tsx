@@ -1,6 +1,4 @@
 "use client";
-
-import ArrowCluster from "../ArrowCluster/ArrowCluster";
 import Button from "../Button/Button";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./CallToAction.module.css";
@@ -10,11 +8,10 @@ const CallToAction = () => {
     <section className={styles.parent}>
       <LayoutWrapper>
         <section className={styles.content}>
-          <div className={styles.arrowContainer}>
-            {/* <ArrowCluster /> */}
-          </div>
+          <div className={styles.arrowContainer}>{/* <ArrowCluster /> */}</div>
           <h2 className={styles.heading}>
-            • Let&apos;s Have a conversation •{" "}
+            Ready to start a <span className='span2'>project?</span> Let&apos;s
+            Have a <span className='span1'> conversation</span>
           </h2>
           <p className={styles.copy}>
             Having your own direct booking website empowers you to establish a
@@ -23,7 +20,7 @@ const CallToAction = () => {
             branding.
           </p>
           <div className={styles.btnContainer}>
-            <Button text='Schedule a call' href='/' btnType='primaryii' arrow />
+            <Button text='Schedule a call' href='/' btnType='primary' arrow />
             <Button text='Contact Us' href='/' btnType='secondary' arrow />
           </div>
         </section>
@@ -31,4 +28,5 @@ const CallToAction = () => {
     </section>
   );
 };
+
 export default CallToAction;

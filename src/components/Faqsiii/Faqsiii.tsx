@@ -20,7 +20,7 @@ const Faqsiii = () => {
           <div className={styles.top}>
             <div className={styles.sectionIntroContainer}>
               <h2 className={styles.heading}>
-                You <span className='span2'>ask, </span> we{" "}
+                You <span className='span2'>ask, </span> <br /> we{" "}
                 <span className='span1'>answer</span>{" "}
               </h2>
             </div>

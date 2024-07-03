@@ -13,10 +13,11 @@
 }
 
 .text {
-  text-transform: uppercase;
-  width: 75%;
-  font-size: 5rem;
+  letter-spacing: -1.5px;
+  width: 60%;
+  font-size: 4rem;
   color: var(--green3);
+  line-height: 130%;
 }
 
 .bottom {

@@ -22,12 +22,16 @@ const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
             {/* <h2 className={styles.header}>
               {pathname === "/blog" ? "the latest" : "Insghts from our blog"}
             </h2> */}
-            <FalseButton
+            {/* <FalseButton
               btnType='primary'
               text={
                 pathname === "/blog" ? "the latest" : "Insghts from our blog"
               }
-            />
+            /> */}
+            <h2 className={styles.header}>
+              <span className='span2'>Insights</span> from our{" "}
+              <span className='span1'>Blog</span>
+            </h2>
           </div>
           <div className={styles.bottom}>
             {data?.length > 0 &&
