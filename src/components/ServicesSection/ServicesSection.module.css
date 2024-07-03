@@ -107,6 +107,8 @@
 }
 
 .processName {
+  font-size: 3.2rem;
+  letter-spacing: -0.6px;
   color: var(--black);
   transition: all 0.2s ease-in;
 }
@@ -120,7 +122,8 @@
 
 .heading {
   color: var(--black);
-  line-height: 100%;
+  line-height: 100% !important;
+  width: 50%;
 }
 
 .processContainer:hover .processName,

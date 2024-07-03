@@ -54,7 +54,7 @@ const Features = () => {
               {features.slice(0, 4).map((x, index) => (
                 <div key={index} className={styles.featureContainer}>
                   <div>{x.icon}</div>
-                  <h3 className={styles.service}>{x.service}</h3>
+                  <h4 className={styles.service}>{x.service}</h4>
                   <p className={styles.desc}>{x.description}</p>
                 </div>
               ))}
@@ -71,7 +71,7 @@ const Features = () => {
             />
           </div>
           <div className={styles.box2}>
-            <h4>Our Features</h4>
+            <h3 className={styles.h3}>Our Features</h3>
             <p>
               Having certain expected features on your direct booking site is
               crucial for ensuring a positive user experience and maximizing
@@ -81,7 +81,7 @@ const Features = () => {
             </p>
             <div className={styles.btnContainer}>
               <Button
-                text='See All Services'
+                text='All Services and features'
                 href='/pricing/#features'
                 btnType='primary'
                 arrow

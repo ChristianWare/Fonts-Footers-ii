@@ -4,7 +4,7 @@
   --green2: #808080;
   --green3: #aeff12;
   --green4: #31715d;
-  --tan: #F2EFE9;
+  --tan: #f2efe9;
   --tan2: #f5f3ee;
   --tanGlass: rgba(242, 236, 221, 0.7);
   --white: #fffdfb;
@@ -66,21 +66,22 @@ h1 {
 }
 
 h2 {
-  font-size: 5rem;
+  font-size: 7.2rem;
   line-height: 120%;
   font-weight: 500;
-  letter-spacing: -2px;
+  letter-spacing: -3.5px;
 }
 
 h3 {
-  font-size: 4.4rem;
   line-height: 130%;
   font-weight: 600;
-  letter-spacing: 1px;
+  font-size: 3.2rem;
+  letter-spacing: -0.6px;
 }
 
 h4 {
-  font-size: 3rem;
+  font-size: 2.4rem;
+  letter-spacing: -0.5px;
 }
 
 h5 {
@@ -114,6 +115,30 @@ textarea:focus {
 .toastFont {
   font-family: var(--raleway);
   font-weight: 700;
+}
+
+.span1 {
+  font-family: var(--switzer);
+  font-size: 7.2rem;
+  font-weight: 500;
+  letter-spacing: -2.9px;
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+  text-decoration: underline;
+  hyphens: none;
+  white-space: nowrap;
+}
+
+.span2 {
+  font-family: var(--lb);
+  font-style: italic;
+  font-size: 7.2rem;
+  font-weight: 500;
+  letter-spacing: -2.9px;
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+  hyphens: none;
+  white-space: nowrap;
 }
 
 /* ::-webkit-scrollbar-thumb {

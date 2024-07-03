@@ -13,7 +13,6 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-gap: 10rem;
-  /* padding-top: 5rem; */
 }
 
 .heading {
@@ -24,7 +23,6 @@
 .test {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* margin-top: 3rem; */
 }
 
 .featureContainer {
@@ -34,13 +32,14 @@
   justify-content: center;
   gap: 2rem;
   padding: 2.5rem;
+  border: 1px solid var(--gray);
+  border-radius: 20px;
 }
 
 .featureContainer:nth-child(1),
 .featureContainer:nth-child(4) {
   border: 1px solid var(--gray);
   background-color: var(--white);
-  border-radius: 20px;
   position: relative;
 }
 
@@ -66,10 +65,7 @@
   color: var(--green);
   position: relative;
   top: -8px;
-  font-size: 2rem;
   text-transform: capitalize;
-  font-family: var(--raleway);
-  font-weight: 700;
 }
 
 .description {
@@ -110,7 +106,7 @@
 }
 
 .box2 p,
-.box2 h4 {
+.box2 h3 {
   color: var(--tan);
   text-align: left;
 }

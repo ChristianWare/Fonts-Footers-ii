@@ -49,8 +49,6 @@
   margin-right: 0.8rem;
   hyphens: none;
   white-space: nowrap;
-
-  /* text-decoration: underline; */
 }
 
 .span3 {
@@ -63,8 +61,7 @@
 
 .btnContainer {
   display: flex;
-  align-items: flex-end;
-  gap: 3rem;
+  margin-top: 3rem;
 }
 
 .right {
@@ -88,7 +85,7 @@
 }
 
 @media screen and (max-width: 1168px) {
-  .container {
+  .content {
     grid-template-columns: repeat(1, 1fr);
   }
 

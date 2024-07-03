@@ -13,8 +13,10 @@ const ServicesSection = () => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.right}>
-            <h2 className={styles.heading}>• What we build •</h2>
-            {/* <FalseButton btnType='primary' text='What we build' /> */}
+            <h2 className={styles.heading}>
+              The kinds of <span className='span2'>websites</span> we{" "}
+              <span className='span1'>build</span>
+            </h2>
           </div>
           <div className={styles.left}>
             {services.map((x, index) => (
@@ -39,7 +41,7 @@ const ServicesSection = () => {
             ))}
           </div>
         </div>
-      <Features />
+        <Features />
       </LayoutWrapper>
     </section>
   );
