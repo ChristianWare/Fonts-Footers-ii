@@ -11,85 +11,85 @@ import Review from "../../../public//icons/talk.svg";
 import CreditCard from "../../../public//icons/payment.svg";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../animation/variants";
+import FalseButton from "../FalseButton/FalseButton";
 
 const Features = () => {
   const features = [
     {
-      service: "Booking Engine",
+      service: "Responsive",
       description:
-        "Implement a user-friendly booking system that allows guests to check availability, select dates, and make reservations directly on your site.",
+        "We create responsive websites that automatically adapt to any screen size, ensuring a great look on all devices.",
       icon: <Booking width={40} height={40} className={styles.icon} />,
     },
     {
-      service: "Guest Reviews",
+      service: "Accessible",
       description:
-        "Showcase positive reviews and testimonials from previous guests to build trust and credibility. Visitors will only be able to review once they've booked a stay on your property.",
+        "Our websites are designed for accessibility, enabling people with disabilities to perceive, understand, navigate, and interact with them, ensuring equal access and opportunity.",
       icon: <Review width={40} height={40} className={styles.icon} />,
     },
     {
-      service: "Admin Panel",
+      service: "Search Engine Optimized",
       description:
-        "Your admin panel will allow you to create, update, and delete listings on your personalized booking websites. View the number of bookings, and make any updates as needed.",
+        "SEO - Search Engine Optimization - involves optimizing a website's technical setup to improve findability, boost credibility, increase traffic, and enhance online visibility.",
       icon: <Admin width={40} height={40} className={styles.icon} />,
     },
     {
-      service: "Payment Processing",
+      service: "Page Speed Optimized",
       description:
-        "We use Stripe payment processing so that you'll be able to secure online transactions, integrating a trusted payment gateway for businesses to accept credit card payments.",
+        "Optimizing your website increases traffic, converts visitors into customers, and enhances user experience with page load times of 3 seconds or less.",
       icon: <CreditCard width={40} height={40} className={styles.icon} />,
     },
   ] as const;
 
   return (
     <section className={styles.parent}>
-      <LayoutWrapper>
-        <div className={styles.content}>
-          <div className={styles.left}>
-            <div className={styles.lTop}>
-              <h2 className={styles.heading}>
-                Our direct booking websites include:
-              </h2>
-              <div className={styles.test}>
-                {features.slice(0, 4).map((x, index) => (
-                  <div key={index} className={styles.featureContainer}>
-                    <div>{x.icon}</div>
-                    <h3 className={styles.service}>{x.service}</h3>
-                    <p className={styles.desc}>{x.description}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-          <div className={styles.left}>
-            <div className={styles.box1}>
-              <Image
-                src={House}
-                alt='Direct Booking Website'
-                fill
-                className={styles.img}
-              />
-            </div>
-            <div className={styles.box2}>
-              <h4>Our Features</h4>
-              <p>
-                Having certain expected features on your direct booking site is
-                crucial for ensuring a positive user experience and maximizing
-                conversions. Meeting these expectations not only enhances
-                customer satisfaction but also establishes credibility and
-                fosters repeat business.
-              </p>
-              <div className={styles.btnContainer}>
-                <Button
-                  text=' all features'
-                  href='/pricing/#features'
-                  btnType='primary'
-                  arrow
-                />
-              </div>
+      <div className={styles.falseBtnContainer}>
+        <FalseButton btnType='primary' text='All projects include' />
+      </div>
+      <div className={styles.content}>
+        <div className={styles.left}>
+          <div className={styles.lTop}>
+            {/* <h2 className={styles.heading}>• All projects include •</h2> */}
+            <div className={styles.test}>
+              {features.slice(0, 4).map((x, index) => (
+                <div key={index} className={styles.featureContainer}>
+                  <div>{x.icon}</div>
+                  <h3 className={styles.service}>{x.service}</h3>
+                  <p className={styles.desc}>{x.description}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
-      </LayoutWrapper>
+        <div className={styles.left}>
+          <div className={styles.box1}>
+            <Image
+              src={House}
+              alt='Direct Booking Website'
+              fill
+              className={styles.img}
+            />
+          </div>
+          <div className={styles.box2}>
+            <h4>Our Features</h4>
+            <p>
+              Having certain expected features on your direct booking site is
+              crucial for ensuring a positive user experience and maximizing
+              conversions. Meeting these expectations not only enhances customer
+              satisfaction but also establishes credibility and fosters repeat
+              business.
+            </p>
+            <div className={styles.btnContainer}>
+              <Button
+                text='See All Services'
+                href='/pricing/#features'
+                btnType='primary'
+                arrow
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };

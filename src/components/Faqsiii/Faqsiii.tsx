@@ -1,21 +1,18 @@
 "use client";
 
+import styles from "./Faqsiii.module.css";
+import { faqs } from "../../lib/data";
 import { useState } from "react";
+import Plus from "../../public/icons/plus.svg";
 import LayoutWrapper from "../LayoutWrapper";
-import { faqs } from "@/lib/data";
-import Plus from "../../../public/icons/plus.svg";
-import styles from "./Faqsii.module.css";
 
-const Faqsiii = () => {
-  const [selected, setSelected] = useState<null | number>(null);
+const Faqs = () => {
+  const [selected, setSelected] = useState(0);
 
   const toggle = (i: any) => {
-    if (selected === i) {
-      return setSelected(null);
-    }
-
     setSelected(i);
   };
+
   return (
     <section className={styles.container} id='faq'>
       <LayoutWrapper>
@@ -23,7 +20,9 @@ const Faqsiii = () => {
           <div className={styles.top}>
             <div className={styles.sectionIntroContainer}>
               {/* <SectionIntro text='Frequently asked questions' /> */}
+              <h2 className={styles.heading}>• Frequently asked questions •</h2>
             </div>
+
             <h2 className={styles.heading}>• You May Have Wondered •</h2>
             <p className={styles.copy}>
               Here are some common questions asked by potential employers. If
@@ -31,7 +30,7 @@ const Faqsiii = () => {
             </p>
           </div>
           <div className={styles.bottom}>
-            {faqs.slice(0, 4).map((x, i) => (
+            {faqs.map((x, i) => (
               <div
                 key={x.id}
                 className={`${styles.qaContainer} ${
@@ -71,4 +70,5 @@ const Faqsiii = () => {
     </section>
   );
 };
-export default Faqsiii;
+
+export default Faqs;

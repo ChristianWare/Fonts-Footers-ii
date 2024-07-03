@@ -1167,3 +1167,26 @@ export const services = [
       "Innovative web applications to streamline your business operations.",
   },
 ] as const;
+
+export const experince = [
+  {
+    title: "Freelance Developer",
+    years: "JAN 2020 - Present",
+  },
+  {
+    title: "Contract Web Developer - KNI",
+    years: "JAN 2023 - AUG 2023",
+  },
+  {
+    title: "Contract Software Engineer - Joyous App",
+    years: "OCT 2022 - DEC 2022",
+  },
+  {
+    title: "Software Engineer - Mentorworks",
+    years: "JAN 2022 - DEC 2022",
+  },
+  {
+    title: "Contract Frontend Developer - Fandem",
+    years: "JAN 2021 - Jan 2022",
+  },
+] as const;

@@ -11,10 +11,10 @@ const CallToAction = () => {
       <LayoutWrapper>
         <section className={styles.content}>
           <div className={styles.arrowContainer}>
-            <ArrowCluster />
+            {/* <ArrowCluster /> */}
           </div>
           <h2 className={styles.heading}>
-            Fonts & Footers <br />
+            • Let&apos;s Have a conversation •{" "}
           </h2>
           <p className={styles.copy}>
             Having your own direct booking website empowers you to establish a

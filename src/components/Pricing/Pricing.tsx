@@ -18,10 +18,8 @@ const Pricing = () => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.top}>
-            {/* <h2 className={styles.heading}>
-              Pricing
-            </h2> */}
-            <FalseButton btnType='primary' text='Pricing' />
+            <h2 className={styles.heading}>• Pricing •</h2>
+            {/* <FalseButton btnType='primary' text='Pricing' /> */}
 
             <p className={styles.copy}>
               Subscription based pricing. No contracts. Pause or cancel whenever

@@ -1,23 +1,30 @@
 .parent {
-  border-bottom: 1px solid var(--green2);
+  margin-top: 15rem;
+}
+
+.falseBtnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
 }
 
 .content {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-gap: 10rem;
-  padding-top: 5rem;
+  /* padding-top: 5rem; */
 }
 
 .heading {
   color: var(--green);
   margin-bottom: 5rem;
-  width: 60%;
 }
 
 .test {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  /* margin-top: 3rem; */
 }
 
 .featureContainer {
@@ -31,7 +38,7 @@
 
 .featureContainer:nth-child(1),
 .featureContainer:nth-child(4) {
-  border: 1px solid var(--green2);
+  border: 1px solid var(--gray);
   background-color: var(--white);
   border-radius: 20px;
   position: relative;

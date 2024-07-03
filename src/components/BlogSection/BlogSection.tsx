@@ -5,6 +5,7 @@ import BlogCard from "../BlogCard/BlogCard";
 import { simpleBlogCard } from "@/lib/interface";
 import Button from "../Button/Button";
 import { usePathname } from "next/navigation";
+import FalseButton from "../FalseButton/FalseButton";
 
 interface BlogSectionProps {
   data: simpleBlogCard[];
@@ -18,9 +19,15 @@ const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.top}>
-            <h2 className={styles.header}>
+            {/* <h2 className={styles.header}>
               {pathname === "/blog" ? "the latest" : "Insghts from our blog"}
-            </h2>
+            </h2> */}
+            <FalseButton
+              btnType='primary'
+              text={
+                pathname === "/blog" ? "the latest" : "Insghts from our blog"
+              }
+            />
           </div>
           <div className={styles.bottom}>
             {data?.length > 0 &&

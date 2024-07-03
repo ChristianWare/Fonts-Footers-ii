@@ -108,7 +108,6 @@
 
 .processName {
   color: var(--black);
-  font-size: 5rem;
   transition: all 0.2s ease-in;
 }
 

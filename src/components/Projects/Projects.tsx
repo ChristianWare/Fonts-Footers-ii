@@ -4,12 +4,12 @@ import { projects } from "@/lib/data";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Projects.module.css";
 import Image from "next/image";
-import ArrowCluster from "../ArrowCluster/ArrowCluster";
 import Link from "next/link";
 import { useState, useRef } from "react";
 import Modal from "../Modal/Modal";
 import FalseButton from "../FalseButton/FalseButton";
 import { motion, useScroll, useTransform } from "framer-motion";
+import Experienceii from "../Experienceii/Experienceii";
 
 interface Project {
   title: string;
@@ -40,8 +40,8 @@ const Projects = () => {
       <LayoutWrapper>
         <div className={styles.contentParent} ref={container}>
           <div className={styles.top}>
-            <FalseButton btnType='primary' text='Recent projects' />
-            {/* <ArrowCluster /> */}
+            {/* <FalseButton btnType='primary' text='Recent Projects' /> */}
+            <h2 className={styles.heading}>• Recent Projects •</h2>
           </div>
           <div className={styles.mapContainer}>
             {projects.map((project: any, index: number) => (
@@ -56,6 +56,7 @@ const Projects = () => {
             ))}
           </div>
         </div>
+        <Experienceii />
       </LayoutWrapper>
     </section>
   );
@@ -63,19 +64,9 @@ const Projects = () => {
 
 const ContentItem = ({
   project,
-  index,
-  scrollYProgress,
   isModalOpen,
   setIsModalOpen,
 }: ContentItemProps) => {
-  const ref = useRef<HTMLDivElement | null>(null);
-  const { scrollYProgress: itemScrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start end", "start start"],
-  });
-
-  const scale = useTransform(itemScrollYProgress, [0, 1], [0.55, 1]);
-
   return (
     <div className={styles.content}>
       <div className={styles.left}>
