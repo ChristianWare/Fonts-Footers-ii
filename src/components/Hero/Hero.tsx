@@ -32,7 +32,7 @@ const Hero = () => {
             </p>
             <div className={styles.btnContainer}>
               <Button
-                text='Schedule a call'
+                text='Schedule a Call'
                 href='/contact/#schedule'
                 btnType='primaryii'
                 arrow

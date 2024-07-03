@@ -14,7 +14,7 @@ const ServicesSection = () => {
         <div className={styles.content}>
           <div className={styles.right}>
             <h2 className={styles.heading}>
-              The kinds of <span className='span2'>websites</span> we{" "}
+              The types of <span className='span2'>websites</span> we{" "}
               <span className='span1'>build</span>
             </h2>
           </div>

@@ -4,12 +4,12 @@
 }
 
 .btn {
-  font-family: var(--oswald);
+  font-family: var(--switzer);
   text-align: center;
   font-size: 2rem;
   font-weight: 500;
   white-space: nowrap;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   user-select: none;
   display: flex;
   align-items: center;

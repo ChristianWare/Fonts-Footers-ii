@@ -16,7 +16,7 @@ const AboutScrollText = () => {
               height={100}
               className={styles.author}
             />
-            <p className={styles.authorDetails}>Chris Ware, Founder & CEO</p>
+            <p className={styles.authorDetails}>~ Chris Ware, Founder & CEO ~</p>
           </div>
           <div className={styles.reveal}>
             <h2 className={styles.text}>

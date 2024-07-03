@@ -44,7 +44,7 @@ const Features = () => {
   return (
     <section className={styles.parent}>
       <div className={styles.falseBtnContainer}>
-        <FalseButton btnType='primary' text='All projects include' />
+        <FalseButton btnType='primary' text='All Projects Include' />
       </div>
       <div className={styles.content}>
         <div className={styles.left}>

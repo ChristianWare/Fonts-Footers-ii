@@ -14,19 +14,19 @@ import CallToAction from "@/components/CallToAction/CallToAction";
 import { Toaster } from "react-hot-toast";
 import PlausibleProvider from "next-plausible";
 
-const oswald = Oswald({
-  subsets: ["latin"],
-  style: ["normal"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--oswald",
-});
+// const oswald = Oswald({
+//   subsets: ["latin"],
+//   style: ["normal"],
+//   weight: ["400", "500", "600", "700"],
+//   variable: "--oswald",
+// });
 
-const raleway = Raleway({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  style: ["normal"],
-  variable: "--raleway",
-});
+// const raleway = Raleway({
+//   subsets: ["latin"],
+//   weight: ["400", "500", "600", "700"],
+//   style: ["normal"],
+//   variable: "--raleway",
+// });
 
 const interTight = Inter_Tight({
   subsets: ["latin"],
@@ -40,13 +40,6 @@ const lb = Libre_Baskerville({
   weight: ["400", "700"], // Include "400i" for the italic weight
   style: ["normal", "italic"], // Include "italic" to cover italic styles
   variable: "--lb",
-});
-
-
-const thunder = localFont({
-  src: "../../public/fonts/Thunder-SemiBoldLC.ttf",
-  variable: "--thunder",
-  display: "swap",
 });
 
 const switzer = localFont({
@@ -82,7 +75,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${oswald.variable} ${raleway.variable} ${thunder.variable} ${interTight.variable} ${switzer.variable} ${lb.variable}`}
+        className={`${interTight.variable} ${switzer.variable} ${lb.variable}`}
       >
         <Toaster
           position='top-center'

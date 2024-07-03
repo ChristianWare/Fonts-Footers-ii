@@ -4,13 +4,13 @@
 }
 
 .btn {
-  font-family: var(--oswald);
+  font-family: var(--switzer);
   text-align: center;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 150%;
   white-space: nowrap;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   user-select: none;
   gap: 2rem;
   border-radius: 50px;
