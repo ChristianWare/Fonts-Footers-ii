@@ -13,7 +13,7 @@ const ServicesSection = () => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.right}>
-            <h2 className={styles.heading}>• What we Build •</h2>
+            <h2 className={styles.heading}>• What we build •</h2>
             {/* <FalseButton btnType='primary' text='What we build' /> */}
           </div>
           <div className={styles.left}>

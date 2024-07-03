@@ -18,7 +18,9 @@ const Hero = () => {
       >
         <div className={styles.left}>
           <h1 className={styles.heading}>
-            We build interactive and immersive websites.
+            We build <span className={styles.span1}>interactive</span> and{" "}
+            <span className={styles.span2}> immersive</span> websites
+            <span className={styles.span3}>.</span>
           </h1>
 
           <p className={styles.copy}>
@@ -34,12 +36,12 @@ const Hero = () => {
               btnType='primaryii'
               arrow
             />
-            <Button
+            {/* <Button
               text='Direct Booking Benefits'
               href='/benefits'
               btnType='secondary'
               arrow
-            />
+            /> */}
           </div>
         </div>
         <div className={styles.right}>

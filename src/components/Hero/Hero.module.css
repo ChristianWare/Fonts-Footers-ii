@@ -6,33 +6,61 @@
 }
 
 .left {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 3rem;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
 }
 
 .copy {
   color: var(--green);
   width: 90%;
   font-size: 1.8rem;
+  font-weight: 500;
   opacity: 0.8;
 }
 
 .heading {
   color: var(--green);
-  line-height: 100%;
 }
 
-.span {
-  color: var(--green3);
-  line-height: 100%;
-  -webkit-text-stroke-width: 1.3px;
-  -webkit-text-stroke-color: var(--green);
+.span1 {
+  font-size: 7.2rem;
+  font-weight: 500;
+  letter-spacing: -2.9px;
+  margin-left: .8rem;
+  margin-right: .8rem;
+  text-decoration: underline;
+  hyphens: none;
+  white-space: nowrap;
+}
+
+.span2 {
+  font-family: var(--lb);
+  font-style: italic;
+  font-size: 7.2rem;
+  font-weight: 500;
+  letter-spacing: -2.9px;
+  margin-left: .8rem;
+  margin-right: .8rem;
+  hyphens: none;
+  white-space: nowrap;
+
+  /* text-decoration: underline; */
+}
+
+.span3 {
+  font-family: var(--lb);
+  font-style: italic;
+  font-size: 7.2rem;
+  font-weight: 500;
+  margin-left: 1rem;
 }
 
 .btnContainer {
   display: flex;
+  align-items: flex-end;
   gap: 3rem;
 }
 

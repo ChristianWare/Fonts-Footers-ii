@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
-import { Oswald, Raleway, Space_Mono } from "next/font/google";
+import {
+  Oswald,
+  Raleway,
+  Inter_Tight,
+  Libre_Baskerville,
+} from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import NoiseBg from "@/components/NoiseBg/NoiseBg";
@@ -23,9 +28,30 @@ const raleway = Raleway({
   variable: "--raleway",
 });
 
+const interTight = Inter_Tight({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  style: ["normal"],
+  variable: "--interTight",
+});
+
+const lb = Libre_Baskerville({
+  subsets: ["latin"],
+  weight: ["400", "700"], // Include "400i" for the italic weight
+  style: ["normal", "italic"], // Include "italic" to cover italic styles
+  variable: "--lb",
+});
+
+
 const thunder = localFont({
   src: "../../public/fonts/Thunder-SemiBoldLC.ttf",
   variable: "--thunder",
+  display: "swap",
+});
+
+const switzer = localFont({
+  src: "../../public/fonts/Switzer-Medium.otf",
+  variable: "--switzer",
   display: "swap",
 });
 
@@ -56,7 +82,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${oswald.variable} ${raleway.variable} ${thunder.variable}`}
+        className={`${oswald.variable} ${raleway.variable} ${thunder.variable} ${interTight.variable} ${switzer.variable} ${lb.variable}`}
       >
         <Toaster
           position='top-center'

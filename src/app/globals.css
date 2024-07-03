@@ -1,6 +1,6 @@
 :root {
-  --black: #2a2a2a;
-  --green: #2a2a2a;
+  --black: #37313b;
+  --green: #37313b;
   --green2: #808080;
   --green3: #aeff12;
   --green4: #31715d;
@@ -17,7 +17,7 @@
   box-sizing: border-box;
   text-decoration: none;
   line-height: 120%;
-  font-family: var(--raleway);
+  font-family: var(--interTight);
   scroll-behavior: smooth;
   scroll-margin-top: 40px;
   overscroll-behavior: none;
@@ -51,21 +51,25 @@ h4,
 h5,
 h6,
 span {
-  font-family: var(--thunder);
+  font-family: var(--switzer);
   color: var(--green);
   hyphens: auto;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 h1 {
-  font-size: 9rem;
-  line-height: 100%;
-  text-transform: uppercase;
+  font-size: 7.2rem;
+  line-height: 120%;
+  font-weight: 500;
+  letter-spacing: -3.5px;
+  /* text-transform: uppercase; */
 }
 
 h2 {
-  font-size: 7rem;
+  font-size: 5rem;
   line-height: 120%;
+  font-weight: 500;
+  letter-spacing: -2px;
 }
 
 h3 {
@@ -96,7 +100,6 @@ button {
 p,
 input,
 textarea {
-  font-weight: 600;
   hyphens: auto;
   font-size: 1.6rem;
   line-height: 150%;
