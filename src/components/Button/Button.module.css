@@ -9,7 +9,6 @@
   font-size: 2rem;
   font-weight: 500;
   white-space: nowrap;
-  /* text-transform: uppercase; */
   user-select: none;
   display: flex;
   align-items: center;
@@ -49,7 +48,7 @@
 .primary {
   color: var(--green);
   background-color: var(--green3);
-  border: 1px solid var(--green);
+  border: 1px solid var(--green2);
 }
 .primaryii {
   color: var(--green3);

@@ -171,6 +171,46 @@ export const pricing = [
     ],
     btnType: "primary",
   },
+
+  {
+    id: 28,
+    plan: "Business Website",
+    for: "11 or more Properties",
+    description: "Optimize your online presence and attract more visitors.",
+    prices: [
+      {
+        id: 1,
+        price: "150 / Month",
+      },
+      {
+        id: 2,
+        price: "3,360 / Year",
+      },
+    ],
+    includes: [
+      {
+        id: 28.1,
+        feature: "Everything in Advanced, plus:",
+      },
+      {
+        id: 28.2,
+        feature: "Geographical Expansion",
+      },
+      {
+        id: 28.3,
+        feature: "Enterprise-Level Scalability",
+      },
+      {
+        id: 28.3,
+        feature: "Advanced SEO Services",
+      },
+      {
+        id: 28.5,
+        feature: "Unlimited Blog Articles",
+      },
+    ],
+    btnType: "tertiary",
+  },
   {
     id: 27,
     plan: "E-Commerce",
@@ -208,45 +248,6 @@ export const pricing = [
       },
     ],
     btnType: "secondary",
-  },
-  {
-    id: 28,
-    plan: "Business Website",
-    for: "11 or more Properties",
-    description: "Optimize your online presence and attract more visitors.",
-    prices: [
-      {
-        id: 1,
-        price: "350 / Month",
-      },
-      {
-        id: 2,
-        price: "3,360 / Year",
-      },
-    ],
-    includes: [
-      {
-        id: 28.1,
-        feature: "Everything in Advanced, plus:",
-      },
-      {
-        id: 28.2,
-        feature: "Geographical Expansion",
-      },
-      {
-        id: 28.3,
-        feature: "Enterprise-Level Scalability",
-      },
-      {
-        id: 28.3,
-        feature: "Advanced SEO Services",
-      },
-      {
-        id: 28.5,
-        feature: "Unlimited Blog Articles",
-      },
-    ],
-    btnType: "tertiary",
   },
   {
     id: 28,
