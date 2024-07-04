@@ -1,3 +1,13 @@
+.container {
+  border-bottom: 1px solid var(--green2);
+  padding-bottom: 5rem;
+}
+
+.parent {
+  border-bottom: 1px solid var(--green2);
+  
+}
+
 .content {
   background-color: var(--black);
   border-radius: 20px;
@@ -141,6 +151,10 @@
 }
 
 .icon {
+  color: var(--green3);
+}
+
+.container b {
   color: var(--green3);
 }
 
