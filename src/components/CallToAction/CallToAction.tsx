@@ -8,10 +8,9 @@ const CallToAction = () => {
     <section className={styles.parent}>
       <LayoutWrapper>
         <section className={styles.content}>
-          <div className={styles.arrowContainer}>{/* <ArrowCluster /> */}</div>
           <h2 className={styles.heading}>
             Ready to start a <span className='span2'>project?</span> Let&apos;s
-            Have a <span className='span1'> conversation</span>
+            have a <span className='span1'> conversation</span>
           </h2>
           <p className={styles.copy}>
             Having your own direct booking website empowers you to establish a

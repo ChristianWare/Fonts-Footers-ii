@@ -112,7 +112,7 @@ textarea:focus {
 }
 
 .toastFont {
-  font-family: var(--raleway);
+  font-family: var(--interTight);
   font-weight: 700;
 }
 

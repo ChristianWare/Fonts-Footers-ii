@@ -20,10 +20,6 @@
   border-right: 1px solid var(--green2);
 }
 
-.logo {
-  width: 209px;
-  height: 18px;
-}
 
 .location {
   font-family: var(--oswald);

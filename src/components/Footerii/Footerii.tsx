@@ -5,6 +5,7 @@ import Button from "../Button/Button";
 import Insta from "../../../public/icons/instagram.svg";
 import LinkedIn from "../../../public/icons/linkedin.svg";
 import Facebook from "../../../public/icons/facebook.svg";
+import Logo from "../Logo/Logo";
 
 const Footerii = () => {
   const footer = [
@@ -74,9 +75,7 @@ const Footerii = () => {
             </Link>
             <div className={styles.top}>
               <div className={styles.box}>
-                <Link href='/' className={styles.logo}>
-                  FONTS & FOOTERS
-                </Link>
+                <Logo color='white' />
               </div>
               <div className={styles.box}>
                 {footer.map((x) => (

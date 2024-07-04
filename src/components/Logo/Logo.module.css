@@ -1,15 +1,20 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 0.5rem;
+.logo {
+  font-family: var(--interTight);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--black);
 }
 
-.logo {
-  font-family: var(--oswald);
-  font-weight: 700;
-  color: var(--tan);
+.span2 {
+  font-family: var(--lb);
+  font-style: italic;
   font-size: 2rem;
-  text-transform: uppercase;
+  font-weight: 500;
+  hyphens: none;
+  white-space: nowrap;
+  color: inherit;
+}
+
+.white {
+  color: var(--white);
 }

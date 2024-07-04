@@ -134,14 +134,13 @@ export const process = [
 export const pricing = [
   {
     id: 26,
-    plan: "Basic",
-    for: "1 to 5 Properties",
+    plan: "Landing Page",
     description:
-      "Ideal for individual owners with 1 to 5 properties who are looking to get started.",
+      "Ideal for focused marketing campaigns, product launches, or single-purpose goals.",
     prices: [
       {
         id: 1,
-        price: "175 / month",
+        price: "75 / month",
       },
       {
         id: 2,
@@ -151,7 +150,7 @@ export const pricing = [
     includes: [
       {
         id: 26.1,
-        feature: "5 page website",
+        feature: "max 8 sections on page",
       },
       {
         id: 26.2,
@@ -163,7 +162,7 @@ export const pricing = [
       },
       {
         id: 27.3,
-        feature: "Payment Processing",
+        feature: "Analytics",
       },
       {
         id: 27.5,
@@ -174,10 +173,8 @@ export const pricing = [
   },
   {
     id: 27,
-    plan: "Advanced",
-    for: "6 to 10 properties",
-    description:
-      "For growing businesses with 6 to 10 properties that need additional features.",
+    plan: "E-Commerce",
+    description: "Comprehensive e-commerce platforms designed to drive sales.",
     prices: [
       {
         id: 1,
@@ -214,10 +211,47 @@ export const pricing = [
   },
   {
     id: 28,
-    plan: "Enterprise",
+    plan: "Business Website",
     for: "11 or more Properties",
-    description:
-      "For large-scale organizations with at least 11 or more properties.",
+    description: "Optimize your online presence and attract more visitors.",
+    prices: [
+      {
+        id: 1,
+        price: "350 / Month",
+      },
+      {
+        id: 2,
+        price: "3,360 / Year",
+      },
+    ],
+    includes: [
+      {
+        id: 28.1,
+        feature: "Everything in Advanced, plus:",
+      },
+      {
+        id: 28.2,
+        feature: "Geographical Expansion",
+      },
+      {
+        id: 28.3,
+        feature: "Enterprise-Level Scalability",
+      },
+      {
+        id: 28.3,
+        feature: "Advanced SEO Services",
+      },
+      {
+        id: 28.5,
+        feature: "Unlimited Blog Articles",
+      },
+    ],
+    btnType: "tertiary",
+  },
+  {
+    id: 28,
+    plan: "Booking Platform",
+    description: "Optimize your online presence and attract more visitors.",
     prices: [
       {
         id: 1,

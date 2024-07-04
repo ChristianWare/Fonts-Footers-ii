@@ -3,15 +3,13 @@ import Link from "next/link";
 import Insta from "../../../public/icons/instagram.svg";
 import LinkedIn from "../../../public/icons/linkedin.svg";
 import Facebook from "../../../public/icons/facebook.svg";
-import Logo from "../../../public/icons/fnflogo.svg";
+import Logo from "../Logo/Logo";
 
 const TopNav = () => {
   return (
     <div className={styles.header}>
       <div className={styles.content}>
-        <Link href='/'>
-          <Logo className={styles.logo} />
-        </Link>
+        <Logo />
         <div className={styles.leftBottom}>
           <Link
             href='https://www.linkedin.com/'

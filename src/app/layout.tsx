@@ -1,33 +1,14 @@
 import type { Metadata } from "next";
-import {
-  Oswald,
-  Raleway,
-  Inter_Tight,
-  Libre_Baskerville,
-} from "next/font/google";
+import { Inter_Tight, Libre_Baskerville } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import NoiseBg from "@/components/NoiseBg/NoiseBg";
 import Nav from "@/components/Nav/Nav";
-import FinalCta from "@/components/FinalCTA/FinalCTA";
 import CallToAction from "@/components/CallToAction/CallToAction";
 import { Toaster } from "react-hot-toast";
 import PlausibleProvider from "next-plausible";
 import Footerii from "@/components/Footerii/Footerii";
-
-// const oswald = Oswald({
-//   subsets: ["latin"],
-//   style: ["normal"],
-//   weight: ["400", "500", "600", "700"],
-//   variable: "--oswald",
-// });
-
-// const raleway = Raleway({
-//   subsets: ["latin"],
-//   weight: ["400", "500", "600", "700"],
-//   style: ["normal"],
-//   variable: "--raleway",
-// });
+import ScrollIndicator from "@/components/ScrollIndicator/ScrollIndicator";
 
 const interTight = Inter_Tight({
   subsets: ["latin"],
@@ -38,8 +19,8 @@ const interTight = Inter_Tight({
 
 const lb = Libre_Baskerville({
   subsets: ["latin"],
-  weight: ["400", "700"], // Include "400i" for the italic weight
-  style: ["normal", "italic"], // Include "italic" to cover italic styles
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
   variable: "--lb",
 });
 
@@ -92,10 +73,10 @@ export default function RootLayout({
           }}
         />
         <NoiseBg>
+          <ScrollIndicator />
           <Nav />
           {children}
           <CallToAction />
-          {/* <FinalCta /> */}
           <Footerii />
         </NoiseBg>
       </body>

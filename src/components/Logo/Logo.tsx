@@ -1,13 +1,17 @@
 import Link from "next/link";
 import styles from "./Logo.module.css";
 
-const Logo = () => {
+interface Props {
+  color?: string;
+}
+
+const Logo = ({ color = "" }: Props) => {
   return (
-    <div className={styles.container}>
-      <Link href='/' className={styles.logo}>
-        Fonts & Footers
-      </Link>
-    </div>
+    <Link href='/' className={`${styles.logo} ${styles[color]}`}>
+      Fonts
+      <span className={styles.span2}> & </span>
+      Footers
+    </Link>
   );
 };
 export default Logo;

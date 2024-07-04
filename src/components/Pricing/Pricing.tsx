@@ -6,7 +6,6 @@ import styles from "./Pricing.module.css";
 import Button from "../Button/Button";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
-import FalseButton from "../FalseButton/FalseButton";
 
 const Pricing = () => {
   const [isMonthly, setIsMonthly] = useState(false);
@@ -44,11 +43,10 @@ const Pricing = () => {
             </div>
           </div>
           <div className={styles.bottom}>
-            {pricing.map((x, index) => (
+            {pricing.map((x) => (
               <div key={x.id} className={styles.priceContainer}>
                 <div className={styles.pcTop}>
                   <h3 className={styles.planName}>{x.plan}</h3>
-                  <span className={styles.for}>{x.for}</span>
                 </div>
                 <div className={styles.pcBottom}>
                   <ul className={styles.features}>
