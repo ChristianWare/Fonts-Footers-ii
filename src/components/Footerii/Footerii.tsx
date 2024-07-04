@@ -2,6 +2,10 @@ import Link from "next/link";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Footerii.module.css";
 import Button from "../Button/Button";
+import Insta from "../../../public/icons/instagram.svg";
+import LinkedIn from "../../../public/icons/linkedin.svg";
+import Facebook from "../../../public/icons/facebook.svg";
+import Logo from "../../../public/icons/fnflogo.svg";
 
 const Footerii = () => {
   const footer = [
@@ -114,11 +118,53 @@ const Footerii = () => {
                 </div>
                 <div className={styles.btnContainer}>
                   <Button btnType='primary' href='/' text='Subscribe' arrow />
+                  <small className={styles.small}>
+                    By subscribing you agree to with our Privacy Policy and
+                    provide consent to receive updates from our company.
+                  </small>
                 </div>
               </form>
             </div>
           </div>
-          <div className={styles.bottom}></div>
+          <div className={styles.bottom}>
+            <div className={styles.left}>
+              <small className={styles.small1}>
+                Another Website by <b>Fonts & Footers</b> |
+              </small>
+              <small className={styles.small1}>
+                © 2024 Fonts & Footers. All rights reserved. |
+              </small>
+              <small className={styles.small1}>Privacy Policy</small>
+            </div>
+            <div className={styles.right}>
+              <div className={styles.leftBottom}>
+                <Link
+                  href='https://www.linkedin.com/'
+                  target='_blank'
+                  aria-label='LinkedIn'
+                  className={styles.detail}
+                >
+                  <LinkedIn className={styles.icon} width={12} height={12} />
+                </Link>
+                <Link
+                  href='https://www.facebook.com/'
+                  target='_blank'
+                  aria-label='Facebook'
+                  className={styles.detail}
+                >
+                  <Facebook className={styles.icon} width={12} height={12} />
+                </Link>
+                <Link
+                  href='https://instagram.com/'
+                  target='_blank'
+                  aria-label='Instagram'
+                  className={styles.detail}
+                >
+                  <Insta className={styles.icon} width={12} height={12} />
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </LayoutWrapper>
     </footer>
