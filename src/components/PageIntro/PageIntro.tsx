@@ -53,9 +53,6 @@ const PageIntro = ({
           animate={{ y: 0, opacity: 1 }}
           className={`${styles.content} ${styles[orientation]}`}
         >
-          <div className={styles.arrowContainer}>
-            <ArrowCluster />
-          </div>
           <h1 className={`${styles.heading} ${styles[h1Color]}`}>
             {text}
             <span className={`${styles.span} ${styles[h1OutlineColor]}`}>
