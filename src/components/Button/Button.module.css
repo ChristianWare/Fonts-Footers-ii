@@ -32,9 +32,9 @@
   height: 35px;
   background-color: var(--green3);
   border-radius: 50%;
-  border: 1px solid var(--green);
+  border: 1px solid var(--green2);
   padding: 5px;
-  color: var(--green);
+  color: var(--green2);
   position: absolute;
   top: 5px;
   right: 6px;
@@ -53,7 +53,7 @@
 .primaryii {
   color: var(--green3);
   background-color: var(--green);
-  border: 1px solid var(--green);
+  border: 1px solid var(--green2);
 }
 
 .primaryii:hover {
@@ -78,7 +78,7 @@
 .secondary {
   color: var(--green);
   background-color: var(--white);
-  border: 1px solid var(--green);
+  border: 1px solid var(--green2);
 }
 
 .secondaryii {

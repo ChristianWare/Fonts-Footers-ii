@@ -10,8 +10,8 @@ import Arrow from "../../../public/icons/arrow.svg";
 
 const navItems = [
   {
-    text: "Benefits",
-    href: "/benefits",
+    text: "Services",
+    href: "/services",
   },
   {
     text: "About US",
