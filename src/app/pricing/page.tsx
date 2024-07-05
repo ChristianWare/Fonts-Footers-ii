@@ -42,7 +42,7 @@ export default async function PricingPage() {
         orientation='center'
       /> */}
       {/* <ScrollHorizontalText /> */}
-      <Pricing />
+      <Pricing bgColor='tan' />
       <EveryPlan />
       {/* <IndividualFeature /> */}
       <Faqsiii />

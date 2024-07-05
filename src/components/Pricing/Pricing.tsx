@@ -7,13 +7,17 @@ import Button from "../Button/Button";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 
-const Pricing = () => {
+interface Props {
+  bgColor?: string;
+}
+
+const Pricing = ({ bgColor = "" }: Props) => {
   const [isMonthly, setIsMonthly] = useState(false);
 
   const pathname = usePathname();
 
   return (
-    <section>
+    <section className={`${styles.container} ${styles[bgColor]}`}>
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.top}>

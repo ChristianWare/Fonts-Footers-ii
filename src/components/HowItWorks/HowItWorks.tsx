@@ -36,7 +36,10 @@ const HowItWorks = () => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.left}>
-            <h2 className={styles.heading}>How to order online</h2>
+            <h2 className={styles.heading}>
+              Our <span className='span2'>End-to-end</span>{" "}
+              <span className='span1'>Approach</span>
+            </h2>
             <p className={styles.topText}>
               Ordering your favorite meals from us is quick and easy! Follow
               these simple steps to enjoy delicious food delivered right to your

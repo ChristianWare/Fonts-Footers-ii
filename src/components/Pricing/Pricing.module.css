@@ -1,3 +1,7 @@
+.tan {
+  background-color: var(--tan);
+}
+
 .content {
   padding-top: 5rem;
 }
@@ -161,7 +165,6 @@
 }
 
 .price {
-  font-family: var(--oswald);
   font-weight: 600;
   font-size: 3rem;
   color: var(--green);
@@ -171,18 +174,23 @@
 }
 
 .moreDetails {
-  /* background-color: var(--tan2); */
   border-radius: 20px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   padding: 3rem;
-  border-top: 1px solid var(--gray);
+  border-top: 1px solid var(--gray2);
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: var(--switzer);
   font-size: 2rem;
   color: var(--black);
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.moreDetails:hover {
+  background-color: var(--green3);
 }
 
 .btnContainer {

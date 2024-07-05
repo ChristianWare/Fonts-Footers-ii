@@ -57,7 +57,9 @@ export default async function AboutPage() {
       <BrandPresence />
       <EnhancedMarketing />
       <HowItWorks />
+      <ScrollHorizontalText text='Reviews' bottomBorder={false} />
       <Testimonials />
+      <ScrollHorizontalText text='Reviews' bottomBorder={false} />
       <Mission />
       <Faqsiii />
       <BlogSection data={data} />
