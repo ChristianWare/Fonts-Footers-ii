@@ -1,19 +1,17 @@
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./IndividualService.module.css";
-import Talk from "../../../public/icons/talk.svg";
+import SEO from "../../../public/icons/search.svg";
 import Booking from "../../../public/icons/booking.svg";
-import Payment from "../../../public/icons/payment.svg";
-import Map from "../../../public/icons/map.svg";
-import User from "../../../public/icons/dashboard.svg";
-import Cog from "../../../public/icons/cog.svg";
-import Multiple from "../../../public/icons/multiple.svg";
-import Analytics from "../../../public/icons/analytics.svg";
+import Business from "../../../public/icons/business.svg";
+import Landing from "../../../public/icons/landing.svg";
+import Cart from "../../../public/icons/cart.svg";
 import Button from "../Button/Button";
+import Link from "next/link";
 
 const IndividualService = () => {
   const individulaFeatures = [
     {
-      icon: <Payment width={150} height={150} className={styles.icon} />,
+      icon: <Landing width={150} height={150} className={styles.icon} />,
       title: "Landing Pages",
       description:
         "Integrating Stripe as your payment gateway for your property ensures secure transactions, supports multiple payment methods, automates payments, expands global reach, provides real-time reporting, offers easy integration, enhances the guest experience, and ensures compliance, all contributing to the success and efficiency of your vacation rental business.",
@@ -24,7 +22,7 @@ const IndividualService = () => {
             "Stripe provides a secure platform for processing payments, ensuring that transactions are safe and protected against fraud.",
         },
         {
-          title: "Multiple Payment Methods",
+          title: "Payment Methods",
           modal:
             "Guests can pay using various payment methods, including credit/debit cards, digital wallets, and bank transfers, accommodating different guest preferences.",
         },
@@ -34,30 +32,30 @@ const IndividualService = () => {
             "Stripe supports international payments, allowing you to accept payments from guests worldwide and expand your customer base.",
         },
         {
-          title: "Real-Time Reporting",
+          title: "Live Reporting",
           modal:
             "You can access real-time payment reports, analytics, and insights through the Stripe dashboard, helping you track revenue, monitor transactions, and make data-driven decisions.",
         },
       ],
     },
     {
-      icon: <Booking width={150} height={150} className={styles.icon} />,
+      icon: <Cart width={150} height={150} className={styles.icon} />,
       title: "E-Commerce Stores",
       description:
         "Integrating a booking engine for your properties enables direct bookings, control over pricing and availability, enhances guest experience, allows customization and personalization, provides valuable data insights, streamlines operations, boosts revenue and occupancy, and builds brand loyalty and trust.",
       whyImportant: [
         {
-          title: "Control over Pricing and Availability",
+          title: "Control",
           modal:
             "With a booking engine, you have full control over pricing, availability, and booking policies. You can set dynamic pricing strategies, offer discounts or promotions, and adjust availability in real-time based on demand and seasonality.",
         },
         {
-          title: "Enhanced Guest Experience",
+          title: "Guest Experience",
           modal:
             "Providing a seamless and intuitive booking process through a booking engine enhances the guest experience. Guests can easily check availability, select dates, view property details, and complete bookings without navigating away from your website.",
         },
         {
-          title: "Customization and Personalization",
+          title: "Customization",
           modal:
             "A booking engine allows for customization and personalization of the booking experience. You can tailor the booking process to match your brand's aesthetics, incorporate upselling opportunities, and collect guest preferences for personalized recommendations.",
         },
@@ -69,7 +67,7 @@ const IndividualService = () => {
       ],
     },
     {
-      icon: <Talk width={150} height={150} className={styles.icon} />,
+      icon: <Business width={150} height={150} className={styles.icon} />,
       title: "Business Websites",
       description:
         "Guest reviews on your direct booking website enhance transparency, build trust, provide valuable feedback for improvement, manage reputation, serve as social proof, offer SEO benefits, and ultimately increase bookings and occupancy rates for your property.",
@@ -97,7 +95,7 @@ const IndividualService = () => {
       ],
     },
     {
-      icon: <Map width={150} height={150} className={styles.icon} />,
+      icon: <Booking width={150} height={150} className={styles.icon} />,
       title: "Booking Platforms",
       description:
         "Adding an interactive map feature for your properties enhances the user experience by providing visual representation, improving decision-making, increasing engagement, differentiating your listings, enhancing marketing efforts, and ultimately boosting guest satisfaction and bookings.",
@@ -125,7 +123,7 @@ const IndividualService = () => {
       ],
     },
     {
-      icon: <User width={150} height={150} className={styles.icon} />,
+      icon: <SEO width={150} height={150} className={styles.icon} />,
       title: "Search Engine Optimization",
       description:
         "Adding a user dashboard for your property provides guests with a personalized and convenient experience, allowing them to manage bookings, update profiles, communicate efficiently, leave feedback, access information, enjoy special offers, and receive support—all contributing to enhanced guest satisfaction and loyalty.",
@@ -160,9 +158,15 @@ const IndividualService = () => {
         {individulaFeatures.map((x, index) => (
           <div key={index}>
             <div className={styles.content}>
+              <h2 className={styles.titleMobile}>{x.title}</h2>
               <div className={styles.left}>
-                <h2 className={styles.titleMobile}>{x.title}</h2>
                 <div className={styles.iconContainer}>{x.icon}</div>
+                <div className={styles.rightBottom}>
+                  <div className={styles.rbLeft}>More Details</div>
+                  <Link href='/' target='_blank' className={styles.rbRight}>
+                    Contact Us
+                  </Link>
+                </div>
               </div>
               <div className={styles.right}>
                 <h2 className={styles.title}>{x.title}</h2>
@@ -172,19 +176,10 @@ const IndividualService = () => {
                 <ul className={styles.box}>
                   {x.whyImportant.map((y, index) => (
                     <li key={index}>
-                      <h4 className={styles.reasonnTitle}>{y.title}</h4>
+                      <h3 className={styles.reasonnTitle}>{y.title}</h3>
                     </li>
                   ))}
                 </ul>
-                <div className={styles.btnContainer}>
-                  <Button btnType='primary' text='Learn more' href='/' arrow />
-                  <Button
-                    btnType='secondary'
-                    text='Contact Us'
-                    href='/'
-                    arrow
-                  />
-                </div>
               </div>
             </div>
           </div>

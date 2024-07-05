@@ -50,7 +50,6 @@
 .rbLeft,
 .rbRight {
   background-color: var(--tan);
-  /* border-bottom: 1px solid var(--green2); */
   border-radius: 20px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
