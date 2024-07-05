@@ -1,14 +1,14 @@
+import IndividualService from "@/components/IndividualService/IndividualService";
+import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
 import ServicesHero from "@/components/ServicesHero/ServicesHero";
 
 const ServicesPage = () => {
   return (
     <main>
       <ServicesHero />
-      {/* <h2>Services page</h2> */}
-      {/* Landing Pages */}
-      {/* E-Commerce */}
-      {/* Business Websites */}
-      {/* Booking Platforms */}
+      <ScrollHorizontalText text='Our Services' bottomBorder={true} />
+
+      <IndividualService />
     </main>
   );
 };

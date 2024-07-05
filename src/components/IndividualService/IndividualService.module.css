@@ -1,0 +1,132 @@
+.heading {
+  text-align: center;
+  padding-top: 5rem;
+  border-bottom: 1px solid var(--green2);
+  padding-bottom: 1rem;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content {
+  padding-top: 10rem;
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+  grid-gap: 3rem;
+  margin-bottom: 5rem;
+}
+.left {
+  background-color: var(--tan2);
+  padding: 2rem;
+  border-radius: 20px;
+  border: 1px solid var(--gray);
+}
+
+.title,
+.titleMobile {
+  margin-bottom: 2rem;
+  line-height: 130%;
+  font-weight: 600;
+  font-size: 3.2rem;
+  letter-spacing: -0.6px;
+}
+
+.titleMobile {
+  display: none;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.icon {
+  color: var(--green);
+}
+
+.desc {
+  opacity: 0.8;
+}
+
+.span {
+  display: block;
+  padding-bottom: 1rem;
+  font-family: var(--raleway);
+  font-weight: 700;
+  border-bottom: 1px solid var(--green2);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+
+.box li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border: 1px solid var(--gray);
+  background-color: var(--tan2);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.2s ease-in;
+}
+
+.reasonnTitle {
+  margin-bottom: 0.5rem;
+}
+
+.reason {
+  opacity: 0.8;
+}
+
+.btnContainer {
+  margin-top: 1rem;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
+@media screen and (max-width: 1068px) {
+  .content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .title {
+    display: none;
+  }
+
+  .titleMobile {
+    display: block;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
