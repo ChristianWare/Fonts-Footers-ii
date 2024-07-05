@@ -45,22 +45,25 @@ const Pricing = () => {
           <div className={styles.bottom}>
             {pricing.map((x) => (
               <div key={x.id} className={styles.priceContainer}>
-                <div className={styles.pcTop}>
-                  <h3 className={styles.planName}>{x.plan}</h3>
+                <div className={styles.contentParent}>
+                  <div className={styles.pcTop}>
+                    <h3 className={styles.planName}>{x.plan}</h3>
+                  </div>
+                  <div className={styles.pcBottom}>
+                    <ul className={styles.features}>
+                      {x.includes.slice(0, 3).map((y) => (
+                        <li key={y.id} className={styles.feature}>
+                          {y.feature}
+                        </li>
+                      ))}
+                    </ul>
+                    <p className={styles.description}>{x.description}</p>
+                    <span className={styles.price}>
+                      ${!isMonthly ? x.prices[0].price : x.prices[1].price}
+                    </span>
+                  </div>
                 </div>
-                <div className={styles.pcBottom}>
-                  <ul className={styles.features}>
-                    {x.includes.slice(0, 3).map((y) => (
-                      <li key={y.id} className={styles.feature}>
-                        {y.feature}
-                      </li>
-                    ))}
-                  </ul>
-                  <p className={styles.description}>{x.description}</p>
-                  <span className={styles.price}>
-                    ${!isMonthly ? x.prices[0].price : x.prices[1].price}
-                  </span>
-                </div>
+                <div className={styles.moreDetails}>More Details</div>
               </div>
             ))}
           </div>

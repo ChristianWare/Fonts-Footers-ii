@@ -1,10 +1,8 @@
 import BlogSection from "@/components/BlogSection/BlogSection";
 import EveryPlan from "@/components/EveryPlan/EveryPlan";
-import Faqs from "@/components/Faqs/Faqs";
-import IndividualFeature from "@/components/IndividualFeature/IndividualFeature";
+import Faqsiii from "@/components/Faqsiii/Faqsiii";
 import PageIntro from "@/components/PageIntro/PageIntro";
 import Pricing from "@/components/Pricing/Pricing";
-import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
 import { simpleBlogCard } from "@/lib/interface";
 import { client } from "@/lib/sanity";
 import { Metadata } from "next";
@@ -35,19 +33,19 @@ export default async function PricingPage() {
 
   return (
     <>
-      <PageIntro
+      {/* <PageIntro
         h1Color='green'
         h1OutlineColor='greenOutline'
         text='Simple'
         span='Pricing Plans'
         copyColor='green'
         orientation='center'
-      />
+      /> */}
       {/* <ScrollHorizontalText /> */}
       <Pricing />
       <EveryPlan />
-      <IndividualFeature />
-      {/* <Faqs /> */}
+      {/* <IndividualFeature /> */}
+      <Faqsiii />
       <BlogSection data={data} />
     </>
   );
