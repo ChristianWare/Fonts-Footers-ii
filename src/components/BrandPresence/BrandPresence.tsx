@@ -50,7 +50,10 @@ const BrandPresence = () => {
     <section>
       <LayoutWrapper>
         <div className={styles.top}>
-          <h2 className={styles.heading}>Brand Presence</h2>
+          <h2 className={styles.heading}>
+            <span className='span2'>Brand</span>{" "}
+            <span className='span1'> Presence</span>
+          </h2>
           <p className={styles.copy}>
             A well-designed and strategically optimized direct booking website
             serves as a powerful tool for building and strengthening brand

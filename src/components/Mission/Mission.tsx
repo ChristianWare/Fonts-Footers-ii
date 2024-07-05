@@ -41,11 +41,7 @@ const Mission = () => {
     <section className={styles.container}>
       <LayoutWrapper>
         <div className={styles.top}>
-          <FalseButton text='OUR MISSION explained' btnType='primary' />
-          <h2 className={styles.heading}>
-            Empowering Vacation Rental Owners Through Trust, Transparency, and
-            Growth
-          </h2>
+          <h2 className={styles.heading}>Our Mission</h2>
         </div>
         <div className={styles.bottom}>
           <div className={styles.left}>
