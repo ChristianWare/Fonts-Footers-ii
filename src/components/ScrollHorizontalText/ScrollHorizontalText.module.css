@@ -3,6 +3,7 @@
   overflow: hidden;
   position: relative;
   border-top: 1px solid var(--green2);
+  user-select: none;
 }
 
 .bottomBorder {

@@ -17,12 +17,14 @@ const BenefitsIntro = () => {
           </div>
           <div className={styles.right}>
             <div className={styles.benefitButtonContainer}>
-              <FalseButton text='Higher Margins' btnType='primary' />
-              <FalseButton text='Brand Presence' btnType='primary' />
-              <FalseButton text='Direct Communication' btnType='primary' />
-              <FalseButton text='Enhanced Marketing' btnType='primary' />
-              <FalseButton text='Long-term Relationships' btnType='primary' />
-              <FalseButton text='Competitive Advantage' btnType='primary' />
+              <FalseButton text='Landing Pages' btnType='primary' />
+              <FalseButton text='E-Commerce Stores' btnType='primary' />
+              <FalseButton text='Business Websites' btnType='primary' />
+              <FalseButton text='Booking Platforms' btnType='primary' />
+              <FalseButton
+                text='Search Engine Optimization'
+                btnType='primary'
+              />
             </div>
             <p className={styles.copy}>
               Imagine waving goodbye to hefty service fees and welcoming a surge

@@ -70,9 +70,9 @@ const Footerii = () => {
       <div className={styles.parent}>
         <LayoutWrapper>
           <div className={styles.content}>
-            <Link href='/' className={styles.logoMobile}>
-              FONTS & FOOTERS
-            </Link>
+            <div className={styles.logoMobile}>
+              <Logo color='white' />
+            </div>
             <div className={styles.top}>
               <div className={styles.box}>
                 <Logo color='white' />
@@ -113,7 +113,6 @@ const Footerii = () => {
                 </p>
                 <form className={styles.form}>
                   <div className={styles.labelInputBox}>
-                    {/* <label htmlFor='firstName'>First Name</label> */}
                     <input id='firstName' type='text' />
                   </div>
                   <div className={styles.btnContainer}>

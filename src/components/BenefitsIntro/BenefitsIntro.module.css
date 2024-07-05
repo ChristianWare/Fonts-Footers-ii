@@ -1,3 +1,7 @@
+.container {
+  background-color: var(--black);
+}
+
 .content {
   background-color: var(--tan);
   border: 1px solid var(--gray);
@@ -7,6 +11,19 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 3rem;
+}
+
+.heading {
+  line-height: 130%;
+  font-weight: 600;
+  font-size: 3.2rem;
+  letter-spacing: -0.6px;
+  width: 70%;
+}
+
+.copy {
+  font-size: 1.8rem;
+  font-weight: 500;
 }
 
 .benefitButtonContainer {
@@ -22,11 +39,19 @@
   .content {
     padding: 3rem;
   }
+
+  .heading {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .content {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .heading {
+    text-align: center;
   }
 
   .benefitButtonContainer {
