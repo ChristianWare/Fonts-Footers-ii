@@ -21,18 +21,18 @@ const navItems = [
     text: "Pricing",
     href: "/pricing",
   },
-  {
-    text: "FAQS",
-    href: "/faqs",
-  },
+  // {
+  //   text: "FAQS",
+  //   href: "/faqs",
+  // },
   {
     text: "Blog",
     href: "/blog",
   },
-  {
-    text: "Glossary",
-    href: "/glossary",
-  },
+  // {
+  //   text: "Glossary",
+  //   href: "/glossary",
+  // },
   {
     text: "Contact",
     href: "/contact",

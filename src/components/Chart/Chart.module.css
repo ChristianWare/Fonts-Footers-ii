@@ -1,0 +1,32 @@
+.tableContainer {
+  border-radius: 20px;
+  overflow-x: scroll;
+  padding-top: 10rem;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  padding: 2rem;
+}
+
+.tr {
+  padding: 2rem;
+  border-bottom: 1px solid var(--gray2);
+}
+
+.th {
+  padding: 3rem;
+  color: var(--black);
+  font-size: 2rem;
+  text-align: left;
+  font-family: var(--switzer);
+  font-size: 2.7rem;
+}
+
+.td {
+  font-size: 1.6rem;
+  font-family: var(--interTight);
+  padding: 3rem;
+  color: var(--black);
+}

@@ -1,6 +1,8 @@
 import BlogSection from "@/components/BlogSection/BlogSection";
+import Chart from "@/components/Chart/Chart";
 import EveryPlan from "@/components/EveryPlan/EveryPlan";
 import Faqsiii from "@/components/Faqsiii/Faqsiii";
+import HowItWorks from "@/components/HowItWorks/HowItWorks";
 import PageIntro from "@/components/PageIntro/PageIntro";
 import Pricing from "@/components/Pricing/Pricing";
 import { simpleBlogCard } from "@/lib/interface";
@@ -33,18 +35,10 @@ export default async function PricingPage() {
 
   return (
     <>
-      {/* <PageIntro
-        h1Color='green'
-        h1OutlineColor='greenOutline'
-        text='Simple'
-        span='Pricing Plans'
-        copyColor='green'
-        orientation='center'
-      /> */}
-      {/* <ScrollHorizontalText /> */}
       <Pricing bgColor='tan' />
+      <Chart />
       <EveryPlan />
-      {/* <IndividualFeature /> */}
+      <HowItWorks />
       <Faqsiii />
       <BlogSection data={data} />
     </>

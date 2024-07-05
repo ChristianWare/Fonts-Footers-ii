@@ -1,5 +1,6 @@
 import BlogSection from "@/components/BlogSection/BlogSection";
 import Faqsii from "@/components/Faqsii/Faqsii";
+import Faqsiii from "@/components/Faqsiii/Faqsiii";
 import PageIntro from "@/components/PageIntro/PageIntro";
 import Pricing from "@/components/Pricing/Pricing";
 import { simpleBlogCard } from "@/lib/interface";
@@ -38,7 +39,7 @@ export default async function FAQPage() {
         copy="Here are some commonly asked questions and their answers below. If you don't see your questions here, call us any time."
         copyColor='green'
       />
-      <Faqsii />
+      <Faqsiii />
       <Pricing />
       <BlogSection data={data} />
     </>

@@ -1225,3 +1225,42 @@ export const experince = [
     years: "JAN 2021 - Jan 2022",
   },
 ] as const;
+
+export const comparison = [
+  {
+    id: 1,
+    model: "Landing Page",
+    loft: "10.5",
+    dim: "48 x 4.8 x 6",
+    weight: "0.75kg",
+    year: "2022",
+    price: "Check Price",
+  },
+  {
+    id: 2,
+    model: "Business Website",
+    loft: "10.5",
+    dim: "48 x 4.8 x 6",
+    weight: "0.75kg",
+    year: "2022",
+    price: "Check Price",
+  },
+  {
+    id: 3,
+    model: "E-Commerce",
+    loft: "10.5",
+    dim: "48 x 4.8 x 6",
+    weight: "0.75kg",
+    year: "2022",
+    price: "Check Price",
+  },
+  {
+    id: 4,
+    model: "Booking Platform",
+    loft: "10.5",
+    dim: "48 x 4.8 x 6",
+    weight: "0.75kg",
+    year: "2022",
+    price: "Check Price",
+  },
+] as const;
