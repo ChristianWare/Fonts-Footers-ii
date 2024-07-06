@@ -1,5 +1,6 @@
 .parent {
   border-top: 1px solid var(--green2);
+  background-color: var(--tan);
 }
 
 .content {

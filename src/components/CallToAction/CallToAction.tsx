@@ -1,5 +1,6 @@
 "use client";
 import Button from "../Button/Button";
+import Footerii from "../Footerii/Footerii";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./CallToAction.module.css";
 
@@ -9,8 +10,7 @@ const CallToAction = () => {
       <LayoutWrapper>
         <section className={styles.content}>
           <h2 className={styles.heading}>
-            Ready to start a <span className='span2'>project?</span> Let&apos;s
-            have a <span className='span1'> conversation</span>
+            Ready to start a <span className='span2'>project?</span>
           </h2>
           <p className={styles.copy}>
             Having your own direct booking website empowers you to establish a
@@ -24,6 +24,7 @@ const CallToAction = () => {
           </div>
         </section>
       </LayoutWrapper>
+      <Footerii />
     </section>
   );
 };
