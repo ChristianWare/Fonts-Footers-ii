@@ -1,5 +1,7 @@
-.container {
-  position: relative;
+.content {
+  padding: 3rem;
+  border-radius: 20px;
+  border: 1px solid var(--gray2);
 }
 
 .bottom {
@@ -20,6 +22,12 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
+}
+
+.heading {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 3rem;
 }
 
 .copy {
@@ -76,17 +84,19 @@
 
 .labelInputBox label {
   font-weight: 600;
-  color: var(--green3);
+  color: var(--black);
   margin-bottom: 0.5rem;
 }
 
 .labelInputBox input,
 .labelInputBox textarea {
-  border-radius: 20px;
+  border-radius: 16px;
   border: none;
   height: 40px;
   width: 100%;
   background-color: var(--tan);
+  border: 1px solid var(--gray2);
+
   color: var(--text);
   padding: 2rem;
   padding-left: 2rem;
@@ -142,7 +152,7 @@
   transition: background-color 0.1s ease-in, color 0.1s ease-in;
   color: var(--green);
   background-color: var(--green3);
-  border: 2px solid var(--green);
+  border: 1px solid var(--green2);
   cursor: pointer;
 }
 
@@ -151,7 +161,7 @@
   height: 30px;
   background-color: var(--green3);
   border-radius: 50%;
-  border: 2px solid var(--green);
+  border: 1px solid var(--green2);
   padding: 5px;
   color: var(--green);
   position: absolute;
@@ -167,7 +177,7 @@
 .btn:hover {
   background-color: var(--green);
   color: var(--green3);
-  border: 2px solid var(--green3);
+  border: 1px solid var(--green3);
 }
 
 .error {

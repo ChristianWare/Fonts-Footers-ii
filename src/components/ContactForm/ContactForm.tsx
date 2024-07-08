@@ -42,7 +42,11 @@ const ContactForm = () => {
   return (
     <div className={styles.content}>
       <div className={styles.bottom}>
-        <div className={styles.left}></div>
+        <div className={styles.left}>
+          <h2 className={styles.heading}>
+            Drop us a <span className='span2'>letter</span>
+          </h2>
+        </div>
         <div className={styles.right}>
           <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
             <div className={styles.namesContainer}>
