@@ -11,7 +11,7 @@ const Chart = () => {
             <thead className={styles.thead}>
               <tr className={styles.tr}>
                 <th className={styles.th}>Type</th>
-                <th className={styles.th}>Price \ mnth</th>
+                <th className={styles.th}>Price</th>
                 <th className={styles.th}>Dim</th>
                 <th className={styles.th}>Weight</th>
                 <th className={styles.th}>Year</th>

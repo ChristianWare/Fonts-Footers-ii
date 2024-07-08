@@ -1,7 +1,8 @@
 .tableContainer {
   border-radius: 20px;
+  border: 1px solid var(--gray2);
   overflow-x: scroll;
-  padding-top: 10rem;
+  /* padding-top: 10rem; */
 }
 
 .table {
@@ -10,9 +11,17 @@
   padding: 2rem;
 }
 
+.thead {
+  border-bottom: 1px solid #c7c4c4;
+}
+
 .tr {
   padding: 2rem;
   border-bottom: 1px solid var(--gray2);
+}
+
+.tr:last-child {
+  border-bottom: none;
 }
 
 .th {
