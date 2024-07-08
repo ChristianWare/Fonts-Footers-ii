@@ -17,7 +17,7 @@
   text-transform: capitalize;
   flex: 1;
   gap: 2rem;
-  border-radius: 50px;
+  border-radius: 8px;
   padding: 12px;
   padding-left: 20px;
   padding-right: 60px;
@@ -31,20 +31,21 @@
 .icon2 {
   width: 35px;
   height: 35px;
-  background-color: var(--green3);
+  /* background-color: var(--green3);
   border-radius: 50%;
-  border: 1px solid var(--green2);
+  border: 1px solid var(--green2); */
   padding: 5px;
-  color: var(--green2);
+  color: var(--green3);
   position: absolute;
   top: 5px;
   right: 6px;
+  transform: rotate(-45deg);
   transition: all 0.1s ease-in-out;
 }
 
-.btn:hover .icon2 {
+/* .btn:hover .icon2 {
   transform: rotate(-45deg);
-}
+} */
 
 .primary {
   color: var(--green);
@@ -56,7 +57,7 @@
   background-color: var(--black);
   border: 1px solid var(--green2);
 }
-
+/* 
 .primaryii:hover {
   color: var(--green);
   background-color: transparent;
@@ -67,7 +68,7 @@
   background-color: var(--green);
   color: var(--green3);
   border: 1px solid var(--green3);
-}
+} */
 
 .primaryNav {
   color: var(--green);
@@ -95,24 +96,24 @@
   padding: 5px 30px;
 }
 
-.secondary:hover,
+/* .secondary:hover,
 .secondaryNav:hover,
 .secondaryii:hover {
   background-color: var(--green3);
   color: var(--green);
-}
+} */
 
 .tertiary {
   color: var(--tan);
   background-color: var(--green);
   border: 1px solid var(--tan);
 }
-
+/* 
 .tertiary:hover {
   background-color: var(--tan);
   color: var(--green);
   border: 1px solid var(--tan);
-}
+} */
 
 @media screen and (max-width: 568px) {
   .btn {

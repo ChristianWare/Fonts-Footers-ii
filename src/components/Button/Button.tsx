@@ -19,7 +19,7 @@ const Button: FC<ButtonProps> = ({
     <button
       className={styles.container}
       onClick={() => {
-        if (onClick) onClick(); // Call the onClick prop if it exists
+        if (onClick) onClick();
       }}
     >
       <Link

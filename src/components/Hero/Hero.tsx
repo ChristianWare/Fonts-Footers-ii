@@ -19,7 +19,7 @@ const Hero = () => {
         >
           <div className={styles.left}>
             <h1 className={styles.heading}>
-              We build interactive and immersive websites.
+              We build interactive and immersive websites
             </h1>
             {/* <h1 className={styles.heading}>
               We build <span className={styles.span1}>interactive</span> and{" "}
