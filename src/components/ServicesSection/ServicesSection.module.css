@@ -123,7 +123,7 @@
 .heading {
   color: var(--black);
   line-height: 100% !important;
-  width: 40%;
+  width: 50%;
 }
 
 .processContainer:hover .processName,

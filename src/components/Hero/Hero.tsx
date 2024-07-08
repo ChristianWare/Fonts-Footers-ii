@@ -19,10 +19,13 @@ const Hero = () => {
         >
           <div className={styles.left}>
             <h1 className={styles.heading}>
+              We build interactive and immersive websites.
+            </h1>
+            {/* <h1 className={styles.heading}>
               We build <span className={styles.span1}>interactive</span> and{" "}
               <span className={styles.span2}> immersive</span> websites
               <span className={styles.span3}>.</span>
-            </h1>
+            </h1> */}
 
             <p className={styles.copy}>
               Stop depending on sites like Air BNB or VRBO for short-term rental

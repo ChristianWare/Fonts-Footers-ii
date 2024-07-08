@@ -16,13 +16,15 @@ const AboutScrollText = () => {
               height={100}
               className={styles.author}
             />
-            <p className={styles.authorDetails}>~ Chris Ware, Founder & CEO ~</p>
+            <p className={styles.authorDetails}>
+              ~ Chris Ware, Founder & CEO ~
+            </p>
           </div>
           <div className={styles.reveal}>
             <h2 className={styles.text}>
               We are <span className={styles.span1}>Fonts and Footers™,</span>
               an award-winning{" "}
-            <span className={styles.span2}>digital design agency</span>
+              <span className={styles.span2}>digital design agency</span>
               focusing on web design, web development, and SEO in the heart of{" "}
               <span className={styles.span1}>Phoenix, AZ.</span>
               We design creative brands, websites, and products that

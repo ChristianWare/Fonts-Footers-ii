@@ -1,6 +1,6 @@
 :root {
   --black: #37313b;
-  --green: #37313b;
+  --green: #37313bp;
   --green2: #808080;
   --green3: #aeff12;
   --green4: #31715d;
@@ -52,23 +52,28 @@ h4,
 h5,
 h6,
 span {
-  font-family: var(--switzer);
+  font-family: var(--cohere);
   color: var(--black);
   hyphens: auto;
 }
 
 h1 {
   font-size: 7.2rem;
-  line-height: 120%;
-  font-weight: 500;
-  letter-spacing: -3.5px;
+  line-height: 100%;
+  /* font-weight: 500; */
+  /* letter-spacing: -3.5px; */
+  font-weight: normal;
+  text-transform: uppercase;
+  font-variation-settings: "cuts" 100, "move" 100;
+  font-variant-ligatures: common-ligatures;
 }
 
 h2 {
-  font-size: 7.2rem;
-  line-height: 120%;
-  font-weight: 500;
-  letter-spacing: -3.5px;
+  font-size: 3.2rem;
+  font-variant-ligatures: none;
+  line-height: 115%;
+  letter-spacing: 0.01em;
+  font-weight: normal;
 }
 
 h3 {
@@ -117,7 +122,7 @@ textarea:focus {
 }
 
 .span1 {
-  font-family: var(--switzer);
+  font-family: var(--cohere);
   font-size: 7.2rem;
   font-weight: 500;
   letter-spacing: -2.9px;

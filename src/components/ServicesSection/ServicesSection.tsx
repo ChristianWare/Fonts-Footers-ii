@@ -14,10 +14,11 @@ const ServicesSection = () => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.right}>
-            <h2 className={styles.heading}>
+            <h2 className={styles.heading}>Types of websites we build</h2>
+            {/* <h2 className={styles.heading}>
               Types of <span className='span2'>websites</span> we{" "}
               <span className='span1'>build</span>
-            </h2>
+            </h2> */}
           </div>
           <div className={styles.left}>
             {services.map((x, index) => (

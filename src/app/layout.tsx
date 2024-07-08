@@ -30,6 +30,12 @@ const switzer = localFont({
   display: "swap",
 });
 
+const cohere = localFont({
+  src: "../../public/fonts/CohereVariable.e68773ed.woff2",
+  variable: "--cohere",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: {
     default: "Fonts & Footers",
@@ -57,7 +63,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${interTight.variable} ${switzer.variable} ${lb.variable}`}
+        className={`${interTight.variable} ${switzer.variable} ${lb.variable} ${cohere.variable}`}
       >
         <Toaster
           position='top-center'

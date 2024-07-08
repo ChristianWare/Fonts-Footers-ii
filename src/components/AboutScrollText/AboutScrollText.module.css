@@ -1,5 +1,6 @@
 .bgColor {
-  background-color: var(--green);
+  /* background-color: var(--green); */
+  background-color: var(--black);
 }
 
 .content {
