@@ -9,9 +9,6 @@
 
 .top {
   margin-bottom: 5rem;
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
 }
 
 .heading {
@@ -149,6 +146,11 @@
 }
 
 @media screen and (max-width: 1068px) {
+  .heading {
+    width: 100%;
+    text-align: center;
+  }
+
   .mapContainer {
     grid-template-columns: repeat(2, 1fr);
   }
