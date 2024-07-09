@@ -22,12 +22,12 @@ const ScrollHorizontalText = ({ text, bottomBorder = false }: Props) => {
     >
       <div className={styles.track}>
         {[...Array(20)].map((_, index) => (
-          <h2 key={index} className={styles.text}>
+          <div key={index} className={styles.text}>
             {textWithArrows}
             {textWithArrows}
             {textWithArrows}
             {textWithArrows}
-          </h2>
+          </div>
         ))}
       </div>
     </div>

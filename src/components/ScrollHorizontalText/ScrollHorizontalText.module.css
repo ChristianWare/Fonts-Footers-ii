@@ -19,13 +19,14 @@
 }
 
 .text {
-  margin: 0;
   color: var(--green);
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   display: flex;
   align-items: center;
   white-space: nowrap;
-  letter-spacing: 0px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: .2rem;
 }
 
 .icon2 {

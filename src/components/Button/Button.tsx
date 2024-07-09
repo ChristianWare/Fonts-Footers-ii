@@ -16,22 +16,24 @@ const Button: FC<ButtonProps> = ({
   onClick,
 }) => {
   return (
-    <button
-      className={styles.container}
-      onClick={() => {
-        if (onClick) onClick();
-      }}
-    >
-      <Link
-        href={href}
-        className={`${styles.btn} ${styles[btnType]}`}
-        target={target}
-        download={download}
+    <>
+      <button
+        className={styles.container}
+        onClick={() => {
+          if (onClick) onClick();
+        }}
       >
-        {text}
-        {arrow && <Arrow2 className={styles.icon2} />}
-      </Link>
-    </button>
+        <Link
+          href={href}
+          className={`${styles.btn} ${styles[btnType]}`}
+          target={target}
+          download={download}
+        >
+          {text}
+          {arrow && <Arrow2 className={styles.icon2} />}
+        </Link>
+      </button>
+    </>
   );
 };
 export default Button;

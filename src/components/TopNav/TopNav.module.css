@@ -20,12 +20,6 @@
   border-right: 1px solid var(--green2);
 }
 
-
-.location {
-  font-family: var(--oswald);
-  color: var(--green);
-}
-
 .leftBottom {
   display: flex;
   align-items: center;
@@ -34,7 +28,7 @@
 }
 
 .detail {
-  border: 1px solid var(--green);
+  border: 1px solid var(--black);
   border-radius: 50%;
   width: 30px;
   height: 30px;

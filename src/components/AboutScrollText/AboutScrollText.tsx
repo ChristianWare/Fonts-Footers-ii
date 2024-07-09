@@ -22,13 +22,10 @@ const AboutScrollText = () => {
           </div>
           <div className={styles.reveal}>
             <h2 className={styles.text}>
-              We are <span className={styles.span1}>Fonts and Footers™,</span>
-              an award-winning{" "}
-              <span className={styles.span2}>digital design agency</span>
+              We are Fonts and Footers™, an award-winning digital design agency
               focusing on web design, web development, and SEO in the heart of{" "}
-              <span className={styles.span1}>Phoenix, AZ.</span>
-              We design creative brands, websites, and products that
-              <span className={styles.span2}>deliver results.</span>
+              Phoenix, AZ. We design creative brands, websites, and products
+              that deliver results.
               {/* Welcome to Fonts and Footers™, the premier web design agency in
               Phoenix, AZ. Our team specializes in creating responsive, visually
               stunning websites that elevate your brand and engage your

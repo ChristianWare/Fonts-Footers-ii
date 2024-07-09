@@ -4,20 +4,21 @@
 }
 
 .btn {
-  font-family: var(--switzer);
+  font-family: var(--cohere);
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 500;
+  letter-spacing: 0.1px;
   white-space: nowrap;
   user-select: none;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  text-transform: capitalize;
+  text-transform: uppercase;
   flex: 1;
   gap: 2rem;
-  border-radius: 8px;
+  border-radius: 50px;
   padding: 12px;
   padding-left: 20px;
   padding-right: 60px;
@@ -29,8 +30,8 @@
 }
 
 .icon2 {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   /* background-color: var(--green3);
   border-radius: 50%;
   border: 1px solid var(--green2); */
@@ -73,7 +74,7 @@
 .primaryNav {
   color: var(--green);
   background-color: var(--green3);
-  border: 1px solid var(--green);
+  border: 1px solid var(--green2);
   padding: 5px 30px;
   font-size: 1.4rem;
 }
