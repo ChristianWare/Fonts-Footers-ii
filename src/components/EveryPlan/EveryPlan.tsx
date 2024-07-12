@@ -59,10 +59,7 @@ const EveryPlan = () => {
       <LayoutWrapper>
         <div className={styles.top}>
           <h2 className={styles.heading}>
-            What&apos;s <span className='span2'>included</span> in{" "}
-            <span className='span1'>every</span>{" "}
-            <span className='span1'>plan</span>
-            <span className='span2'>...</span>
+            What&apos;s included in every plan ...
           </h2>
         </div>
         <div className={styles.bottom}>
