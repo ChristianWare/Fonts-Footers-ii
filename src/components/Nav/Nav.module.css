@@ -32,10 +32,8 @@
   font-size: 1.6rem;
   text-transform: capitalize;
   font-family: var(--cohere);
-  /* font-weight: 700; */
   text-transform: uppercase;
   letter-spacing: 1.1px;
-  /* opacity: 0.8; */
   color: var(--black);
   user-select: none;
   scroll-behavior: smooth;
@@ -117,7 +115,7 @@
   .navbar {
     justify-content: flex-end;
   }
-
+  /* 
   .overlay {
     position: fixed;
     top: 0;
@@ -131,12 +129,12 @@
     transition: opacity 0.3s ease, visibility 0.3s ease,
       backdrop-filter 0.3s ease;
     backdrop-filter: blur(5px);
-  }
+  } */
 
-  .overlay.visible {
+  /* .overlay.visible {
     opacity: 1;
     visibility: visible;
-  }
+  } */
 
   .navMenu {
     position: fixed;
@@ -145,29 +143,32 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    gap: 3rem;
     width: 100%;
     height: 100vh;
     transition: 0.3s all ease-in;
     z-index: 1000;
-    background-color: var(--tan);
-    border: 1px solid var(--black);
+    background-color: var(--);
     padding-left: 2rem;
     transform-origin: top;
-    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in;
+    backdrop-filter: blur(5px);
   }
 
   .navMenu.active {
-    right: -35%;
+    right: 0%;
   }
 
   .navItem {
-    color: var(--green);
-    font-family: var(--oswald);
-    font-size: 4rem;
+    color: var(--green3);
+    font-size: 6rem;
     font-weight: 600;
     line-height: 0.8;
     text-transform: uppercase;
     letter-spacing: -1px;
+    font-variation-settings: "cuts" 100, "move" 100;
+    font-variant-ligatures: common-ligatures;
   }
 
   .bottomDesktop {
@@ -228,6 +229,7 @@
   .hamburger.active .whiteBar:nth-child(1) {
     -webkit-transform: translateY(8px) rotate(45deg);
     transform: translateY(8px) rotate(45deg);
+    background-color: var(--green3);
   }
 
   .hamburger.active .whiteBar:nth-child(2) {
@@ -237,6 +239,7 @@
   .hamburger.active .whiteBar:nth-child(3) {
     -webkit-transform: translateY(-8px) rotate(-45deg);
     transform: translateY(-8px) rotate(-45deg);
+    background-color: var(--green3);
   }
 }
 

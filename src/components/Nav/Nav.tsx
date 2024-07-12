@@ -84,6 +84,7 @@ function Nav() {
                 ? styles.navMenu
                 : `${styles.navMenu} ${styles.active}`
             }
+            onClick={openMenu}
           >
             <li className={styles.navItem} onClick={() => setIsOpen(false)}>
               <Link href='/' className={styles.navItem}>
@@ -114,22 +115,6 @@ function Nav() {
                 </Link>
               </li>
             ))}
-            {/* {isOpen && (
-              <div className={styles.btnContainerMobile}>
-                <Button
-                  href='/contact'
-                  text='Call Us'
-                  btnType='secondary'
-                  arrow
-                />
-                <Button
-                  href='/contact/#schedule'
-                  text='Schedule a call'
-                  btnType='secondary'
-                  arrow
-                />
-              </div>
-            )} */}
           </ul>
           {isOpen && (
             <div

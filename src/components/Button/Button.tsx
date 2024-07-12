@@ -3,7 +3,6 @@
 import { FC } from "react";
 import Link from "next/link";
 import { ButtonProps } from "@/lib/interface";
-import Arrow2 from "../../../public/icons/arrow2.svg";
 import styles from "./Button.module.css";
 
 const Button: FC<ButtonProps> = ({
@@ -12,7 +11,6 @@ const Button: FC<ButtonProps> = ({
   btnType,
   target = "",
   download,
-  arrow,
   onClick,
 }) => {
   return (
@@ -30,7 +28,6 @@ const Button: FC<ButtonProps> = ({
           download={download}
         >
           {text}
-          {arrow && <Arrow2 className={styles.icon2} />}
         </Link>
       </button>
     </>
