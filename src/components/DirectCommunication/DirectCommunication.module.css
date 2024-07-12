@@ -1,6 +1,6 @@
 .container {
-  border-top: 1px solid var(--green2);
-  border-bottom: 1px solid var(--green2);
+  border-top: 1px solid var(--lightBlack);
+  border-bottom: 1px solid var(--lightBlack);
   background-color: var(--tan);
 }
 
@@ -36,7 +36,7 @@
 }
 
 .card:nth-child(even) {
-  border-left: 1px solid var(--green2);
+  border-left: 1px solid var(--lightBlack);
 }
 
 .iconContainer {

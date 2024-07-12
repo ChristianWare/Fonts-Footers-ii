@@ -11,9 +11,9 @@
   margin-left: auto;
   padding-bottom: 2rem;
   z-index: 1000;
-  border-left: 1px solid var(--green2);
-  border-right: 1px solid var(--green2);
-  border-bottom: 1px solid var(--green2);
+  border-left: 1px solid var(--lightBlack);
+  border-right: 1px solid var(--lightBlack);
+  border-bottom: 1px solid var(--lightBlack);
   border-bottom-left-radius: 18px;
   border-bottom-right-radius: 18px;
 }

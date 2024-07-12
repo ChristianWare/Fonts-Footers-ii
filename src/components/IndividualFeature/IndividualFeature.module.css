@@ -1,7 +1,7 @@
 .heading {
   text-align: center;
   padding-top: 5rem;
-  border-bottom: 1px solid var(--green2);
+  border-bottom: 1px solid var(--lightBlack);
   padding-bottom: 1rem;
   width: fit-content;
   margin-left: auto;
@@ -51,7 +51,7 @@
   padding-bottom: 1rem;
   font-family: var(--raleway);
   font-weight: 700;
-  border-bottom: 1px solid var(--green2);
+  border-bottom: 1px solid var(--lightBlack);
   margin-top: 2rem;
   margin-bottom: 2rem;
 }

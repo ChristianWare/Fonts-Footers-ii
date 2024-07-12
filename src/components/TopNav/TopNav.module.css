@@ -1,5 +1,5 @@
 .header {
-  border-bottom: 1px solid var(--green2);
+  border-bottom: 1px solid var(--lightBlack);
   padding-left: 30px;
   padding-right: 30px;
   background-color: var(--tan);
@@ -16,8 +16,8 @@
   padding: 1rem 5.2rem;
   padding-top: 2rem;
   z-index: 1000;
-  border-left: 1px solid var(--green2);
-  border-right: 1px solid var(--green2);
+  border-left: 1px solid var(--lightBlack);
+  border-right: 1px solid var(--lightBlack);
 }
 
 .leftBottom {

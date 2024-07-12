@@ -60,7 +60,7 @@
 .img {
   object-fit: cover;
   border-radius: 20px;
-  border: 1px solid var(--green2);
+  border: 1px solid var(--lightBlack);
 }
 
 .bottomRight {
@@ -72,7 +72,7 @@
 }
 
 .br1 {
-  border: 1px solid var(--green2);
+  border: 1px solid var(--lightBlack);
   padding: 2rem;
   padding-top: 15rem;
   border-radius: 20px;
@@ -143,12 +143,14 @@
     height: 300px;
   }
 
-  .top, .arrowContainerii {
+  .top,
+  .arrowContainerii {
     align-items: flex-start;
     justify-content: flex-start;
   }
 
-  .heading, .copy {
+  .heading,
+  .copy {
     text-align: left;
   }
 }

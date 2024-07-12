@@ -34,7 +34,7 @@
   height: 30px;
   /* background-color: var(--green3);
   border-radius: 50%;
-  border: 1px solid var(--green2); */
+  border: 1px solid var(--lightBlack); */
   padding: 5px;
   color: var(--green3);
   position: absolute;
@@ -51,12 +51,12 @@
 .primary {
   color: var(--green);
   background-color: var(--green3);
-  border: 1px solid var(--green2);
+  border: 1px solid var(--lightBlack);
 }
 .primaryii {
   color: var(--green3);
   background-color: var(--black);
-  border: 1px solid var(--green2);
+  border: 1px solid var(--lightBlack);
 }
 /* 
 .primaryii:hover {
@@ -74,7 +74,7 @@
 .primaryNav {
   color: var(--green);
   background-color: var(--green3);
-  border: 1px solid var(--green2);
+  border: 1px solid var(--lightBlack);
   padding: 5px 30px;
   font-size: 1.4rem;
 }
@@ -82,7 +82,7 @@
 .secondary {
   color: var(--green);
   background-color: var(--white);
-  border: 1px solid var(--green2);
+  border: 1px solid var(--lightBlack);
 }
 
 .secondaryii {

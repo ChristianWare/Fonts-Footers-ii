@@ -39,7 +39,7 @@
 
 .left ul {
   margin-bottom: 3rem;
-  border: 1px solid var(--green2);
+  border: 1px solid var(--lightBlack);
   background-color: var(--white);
   border-radius: 20px;
   padding: 3rem;
@@ -59,8 +59,8 @@
 
 .left blockquote {
   padding: 3rem;
-  border: 1px solid var(--green2);
-  border-left: 5px solid var(--green2);
+  border: 1px solid var(--lightBlack);
+  border-left: 5px solid var(--lightBlack);
   border-radius: 20px;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;

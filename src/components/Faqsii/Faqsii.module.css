@@ -96,7 +96,7 @@
 }
 
 .answer {
-  color: var(--green2);
+  color: var(--lightBlack);
   font-weight: 500;
   margin-top: 1.5rem;
   hyphens: auto;

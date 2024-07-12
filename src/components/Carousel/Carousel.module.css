@@ -1,5 +1,5 @@
 .container {
-  border-bottom: 1px solid var(--green2);
+  border-bottom: 1px solid var(--lightBlack);
 }
 
 .title {
@@ -40,7 +40,7 @@
 .img {
   object-fit: cover;
   border-radius: 20px;
-  border: 1px solid var(--green2);
+  border: 1px solid var(--lightBlack);
 }
 
 .prevContainer,

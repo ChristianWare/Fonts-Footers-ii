@@ -152,7 +152,7 @@
   transition: background-color 0.1s ease-in, color 0.1s ease-in;
   color: var(--green);
   background-color: var(--green3);
-  border: 1px solid var(--green2);
+  border: 1px solid var(--lightBlack);
   cursor: pointer;
 }
 
@@ -161,7 +161,7 @@
   height: 30px;
   background-color: var(--green3);
   border-radius: 50%;
-  border: 1px solid var(--green2);
+  border: 1px solid var(--lightBlack);
   padding: 5px;
   color: var(--green);
   position: absolute;

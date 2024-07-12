@@ -10,7 +10,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: 1rem;
-  border: 1px solid var(--green2);
+  border: 1px solid var(--lightBlack);
   background-color: var(--tan);
   border-radius: 20px;
   padding: 3rem;

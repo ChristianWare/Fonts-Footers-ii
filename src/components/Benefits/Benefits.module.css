@@ -13,7 +13,7 @@
 .benefitContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  border: 1px solid var(--green2);
+  border: 1px solid var(--lightBlack);
   border-radius: 20px;
   padding: 3rem;
 }

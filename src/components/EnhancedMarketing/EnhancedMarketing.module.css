@@ -1,7 +1,7 @@
 .container {
   background-color: var(--tan);
-  border-top: 1px solid var(--green2);
-  /* border-bottom: 1px solid var(--green2); */
+  border-top: 1px solid var(--lightBlack);
+  /* border-bottom: 1px solid var(--lightBlack); */
 }
 
 .content {
@@ -35,7 +35,7 @@
 .card {
   padding-bottom: 2rem;
   margin-bottom: 2rem;
-  border-bottom: 1px solid var(--green2);
+  border-bottom: 1px solid var(--lightBlack);
 }
 
 .card:nth-last-child() {

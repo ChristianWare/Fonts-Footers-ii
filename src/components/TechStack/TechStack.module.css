@@ -1,7 +1,7 @@
 .container {
   background-color: var(--tan);
-  border-top: 1px solid var(--green2);
-  border-bottom: 1px solid var(--green2);
+  border-top: 1px solid var(--lightBlack);
+  border-bottom: 1px solid var(--lightBlack);
 }
 
 .top {
@@ -29,7 +29,7 @@
 }
 
 .box {
-  border: 1px solid var(--green2);
+  border: 1px solid var(--lightBlack);
   padding: 3rem;
   border-radius: 20px;
   display: flex;
