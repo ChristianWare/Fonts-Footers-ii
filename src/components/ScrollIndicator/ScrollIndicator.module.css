@@ -15,13 +15,3 @@
   border-bottom: 1px solid var(--gray2);
   transition: none;
 }
-
-@media screen and (max-width: 480px) {
-  .progressWrapper {
-    height: 7.5px;
-  }
-
-  .progressMainStyle {
-    height: 7.5px;
-  }
-}

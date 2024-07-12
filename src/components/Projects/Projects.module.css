@@ -55,15 +55,24 @@
   border: 1px solid var(--gray2);
 }
 
+.rightTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
 .title {
-  margin-bottom: 3rem;
   font-size: 3rem;
   color: var(--green);
+  text-align: center;
 }
 
 .desc {
   color: var(--green);
   opacity: 0.8;
+  text-align: center;
 }
 
 .rightBottom {
@@ -128,9 +137,9 @@
   width: 100%;
 }
 
-.falseBtnContainer1 {
+/* .falseBtnContainer1 {
   margin-bottom: 3rem;
-}
+} */
 
 .falseBtnContainer {
   cursor: pointer;

@@ -1,5 +1,4 @@
 .bgColor {
-  /* background-color: var(--green); */
   background-color: var(--black);
 }
 
@@ -7,19 +6,21 @@
   padding-top: 15rem;
 }
 
-/* . {
-  letter-spacing: -1.5px;
-  font-size: 4rem;
+.heading {
   color: var(--green3);
-  font-weight: 500;
-  } */
+  margin-bottom: 3rem;
+  text-align: center;
+}
 
 .text {
   font-size: 3.2rem;
   font-variant-ligatures: none;
   line-height: 115%;
   width: 60%;
+  margin-left: auto;
+  margin-right: auto;
   letter-spacing: 0.01em;
+  text-align: center;
   font-weight: normal;
   color: var(--green3);
   text-transform: none;
@@ -43,8 +44,8 @@
 .bottom {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   gap: 2rem;
   margin-bottom: 5rem;
 }
@@ -67,8 +68,8 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .text {
     text-align: left;
   }
-}
+} */

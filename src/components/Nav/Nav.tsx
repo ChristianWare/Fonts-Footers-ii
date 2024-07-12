@@ -18,21 +18,18 @@ const navItems = [
     href: "/about",
   },
   {
+    text: "Projects",
+    href: "/projects",
+  },
+  {
     text: "Pricing",
     href: "/pricing",
   },
-  // {
-  //   text: "FAQS",
-  //   href: "/faqs",
-  // },
   {
     text: "Blog",
     href: "/blog",
   },
-  // {
-  //   text: "Glossary",
-  //   href: "/glossary",
-  // },
+
   {
     text: "Contact",
     href: "/contact",
@@ -41,11 +38,9 @@ const navItems = [
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isOverlayVisible, setIsOverlayVisible] = useState(false);
 
   const openMenu = () => {
     setIsOpen(!isOpen);
-    setIsOverlayVisible(!isOverlayVisible);
   };
 
   useEffect(() => {
@@ -116,17 +111,7 @@ function Nav() {
               </li>
             ))}
           </ul>
-          {isOpen && (
-            <div
-              className={`${styles.overlay} ${
-                isOverlayVisible ? styles.visible : ""
-              }`}
-              onClick={() => {
-                setIsOpen(false);
-                setIsOverlayVisible(false);
-              }}
-            ></div>
-          )}
+          
           <div className={styles.btnContainer}>
             <Button
               href='/contact/#schedule'

@@ -63,7 +63,7 @@ h2 {
   line-height: 100%;
   font-weight: normal;
   text-transform: uppercase;
-  font-variation-settings: "cuts" 100, "move" 100;
+  font-variation-settings: "cuts" 300, "move" 100;
   font-variant-ligatures: common-ligatures;
 }
 

@@ -53,7 +53,7 @@ export default async function Home() {
       <ScrollHorizontalText text='Reviews' bottomBorder={false} />
       <Testimonials />
       <ScrollHorizontalText text='Reviews' bottomBorder={true} />
-      <Pricing />
+      <Pricing bgColor='tan' />
       <Faqsiii />
       <BlogSection data={data} />
       <ScrollHorizontalText text='Why Choose Us?' bottomBorder={false} />

@@ -41,10 +41,7 @@ const Projects = () => {
       <LayoutWrapper>
         <div className={styles.contentParent} ref={container}>
           <div className={styles.top}>
-            <h2 className={styles.heading}>
-              <span className='span2'>Projects</span> highligting our{" "}
-              <span className='span1'>expertise</span>
-            </h2>
+            <h2 className={styles.heading}>Projects</h2>
           </div>
           <div className={styles.mapContainer}>
             {projects.map((project: any, index: number) => (
@@ -59,12 +56,7 @@ const Projects = () => {
             ))}
           </div>
           <div className={styles.btnContainer}>
-            <Button
-              btnType='primary'
-              href='/'
-              text='ready to stars a project?'
-              arrow
-            />
+            <Button btnType='primaryii' href='/' text='All Projects' arrow />
           </div>
         </div>
       </LayoutWrapper>

@@ -1,3 +1,7 @@
+.container {
+  background-color: transparent;
+}
+
 .tan {
   background-color: var(--tan);
 }
@@ -37,7 +41,6 @@
 }
 
 .option {
-  font-family: var(--raleway);
   font-weight: 700;
   font-size: 2rem;
 }
