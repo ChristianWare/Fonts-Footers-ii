@@ -71,7 +71,7 @@
   padding: 3rem;
   z-index: 999;
   background-color: var(--black);
-  border-radius: 20px;
+  border-radius: 10px;
   border: 2px solid var(--green3);
 }
 
