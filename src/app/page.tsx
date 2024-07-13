@@ -19,6 +19,7 @@ import AboutScrollText from "@/components/AboutScrollText/AboutScrollText";
 import { Reviewsii } from "@/components/Reviewsii/Reviewsii";
 import Faqsiii from "@/components/Faqsiii/Faqsiii";
 import EveryPlan from "@/components/EveryPlan/EveryPlan";
+import HowItWorks from "@/components/HowItWorks/HowItWorks";
 
 async function getData() {
   const query = `
@@ -49,10 +50,11 @@ export default async function Home() {
       <AboutScrollText />
       <ServicesSection />
       <EveryPlan />
-      <Projects />
+      <HowItWorks />
       <ScrollHorizontalText text='Reviews' bottomBorder={false} />
       <Testimonials />
       <ScrollHorizontalText text='Reviews' bottomBorder={true} />
+      <Projects />
       <Pricing bgColor='tan' />
       <Faqsiii />
       <BlogSection data={data} />
