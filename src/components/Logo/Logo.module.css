@@ -1,9 +1,10 @@
 .logo {
-  font-family: var(--interTight);
+  font-family: var(--cohere);
   font-size: 2rem;
   font-weight: 600;
   color: var(--black);
   user-select: none;
+  /* text-transform: uppercase; */
 }
 
 .span2 {
@@ -18,4 +19,9 @@
 
 .white {
   color: var(--white);
+}
+
+.green {
+  color: var(--green3);
+  font-size: 3rem;
 }

@@ -8,7 +8,7 @@ const AboutScrollText = () => {
     <section className={styles.bgColor}>
       <LayoutWrapper color='green3'>
         <div className={styles.content}>
-          <h2 className={styles.heading}>About Us</h2>
+          <h2 className={styles.heading}>Who are we?</h2>
           <div className={styles.bottom}>
             <Image
               src={Author}
@@ -21,20 +21,18 @@ const AboutScrollText = () => {
               ~ Chris Ware, Founder & CEO ~
             </p>
           </div>
-          <div className={styles.reveal}>
-            <p className={styles.text}>
-              We are Fonts and Footers™, an award-winning digital design agency
-              focusing on web design, web development, and SEO in the heart of{" "}
-              Phoenix, AZ. We design creative brands, websites, and products
-              that deliver results.
-              {/* Welcome to Fonts and Footers™, the premier web design agency in
+          <p className={styles.text}>
+            We are Fonts and Footers™, an award-winning digital design agency
+            focusing on web design, web development, and SEO in the heart of{" "}
+            Phoenix, AZ. We design creative brands, websites, and products that
+            deliver results.
+            {/* Welcome to Fonts and Footers™, the premier web design agency in
               Phoenix, AZ. Our team specializes in creating responsive, visually
               stunning websites that elevate your brand and engage your
               audience. Whether you&apos;re a startup, small business, or
               established enterprise, we have the expertise to bring your vision
               to life. */}
-            </p>
-          </div>
+          </p>
         </div>
       </LayoutWrapper>
     </section>
