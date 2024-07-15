@@ -32,12 +32,12 @@ export default async function FAQPage() {
   return (
     <>
       <PageIntro
-        text='Frequently'
-        span='Asked Questions'
-        h1OutlineColor='greenOutline'
-        h1Color='green'
+        text='Frequently asked Questions'
+        h1Color='black'
         copy="Here are some commonly asked questions and their answers below. If you don't see your questions here, call us any time."
-        copyColor='green'
+        copyColor='black'
+        orientation='center'
+        bgColor='tan'
       />
       <Faqsiii />
       <Pricing />

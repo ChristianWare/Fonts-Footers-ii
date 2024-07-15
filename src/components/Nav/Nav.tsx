@@ -26,6 +26,10 @@ const navItems = [
     href: "/pricing",
   },
   {
+    text: "FAQ's",
+    href: "/faqs",
+  },
+  {
     text: "Blog",
     href: "/blog",
   },
@@ -111,7 +115,7 @@ function Nav() {
               </li>
             ))}
           </ul>
-          
+
           <div className={styles.btnContainer}>
             <Button
               href='/contact/#schedule'

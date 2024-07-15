@@ -11,6 +11,7 @@ import FalseButton from "../FalseButton/FalseButton";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Experienceii from "../Experienceii/Experienceii";
 import Button from "../Button/Button";
+import { usePathname } from "next/navigation";
 
 interface Project {
   title: string;
@@ -36,28 +37,39 @@ const Projects = () => {
     offset: ["start end", "end start"],
   });
 
+  const pathname = usePathname();
+
   return (
     <section className={styles.container}>
       <LayoutWrapper>
         <div className={styles.contentParent} ref={container}>
           <div className={styles.top}>
-            <h2 className={styles.heading}>Projects</h2>
+            {pathname === "/" && <h2 className={styles.heading}>Projects</h2>}
           </div>
           <div className={styles.mapContainer}>
-            {projects.map((project: any, index: number) => (
-              <ContentItem
-                key={project.title}
-                project={project}
-                index={index}
-                scrollYProgress={scrollYProgress}
-                isModalOpen={isModalOpen}
-                setIsModalOpen={setIsModalOpen}
+            {projects
+              .slice(0, pathname === "/" ? 3 : projects.length)
+              .map((project: any, index: number) => (
+                <ContentItem
+                  key={project.title}
+                  project={project}
+                  index={index}
+                  scrollYProgress={scrollYProgress}
+                  isModalOpen={isModalOpen}
+                  setIsModalOpen={setIsModalOpen}
+                />
+              ))}
+          </div>
+          {pathname === "/" && (
+            <div className={styles.btnContainer}>
+              <Button
+                btnType='primaryii'
+                href='/projects'
+                text='All Projects'
+                arrow
               />
-            ))}
-          </div>
-          <div className={styles.btnContainer}>
-            <Button btnType='primaryii' href='/' text='All Projects' arrow />
-          </div>
+            </div>
+          )}
         </div>
       </LayoutWrapper>
     </section>

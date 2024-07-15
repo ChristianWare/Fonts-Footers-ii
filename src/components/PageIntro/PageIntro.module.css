@@ -1,3 +1,11 @@
+.tan {
+  background-color: var(--tan);
+}
+
+.container {
+  position: relative;
+}
+
 .content {
   display: flex;
   flex-direction: column;
@@ -6,10 +14,6 @@
   gap: 2rem;
   z-index: 999;
   padding-top: 5rem;
-}
-
-.container {
-  position: relative;
 }
 
 .imgOverlay {
@@ -47,13 +51,20 @@
   color: var(--tan);
 }
 
-.copy {
+.heading {
   width: 60%;
-  color: var(--tan);
 }
 
-.green {
-  color: var(--green);
+.copy {
+  width: 60%;
+  font-size: 1.8rem;
+  opacity: 0.8;
+  color: var(--tan);
+  text-transform: none;
+}
+
+.black {
+  color: var(--black);
 }
 
 .span {
