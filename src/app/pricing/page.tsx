@@ -3,8 +3,10 @@ import Chart from "@/components/Chart/Chart";
 import EveryPlan from "@/components/EveryPlan/EveryPlan";
 import Faqsiii from "@/components/Faqsiii/Faqsiii";
 import HowItWorks from "@/components/HowItWorks/HowItWorks";
+import IndividualService from "@/components/IndividualService/IndividualService";
 import PageIntro from "@/components/PageIntro/PageIntro";
 import Pricing from "@/components/Pricing/Pricing";
+import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
 import { simpleBlogCard } from "@/lib/interface";
 import { client } from "@/lib/sanity";
 import { Metadata } from "next";
@@ -36,7 +38,10 @@ export default async function PricingPage() {
   return (
     <>
       <Pricing bgColor='tan' />
+      <ScrollHorizontalText text='Compare plans' bottomBorder={true} />
       <Chart />
+      <ScrollHorizontalText text='Compare plans' bottomBorder={true} />
+      <IndividualService />
       <EveryPlan />
       <HowItWorks />
       <Faqsiii />

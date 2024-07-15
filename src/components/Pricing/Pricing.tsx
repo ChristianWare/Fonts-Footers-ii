@@ -21,7 +21,11 @@ const Pricing = ({ bgColor = "" }: Props) => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.top}>
-            <h2 className={styles.heading}>Pricing</h2>
+            {pathname === "/pricing" ? (
+              <h1 className={styles.heading}>Pricing</h1>
+            ) : (
+              <h2 className={styles.heading}>Pricing</h2>
+            )}
 
             <p className={styles.copy}>
               Subscription based pricing. No contracts. Pause or cancel whenever

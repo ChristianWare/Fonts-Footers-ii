@@ -1,8 +1,17 @@
+.parent {
+  padding-top: 10rem;
+}
+
+.heading {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
 .tableContainer {
   border-radius: 20px;
   border: 1px solid var(--gray2);
   overflow-x: scroll;
-  /* padding-top: 10rem; */
 }
 
 .table {
