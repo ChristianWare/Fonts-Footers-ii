@@ -19,10 +19,7 @@ const Faqsiii = () => {
         <div className={styles.content}>
           <div className={styles.top}>
             <div className={styles.sectionIntroContainer}>
-              <h2 className={styles.heading}>
-                You <span className='span2'>ask, </span> <br /> we{" "}
-                <span className='span1'>answer</span>{" "}
-              </h2>
+              <h2 className={styles.heading}>You may have wondered...</h2>
             </div>
             <p className={styles.copy}>
               Here are some common questions asked by potential employers. If

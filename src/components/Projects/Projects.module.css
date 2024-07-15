@@ -52,7 +52,7 @@
   border-bottom-right-radius: 0px;
   padding: 3rem;
   background-size: 10px 10px;
-  border: 1px solid var(--gray2);
+  border: 1px solid var(--lightBlack);
 }
 
 .rightTop {

@@ -16,7 +16,7 @@
 
 .processContainer {
   border-radius: 20px;
-  border: 1px solid gray;
+  border: 1px solid var(--lightBlack);
   padding: 3rem;
   display: flex;
   flex-direction: column;

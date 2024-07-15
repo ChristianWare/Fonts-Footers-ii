@@ -15,9 +15,10 @@
 .text {
   letter-spacing: -1.5px;
   width: 60%;
-  font-size: 4rem;
+  font-size: 3.2rem;
   color: var(--green3);
   line-height: 120%;
+  text-transform: none;
 }
 
 .bottom {

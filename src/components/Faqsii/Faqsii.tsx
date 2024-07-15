@@ -22,7 +22,6 @@ const Faqsiii = () => {
         <div className={styles.content}>
           <div className={styles.top}>
             <div className={styles.sectionIntroContainer}>
-              {/* <SectionIntro text='Frequently asked questions' /> */}
             </div>
             <h2 className={styles.heading}>• You May Have Wondered •</h2>
             <p className={styles.copy}>

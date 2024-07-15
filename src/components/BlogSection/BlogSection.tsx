@@ -28,10 +28,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
                 pathname === "/blog" ? "the latest" : "Insghts from our blog"
               }
             /> */}
-            <h2 className={styles.header}>
-              <span className='span2'>Insights</span> from our{" "}
-              <span className='span1'>Blog</span>
-            </h2>
+            <h2 className={styles.header}>Our Blog</h2>
           </div>
           <div className={styles.bottom}>
             {data?.length > 0 &&
