@@ -8,24 +8,27 @@
   margin-bottom: 5rem;
 }
 
+.copy {
+  text-align: center;
+  font-size: 1.5rem;
+  opacity: 0.8;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
 .parent {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 3rem;
 }
 
 .content {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 3rem;
-  /* background-color: var(--tan2); */
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 2rem;
   border-radius: 20px;
   transition: all 0.2s ease-in;
-  cursor: pointer;
-}
-
-.content:hover {
-  background-color: var(--green3);
+  margin-bottom: 6rem;
 }
 
 .left {
@@ -34,8 +37,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 3rem;
+  /* gap: 3rem; */
   padding: 5rem;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+
+.left:hover {
+  background-color: var(--green3);
 }
 
 .title {
@@ -55,11 +64,52 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-  /* padding: 2rem; */
 }
 
 .icon {
-  color: var(--green);
+  color: var(--black);
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.span {
+  width: 100%;
+  font-weight: 600;
+  border-bottom: 1px solid var(--lightBlack);
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  display: block;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  list-style: none;
+  width: 100%;
+}
+
+.reasonTitleContainer {
+  border: 1px solid var(--lightBlack);
+  border-radius: 20px;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.reasonTitle {
+  list-style: none;
+  font-weight: 500;
+  text-align: center;
+  word-break: break-all;
 }
 
 @media screen and (max-width: 1068px) {
@@ -68,24 +118,22 @@
   }
 
   .left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
+    padding: 3rem;
+  }
+
+  .span {
+    text-align: center;
   }
 }
 
-@media screen and (max-width: 1068px) {
-  .box,
-  .parent {
+@media screen and (max-width: 768px) {
+  .box {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (max-width: 568px) {
-  .box,
-  .parent {
+  .box {
     grid-template-columns: repeat(1, 1fr);
   }
 }

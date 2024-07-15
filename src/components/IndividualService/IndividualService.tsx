@@ -1,12 +1,12 @@
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./IndividualService.module.css";
-import SEO from "../../../public/icons/search.svg";
 import Booking from "../../../public/icons/booking.svg";
 import Business from "../../../public/icons/business.svg";
 import Landing from "../../../public/icons/landing.svg";
 import Cart from "../../../public/icons/cart.svg";
-import Button from "../Button/Button";
 import Link from "next/link";
+import Button from "../Button/Button";
+import FalseButton from "../FalseButton/FalseButton";
 
 const IndividualService = () => {
   const individulaFeatures = [
@@ -161,27 +161,23 @@ const IndividualService = () => {
             <div key={index} className={styles.content}>
               <div className={styles.left}>
                 <h3 className={styles.title}>{x.title}</h3>
+                <p className={styles.copy}>~Click to Learn More ~</p>
+
                 <div className={styles.iconContainer}>{x.icon}</div>
-                {/* <div className={styles.rightBottom}>
-                  <div className={styles.rbLeft}>More Details</div>
-                  <Link href='/' target='_blank' className={styles.rbRight}>
-                    Contact Us
-                  </Link>
-                </div> */}
               </div>
-              {/* <div className={styles.right}>
-                <h2 className={styles.title}>{x.title}</h2>
+              <div className={styles.right}>
                 <p className={styles.desc}>{x.description}</p>
                 <br />
+
                 <span className={styles.span}>Benefits:</span>
                 <ul className={styles.box}>
                   {x.whyImportant.map((y, index) => (
-                    <li key={index}>
-                      <h3 className={styles.reasonnTitle}>{y.title}</h3>
+                    <li key={index} className={styles.reasonTitleContainer}>
+                      <p className={styles.reasonTitle}>{y.title}</p>
                     </li>
                   ))}
                 </ul>
-              </div> */}
+              </div>
             </div>
           ))}
         </div>

@@ -1,8 +1,5 @@
-import Button from "../Button/Button";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./ServicesHero.module.css";
-import Img from "../../../public/images/elite.png";
-import Image from "next/image";
 
 const ServicesHero = () => {
   return (
@@ -17,7 +14,8 @@ const ServicesHero = () => {
           <div className={styles.bottom}>
             <p className={styles.copy}>
               We bring our passion for good design to brave brands and deliver
-              something you can shout about.
+              something you can shout about. We bring our passion for good
+              design to brave brands and deliver something you can shout about.
             </p>
           </div>
         </div>

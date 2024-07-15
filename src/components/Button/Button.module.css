@@ -49,6 +49,12 @@
   border: 1px solid var(--lightBlack);
 }
 
+.primaryiii {
+  color: var(--black);
+  background-color: transparent;
+  border: 1px solid var(--lightBlack);
+}
+
 .primaryNav {
   color: var(--green);
   background-color: var(--green3);
