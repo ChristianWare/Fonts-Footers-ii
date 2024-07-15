@@ -1,6 +1,5 @@
 import Image from "next/image";
 import ArrowCluster from "../ArrowCluster/ArrowCluster";
-import LayoutWrapper from "../LayoutWrapper";
 import styles from "./BlogIntro.module.css";
 import { urlFor } from "@/lib/sanity";
 import Author from "../../../public/images/author.png";
@@ -15,7 +14,6 @@ interface BlogIntroProps {
 const BlogIntro: React.FC<BlogIntroProps> = ({ text, desc, src, date }) => {
   return (
     <section className={styles.container}>
-          <ArrowCluster />
       <div className={styles.top}>
         <div className={styles.left}>
           <h1 className={styles.heading}>{text}</h1>

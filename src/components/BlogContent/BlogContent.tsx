@@ -6,6 +6,7 @@ import Image from "next/image";
 import { urlForImage } from "@/lib/image";
 import LayoutWrapper from "../LayoutWrapper";
 import BlogCardii from "../BlogCardii/BlogCardii";
+import Button from "../Button/Button";
 
 interface BlogContentProps {
   data: fullBlog;
@@ -14,7 +15,7 @@ interface BlogContentProps {
 
 const BlogContent: React.FC<BlogContentProps> = ({ data, dataii }) => {
   return (
-    <section>
+    <section className={styles.container}>
       <LayoutWrapper>
         <div className={styles.top}>
           <BlogIntro
@@ -24,7 +25,7 @@ const BlogContent: React.FC<BlogContentProps> = ({ data, dataii }) => {
             date={new Date(data?.publishedAt).toDateString()}
           />
         </div>
-        <div className={styles.bottom}>
+        <div className={styles.z}>
           <div className={styles.left}>
             <PortableText
               value={data.content}
@@ -39,7 +40,9 @@ const BlogContent: React.FC<BlogContentProps> = ({ data, dataii }) => {
                   <BlogCardii data={data} key={data.title} />
                 ))}
             </div>
-            <div>See All Blog Posts</div>
+            <div className={styles.btnContainer}>
+              <Button href='/blogs' btnType='primaryii' text='All Blog Posts' />
+            </div>
           </div>
         </div>
       </LayoutWrapper>

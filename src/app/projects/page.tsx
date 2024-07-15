@@ -1,7 +1,31 @@
+import BlogSection from "@/components/BlogSection/BlogSection";
+import Faqsiii from "@/components/Faqsiii/Faqsiii";
 import PageIntro from "@/components/PageIntro/PageIntro";
 import Projects from "@/components/Projects/Projects";
+import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
+import { simpleBlogCard } from "@/lib/interface";
+import { client } from "@/lib/sanity";
 
-export default function page() {
+async function getData() {
+  const query = `
+    *[_type == 'blog'][0...3] | order(_createdAt desc) {
+      title,
+      smallDescription,
+      publishedAt,
+      "currentSlug": slug.current,
+      titleImage
+    }`;
+
+  const data = await client.fetch(query);
+
+  return data;
+}
+
+export const revalidate = 10;
+
+export default async function page() {
+  const data: simpleBlogCard[] = await getData();
+
   return (
     <main>
       <PageIntro
@@ -13,6 +37,10 @@ export default function page() {
         bgColor='tan'
       />
       <Projects />
+      <Faqsiii />
+      <ScrollHorizontalText text='Blog' bottomBorder={false} />
+      <BlogSection data={data} />
+      <ScrollHorizontalText text='Blog' bottomBorder={false} />
     </main>
   );
 }
