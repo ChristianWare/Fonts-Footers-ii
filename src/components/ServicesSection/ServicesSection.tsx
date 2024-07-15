@@ -1,10 +1,8 @@
-import Button from "../Button/Button";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./ServicesSection.module.css";
 import { services } from "@/lib/data";
 import Arrow2 from "../../../public/icons/arrow2.svg";
 import Link from "next/link";
-import FalseButton from "../FalseButton/FalseButton";
 import Features from "../Features/Features";
 import EveryPlan from "../EveryPlan/EveryPlan";
 
@@ -14,14 +12,10 @@ const ServicesSection = () => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.right}>
-            <h2 className={styles.heading}>Types of websites we build</h2>
-            {/* <h2 className={styles.heading}>
-              Types of <span className='span2'>websites</span> we{" "}
-              <span className='span1'>build</span>
-            </h2> */}
+            <h2 className={styles.heading}>What we build</h2>
           </div>
           <div className={styles.left}>
-            {services.map((x, index) => (
+            {services.map((x) => (
               <div key={x.id} className={styles.processContainer}>
                 <div className={styles.processTop}>
                   {x.processName.length >= 1 && (

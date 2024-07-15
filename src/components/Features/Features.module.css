@@ -32,14 +32,13 @@
   justify-content: center;
   gap: 2rem;
   padding: 2.5rem;
-  border: 1px solid var(--gray2);
+  border: 1px solid gray;
   border-radius: 20px;
   position: relative;
 }
 
 .featureContainer:nth-child(1),
 .featureContainer:nth-child(4) {
-  /* border: 1px solid var(--gray); */
   background-color: var(--white);
   position: relative;
 }
@@ -74,9 +73,7 @@
 
 .service {
   color: var(--green);
-  position: relative;
-  top: -8px;
-  text-transform: capitalize;
+  font-weight: 500;
 }
 
 .description {
@@ -122,13 +119,13 @@
   text-align: left;
 }
 
-.box2 p {
-  font-weight: 600;
-}
-
 .btnContainer {
   display: grid;
   width: 100%;
+}
+
+.copy {
+  font-weight: 400;
 }
 
 @media screen and (max-width: 1300px) {

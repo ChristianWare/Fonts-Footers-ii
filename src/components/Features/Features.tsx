@@ -49,7 +49,6 @@ const Features = () => {
       <div className={styles.content}>
         <div className={styles.left}>
           <div className={styles.lTop}>
-            {/* <h2 className={styles.heading}>• All projects include •</h2> */}
             <div className={styles.test}>
               {features.slice(0, 4).map((x, index) => (
                 <div key={index} className={styles.featureContainer}>
@@ -72,7 +71,7 @@ const Features = () => {
           </div>
           <div className={styles.box2}>
             <h3 className={styles.h3}>Our Features</h3>
-            <p>
+            <p className={styles.copy}>
               Having certain expected features on your direct booking site is
               crucial for ensuring a positive user experience and maximizing
               conversions. Meeting these expectations not only enhances customer
