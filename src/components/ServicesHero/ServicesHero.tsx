@@ -11,17 +11,14 @@ const ServicesHero = () => {
         <div className={styles.content}>
           <div className={styles.top}>
             <h1 className={styles.heading}>
-              Spread <span className='span2'>your</span>{" "}
-              <span className='span1'>wings</span> with us
+              We’re a digital marketing agency with expertise
             </h1>
           </div>
           <div className={styles.bottom}>
-            <div className={styles.imgContainer}>
-              <Image src={Img} alt='image' fill className={styles.img} />
-            </div>
-            <div className={styles.imgContainer}>
-              <Image src={Img} alt='image' fill className={styles.img} />
-            </div>
+            <p className={styles.copy}>
+              We bring our passion for good design to brave brands and deliver
+              something you can shout about.
+            </p>
           </div>
         </div>
       </LayoutWrapper>
@@ -29,3 +26,4 @@ const ServicesHero = () => {
   );
 };
 export default ServicesHero;
+
