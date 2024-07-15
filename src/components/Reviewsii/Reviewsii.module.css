@@ -71,17 +71,9 @@
   box-shadow: 3px 3px 0px white;
 }
 
-.textBase {
-  font-size: 1rem;
-}
-
-.textSm {
-  font-size: 0.875rem;
-}
-
 .textNormal {
   font-size: 1.6rem;
-  font-family: var(--raleway);
+  font-weight: 500;
   text-transform: none;
 }
 
