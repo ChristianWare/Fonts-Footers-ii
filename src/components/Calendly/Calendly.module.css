@@ -1,5 +1,6 @@
 .container {
   background-color: var(--black);
+  height: 100%;
 }
 
 .heading {
@@ -10,4 +11,24 @@
   margin-left: auto;
   margin-right: auto;
   padding-top: 10rem;
+}
+
+.calBox {
+  /* margin-top: 15rem; */
+  padding-bottom: 10rem;
+  height: 100%;
+}
+
+@media screen and (max-width: 968px) {
+  .heading {
+    width: 80%;
+    margin-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .heading {
+    width: 80%;
+    margin-bottom: 5rem;
+  }
 }
