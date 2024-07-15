@@ -40,7 +40,13 @@
 .heading {
   color: var(--tan);
   text-align: center;
-  width: 100%;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.copy {
+  color: var(--tan);
 }
 
 .bottom {

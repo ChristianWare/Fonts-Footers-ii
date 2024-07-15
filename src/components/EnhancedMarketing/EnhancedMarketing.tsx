@@ -35,6 +35,7 @@ const EnhancedMarketing = () => {
           <div className={styles.right}>
             <div className={styles.rightTop}>
               <h2 className={styles.heading}>Enhanced Marketing</h2>
+              <p className={styles.copy}>~Our Mission~</p>
               <p className={styles.copy}>
                 By leveraging enhanced marketing strategies on your direct
                 booking website, you can effectively reach and engage your

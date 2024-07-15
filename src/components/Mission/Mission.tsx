@@ -41,7 +41,7 @@ const Mission = () => {
     <section className={styles.container}>
       <LayoutWrapper>
         <div className={styles.top}>
-          <h2 className={styles.heading}>Our Mission</h2>
+          <h2 className={styles.heading}>Meet The Owner</h2>
         </div>
         <div className={styles.bottom}>
           <div className={styles.left}>

@@ -4,8 +4,9 @@
 
 .copy {
   width: 50%;
-  margin-left: auto;
-  text-align: right;
+  margin-top: 2rem;
+  /* margin-left: auto; */
+  /* text-align: right; */
 }
 
 .bottom {

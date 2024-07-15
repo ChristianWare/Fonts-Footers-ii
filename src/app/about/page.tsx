@@ -17,6 +17,7 @@ import Slider from "@/components/Slider/Slider";
 import Testimonials from "@/components/Testimonials/Testimonials";
 import Faqsiii from "@/components/Faqsiii/Faqsiii";
 import HowItWorks from "@/components/HowItWorks/HowItWorks";
+import LongTermRelationships from "@/components/LongTermRelationships/LongTermRelationships";
 
 async function getData() {
   const query = `
@@ -43,7 +44,7 @@ export default async function AboutPage() {
   const data: simpleBlogCard[] = await getData();
 
   return (
-    <>
+    <main>
       <PageIntro
         text='About'
         span='Fonts & Footers'
@@ -56,13 +57,17 @@ export default async function AboutPage() {
       <ScrollHorizontalText text='Our Clients' bottomBorder={true} />
       <BrandPresence />
       <EnhancedMarketing />
+      <ScrollHorizontalText text='OUR ECOSYSTEM' bottomBorder={false} />
       <HowItWorks />
+      <ScrollHorizontalText text='OUR ECOSYSTEM' bottomBorder={false} />
+      
+      <LongTermRelationships />
       <ScrollHorizontalText text='Reviews' bottomBorder={false} />
       <Testimonials />
       <ScrollHorizontalText text='Reviews' bottomBorder={false} />
       <Mission />
       <Faqsiii />
       <BlogSection data={data} />
-    </>
+    </main>
   );
 }

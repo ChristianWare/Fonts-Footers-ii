@@ -52,10 +52,8 @@ const LongTermRelationships = () => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.top}>
-            <div className={styles.arrowContainer}>
-              <ArrowCluster />
-            </div>
             <h2 className={styles.heading}>Long Term Relationships</h2>
+            <p className={styles.copy}>~Vission~</p>
           </div>
           <div className={styles.bottom}>
             {data.map((x, index) => (
