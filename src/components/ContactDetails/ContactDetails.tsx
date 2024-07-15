@@ -7,6 +7,7 @@ import Img from "../../../public/images/house24.png";
 import SocialsContainer from "../SocialsContainer/SocialsContainer";
 import { InlineWidget } from "react-calendly";
 import Link from "next/link";
+import ScrollHorizontalText from "../ScrollHorizontalText/ScrollHorizontalText";
 
 const ContactDetails = () => {
   return (
@@ -61,18 +62,7 @@ const ContactDetails = () => {
             </div>
           </div>
         </div>
-        <div className={styles.calBox} id='schedule'>
-          <h2 className={styles.heading}>
-            Calendly: Scehdule a Discovery Call with us
-          </h2>
-          <InlineWidget
-            url='https://calendly.com/fontsandfooters/discovery-call'
-            styles={{
-              height: "775px",
-              borderRadius: "20px",
-            }}
-          />
-        </div>
+        
       </LayoutWrapper>
     </section>
   );

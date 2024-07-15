@@ -83,7 +83,6 @@ export default function RootLayout({
           <Nav />
           {children}
           <CallToAction />
-          {/* <Footerii /> */}
         </NoiseBg>
       </body>
     </html>

@@ -9,10 +9,7 @@ const ContactHero = () => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.left}>
-            <FalseButton btnType='secondary' text='contact' />
-            <h1 className={styles.heading}>
-              Get in <span className='span1'>touch</span>
-            </h1>
+            <h1 className={styles.heading}>Contact Us</h1>
             <p className={styles.copy}>
               Whether you&apos;re a prospective client or have questions about
               our services, reaching out is simple and quick. We&apos;re ready

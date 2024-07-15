@@ -1,3 +1,4 @@
+import Calendly from "@/components/Calendly/Calendly";
 import ContactDetails from "@/components/ContactDetails/ContactDetails";
 import ContactHero from "@/components/ContactHero/ContactHero";
 import PageIntro from "@/components/PageIntro/PageIntro";
@@ -22,6 +23,7 @@ export default function FAQPage() {
       {/* <ScrollHorizontalText /> */}
       <ContactHero />
       <ContactDetails />
+      <Calendly />
     </>
   );
 }
