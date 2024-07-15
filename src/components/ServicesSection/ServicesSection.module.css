@@ -125,6 +125,7 @@
 .heading {
   color: var(--black);
   line-height: 100% !important;
+  text-align: right;
   margin-bottom: 5rem;
 }
 

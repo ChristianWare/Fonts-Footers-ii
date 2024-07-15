@@ -84,7 +84,7 @@
 .img {
   flex: 1;
   object-fit: cover;
-  border: 1px solid var(--lightBlack);
+  border: 1px solid gray;
   border-radius: 20px;
 }
 

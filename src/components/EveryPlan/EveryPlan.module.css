@@ -97,6 +97,10 @@
   color: var(--tan);
 }
 
+.title {
+  font-weight: 500;
+}
+
 .desc {
   opacity: 0.8;
 }
