@@ -1,5 +1,6 @@
 import BenefitsIntro from "@/components/BenefitsIntro/BenefitsIntro";
 import BlogSection from "@/components/BlogSection/BlogSection";
+import EveryPlan from "@/components/EveryPlan/EveryPlan";
 import Faqsiii from "@/components/Faqsiii/Faqsiii";
 import IndividualService from "@/components/IndividualService/IndividualService";
 import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
@@ -32,6 +33,7 @@ export default async function ServicesPage() {
       <BenefitsIntro />
       <ScrollHorizontalText text='Our Services' bottomBorder={true} />
       <IndividualService />
+      <EveryPlan />
       <ScrollHorizontalText text="FAQ's" bottomBorder={false} />
       <Faqsiii />
       <ScrollHorizontalText text="FAQ's" bottomBorder={false} />
