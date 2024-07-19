@@ -2,9 +2,7 @@ import LayoutWrapper from "../LayoutWrapper";
 import styles from "./ServicesSection.module.css";
 import { services } from "@/lib/data";
 import Arrow2 from "../../../public/icons/arrow2.svg";
-import Link from "next/link";
 import Features from "../Features/Features";
-import EveryPlan from "../EveryPlan/EveryPlan";
 
 const ServicesSection = () => {
   return (
@@ -19,9 +17,7 @@ const ServicesSection = () => {
               <div key={x.id} className={styles.processContainer}>
                 <div className={styles.processTop}>
                   {x.processName.length >= 1 && (
-                    <Link href='/'>
                       <Arrow2 className={styles.icon2} />
-                    </Link>
                   )}
                 </div>
                 <div className={styles.processBottom}>

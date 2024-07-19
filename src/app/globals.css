@@ -57,8 +57,7 @@ span {
   hyphens: auto;
 }
 
-h1,
-h2 {
+h1 {
   font-size: 7.2rem;
   line-height: 100%;
   font-weight: normal;
@@ -67,15 +66,25 @@ h2 {
   font-variant-ligatures: common-ligatures;
 }
 
+h2 {
+  font-size: 5.2rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 115%;
+  font-variation-settings: "cuts" 100, "move" 100;
+  font-variant-ligatures: common-ligatures;
+}
+
 h3 {
+  font-size: 2.4rem;
   line-height: 130%;
-  font-weight: 600;
-  font-size: 3.2rem;
-  letter-spacing: -0.6px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
 }
 
 h4 {
-  font-size: 2.4rem;
+  font-size: 2rem;
+  font-weight: 500;
   letter-spacing: -0.5px;
 }
 
@@ -98,8 +107,9 @@ input,
 textarea {
   hyphens: auto;
   font-size: 1.6rem;
+  font-weight: 400;
   line-height: 150%;
-  color: var(--green);
+  color: var(--black);
 }
 
 input:focus,
@@ -110,32 +120,6 @@ textarea:focus {
 .toastFont {
   font-family: var(--interTight);
   font-weight: 700;
-}
-
-.span1 {
-  font-family: var(--cohere);
-  font-size: 7.2rem;
-  font-weight: 500;
-  letter-spacing: -2.9px;
-  margin-left: 0.8rem;
-  margin-right: 0.8rem;
-  text-decoration: underline;
-  hyphens: none;
-  white-space: nowrap;
-  color: inherit;
-}
-
-.span2 {
-  font-family: var(--lb);
-  font-style: italic;
-  font-size: 7.2rem;
-  font-weight: 500;
-  letter-spacing: -2.9px;
-  margin-left: 0.8rem;
-  margin-right: 0.8rem;
-  hyphens: none;
-  white-space: nowrap;
-  color: inherit;
 }
 
 /* ::-webkit-scrollbar-thumb {

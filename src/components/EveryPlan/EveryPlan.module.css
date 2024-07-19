@@ -27,7 +27,6 @@
   justify-content: flex-start;
   gap: 2rem;
   padding: 3rem;
-  border-radius: 20px;
   border: 1px solid var(--lightBlack);
 }
 

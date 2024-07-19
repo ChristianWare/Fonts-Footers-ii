@@ -39,7 +39,6 @@
   top: 50%;
   cursor: pointer;
   padding-top: 0rem;
-  border-radius: 10px;
   transition: all 0.1s, color 0.5s;
   z-index: 0;
   background-color: var(--tan);

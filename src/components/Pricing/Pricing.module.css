@@ -96,7 +96,6 @@
 }
 
 .priceContainer {
-  border-radius: 20px;
   border: 1px solid var(--lightBlack);
   display: flex;
   flex-direction: column;
@@ -116,7 +115,6 @@
   background-color: var(--green3);
   border: 1px solid var(--lightBlack);
   padding: 4rem;
-  border-radius: 15px;
 }
 
 .planName {
@@ -176,7 +174,6 @@
 }
 
 .moreDetails {
-  border-radius: 20px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   padding: 3rem;

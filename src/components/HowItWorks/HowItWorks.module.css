@@ -26,20 +26,6 @@
   top: 90px;
 }
 
-.left::after {
-  position: absolute;
-  content: "";
-  top: 250px;
-  left: 0;
-  width: 100px;
-  height: 100px;
-  background-color: var(--green3);
-  border-radius: 10px;
-  border-top-right-radius: 200px;
-  z-index: -1;
-  filter: blur(10rem);
-}
-
 .heading {
   margin-bottom: 3rem;
   line-height: 100%;
@@ -48,9 +34,8 @@
 
 .topText {
   color: var(--black);
-  font-weight: 500;
   margin-top: 3rem;
-  font-size: 1.8rem;
+  width: 80%;
 }
 
 .rtContainer {
@@ -64,14 +49,12 @@
 .right {
   display: flex;
   flex-direction: column;
-  /* gap: 1rem; */
 }
 
 .card {
   padding: 3rem;
   z-index: 999;
   background-color: var(--black);
-  border-radius: 10px;
   border: 2px solid var(--green3);
 }
 
@@ -137,6 +120,10 @@
     width: 100%;
     text-align: center;
     margin-top: 0rem;
+  }
+
+  .topText {
+    margin-bottom: 5rem;
   }
 
   .left {

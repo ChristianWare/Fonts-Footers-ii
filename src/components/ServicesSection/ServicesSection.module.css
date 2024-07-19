@@ -15,7 +15,6 @@
 }
 
 .processContainer {
-  border-radius: 20px;
   border: 1px solid var(--lightBlack);
   padding: 3rem;
   display: flex;
@@ -43,10 +42,6 @@
 
 .processContainer:nth-child(3) {
   background-color: var(--green3);
-}
-
-.processContainer:nth-child(3):hover {
-  background-color: var(--black);
 }
 
 .processTop {
@@ -85,41 +80,29 @@
   position: relative;
   right: 1px;
   top: 1px;
-  border-bottom-left-radius: 0px;
 }
 
 .processContainer:nth-child(4) {
   position: relative;
   left: 1px;
-  border-top-right-radius: 0px;
-}
-
-.processContainer:nth-child(5) {
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
 }
 
 .processContainer:nth-child(2) {
   position: relative;
   top: 1px;
-  border-bottom-right-radius: 0px;
-  border-bottom-left-radius: 0px;
 }
 
 .processName {
-  font-size: 3.2rem;
+  
+  text-align: center;
   margin-bottom: 2rem;
-  font-weight: 500;
-  letter-spacing: -0.6px;
   color: var(--black);
   transition: all 0.2s ease-in;
 }
 
 .processDescription {
   color: var(--black);
-  font-weight: 500;
   opacity: 0.8;
-  transition: all 0.2s ease-in;
 }
 
 .heading {
@@ -133,15 +116,6 @@
 .processContainer:hover .processDescription {
   color: var(--green);
   opacity: 1;
-}
-
-.processContainer:nth-child(3):hover .processName,
-.processContainer:nth-child(3):hover .processDescription {
-  color: var(--green3);
-}
-
-.processContainer:nth-child(3):hover .icon2 {
-  color: var(--green3);
 }
 
 .ctaContainer {
@@ -167,17 +141,11 @@
 
   .processContainer:nth-child(4) {
     left: 0px;
-    border-top-right-radius: 0px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
   }
 
   .processContainer:nth-child(3) {
     left: 1px;
     top: 0;
-    border-top-right-radius: 0px;
-    border-top-left-radius: 0px;
-    border-bottom-right-radius: 0px;
   }
 
   .processContainer:nth-child(5) {
@@ -215,13 +183,11 @@
   .processContainer:nth-child(3) {
     left: 0px;
     top: 1px;
-    border-radius: 0px;
   }
 
   .processContainer:nth-child(4) {
     right: 1px;
     top: 0;
-    border-radius: 0px;
   }
 
   .processContainer:nth-child(5) {
