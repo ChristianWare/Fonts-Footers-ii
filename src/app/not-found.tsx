@@ -1,4 +1,3 @@
-import Faqs from "@/components/Faqs/Faqs";
 import PageIntro from "@/components/PageIntro/PageIntro";
 
 export default function NotFoudPage() {
@@ -14,7 +13,6 @@ export default function NotFoudPage() {
         orientation='center'
         notFound='true'
       />
-      <Faqs />
     </main>
   );
 }

@@ -6,7 +6,6 @@ import Landing from "../../../public/icons/landing.svg";
 import Cart from "../../../public/icons/cart.svg";
 import Link from "next/link";
 import Button from "../Button/Button";
-import FalseButton from "../FalseButton/FalseButton";
 
 const IndividualService = () => {
   const individulaFeatures = [
@@ -15,6 +14,7 @@ const IndividualService = () => {
       title: "Landing Pages",
       description:
         "Integrating Stripe as your payment gateway for your property ensures secure transactions, supports multiple payment methods, automates payments, expands global reach, provides real-time reporting, offers easy integration, enhances the guest experience, and ensures compliance, all contributing to the success and efficiency of your vacation rental business.",
+      href: "/landing-pages",
       whyImportant: [
         {
           title: "Secure Transactions",
@@ -43,6 +43,7 @@ const IndividualService = () => {
       title: "E-Commerce Stores",
       description:
         "Integrating a booking engine for your properties enables direct bookings, control over pricing and availability, enhances guest experience, allows customization and personalization, provides valuable data insights, streamlines operations, boosts revenue and occupancy, and builds brand loyalty and trust.",
+      href: "/e-commerce-stores",
       whyImportant: [
         {
           title: "Control",
@@ -71,6 +72,8 @@ const IndividualService = () => {
       title: "Business Websites",
       description:
         "Guest reviews on your direct booking website enhance transparency, build trust, provide valuable feedback for improvement, manage reputation, serve as social proof, offer SEO benefits, and ultimately increase bookings and occupancy rates for your property.",
+      href: "/landing-pages",
+
       whyImportant: [
         {
           title: "Transparency",
@@ -122,34 +125,6 @@ const IndividualService = () => {
         },
       ],
     },
-    // {
-    //   icon: <SEO width={75} height={75} className={styles.icon} />,
-    //   title: "SEO",
-    //   description:
-    //     "Adding a user dashboard for your property provides guests with a personalized and convenient experience, allowing them to manage bookings, update profiles, communicate efficiently, leave feedback, access information, enjoy special offers, and receive support—all contributing to enhanced guest satisfaction and loyalty.",
-    //   whyImportant: [
-    //     {
-    //       title: "Personalized Experience",
-    //       modal:
-    //         "Guests can manage their bookings, preferences, and communication preferences, creating a personalized experience",
-    //     },
-    //     {
-    //       title: "Booking Management",
-    //       modal:
-    //         "Guests can view past and upcoming bookings, make changes, and access booking details conveniently in one place.",
-    //     },
-    //     {
-    //       title: "Profile Updates",
-    //       modal:
-    //         "Users can update their profiles, contact information, and preferences, ensuring accurate and relevant communication.",
-    //     },
-    //     {
-    //       title: "Support and Assistance",
-    //       modal:
-    //         "Users can access support, FAQs, and assistance if they encounter any issues during their stay, improving satisfaction and resolving concerns promptly.",
-    //     },
-    //   ],
-    // },
   ] as const;
 
   return (

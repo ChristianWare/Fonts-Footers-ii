@@ -10,6 +10,7 @@ import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizo
 import { simpleBlogCard } from "@/lib/interface";
 import { client } from "@/lib/sanity";
 import { Metadata } from "next";
+import { homePageFaqs } from "@/lib/data";
 
 async function getData() {
   const query = `
@@ -44,7 +45,7 @@ export default async function PricingPage() {
       <IndividualService />
       <EveryPlan />
       <HowItWorks />
-      <Faqsiii />
+      <Faqsiii mapData={homePageFaqs} />
       <BlogSection data={data} />
     </>
   );

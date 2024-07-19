@@ -12,6 +12,10 @@
 
 .top {
   flex: 1;
+  align-self: flex-start;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 90px;
 }
 
 .sectionIntroContainer {
@@ -30,81 +34,6 @@
   opacity: 0.8;
   width: 80%;
 }
-/* 
-.bottom {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1rem;
-  margin-top: 3rem;
-  flex: 1;
-}
-
-.qaContainer,
-.active {
-  padding: 3rem;
-  padding-right: 4rem;
-  border-radius: 20px;
-  border: 1px solid var(--gray2);
-  width: 100%;
-  cursor: pointer;
-  user-select: none;
-  transition: all 0.2s ease-in;
-}
-
-.active {
-  background-color: var(--white);
-}
-
-.answerContainer {
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.2s ease-in-out;
-}
-
-.answerContainer.show {
-  max-height: 350px;
-}
-
-.headingArrowContainer {
-  display: grid;
-  grid-template-columns: 0.6fr 5fr;
-  gap: 2rem;
-}
-
-.icon,
-.iconFlip {
-  color: var(--black);
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  width: 45px;
-  height: 45px;
-  padding: 1rem;
-  border-radius: 50%;
-  border: 1px solid var(--gray2);
-  background-color: var(--green3);
-}
-
-.iconFlip {
-  transform: rotate(135deg);
-}
-
-.question {
-  color: var(--black);
-  font-size: 2.4rem;
-}
-
-.answerbox {
-  display: grid;
-  grid-template-columns: 0.6fr 5fr;
-  gap: 2rem;
-}
-
-.answer {
-  color: var(--lightBlack);
-  margin-top: 2rem;
-  hyphens: auto;
-} */
 
 .right {
   display: grid;
@@ -133,10 +62,6 @@
 
 .answerContainer.show {
   max-height: 350px;
-}
-
-.qaContainer .show {
-  
 }
 
 .headingArrowContainer {
@@ -204,13 +129,13 @@
 .btnContainer {
   display: grid;
   width: fit-content;
-  margin-left: auto;
   margin-top: 3rem;
 }
 
 @media screen and (max-width: 1068px) {
   .content {
     grid-template-columns: repeat(1, 1fr);
+    overflow: hidden;
   }
 
   .top {
@@ -218,6 +143,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 10rem;
   }
 
   .content {
@@ -243,6 +169,12 @@
   }
 
   .answer {
+    width: 100%;
+  }
+
+  .btnContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     width: 100%;
   }
 }

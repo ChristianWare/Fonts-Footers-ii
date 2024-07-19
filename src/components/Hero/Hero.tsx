@@ -21,7 +21,6 @@ const Hero = () => {
             <h1 className={styles.heading}>
               We build interactive and immersive websites
             </h1>
-       
 
             <p className={styles.copy}>
               Stop depending on sites like Air BNB or VRBO for short-term rental
@@ -35,11 +34,9 @@ const Hero = () => {
                 href='/contact/#schedule'
                 btnType='primaryii'
               />
-             
             </div>
           </div>
           <div className={styles.right}>
-          
             <ShuffleHero />
           </div>
         </motion.section>

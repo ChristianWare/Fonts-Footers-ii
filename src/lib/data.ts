@@ -373,7 +373,7 @@ export const projects = [
   },
 ] as const;
 
-export const faqs = [
+export const homePageFaqs = [
   {
     id: 36,
     question:

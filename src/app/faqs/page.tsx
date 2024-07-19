@@ -1,11 +1,11 @@
 import BlogSection from "@/components/BlogSection/BlogSection";
-import Faqsii from "@/components/Faqsii/Faqsii";
 import Faqsiii from "@/components/Faqsiii/Faqsiii";
 import PageIntro from "@/components/PageIntro/PageIntro";
 import Pricing from "@/components/Pricing/Pricing";
 import { simpleBlogCard } from "@/lib/interface";
 import { client } from "@/lib/sanity";
 import { Metadata } from "next";
+import { homePageFaqs } from "@/lib/data";
 
 async function getData() {
   const query = `
@@ -39,7 +39,7 @@ export default async function FAQPage() {
         orientation='center'
         bgColor='tan'
       />
-      <Faqsiii />
+      <Faqsiii mapData={homePageFaqs} />
       <Pricing />
       <BlogSection data={data} />
     </>

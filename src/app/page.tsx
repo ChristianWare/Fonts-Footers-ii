@@ -5,7 +5,6 @@ import AboutUs from "@/components/AboutUs/AboutUs";
 import Features from "@/components/Features/Features";
 import Pricing from "@/components/Pricing/Pricing";
 import Projects from "@/components/Projects/Projects";
-import Faqs from "@/components/Faqs/Faqs";
 import BlogSection from "@/components/BlogSection/BlogSection";
 import Testimonials from "@/components/Testimonials/Testimonials";
 import { client } from "@/lib/sanity";
@@ -20,6 +19,7 @@ import { Reviewsii } from "@/components/Reviewsii/Reviewsii";
 import Faqsiii from "@/components/Faqsiii/Faqsiii";
 import EveryPlan from "@/components/EveryPlan/EveryPlan";
 import HowItWorks from "@/components/HowItWorks/HowItWorks";
+import { homePageFaqs } from "@/lib/data";
 
 async function getData() {
   const query = `
@@ -48,6 +48,8 @@ export default async function Home() {
       <Slider />
       <ScrollHorizontalText text='Our Clients' bottomBorder={false} />
       <AboutScrollText />
+      {/* <Benefits />  */}{" "}
+      {/* to be used on the money/individual services page */}
       <ServicesSection />
       <EveryPlan />
       <HowItWorks />
@@ -56,7 +58,7 @@ export default async function Home() {
       <ScrollHorizontalText text='Reviews' bottomBorder={true} />
       <Projects />
       <Pricing bgColor='tan' />
-      <Faqsiii />
+      <Faqsiii mapData={homePageFaqs} />
       <BlogSection data={data} />
       <ScrollHorizontalText text='Why Choose Us?' bottomBorder={false} />
       <ScrollText />

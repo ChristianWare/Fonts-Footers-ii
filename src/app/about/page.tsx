@@ -7,7 +7,6 @@ import BlogSection from "@/components/BlogSection/BlogSection";
 import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
 import Experience from "@/components/Experience/Experience";
 import Mission from "@/components/Mission/Mission";
-import Faqs from "@/components/Faqs/Faqs";
 import Values from "@/components/Values/Values";
 import TechStack from "@/components/TechStack/TechStack";
 import { Metadata } from "next";
@@ -18,6 +17,7 @@ import Testimonials from "@/components/Testimonials/Testimonials";
 import Faqsiii from "@/components/Faqsiii/Faqsiii";
 import HowItWorks from "@/components/HowItWorks/HowItWorks";
 import LongTermRelationships from "@/components/LongTermRelationships/LongTermRelationships";
+import { homePageFaqs } from "@/lib/data";
 
 async function getData() {
   const query = `
@@ -60,13 +60,13 @@ export default async function AboutPage() {
       <ScrollHorizontalText text='OUR ECOSYSTEM' bottomBorder={false} />
       <HowItWorks />
       <ScrollHorizontalText text='OUR ECOSYSTEM' bottomBorder={false} />
-      
+
       <LongTermRelationships />
       <ScrollHorizontalText text='Reviews' bottomBorder={false} />
       <Testimonials />
       <ScrollHorizontalText text='Reviews' bottomBorder={false} />
       <Mission />
-      <Faqsiii />
+      <Faqsiii mapData={homePageFaqs} />
       <BlogSection data={data} />
     </main>
   );
