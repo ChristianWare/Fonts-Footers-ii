@@ -32,12 +32,10 @@
 }
 
 .left {
-  border-radius: 20px;
   border: 1px solid var(--lightBlack);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* gap: 3rem; */
   padding: 5rem;
   transition: all 0.2s ease-in;
   cursor: pointer;
@@ -96,7 +94,6 @@
 
 .reasonTitleContainer {
   border: 1px solid var(--lightBlack);
-  border-radius: 20px;
   padding: 3rem;
   display: flex;
   align-items: center;

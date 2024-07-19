@@ -9,7 +9,6 @@
 
 .content {
   background-color: var(--black);
-  border-radius: 20px;
   padding: 3rem;
 }
 
@@ -84,7 +83,6 @@
 }
 
 .labelInputBox input {
-  border-radius: 20px;
   border: none;
   height: 40px;
   width: 100%;
@@ -101,6 +99,7 @@
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   width: 100%;
+  margin-top: 1rem;
 }
 
 .small {
@@ -157,7 +156,7 @@
   color: var(--green3);
 }
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 1068px) {
   .top {
     grid-template-columns: repeat(2, 1fr);
   }

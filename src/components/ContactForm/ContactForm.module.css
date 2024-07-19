@@ -1,6 +1,5 @@
 .content {
   padding: 3rem;
-  border-radius: 20px;
   border: 1px solid var(--lightBlack);
 }
 
@@ -57,7 +56,6 @@
 
 .icon {
   border: 3px solid var(--border);
-  border-radius: 50%;
   color: black;
 }
 
@@ -90,7 +88,6 @@
 
 .labelInputBox input,
 .labelInputBox textarea {
-  border-radius: 16px;
   border: none;
   height: 40px;
   width: 100%;

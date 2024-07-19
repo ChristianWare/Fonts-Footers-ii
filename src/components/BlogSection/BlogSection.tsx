@@ -5,7 +5,6 @@ import BlogCard from "../BlogCard/BlogCard";
 import { simpleBlogCard } from "@/lib/interface";
 import Button from "../Button/Button";
 import { usePathname } from "next/navigation";
-import FalseButton from "../FalseButton/FalseButton";
 
 interface BlogSectionProps {
   data: simpleBlogCard[];
