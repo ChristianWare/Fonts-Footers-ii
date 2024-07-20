@@ -24,7 +24,8 @@
 }
 
 .left {
-  background-color: var(--green);
+  background-color: var(--black);
+  border-radius: 10px;
   padding: 3rem;
   display: flex;
   flex-direction: column;
@@ -51,6 +52,7 @@
 .card:nth-child(1),
 .card:nth-child(4) {
   border: 1px solid var(--lightBlack);
+  border-radius: 10px;
 }
 
 .card:nth-child(1) {

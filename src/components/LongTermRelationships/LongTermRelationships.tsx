@@ -52,7 +52,7 @@ const LongTermRelationships = () => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.top}>
-            <h2 className={styles.heading}>Long Term Relationships</h2>
+            <h2 className={styles.heading}>Our Vission</h2>
             <p className={styles.copy}>~Vission~</p>
           </div>
           <div className={styles.bottom}>

@@ -40,7 +40,6 @@
 .heading {
   color: var(--tan);
   text-align: center;
-  width: 50%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -56,6 +55,7 @@
 
 .card {
   border: 1px solid var(--tan);
+  border-radius: 10px;
   padding: 4rem;
 }
 
@@ -115,6 +115,7 @@
 @media screen and (max-width: 768px) {
   .bottom {
     grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
   }
 
   .card:nth-child(2) {

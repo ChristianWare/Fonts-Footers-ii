@@ -1,7 +1,6 @@
 .container {
   background-color: var(--tan);
   border-top: 1px solid var(--lightBlack);
-  /* border-bottom: 1px solid var(--lightBlack); */
 }
 
 .content {
@@ -24,6 +23,7 @@
 
 .img {
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .copy {

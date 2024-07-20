@@ -10,6 +10,7 @@
 
 .tableContainer {
   border: 1px solid var(--gray2);
+  border-radius: 10px;
   overflow-x: scroll;
 }
 

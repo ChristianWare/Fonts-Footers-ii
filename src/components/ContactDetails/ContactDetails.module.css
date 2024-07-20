@@ -17,10 +17,12 @@
 
 .img {
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .right {
-  background-color: var(--green);
+  background-color: var(--black);
+  border-radius: 10px;
   padding: 3rem;
   display: flex;
   flex-direction: column;

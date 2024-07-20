@@ -22,11 +22,10 @@
   gap: 2rem;
   padding: 3rem;
   border: 1px solid var(--lightBlack);
+  border-radius: 10px;
   background-color: var(--white);
   position: relative;
 }
-
-
 
 .card:nth-child(2) {
   position: relative;
@@ -124,9 +123,10 @@
   }
 }
 
-@media screen and (max-width: 668px) {
+@media screen and (max-width: 568px) {
   .bottom {
     grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
   }
 
   .card {
@@ -149,7 +149,7 @@
 
   .card:nth-child(5) {
     position: relative;
-    border-radius: 0px;
+    border-radius: 10px;
     border-right: 1px solid var(--lightBlack);
     top: -3px;
   }
