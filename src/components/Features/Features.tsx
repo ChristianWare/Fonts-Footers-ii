@@ -60,7 +60,7 @@ const Features = () => {
             </div>
           </div>
         </div>
-        <div className={styles.left}>
+        <div className={styles.right}>
           <div className={styles.box1}>
             <Image
               src={House}

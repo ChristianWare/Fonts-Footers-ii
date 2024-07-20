@@ -41,12 +41,12 @@
 .card {
   padding: 2rem;
   background-color: var(--white);
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   gap: 7rem;
-
 }
 
 .usp {
@@ -55,6 +55,10 @@
 
 .desc {
   opacity: 0.8;
+}
+
+.icon {
+  color: var(--black);
 }
 
 @media screen and (max-width: 1100px) {

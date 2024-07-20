@@ -8,6 +8,15 @@
   padding-top: 10rem;
 }
 
+.falseBtnContainer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: fit-content;
+  margin-bottom: 2rem;
+  margin-left: auto;
+}
+
 .left {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -16,6 +25,7 @@
 
 .processContainer {
   border: 1px solid var(--lightBlack);
+  border-radius: 10px;
   padding: 3rem;
   display: flex;
   flex-direction: column;
@@ -93,7 +103,6 @@
 }
 
 .processName {
-  
   text-align: center;
   margin-bottom: 2rem;
   color: var(--black);
@@ -135,6 +144,14 @@
 }
 
 @media screen and (max-width: 968px) {
+  .falseBtnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .left {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -169,6 +186,12 @@
 @media screen and (max-width: 668px) {
   .left {
     grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    margin-top: 0rem;
+  }
+
+  .heading {
+    margin-bottom: 2rem;
   }
 
   .processContainer:nth-child(1),

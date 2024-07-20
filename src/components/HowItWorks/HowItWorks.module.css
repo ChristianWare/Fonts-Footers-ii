@@ -57,15 +57,8 @@
   z-index: 999;
   background-color: var(--black);
   border: 2px solid var(--green3);
+  border-radius: 10px;
 }
-
-/* .card:nth-child(odd) {
-  transform: rotate(3deg);
-}
-
-.card:nth-child(even) {
-  transform: rotate(-3deg);
-} */
 
 .box {
   display: flex;

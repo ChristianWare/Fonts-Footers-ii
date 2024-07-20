@@ -5,6 +5,7 @@ import styles from "./Hero.module.css";
 import Button from "../Button/Button";
 import { motion } from "framer-motion";
 import ShuffleHero from "../ShuffleHero/ShuffleHero";
+import FalseButton from "../FalseButton/FalseButton";
 
 const Hero = () => {
   return (
@@ -16,15 +17,17 @@ const Hero = () => {
           className={styles.content}
         >
           <div className={styles.left}>
+            <div className={styles.falseBtnContainer}>
+              <FalseButton btnType='primary' text='Digital Agency' />
+            </div>
             <h1 className={styles.heading}>
               We build interactive and immersive websites
             </h1>
 
             <p className={styles.copy}>
-              Are you looking for a web designer to make your business shine  
-              online? Our digital marketing agency is here to help. We create
-              beautiful, responsive websites that meet your specific needs and
-              goals.
+              Are you looking for a web designer to make your business shine
+              online? Our digital agency is here to help. We create beautiful,
+              responsive websites that meet your specific needs and goals.
             </p>
             <div className={styles.btnContainer}>
               <Button

@@ -43,6 +43,7 @@
   z-index: 0;
   background-color: var(--tan);
   border: 1px solid var(--black);
+  border-radius: 10px;
 }
 
 .stuff {

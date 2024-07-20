@@ -28,7 +28,6 @@
   grid-gap: 2rem;
   margin-bottom: 5rem;
   background-color: transparent;
-  border-radius: 25px;
 }
 
 .imgContainer {
@@ -39,6 +38,7 @@
 
 .img {
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .rightTop,
@@ -50,6 +50,7 @@
   padding: 3rem;
   background-size: 10px 10px;
   border: 1px solid var(--lightBlack);
+  border-radius: 10px;
 }
 
 .rightTop {
@@ -74,10 +75,11 @@
 .rightBottom {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  margin-top: 1rem;
 }
 
 .rbLeft {
-  border-top: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -101,9 +103,6 @@
 }
 
 .rbRight {
-  
-  border-left: 0px;
-  border-top: 0px;
   display: flex;
   align-items: center;
   justify-content: center;

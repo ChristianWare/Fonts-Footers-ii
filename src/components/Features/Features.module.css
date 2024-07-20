@@ -33,6 +33,7 @@
   gap: 2rem;
   padding: 2.5rem;
   border: 1px solid gray;
+  border-radius: 10px;
   position: relative;
 }
 
@@ -49,7 +50,6 @@
 .featureContainer:nth-child(3) {
   top: -1px;
 }
-
 
 .featureContainer:nth-child(4) {
   left: -1px;
@@ -77,6 +77,7 @@
   flex: 1;
   object-fit: cover;
   border: 1px solid gray;
+  border-radius: 10px;
 }
 
 .box1 {
@@ -96,6 +97,7 @@
 }
 
 .box2 {
+  border-radius: 10px;
   background-color: var(--black);
   display: flex;
   align-items: flex-start;
@@ -171,7 +173,6 @@
     border: 1px solid var(--lightBlack);
   }
 
- 
   .featureContainer:nth-child(4) {
     position: relative;
     left: -1px;
@@ -198,9 +199,22 @@
 }
 
 @media screen and (max-width: 568px) {
+  .parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   .test {
     grid-template-columns: repeat(1, 1fr);
-    gap: 2rem;
+    gap: 1rem;
+    margin-bottom: 0rem;
+  }
+
+  .falseBtnContainer {
+    width: fit-content;
+    margin-bottom: 2rem;
   }
 
   .featureContainer:nth-child(1),
@@ -208,5 +222,22 @@
   .featureContainer:nth-child(3),
   .featureContainer:nth-child(4) {
     border: 1px solid var(--lightBlack);
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .box1,
+  .box2 {
+    margin-bottom: 0rem;
+  }
+
+  .copy {
+    margin-bottom: 2rem;
   }
 }

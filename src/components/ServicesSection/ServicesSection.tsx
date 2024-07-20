@@ -3,6 +3,7 @@ import styles from "./ServicesSection.module.css";
 import { services } from "@/lib/data";
 import Arrow2 from "../../../public/icons/arrow2.svg";
 import Features from "../Features/Features";
+import FalseButton from "../FalseButton/FalseButton";
 
 const ServicesSection = () => {
   return (
@@ -10,6 +11,9 @@ const ServicesSection = () => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.right}>
+            {/* <div className={styles.falseBtnContainer}>
+              <FalseButton btnType='primary' text='Services & Features' />
+            </div> */}
             <h2 className={styles.heading}>What we build</h2>
           </div>
           <div className={styles.left}>
@@ -17,7 +21,7 @@ const ServicesSection = () => {
               <div key={x.id} className={styles.processContainer}>
                 <div className={styles.processTop}>
                   {x.processName.length >= 1 && (
-                      <Arrow2 className={styles.icon2} />
+                    <Arrow2 className={styles.icon2} />
                   )}
                 </div>
                 <div className={styles.processBottom}>

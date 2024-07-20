@@ -2,12 +2,19 @@ import LayoutWrapper from "../LayoutWrapper";
 import styles from "./AboutScrollText.module.css";
 import Author from "../../../public/images/author.png";
 import Image from "next/image";
+import FalseButton from "../FalseButton/FalseButton";
 
 const AboutScrollText = () => {
   return (
     <section className={styles.bgColor}>
       <LayoutWrapper color='green3'>
         <div className={styles.content}>
+          <div className={styles.falseBtnContainer}>
+            <FalseButton
+              btnType='primary'
+              text='About us'
+            />
+          </div>
           <h2 className={styles.heading}>Who are we?</h2>
           <div className={styles.bottom}>
             <Image

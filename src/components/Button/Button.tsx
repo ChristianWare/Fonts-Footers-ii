@@ -14,23 +14,21 @@ const Button: FC<ButtonProps> = ({
   onClick,
 }) => {
   return (
-    <div className={styles.container}>
-      <button
-        className={styles.container}
-        onClick={() => {
-          if (onClick) onClick();
-        }}
+    <button
+      className={styles.container}
+      onClick={() => {
+        if (onClick) onClick();
+      }}
+    >
+      <Link
+        href={href}
+        className={`${styles.btn} ${styles[btnType]}`}
+        target={target}
+        download={download}
       >
-        <Link
-          href={href}
-          className={`${styles.btn} ${styles[btnType]}`}
-          target={target}
-          download={download}
-        >
-          {text}
-        </Link>
-      </button>
-    </div>
+        {text}
+      </Link>
+    </button>
   );
 };
 export default Button;
