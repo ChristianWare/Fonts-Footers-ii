@@ -1239,9 +1239,9 @@ export const services = [
   },
   {
     id: 85,
-    processName: "E-Commerce Stores",
+    processName: "E-Commerce Solutions",
     processDescription:
-      "Comprehensive e-commerce platforms designed to drive sales.",
+      "Secure, easy-to-use online stores optimized for conversions and sales growth.",
   },
   {
     id: 86,

@@ -14,7 +14,7 @@ const Button: FC<ButtonProps> = ({
   onClick,
 }) => {
   return (
-    <>
+    <div className={styles.container}>
       <button
         className={styles.container}
         onClick={() => {
@@ -30,7 +30,7 @@ const Button: FC<ButtonProps> = ({
           {text}
         </Link>
       </button>
-    </>
+    </div>
   );
 };
 export default Button;

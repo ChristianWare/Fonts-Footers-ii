@@ -6,33 +6,37 @@ import styles from "./HowItWorks.module.css";
 const process = [
   {
     id: 59,
-    processName: "Browse Our Menu",
-    processDescription:
-      "Visit our menu page to explore our wide range of dishes, including breakfast, main courses, drinks, and desserts.",
+    processName: "Consultation",
+    processDescription: "Understanding your vision and goals.",
   },
   {
     id: 60,
-    processName: "Select Your Favorites",
-    processDescription:
-      "Choose the items you’d like to order, specifying any custom options or special requests, and add them to your cart.",
+    processName: "Planning",
+    processDescription: "Strategizing and designing a custom solution.",
   },
   {
     id: 61,
-    processName: "Checkout",
+    processName: "Development",
     processDescription:
-      "Proceed to checkout, where you can review your order, apply any promotional codes, and enter your delivery details.",
+      "Bringing your project to life with clean, efficient code.",
   },
   {
     id: 62,
-    processName: "Confirm and Enjoy",
+    processName: "Launch",
     processDescription:
-      "Complete your payment securely online. Once confirmed, sit back and relax—we’ll prepare and deliver your order straight to your doorstep, fresh and ready to savor!",
+      "Deploying your website and ensuring everything runs smoothly.",
+  },
+  {
+    id: 63,
+    processName: "Support",
+    processDescription:
+      "Ongoing maintenance and support to keep your site at its best.",
   },
 ];
 
 const HowItWorks = () => {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.left}>
@@ -60,7 +64,7 @@ const HowItWorks = () => {
           </div>
         </div>
       </LayoutWrapper>
-    </div>
+    </section>
   );
 };
 export default HowItWorks;

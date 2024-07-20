@@ -24,6 +24,7 @@
   position: -webkit-sticky;
   position: sticky;
   top: 90px;
+  width: 100%;
 }
 
 .heading {
@@ -58,13 +59,13 @@
   border: 2px solid var(--green3);
 }
 
-.card:nth-child(odd) {
+/* .card:nth-child(odd) {
   transform: rotate(3deg);
 }
 
 .card:nth-child(even) {
   transform: rotate(-3deg);
-}
+} */
 
 .box {
   display: flex;

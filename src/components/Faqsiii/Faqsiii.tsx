@@ -38,7 +38,9 @@ const Faqsiii: FC<Props> = ({ mapData }) => {
             {mapData.map((x: any, i: any) => (
               <div
                 key={x.id}
-                className={styles.qaContainer}
+                className={`${styles.qaContainer} ${
+                  selected === i ? styles.selected : ""
+                }`}
                 onClick={() => toggle(i)}
               >
                 <div className={styles.headingArrowContainer}>

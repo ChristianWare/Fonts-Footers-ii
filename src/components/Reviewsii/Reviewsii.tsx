@@ -10,7 +10,7 @@ import RightArrow from "../../../public/icons/rightArrow.svg";
 const CARD_SIZE_LG = 365;
 const CARD_SIZE_SM = 290;
 
-const ROTATE_DEG = 2.5;
+const Y_TRANSLATE = -10;
 
 const STAGGER = 0;
 const CENTER_STAGGER = -65;
@@ -136,9 +136,8 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
         height: cardSize,
         x: `calc(-50% + ${position * (cardSize / 1.5)}px)`,
         y: `calc(-50% + ${
-          isActive ? CENTER_STAGGER : position % 2 ? STAGGER : -STAGGER
+          isActive ? CENTER_STAGGER : position % 2 ? Y_TRANSLATE : STAGGER
         }px)`,
-        rotate: isActive ? 0 : position % 2 ? ROTATE_DEG : -ROTATE_DEG,
       }}
       transition={{
         type: "spring",

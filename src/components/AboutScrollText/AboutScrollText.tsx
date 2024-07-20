@@ -22,10 +22,15 @@ const AboutScrollText = () => {
             </p>
           </div>
           <p className={styles.text}>
-            We are Fonts and Footers™, an award-winning digital design agency
+            Fonts & Footers is a digital agency focusing on web design, web
+            development, and SEO. We&apos;re experts at blending the latest
+            technology with creative ideas for top-notch results. By working
+            with us, you get personal care, support, and a website that boosts
+            engagement and sales. We opperate out of sunny Phoenix, AZ.
+            {/* We are Fonts and Footers™, an award-winning digital design agency
             focusing on web design, web development, and SEO in the heart of{" "}
             Phoenix, AZ. We design creative brands, websites, and products that
-            deliver results.
+            deliver results. */}
             {/* Welcome to Fonts and Footers™, the premier web design agency in
               Phoenix, AZ. Our team specializes in creating responsive, visually
               stunning websites that elevate your brand and engage your

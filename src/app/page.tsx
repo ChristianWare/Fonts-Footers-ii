@@ -20,6 +20,8 @@ import Faqsiii from "@/components/Faqsiii/Faqsiii";
 import EveryPlan from "@/components/EveryPlan/EveryPlan";
 import HowItWorks from "@/components/HowItWorks/HowItWorks";
 import { homePageFaqs } from "@/lib/data";
+import Carousel from "@/components/Carousel/Carousel";
+import Usp from "@/components/Usp/Usp";
 
 async function getData() {
   const query = `
@@ -52,6 +54,7 @@ export default async function Home() {
       {/* to be used on the money/individual services page */}
       <ServicesSection />
       <EveryPlan />
+      <Usp />
       <HowItWorks />
       <ScrollHorizontalText text='Reviews' bottomBorder={false} />
       <Testimonials />
