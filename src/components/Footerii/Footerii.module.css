@@ -10,6 +10,7 @@
 .content {
   background-color: var(--black);
   padding: 3rem;
+  border-radius: 10px;
 }
 
 .top {
@@ -84,6 +85,7 @@
 
 .labelInputBox input {
   border: none;
+  border-radius: 5px;
   height: 40px;
   width: 100%;
   background-color: var(--tan);
