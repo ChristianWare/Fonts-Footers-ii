@@ -10,7 +10,9 @@ const CallToAction = () => {
     <section className={styles.parent}>
       <LayoutWrapper>
         <section className={styles.content}>
-          <h2 className={styles.heading}>Ready to start a project?</h2>
+          <h2 className={styles.heading}>
+            Ready to Transform Your Online Presence?
+          </h2>
           <p className={styles.copy}>
             Having your own direct booking website empowers you to establish a
             stronger online presence, enhance customer relationships, increase
@@ -18,7 +20,12 @@ const CallToAction = () => {
             branding.
           </p>
           <div className={styles.btnContainer}>
-            <Button text='Schedule a call' href='/' btnType='primary' arrow />
+            <Button
+              text='Need More Information?'
+              href='/'
+              btnType='primary'
+              arrow
+            />
             <Button text='Contact Us' href='/' btnType='secondary' arrow />
           </div>
         </section>

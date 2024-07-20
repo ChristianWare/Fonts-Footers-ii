@@ -18,7 +18,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.top}>
-            <h2 className={styles.header}>Our Blog</h2>
+            <h2 className={styles.header}>Latest Articles</h2>
           </div>
           <div className={styles.bottom}>
             {data?.length > 0 &&
@@ -29,7 +29,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
           {pathname !== "/blog" && (
             <div className={styles.btnContainer}>
               <Button
-                text='see all Articles'
+                text='Read Our Blog'
                 href='/blog'
                 btnType='primaryii'
                 arrow
