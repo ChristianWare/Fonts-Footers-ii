@@ -5,6 +5,7 @@ import { FC, useState } from "react";
 import LayoutWrapper from "../LayoutWrapper";
 import Arrow2 from "../../../public/icons/arrow2.svg";
 import Button from "../Button/Button";
+import { usePathname } from "next/navigation";
 
 interface Props {
   mapData: any;
@@ -16,6 +17,8 @@ const Faqsiii: FC<Props> = ({ mapData }) => {
   const toggle = (i: any) => {
     setSelected(i);
   };
+
+  const pathname = usePathname();
 
   return (
     <section className={styles.container} id='faq'>
@@ -35,47 +38,53 @@ const Faqsiii: FC<Props> = ({ mapData }) => {
           </div>
 
           <div className={styles.right}>
-            {mapData.map((x: any, i: any) => (
-              <div
-                key={x.id}
-                className={`${styles.qaContainer} ${
-                  selected === i ? styles.selected : ""
-                }`}
-                onClick={() => toggle(i)}
-              >
-                <div className={styles.headingArrowContainer}>
-                  <div className={styles.h3Container}>
-                    <h3 className={styles.question} lang='en'>
-                      {x.question}
-                    </h3>
-                  </div>
-                  {selected === i ? (
-                    <div className={styles.iconBox}>
-                      <Arrow2
-                        className={styles.iconFlip}
-                        width={25}
-                        height={25}
-                      />
-                    </div>
-                  ) : (
-                    <div className={styles.iconBox}>
-                      <Arrow2 className={styles.icon} width={25} height={25} />
-                    </div>
-                  )}
-                </div>
+            {mapData
+              .slice(0, pathname !== "/faqs" ? 4 : mapData.length)
+              .map((x: any, i: any) => (
                 <div
-                  className={
-                    selected === i
-                      ? styles.answerContainer + " " + styles.show
-                      : styles.answerContainer
-                  }
+                  key={x.id}
+                  className={`${styles.qaContainer} ${
+                    selected === i ? styles.selected : ""
+                  }`}
+                  onClick={() => toggle(i)}
                 >
-                  <p className={styles.answer} lang='en'>
-                    {x.answer}
-                  </p>
+                  <div className={styles.headingArrowContainer}>
+                    <div className={styles.h3Container}>
+                      <h3 className={styles.question} lang='en'>
+                        {x.question}
+                      </h3>
+                    </div>
+                    {selected === i ? (
+                      <div className={styles.iconBox}>
+                        <Arrow2
+                          className={styles.iconFlip}
+                          width={25}
+                          height={25}
+                        />
+                      </div>
+                    ) : (
+                      <div className={styles.iconBox}>
+                        <Arrow2
+                          className={styles.icon}
+                          width={25}
+                          height={25}
+                        />
+                      </div>
+                    )}
+                  </div>
+                  <div
+                    className={
+                      selected === i
+                        ? styles.answerContainer + " " + styles.show
+                        : styles.answerContainer
+                    }
+                  >
+                    <p className={styles.answer} lang='en'>
+                      {x.answer}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
           </div>
         </div>
       </LayoutWrapper>
