@@ -58,7 +58,7 @@ span {
 }
 
 h1 {
-  font-size: 7.2rem;
+  font-size: 6rem;
   line-height: 100%;
   font-weight: normal;
   text-transform: uppercase;
@@ -68,7 +68,7 @@ h1 {
 
 h2 {
   font-size: 5.2rem;
-  font-weight: normal;
+  font-weight: 400;
   text-transform: uppercase;
   line-height: 115%;
   font-variation-settings: "cuts" 100, "move" 100;
@@ -163,9 +163,9 @@ textarea:focus {
     font-size: 50%;
   }
 
-  /* h1 {
-    font-size: 7.5rem;
-  } */
+  h1 {
+    font-size: 5rem;
+  }
 
   /* h2 {
     font-size: 5.5rem;

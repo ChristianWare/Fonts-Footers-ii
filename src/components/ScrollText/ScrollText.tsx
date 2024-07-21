@@ -9,11 +9,13 @@ const ScrollText = () => {
         <div className={styles.content}>
           <div className={styles.reveal}>
             <h2 className={styles.text}>
-              While online travel authorities can boost your property&apos;s
-              exposure, you should also consider developing your own direct
-              booking website. This can help you build a personalized online
-              presence, and enhance the reservation process for your guests,
-              making it easier for them to book their stay directly with you.
+              We offer a wide range of services to help businesses shine online.
+              Our team creates designs that fit your business perfectly. Whether
+              you need a simple site or a complex ecommerce platform, we can
+              deliver great results. We handle every part of making a website,
+              from the first idea to launch. We work with our clients to make a
+              site that looks good and works well. This site will help your
+              business grow.
             </h2>
           </div>
           <div className={styles.bottom}>
@@ -23,12 +25,10 @@ const ScrollText = () => {
               <div className={styles.ampersand}>&</div>
             </div>
             <p className={styles.copy}>
-              A customized website for your vacation rental home acts as your
-              unique digital storefront, enhancing guest experience and brand
-              visibility. By enabling direct bookings, you attract guests who
-              prefer booking directly, avoiding commission fees. Having your own
-              website that optimizes functionality and aesthetic appeal will set
-              your property apart in the competitive market.
+              At Fonts & Footers, we aim to give our clients
+              top-notch service for online success. Contact us today to see how
+              we can boost your business with a personalized website made just
+              for you.
             </p>
           </div>
         </div>
