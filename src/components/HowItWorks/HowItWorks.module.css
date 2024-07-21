@@ -153,10 +153,6 @@
     text-align: center;
   }
 
-  .right {
-    gap: 2rem;
-  }
-
   .box {
     flex-direction: column;
   }

@@ -47,18 +47,14 @@ const Features = () => {
         <FalseButton btnType='primary' text='Features Of All Our Websites' />
       </div>
       <div className={styles.content}>
-        <div className={styles.left}>
-          <div className={styles.lTop}>
-            <div className={styles.test}>
-              {features.slice(0, 4).map((x, index) => (
-                <div key={index} className={styles.featureContainer}>
-                  <div>{x.icon}</div>
-                  <h4 className={styles.service}>{x.service}</h4>
-                  <p className={styles.desc}>{x.description}</p>
-                </div>
-              ))}
+        <div className={styles.test}>
+          {features.slice(0, 4).map((x, index) => (
+            <div key={index} className={styles.featureContainer}>
+              <div>{x.icon}</div>
+              <h4 className={styles.service}>{x.service}</h4>
+              <p className={styles.desc}>{x.description}</p>
             </div>
-          </div>
+          ))}
         </div>
         <div className={styles.right}>
           <div className={styles.box1}>

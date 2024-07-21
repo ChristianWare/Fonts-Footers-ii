@@ -13,11 +13,13 @@
 }
 
 .text {
-  letter-spacing: -1.5px;
-  width: 60%;
-  font-size: 3.2rem;
+  font-size: 2rem;
+  font-variant-ligatures: none;
+  line-height: 115%;
+  width: 50%;
+  letter-spacing: 0.01em;
+  font-weight: normal;
   color: var(--green3);
-  line-height: 120%;
   text-transform: none;
 }
 
@@ -34,10 +36,15 @@
   gap: 1rem;
 }
 
-.icon {
-  width: 50px;
-  height: 50px;
-  color: var(--green3);
+.ampersand {
+  font-family: var(--lb);
+  font-style: italic;
+  font-size: 5rem;
+  font-weight: 500;
+  color: var(--green3) !important;
+  hyphens: none;
+  white-space: nowrap;
+  color: inherit;
 }
 
 .copy {

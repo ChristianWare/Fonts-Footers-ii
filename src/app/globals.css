@@ -138,6 +138,16 @@ textarea:focus {
   background: var(--secondary);
 } */
 
+.span2 {
+  font-family: var(--lb);
+  font-style: italic;
+  font-size: 2rem;
+  font-weight: 500;
+  hyphens: none;
+  white-space: nowrap;
+  color: inherit;
+}
+
 @media screen and (max-width: 768px) {
   html {
     font-size: 55%;

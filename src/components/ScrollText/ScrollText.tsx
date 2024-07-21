@@ -18,9 +18,9 @@ const ScrollText = () => {
           </div>
           <div className={styles.bottom}>
             <div className={styles.houseContainer}>
-              <House className={styles.icon} />
-              <House className={styles.icon} />
-              <House className={styles.icon} />
+              <div className={styles.ampersand}>&</div>
+              <div className={styles.ampersand}>&</div>
+              <div className={styles.ampersand}>&</div>
             </div>
             <p className={styles.copy}>
               A customized website for your vacation rental home acts as your
