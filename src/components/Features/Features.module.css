@@ -87,14 +87,20 @@
   height: 250px;
 }
 
+.right {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+
 .box1,
 .box2 {
   padding: 2rem;
-  margin-bottom: 1rem;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  justify-content: flex-end;
   gap: 2rem;
 }
 
@@ -104,7 +110,7 @@
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  gap: 5rem;
+  /* gap: 5rem; */
 }
 
 .box2 p,
@@ -140,6 +146,10 @@
   .test {
     grid-template-columns: repeat(1, 1fr);
     /* grid-gap: 2rem; */
+  }
+
+  .box1 {
+    height: 100%;
   }
 }
 
@@ -181,6 +191,10 @@
 
   .service {
     margin-top: 1rem;
+  }
+
+  .box1 {
+    height: 250px;
   }
 
   .box2 {
