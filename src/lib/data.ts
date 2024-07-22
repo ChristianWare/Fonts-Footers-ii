@@ -132,45 +132,45 @@ export const process = [
 ] as const;
 
 export const pricing = [
-  {
-    id: 26,
-    plan: "Landing Page",
-    description:
-      "Ideal for focused marketing campaigns, product launches, or single-purpose goals.",
-    prices: [
-      {
-        id: 1,
-        price: "75 / month",
-      },
-      {
-        id: 2,
-        price: "1,680 / Year",
-      },
-    ],
-    includes: [
-      {
-        id: 26.1,
-        feature: "max 8 sections on page",
-      },
-      {
-        id: 26.2,
-        feature: "Hosting",
-      },
-      {
-        id: 26.3,
-        feature: "SEO",
-      },
-      {
-        id: 27.3,
-        feature: "Analytics",
-      },
-      {
-        id: 27.5,
-        feature: "12 Blog Articles",
-      },
-    ],
-    btnType: "primary",
-  },
+  // {
+  //   id: 26,
+  //   plan: "Landing Page",
+  //   description:
+  //     "Ideal for focused marketing campaigns, product launches, or single-purpose goals.",
+  //   prices: [
+  //     {
+  //       id: 1,
+  //       price: "75 / month",
+  //     },
+  //     {
+  //       id: 2,
+  //       price: "1,680 / Year",
+  //     },
+  //   ],
+  //   includes: [
+  //     {
+  //       id: 26.1,
+  //       feature: "max 8 sections on page",
+  //     },
+  //     {
+  //       id: 26.2,
+  //       feature: "Hosting",
+  //     },
+  //     {
+  //       id: 26.3,
+  //       feature: "SEO",
+  //     },
+  //     {
+  //       id: 27.3,
+  //       feature: "Analytics",
+  //     },
+  //     {
+  //       id: 27.5,
+  //       feature: "12 Blog Articles",
+  //     },
+  //   ],
+  //   btnType: "primary",
+  // },
 
   {
     id: 28,

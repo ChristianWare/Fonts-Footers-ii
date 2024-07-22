@@ -37,11 +37,11 @@
 }
 
 .blogTitle {
-  font-family: var(--raleway);
   font-size: 2rem;
   letter-spacing: -0.5px;
   text-transform: none;
   margin-top: 1rem;
+  color: var(--white);
 }
 
 .blogTitle:hover {
@@ -55,6 +55,7 @@
   -webkit-line-clamp: 3;
   opacity: 0.7;
   font-size: 1.4rem;
+  color: var(--white);
 }
 
 .btnContainer {

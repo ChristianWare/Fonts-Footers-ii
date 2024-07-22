@@ -1,5 +1,6 @@
 .parent {
   border-top: 1px solid var(--lightBlack);
+  background-color: var(--lightBlack);
 }
 
 .content {
@@ -7,7 +8,7 @@
 }
 
 .header {
-  color: var(--green);
+  color: var(--white);
   text-align: right;
 }
 

@@ -120,7 +120,6 @@
 }
 
 .planName {
-  font-size: 2.6rem;
   color: var(--green);
 }
 
@@ -154,7 +153,6 @@
 }
 
 .feature {
-  font-weight: 600;
   color: var(--green);
   border-bottom: 1px solid var(--lightBlack);
   width: 100%;
@@ -162,8 +160,8 @@
 }
 
 .description {
-  font-weight: 600;
   color: var(--green);
+  font-weight: 500;
 }
 
 .price {

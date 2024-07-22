@@ -15,16 +15,15 @@
 
 .heading {
   line-height: 130%;
-  font-weight: 600;
-  font-size: 3.2rem;
+  /* font-weight: 600; */
+  font-size: 3rem;
   letter-spacing: -0.6px;
   width: 70%;
 }
 
-.copy {
+/* .copy {
   font-size: 1.8rem;
-  font-weight: 500;
-}
+} */
 
 .benefitButtonContainer {
   display: flex;
