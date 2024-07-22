@@ -20,7 +20,7 @@
 .bottom {
   display: grid;
   grid-template-columns: 1.5fr 2fr;
-  grid-gap: 3rem;
+  grid-gap: 1rem;
 }
 
 .left {

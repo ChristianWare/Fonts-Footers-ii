@@ -34,12 +34,14 @@ const EnhancedMarketing = () => {
           </div>
           <div className={styles.right}>
             <div className={styles.rightTop}>
-              <h2 className={styles.heading}>Our Mission</h2>
-              <p className={styles.copy}>
-                At Fonts and Footers, our mission is driven by a passion for
-                excellence, innovation, and empowering our clients to achieve
-                their digital goals.
-              </p>
+              <div className={styles.box}>
+                <h2 className={styles.heading}>Our Mission</h2>
+                <p className={styles.copy}>
+                  At Fonts and Footers, our mission is driven by a passion for
+                  excellence, innovation, and empowering our clients to achieve
+                  their digital goals.
+                </p>
+              </div>
               <div className={styles.imgContainerii}>
                 <Image src={Img} alt='image' fill className={styles.img} />
               </div>

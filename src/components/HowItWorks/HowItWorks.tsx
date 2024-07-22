@@ -2,6 +2,8 @@
 
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./HowItWorks.module.css";
+import Image from "next/image";
+import Process from "../../../public/images/process.png";
 
 const process = [
   {
@@ -40,10 +42,21 @@ const HowItWorks = () => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.left}>
-            <h2 className={styles.heading}>Our Approach to each project</h2>
-            <p className={styles.topText}>
-              This is our process for developing the perfect websites for your brand. We Keep you in the loop 100% of the time. 
-            </p>
+            <div className={styles.top}>
+              <h2 className={styles.heading}>Our Approach to each project</h2>
+              <p className={styles.topText}>
+                This is our process for developing the perfect websites for your
+                brand. We Keep you in the loop 100% of the time.
+              </p>
+            </div>
+            <div className={styles.imgContainer}>
+              <Image
+                src={Process}
+                alt='man planning for a project'
+                fill
+                className={styles.img}
+              />
+            </div>
           </div>
           <div className={styles.right}>
             {process.map((x, index) => (

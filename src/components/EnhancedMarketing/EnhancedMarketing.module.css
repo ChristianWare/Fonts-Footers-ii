@@ -26,12 +26,16 @@
   border-radius: 10px;
 }
 
-.copy {
-  margin-top: 1rem;
-  margin-bottom: 4rem;
+.box {
   border: 1px solid var(--lightBlack);
   padding: 2rem;
   border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.copy {
+  margin-top: 1rem;
+  /* margin-bottom: 4rem; */
 }
 
 .card {

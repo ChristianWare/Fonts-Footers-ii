@@ -1,19 +1,23 @@
 .top {
   margin-top: 10rem;
+  border: 1px solid var(--lightBlack);
+  padding: 2rem;
+  border-radius: 10px;
+  width: fit-content;
+  position: relative;
+  top: 1px;
 }
 
 .copy {
   width: 40%;
   margin-top: 2rem;
-  border: 1px solid var(--lightBlack);
-  padding: 2rem;
-  border-radius: 10px;
+  font-size: 1.8rem;
 }
 
 .bottom {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-top: 4rem;
+  /* margin-top: 4rem; */
   padding-bottom: 10rem;
 }
 
