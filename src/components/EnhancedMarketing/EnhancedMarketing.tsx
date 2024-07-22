@@ -3,7 +3,7 @@
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./EnhancedMarketing.module.css";
 import Image from "next/image";
-import Img from "../../../public/images/house18.png";
+import Img from "../../../public/images/mission.png";
 
 const EnhancedMarketing = () => {
   const data = [

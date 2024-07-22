@@ -3,8 +3,7 @@
 import Image from "next/image";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./LongTermRelationships.module.css";
-import Img from "../../../public/images/house22.png";
-import ArrowCluster from "../ArrowCluster/ArrowCluster";
+import Img from "../../../public/images/vission.png";
 
 const LongTermRelationships = () => {
   const data = [

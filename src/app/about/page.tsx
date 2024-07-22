@@ -60,7 +60,6 @@ export default async function AboutPage() {
       <ScrollHorizontalText text='OUR ECOSYSTEM' bottomBorder={false} />
       <HowItWorks />
       <ScrollHorizontalText text='OUR ECOSYSTEM' bottomBorder={false} />
-
       <LongTermRelationships />
       <ScrollHorizontalText text='Reviews' bottomBorder={false} />
       <Testimonials />
