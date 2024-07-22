@@ -8,19 +8,19 @@ import Img from "../../../public/images/house18.png";
 const EnhancedMarketing = () => {
   const data = [
     {
-      title: "Targeted Advertising",
+      title: "Empowering Businesses",
       description:
-        "Utilize data analytics and guest insights to create targeted advertising campaigns. Segment your audience based on demographics, preferences, and booking behaviors to deliver personalized messages that resonate with potential guests.",
+        "Our mission is to empower businesses with innovative and bespoke digital solutions that drive growth, enhance customer engagement, and foster long-term success.",
     },
     {
-      title: "Content Marketing",
+      title: "Delivering Excellence",
       description:
-        "Create compelling content such as blog posts, videos, and guides related to your destination or property. Share valuable information, travel tips, and local insights to engage visitors and establish your expertise in the industry.",
+        "We aim to deliver excellence in every project by combining our expertise in design and technology, ensuring our clients receive superior quality and value.",
     },
     {
-      title: "Email Marketing",
+      title: "Fostering Innovation",
       description:
-        "Build an email subscriber list through direct bookings and use email marketing campaigns to nurture relationships with past guests and prospects. Send personalized offers, newsletters, and updates to encourage repeat bookings and drive revenue.",
+        "We are committed to fostering a culture of innovation, continuously exploring new trends and technologies to provide our clients with forward-thinking and effective digital strategies.",
     },
   ] as const;
   return (
@@ -34,13 +34,11 @@ const EnhancedMarketing = () => {
           </div>
           <div className={styles.right}>
             <div className={styles.rightTop}>
-              <h2 className={styles.heading}>Enhanced Marketing</h2>
-              <p className={styles.copy}>~Our Mission~</p>
+              <h2 className={styles.heading}>Our Mission</h2>
               <p className={styles.copy}>
-                By leveraging enhanced marketing strategies on your direct
-                booking website, you can effectively reach and engage your
-                target audience, drive more direct bookings, increase revenue,
-                and differentiate your property in a competitive market.
+                At Fonts and Footers, our mission is driven by a passion for
+                excellence, innovation, and empowering our clients to achieve
+                their digital goals.
               </p>
               <div className={styles.imgContainerii}>
                 <Image src={Img} alt='image' fill className={styles.img} />

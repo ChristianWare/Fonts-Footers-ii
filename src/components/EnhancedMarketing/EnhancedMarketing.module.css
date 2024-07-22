@@ -29,6 +29,9 @@
 .copy {
   margin-top: 1rem;
   margin-bottom: 4rem;
+  border: 1px solid var(--lightBlack);
+  padding: 2rem;
+  border-radius: 10px;
 }
 
 .card {
@@ -51,8 +54,12 @@
     grid-template-columns: repeat(1, 1fr);
   }
 
+  .heading {
+    text-align: center;
+  }
+
   .copy {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   .imgContainer {

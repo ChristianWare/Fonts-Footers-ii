@@ -42,9 +42,7 @@ const HowItWorks = () => {
           <div className={styles.left}>
             <h2 className={styles.heading}>Our Approach to each project</h2>
             <p className={styles.topText}>
-              Ordering your favorite meals from us is quick and easy! Follow
-              these simple steps to enjoy delicious food delivered right to your
-              doorstep without any hassle.
+              This is our process for developing the perfect websites for your brand. We Keep you in the loop 100% of the time. 
             </p>
           </div>
           <div className={styles.right}>

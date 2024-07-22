@@ -9,14 +9,14 @@ import ArrowCluster from "../ArrowCluster/ArrowCluster";
 const LongTermRelationships = () => {
   const data = [
     {
-      title: "Personalized Communication",
+      title: "Industry Leadership",
       description:
-        "Direct communication through the website allows you to address clients' specific needs, preferences, and feedback, creating a personalized experience that fosters loyalty and trust.",
+        "Our vision is to become a leading digital agency renowned for our innovative solutions and exceptional client service, setting new standards in the industry.",
     },
     {
-      title: "Consistent Brand Experience",
+      title: "Global Impact",
       description:
-        "A direct booking website provides a consistent brand experience from booking to post-stay follow-ups, reinforcing your brand identity and building a sense of reliability and familiarity with clients.",
+        "We aspire to make a global impact by helping businesses of all sizes leverage the power of digital technology to transform and thrive in a constantly evolving marketplace.",
     },
     {
       title: "",
@@ -31,9 +31,9 @@ const LongTermRelationships = () => {
       description: "",
     },
     {
-      title: "Customized Offers",
+      title: "Sustainable Growth",
       description:
-        "You can offer customized packages, discounts, or loyalty rewards directly through your website, incentivizing clients to return for future stays and increasing repeat bookings.",
+        "We envision a future where our agency fosters sustainable growth for our clients and ourselves, prioritizing long-term success and responsible business practices.",
     },
   ] as const;
 
@@ -53,7 +53,6 @@ const LongTermRelationships = () => {
         <div className={styles.content}>
           <div className={styles.top}>
             <h2 className={styles.heading}>Our Vission</h2>
-            <p className={styles.copy}>~Vission~</p>
           </div>
           <div className={styles.bottom}>
             {data.map((x, index) => (

@@ -29,8 +29,9 @@ const Faqsiii: FC<Props> = ({ mapData }) => {
               <h2 className={styles.heading}>You may have wondered...</h2>
             </div>
             <p className={styles.copy}>
-              Here are some common questions asked by potential employers. If
-              you do not see your question here feel free to reach out.
+              Commonly asked questions and answers. If you do not see your
+              question here, feel free to call us anytime to ask, and we will
+              gladly give you a satisfactory answer.
             </p>
             <div className={styles.btnContainer}>
               <Button text='See All Questions' href='/' btnType='primaryii' />

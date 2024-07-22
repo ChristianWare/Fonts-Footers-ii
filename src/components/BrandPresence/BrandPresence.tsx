@@ -2,31 +2,27 @@
 
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./BrandPresence.module.css";
-import Unique from "../../../public/icons/unique.svg";
-import Brand from "../../../public/icons/brand.svg";
-import Personalization from "../../../public/icons/personalization.svg";
-import Review from "../../../public/icons/reviewii.svg";
-import OnlineVis from "../../../public/icons/onlineVis.svg";
+import Arrow from "../../../public/icons/arrow2.svg";
 
 const BrandPresence = () => {
   const data = [
     {
-      icon: <Brand width={30} height={30} className={styles.icon} />,
-      title: "Branding Control",
+      icon: <Arrow width={30} height={30} className={styles.icon} />,
+      title: "Innovation",
       description:
-        "You have complete control over the branding elements - logos, colors, and messaging - ensuring consistency with your brand identity.",
+        "We continuously seek out new technologies and creative approaches to ensure our clients receive cutting-edge solutions tailored to their unique needs.",
     },
     {
-      icon: <Unique width={30} height={30} className={styles.icon} />,
-      title: "Unique Content",
+      icon: <Arrow width={30} height={30} className={styles.icon} />,
+      title: "Integrity",
       description:
-        "Showcase you property's unique features, amenities, and attractions through compelling visual content, descriptions, and virtual tours.",
+        "We believe in building trust through transparency and honesty, committing to ethical practices and open communication in every project we undertake.",
     },
     {
-      icon: <Personalization width={30} height={30} className={styles.icon} />,
-      title: "Personalization",
+      icon: <Arrow width={30} height={30} className={styles.icon} />,
+      title: "Customer-Centricity",
       description:
-        "Greet visitors by name, and offer customized packages or promotions, enhancing brand loyalty and satisfaction.",
+        "Our clients are at the heart of everything we do, and we strive to exceed their expectations by delivering personalized and impactful digital experiences.",
     },
     {
       icon: "",
@@ -34,32 +30,27 @@ const BrandPresence = () => {
       description: "",
     },
     {
-      icon: <Review width={30} height={30} className={styles.icon} />,
-      title: "Guest Reviews",
+      icon: <Arrow width={30} height={30} className={styles.icon} />,
+      title: "Collaboration",
       description:
-        "This provides social proof and builds credibility, enhancing trust and encouraging new visitors to book directly with confidence.",
+        "We value teamwork and partnerships, both within our agency and with our clients, fostering a collaborative environment to achieve the best possible outcomes.",
     },
     {
-      icon: <OnlineVis width={30} height={30} className={styles.icon} />,
-      title: "Online Visibility",
+      icon: <Arrow width={30} height={30} className={styles.icon} />,
+      title: "Excellence",
       description:
-        "Improve your online visibility and attract organic traffic with SEO. Target relevant keywords to attract more visitors.",
+        "We are dedicated to achieving the highest standards in our work, continuously improving and pushing the boundaries to deliver outstanding results for our clients.",
     },
   ];
   return (
     <section>
       <LayoutWrapper>
         <div className={styles.top}>
-          <h2 className={styles.heading}>
-            Brand <br />
-            Presence
-          </h2>
-          <p className={styles.copu}>~ Values ~</p>
+          <h2 className={styles.heading}>Our Values</h2>
           <p className={styles.copy}>
-            A well-designed and strategically optimized direct booking website
-            serves as a powerful tool for building and strengthening brand
-            presence, attracting guests, and fostering long-term brand loyalty
-            in the vacation rental industry.
+            Our values act as a set of guiding principles and fundamental
+            beliefs that influence the behaviors we demonstrate, which shape the
+            decisions we collectively make as a team.
           </p>
         </div>
         <div className={styles.bottom}>

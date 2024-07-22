@@ -14,10 +14,8 @@ const CallToAction = () => {
             Ready to Transform Your Online Presence?
           </h2>
           <p className={styles.copy}>
-            Having your own direct booking website empowers you to establish a
-            stronger online presence, enhance customer relationships, increase
-            revenue, and maintain greater control over your operations and
-            branding.
+            We create beautiful, responsive websites that meet your specific
+            needs and goals.
           </p>
           <div className={styles.btnContainer}>
             <Button

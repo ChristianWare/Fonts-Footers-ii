@@ -11,6 +11,7 @@ import { simpleBlogCard } from "@/lib/interface";
 import { client } from "@/lib/sanity";
 import { Metadata } from "next";
 import { homePageFaqs } from "@/lib/data";
+import Benefits from "@/components/Benefits/Benefits";
 
 async function getData() {
   const query = `
@@ -39,9 +40,10 @@ export default async function PricingPage() {
   return (
     <>
       <Pricing bgColor='tan' />
-      <ScrollHorizontalText text='Compare plans' bottomBorder={true} />
-      <Chart />
-      <ScrollHorizontalText text='Compare plans' bottomBorder={true} />
+      <ScrollHorizontalText text='Features' bottomBorder={true} />
+      {/* <Chart /> */}
+      <Benefits />
+      <ScrollHorizontalText text='Features' bottomBorder={true} />
       <IndividualService />
       <EveryPlan />
       <HowItWorks />

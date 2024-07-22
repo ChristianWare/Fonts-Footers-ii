@@ -9,32 +9,34 @@ import Unique from "../../../public/icons/unique.svg";
 // import { motion } from "framer-motion";
 // import { fadeIn } from "../../../animation/variants";
 import FalseButton from "../FalseButton/FalseButton";
+import Image from "next/image";
+import Author from "../../../public/images/author.png";
 
 const Mission = () => {
   const data = [
     {
       icon: <Trust width={50} height={50} className={styles.icon} />,
-      title: "Trust & Transparency",
+      title: "Personal Story",
       description:
-        "We prioritize trust and transparency, building a reliable and secure environment for vacation rental owners.",
+        "Chris' passion for design and technology began in college, where he built her first website. This passion has driven him to create a successful digital agency that focuses on innovation and client success.",
     },
     {
       icon: <User width={50} height={50} className={styles.icon} />,
-      title: "User-Friendly",
+      title: "Vision and Goals",
       description:
-        "We strive to offer a personalized and user-friendly experience, tailoring our services to meet the unique needs of each host.",
+        "Chris envisions Fonts and Footers as a leader in the digital space, dedicated to delivering innovative solutions and exceptional client service.",
     },
     {
       icon: <Grow width={53} height={53} className={styles.icon} />,
-      title: "Growth",
+      title: "Personal Interests",
       description:
-        "Our mission is to contribute to the growth of vacation rental businesses, enabling hosts to thrive in a competitive marketplace.",
+        "When he's not working, Chris enjoys hiking in the Arizona mountains, playing pick up basketball, and spending time with his family.",
     },
     {
       icon: <Unique width={50} height={50} className={styles.icon} />,
-      title: "Personalization",
+      title: "Contact Information",
       description:
-        "Continuously enhance user experience by offering personalized solutions that cater to the specific requirements of each vacation rental owner.",
+        "Connect with Chris on LinkedIn or reach out via email at chris@fontsandfooters.com.",
     },
   ];
   return (
@@ -45,15 +47,25 @@ const Mission = () => {
         </div>
         <div className={styles.bottom}>
           <div className={styles.left}>
-            <FalseButton text='Mission Statement' btnType='primary' />
-            <p className={styles.leftCopy}>
-              Empowering vacation rental owners with personalized and
-              user-friendly direct booking websites, our mission is to liberate
-              hosts from intermediary platforms, fostering independence, trust,
-              and growth in their businesses, as we redefine the vacation rental
-              experience away from Airbnb. Here are the four ways we plan on
-              accomplishing that goal:
-            </p>
+            <div className={styles.imgOverlay}></div>
+            <Image
+              src={Author}
+              alt='image'
+              fill
+              className={styles.img}
+              priority
+              sizes='(max-width: 768px) 50vw, (max-width: 1200px) 100vw'
+              quality={100}
+            />
+            <div className={styles.z3}>
+              <FalseButton text='Chris Ware' btnType='primary' />
+              <p className={styles.leftCopy}>
+                Meet Chris Ware, the visionary founder and CEO of Fonts and
+                Footers. With over 10 years of experience in web development and
+                digital marketing, Chris has a proven track record of helping
+                businesses achieve their online goals.
+              </p>
+            </div>
           </div>
           <div className={styles.right}>
             {data.map((x, index) => (
