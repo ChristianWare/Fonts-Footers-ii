@@ -9,41 +9,41 @@ import Button from "../Button/Button";
 
 const IndividualService = () => {
   const individulaFeatures = [
-    {
-      icon: <Landing width={75} height={75} className={styles.icon} />,
-      title: "Landing Pages",
-      description:
-        "Integrating Stripe as your payment gateway for your property ensures secure transactions, supports multiple payment methods, automates payments, expands global reach, provides real-time reporting, offers easy integration, enhances the guest experience, and ensures compliance, all contributing to the success and efficiency of your vacation rental business.",
-      href: "/landing-pages",
-      whyImportant: [
-        {
-          title: "Secure Transactions",
-          modal:
-            "Stripe provides a secure platform for processing payments, ensuring that transactions are safe and protected against fraud.",
-        },
-        {
-          title: "Payment Methods",
-          modal:
-            "Guests can pay using various payment methods, including credit/debit cards, digital wallets, and bank transfers, accommodating different guest preferences.",
-        },
-        {
-          title: "Global Reach",
-          modal:
-            "Stripe supports international payments, allowing you to accept payments from guests worldwide and expand your customer base.",
-        },
-        {
-          title: "Live Reporting",
-          modal:
-            "You can access real-time payment reports, analytics, and insights through the Stripe dashboard, helping you track revenue, monitor transactions, and make data-driven decisions.",
-        },
-      ],
-    },
+    // {
+    //   icon: <Landing width={75} height={75} className={styles.icon} />,
+    //   title: "Landing Pages",
+    //   description:
+    //     "Integrating Stripe as your payment gateway for your property ensures secure transactions, supports multiple payment methods, automates payments, expands global reach, provides real-time reporting, offers easy integration, enhances the guest experience, and ensures compliance, all contributing to the success and efficiency of your vacation rental business.",
+    //   href: "/landing-pages",
+    //   whyImportant: [
+    //     {
+    //       title: "Secure Transactions",
+    //       modal:
+    //         "Stripe provides a secure platform for processing payments, ensuring that transactions are safe and protected against fraud.",
+    //     },
+    //     {
+    //       title: "Payment Methods",
+    //       modal:
+    //         "Guests can pay using various payment methods, including credit/debit cards, digital wallets, and bank transfers, accommodating different guest preferences.",
+    //     },
+    //     {
+    //       title: "Global Reach",
+    //       modal:
+    //         "Stripe supports international payments, allowing you to accept payments from guests worldwide and expand your customer base.",
+    //     },
+    //     {
+    //       title: "Live Reporting",
+    //       modal:
+    //         "You can access real-time payment reports, analytics, and insights through the Stripe dashboard, helping you track revenue, monitor transactions, and make data-driven decisions.",
+    //     },
+    //   ],
+    // },
     {
       icon: <Cart width={75} height={75} className={styles.icon} />,
       title: "E-Commerce Stores",
       description:
         "Integrating a booking engine for your properties enables direct bookings, control over pricing and availability, enhances guest experience, allows customization and personalization, provides valuable data insights, streamlines operations, boosts revenue and occupancy, and builds brand loyalty and trust.",
-      href: "/e-commerce-stores",
+      href: "services/ecommerce-stores",
       whyImportant: [
         {
           title: "Control",
@@ -72,8 +72,7 @@ const IndividualService = () => {
       title: "Business Websites",
       description:
         "Guest reviews on your direct booking website enhance transparency, build trust, provide valuable feedback for improvement, manage reputation, serve as social proof, offer SEO benefits, and ultimately increase bookings and occupancy rates for your property.",
-      href: "/landing-pages",
-
+      href: "services/business-websites",
       whyImportant: [
         {
           title: "Transparency",
@@ -102,6 +101,7 @@ const IndividualService = () => {
       title: "Booking Platforms",
       description:
         "Adding an interactive map feature for your properties enhances the user experience by providing visual representation, improving decision-making, increasing engagement, differentiating your listings, enhancing marketing efforts, and ultimately boosting guest satisfaction and bookings.",
+      href: "services/booking-platforms",
       whyImportant: [
         {
           title: "Visual Representation",
@@ -134,12 +134,13 @@ const IndividualService = () => {
         <div className={styles.parent}>
           {individulaFeatures.map((x, index) => (
             <div key={index} className={styles.content}>
-              <div className={styles.left}>
-                <h3 className={styles.title}>{x.title}</h3>
-                <p className={styles.copy}>~Click to Learn More ~</p>
-
-                <div className={styles.iconContainer}>{x.icon}</div>
-              </div>
+              <Link href={x.href}>
+                <div className={styles.left}>
+                  <h3 className={styles.title}>{x.title}</h3>
+                  <p className={styles.copy}>~Click to Learn More ~</p>
+                  <div className={styles.iconContainer}>{x.icon}</div>
+                </div>
+              </Link>
               <div className={styles.right}>
                 <p className={styles.desc}>{x.description}</p>
                 <br />
