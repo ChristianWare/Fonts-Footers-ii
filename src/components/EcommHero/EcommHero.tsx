@@ -30,13 +30,13 @@ const EcommHero = () => {
     <section className={styles.container}>
       <LayoutWrapper>
         <div className={styles.content}>
-          <div className={styles.left}>
-            <h1 className={styles.heading}>
-              ECOMMERCE STORES: Affordable Ecommerce Web Design Packages
-            </h1>
-          </div>
           <div className={styles.right}>
             <Cart className={styles.icon} />
+          </div>
+          <div className={styles.left}>
+            <h1 className={styles.heading}>
+              Custom E-commerce Solutions for Your Business
+            </h1>
           </div>
         </div>
         <div className={styles.contentBottom}>

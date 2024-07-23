@@ -19,6 +19,8 @@
 .copy {
   width: 50%;
   text-align: center;
+  font-weight: 500;
+  font-size: 1.8rem;
 }
 
 .bottom {
@@ -43,6 +45,10 @@
 
 .title {
   margin-bottom: 2rem;
+}
+
+.desc {
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 1268px) {

@@ -1,6 +1,7 @@
 import Project1 from "../../public/images/elite.png";
 import Project2 from "../../public/images/nier.png";
 import Project3 from "../../public/images/taco.jpg";
+import Img1 from "../../public/images/aboutHouse.png";
 
 export const benefits = [
   {
