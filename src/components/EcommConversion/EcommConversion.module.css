@@ -1,0 +1,139 @@
+.container {
+  position: relative;
+}
+
+.imgOverlay {
+  z-index: 2;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(10, 7, 27, 0.7), rgba(10, 7, 27, 0.7));
+}
+
+.img {
+  object-fit: cover;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  padding-top: 7rem;
+  z-index: 999;
+}
+
+.top,
+.bottom {
+  z-index: 999;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.heading {
+  color: var(--tan);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.copy {
+  color: var(--tan);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  border: 1px solid var(--tan);
+  border-radius: 10px;
+  padding: 4rem;
+}
+
+.card:nth-child(1) {
+  background-color: rgba(242, 236, 221, 0.1);
+}
+
+.card:nth-child(2) {
+  position: relative;
+  left: -1px;
+  border-bottom-right-radius: 0px;
+  background-color: rgba(242, 236, 221, 0.1);
+}
+
+.card:nth-child(3),
+.card:nth-child(4),
+.card:nth-child(5) {
+  border: none;
+}
+
+.card:nth-child(6) {
+  border-top-left-radius: 0px;
+  position: relative;
+  top: -1px;
+  left: -2px;
+  background-color: rgba(242, 236, 221, 0.1);
+}
+
+.title {
+  margin-bottom: 2rem;
+  color: var(--tan);
+}
+
+.desc {
+  opacity: 0.8;
+  color: var(--tan);
+}
+
+@media screen and (max-width: 1068px) {
+  .bottom {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card:nth-child(3),
+  .card:nth-child(4),
+  .card:nth-child(5) {
+    display: none;
+  }
+
+  .card:nth-child(6) {
+    position: relative;
+    left: 0;
+    top: -1px;
+  }
+
+  .copy {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bottom {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+  }
+
+  .card:nth-child(2) {
+    position: relative;
+    top: -1px;
+    left: 0;
+  }
+
+  .card:nth-child(6) {
+    position: relative;
+    top: -2px;
+  }
+}
