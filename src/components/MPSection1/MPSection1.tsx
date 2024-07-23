@@ -33,12 +33,12 @@ const MPSection1 = () => {
         <div className={styles.content}>
           <div className={styles.top}>
             <h2 className={styles.heading}>Custom E-commerce Development </h2>
-            <p className={styles.copy}>
+            {/* <p className={styles.copy}>
               Our custom e-commerce development services ensure that your online
               store is uniquely designed to meet your business goals. We build
               scalable and secure platforms that are tailored to your specific
               needs, whether you’re a startup or an established enterprise.
-            </p>
+            </p> */}
           </div>
           <div className={styles.btnContainer}>
             <FalseButton text='Key Features' btnType='primary' />

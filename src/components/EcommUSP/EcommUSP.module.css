@@ -11,7 +11,14 @@
 .heading {
   width: 50%;
   margin-right: auto;
+  margin-bottom: 1rem;
+}
+
+.copy {
   margin-bottom: 5rem;
+  width: 60%;
+  opacity: 0.8;
+  font-weight: 600;
 }
 
 .falseBtnContainer {
@@ -39,26 +46,11 @@
   justify-content: space-between;
   gap: 2rem;
   height: 100%;
-  cursor: pointer;
   transition: all 0.2s ease-in;
 }
 
-.processContainer:nth-child(1) {
-  cursor: default;
-}
 
-.processContainer:nth-child(1):hover {
-  user-select: none;
-  background-color: var(--tan);
-}
 
-.processContainer:hover {
-  background-color: var(--green3);
-}
-
-.processContainer:nth-child(3) {
-  background-color: var(--green3);
-}
 
 .processTop {
   display: flex;
@@ -72,7 +64,6 @@
   height: 40px;
   color: var(--black);
   transition: all 0.2s ease-in-out;
-  cursor: pointer;
   transform: rotate(-45deg);
 }
 
@@ -143,12 +134,12 @@
 }
 
 @media screen and (max-width: 968px) {
-  .falseBtnContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .heading,
+  .copy {
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
   }
 
   .left {
@@ -168,11 +159,6 @@
     position: relative;
     left: 1px;
     bottom: 1px;
-  }
-
-  .heading {
-    width: 100%;
-    text-align: center;
   }
 
   .copy {

@@ -41,28 +41,38 @@
 }
 
 .card:nth-child(2) {
-  background-color: var(--lightBlack);
+  background-color: var(--tan);
 }
 
 .card:nth-child(3) {
+  background-color: var(--lightBlack);
+}
+
+.card:nth-child(4) {
   background-color: var(--black);
 }
 
 .card:nth-child(2) h3,
 .card:nth-child(2) span,
 .card:nth-child(2) p {
-  color: var(--white);
+  color: var(--black);
 }
 
 .card:nth-child(3) h3,
 .card:nth-child(3) span,
 .card:nth-child(3) p {
+  color: var(--white);
+}
+
+.card:nth-child(4) h3,
+.card:nth-child(4) span,
+.card:nth-child(4) p {
   color: var(--green3);
 }
 
 .index {
   font-size: 10rem;
-  font-weight: 700;
+  font-weight: 400;
   font-variation-settings: "cuts" 100, "move" 100;
   font-variant-ligatures: common-ligatures;
 }

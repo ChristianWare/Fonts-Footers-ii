@@ -1,8 +1,5 @@
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./EcommUSP.module.css";
-import Arrow2 from "../../../public/icons/arrow2.svg";
-import Features from "../Features/Features";
-import FalseButton from "../FalseButton/FalseButton";
 
 const services = [
   {
@@ -12,27 +9,27 @@ const services = [
   },
   {
     id: 83,
-    processName: "Landing Pages",
+    processName: "Expert Team",
     processDescription:
-      "Tailored websites that reflect your unique brand identity.",
+      "Our team of skilled designers, developers, and marketers bring years of experience and a passion for e-commerce. ",
   },
   {
     id: 85,
-    processName: "E-Commerce Solutions",
+    processName: "Client-Centric Approach",
     processDescription:
-      "Secure, easy-to-use online stores optimized for conversions and sales growth.",
+      "We prioritize your business goals and tailor our solutions to meet your specific needs.",
   },
   {
     id: 86,
-    processName: "Business Websites",
+    processName: "Innovative Solutions",
     processDescription:
-      "Optimize your online presence and attract more visitors.",
+      "We stay ahead of industry trends to provide cutting-edge solutions that give you a competitive edge.",
   },
   {
     id: 87,
-    processName: "Booking Platforms",
+    processName: "Proven Results",
     processDescription:
-      "Innovative web applications to streamline your business operations.",
+      "Our portfolio of successful e-commerce projects speaks for itself. We help businesses like yours achieve their online sales goals.",
   },
 ] as const;
 
@@ -45,15 +42,16 @@ const EcommUSP = () => {
             <h2 className={styles.heading}>
               Why Choose Us for Your E-commerce Needs?
             </h2>
+            <p className={styles.copy}>
+              Partnering with Fonts & Footers means working with a team
+              dedicated to your success. Here’s why you should choose us for
+              your e-commerce website development:
+            </p>
           </div>
           <div className={styles.left}>
             {services.map((x) => (
               <div key={x.id} className={styles.processContainer}>
-                <div className={styles.processTop}>
-                  {x.processName.length >= 1 && (
-                    <Arrow2 className={styles.icon2} />
-                  )}
-                </div>
+                <div className={styles.processTop}></div>
                 <div className={styles.processBottom}>
                   {x.processName.length >= 1 && (
                     <h3 className={styles.processName}>{x.processName}</h3>

@@ -1,6 +1,5 @@
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./EcommIntegrations.module.css";
-import Cart from "../../../public/icons/cart.svg";
 
 const data = [
   {
@@ -18,6 +17,11 @@ const data = [
     feature: "Third-Party Integrations",
     desc: "We seamlessly integrate with third-pparty tools and services, such as payment gateways, shipping providers, and CRM systems.",
   },
+  {
+    id: 4,
+    feature: "Automated Email Notifications",
+    desc: "We set up automated email notifications to keep you and your customers informed when orders are placed, shipped, or updated, enhancing communication and customer satisfaction.",
+  },
 ];
 
 const EcommIntegrations = () => {
@@ -28,12 +32,12 @@ const EcommIntegrations = () => {
         <div className={styles.top}>
           <div className={styles.topLeft}>
             <h2 className={styles.heading}>E-commerce Platform Integration</h2>
-            <p className={styles.copy}>
+            {/* <p className={styles.copy}>
               We integrate with leading e-commerce platforms like Shopify,
               WooCommerce, and Magento, ensuring your online store has the
               functionality and flexibility required to succeed in a competitive
               market.
-            </p>
+            </p> */}
           </div>
           <div className={styles.topRight}>
             {/* <h3 className={styles.headline}>
@@ -51,9 +55,6 @@ const EcommIntegrations = () => {
               </div>
             </div>
           ))}
-          <div className={styles.iconContainer}>
-            <Cart className={styles.icon} />
-          </div>
         </div>
       </LayoutWrapper>
     </section>

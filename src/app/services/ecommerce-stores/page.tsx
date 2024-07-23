@@ -6,7 +6,12 @@ import EcommOverview from "@/components/EcommOverview/EcommOverview";
 import EcommResponsive from "@/components/EcommResponsive/EcommResponsive";
 import EcommSEO from "@/components/EcommSEO/EcommSEO";
 import EcommUSP from "@/components/EcommUSP/EcommUSP";
+import EveryPlan from "@/components/EveryPlan/EveryPlan";
+import Faqsiii from "@/components/Faqsiii/Faqsiii";
 import MPSection1 from "@/components/MPSection1/MPSection1";
+import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
+import Testimonials from "@/components/Testimonials/Testimonials";
+import { homePageFaqs } from "@/lib/data";
 
 export default function EcommerceStoresPage() {
   return (
@@ -20,6 +25,12 @@ export default function EcommerceStoresPage() {
       <EcommSEO />
       <EcommAnalytics />
       <EcommUSP />
+      <EveryPlan />
+      <ScrollHorizontalText text='Reviews' bottomBorder={false} />
+      <Testimonials />
+      <ScrollHorizontalText text='Reviews' bottomBorder={false} />
+
+      <Faqsiii mapData={homePageFaqs} />
     </main>
   );
 }
