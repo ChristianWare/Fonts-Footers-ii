@@ -84,7 +84,8 @@
     align-items: center;
     justify-content: center;
   }
-  .heading {
+  .heading,
+  .copy {
     width: 100%;
   }
 

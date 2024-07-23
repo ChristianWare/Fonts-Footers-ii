@@ -1,0 +1,88 @@
+.bgColor {
+  background-color: var(--green);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10rem;
+}
+
+.reveal {
+  padding-top: 10rem;
+}
+
+.text {
+  font-size: 2rem;
+  font-variant-ligatures: none;
+  line-height: 115%;
+  width: 50%;
+  letter-spacing: 0.01em;
+  font-weight: normal;
+  color: var(--green3);
+  text-transform: none;
+}
+
+.bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.houseContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.icon {
+  color: var(--green3) !important;
+  width: 30px;
+  height: 30px;
+}
+
+.copy {
+  width: 40%;
+  color: var(--tan);
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1068px) {
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .houseContainer {
+    width: 100%;
+  }
+
+  .text,
+  .copy {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .reveal {
+    padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .copy {
+    width: 100%;
+  }
+}
