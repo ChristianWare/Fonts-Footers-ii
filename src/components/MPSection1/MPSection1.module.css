@@ -40,11 +40,12 @@
 }
 
 .card {
-  border: 1px solid var(--lightBlack);
+  /* border: 1px solid var(--lightBlack); */
   border-radius: 10px;
   padding: 3rem;
   display: grid;
   grid-template-columns: 1fr 2fr;
+  background-color: var(--tan);
 }
 
 .left {
