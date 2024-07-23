@@ -24,8 +24,8 @@
   align-items: center;
   justify-content: center;
   gap: 3rem;
-  border: 1px solid var(--lightBlack);
   border-radius: 10px;
+  background-color: var(--white);
   padding: 3rem;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .card {
-  border: 1px solid var(--lightBlack);
+  background-color: var(--white);
   padding: 2rem;
   border-radius: 10px;
   display: flex;

@@ -6,6 +6,7 @@ import styles from "./Pricing.module.css";
 import Button from "../Button/Button";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 interface Props {
   bgColor?: string;
@@ -68,7 +69,7 @@ const Pricing = ({ bgColor = "" }: Props) => {
                     </span>
                   </div>
                 </div>
-                <div className={styles.moreDetails}>More Details</div>
+                <Link href={x.href} className={styles.moreDetails}>More Details</Link>
               </div>
             ))}
           </div>

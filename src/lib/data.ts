@@ -178,6 +178,7 @@ export const pricing = [
     plan: "Business Website",
     for: "11 or more Properties",
     description: "Optimize your online presence and attract more visitors.",
+    href: "/services/business-websites",
     prices: [
       {
         id: 1,
@@ -216,6 +217,7 @@ export const pricing = [
     id: 27,
     plan: "E-Commerce",
     description: "Comprehensive e-commerce platforms designed to drive sales.",
+    href: "/services/ecommerce-stores",
     prices: [
       {
         id: 1,
@@ -254,6 +256,7 @@ export const pricing = [
     id: 28,
     plan: "Booking Platform",
     description: "Optimize your online presence and attract more visitors.",
+    href: "/services/booking-platforms",
     prices: [
       {
         id: 1,

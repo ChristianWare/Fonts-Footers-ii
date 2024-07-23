@@ -8,6 +8,7 @@ import EcommSEO from "@/components/EcommSEO/EcommSEO";
 import EcommUSP from "@/components/EcommUSP/EcommUSP";
 import EveryPlan from "@/components/EveryPlan/EveryPlan";
 import Faqsiii from "@/components/Faqsiii/Faqsiii";
+import HowItWorks from "@/components/HowItWorks/HowItWorks";
 import MPSection1 from "@/components/MPSection1/MPSection1";
 import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
 import Testimonials from "@/components/Testimonials/Testimonials";
@@ -26,6 +27,7 @@ export default function EcommerceStoresPage() {
       <EcommAnalytics />
       <EcommUSP />
       <EveryPlan />
+      <HowItWorks />
       <ScrollHorizontalText text='Reviews' bottomBorder={false} />
       <Testimonials />
       <ScrollHorizontalText text='Reviews' bottomBorder={false} />
