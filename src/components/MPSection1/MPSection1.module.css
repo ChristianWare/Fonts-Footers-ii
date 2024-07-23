@@ -1,5 +1,9 @@
 .content {
   padding-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .top {
@@ -17,10 +21,14 @@
 }
 
 .copy {
-  width: 50%;
+  width: 70%;
   text-align: center;
   font-weight: 500;
   font-size: 1.8rem;
+}
+
+.btnContainer {
+  margin-bottom: 3rem;
 }
 
 .bottom {
@@ -37,6 +45,14 @@
   padding: 3rem;
   display: grid;
   grid-template-columns: 1fr 2fr;
+}
+
+.left {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .icon {
@@ -87,5 +103,9 @@
     align-items: center;
     justify-content: center;
     gap: 2rem;
+  }
+
+  .title {
+    text-align: center;
   }
 }
