@@ -37,6 +37,10 @@ const EcommHero = () => {
             <h1 className={styles.heading}>
               Custom E-commerce Solutions for Your Business
             </h1>
+            <p className={styles.copy}>
+              Boost your online sales with secure, user-friendly, and scalable
+              e-commerce websites.
+            </p>
           </div>
         </div>
         <div className={styles.contentBottom}>
