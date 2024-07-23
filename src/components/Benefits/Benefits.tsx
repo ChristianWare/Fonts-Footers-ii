@@ -8,6 +8,8 @@ import Button from "../Button/Button";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../animation/variants";
 
+
+
 const Benefits = () => {
   return (
     <section>

@@ -1,3 +1,4 @@
+import EcommAnalytics from "@/components/EcommAnalytics/EcommAnalytics";
 import EcommConversion from "@/components/EcommConversion/EcommConversion";
 import EcommHero from "@/components/EcommHero/EcommHero";
 import EcommIntegrations from "@/components/EcommIntegrations/EcommIntegrations";
@@ -16,6 +17,7 @@ export default function EcommerceStoresPage() {
       <EcommResponsive />
       <EcommConversion />
       <EcommSEO />
+      <EcommAnalytics />
     </main>
   );
 }
