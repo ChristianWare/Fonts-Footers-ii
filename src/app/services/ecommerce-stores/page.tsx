@@ -10,6 +10,7 @@ import EveryPlan from "@/components/EveryPlan/EveryPlan";
 import Faqsiii from "@/components/Faqsiii/Faqsiii";
 import HowItWorks from "@/components/HowItWorks/HowItWorks";
 import MPSection1 from "@/components/MPSection1/MPSection1";
+import Pricing from "@/components/Pricing/Pricing";
 import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
 import Testimonials from "@/components/Testimonials/Testimonials";
 import { homePageFaqs } from "@/lib/data";
@@ -28,6 +29,7 @@ export default function EcommerceStoresPage() {
       <EcommUSP />
       <EveryPlan />
       <HowItWorks />
+      <Pricing />
       <ScrollHorizontalText text='Reviews' bottomBorder={false} />
       <Testimonials />
       <ScrollHorizontalText text='Reviews' bottomBorder={false} />

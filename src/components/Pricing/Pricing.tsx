@@ -50,7 +50,17 @@ const Pricing = ({ bgColor = "" }: Props) => {
           </div>
           <div className={styles.bottom}>
             {pricing.map((x) => (
-              <div key={x.id} className={styles.priceContainer}>
+              <div
+                key={x.id}
+                className={styles.priceContainer}
+                style={{
+                  opacity:
+                    pathname === "/services/business-websites" &&
+                    x.href !== "/services/business-websites"
+                      ? 0.5
+                      : 1,
+                }}
+              >
                 <div className={styles.contentParent}>
                   <div className={styles.pcTop}>
                     <h3 className={styles.planName}>{x.plan}</h3>
@@ -69,7 +79,9 @@ const Pricing = ({ bgColor = "" }: Props) => {
                     </span>
                   </div>
                 </div>
-                <Link href={x.href} className={styles.moreDetails}>More Details</Link>
+                <Link href={x.href} className={styles.moreDetails}>
+                  More Details
+                </Link>
               </div>
             ))}
           </div>
@@ -88,4 +100,5 @@ const Pricing = ({ bgColor = "" }: Props) => {
     </section>
   );
 };
+
 export default Pricing;
