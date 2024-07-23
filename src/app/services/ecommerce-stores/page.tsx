@@ -5,6 +5,7 @@ import EcommIntegrations from "@/components/EcommIntegrations/EcommIntegrations"
 import EcommOverview from "@/components/EcommOverview/EcommOverview";
 import EcommResponsive from "@/components/EcommResponsive/EcommResponsive";
 import EcommSEO from "@/components/EcommSEO/EcommSEO";
+import EcommUSP from "@/components/EcommUSP/EcommUSP";
 import MPSection1 from "@/components/MPSection1/MPSection1";
 
 export default function EcommerceStoresPage() {
@@ -18,6 +19,7 @@ export default function EcommerceStoresPage() {
       <EcommConversion />
       <EcommSEO />
       <EcommAnalytics />
+      <EcommUSP />
     </main>
   );
 }
