@@ -16,7 +16,6 @@ export default function BusinessWebsites() {
   return (
     <main>
       <BusinessHero />
-
       <ScrollHorizontalText text='Bespoke Websites' bottomBorder={false} />
       <HigherMargins />
       <ScrollHorizontalText text='Bespoke Websites' bottomBorder={false} />

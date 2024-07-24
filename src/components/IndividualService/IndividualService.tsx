@@ -18,19 +18,19 @@ const IndividualService = () => {
     //   whyImportant: [
     //     {
     //       title: "Secure Transactions",
-    //      
+    //
     //     },
     //     {
     //       title: "Payment Methods",
-    //      
+    //
     //     },
     //     {
     //       title: "Global Reach",
-    //       
+    //
     //     },
     //     {
     //       title: "Live Reporting",
-    //      
+    //
     //     },
     //   ],
     // },
@@ -43,19 +43,16 @@ const IndividualService = () => {
       whyImportant: [
         {
           title: "Control",
-         
         },
         {
           title: "Guest Experience",
-        
         },
         {
           title: "Customization",
-         
         },
         // {
         //   title: "Streamlined Operations",
-         
+
         // },
       ],
     },
@@ -68,19 +65,16 @@ const IndividualService = () => {
       whyImportant: [
         {
           title: "Transparency",
-         
         },
         {
           title: "Trust Building",
-         
         },
         {
           title: "Feedback and Improvement",
-          
         },
         // {
         //   title: "Reputation Management",
-         
+
         // },
       ],
     },
@@ -93,19 +87,16 @@ const IndividualService = () => {
       whyImportant: [
         {
           title: "Visual Representation",
-         
         },
         {
           title: "Improved Decision Making",
-         
         },
         {
           title: "Increased Engagement",
-          
         },
         // {
         //   title: "Enhanced Marketing",
-          
+
         // },
       ],
     },
@@ -125,19 +116,6 @@ const IndividualService = () => {
                   <div className={styles.iconContainer}>{x.icon}</div>
                 </div>
               </Link>
-              <div className={styles.right}>
-                <p className={styles.desc}>{x.description}</p>
-                <br />
-
-                <span className={styles.span}>Features:</span>
-                <ul className={styles.box}>
-                  {x.whyImportant.map((y, index) => (
-                    <li key={index} className={styles.reasonTitleContainer}>
-                      <p className={styles.reasonTitle}>{y.title}</p>
-                    </li>
-                  ))}
-                </ul>
-              </div>
             </div>
           ))}
         </div>
