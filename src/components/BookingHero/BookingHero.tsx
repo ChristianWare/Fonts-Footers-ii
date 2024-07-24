@@ -21,7 +21,7 @@ const data = [
   {
     id: 4,
     heading: "Integrated Payment Systems",
-    desc: "Secure payment gateways for smooth and safe online transactions.",
+    desc: "We offer everything from custom designs to mobile-friendly options to ensure your site stands out in the digital marketplace.",
   },
 ];
 
@@ -31,7 +31,11 @@ const BookingHero = () => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.left}>
-            <Booking className={styles.icon} />
+            <div>
+              <Booking className={styles.icon} />
+              <Booking className={styles.icon} />
+              <Booking className={styles.icon} />
+            </div>
             <h1 className={styles.heading}>
               Custom Booking Platforms for Seamless Reservations{" "}
             </h1>

@@ -5,6 +5,7 @@ import BookingService from "@/components/BookingService/BookingService";
 import EveryPlan from "@/components/EveryPlan/EveryPlan";
 import Faqsiii from "@/components/Faqsiii/Faqsiii";
 import HowItWorks from "@/components/HowItWorks/HowItWorks";
+import IndividualFeature from "@/components/IndividualFeature/IndividualFeature";
 import Pricing from "@/components/Pricing/Pricing";
 import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
 import Testimonials from "@/components/Testimonials/Testimonials";
@@ -19,6 +20,7 @@ export default function BookingPlatformPage() {
       <BookingService />
       <ScrollHorizontalText text='Notifications' bottomBorder={false} />
       <BookingReminders />
+      <IndividualFeature />
       <ScrollHorizontalText text='Reminders' bottomBorder={false} />
       <EveryPlan />
       <Usp />
