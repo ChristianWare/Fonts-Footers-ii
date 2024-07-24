@@ -36,8 +36,8 @@ const BookingHero = () => {
               Custom Booking Platforms for Seamless Reservations{" "}
             </h1>
             <p className={styles.copy}>
-              Boost your online sales with secure, user-friendly, and scalable
-              e-commerce websites.
+              Empower your business with efficient and user-friendly booking
+              systems.
             </p>
           </div>
           <div className={styles.right}>

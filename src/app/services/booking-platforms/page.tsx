@@ -1,4 +1,5 @@
 import BookingHero from "@/components/BookingHero/BookingHero";
+import BookingScrollText from "@/components/BookingScrollText/BookingScrollText";
 import EveryPlan from "@/components/EveryPlan/EveryPlan";
 import Faqsiii from "@/components/Faqsiii/Faqsiii";
 import HowItWorks from "@/components/HowItWorks/HowItWorks";
@@ -11,6 +12,7 @@ export default function BookingPlatformPage() {
   return (
     <main>
       <BookingHero />
+      <BookingScrollText />
       <EveryPlan />
       <HowItWorks />
       <Pricing />
