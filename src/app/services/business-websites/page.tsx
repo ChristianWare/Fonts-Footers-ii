@@ -1,3 +1,4 @@
+import BusinessFeatures from "@/components/BusinessFeatures/BusinessFeatures";
 import BusinessHero from "@/components/BusinessHero/BusinessHero";
 import BusinessLeadGen from "@/components/BusinessLeadGen/BusinessLeadGen";
 import BusinessSEO from "@/components/BusinessSEO/BusinessSEO";
@@ -20,6 +21,7 @@ export default function BusinessWebsites() {
       <HigherMargins />
       <ScrollHorizontalText text='Bespoke Websites' bottomBorder={false} />
       <DirectCommunication />
+      <BusinessFeatures />
       <BusinessSEO />
       <BusinessLeadGen />
       <EveryPlan />
