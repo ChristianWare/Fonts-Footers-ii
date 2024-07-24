@@ -13,7 +13,7 @@ import MPSection1 from "@/components/MPSection1/MPSection1";
 import Pricing from "@/components/Pricing/Pricing";
 import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
 import Testimonials from "@/components/Testimonials/Testimonials";
-import { homePageFaqs } from "@/lib/data";
+import { ecommerceWebsiteFaqs } from "@/lib/data";
 
 export default function EcommerceStoresPage() {
   return (
@@ -33,7 +33,11 @@ export default function EcommerceStoresPage() {
       <ScrollHorizontalText text='Reviews' bottomBorder={false} />
       <Testimonials />
       <ScrollHorizontalText text='Reviews' bottomBorder={false} />
-      <Faqsiii mapData={homePageFaqs} />
+      <Faqsiii
+        mapData={ecommerceWebsiteFaqs}
+        text='E-commerce Questions'
+        bgColor='gray'
+      />
     </main>
   );
 }

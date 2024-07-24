@@ -5,7 +5,12 @@ import Pricing from "@/components/Pricing/Pricing";
 import { simpleBlogCard } from "@/lib/interface";
 import { client } from "@/lib/sanity";
 import { Metadata } from "next";
-import { homePageFaqs } from "@/lib/data";
+import {
+  bookingWebsiteFaqs,
+  businessWebsiteFaqs,
+  ecommerceWebsiteFaqs,
+  homePageFaqs,
+} from "@/lib/data";
 
 async function getData() {
   const query = `
@@ -39,7 +44,14 @@ export default async function FAQPage() {
         orientation='center'
         bgColor='tan'
       />
-      <Faqsiii mapData={homePageFaqs} />
+      <Faqsiii mapData={homePageFaqs} text='General Questions' />
+      <Faqsiii mapData={bookingWebsiteFaqs} text='Booking' bgColor='gray' />
+      <Faqsiii
+        mapData={ecommerceWebsiteFaqs}
+        text='E-Commerce'
+        bgColor='white'
+      />
+      <Faqsiii mapData={businessWebsiteFaqs} text='Business Website' />
       <Pricing />
       <BlogSection data={data} />
     </>

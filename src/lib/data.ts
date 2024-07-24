@@ -439,6 +439,190 @@ export const homePageFaqs = [
   },
 ];
 
+export const bookingWebsiteFaqs = [
+  {
+    id: 101,
+    question: "What types of businesses can benefit from a booking website?",
+    answer:
+      "Any business that requires appointments or reservations, such as salons, spas, clinics, restaurants, and event venues, can benefit from a booking website.",
+  },
+  {
+    id: 102,
+    question: "How do customers make bookings on the website?",
+    answer:
+      "Customers can view available times, select their preferred slot, and complete the booking process directly on your website. The system will send a confirmation email automatically.",
+  },
+  {
+    id: 103,
+    question: "Can I customize the booking form fields?",
+    answer:
+      "Yes, you can customize the booking form fields to collect specific information from your customers, ensuring you have all the necessary details for their appointment or reservation.",
+  },
+  {
+    id: 104,
+    question: "How are booking notifications handled?",
+    answer:
+      "Both you and your customers will receive email or SMS notifications for new bookings, changes, and cancellations. This ensures everyone is kept informed and reduces no-shows.",
+  },
+  {
+    id: 105,
+    question: "Can the booking website handle payments?",
+    answer:
+      "Yes, we can integrate secure payment gateways into your booking website, allowing customers to make payments online during the booking process.",
+  },
+  {
+    id: 106,
+    question: "Will the booking system integrate with my existing calendar?",
+    answer:
+      "Yes, our booking system can integrate with popular calendar applications like Google Calendar and Outlook, allowing you to manage your schedule seamlessly.",
+  },
+  {
+    id: 107,
+    question:
+      "Is it possible to manage multiple locations with one booking website?",
+    answer:
+      "Yes, our booking platforms support multi-location businesses, allowing you to manage appointments and reservations for all your locations from a centralized dashboard.",
+  },
+  {
+    id: 108,
+    question: "How do I manage bookings and customer information?",
+    answer:
+      "Our platform provides an intuitive dashboard where you can view, manage, and update bookings and customer information easily. We offer training to ensure you can use all features effectively.",
+  },
+  {
+    id: 109,
+    question: "Can customers cancel or reschedule their bookings online?",
+    answer:
+      "Yes, customers can easily cancel or reschedule their bookings through your website, which updates the system and sends notifications accordingly.",
+  },
+  {
+    id: 110,
+    question:
+      "Do you offer ongoing support and maintenance for the booking website?",
+    answer:
+      "Yes, we provide ongoing maintenance and support packages to keep your booking website running smoothly, including updates, security checks, and technical assistance.",
+  },
+];
+
+export const ecommerceWebsiteFaqs = [
+  {
+    id: 201,
+    question:
+      "What platforms do you work with for e-commerce website development?",
+    answer:
+      "We work with leading e-commerce platforms like Shopify, WooCommerce, and Magento, as well as custom solutions tailored to your business needs.",
+  },
+  {
+    id: 202,
+    question: "Can I customize the design of my e-commerce website?",
+    answer:
+      "Yes, we offer bespoke design services to ensure your e-commerce website reflects your brand’s identity and provides an engaging user experience.",
+  },
+  {
+    id: 203,
+    question: "How do you ensure the security of online transactions?",
+    answer:
+      "We implement robust security measures, including SSL certificates and PCI compliance, to protect customer data and ensure secure transactions.",
+  },
+  {
+    id: 204,
+    question: "Will my e-commerce website be mobile-friendly?",
+    answer:
+      "Yes, all our e-commerce websites are designed to be fully responsive, providing a seamless shopping experience across all devices.",
+  },
+  {
+    id: 205,
+    question: "Can I integrate third-party tools with my e-commerce website?",
+    answer:
+      "Yes, we seamlessly integrate third-party tools and services such as payment gateways, shipping providers, and CRM systems to enhance your website’s functionality.",
+  },
+  {
+    id: 206,
+    question: "Do you offer SEO services for e-commerce websites?",
+    answer:
+      "Yes, we build our e-commerce websites with SEO best practices in mind, including optimized content, meta tags, and site structure to improve search engine visibility.",
+  },
+  {
+    id: 207,
+    question: "How will I manage my e-commerce website?",
+    answer:
+      "We integrate user-friendly content management systems (CMS) that allow you to easily update and manage your website content without any technical knowledge. At This time, we are using Wix Studio, which is similar to Shopify.",
+  },
+  {
+    id: 208,
+    question:
+      "What kind of support do you provide after the website is launched?",
+    answer:
+      "We offer ongoing maintenance and support packages to ensure your e-commerce website remains up-to-date, secure, and functioning optimally after launch.",
+  },
+  {
+    id: 209,
+    question: "Can I track the performance of my e-commerce website?",
+    answer:
+      "Yes, we provide comprehensive analytics and reporting tools that help you track key performance indicators (KPIs) such as sales, conversion rates, and customer behavior.",
+  },
+  {
+    id: 210,
+    question: "How long does it take to build an e-commerce website?",
+    answer:
+      "The timeline can vary based on the complexity of the project, but on average, a custom e-commerce website takes around 4 to 8 weeks from initial concept to launch.",
+  },
+];
+
+export const businessWebsiteFaqs = [
+  {
+    id: 301,
+    question:
+      "What types of businesses can benefit from a custom business website?",
+    answer:
+      "Any business looking to enhance its online presence can benefit from a custom business website. This includes small businesses, startups, B2B companies, and more.",
+  },
+  {
+    id: 302,
+    question: "Can I customize the design of my business website?",
+    answer:
+      "Yes, we offer bespoke design services that reflect your brand’s identity and provide an engaging user experience.",
+  },
+  {
+    id: 303,
+    question: "Will my business website be mobile-friendly?",
+    answer:
+      "Yes, all our business websites are designed to be fully responsive, ensuring a seamless experience across all devices, from desktops to mobile phones.",
+  },
+
+  {
+    id: 305,
+    question: "Do you offer SEO services for business websites?",
+    answer:
+      "Yes, we build our business websites with SEO best practices in mind, including optimized content, meta tags, and site structure to improve search engine visibility.",
+  },
+
+  {
+    id: 307,
+    question: "Can you help with branding and visual identity?",
+    answer:
+      "Yes, we offer comprehensive branding services, including logo design, color schemes, typography, and imagery, to ensure a consistent and attractive visual identity for your business.",
+  },
+  {
+    id: 308,
+    question: "Do you provide ongoing support and maintenance?",
+    answer:
+      "Yes, we offer ongoing maintenance and support packages to ensure your website remains up-to-date, secure, and functioning optimally after launch.",
+  },
+  {
+    id: 309,
+    question: "How long does it take to build a business website?",
+    answer:
+      "The timeline can vary based on the complexity of the project, but on average, a custom business website takes around 2 to 4 weeks from initial concept to launch.",
+  },
+  {
+    id: 310,
+    question: "Can you help with content creation for my business website?",
+    answer:
+      "Yes, we offer content creation services to ensure your website has engaging and relevant content that resonates with your audience and supports your SEO efforts.",
+  },
+];
+
 export const footer = [
   {
     id: 1,

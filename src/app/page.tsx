@@ -61,7 +61,7 @@ export default async function Home() {
       <ScrollHorizontalText text='Reviews' bottomBorder={true} />
       <Projects />
       <Pricing bgColor='tan' />
-      <Faqsiii mapData={homePageFaqs} />
+      <Faqsiii mapData={homePageFaqs} text='General Questions' />
       <BlogSection data={data} />
       <ScrollHorizontalText text='Why Choose Us?' bottomBorder={false} />
       <ScrollText />

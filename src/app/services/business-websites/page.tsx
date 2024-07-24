@@ -10,7 +10,7 @@ import Pricing from "@/components/Pricing/Pricing";
 import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
 import Testimonials from "@/components/Testimonials/Testimonials";
 import Usp from "@/components/Usp/Usp";
-import { homePageFaqs } from "@/lib/data";
+import { businessWebsiteFaqs } from "@/lib/data";
 
 export default function BusinessWebsites() {
   return (
@@ -29,7 +29,11 @@ export default function BusinessWebsites() {
       <ScrollHorizontalText text='Reviews' bottomBorder={false} />
       <Testimonials />
       <ScrollHorizontalText text='Reviews' bottomBorder={false} />
-      <Faqsiii mapData={homePageFaqs} />
+      <Faqsiii
+        bgColor='gray'
+        mapData={businessWebsiteFaqs}
+        text='business website questions'
+      />
     </main>
   );
 }

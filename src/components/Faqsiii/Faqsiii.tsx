@@ -6,12 +6,15 @@ import LayoutWrapper from "../LayoutWrapper";
 import Arrow2 from "../../../public/icons/arrow2.svg";
 import Button from "../Button/Button";
 import { usePathname } from "next/navigation";
+import FalseButton from "../FalseButton/FalseButton";
 
 interface Props {
   mapData: any;
+  text?: string;
+  bgColor?: string;
 }
 
-const Faqsiii: FC<Props> = ({ mapData }) => {
+const Faqsiii: FC<Props> = ({ bgColor = "", mapData, text = "" }) => {
   const [selected, setSelected] = useState(0);
 
   const toggle = (i: any) => {
@@ -21,23 +24,32 @@ const Faqsiii: FC<Props> = ({ mapData }) => {
   const pathname = usePathname();
 
   return (
-    <section className={styles.container} id='faq'>
+    <section className={`${styles.container} ${styles[bgColor]}`} id='faq'>
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.top}>
             <div className={styles.sectionIntroContainer}>
-              <h2 className={styles.heading}>You may have wondered...</h2>
+              <div className={styles.falseButtonContainer}>
+                <FalseButton btnType='primary' text={text} />
+              </div>
+              <br />
+              <h2 className={styles.heading}>{text}</h2>
             </div>
             <p className={styles.copy}>
               Commonly asked questions and answers. If you do not see your
               question here, feel free to call us anytime to ask, and we will
               gladly give you a satisfactory answer.
             </p>
-            <div className={styles.btnContainer}>
-              <Button text='See All Questions' href='/' btnType='primaryii' />
-            </div>
+            {pathname !== "/faqs" && (
+              <div className={styles.btnContainer}>
+                <Button
+                  text='See All Questions'
+                  href='/faqs'
+                  btnType='primaryii'
+                />
+              </div>
+            )}
           </div>
-
           <div className={styles.right}>
             {mapData
               .slice(0, pathname !== "/faqs" ? 4 : mapData.length)

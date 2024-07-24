@@ -17,6 +17,11 @@ const Pricing = ({ bgColor = "" }: Props) => {
 
   const pathname = usePathname();
 
+  const isSpecificServicePage =
+    pathname === "/services/business-websites" ||
+    pathname === "/services/ecommerce-stores" ||
+    pathname === "/services/booking-platforms";
+
   return (
     <section className={`${styles.container} ${styles[bgColor]}`}>
       <LayoutWrapper>
@@ -54,11 +59,11 @@ const Pricing = ({ bgColor = "" }: Props) => {
                 key={x.id}
                 className={styles.priceContainer}
                 style={{
-                  opacity:
-                    pathname === "/services/business-websites" &&
-                    x.href !== "/services/business-websites"
-                      ? 0.5
-                      : 1,
+                  opacity: isSpecificServicePage
+                    ? pathname === x.href
+                      ? 1
+                      : 0.5
+                    : 1,
                 }}
               >
                 <div className={styles.contentParent}>

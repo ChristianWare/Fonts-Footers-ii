@@ -41,7 +41,6 @@ export default async function PricingPage() {
     <>
       <Pricing bgColor='tan' />
       <ScrollHorizontalText text='Features' bottomBorder={true} />
-      {/* <Chart /> */}
       <Benefits />
       <ScrollHorizontalText text='Features' bottomBorder={true} />
       <IndividualService />

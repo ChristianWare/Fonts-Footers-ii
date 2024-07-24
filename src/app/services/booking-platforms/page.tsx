@@ -9,7 +9,7 @@ import Pricing from "@/components/Pricing/Pricing";
 import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
 import Testimonials from "@/components/Testimonials/Testimonials";
 import Usp from "@/components/Usp/Usp";
-import { homePageFaqs } from "@/lib/data";
+import { bookingWebsiteFaqs } from "@/lib/data";
 
 export default function BookingPlatformPage() {
   return (
@@ -21,13 +21,17 @@ export default function BookingPlatformPage() {
       <BookingReminders />
       <ScrollHorizontalText text='Reminders' bottomBorder={false} />
       <EveryPlan />
+      <Usp />
       <HowItWorks />
       <Pricing />
-      <Usp />
       <ScrollHorizontalText text='Reviews' bottomBorder={false} />
       <Testimonials />
       <ScrollHorizontalText text='Reviews' bottomBorder={false} />
-      <Faqsiii mapData={homePageFaqs} />
+      <Faqsiii
+        bgColor='gray'
+        mapData={bookingWebsiteFaqs}
+        text='Booking Questions'
+      />
     </main>
   );
 }
