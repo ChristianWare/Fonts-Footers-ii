@@ -101,8 +101,8 @@ const IndividualService = () => {
       ],
     },
   ] as const;
-
   return (
+
     <section className={styles.container} id='features'>
       <LayoutWrapper>
         <h2 className={styles.heading}>What we build</h2>

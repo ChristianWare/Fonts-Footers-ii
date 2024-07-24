@@ -1,3 +1,4 @@
+import BookingHero from "@/components/BookingHero/BookingHero";
 import EveryPlan from "@/components/EveryPlan/EveryPlan";
 import Faqsiii from "@/components/Faqsiii/Faqsiii";
 import HowItWorks from "@/components/HowItWorks/HowItWorks";
@@ -9,7 +10,7 @@ import { homePageFaqs } from "@/lib/data";
 export default function BookingPlatformPage() {
   return (
     <main>
-      <h1>Booking Platforms</h1>
+      <BookingHero />
       <EveryPlan />
       <HowItWorks />
       <Pricing />
