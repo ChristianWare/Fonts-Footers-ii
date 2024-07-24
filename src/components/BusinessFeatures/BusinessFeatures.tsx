@@ -7,7 +7,7 @@ import SEO from "../../../public/icons/seo.svg";
 import Design from "../../../public/icons/designii.svg";
 import Branding from "../../../public/icons/brandii.svg";
 import LeadGeneration from "../../../public/icons/lead.svg";
-import Analytics from "../../../public/icons/analytics.svg";
+import Social from "../../../public/icons/social.svg";
 import Multiple from "../../../public/icons/multiple.svg";
 
 const BusinessFeatures = () => {
@@ -110,6 +110,26 @@ const BusinessFeatures = () => {
         },
         {
           title: "Content Organization",
+        },
+      ],
+    },
+    {
+      icon: <Social width={150} height={150} className={styles.icon} />,
+      title: "Social Media Integration",
+      description:
+        "We integrate your website with various social media platforms to enhance your online presence and engage with your audience.",
+      whyImportant: [
+        {
+          title: "Increased Visibility",
+        },
+        {
+          title: "Enhanced Engagement",
+        },
+        {
+          title: "Content Sharing",
+        },
+        {
+          title: "Brand Consistency",
         },
       ],
     },
