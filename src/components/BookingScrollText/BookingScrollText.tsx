@@ -3,7 +3,7 @@ import Author from "../../../public/images/author.png";
 import FalseButton from "../FalseButton/FalseButton";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./BookingScrollText.module.css";
-import Booking from '../../../public/icons/booking.svg'
+import Booking from "../../../public/icons/booking.svg";
 
 const BookingScrollText = () => {
   return (
@@ -17,22 +17,10 @@ const BookingScrollText = () => {
             Custom Booking Platforms for Seamless Reservations
           </h2>
           <div className={styles.bottom}>
-            <Booking
-              width={100}
-              height={100}
-              className={styles.icon}
-            />
-            <Booking
-              width={100}
-              height={100}
-              className={styles.icon}
-            />
-            <Booking
-              width={100}
-              height={100}
-              className={styles.icon}
-            />
-            
+            <Booking width={50} height={50} className={styles.icon} />
+            <Booking width={50} height={50} className={styles.icon} />
+            <Booking width={50} height={50} className={styles.icon} />
+            <Booking width={50} height={50} className={styles.icon} />
           </div>
           <p className={styles.text}>
             At Fonts & Footers, we specialize in creating custom booking
