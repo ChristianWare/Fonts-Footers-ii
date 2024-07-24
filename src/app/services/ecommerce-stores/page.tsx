@@ -33,7 +33,6 @@ export default function EcommerceStoresPage() {
       <ScrollHorizontalText text='Reviews' bottomBorder={false} />
       <Testimonials />
       <ScrollHorizontalText text='Reviews' bottomBorder={false} />
-
       <Faqsiii mapData={homePageFaqs} />
     </main>
   );
