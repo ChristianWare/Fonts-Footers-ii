@@ -1,22 +1,22 @@
-import LayoutWrapper from '../LayoutWrapper';
-import styles from './BusinessHero.module.css'
+import LayoutWrapper from "../LayoutWrapper";
+import styles from "./BusinessHero.module.css";
 import Business from "../../../public/icons/business.svg";
 
 const data = [
   {
     id: 1,
-    heading: "Strong Online Presence",
-    desc: "We understand the importance of a visually appealing and effective online presence to boost sales.",
+    heading: "Unique Design",
+    desc: "Each website is uniquely designed to match your brand’s personality and vision.",
   },
   {
     id: 2,
-    heading: "Affordable Packages",
-    desc: "Whether you're starting a new site or updating an existing one, we offer budget-friendly packages tailored to your needs.",
+    heading: "User-Centered Approach",
+    desc: "Our designs prioritize user experience, ensuring your visitors can easily navigate and find the information they need.",
   },
   {
     id: 3,
     heading: "Attention-Grabbing Designs",
-    desc: "Our online stores are designed to capture attention and provide a seamless shopping experience.",
+    desc: "Our business websites are designed to capture attention and provide a online experience.",
   },
   {
     id: 4,
@@ -35,8 +35,8 @@ const BusinessHero = () => {
               Professional Business Websites to Elevate Your Online Presence{" "}
             </h1>
             <p className={styles.copy}>
-              Boost your online sales with secure, user-friendly, and scalable
-              e-commerce websites.
+              Custom-designed websites that showcase your business and attract
+              your target audience.
             </p>
           </div>
           <div className={styles.right}>
@@ -55,4 +55,4 @@ const BusinessHero = () => {
     </section>
   );
 };
-export default BusinessHero
+export default BusinessHero;

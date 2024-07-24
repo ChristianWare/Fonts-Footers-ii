@@ -50,12 +50,12 @@ export default async function BenefitsPage() {
       />
       {/* <ScrollHorizontalText /> */}
       <BenefitsIntro />
-      {/* <HigherMargins /> */}
+      <HigherMargins />
       <BrandPresence />
       <DirectCommunication />
       <EnhancedMarketing />
       <LongTermRelationships />
-      {/* <Carousel /> */}
+      <Carousel />
       <Cta />
       <BlogSection data={data} />
     </>

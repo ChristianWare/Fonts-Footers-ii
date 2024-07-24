@@ -7,45 +7,44 @@ import Arrow from "../../../public/icons/arrow2.svg";
 const DirectCommunication = () => {
   const data = [
     {
-      title: "Personalized Guest Experience",
-      description:
-        "Personalize the guest experience by addressing individual preferences, special requests, and inquiries promptly.",
+      title: "Logo Design",
+      description: "Custom logo design that encapsulates your brand’s essence.",
     },
     {
-      title: "Building Relationships",
+      title: "Color Schemes",
       description:
-        "Foster relationships with guests by creating a sense of trust and rapport, encouraging repeat bookings, referrals, and positive reviews.",
+        "Thoughtfully selected color palettes that reflect your brand’s personality.",
     },
     {
-      title: "Clarifying Expectations",
+      title: "Typography",
       description:
-        "Eliminate misunderstandings by clearly communicating booking policies, house rules, check-in/check-out procedures, and property details.",
+        "Professional typography choices that enhance readability and aesthetic appeal.",
     },
     {
-      title: "Handling Guest Feedback",
+      title: "Imagery and Graphics",
       description:
-        "Get feedback directly from guests during their stay or post-stay. Address concerns promptly, and demonstrate responsiveness.",
+        "Carefully chosen imagery and graphics that complement your brand’s message and enhance visual appeal.",
     },
     {
-      title: "Upselling Opportunities",
+      title: "Brand Guidelines",
       description:
-        "Upsell additional services, upgrades, or experiences directly to guests through personalized communication, thus increasing revenue per booking.",
+        "Comprehensive brand guidelines that ensure consistent use of logos, colors, and fonts across all your marketing materials.",
     },
     {
-      title: "Resolving Issues",
+      title: "Visual Consistency",
       description:
-        "In the event of emergencies, maintenance issues, or unforeseen circumstances, direct communication enables owners to respond quickly, mitigate problems, and ensure guest comfort and safety.",
+        "Ensuring visual consistency across all web pages to build a strong and recognizable brand identity.",
     },
   ] as const;
   return (
     <section className={styles.container}>
       <LayoutWrapper>
         <div className={styles.top}>
-          <h2 className={styles.heading}>Direct Communication</h2>
+          <h2 className={styles.heading}>Branding and Visual Identity</h2>
           <p className={styles.copy}>
-            Having a direct booking website that facilitates direct
-            communication offers several benefits for vacation rental property
-            owners:
+            We help strengthen your brand’s visual identity by creating cohesive
+            and attractive designs that leave a lasting impression on your
+            audience.
           </p>
         </div>
         <div className={styles.bottom}>

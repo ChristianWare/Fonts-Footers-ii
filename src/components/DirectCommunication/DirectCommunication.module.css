@@ -27,16 +27,15 @@
   margin-top: 7rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
 }
 
 .card {
   display: flex;
   gap: 3rem;
   padding: 3rem;
-}
-
-.card:nth-child(even) {
-  border-left: 1px solid var(--lightBlack);
+  border: 1px solid var(--lightBlack);
+  border-radius: 10px;
 }
 
 .iconContainer {
@@ -58,6 +57,7 @@
 
 .title {
   margin-bottom: 1rem;
+  font-size: 2rem;
 }
 
 .desc {
@@ -72,9 +72,5 @@
   .bottom {
     grid-template-columns: repeat(1, 1fr);
     margin-top: 3rem;
-  }
-
-  .card:nth-child(even) {
-    border-left: none;
   }
 }

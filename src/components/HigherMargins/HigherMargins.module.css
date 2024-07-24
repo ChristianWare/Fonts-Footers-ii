@@ -1,5 +1,5 @@
 .container {
-  background-color: var(--green);
+  background-color: var(--black);
 }
 
 .content {
@@ -13,8 +13,17 @@
   color: var(--tan);
 }
 
+.copy {
+  color: var(--tan);
+  margin-top: 2rem;
+}
+
 .heading {
   margin-top: 5rem;
+}
+
+.copy {
+  width: 60%;
 }
 
 .desc {
@@ -28,15 +37,15 @@
 }
 
 .card {
-  border: 1px solid var(--gray);
-  border-radius: 20px;
+  border: 1px solid var(--lightBlack);
+  border-radius: 10px;
   padding: 3rem;
   padding-top: 4rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 1.5rem;
+  gap: 5rem;
   position: relative;
 }
 
@@ -97,7 +106,7 @@
 .img {
   object-fit: cover;
   border-bottom: none;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 1rem;
 }
 
@@ -145,6 +154,12 @@
   }
 }
 
+@media screen and (max-width: 1068px) {
+  .copy {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 668px) {
   .bottom {
     grid-template-columns: repeat(1, 1fr);
@@ -156,13 +171,13 @@
 
   .card:nth-child(1) {
     margin-bottom: 1rem;
-    border-radius: 20px;
+    border-radius: 10px;
   }
 
   .card:nth-child(3) {
     border-top: 1px solid var(--gray);
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
     margin-top: 1rem;
   }
 
