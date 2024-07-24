@@ -5,23 +5,23 @@ import LayoutWrapper from "../LayoutWrapper";
 const data = [
   {
     id: 1,
-    heading: "Strong Online Presence",
-    desc: "We understand the importance of a visually appealing and effective online presence to boost sales.",
+    heading: "Real-Time Availability",
+    desc: "Clients can view real-time availability and book appointments instantly.",
   },
   {
     id: 2,
-    heading: "Affordable Packages",
-    desc: "Whether you're starting a new site or updating an existing one, we offer budget-friendly packages tailored to your needs.",
+    heading: "Automated Reminders",
+    desc: "Automated email and SMS reminders reduce no-shows and keep clients informed.",
   },
   {
     id: 3,
-    heading: "Attention-Grabbing Designs",
-    desc: "Our online stores are designed to capture attention and provide a seamless shopping experience.",
+    heading: "Intuitive Interface",
+    desc: "A simple and intuitive interface makes it easy for clients to navigate and book services.",
   },
   {
     id: 4,
-    heading: "Custom and Mobile-Friendly",
-    desc: "We offer everything from custom designs to mobile-friendly options to ensure your site stands out in the digital marketplace.",
+    heading: "Integrated Payment Systems",
+    desc: "Secure payment gateways for smooth and safe online transactions.",
   },
 ];
 
