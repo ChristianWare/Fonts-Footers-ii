@@ -9,6 +9,7 @@ import HowItWorks from "@/components/HowItWorks/HowItWorks";
 import Pricing from "@/components/Pricing/Pricing";
 import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
 import Testimonials from "@/components/Testimonials/Testimonials";
+import Usp from "@/components/Usp/Usp";
 import { homePageFaqs } from "@/lib/data";
 
 export default function BusinessWebsites() {
@@ -23,6 +24,7 @@ export default function BusinessWebsites() {
       <BusinessSEO />
       <BusinessLeadGen />
       <EveryPlan />
+      <Usp />
       <HowItWorks />
       <Pricing />
       <ScrollHorizontalText text='Reviews' bottomBorder={false} />
