@@ -1,7 +1,7 @@
 .container {
   background-color: var(--tan);
+  border-bottom: 1px solid var(--lightBlack);
 }
-
 
 .top {
   margin-bottom: 5rem;
