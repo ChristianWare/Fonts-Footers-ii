@@ -4,6 +4,7 @@ import Arrow2 from "../../../public/icons/arrow2.svg";
 import Cart from "../../../public/icons/cart.svg";
 import Business from "../../../public/icons/business.svg";
 import Booking from "../../../public/icons/booking.svg";
+import Link from "next/link";
 
 const services = [
   {
@@ -59,18 +60,20 @@ const ServicesSection = () => {
           <div className={styles.left}>
             {services.map((x) => (
               <div key={x.id} className={styles.processContainer}>
-                <div className={styles.processTop}>
-                  {x.processName.length >= 1 && <>{x.icon}</>}
-                </div>
-                <div className={styles.processBottom}>
-                  {x.processName.length >= 1 && (
-                    <h3 className={styles.processName}>{x.processName}</h3>
-                  )}
+                <Link href={x.href}>
+                  <div className={styles.processTop}>
+                    {x.processName.length >= 1 && <>{x.icon}</>}
+                  </div>
+                  <div className={styles.processBottom}>
+                    {x.processName.length >= 1 && (
+                      <h3 className={styles.processName}>{x.processName}</h3>
+                    )}
 
-                  <p className={styles.processDescription}>
-                    {x.processDescription}
-                  </p>
-                </div>
+                    <p className={styles.processDescription}>
+                      {x.processDescription}
+                    </p>
+                  </div>
+                </Link>
               </div>
             ))}
           </div>
