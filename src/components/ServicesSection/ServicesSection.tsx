@@ -19,7 +19,7 @@ const services = [
     processDescription:
       "Secure, easy-to-use online stores optimized for conversions and sales growth.",
     icon: <Cart className={styles.icon2} />,
-    href: "",
+    href: "/services/ecommerce-stores",
   },
   {
     id: 83,
@@ -27,7 +27,7 @@ const services = [
     processDescription:
       "Tailored websites that reflect your unique brand identity.",
     icon: <Arrow2 className={styles.icon2} />,
-    href: "",
+    href: "/services",
   },
 
   {
@@ -36,7 +36,7 @@ const services = [
     processDescription:
       "Optimize your online presence and attract more visitors.",
     icon: <Business className={styles.icon2} />,
-    href: "",
+    href: "services/business-websites",
   },
   {
     id: 87,
@@ -44,7 +44,7 @@ const services = [
     processDescription:
       "Innovative web applications to streamline your business operations.",
     icon: <Booking className={styles.icon2} />,
-    href: "",
+    href: "/services/booking-platforms",
   },
 ] as const;
 

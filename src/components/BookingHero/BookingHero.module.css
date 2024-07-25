@@ -28,6 +28,7 @@
 .copy {
   font-size: 1.8rem;
   color: var(--white);
+  width: 80%;
 }
 
 .contentBottom {
@@ -94,6 +95,7 @@
   .heading,
   .copy {
     text-align: center;
+    width: 100%;
   }
 
   .right {

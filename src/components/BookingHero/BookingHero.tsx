@@ -21,7 +21,7 @@ const data = [
   {
     id: 4,
     heading: "Integrated Payment Systems",
-    desc: "We offer everything from custom designs to mobile-friendly options to ensure your site stands out in the digital marketplace.",
+    desc: "Accept payments from any major credit card with our payment services.",
   },
 ];
 
