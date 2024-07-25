@@ -1,10 +1,6 @@
 .bgColor {
   background-color: var(--black);
-}
-
-.content {
-  padding-top: 15rem;
-}
+} 
 
 .falseBtnContainer {
   display: flex;

@@ -4,6 +4,7 @@
 }
 
 .parent {
+  border-top: 1px solid var(--lightBlack);
   border-bottom: 1px solid var(--lightBlack);
 }
 
@@ -11,6 +12,8 @@
   background-color: var(--black);
   padding: 3rem;
   border-radius: 10px;
+  margin-top: -12rem;
+  margin-bottom: -12rem;
 }
 
 .top {
@@ -85,7 +88,7 @@
 
 .labelInputBox input {
   border: none;
-  border-radius: 5px;
+  border-radius: 50px;
   height: 40px;
   width: 100%;
   background-color: var(--tan);

@@ -3,10 +3,6 @@
   background-color: var(--lightBlack);
 }
 
-.content {
-  padding-top: 5rem;
-}
-
 .header {
   color: var(--white);
   text-align: right;

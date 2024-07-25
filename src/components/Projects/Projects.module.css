@@ -2,16 +2,12 @@
   background-color: var(--tan);
 }
 
-.contentParent {
-  padding-bottom: 15rem;
-}
 
 .top {
   margin-bottom: 5rem;
 }
 
 .heading {
-  padding-top: 15rem;
   width: 50%;
   text-align: right;
   margin-left: auto;

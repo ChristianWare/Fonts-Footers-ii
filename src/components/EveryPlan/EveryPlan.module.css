@@ -2,10 +2,6 @@
   background-color: var(--black);
 }
 
-.top {
-  margin-top: 10rem;
-}
-
 .heading {
   color: var(--tan);
   width: 40%;

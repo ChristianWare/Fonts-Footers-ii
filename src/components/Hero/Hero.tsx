@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <section className={styles.container}>
       <LayoutWrapper>
-        <motion.section
+        <motion.div
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           className={styles.content}
@@ -40,7 +40,7 @@ const Hero = () => {
           <div className={styles.right}>
             <ShuffleHero />
           </div>
-        </motion.section>
+        </motion.div>
       </LayoutWrapper>
     </section>
   );

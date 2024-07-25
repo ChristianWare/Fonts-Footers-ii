@@ -1,6 +1,5 @@
 "use client";
 import Button from "../Button/Button";
-import Calendly from "../Calendly/Calendly";
 import Footerii from "../Footerii/Footerii";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./CallToAction.module.css";
@@ -33,7 +32,6 @@ const CallToAction = () => {
           </div>
         </section>
       </LayoutWrapper>
-      {/* <Calendly /> */}
       <Footerii />
     </section>
   );

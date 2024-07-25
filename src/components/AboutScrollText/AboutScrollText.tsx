@@ -10,10 +10,7 @@ const AboutScrollText = () => {
       <LayoutWrapper color='green3'>
         <div className={styles.content}>
           <div className={styles.falseBtnContainer}>
-            <FalseButton
-              btnType='primary'
-              text='About us'
-            />
+            <FalseButton btnType='primary' text='About us' />
           </div>
           <h2 className={styles.heading}>Who are we?</h2>
           <div className={styles.bottom}>
@@ -34,16 +31,6 @@ const AboutScrollText = () => {
             technology with creative ideas for top-notch results. By working
             with us, you get personal care, support, and a website that boosts
             engagement and sales. We opperate out of sunny Phoenix, AZ.
-            {/* We are Fonts and Footers™, an award-winning digital design agency
-            focusing on web design, web development, and SEO in the heart of{" "}
-            Phoenix, AZ. We design creative brands, websites, and products that
-            deliver results. */}
-            {/* Welcome to Fonts and Footers™, the premier web design agency in
-              Phoenix, AZ. Our team specializes in creating responsive, visually
-              stunning websites that elevate your brand and engage your
-              audience. Whether you&apos;re a startup, small business, or
-              established enterprise, we have the expertise to bring your vision
-              to life. */}
           </p>
         </div>
       </LayoutWrapper>

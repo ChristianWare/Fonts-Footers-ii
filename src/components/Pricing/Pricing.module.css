@@ -6,10 +6,6 @@
   background-color: var(--tan);
 }
 
-.content {
-  padding-top: 5rem;
-}
-
 .top {
   margin-bottom: 3rem;
   display: flex;

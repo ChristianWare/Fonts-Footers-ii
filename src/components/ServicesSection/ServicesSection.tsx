@@ -23,15 +23,6 @@ const services = [
     href: "/services/ecommerce-stores",
   },
   {
-    id: 83,
-    processName: "See All Services",
-    processDescription:
-      "Tailored websites that reflect your unique brand identity.",
-    icon: <Arrow2 className={styles.icon2} />,
-    href: "/services",
-  },
-
-  {
     id: 86,
     processName: "Business Websites",
     processDescription:
@@ -46,6 +37,14 @@ const services = [
       "Innovative web applications to streamline your business operations.",
     icon: <Booking className={styles.icon2} />,
     href: "/services/booking-platforms",
+  },
+  {
+    id: 83,
+    processName: "See All Services",
+    processDescription:
+      "Tailored websites that reflect your unique brand identity.",
+    icon: <Arrow2 className={styles.icon2} />,
+    href: "/services",
   },
 ] as const;
 
