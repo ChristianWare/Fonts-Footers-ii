@@ -25,6 +25,7 @@
   justify-content: center;
   gap: 3rem;
   border-radius: 10px;
+  border: 1px solid var(--gray);
   background-color: var(--white);
   padding: 3rem;
 }

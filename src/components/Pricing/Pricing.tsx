@@ -72,7 +72,7 @@ const Pricing = ({ bgColor = "" }: Props) => {
                   </div>
                   <div className={styles.pcBottom}>
                     <ul className={styles.features}>
-                      {x.includes.slice(0, 3).map((y) => (
+                      {x.includes.map((y) => (
                         <li key={y.id} className={styles.feature}>
                           {y.feature}
                         </li>

@@ -30,10 +30,10 @@ const EcommHero = () => {
     <section className={styles.container}>
       <LayoutWrapper>
         <div className={styles.content}>
-          <div className={styles.right}>
-            <Cart className={styles.icon} />
-          </div>
           <div className={styles.left}>
+            <div className={styles.right}>
+              <Cart className={styles.icon} />
+            </div>
             <h1 className={styles.heading}>
               Custom E-commerce Solutions for Your Business
             </h1>
@@ -43,14 +43,14 @@ const EcommHero = () => {
             </p>
           </div>
         </div>
-        <div className={styles.contentBottom}>
+        {/* <div className={styles.contentBottom}>
           {data.map((x) => (
             <div key={x.id} className={styles.card}>
               <h2 className={styles.headingii}>{x.heading}</h2>
               <p className={styles.desc}>{x.desc}</p>
             </div>
           ))}
-        </div>
+        </div> */}
       </LayoutWrapper>
     </section>
   );

@@ -133,46 +133,6 @@ export const process = [
 ] as const;
 
 export const pricing = [
-  // {
-  //   id: 26,
-  //   plan: "Landing Page",
-  //   description:
-  //     "Ideal for focused marketing campaigns, product launches, or single-purpose goals.",
-  //   prices: [
-  //     {
-  //       id: 1,
-  //       price: "75 / month",
-  //     },
-  //     {
-  //       id: 2,
-  //       price: "1,680 / Year",
-  //     },
-  //   ],
-  //   includes: [
-  //     {
-  //       id: 26.1,
-  //       feature: "max 8 sections on page",
-  //     },
-  //     {
-  //       id: 26.2,
-  //       feature: "Hosting",
-  //     },
-  //     {
-  //       id: 26.3,
-  //       feature: "SEO",
-  //     },
-  //     {
-  //       id: 27.3,
-  //       feature: "Analytics",
-  //     },
-  //     {
-  //       id: 27.5,
-  //       feature: "12 Blog Articles",
-  //     },
-  //   ],
-  //   btnType: "primary",
-  // },
-
   {
     id: 28,
     plan: "Business Website",
@@ -186,29 +146,29 @@ export const pricing = [
       },
       {
         id: 2,
-        price: "3,360 / Year",
+        price: "1,440 / Year",
       },
     ],
     includes: [
       {
         id: 28.1,
-        feature: "Everything in Advanced, plus:",
+        feature: "5 Page website",
       },
       {
         id: 28.2,
-        feature: "Geographical Expansion",
+        feature: "Custom Design",
       },
       {
         id: 28.3,
-        feature: "Enterprise-Level Scalability",
+        feature: "Built in HTML, CSS & Javascript",
       },
       {
         id: 28.3,
-        feature: "Advanced SEO Services",
+        feature: "SEO Services",
       },
       {
         id: 28.5,
-        feature: "Unlimited Blog Articles",
+        feature: "12 Blog Articles/year",
       },
     ],
     btnType: "tertiary",
@@ -231,23 +191,23 @@ export const pricing = [
     includes: [
       {
         id: 26.1,
-        feature: "Everything in Basic, plus:",
+        feature: "Everything in Business, plus:",
       },
       {
         id: 26.3,
-        feature: "Analytics and Reporting",
+        feature: "Stripe Payment Gateway",
       },
       {
         id: 27.3,
-        feature: "Dynamic Pricing Engine",
+        feature: "CMS Integration",
       },
       {
         id: 27.4,
-        feature: "Customer Support Enhancements",
+        feature: "Product Variants",
       },
       {
         id: 27.6,
-        feature: "24 Blog Articles",
+        feature: "User Reviews",
       },
     ],
     btnType: "secondary",
@@ -270,23 +230,23 @@ export const pricing = [
     includes: [
       {
         id: 28.1,
-        feature: "Everything in Advanced, plus:",
+        feature: "Everything in E-Commerce, plus:",
       },
       {
         id: 28.2,
-        feature: "Geographical Expansion",
+        feature: "Admin Dashboard",
       },
       {
         id: 28.3,
-        feature: "Enterprise-Level Scalability",
+        feature: "Client Invoicing",
       },
       {
         id: 28.3,
-        feature: "Advanced SEO Services",
+        feature: "Avaialbility Calendar",
       },
       {
         id: 28.5,
-        feature: "Unlimited Blog Articles",
+        feature: "Sales Charts",
       },
     ],
     btnType: "tertiary",
@@ -1411,38 +1371,6 @@ export const glossaryMenu = [
   //     },
   //   ],
   // },
-] as const;
-
-export const services = [
-  {
-    id: 82,
-    processName: "",
-    processDescription: "",
-  },
-  {
-    id: 83,
-    processName: "Landing Pages",
-    processDescription:
-      "Tailored websites that reflect your unique brand identity.",
-  },
-  {
-    id: 85,
-    processName: "E-Commerce Solutions",
-    processDescription:
-      "Secure, easy-to-use online stores optimized for conversions and sales growth.",
-  },
-  {
-    id: 86,
-    processName: "Business Websites",
-    processDescription:
-      "Optimize your online presence and attract more visitors.",
-  },
-  {
-    id: 87,
-    processName: "Booking Platforms",
-    processDescription:
-      "Innovative web applications to streamline your business operations.",
-  },
 ] as const;
 
 export const experince = [
