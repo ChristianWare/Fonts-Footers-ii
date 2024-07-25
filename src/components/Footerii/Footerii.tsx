@@ -11,32 +11,27 @@ const Footerii = () => {
   const footer = [
     {
       id: 1,
-      heading: "Home Loans",
+      heading: "Quick Links",
       section: [
         {
           id: 1.1,
-          name: "Investment Loans",
-          href: "/",
+          name: "E-Commerce Websites",
+          href: "/services/ecommerce-stores",
         },
         {
           id: 1.2,
-          name: "Refinancing Options",
-          href: "/",
+          name: "Business Websites",
+          href: "/services/business-websites",
         },
         {
           id: 1.3,
-          name: "Contruction Loans",
-          href: "/",
+          name: "Booking Websites",
+          href: "/services/booking-platforms",
         },
         {
           id: 1.4,
-          name: "First Home Buyer",
-          href: "/",
-        },
-        {
-          id: 1.5,
-          name: "Live-in Home Loans",
-          href: "/",
+          name: "All Services",
+          href: "/services",
         },
       ],
     },
@@ -50,17 +45,17 @@ const Footerii = () => {
         {
           id: 2.1,
           name: "About Us",
-          href: "/",
-        },
-        {
-          id: 2.2,
-          name: "Contact Us",
-          href: "/",
+          href: "/about",
         },
         {
           id: 2.3,
           name: "Blog",
-          href: "/",
+          href: "/blog",
+        },
+        {
+          id: 2.2,
+          name: "Contact Us",
+          href: "/contact",
         },
       ],
     },

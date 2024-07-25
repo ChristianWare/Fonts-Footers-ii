@@ -1,5 +1,6 @@
 "use client";
 import Button from "../Button/Button";
+import ContactForm from "../ContactForm/ContactForm";
 import Footerii from "../Footerii/Footerii";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./CallToAction.module.css";
@@ -23,14 +24,22 @@ const CallToAction = () => {
           </p>
           <div className={styles.btnContainer}>
             <Button
-              text='Need More Information?'
+              text='See All Services'
               href='/services'
               btnType='primary'
               arrow
             />
-            <Button text='Contact Us' href='/' btnType='secondary' arrow />
+            <Button
+              text='Contact Us'
+              href='/contact'
+              btnType='secondary'
+              arrow
+            />
           </div>
         </section>
+        <div className={styles.formContainer}>
+          <ContactForm />
+        </div>
       </LayoutWrapper>
       <Footerii />
     </section>

@@ -1,6 +1,5 @@
 import styles from "./ScrollText.module.css";
 import LayoutWrapper from "../LayoutWrapper";
-import House from "../../../public/icons/house.svg";
 
 const ScrollText = () => {
   return (

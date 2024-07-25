@@ -30,17 +30,39 @@
   gap: 2rem;
 }
 
+.formContainer {
+  margin-top: 3rem;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media screen and (max-width: 968px) {
   .heading,
   .copy {
     width: 100%;
   }
+
+  .formContainer {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 568px) {
+  .content {
+    background-color: var(--white);
+    padding: 3rem;
+    border-radius: 10px;
+    border: 1px solid var(--lightBlack);
+  }
+
   .btnContainer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+
+  .formContainer {
     width: 100%;
   }
 }
