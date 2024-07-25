@@ -59,8 +59,12 @@ const ServicesSection = () => {
           </div>
           <div className={styles.left}>
             {services.map((x) => (
-              <div key={x.id} className={styles.processContainer}>
-                <Link href={x.href}>
+              <Link
+                href={x.href}
+                key={x.id}
+                className={styles.processContainer}
+              >
+                <>
                   <div className={styles.processTop}>
                     {x.processName.length >= 1 && <>{x.icon}</>}
                   </div>
@@ -73,8 +77,8 @@ const ServicesSection = () => {
                       {x.processDescription}
                     </p>
                   </div>
-                </Link>
-              </div>
+                </>
+              </Link>
             ))}
           </div>
         </div>
