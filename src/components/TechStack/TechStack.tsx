@@ -15,37 +15,37 @@ import FalseButton from "../FalseButton/FalseButton";
 const TechStack = () => {
   const data = [
     {
-      icon: <NextJS width={50} height={50} />,
+      icon: <NextJS width={50} height={50} className={styles.icon} />,
       name: "Next Js",
       description:
         "A framework that allows developers to build server-side rendered and statically generated web applications.",
     },
     {
-      icon: <Vercel width={100} height={100} />,
+      icon: <Vercel width={100} height={100} className={styles.icon} />,
       name: "Vercel",
       description:
         "Cloud platform that enables developers to deploy, host, and scale websites and applications with ease.",
     },
     {
-      icon: <NextAuth width={50} height={50} />,
+      icon: <NextAuth width={50} height={50} className={styles.icon} />,
       name: "Next Auth",
       description:
         "Authentication library for Next.js applications, offering various authentication strategies like OAuth, JWT, and others with easy integration and configuration.",
     },
     {
-      icon: <Node width={50} height={50} />,
+      icon: <Node width={50} height={50} className={styles.icon} />,
       name: "Node",
       description:
         "Runtime environment that allows you to run JavaScript code on the server side, enabling the development of scalable and efficient web applications.",
     },
     {
-      icon: <GoogleAnalytics width={50} height={50} />,
+      icon: <GoogleAnalytics width={50} height={50} className={styles.icon} />,
       name: "Google Analytics",
       description:
         "Web analytics service provided by Google that tracks and reports website traffic, providing insights into user behavior, audience demographics, and the effectiveness of marketing campaigns.",
     },
     {
-      icon: <Stripe width={50} height={50} />,
+      icon: <Stripe width={50} height={50} className={styles.icon} />,
       name: "Stripe",
       description:
         "Payment processing platform that allows businesses to accept payments online, manage subscriptions, handle invoices, and perform other financial transactions securely and efficiently.",
@@ -66,8 +66,7 @@ const TechStack = () => {
             those built on platforms like Wordpress, Wix, or Godaddy, which
             often rely on older, slower, and outdated technology. Our approach
             involves using pure HTML, CSS, and Javascript code, ensuring a sleek
-            and efficient website tailored specifically for your vacation rental
-            homes.
+            and efficient website.
           </p>
         </div>
         <div className={styles.bottom}>

@@ -113,7 +113,6 @@ const ContactForm = () => {
               <div className={styles.btnContainer}>
                 <button className={styles.btn}>
                   {loading ? "Sending..." : "Submit"}
-                  <Arrow2 className={styles.icon2} />
                 </button>
               </div>
             </div>

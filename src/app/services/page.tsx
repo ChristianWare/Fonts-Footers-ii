@@ -36,7 +36,7 @@ export default async function ServicesPage() {
       <IndividualService />
       <EveryPlan />
       <ScrollHorizontalText text="FAQ's" bottomBorder={false} />
-      <Faqsiii mapData={homePageFaqs} />
+      <Faqsiii mapData={homePageFaqs} text="FAQ's" />
       <ScrollHorizontalText text="FAQ's" bottomBorder={false} />
       <BlogSection data={data} />
     </main>

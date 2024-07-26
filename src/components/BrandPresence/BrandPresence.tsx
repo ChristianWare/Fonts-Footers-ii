@@ -43,7 +43,7 @@ const BrandPresence = () => {
     },
   ];
   return (
-    <section>
+    <section className={styles.container}>
       <LayoutWrapper>
         <div className={styles.top}>
           <h2 className={styles.heading}>Our Values</h2>

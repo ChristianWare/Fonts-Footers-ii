@@ -7,7 +7,6 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 5rem;
-  padding-top: 10rem;
 }
 
 .imgContainer,
@@ -26,21 +25,25 @@
   border-radius: 10px;
 }
 
+.rightBottom {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
 .box {
   border: 1px solid var(--lightBlack);
   padding: 2rem;
   border-radius: 10px;
-  margin-bottom: 2rem;
 }
 
 .copy {
   margin-top: 1rem;
-  /* margin-bottom: 4rem; */
 }
 
 .card {
   padding-bottom: 2rem;
-  margin-bottom: 2rem;
   border-bottom: 1px solid var(--lightBlack);
 }
 
@@ -56,6 +59,10 @@
 @media screen and (max-width: 1068px) {
   .content {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .box {
+    margin-bottom: 2rem;
   }
 
   .heading {
