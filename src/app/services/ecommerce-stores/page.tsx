@@ -14,12 +14,13 @@ import MPSection1 from "@/components/MPSection1/MPSection1";
 import Pricing from "@/components/Pricing/Pricing";
 import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
 import Testimonials from "@/components/Testimonials/Testimonials";
+import Values from "@/components/Values/Values";
 import { ecommerceWebsiteFaqs } from "@/lib/data";
 
 export default function EcommerceStoresPage() {
   return (
     <main>
-      <EcommHero />
+      <Values />
       <EcommOverview />
       <MPSection1 />
       <EcommFeatures />

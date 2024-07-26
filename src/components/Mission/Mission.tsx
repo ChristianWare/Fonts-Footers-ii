@@ -2,48 +2,51 @@
 
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Mission.module.css";
-import Trust from "../../../public/icons/trust.svg";
-import User from "../../../public/icons/user.svg";
-import Grow from "../../../public/icons/grow.svg";
-import Unique from "../../../public/icons/unique.svg";
+import Design from "../../../public/icons/designii.svg";
+import Reminders from "../../../public/icons/seo.svg";
+import Clock from "../../../public/icons/clock.svg";
+import Card from "../../../public/icons/payment.svg";
 // import { motion } from "framer-motion";
 // import { fadeIn } from "../../../animation/variants";
 import FalseButton from "../FalseButton/FalseButton";
 import Image from "next/image";
-import Author from "../../../public/images/author.png";
+import Author from "../../../public/images/house13.png";
 
 const Mission = () => {
   const data = [
     {
-      icon: <Trust width={50} height={50} className={styles.icon} />,
-      title: "Personal Story",
+      icon: <Clock width={50} height={50} className={styles.icon} />,
+      title: "Real-Time Availability",
       description:
-        "Chris' passion for design and technology began in college, where he built her first website. This passion has driven him to create a successful digital agency that focuses on innovation and client success.",
+        "Clients can view real-time availability and book appointments instantly.",
     },
     {
-      icon: <User width={50} height={50} className={styles.icon} />,
-      title: "Vision and Goals",
+      icon: <Reminders width={50} height={50} className={styles.icon} />,
+      title: "Automated Reminders",
       description:
-        "Chris envisions Fonts and Footers as a leader in the digital space, dedicated to delivering innovative solutions and exceptional client service.",
+        "Automated email and SMS reminders reduce no-shows and keep clients informed.",
     },
     {
-      icon: <Grow width={53} height={53} className={styles.icon} />,
-      title: "Personal Interests",
+      icon: <Design width={50} height={50} className={styles.icon} />,
+      title: "Intuitive Interface",
       description:
-        "When he's not working, Chris enjoys hiking in the Arizona mountains, playing pick up basketball, and spending time with his family.",
+        "A simple and intuitive interface makes it easy for clients to navigate and book services.",
     },
     {
-      icon: <Unique width={50} height={50} className={styles.icon} />,
-      title: "Contact Information",
+      icon: <Card width={50} height={50} className={styles.icon} />,
+      title: "Integrated Payment Systems",
       description:
-        "Connect with Chris on LinkedIn or reach out via email at chris@fontsandfooters.com.",
+        "Accept payments from any major credit card with our payment services.",
     },
   ];
   return (
     <section className={styles.container}>
       <LayoutWrapper>
         <div className={styles.top}>
-          <h2 className={styles.heading}>Meet The Owner</h2>
+          <FalseButton text='Chris Ware' btnType='primary' />
+          <h1 className={styles.heading}>
+            CUSTOM BOOKING PLATFORMS FOR SEAMLESS RESERVATIONS
+          </h1>
         </div>
         <div className={styles.bottom}>
           <div className={styles.left}>
@@ -58,12 +61,9 @@ const Mission = () => {
               quality={100}
             />
             <div className={styles.z3}>
-              <FalseButton text='Chris Ware' btnType='primary' />
               <p className={styles.leftCopy}>
-                Meet Chris Ware, the visionary founder and CEO of Fonts and
-                Footers. With over 10 years of experience in web development and
-                digital marketing, Chris has a proven track record of helping
-                businesses achieve their online goals.
+                Empower your business with efficient and user-friendly booking
+                systems.
               </p>
             </div>
           </div>

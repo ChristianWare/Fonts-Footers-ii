@@ -26,6 +26,7 @@
 
 .heading {
   color: var(--black);
+  font-size: 6rem;
 }
 
 .btnContainer {
@@ -100,6 +101,10 @@
 @media screen and (max-width: 568px) {
   .left {
     align-items: flex-start;
+  }
+
+  .heading {
+    font-size: 4.5rem;
   }
 
   .falseBtnContainer {

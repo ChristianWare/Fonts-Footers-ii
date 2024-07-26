@@ -1,26 +1,26 @@
 .container {
-  border-top: 1px solid var(--lightBlack);
+  background-color: var(--tan);
 }
 
 .top {
-  margin: 10rem 0rem;
+  margin-top: -10rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-end;
-  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 5rem;
 }
 
 .heading {
-  text-align: right;
+  text-align: center;
   width: 60%;
-  margin-left: auto;
 }
 
 .bottom {
   display: grid;
   grid-template-columns: 1.5fr 2fr;
-  grid-gap: 1rem;
+  grid-gap: 5rem;
 }
 
 .left {
@@ -35,6 +35,11 @@
   position: relative;
 }
 
+.img {
+  object-fit: cover;
+  border-radius: 10px;
+}
+
 .imgOverlay {
   z-index: 2;
   position: absolute;
@@ -44,11 +49,6 @@
   border-radius: 10px;
   top: 0;
   left: 0;
-}
-
-.img {
-  object-fit: cover;
-  border-radius: 10px;
 }
 
 .z3 {
@@ -103,6 +103,7 @@
 
 .title {
   margin-bottom: 2rem;
+  text-transform: none;
 }
 
 @media screen and (max-width: 1068px) {
@@ -122,19 +123,18 @@
 
   .left {
     padding: 6rem;
-    height: 600px;
+    height: 300px;
   }
 }
 
 @media screen and (max-width: 568px) {
   .top {
-    align-items: flex-start;
-    justify-content: flex-start;
+    /* align-items: flex-start; */
+    /* justify-content: flex-start; */
+    margin-bottom: 2rem;
   }
 
-  .heading {
-    text-align: left;
-  }
+
 
   .bottom {
     grid-gap: 3rem;

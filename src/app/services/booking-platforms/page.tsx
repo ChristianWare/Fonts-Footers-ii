@@ -6,6 +6,7 @@ import EveryPlan from "@/components/EveryPlan/EveryPlan";
 import Faqsiii from "@/components/Faqsiii/Faqsiii";
 import HowItWorks from "@/components/HowItWorks/HowItWorks";
 import IndividualFeature from "@/components/IndividualFeature/IndividualFeature";
+import Mission from "@/components/Mission/Mission";
 import Pricing from "@/components/Pricing/Pricing";
 import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
 import Testimonials from "@/components/Testimonials/Testimonials";
@@ -15,7 +16,7 @@ import { bookingWebsiteFaqs } from "@/lib/data";
 export default function BookingPlatformPage() {
   return (
     <main>
-      <BookingHero />
+      <Mission />
       <BookingScrollText />
       <BookingService />
       <ScrollHorizontalText text='Notifications' bottomBorder={false} />

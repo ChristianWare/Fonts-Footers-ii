@@ -3,12 +3,13 @@
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Values.module.css";
 import Image from "next/image";
-import House from "../../../public/icons/house.svg";
-import Understand from "../../../public/icons/understand.svg";
-import Ok from "../../../public/icons/ok.svg";
-import Scale from "../../../public/icons/scale.svg";
+import SEO from "../../../public/icons/seo.svg";
+import Design from "../../../public/icons/designii.svg";
+import Multiple from "../../../public/icons/multiple.svg";
+import Card from "../../../public/icons/payment.svg";
 import Img1 from "../../../public/images/house17.png";
 import Img2 from "../../../public/images/aboutHouse.png";
+
 // import { motion } from "framer-motion";
 // import { fadeIn } from "../../../animation/variants";
 import FalseButton from "../FalseButton/FalseButton";
@@ -16,49 +17,48 @@ import FalseButton from "../FalseButton/FalseButton";
 const Values = () => {
   const data = [
     {
-      title: "Client Focus",
-      description: "Client success is our unwavering commitment.",
+      title: "User-Friendly Booking Interfaces",
+      description: "Seamless and secure booking experiences.",
       features: [
         {
-          icon: <Understand width={50} height={50} className={styles.icon} />,
-          detail: "We prioritize deep understanding",
+          icon: <Design width={50} height={50} className={styles.icon} />,
+          detail: "Intuitive design for easy navigation",
         },
         {
-          icon: <Ok width={50} height={50} className={styles.icon} />,
-          detail: "We deliver solutions that exceed expectations",
+          icon: <Card width={50} height={50} className={styles.icon} />,
+          detail: "Secure payment gateways",
         },
       ],
       src: Img1,
     },
     {
-      title: "Integrity",
-      description:
-        "Integrity is our business's bedrock, guiding us with unwavering ethical standards.",
+      title: "Optimized E-commerce Platforms",
+      description: "Boost your sales and online visibility.",
       features: [
         {
-          icon: <Scale width={50} height={50} className={styles.icon} />,
-          detail:
-            "Transparency, honesty, and accountability shape our interactions",
+          icon: <Multiple width={50} height={50} className={styles.icon} />,
+          detail: "Custom product pages with variants",
         },
         {
-          icon: <House width={50} height={50} className={styles.icon} />,
-          detail:
-            "We foster a positive work culture, and establish enduring credibility",
+          icon: <SEO width={50} height={50} className={styles.icon} />,
+          detail: "SEO-friendly design and content",
         },
       ],
       src: Img2,
     },
   ];
+
   return (
     <section className={styles.container}>
       <LayoutWrapper>
         <div className={styles.top}>
-          <FalseButton text='CORE PRINCIPLES AND BELIEFS' btnType='primary' />
-          <h2 className={styles.heading}>Our Values</h2>
+          <FalseButton text=' E-commerce' btnType='primary' />
+          <h1 className={styles.heading}>
+            CUSTOM E-COMMERCE SOLUTIONS FOR YOUR BUSINESS
+          </h1>
           <p className={styles.topCopy}>
-            Our values act as a set of guiding principles and fundamental
-            beliefs that influence the behaviors we demonstrate, which shape the
-            decisions we collectively make as a team.
+            Boost your online sales with secure, user-friendly, and scalable
+            e-commerce websites.
           </p>
         </div>
         <div className={styles.bottom}>

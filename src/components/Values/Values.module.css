@@ -1,15 +1,23 @@
+.container {
+  background-color: var(--tan);
+}
+
 .top {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  margin-bottom: 5rem;
-  padding-top: 3rem;
+  margin-top: -15rem;
+}
+
+.heading {
+  width: 60%;
+  text-align: center;
 }
 
 .topCopy {
-  width: 60%;
+  width: 55%;
   text-align: center;
 }
 
@@ -29,7 +37,7 @@
 
 .box:nth-child(1) .left {
   border: 1px solid var(--lightBlack);
-  border-radius: 20px;
+  border-radius: 10px;
   position: relative;
   right: -1px;
   border-bottom-right-radius: 0px;
@@ -37,7 +45,7 @@
 
 .box:nth-child(2) .left {
   border: 1px solid var(--lightBlack);
-  border-radius: 20px;
+  border-radius: 10px;
   position: relative;
   top: -1px;
   border-top-left-radius: 0px;
@@ -57,7 +65,7 @@
 
 .left,
 .right {
-  padding: 5rem;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -65,12 +73,9 @@
   gap: 1rem;
 }
 
-.detail {
-  font-weight: 700;
-}
-
 .right {
   border: 1px solid var(--lightBlack);
+  padding: 2rem;
 }
 
 .imgContainer {
@@ -81,18 +86,22 @@
 
 .img {
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 10px;
   border: 1px solid var(--lightBlack);
 }
 
 .icon {
-  color: var(--green);
+  color: var(--lightBlack);
 }
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 1068px) {
   .top {
     margin-bottom: 1rem;
     padding-top: 5rem;
+  }
+
+  .heading {
+    width: 100%;
   }
 
   .topCopy {
@@ -123,26 +132,29 @@
   }
 
   .box:nth-child(1) .left {
-    border-bottom-right-radius: 20px;
+    border-bottom-right-radius: 10px;
   }
 
   .box:nth-child(2) .left {
-    border-top-left-radius: 20px;
+    border-top-left-radius: 10px;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .top {
-    margin-bottom: 5rem;
-  }
-
   .bottom {
     padding: 0rem;
   }
 
   .box {
     border: 1px solid var(--green);
-    border-radius: 20px;
+    border-radius: 10px;
     margin-bottom: 3rem;
   }
 
