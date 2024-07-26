@@ -5,22 +5,22 @@ import Business from "../../../public/icons/business.svg";
 const data = [
   {
     id: 1,
-    heading: "Unique Design",
+    feature: "Unique Design",
     desc: "Each website is uniquely designed to match your brand’s personality and vision.",
   },
   {
     id: 2,
-    heading: "User-Centered Approach",
+    feature: "User-Centered Approach",
     desc: "Our designs prioritize user experience, ensuring your visitors can easily navigate and find the information they need.",
   },
   {
     id: 3,
-    heading: "Attention-Grabbing Designs",
+    feature: "Attention-Grabbing Designs",
     desc: "Our business websites are designed to capture attention and provide a online experience.",
   },
   {
     id: 4,
-    heading: "Custom and Mobile-Friendly",
+    feature: "Custom and Mobile-Friendly",
     desc: "We offer everything from custom designs to mobile-friendly options to ensure your site stands out in the digital marketplace.",
   },
 ];
@@ -43,11 +43,14 @@ const BusinessHero = () => {
             <Business className={styles.icon} />
           </div>
         </div>
-        <div className={styles.contentBottom}>
+        <div className={styles.bottom}>
           {data.map((x) => (
             <div key={x.id} className={styles.card}>
-              <h2 className={styles.headingii}>{x.heading}</h2>
-              <p className={styles.desc}>{x.desc}</p>
+              <span className={styles.index}>{x.id}</span>
+              <div>
+                <h2 className={styles.feature}>{x.feature}</h2>
+                <p className={styles.desc}>{x.desc}</p>
+              </div>
             </div>
           ))}
         </div>

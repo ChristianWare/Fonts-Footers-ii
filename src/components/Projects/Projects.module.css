@@ -8,15 +8,13 @@
 }
 
 .heading {
-  width: 50%;
-  text-align: right;
-  margin-left: auto;
+  text-align: center;
 }
 
 .mapContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 2rem;
   height: 100%;
 }
 
@@ -67,7 +65,8 @@
   justify-content: center;
   width: 100%;
   border: 1px solid var(--lightBlack);
-  border-radius: 10px;
+  background-color: var(--gray);
+  border-radius: 8px;
   padding: 2rem;
   transition: all 0.2s ease-in;
   text-align: center;
@@ -81,6 +80,13 @@
 
 .btn:hover {
   background-color: var(--green3);
+}
+
+.btnContainer {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 @media screen and (max-width: 1068px) {
@@ -98,12 +104,11 @@
   .mapContainer {
     grid-template-columns: repeat(1, 1fr);
   }
-}
 
-@media screen and (max-width: 568px) {
   .btnContainer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     width: 100%;
+    margin-top: 3rem;
   }
 }

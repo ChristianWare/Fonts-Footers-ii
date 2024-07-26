@@ -6,10 +6,8 @@ import styles from "./Projects.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useRef } from "react";
-import Modal from "../Modal/Modal";
-import FalseButton from "../FalseButton/FalseButton";
+
 import { motion, useScroll, useTransform } from "framer-motion";
-import Experienceii from "../Experienceii/Experienceii";
 import Button from "../Button/Button";
 import { usePathname } from "next/navigation";
 
@@ -43,7 +41,7 @@ const Projects = () => {
                   <div className={styles.bottomCard}>
                     <h3 className={styles.title}>{x.title}</h3>
                     <p className={styles.desc}>{x.description}</p>
-                    <Link href={x.href} className={styles.btn} target="_blank">
+                    <Link href={x.href} className={styles.btn} target='_blank'>
                       Live Site
                     </Link>
                   </div>

@@ -259,27 +259,27 @@ export const projects = [
     title: "Nier Transportaion",
     description:
       "Nier Transportaion is a black cars service based in phoenix, az where users can book rides in advance, and learn about all transportaion services offered.",
-    moreDetails:
-      "Elite Retreat Rentals is a Phoenix, AZ based company that provides lodging services to travelers at an affordable price. They currently provide lodging for multiple properties in the stat of Arizona. They allow clients to booking directly on their website, instead of relying on platform such as Air bnb and VRBO. The Admin is able to see all the bookings, users, properties, and review on the Admin dashboard.",
-    href: "https://www.eliteretreatrentals.com/",
+    // moreDetails:
+    //   "Elite Retreat Rentals is a Phoenix, AZ based company that provides lodging services to travelers at an affordable price. They currently provide lodging for multiple properties in the stat of Arizona. They allow clients to booking directly on their website, instead of relying on platform such as Air bnb and VRBO. The Admin is able to see all the bookings, users, properties, and review on the Admin dashboard.",
+    href: "https://www.niertransportation.com/",
   },
   {
     src: Project1,
     title: "Elite Retreat Rentals",
     description:
       "Elite Retreat Rentals is a Phonenix, AZ based company that provides lodging services to travelers at an affordable price.",
-    moreDetails:
-      "Elite Retreat Rentals is a Phoenix, AZ based company that provides lodging services to travelers at an affordable price. They currently provide lodging for multiple properties in the stat of Arizona. They allow clients to booking directly on their website, instead of relying on platform such as Air bnb and VRBO. The Admin is able to see all the bookings, users, properties, and review on the Admin dashboard.",
+    // moreDetails:
+    //   "Elite Retreat Rentals is a Phoenix, AZ based company that provides lodging services to travelers at an affordable price. They currently provide lodging for multiple properties in the stat of Arizona. They allow clients to booking directly on their website, instead of relying on platform such as Air bnb and VRBO. The Admin is able to see all the bookings, users, properties, and review on the Admin dashboard.",
     href: "https://www.eliteretreatrentals.com/",
   },
   {
     src: Project3,
     title: "Taco Bell Redegin",
     description:
-      "Elite Retreat Rentals is a Phonenix, AZ based company that provides lodging services to travelers at an affordable price.",
-    moreDetails:
-      "Elite Retreat Rentals is a Phoenix, AZ based company that provides lodging services to travelers at an affordable price. They currently provide lodging for multiple properties in the stat of Arizona. They allow clients to booking directly on their website, instead of relying on platform such as Air bnb and VRBO. The Admin is able to see all the bookings, users, properties, and review on the Admin dashboard.",
-    href: "https://www.eliteretreatrentals.com/",
+      "This is a redesign of Taco Bell's current website. It has a more visually appealing user interface for users to be able to easily navigate and choose from thier extensive menu.",
+    // moreDetails:
+    //   "Elite Retreat Rentals is a Phoenix, AZ based company that provides lodging services to travelers at an affordable price. They currently provide lodging for multiple properties in the stat of Arizona. They allow clients to booking directly on their website, instead of relying on platform such as Air bnb and VRBO. The Admin is able to see all the bookings, users, properties, and review on the Admin dashboard.",
+    href: "https://www.livemas.dev/",
   },
 ] as const;
 
@@ -346,7 +346,6 @@ export const projectFaqs = [
       "We use a variety of technologies, including Next.js, MongoDB, and other modern frameworks and tools, to ensure that our projects are built to the highest standards of performance and scalability.",
   },
 ];
-
 
 export const homePageFaqs = [
   {

@@ -1,4 +1,3 @@
-
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./BusinessSEO.module.css";
 
@@ -25,19 +24,17 @@ const data = [
   },
 ];
 
-
 const BusinessSEO = () => {
   return (
     <section className={styles.container}>
       <LayoutWrapper>
-        {/* <h2>Ecomm Integrations</h2> */}
         <div className={styles.top}>
-            <h2 className={styles.heading}>Search Engine Optimization (SEO)</h2>
-            <p className={styles.copy}>
-              Our websites are built with SEO best practices to ensure that your
-              business ranks well in search engine results, driving organic
-              traffic to your site.
-            </p>
+          <h2 className={styles.heading}>Search Engine Optimization (SEO)</h2>
+          <p className={styles.copy}>
+            Our websites are built with SEO best practices to ensure that your
+            business ranks well in search engine results, driving organic
+            traffic to your site.
+          </p>
         </div>
         <div className={styles.bottom}>
           {data.map((x) => (
