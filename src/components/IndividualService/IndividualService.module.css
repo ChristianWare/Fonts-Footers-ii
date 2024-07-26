@@ -65,7 +65,7 @@
 }
 
 .icon {
-  color: var(--black);
+  color: var(--lightBlack);
 }
 
 .right {
@@ -139,7 +139,7 @@
   .parent {
     grid-template-columns: repeat(1, 1fr);
   }
-  
+
   .box {
     grid-template-columns: repeat(1, 1fr);
   }

@@ -6,6 +6,7 @@ import Landing from "../../../public/icons/landing.svg";
 import Cart from "../../../public/icons/cart.svg";
 import Link from "next/link";
 import Button from "../Button/Button";
+import ServicesSectionii from "../ServicesSectionii/ServicesSectionii";
 
 const IndividualService = () => {
   const individulaFeatures = [
@@ -49,6 +50,7 @@ const IndividualService = () => {
             </div>
           ))}
         </div>
+      <ServicesSectionii />
       </LayoutWrapper>
     </section>
   );
