@@ -49,10 +49,7 @@
 
 .heading {
   color: var(--tan);
-}
-
-.heading {
-  width: 60%;
+  width: 50%;
 }
 
 .copy {
@@ -85,6 +82,7 @@
 }
 
 @media screen and (max-width: 968px) {
+  .heading,
   .copy {
     width: 100%;
   }
