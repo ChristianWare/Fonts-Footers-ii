@@ -16,14 +16,17 @@
 .mapContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
+  grid-gap: 1rem;
+  height: 100%;
 }
-.content {
+
+.card {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 1rem;
-  margin-bottom: 5rem;
-  background-color: transparent;
+  border: 1px solid var(--lightBlack);
+  border-radius: 10px;
+  padding: 1rem;
 }
 
 .imgContainer {
@@ -37,104 +40,47 @@
   border-radius: 10px;
 }
 
-.rightTop,
-.rbLeft,
-.rbRight {
-  background-color: var(--tan);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  padding: 3rem;
-  background-size: 10px 10px;
-  border: 1px solid var(--lightBlack);
-  border-radius: 10px;
-}
-
-.rightTop {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 3rem;
+.bottomCard {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1rem;
+  padding-top: 2rem;
 }
 
 .title {
-  color: var(--green);
+  color: var(--black);
   text-align: center;
 }
 
 .desc {
-  color: var(--green);
-  opacity: 0.8;
-}
-
-.rightBottom {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
-  margin-top: 1rem;
-}
-
-.rbLeft {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding: 3rem;
-  transition: all 0.2s ease-in;
-  text-align: center;
-  color: var(--green);
-  font-family: var(--switzer);
-  font-size: 2rem;
-  line-height: 130%;
-  font-weight: 600;
-  letter-spacing: -1px;
-  cursor: pointer;
-}
-
-.rbLeft:hover,
-.rbRight:hover {
-  background-color: var(--green3);
   color: var(--black);
+  opacity: 0.8;
+  text-align: center;
+  width: 95%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
-.rbRight {
+.btn {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 3rem;
+  border: 1px solid var(--lightBlack);
+  border-radius: 10px;
+  padding: 2rem;
   transition: all 0.2s ease-in;
   text-align: center;
-  color: var(--green);
-  font-family: var(--switzer);
+  color: var(--black);
   font-size: 2rem;
   line-height: 130%;
   font-weight: 600;
   letter-spacing: -1px;
-}
-
-.btnContainer {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  width: 100%;
-}
-
-/* .falseBtnContainer1 {
-  margin-bottom: 3rem;
-} */
-
-.falseBtnContainer {
   cursor: pointer;
 }
 
-.modalDetails {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  gap: 5rem;
-  height: 100%;
+.btn:hover {
+  background-color: var(--green3);
 }
 
 @media screen and (max-width: 1068px) {

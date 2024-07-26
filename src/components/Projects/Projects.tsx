@@ -21,22 +21,8 @@ interface Project {
   moreDetails: string;
 }
 
-interface ContentItemProps {
-  project: Project;
-  index: number;
-  scrollYProgress: any;
-  isModalOpen: boolean;
-  setIsModalOpen: (isOpen: boolean) => void;
-}
-
 const Projects = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
   const container = useRef<HTMLDivElement | null>(null);
-  const { scrollYProgress } = useScroll({
-    target: container,
-    offset: ["start end", "end start"],
-  });
-
   const pathname = usePathname();
 
   return (
@@ -49,15 +35,19 @@ const Projects = () => {
           <div className={styles.mapContainer}>
             {projects
               .slice(0, pathname === "/" ? 3 : projects.length)
-              .map((project: any, index: number) => (
-                <ContentItem
-                  key={project.title}
-                  project={project}
-                  index={index}
-                  scrollYProgress={scrollYProgress}
-                  isModalOpen={isModalOpen}
-                  setIsModalOpen={setIsModalOpen}
-                />
+              .map((x: any, index: number) => (
+                <article key={index} className={styles.card}>
+                  <div className={styles.imgContainer}>
+                    <Image src={x.src} fill alt='' className={styles.img} />
+                  </div>
+                  <div className={styles.bottomCard}>
+                    <h3 className={styles.title}>{x.title}</h3>
+                    <p className={styles.desc}>{x.description}</p>
+                    <Link href={x.href} className={styles.btn} target="_blank">
+                      Live Site
+                    </Link>
+                  </div>
+                </article>
               ))}
           </div>
           {pathname === "/" && (
@@ -73,69 +63,6 @@ const Projects = () => {
         </div>
       </LayoutWrapper>
     </section>
-  );
-};
-
-const ContentItem = ({
-  project,
-  isModalOpen,
-  setIsModalOpen,
-}: ContentItemProps) => {
-  return (
-    <div className={styles.content}>
-      <div className={styles.left}>
-        <div className={styles.imgContainer}>
-          <Image
-            src={project.src}
-            alt={project.title}
-            fill
-            className={styles.img}
-          />
-        </div>
-      </div>
-      <div className={styles.right}>
-        <div className={styles.rightTop}>
-          <div className={styles.falseBtnContainer1}>
-            <FalseButton
-              text='Landing Page'
-              btnType='primary'
-              onClose={() => {
-                setIsModalOpen(false);
-              }}
-            />
-          </div>
-          <h3 className={styles.title}>{project.title}</h3>
-          <p className={styles.desc}>{project.description}</p>
-        </div>
-        <div className={styles.rightBottom}>
-          <div className={styles.rbLeft} onClick={() => setIsModalOpen(true)}>
-            More Details
-          </div>
-          <Link href={project.href} target='_blank' className={styles.rbRight}>
-            Live Site
-          </Link>
-        </div>
-      </div>
-      <Modal
-        isOpen={isModalOpen}
-        onClose={() => {
-          setIsModalOpen(false);
-        }}
-      >
-        <div className={styles.modalDetails}>
-          <p>{project.moreDetails}</p>
-          <div className={styles.falseBtnContainer}>
-            <FalseButton
-              text='Close'
-              btnType='primary'
-              onClose={() => {
-                setIsModalOpen(false);
-              }}
-            />
-          </div>
-        </div>
-      </Modal>
-    </div>
   );
 };
 

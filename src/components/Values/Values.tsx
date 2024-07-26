@@ -17,7 +17,7 @@ import FalseButton from "../FalseButton/FalseButton";
 const Values = () => {
   const data = [
     {
-      title: "User-Friendly Booking Interfaces",
+      title: "User-Friendly Interfaces",
       description: "Seamless and secure booking experiences.",
       features: [
         {

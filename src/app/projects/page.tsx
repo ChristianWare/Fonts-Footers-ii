@@ -5,7 +5,7 @@ import Projects from "@/components/Projects/Projects";
 import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
 import { simpleBlogCard } from "@/lib/interface";
 import { client } from "@/lib/sanity";
-import { homePageFaqs } from "@/lib/data";
+import { projectFaqs } from "@/lib/data";
 
 async function getData() {
   const query = `
@@ -38,7 +38,7 @@ export default async function page() {
         bgColor='tan'
       />
       <Projects />
-      <Faqsiii mapData={homePageFaqs} />
+      <Faqsiii mapData={projectFaqs} text='Project Related Questions' />
       <ScrollHorizontalText text='Blog' bottomBorder={false} />
       <BlogSection data={data} />
       <ScrollHorizontalText text='Blog' bottomBorder={false} />

@@ -255,6 +255,15 @@ export const pricing = [
 
 export const projects = [
   {
+    src: Project2,
+    title: "Nier Transportaion",
+    description:
+      "Nier Transportaion is a black cars service based in phoenix, az where users can book rides in advance, and learn about all transportaion services offered.",
+    moreDetails:
+      "Elite Retreat Rentals is a Phoenix, AZ based company that provides lodging services to travelers at an affordable price. They currently provide lodging for multiple properties in the stat of Arizona. They allow clients to booking directly on their website, instead of relying on platform such as Air bnb and VRBO. The Admin is able to see all the bookings, users, properties, and review on the Admin dashboard.",
+    href: "https://www.eliteretreatrentals.com/",
+  },
+  {
     src: Project1,
     title: "Elite Retreat Rentals",
     description:
@@ -264,17 +273,8 @@ export const projects = [
     href: "https://www.eliteretreatrentals.com/",
   },
   {
-    src: Project2,
-    title: "Elite Retreat Rentals",
-    description:
-      "Elite Retreat Rentals is a Phonenix, AZ based company that provides lodging services to travelers at an affordable price.",
-    moreDetails:
-      "Elite Retreat Rentals is a Phoenix, AZ based company that provides lodging services to travelers at an affordable price. They currently provide lodging for multiple properties in the stat of Arizona. They allow clients to booking directly on their website, instead of relying on platform such as Air bnb and VRBO. The Admin is able to see all the bookings, users, properties, and review on the Admin dashboard.",
-    href: "https://www.eliteretreatrentals.com/",
-  },
-  {
     src: Project3,
-    title: "Elite Retreat Rentals",
+    title: "Taco Bell Redegin",
     description:
       "Elite Retreat Rentals is a Phonenix, AZ based company that provides lodging services to travelers at an affordable price.",
     moreDetails:
@@ -282,6 +282,71 @@ export const projects = [
     href: "https://www.eliteretreatrentals.com/",
   },
 ] as const;
+
+export const projectFaqs = [
+  {
+    id: 401,
+    question: "What is the process for starting a new project?",
+    answer:
+      "To start a new project, contact us through our website. We'll set up an initial consultation to discuss your requirements, goals, and timelines. After that, we'll create a project plan and get started on development.",
+  },
+  {
+    id: 402,
+    question: "How do you manage project timelines?",
+    answer:
+      "We use project management tools to track progress and ensure timely delivery. Regular updates and milestones are shared with clients to keep them informed throughout the development process.",
+  },
+  {
+    id: 403,
+    question: "Can you work with tight deadlines?",
+    answer:
+      "Yes, we can accommodate tight deadlines. We assess each project's scope and requirements to provide a realistic timeline and ensure timely completion without compromising quality.",
+  },
+  {
+    id: 404,
+    question: "What information do you need from me to start a project?",
+    answer:
+      "We need details about your business, project goals, target audience, design preferences, and any specific features or functionalities you want to include. The more information you provide, the better we can tailor the project to your needs.",
+  },
+  {
+    id: 405,
+    question: "How do you handle project revisions and feedback?",
+    answer:
+      "We encourage client feedback throughout the project. Revisions are handled in stages, ensuring that your input is incorporated into the final product. Clear communication and collaboration are key to our process.",
+  },
+  {
+    id: 406,
+    question: "What happens if there are changes to the project scope?",
+    answer:
+      "If there are changes to the project scope, we discuss the impact on timelines and costs with you. Any adjustments are documented, and we ensure that all parties agree to the revised plan before proceeding.",
+  },
+  {
+    id: 407,
+    question: "How do you ensure the quality of your projects?",
+    answer:
+      "We follow best practices in development, conduct thorough testing, and perform quality assurance checks to ensure that the final product meets the highest standards of quality and functionality.",
+  },
+  {
+    id: 408,
+    question: "Do you offer support and maintenance after project completion?",
+    answer:
+      "Yes, we offer ongoing support and maintenance packages to ensure your website remains updated, secure, and performs optimally after the project is completed.",
+  },
+  {
+    id: 409,
+    question:
+      "Can you integrate third-party tools and services into my project?",
+    answer:
+      "Yes, we can integrate various third-party tools and services, such as payment gateways, CRM systems, and marketing automation tools, to enhance the functionality of your website.",
+  },
+  {
+    id: 410,
+    question: "What technologies do you use for your projects?",
+    answer:
+      "We use a variety of technologies, including Next.js, MongoDB, and other modern frameworks and tools, to ensure that our projects are built to the highest standards of performance and scalability.",
+  },
+];
+
 
 export const homePageFaqs = [
   {
