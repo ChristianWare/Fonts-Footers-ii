@@ -220,11 +220,11 @@ export const pricing = [
     prices: [
       {
         id: 1,
-        price: "350 / Month",
+        price: "275 / Month",
       },
       {
         id: 2,
-        price: "3,360 / Year",
+        price: "2,640 / Year",
       },
     ],
     includes: [
