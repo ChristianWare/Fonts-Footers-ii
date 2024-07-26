@@ -52,10 +52,10 @@ const Experience = () => {
             <FalseButton text='OUR STORY' btnType='primary' />
             <h1 className={styles.heading}>About Fonts & Footers</h1>
             <p className={styles.copy}>
-              At Fonts & Footers, we bring years of expertise and a deep
-              understanding of the vacation rental industry to help property
-              owners like you succeed. Here&lsquo;s why our experience sets us
-              apart:
+              Welcome to Fonts & Footers! We are a dedicated team of web
+              development experts specializing in custom-coded booking websites,
+              e-commerce platforms, and business websites. Here&lsquo;s why our
+              experience sets us apart:
             </p>
             {faqs.map((x, index) => (
               <div
