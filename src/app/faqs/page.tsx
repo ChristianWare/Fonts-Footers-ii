@@ -10,6 +10,7 @@ import {
   businessWebsiteFaqs,
   ecommerceWebsiteFaqs,
   homePageFaqs,
+  servicesFaqs,
 } from "@/lib/data";
 
 async function getData() {
@@ -45,13 +46,18 @@ export default async function FAQPage() {
         bgColor='tan'
       />
       <Faqsiii mapData={homePageFaqs} text='General Questions' />
-      <Faqsiii mapData={bookingWebsiteFaqs} text='Booking' bgColor='gray' />
+      <Faqsiii mapData={servicesFaqs} text='Services' bgColor='gray' />
+      <Faqsiii mapData={bookingWebsiteFaqs} text='Booking' />
       <Faqsiii
         mapData={ecommerceWebsiteFaqs}
         text='E-Commerce'
         bgColor='white'
       />
-      <Faqsiii mapData={businessWebsiteFaqs} text='Business Website' />
+      <Faqsiii
+        mapData={businessWebsiteFaqs}
+        text='Business Website'
+        bgColor='gray'
+      />
       <Pricing />
       <BlogSection data={data} />
     </>

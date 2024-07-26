@@ -583,6 +583,71 @@ export const businessWebsiteFaqs = [
   },
 ];
 
+export const servicesFaqs = [
+  {
+    id: 201,
+    question: "What types of businesses can benefit from your services?",
+    answer:
+      "Our services are ideal for any business requiring a strong online presence, including those in healthcare, hospitality, e-commerce, and general business sectors.",
+  },
+  {
+    id: 202,
+    question: "How do you ensure the security of my website?",
+    answer:
+      "We integrate secure payment gateways and employ advanced security measures to protect your website and customer data from potential threats.",
+  },
+  {
+    id: 203,
+    question: "Can I customize my website’s design and features?",
+    answer:
+      "Yes, we offer custom design and development tailored to your specific business needs and branding requirements, ensuring a unique and effective online presence.",
+  },
+  {
+    id: 204,
+    question: "How do you handle website maintenance and updates?",
+    answer:
+      "We provide ongoing maintenance and support, including regular updates, security monitoring, and performance optimization to keep your website running smoothly.",
+  },
+  {
+    id: 205,
+    question: "Will my website be optimized for search engines?",
+    answer:
+      "Absolutely, we focus on SEO optimization to ensure your website ranks well in search engine results, driving more traffic and potential customers to your site.",
+  },
+  {
+    id: 206,
+    question: "What kind of e-commerce features can you integrate?",
+    answer:
+      "We can integrate custom product pages, secure checkout processes, and booking options into your e-commerce website, providing a comprehensive solution for your online store.",
+  },
+  {
+    id: 207,
+    question: "Do you offer solutions for managing appointments and bookings?",
+    answer:
+      "Yes, we specialize in creating user-friendly booking interfaces with features like real-time availability, automated confirmations, and reminders to streamline your booking process.",
+  },
+  {
+    id: 208,
+    question: "How can I manage my website content?",
+    answer:
+      "We integrate user-friendly content management systems (CMS) that allow you to easily update and manage your website content without needing technical expertise.",
+  },
+  {
+    id: 209,
+    question: "Can you integrate my website with existing tools and platforms?",
+    answer:
+      "Yes, we can integrate your website with popular tools and platforms like Google Calendar, payment gateways, and CRM systems to enhance its functionality.",
+  },
+  {
+    id: 210,
+    question:
+      "What support options do you offer after the website is launched?",
+    answer:
+      "We offer comprehensive support packages that include technical assistance, performance monitoring, and regular updates to ensure your website remains effective and secure.",
+  },
+];
+
+
 export const footer = [
   {
     id: 1,

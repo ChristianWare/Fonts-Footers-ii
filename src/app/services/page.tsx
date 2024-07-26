@@ -7,7 +7,7 @@ import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizo
 import ServicesHero from "@/components/ServicesHero/ServicesHero";
 import { simpleBlogCard } from "@/lib/interface";
 import { client } from "@/lib/sanity";
-import { homePageFaqs } from "@/lib/data";
+import { homePageFaqs, servicesFaqs } from "@/lib/data";
 
 async function getData() {
   const query = `
@@ -36,7 +36,7 @@ export default async function ServicesPage() {
       <IndividualService />
       <EveryPlan />
       <ScrollHorizontalText text="FAQ's" bottomBorder={false} />
-      <Faqsiii mapData={homePageFaqs} text="FAQ's" />
+      <Faqsiii mapData={servicesFaqs} text="Service FAQ's" />
       <ScrollHorizontalText text="FAQ's" bottomBorder={false} />
       <BlogSection data={data} />
     </main>
