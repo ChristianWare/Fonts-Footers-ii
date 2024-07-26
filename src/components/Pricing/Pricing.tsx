@@ -10,9 +10,10 @@ import Link from "next/link";
 
 interface Props {
   bgColor?: string;
+  borderTop?: string;
 }
 
-const Pricing = ({ bgColor = "" }: Props) => {
+const Pricing = ({ bgColor = "", borderTop = "" }: Props) => {
   const [isMonthly, setIsMonthly] = useState(false);
 
   const pathname = usePathname();
@@ -23,12 +24,14 @@ const Pricing = ({ bgColor = "" }: Props) => {
     pathname === "/services/booking-platforms";
 
   return (
-    <section className={`${styles.container} ${styles[bgColor]}`}>
+    <section
+      className={`${styles.container} ${styles[bgColor]} ${styles[borderTop]}`}
+    >
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.top}>
             {pathname === "/pricing" ? (
-              <h1 className={styles.heading}>Pricing</h1>
+              <h1 className={styles.headingh1}>Pricing</h1>
             ) : (
               <h2 className={styles.heading}>Pricing</h2>
             )}

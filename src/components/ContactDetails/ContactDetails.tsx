@@ -5,9 +5,7 @@ import styles from "./ContactDetails.module.css";
 import Image from "next/image";
 import Img from "../../../public/images/house24.png";
 import SocialsContainer from "../SocialsContainer/SocialsContainer";
-import { InlineWidget } from "react-calendly";
 import Link from "next/link";
-import ScrollHorizontalText from "../ScrollHorizontalText/ScrollHorizontalText";
 
 const ContactDetails = () => {
   return (

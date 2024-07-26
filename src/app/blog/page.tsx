@@ -31,7 +31,7 @@ export default async function BlogPage() {
 
   return (
     <>
-      <PageIntro text='Insights from' src={Img} copy='' span='our blog' />
+      <PageIntro text='Insights from' src={Img} copy='' span='our blog' orientation="center" />
       <BlogSection data={data} />
     </>
   );

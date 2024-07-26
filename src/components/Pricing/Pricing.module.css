@@ -2,8 +2,16 @@
   background-color: transparent;
 }
 
+.borderTop {
+  border-top: 1px solid var(--lightBlack);
+}
+
 .tan {
   background-color: var(--tan);
+}
+
+.gray {
+  background-color: var(--gray);
 }
 
 .top {
@@ -15,12 +23,17 @@
   gap: 1rem;
 }
 
-.heading {
+.heading,
+.headingh1 {
   color: var(--green);
   width: 50%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+.headingh1 {
+  margin-top: -13rem;
 }
 
 .copy {
@@ -186,6 +199,8 @@
 
 .moreDetails:hover {
   background-color: var(--green3);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .btnContainer {
