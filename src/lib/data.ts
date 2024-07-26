@@ -281,121 +281,68 @@ export const projects = [
       "Elite Retreat Rentals is a Phoenix, AZ based company that provides lodging services to travelers at an affordable price. They currently provide lodging for multiple properties in the stat of Arizona. They allow clients to booking directly on their website, instead of relying on platform such as Air bnb and VRBO. The Admin is able to see all the bookings, users, properties, and review on the Admin dashboard.",
     href: "https://www.eliteretreatrentals.com/",
   },
-  {
-    src: Project3,
-    title: "Elite Retreat Rentals",
-    description:
-      "Elite Retreat Rentals is a Phonenix, AZ based company that provides lodging services to travelers at an affordable price.",
-    moreDetails:
-      "Elite Retreat Rentals is a Phoenix, AZ based company that provides lodging services to travelers at an affordable price. They currently provide lodging for multiple properties in the stat of Arizona. They allow clients to booking directly on their website, instead of relying on platform such as Air bnb and VRBO. The Admin is able to see all the bookings, users, properties, and review on the Admin dashboard.",
-    href: "https://www.eliteretreatrentals.com/",
-  },
-  {
-    src: Project3,
-    title: "Elite Retreat Rentals",
-    description:
-      "Elite Retreat Rentals is a Phonenix, AZ based company that provides lodging services to travelers at an affordable price.",
-    moreDetails:
-      "Elite Retreat Rentals is a Phoenix, AZ based company that provides lodging services to travelers at an affordable price. They currently provide lodging for multiple properties in the stat of Arizona. They allow clients to booking directly on their website, instead of relying on platform such as Air bnb and VRBO. The Admin is able to see all the bookings, users, properties, and review on the Admin dashboard.",
-    href: "https://www.eliteretreatrentals.com/",
-  },
-  {
-    src: Project3,
-    title: "Elite Retreat Rentals",
-    description:
-      "Elite Retreat Rentals is a Phonenix, AZ based company that provides lodging services to travelers at an affordable price.",
-    moreDetails:
-      "Elite Retreat Rentals is a Phoenix, AZ based company that provides lodging services to travelers at an affordable price. They currently provide lodging for multiple properties in the stat of Arizona. They allow clients to booking directly on their website, instead of relying on platform such as Air bnb and VRBO. The Admin is able to see all the bookings, users, properties, and review on the Admin dashboard.",
-    href: "https://www.eliteretreatrentals.com/",
-  },
-  {
-    src: Project3,
-    title: "Elite Retreat Rentals",
-    description:
-      "Elite Retreat Rentals is a Phonenix, AZ based company that provides lodging services to travelers at an affordable price.",
-    moreDetails:
-      "Elite Retreat Rentals is a Phoenix, AZ based company that provides lodging services to travelers at an affordable price. They currently provide lodging for multiple properties in the stat of Arizona. They allow clients to booking directly on their website, instead of relying on platform such as Air bnb and VRBO. The Admin is able to see all the bookings, users, properties, and review on the Admin dashboard.",
-    href: "https://www.eliteretreatrentals.com/",
-  },
-  {
-    src: Project3,
-    title: "Elite Retreat Rentals",
-    description:
-      "Elite Retreat Rentals is a Phonenix, AZ based company that provides lodging services to travelers at an affordable price.",
-    moreDetails:
-      "Elite Retreat Rentals is a Phoenix, AZ based company that provides lodging services to travelers at an affordable price. They currently provide lodging for multiple properties in the stat of Arizona. They allow clients to booking directly on their website, instead of relying on platform such as Air bnb and VRBO. The Admin is able to see all the bookings, users, properties, and review on the Admin dashboard.",
-    href: "https://www.eliteretreatrentals.com/",
-  },
-  {
-    src: Project3,
-    title: "Elite Retreat Rentals",
-    description:
-      "Elite Retreat Rentals is a Phonenix, AZ based company that provides lodging services to travelers at an affordable price.",
-    moreDetails:
-      "Elite Retreat Rentals is a Phoenix, AZ based company that provides lodging services to travelers at an affordable price. They currently provide lodging for multiple properties in the stat of Arizona. They allow clients to booking directly on their website, instead of relying on platform such as Air bnb and VRBO. The Admin is able to see all the bookings, users, properties, and review on the Admin dashboard.",
-    href: "https://www.eliteretreatrentals.com/",
-  },
 ] as const;
 
 export const homePageFaqs = [
   {
-    id: 36,
-    question:
-      "Why should I have my own website instead of relying on listing platforms like Airbnb?",
+    id: 301,
+    question: "What services do you offer?",
     answer:
-      "This allows you to have more control over your property, lower fees, and personalized branding. You have direct communication with guests and can build a loyal customer base.",
+      "We offer custom-coded solutions for direct booking websites, e-commerce platforms, and business websites, tailored to enhance user experience and SEO.",
   },
   {
-    id: 36.1,
-    question:
-      "How do guests make reservations on a website that allows direct bookings?",
+    id: 302,
+    question: "Why should I choose custom-coded websites?",
     answer:
-      "Guests can browse your property, view details, and make reservations directly through your website. You have the flexibility to set your own booking policies and payment processes.",
+      "Custom-coded websites provide better performance, enhanced security, and improved SEO compared to templates or site builders. They are tailored specifically to your business needs.",
   },
   {
-    id: 36.2,
-    question: "What customizable features do you offer?",
+    id: 303,
+    question: "How long does it take to build a website?",
     answer:
-      "You can customize the website design, branding elements, property details, pricing, and policies. We offer flexibility to tailor the platform to your unique needs.",
+      "The timeline depends on the complexity of the project. Typically, a custom website can take anywhere from a few weeks to a few months to complete.",
   },
   {
-    id: 36.3,
-    question: "Will it be easy for guests to find my website?",
+    id: 304,
+    question: "Do you provide ongoing support after the website is launched?",
     answer:
-      "We implement SEO strategies to improve the visibility of your website on search engines. Additionally, we can assist with marketing strategies to drive traffic to your platform.",
+      "Yes, we offer ongoing maintenance and support packages to ensure your website remains updated, secure, and optimized for performance.",
   },
   {
-    id: 36.4,
-    question:
-      "How do I manage bookings and communicate with guests on the platform?",
+    id: 305,
+    question: "Can I update the content on my website myself?",
     answer:
-      "We provide a user-friendly dashboard where you can manage bookings, communicate with guests, and access important information. Training is offered to ensure you can navigate the platform with ease.",
+      "Absolutely. We integrate user-friendly content management systems (CMS) that allow you to easily update and manage your website content.",
   },
   {
-    id: 36.5,
-    question:
-      "Can I integrate the direct booking website with my existing property management system (PMS)?",
+    id: 306,
+    question: "Will my website be mobile-friendly?",
     answer:
-      "Depending on your PMS, integration may be possible. We'll assess compatibility and work towards seamless integration to streamline your management processes.",
+      "Yes, all our websites are designed to be fully responsive, ensuring they look and perform well on all devices, including smartphones and tablets.",
   },
   {
-    id: 37,
-    question: "How long does it typically take to build a website?",
+    id: 307,
+    question: "What kind of businesses do you work with?",
     answer:
-      "The timeline can vary based on the complexity of the project. On average, a small business website takes around 2 to 4 weeks from initial concept to launch.",
+      "We work with a variety of businesses, including healthcare providers, hospitality services, e-commerce stores, and many other sectors that need a strong online presence.",
   },
   {
-    id: 42,
-    question: "Do you offer website maintenance and support?",
+    id: 308,
+    question: "How do you ensure my website is secure?",
     answer:
-      "Yes, we offer ongoing maintenance and support packages to ensure your website remains up-to-date, secure, and functioning optimally after launch.",
+      "We implement advanced security measures, including secure payment gateways and regular security updates, to protect your website and customer data.",
   },
   {
-    id: 46,
-    question:
-      "Can you assist with transferring my existing domain name to your hosting service?",
+    id: 309,
+    question: "Do you offer SEO services?",
     answer:
-      "Absolutely, we can guide you through the process of transferring your domain name to our hosting service. We'll ensure a smooth transition so that your website remains accessible with minimal downtime during the switch.",
+      "Yes, our websites are built with SEO best practices in mind. We also offer additional SEO services to help improve your website's visibility in search engine results.",
+  },
+  {
+    id: 310,
+    question: "How do I get started with your services?",
+    answer:
+      "You can get started by contacting us through our website. We'll discuss your needs and provide a customized plan to help you achieve your business goals.",
   },
 ];
 
@@ -646,7 +593,6 @@ export const servicesFaqs = [
       "We offer comprehensive support packages that include technical assistance, performance monitoring, and regular updates to ensure your website remains effective and secure.",
   },
 ];
-
 
 export const footer = [
   {
