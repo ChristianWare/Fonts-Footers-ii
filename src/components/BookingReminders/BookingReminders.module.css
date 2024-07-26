@@ -2,17 +2,6 @@
   background-color: var(--lightBlack);
 }
 
-.content {
-  padding-top: 10rem;
-}
-
-.reqContainer {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 7rem;
-  margin-bottom: 8rem;
-}
 
 .bottom {
   margin: 5rem;

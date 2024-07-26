@@ -1,10 +1,7 @@
 import Image from "next/image";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./BusinessLeadGen.module.css";
-import Img from "../../../public/images/reviews.png";
-import Arrow from "../../../public/icons/arrow2.svg";
 import Author from "../../../public/images/elite.png";
-import FalseButton from "../FalseButton/FalseButton";
 
 const BusinessLeadGen = () => {
   const data = [
