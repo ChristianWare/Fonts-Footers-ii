@@ -11,20 +11,16 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Button from "../Button/Button";
 import { usePathname } from "next/navigation";
 
-interface Project {
-  title: string;
-  src: string;
-  description: string;
-  href: string;
-  moreDetails: string;
+interface Props {
+  borderBottom?: string;
 }
 
-const Projects = () => {
+const Projects = ({ borderBottom = "" }: Props) => {
   const container = useRef<HTMLDivElement | null>(null);
   const pathname = usePathname();
 
   return (
-    <section className={styles.container}>
+    <section className={`${styles.container} ${styles[borderBottom]}`}>
       <LayoutWrapper>
         <div className={styles.contentParent} ref={container}>
           <div className={styles.top}>

@@ -37,7 +37,9 @@ export default async function page() {
         orientation='center'
         bgColor='tan'
       />
-      <Projects />
+      <div style={{ marginTop: "-300px" }}>
+        <Projects borderBottom='borderBottomNone' />
+      </div>
       <Faqsiii mapData={projectFaqs} text='Project Related Questions' />
       <ScrollHorizontalText text='Blog' bottomBorder={false} />
       <BlogSection data={data} />

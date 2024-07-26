@@ -3,6 +3,10 @@
   border-bottom: 1px solid var(--lightBlack);
 }
 
+.borderBottomNone {
+  border-bottom: 0px;
+}
+
 .top {
   margin-bottom: 5rem;
 }
