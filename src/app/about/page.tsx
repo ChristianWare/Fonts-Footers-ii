@@ -45,18 +45,12 @@ export default async function AboutPage() {
 
   return (
     <main>
-      {/* <PageIntro
-        text='About'
-        span='Fonts & Footers'
-        src={Img}
-        orientation='center'
-      /> */}
+     
       <Experience />
       <AboutScrollText />
       <ScrollHorizontalText text='Our Clients' bottomBorder={true} />
       <Slider />
       <ScrollHorizontalText text='Our Clients' bottomBorder={true} />
-      {/* <Values /> */}
       <BrandPresence />
       <EnhancedMarketing />
       <TechStack />
@@ -67,7 +61,6 @@ export default async function AboutPage() {
       <ScrollHorizontalText text='Reviews' bottomBorder={false} />
       <Testimonials />
       <ScrollHorizontalText text='Reviews' bottomBorder={false} />
-      {/* <Mission /> */}
       <Faqsiii mapData={homePageFaqs} text='faqs' />
       <BlogSection data={data} />
     </main>

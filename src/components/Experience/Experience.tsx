@@ -25,17 +25,17 @@ const Experience = () => {
     {
       question: "Industry Knowledge",
       answer:
-        "With a background in hospitality and technology, we have a comprehensive understanding of the unique challenges and opportunities in the vacation rental market. Our team stays updated on industry trends, best practices, and innovative solutions to deliver results that exceed your expectations.",
+        "We have a comprehensive understanding of the unique challenges and opportunities in web development. Our team stays updated on industry trends, best practices, and innovative solutions to deliver results that exceed your expectations.",
     },
     {
       question: "Proven Track Record",
       answer:
-        "We have successfully worked with numerous vacation rental property owners, helping them launch and optimize their direct booking websites. Our track record of delivering quality solutions and achieving measurable results speaks for itself.",
+        "We have successfully worked with numerous business owners, helping them launch and optimize all sorts of websites. Our track record of delivering quality solutions and achieving measurable results speaks for itself.",
     },
     {
       question: "Tailored Solutions",
       answer:
-        "We understand that every property is unique, and we tailor our services to fit your specific needs and goals. Whether you have a single property or a portfolio of rentals, we design custom direct booking websites that showcase your properties and drive bookings.",
+        "We understand that every business is unique, and we tailor our services to fit your specific needs and goals. Whether you need a simple landing page or a multipage ecommerce site, we've got you covered.",
     },
     {
       question: "Technology Expertise",
