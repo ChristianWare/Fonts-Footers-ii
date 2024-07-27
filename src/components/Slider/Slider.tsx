@@ -10,7 +10,7 @@ import Cart from "../../../public/icons/cart.svg";
 import Booking from "../../../public/icons/booking.svg";
 import Business from "../../../public/icons/business.svg";
 import Check from "../../../public/icons/check.svg";
-import Clock from "../../../public/icons/Clock.svg";
+import Clock from "../../../public/icons/clock.svg";
 import Cog from "../../../public/icons/cog.svg";
 import House from "../../../public/icons/house.svg";
 import Crowd from "../../../public/icons/crowd.svg";
