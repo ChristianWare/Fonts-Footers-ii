@@ -31,9 +31,9 @@ const Pricing = ({ bgColor = "", borderTop = "" }: Props) => {
         <div className={styles.content}>
           <div className={styles.top}>
             {pathname === "/pricing" ? (
-              <h1 className={styles.headingh1}>Pricing</h1>
+              <h1 className={`${styles.headingh1} h2v3`}>Pricing</h1>
             ) : (
-              <h2 className={styles.heading}>Pricing</h2>
+              <h2 className={`${styles.heading} h2v3`}>Pricing</h2>
             )}
 
             <p className={styles.copy}>

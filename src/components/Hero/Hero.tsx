@@ -22,7 +22,10 @@ const Hero = () => {
             </div>
             <h1 className={styles.heading}>
               We build interactive
-              <span className='span1'> and immersive websites</span>
+              <span className='span1'>
+                {" "}
+                <span className={styles.ampersand}>&</span> immersive websites
+              </span>
             </h1>
 
             {/* <p className={styles.copy}>

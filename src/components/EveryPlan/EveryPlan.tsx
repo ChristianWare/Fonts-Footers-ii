@@ -8,6 +8,7 @@ import Hosting from "../../../public/icons/cloud.svg";
 import Listing from "../../../public/icons/listing.svg";
 import Design from "../../../public/icons/design.svg";
 import Clock from "../../../public/icons/clock.svg";
+import { usePathname } from "next/navigation";
 
 const EveryPlan = () => {
   const data = [
@@ -54,13 +55,17 @@ const EveryPlan = () => {
     },
   ];
 
+  const pathname = usePathname();
+
   return (
     <section className={styles.container}>
       <LayoutWrapper>
         <div className={styles.top}>
-          <h2 className={`${styles.heading} h2v3`}>
-            Everything we build includes...
-          </h2>
+          {pathname !== "/" && (
+            <h2 className={`${styles.heading} h2v3`}>
+              Everything we build includes...
+            </h2>
+          )}
         </div>
         <div className={styles.bottom}>
           {data.map((x, index) => (

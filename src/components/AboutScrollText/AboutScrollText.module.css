@@ -2,6 +2,23 @@
   background-color: var(--black);
 }
 
+.content {
+  position: relative;
+}
+
+.content:after {
+  position: absolute;
+  content: "&";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--lb);
+  font-style: italic;
+  color: var(--green3);
+  opacity: 0.05;
+  font-size: 40vw;
+}
+
 .falseBtnContainer {
   display: flex;
   align-items: center;
@@ -79,5 +96,11 @@
 
   .heading {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .content:after {
+    content: "";
   }
 }

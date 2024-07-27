@@ -39,9 +39,6 @@ export default async function Home() {
   return (
     <main>
       <Hero />
-      {/* <ScrollHorizontalText text='Fonts & Footers' bottomBorder={true} />
-      <Slider />
-      <ScrollHorizontalText text='Fonts & Footers' bottomBorder={false} /> */}
       <AboutScrollText />
       <ServicesSection />
       <EveryPlan />
@@ -52,9 +49,7 @@ export default async function Home() {
       <Pricing bgColor='tan' />
       <Faqsiii mapData={homePageFaqs} text='General Questions' />
       <BlogSection data={data} />
-      <ScrollHorizontalText text='Why Choose Us?' bottomBorder={false} />
       <ScrollText />
-      <ScrollHorizontalText text='Why Choose Us?' bottomBorder={false} />
     </main>
   );
 }

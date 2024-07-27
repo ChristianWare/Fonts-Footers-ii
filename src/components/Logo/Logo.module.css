@@ -4,7 +4,6 @@
   font-weight: 600;
   color: var(--black);
   user-select: none;
-  /* text-transform: uppercase; */
 }
 
 .span2 {
@@ -15,8 +14,7 @@
   hyphens: none;
   white-space: nowrap;
   color: inherit;
-  margin-left: 5px;
-  margin-right: 5px;
+
 }
 
 .white {

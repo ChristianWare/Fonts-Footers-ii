@@ -35,11 +35,11 @@ const Faqsiii: FC<Props> = ({ bgColor = "", mapData, text = "" }) => {
               <br />
               <h2 className={`${styles.heading} h2v3`}>{text}</h2>
             </div>
-            <p className={styles.copy}>
+            {/* <p className={styles.copy}>
               Commonly asked questions and answers. If you do not see your
               question here, feel free to call us anytime to ask, and we will
               gladly give you a satisfactory answer.
-            </p>
+            </p> */}
             {pathname !== "/faqs" && (
               <div className={styles.btnContainer}>
                 <Button
@@ -53,7 +53,7 @@ const Faqsiii: FC<Props> = ({ bgColor = "", mapData, text = "" }) => {
           <div className={styles.right}>
             {mapData
               .slice(0, pathname !== "/faqs" ? 4 : mapData.length)
-              .map((x: any, i: any) => (
+              .map((x: any, i: number) => (
                 <div
                   key={x.id}
                   className={`${styles.qaContainer} ${
@@ -64,26 +64,10 @@ const Faqsiii: FC<Props> = ({ bgColor = "", mapData, text = "" }) => {
                   <div className={styles.headingArrowContainer}>
                     <div className={styles.h3Container}>
                       <h3 className={styles.question} lang='en'>
+                  
                         {x.question}
                       </h3>
                     </div>
-                    {selected === i ? (
-                      <div className={styles.iconBox}>
-                        <Arrow2
-                          className={styles.iconFlip}
-                          width={25}
-                          height={25}
-                        />
-                      </div>
-                    ) : (
-                      <div className={styles.iconBox}>
-                        <Arrow2
-                          className={styles.icon}
-                          width={25}
-                          height={25}
-                        />
-                      </div>
-                    )}
                   </div>
                   <div
                     className={

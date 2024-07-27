@@ -40,7 +40,7 @@ const Usp = () => {
         <LayoutWrapper>
           <div className={styles.content}>
             <div className={styles.top}>
-              <h2 className={styles.heading}>Why Choose Us?</h2>
+              <h2 className={`${styles.heading} h2v3`}>Why Choose Us?</h2>
               <p className={styles.copy}>What sets us apart is our...</p>
             </div>
             <div className={styles.bottom}>

@@ -368,7 +368,7 @@ export const homePageFaqs = [
   },
   {
     id: 304,
-    question: "Do you provide ongoing support after the website is launched?",
+    question: "Do you provide ongoing support?",
     answer:
       "Yes, we offer ongoing maintenance and support packages to ensure your website remains updated, secure, and optimized for performance.",
   },

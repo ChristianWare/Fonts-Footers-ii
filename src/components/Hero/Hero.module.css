@@ -28,6 +28,11 @@
   color: var(--black);
 }
 
+.ampersand {
+  font-family: var(--lb);
+  font-style: italic;
+}
+
 .btnContainer {
   display: flex;
   align-items: center;
