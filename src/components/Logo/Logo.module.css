@@ -1,5 +1,5 @@
 .logo {
-  font-family: var(--cohere);
+  font-family: var(--suisse);
   font-size: 2rem;
   font-weight: 600;
   color: var(--black);
@@ -10,11 +10,13 @@
 .span2 {
   font-family: var(--lb);
   font-style: italic;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 500;
   hyphens: none;
   white-space: nowrap;
   color: inherit;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .white {

@@ -7,6 +7,7 @@ import Button from "../Button/Button";
 import TopNav from "../TopNav/TopNav";
 import { usePathname } from "next/navigation";
 import Arrow from "../../../public/icons/arrow.svg";
+import Logo from "../Logo/Logo";
 
 const navItems = [
   {
@@ -85,35 +86,40 @@ function Nav() {
             }
             onClick={openMenu}
           >
-            <li className={styles.navItem} onClick={() => setIsOpen(false)}>
-              <Link href='/'>
-                {pathname === "/" ? (
-                  <>
-                    <Arrow className={styles.icon} />
-                    Home
-                  </>
-                ) : (
-                  "Home"
-                )}
-              </Link>
-            </li>
-            {navItems.map((navItem, index) => (
-              <li
-                key={index}
-                className={styles.navItem}
-                onClick={() => setIsOpen(false)}
-              >
-                <Link href={navItem.href} >
-                  {pathname.includes(navItem.href) && (
+            {/* <div className={styles.mobileLogo}>
+              <Logo color='green' />
+            </div> */}
+            <div className={styles.navBox}>
+              <li className={styles.navItem} onClick={() => setIsOpen(false)}>
+                <Link href='/'>
+                  {pathname === "/" ? (
                     <>
                       <Arrow className={styles.icon} />
-                      {navItem.text}
+                      Home
                     </>
+                  ) : (
+                    "Home"
                   )}
-                  {!pathname.includes(navItem.href) && navItem.text}{" "}
                 </Link>
               </li>
-            ))}
+              {navItems.map((navItem, index) => (
+                <li
+                  key={index}
+                  className={styles.navItem}
+                  onClick={() => setIsOpen(false)}
+                >
+                  <Link href={navItem.href}>
+                    {pathname.includes(navItem.href) && (
+                      <>
+                        <Arrow className={styles.icon} />
+                        {navItem.text}
+                      </>
+                    )}
+                    {!pathname.includes(navItem.href) && navItem.text}{" "}
+                  </Link>
+                </li>
+              ))}
+            </div>
           </ul>
 
           <div className={styles.btnContainer}>
