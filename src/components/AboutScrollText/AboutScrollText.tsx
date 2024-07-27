@@ -10,9 +10,9 @@ const AboutScrollText = () => {
       <LayoutWrapper color='green3'>
         <div className={styles.content}>
           <div className={styles.falseBtnContainer}>
-            <FalseButton btnType='primary' text='About us' />
+            <FalseButton btnType='secondary' text='About us' />
           </div>
-          <h2 className={styles.heading}>Who are we?</h2>
+          <h2 className={`${styles.heading} h2v2`}>Who are we?</h2>
           <div className={styles.bottom}>
             <Image
               src={Author}

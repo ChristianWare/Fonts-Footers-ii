@@ -4,9 +4,9 @@
 
 .content {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 2fr 1.5fr;
   grid-gap: 7rem;
-  margin-top: -13rem;
+  margin-top: -15rem;
 }
 
 .left {
@@ -26,12 +26,13 @@
 
 .heading {
   color: var(--black);
-  font-size: 6rem;
 }
 
 .btnContainer {
   display: flex;
-  margin-top: 3rem;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
 .right {
@@ -101,10 +102,6 @@
 @media screen and (max-width: 568px) {
   .left {
     align-items: flex-start;
-  }
-
-  .heading {
-    font-size: 4.5rem;
   }
 
   .falseBtnContainer {

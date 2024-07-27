@@ -12,6 +12,16 @@ import Social from "../../../public/icons/social.svg";
 import Multiple from "../../../public/icons/multiple.svg";
 import Cart from "../../../public/icons/cart.svg";
 import Booking from "../../../public/icons/booking.svg";
+import Image from "next/image";
+import Img1 from "../../../public/images/house10.png";
+import Img2 from "../../../public/images/house11.png";
+import Img3 from "../../../public/images/house12.png";
+import Img4 from "../../../public/images/house13.png";
+import Img5 from "../../../public/images/house14.png";
+import Img6 from "../../../public/images/house15.png";
+import Img7 from "../../../public/images/house16.png";
+import Img8 from "../../../public/images/house17.png";
+import Img9 from "../../../public/images/house18.png";
 
 const ShuffleHero = () => {
   return (
@@ -41,39 +51,39 @@ const shuffle = (array: any) => {
 const squareData = [
   {
     id: 1,
-    src: <Multiple width={50} height={50} className={styles.icon} />,
+    src: Img1,
   },
   {
     id: 2,
-    src: <Design width={50} height={50} className={styles.icon} />,
+    src: Img2,
   },
   {
     id: 3,
-    src: <Analytics width={50} height={50} className={styles.icon} />,
+    src: Img3,
   },
   {
     id: 4,
-    src: <Payment width={50} height={50} className={styles.icon} />,
+    src: Img4,
   },
   {
     id: 5,
-    src: <Hexagon width={50} height={50} className={styles.icon} />,
+    src: Img5,
   },
   {
     id: 6,
-    src: <Social width={50} height={50} className={styles.icon} />,
+    src: Img6,
   },
   {
     id: 7,
-    src: <Cart width={50} height={50} className={styles.icon} />,
+    src: Img7,
   },
   {
     id: 8,
-    src: <Booking width={50} height={50} className={styles.icon} />,
+    src: Img8,
   },
   {
     id: 9,
-    src: <SEO width={50} height={50} className={styles.icon} />,
+    src: Img9,
   },
 ];
 
@@ -85,7 +95,8 @@ const generateSquares = () => {
       transition={{ duration: 1.5, type: "spring" }}
       className={styles.square}
     >
-      {sq.src}
+      {/* {sq.src} */}
+      <Image src={sq.src} fill alt='' className={styles.img} />
     </motion.div>
   ));
 };
@@ -102,7 +113,7 @@ const ShuffleGrid = () => {
         clearTimeout(timeoutRef.current);
       }
     };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const shuffleSquares = () => {

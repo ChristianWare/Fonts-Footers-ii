@@ -21,19 +21,25 @@ const Hero = () => {
               <FalseButton btnType='primary' text='Digital Agency' />
             </div>
             <h1 className={styles.heading}>
-              We build interactive and immersive websites
+              We build interactive
+              <span className='span1'> and immersive websites</span>
             </h1>
 
-            <p className={styles.copy}>
+            {/* <p className={styles.copy}>
               Are you looking for a web designer to make your business shine
               online? Our digital agency is here to help. We create beautiful,
               responsive websites that meet your specific needs and goals.
-            </p>
+            </p> */}
             <div className={styles.btnContainer}>
               <Button
                 text='Schedule a Call'
                 href='/contact/#schedule'
                 btnType='primaryii'
+              />
+              <Button
+                text='Our Services'
+                href='/services'
+                btnType='secondary'
               />
             </div>
           </div>

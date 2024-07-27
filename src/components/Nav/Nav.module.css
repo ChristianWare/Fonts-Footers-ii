@@ -29,24 +29,13 @@
 }
 
 .navItem {
-  font-size: 1.6rem;
-  text-transform: capitalize;
-  font-family: var(--cohere);
-  text-transform: uppercase;
-  letter-spacing: 1.1px;
+  font-size: 1.4rem;
+  line-height: 1em;
+  font-family: var(--suisseReg);
   color: var(--black);
   user-select: none;
   scroll-behavior: smooth;
   z-index: 998;
-}
-
-.hovering {
-  position: absolute;
-  top: 12px;
-  width: 600px;
-  background-color: red;
-  overflow: hidden;
-  transition: all 0.2s ease-in;
 }
 
 .icon {

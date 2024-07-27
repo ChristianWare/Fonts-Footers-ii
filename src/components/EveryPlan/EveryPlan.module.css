@@ -5,8 +5,8 @@
 .heading {
   color: var(--tan);
   width: 40%;
-  text-align: right;
-  margin-left: auto;
+  /* text-align: right; */
+  /* margin-left: auto; */
 }
 
 .bottom {

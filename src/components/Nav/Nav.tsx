@@ -26,7 +26,7 @@ const navItems = [
     href: "/pricing",
   },
   {
-    text: "FAQ's",
+    text: "Faq's",
     href: "/faqs",
   },
   {

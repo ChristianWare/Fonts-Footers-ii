@@ -22,8 +22,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
-.icon {
-  color: var(--lightBlack);
+.img {
+  border-radius: 10px;
+  object-fit: cover;
 }

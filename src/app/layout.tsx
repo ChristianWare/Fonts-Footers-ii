@@ -36,6 +36,18 @@ const cohere = localFont({
   display: "swap",
 });
 
+const suisse = localFont({
+  src: "../../public/fonts/SuisseIntl-Medium.ttf",
+  variable: "--suisse",
+  display: "swap",
+});
+
+const suissReg = localFont({
+  src: "../../public/fonts/SuisseRegular.ttf",
+  variable: "--suisseReg",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: {
     default: "Fonts & Footers",
@@ -63,7 +75,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${interTight.variable} ${switzer.variable} ${lb.variable} ${cohere.variable}`}
+        className={`${interTight.variable} ${switzer.variable} ${lb.variable} ${cohere.variable} ${suisse.variable} ${suissReg.variable}`}
       >
         <Toaster
           position='top-center'

@@ -1,5 +1,5 @@
 :root {
-  --black: #37313b;
+  --black: #333438;
   --green: #37313b;
   --lightBlack: #808080;
   --green3: #aeff12;
@@ -10,6 +10,7 @@
   --white: #fffdfb;
   --gray: #dfdddd;
   --gray2: #d7d0d0;
+  --gray3: #93969e;
 }
 
 * {
@@ -18,7 +19,7 @@
   box-sizing: border-box;
   text-decoration: none;
   line-height: 120%;
-  font-family: var(--cohere);
+  font-family: var(--suisseReg);
   scroll-behavior: smooth;
   scroll-margin-top: 40px;
   overscroll-behavior: none;
@@ -52,31 +53,29 @@ h4,
 h5,
 h6,
 span {
-  font-family: var(--cohere);
+  font-family: var(--suisse);
   color: var(--black);
-  hyphens: auto;
+  /* hyphens: auto; */
 }
 
 h1 {
-  font-size: 5.2rem;
+  font-size: 9.6rem;
   line-height: 100%;
-  font-weight: normal;
-  text-transform: uppercase;
-  font-variation-settings: "cuts" 100, "move" 100;
-  font-variant-ligatures: common-ligatures;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.04em;
 }
 
 h2 {
-  font-size: 4rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  line-height: 115%;
-  font-variation-settings: "cuts" 100, "move" 100;
-  font-variant-ligatures: common-ligatures;
+  font-size: 9.6rem;
+  line-height: 100%;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.04em;
 }
 
 h3 {
-  font-size: 2.4rem;
+  font-size: 2rem;
   line-height: 1em;
   font-weight: 500;
   letter-spacing: 0.01em;
@@ -106,11 +105,11 @@ p,
 input,
 textarea {
   hyphens: auto;
-  font-weight: 400;
-  line-height: 140%;
+  letter-spacing: -0.3px;
+  margin-bottom: 0;
   color: var(--black);
   font-size: 1em;
-  letter-spacing: 0.03em;
+  /* letter-spacing: 0.03em; */
 }
 
 input:focus,
@@ -139,14 +138,27 @@ textarea:focus {
   background: var(--secondary);
 } */
 
-.span2 {
-  font-family: var(--lb);
-  font-style: italic;
-  font-size: 2rem;
+.span1 {
+  font-size: 9.6rem;
+  line-height: 100%;
   font-weight: 500;
-  hyphens: none;
-  white-space: nowrap;
-  color: inherit;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: var(--gray3);
+}
+
+.h2v2 {
+  font-size: 6.4rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.h2v3 {
+  font-size: 8rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.04em;
 }
 
 @media screen and (max-width: 768px) {
@@ -164,7 +176,8 @@ textarea:focus {
     font-size: 50%;
   }
 
-  h1 {
+  h1,
+  .span1 {
     font-size: 4.5rem;
   }
 

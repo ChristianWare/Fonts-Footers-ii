@@ -58,7 +58,9 @@ const EveryPlan = () => {
     <section className={styles.container}>
       <LayoutWrapper>
         <div className={styles.top}>
-          <h2 className={styles.heading}>Everything we build includes...</h2>
+          <h2 className={`${styles.heading} h2v3`}>
+            Everything we build includes...
+          </h2>
         </div>
         <div className={styles.bottom}>
           {data.map((x, index) => (
