@@ -15,8 +15,7 @@ const Y_TRANSLATE = -10;
 const STAGGER = 0;
 const CENTER_STAGGER = -65;
 
-const SECTION_HEIGHT = 600;
-
+const SECTION_HEIGHT = 700;
 interface Review {
   id: number;
   review: string;

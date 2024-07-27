@@ -18,7 +18,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ data }) => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.top}>
-            <h2 className={styles.header}>Latest Articles</h2>
+            <h2 className={`${styles.header} h2v3`}>Latest Articles</h2>
           </div>
           <div className={styles.bottom}>
             {data?.length > 0 &&

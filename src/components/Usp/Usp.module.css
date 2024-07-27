@@ -47,16 +47,19 @@
 }
 
 .usp {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   text-align: center;
 }
 
 .desc {
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 .icon {
   color: var(--lightBlack);
+  margin-top: 1rem;
+  width: 3.5rem;
+  height: 3.5rem;
 }
 
 @media screen and (max-width: 1100px) {

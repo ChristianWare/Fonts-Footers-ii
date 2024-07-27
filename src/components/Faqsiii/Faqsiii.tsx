@@ -33,7 +33,7 @@ const Faqsiii: FC<Props> = ({ bgColor = "", mapData, text = "" }) => {
                 <FalseButton btnType='primary' text={text} />
               </div>
               <br />
-              <h2 className={styles.heading}>{text}</h2>
+              <h2 className={`${styles.heading} h2v3`}>{text}</h2>
             </div>
             <p className={styles.copy}>
               Commonly asked questions and answers. If you do not see your

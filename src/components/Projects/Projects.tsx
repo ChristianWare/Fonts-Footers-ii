@@ -24,7 +24,9 @@ const Projects = ({ borderBottom = "" }: Props) => {
       <LayoutWrapper>
         <div className={styles.contentParent} ref={container}>
           <div className={styles.top}>
-            {pathname === "/" && <h2 className={styles.heading}>Projects</h2>}
+            {pathname === "/" && (
+              <h2 className={`${styles.heading} h2v3`}>Projects</h2>
+            )}
           </div>
           <div className={styles.mapContainer}>
             {projects

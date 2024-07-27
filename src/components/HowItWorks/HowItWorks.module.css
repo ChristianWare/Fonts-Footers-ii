@@ -30,6 +30,7 @@
   margin-bottom: 2rem;
   line-height: 100%;
   color: var(--black);
+  text-transform: capitalize;
 }
 
 .topText {
@@ -91,6 +92,8 @@
 
 .icon {
   color: var(--green3);
+  width: 3.5rem;
+  height: 3.5rem;
 }
 
 .processName {

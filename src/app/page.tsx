@@ -47,9 +47,7 @@ export default async function Home() {
       <EveryPlan />
       <Usp />
       <HowItWorks />
-      <ScrollHorizontalText text='Reviews' bottomBorder={false} />
       <Testimonials />
-      <ScrollHorizontalText text='Reviews' bottomBorder={true} />
       <Projects />
       <Pricing bgColor='tan' />
       <Faqsiii mapData={homePageFaqs} text='General Questions' />

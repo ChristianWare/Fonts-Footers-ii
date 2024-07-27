@@ -177,7 +177,10 @@ textarea:focus {
   }
 
   h1,
-  .span1 {
+  .span1,
+  .h2,
+  .h2v2,
+  .h2v3 {
     font-size: 4.5rem;
   }
 

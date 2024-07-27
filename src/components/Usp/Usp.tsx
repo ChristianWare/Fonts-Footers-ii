@@ -36,7 +36,6 @@ const data = [
 const Usp = () => {
   return (
     <>
-      <ScrollHorizontalText text='What Choose Us?' bottomBorder={true} />
       <section className={styles.container}>
         <LayoutWrapper>
           <div className={styles.content}>
@@ -58,7 +57,6 @@ const Usp = () => {
           </div>
         </LayoutWrapper>
       </section>
-      <ScrollHorizontalText text='What Choose Us?' bottomBorder={false} />
     </>
   );
 };

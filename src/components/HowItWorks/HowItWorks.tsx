@@ -13,34 +13,34 @@ import Notes from "../../../public/icons/notes.svg";
 const process = [
   {
     id: 59,
-    icon: <Consult width={50} height={50} className={styles.icon} />,
+    icon: <Consult className={styles.icon} />,
     processName: "Consultation",
     processDescription: "Understanding your vision and goals.",
   },
   {
     id: 50,
-    icon: <Notes width={50} height={50} className={styles.icon} />,
+    icon: <Notes className={styles.icon} />,
 
     processName: "Planning",
     processDescription: "Strategizing and designing a custom solution.",
   },
   {
     id: 61,
-    icon: <Develop width={50} height={50} className={styles.icon} />,
+    icon: <Develop className={styles.icon} />,
     processName: "Development",
     processDescription:
       "Bringing your project to life with clean, efficient code.",
   },
   {
     id: 62,
-    icon: <Launch width={50} height={50} className={styles.icon} />,
+    icon: <Launch className={styles.icon} />,
     processName: "Launch",
     processDescription:
       "Deploying your website and ensuring everything runs smoothly.",
   },
   {
     id: 63,
-    icon: <Support width={50} height={50} className={styles.icon} />,
+    icon: <Support className={styles.icon} />,
     processName: "Support",
     processDescription:
       "Ongoing maintenance and support to keep your site at its best.",
@@ -54,7 +54,9 @@ const HowItWorks = () => {
         <div className={styles.content}>
           <div className={styles.left}>
             <div className={styles.top}>
-              <h2 className={styles.heading}>Our Approach to each project</h2>
+              <h2 className={`${styles.heading} h2v2`}>
+                Our approach to each project
+              </h2>
               <p className={styles.topText}>
                 This is our process for developing the perfect websites for your
                 brand. We Keep you in the loop 100% of the time.
