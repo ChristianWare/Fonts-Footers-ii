@@ -30,7 +30,7 @@ const Faqsiii: FC<Props> = ({ bgColor = "", mapData, text = "" }) => {
           <div className={styles.top}>
             <div className={styles.sectionIntroContainer}>
               <div className={styles.falseButtonContainer}>
-                <FalseButton btnType='primary' text={text} />
+                <FalseButton btnType='secondary' text={text} />
               </div>
               <br />
               <h2 className={`${styles.heading} h2v3`}>{text}</h2>
@@ -64,7 +64,6 @@ const Faqsiii: FC<Props> = ({ bgColor = "", mapData, text = "" }) => {
                   <div className={styles.headingArrowContainer}>
                     <div className={styles.h3Container}>
                       <h3 className={styles.question} lang='en'>
-                  
                         {x.question}
                       </h3>
                     </div>

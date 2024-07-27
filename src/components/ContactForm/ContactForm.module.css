@@ -94,13 +94,17 @@
   width: 100%;
   background-color: var(--tan);
   border: 1px solid var(--lightBlack);
-  border-radius: 10px;
+  border-radius: 30px;
   color: var(--text);
   padding: 2rem;
   padding-left: 2rem;
   width: 100%;
   font-weight: 400;
   inset: none;
+}
+
+.labelInputBox textarea {
+  border-radius: 20px;
 }
 
 .fieldErrors {

@@ -32,7 +32,7 @@
 
 .heading {
   color: var(--black);
-  width: 60%;
+  /* width: 60%; */
 }
 
 .copy {

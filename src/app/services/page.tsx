@@ -30,14 +30,10 @@ export default async function ServicesPage() {
   return (
     <main>
       <ServicesHero />
-      <ScrollHorizontalText text='Our Services' bottomBorder={false} />
       <BenefitsIntro />
-      <ScrollHorizontalText text='Our Services' bottomBorder={true} />
       <IndividualService />
       <EveryPlan />
-      <ScrollHorizontalText text="FAQ's" bottomBorder={false} />
       <Faqsiii mapData={servicesFaqs} text="Service FAQ's" />
-      <ScrollHorizontalText text="FAQ's" bottomBorder={false} />
       <BlogSection data={data} />
     </main>
   );
