@@ -11,9 +11,9 @@ const ServicesHero = () => {
         <div className={styles.content}>
           <div className={styles.left}>
             <div className={styles.falseBtnContainer}>
-              <FalseButton text='Services' btnType='primary' />
+              <FalseButton text='Services Info' btnType='primary' />
             </div>
-            <h1 className={styles.heading}>
+            <h1 className={`${styles.heading} h2v3`}>
               Transform Your Business with our Web Solutions
             </h1>
           </div>

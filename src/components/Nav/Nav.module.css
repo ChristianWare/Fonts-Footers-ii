@@ -34,7 +34,6 @@
 }
 
 .navItem {
-  font-size: 1.4rem;
   line-height: 1em;
   font-family: var(--suisseReg);
   color: var(--black);
@@ -93,10 +92,6 @@
   position: relative;
   top: 5px;
   right: 5px;
-}
-
-.navFooter {
-  display: none;
 }
 
 @media screen and (max-width: 1268px) {
@@ -168,7 +163,7 @@
   .icon {
     color: var(--black2);
     position: relative;
-    top: -5px;
+    /* top: -5px; */
   }
 
   .btnContainer {

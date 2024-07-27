@@ -6,6 +6,8 @@ import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizo
 import { simpleBlogCard } from "@/lib/interface";
 import { client } from "@/lib/sanity";
 import { projectFaqs } from "@/lib/data";
+import EveryPlan from "@/components/EveryPlan/EveryPlan";
+import TechStack from "@/components/TechStack/TechStack";
 
 async function getData() {
   const query = `
@@ -40,10 +42,10 @@ export default async function page() {
       <div style={{ marginTop: "-300px" }}>
         <Projects borderBottom='borderBottomNone' />
       </div>
+      <TechStack />
+      <EveryPlan />
       <Faqsiii mapData={projectFaqs} text='Project Related Questions' />
-      <ScrollHorizontalText text='Blog' bottomBorder={false} />
       <BlogSection data={data} />
-      <ScrollHorizontalText text='Blog' bottomBorder={false} />
     </main>
   );
 }

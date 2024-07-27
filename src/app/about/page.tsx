@@ -48,19 +48,12 @@ export default async function AboutPage() {
      
       <Experience />
       <AboutScrollText />
-      <ScrollHorizontalText text='Our Clients' bottomBorder={true} />
-      <Slider />
-      <ScrollHorizontalText text='Our Clients' bottomBorder={true} />
       <BrandPresence />
       <EnhancedMarketing />
       <TechStack />
-      <ScrollHorizontalText text='How we work' bottomBorder={false} />
       <HowItWorks />
-      <ScrollHorizontalText text='How we work' bottomBorder={false} />
       <LongTermRelationships />
-      <ScrollHorizontalText text='Reviews' bottomBorder={false} />
       <Testimonials />
-      <ScrollHorizontalText text='Reviews' bottomBorder={false} />
       <Faqsiii mapData={homePageFaqs} text='faqs' />
       <BlogSection data={data} />
     </main>

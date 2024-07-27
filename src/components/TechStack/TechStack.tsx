@@ -58,7 +58,7 @@ const TechStack = () => {
         <div className={styles.top}>
           <FalseButton text='Our Technical Stack' btnType='primary' />
 
-          <h2 className={styles.heading}>
+          <h2 className={`${styles.heading} h2v2`}>
             Tools we use to build the perfect website
           </h2>
           <p className={styles.copy}>

@@ -1,9 +1,7 @@
 "use client";
 
 import LayoutWrapper from "../LayoutWrapper";
-import SectionHeading from "../SectionHeading/SectionHeading";
 import styles from "./BookingReminders.module.css";
-import Button from "../Button/Button";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../animation/variants";
 
@@ -31,7 +29,7 @@ const BookingReminders = () => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.top}>
-            <h2 className={styles.heading}>
+            <h2 className={`${styles.heading} h2v2`}>
               Custom Notifications and Reminders
             </h2>
             <p className={styles.copy}>
@@ -50,7 +48,6 @@ const BookingReminders = () => {
               </div>
             ))}
           </div>
-          
         </div>
       </LayoutWrapper>
     </section>

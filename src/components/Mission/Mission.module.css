@@ -15,6 +15,7 @@
 .heading {
   text-align: center;
   width: 60%;
+  font-size: 5.2rem;
 }
 
 .bottom {
@@ -129,12 +130,8 @@
 
 @media screen and (max-width: 568px) {
   .top {
-    /* align-items: flex-start; */
-    /* justify-content: flex-start; */
     margin-bottom: 2rem;
   }
-
-
 
   .bottom {
     grid-gap: 3rem;
@@ -179,5 +176,9 @@
   .title,
   .icon {
     text-align: center;
+  }
+
+  .heading {
+    font-size: 4.5rem;
   }
 }

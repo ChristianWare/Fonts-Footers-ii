@@ -30,13 +30,12 @@ const IndividualService = () => {
       description:
         "We specialize in developing custom direct booking websites that provide seamless booking experiences for your customers. Our solutions are designed to be fast, user-friendly, and optimized for search engines.",
       href: "services/booking-platforms",
-      
     },
   ] as const;
   return (
     <section className={styles.container} id='features'>
       <LayoutWrapper>
-        <h2 className={styles.heading}>What we build</h2>
+        <h2 className={`${styles.heading} h2v3`}>What we build</h2>
         <div className={styles.parent}>
           {individulaFeatures.map((x, index) => (
             <div key={index} className={styles.content}>
@@ -50,7 +49,7 @@ const IndividualService = () => {
             </div>
           ))}
         </div>
-      <ServicesSectionii />
+        <ServicesSectionii />
       </LayoutWrapper>
     </section>
   );

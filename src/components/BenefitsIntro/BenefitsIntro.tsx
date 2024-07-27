@@ -17,9 +17,9 @@ const BenefitsIntro = () => {
           </div>
           <div className={styles.right}>
             <div className={styles.benefitButtonContainer}>
-              <FalseButton text='E-Commerce Stores' btnType='primary' />
-              <FalseButton text='Business Websites' btnType='primary' />
-              <FalseButton text='Booking Platforms' btnType='primary' />
+              <FalseButton text='E-Commerce Stores' btnType='secondary' />
+              <FalseButton text='Business Websites' btnType='secondary' />
+              <FalseButton text='Booking Platforms' btnType='secondary' />
             </div>
             <p className={styles.copy}>
               Here are the three main services that we offer. Feel free to

@@ -32,7 +32,9 @@ const MPSection1 = () => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.top}>
-            <h2 className={styles.heading}>Custom E-commerce Development </h2>
+            <h2 className={`${styles.heading} h2v3`}>
+              Custom E-commerce Development{" "}
+            </h2>
             {/* <p className={styles.copy}>
               Our custom e-commerce development services ensure that your online
               store is uniquely designed to meet your business goals. We build

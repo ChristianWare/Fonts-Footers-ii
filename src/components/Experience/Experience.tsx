@@ -49,7 +49,7 @@ const Experience = () => {
       <LayoutWrapper>
         <div className={styles.container}>
           <div className={styles.left}>
-            <FalseButton text='OUR STORY' btnType='primary' />
+            <FalseButton text='Our Story' btnType='primary' />
             <h1 className={styles.heading}>About Fonts & Footers</h1>
             <p className={styles.copy}>
               Welcome to Fonts & Footers! We are a dedicated team of web

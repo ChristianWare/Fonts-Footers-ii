@@ -54,10 +54,7 @@ const ServicesSection = () => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.right}>
-            <h2 className={styles.heading}>
-              What we build <span className={styles.ampersand}>&</span>{" "}
-              <span className='span1'>what&apos;s included</span>
-            </h2>
+            <h2 className={styles.heading}>What we build</h2>
           </div>
           <div className={styles.left}>
             {services.map((x) => (

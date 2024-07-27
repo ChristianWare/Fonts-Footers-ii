@@ -30,10 +30,10 @@ const Faqsiii: FC<Props> = ({ bgColor = "", mapData, text = "" }) => {
           <div className={styles.top}>
             <div className={styles.sectionIntroContainer}>
               <div className={styles.falseButtonContainer}>
-                <FalseButton btnType='secondary' text={text} />
+                <FalseButton btnType='primary' text={text} />
               </div>
               <br />
-              <h2 className={`${styles.heading} h2v3`}>{text}</h2>
+              <h2 className={`${styles.heading} h2v2`}>{text}</h2>
             </div>
             {/* <p className={styles.copy}>
               Commonly asked questions and answers. If you do not see your

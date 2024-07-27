@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Author from "../../../public/images/author.png";
 import FalseButton from "../FalseButton/FalseButton";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./BookingScrollText.module.css";

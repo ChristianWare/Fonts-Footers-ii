@@ -137,7 +137,7 @@ const EcommFeatures = () => {
   return (
     <section className={styles.container} id='features'>
       <LayoutWrapper>
-        <h2 className={styles.heading}>
+        <h2 className={`${styles.heading} h2v3`}>
           Core Features of our E-Commerce Websites
         </h2>
         <div className={styles.dataContainer}>

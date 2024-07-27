@@ -52,9 +52,9 @@ const Values = () => {
     <section className={styles.container}>
       <LayoutWrapper>
         <div className={styles.top}>
-          <FalseButton text=' E-commerce' btnType='primary' />
-          <h1 className={styles.heading}>
-            CUSTOM E-COMMERCE SOLUTIONS FOR YOUR BUSINESS
+          <FalseButton text=' E-commerce Details' btnType='secondary' />
+          <h1 className={`${styles.heading} h2v3`}>
+            Custom E-Commerce Solutions For Your Business
           </h1>
           <p className={styles.topCopy}>
             Boost your online sales with secure, user-friendly, and scalable

@@ -46,7 +46,7 @@ export default async function FAQPage() {
         orientation='center'
         bgColor='tan'
       />
-      <Faqsiii mapData={homePageFaqs} text='General Questions' />
+      <Faqsiii mapData={homePageFaqs} text='General' />
       <Faqsiii mapData={servicesFaqs} text='Services' bgColor='gray' />
       <Faqsiii mapData={bookingWebsiteFaqs} text='Booking' />
       <Faqsiii
@@ -59,7 +59,7 @@ export default async function FAQPage() {
         text='Business Website'
         bgColor='gray'
       />
-      <Faqsiii mapData={projectFaqs} text='Project Related Questions' />
+      <Faqsiii mapData={projectFaqs} text='Project' />
 
       <Pricing />
       <BlogSection data={data} />

@@ -12,8 +12,9 @@
 }
 
 .heading {
-  width: 60%;
+  width: 80%;
   text-align: center;
+  font-size: 5.2rem;
 }
 
 .topCopy {
@@ -179,5 +180,9 @@
 @media screen and (max-width: 568px) {
   .topCopy {
     width: 100%;
+  }
+
+  .heading {
+    font-size: 4.5rem;
   }
 }

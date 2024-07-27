@@ -7,7 +7,6 @@ import styles from "./Calendly.module.css";
 const Calendly = () => {
   return (
     <>
-      <ScrollHorizontalText text='Calendly' bottomBorder={true} />
       <section className={styles.container}>
         <div className={styles.calBox} id='schedule'>
           <h2 className={styles.heading}>
@@ -22,7 +21,6 @@ const Calendly = () => {
           />
         </div>
       </section>
-      <ScrollHorizontalText text='Calendly' bottomBorder={false} />
     </>
   );
 };

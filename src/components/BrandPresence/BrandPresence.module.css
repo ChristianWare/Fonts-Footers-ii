@@ -3,7 +3,7 @@
 }
 
 .top {
-  border: 1px solid var(--white);
+  border: 1px solid var(--gray);
   padding: 2rem;
   border-radius: 10px;
   width: fit-content;
@@ -41,7 +41,7 @@
   justify-content: flex-start;
   gap: 2rem;
   padding: 3rem;
-  border: 1px solid var(--white);
+  border: 1px solid var(--gray);
   border-radius: 10px;
   position: relative;
 }

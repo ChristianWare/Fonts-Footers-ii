@@ -34,7 +34,7 @@ export default function BusinessWebsites() {
       <Faqsiii
         bgColor='gray'
         mapData={businessWebsiteFaqs}
-        text='business website questions'
+        text="Business Website FAQ's"
       />
     </main>
   );

@@ -21,14 +21,15 @@ const BlogCard = ({ data }: Props) => {
           />
         </Link>
       </div>
+      <div className={styles.details}>
+
       <Link href={`/blog/${data?.currentSlug}`} className={styles.link}>
         <h3 className={styles.blogTitle}>{data?.title}</h3>
       </Link>
       <p className={styles.desc}>
         {new Date(data?.publishedAt).toDateString()}
       </p>
-      <p className={styles.desc}>{data?.smallDescription}</p>
-      
+      </div>
     </article>
   );
 };

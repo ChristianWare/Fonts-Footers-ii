@@ -42,9 +42,6 @@
 .heading {
   color: var(--green);
   text-align: center;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 3rem;
 }
 
 .description {

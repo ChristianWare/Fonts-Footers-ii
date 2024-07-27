@@ -12,7 +12,7 @@ const Benefits = () => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.top}>
-            <h2 className={styles.heading}>All of our Sites are...</h2>
+            <h2 className={`${styles.heading} h2v2`}>All of our sites are...</h2>
           </div>
           <div className={styles.bottom}>
             {benefits.slice(0, 3).map((benefit, i) => (

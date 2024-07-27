@@ -3,11 +3,10 @@ import BlogSection from "@/components/BlogSection/BlogSection";
 import EveryPlan from "@/components/EveryPlan/EveryPlan";
 import Faqsiii from "@/components/Faqsiii/Faqsiii";
 import IndividualService from "@/components/IndividualService/IndividualService";
-import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
 import ServicesHero from "@/components/ServicesHero/ServicesHero";
 import { simpleBlogCard } from "@/lib/interface";
 import { client } from "@/lib/sanity";
-import { homePageFaqs, servicesFaqs } from "@/lib/data";
+import { servicesFaqs } from "@/lib/data";
 
 async function getData() {
   const query = `
