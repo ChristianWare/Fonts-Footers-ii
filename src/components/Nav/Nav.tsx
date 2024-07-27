@@ -86,7 +86,7 @@ function Nav() {
             onClick={openMenu}
           >
             <li className={styles.navItem} onClick={() => setIsOpen(false)}>
-              <Link href='/' className={styles.navItem}>
+              <Link href='/'>
                 {pathname === "/" ? (
                   <>
                     <Arrow className={styles.icon} />
@@ -103,7 +103,7 @@ function Nav() {
                 className={styles.navItem}
                 onClick={() => setIsOpen(false)}
               >
-                <Link href={navItem.href} className={styles.navItem}>
+                <Link href={navItem.href} >
                   {pathname.includes(navItem.href) && (
                     <>
                       <Arrow className={styles.icon} />

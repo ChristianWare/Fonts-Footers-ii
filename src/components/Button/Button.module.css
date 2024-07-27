@@ -89,9 +89,3 @@
   background-color: var(--green);
   border: 1px solid var(--tan);
 }
-
-@media screen and (max-width: 568px) {
-  .btn {
-    font-size: 2rem;
-  }
-}
