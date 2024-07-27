@@ -4,32 +4,43 @@ import LayoutWrapper from "../LayoutWrapper";
 import styles from "./HowItWorks.module.css";
 import Image from "next/image";
 import Process from "../../../public/images/process.png";
+import Develop from "../../../public/icons/develop.svg";
+import Launch from "../../../public/icons/launch.svg";
+import Support from "../../../public/icons/support.svg";
+import Consult from "../../../public/icons/consult.svg";
+import Notes from "../../../public/icons/notes.svg";
 
 const process = [
   {
     id: 59,
+    icon: <Consult width={50} height={50} className={styles.icon} />,
     processName: "Consultation",
     processDescription: "Understanding your vision and goals.",
   },
   {
-    id: 60,
+    id: 50,
+    icon: <Notes width={50} height={50} className={styles.icon} />,
+
     processName: "Planning",
     processDescription: "Strategizing and designing a custom solution.",
   },
   {
     id: 61,
+    icon: <Develop width={50} height={50} className={styles.icon} />,
     processName: "Development",
     processDescription:
       "Bringing your project to life with clean, efficient code.",
   },
   {
     id: 62,
+    icon: <Launch width={50} height={50} className={styles.icon} />,
     processName: "Launch",
     processDescription:
       "Deploying your website and ensuring everything runs smoothly.",
   },
   {
     id: 63,
+    icon: <Support width={50} height={50} className={styles.icon} />,
     processName: "Support",
     processDescription:
       "Ongoing maintenance and support to keep your site at its best.",
@@ -59,12 +70,10 @@ const HowItWorks = () => {
             </div>
           </div>
           <div className={styles.right}>
-            {process.map((x, index) => (
+            {process.map((x) => (
               <div key={x.id} className={styles.card}>
                 <div className={styles.box}>
-                  <div className={styles.boxLeft}>
-                    <span className={styles.number}>{`${index + 1}`}</span>
-                  </div>
+                  <div className={styles.boxLeft}>{x.icon}</div>
                   <div className={styles.boxRight}>
                     <h3 className={styles.processName}>{x.processName}</h3>
                     <p className={styles.copy}>{x.processDescription}</p>
