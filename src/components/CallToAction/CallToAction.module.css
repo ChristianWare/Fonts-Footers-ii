@@ -65,4 +65,8 @@
   .formContainer {
     width: 100%;
   }
+
+  .heading {
+    font-size: 3.6rem;
+  }
 }
