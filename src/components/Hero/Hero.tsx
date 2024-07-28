@@ -24,11 +24,11 @@ const Hero = () => {
               We Build Interactive and Immersive Websites
             </h1>
 
-            {/* <p className={styles.copy}>
+            <p className={styles.copy}>
               Are you looking for a web designer to make your business shine
               online? Our digital agency is here to help. We create beautiful,
               responsive websites that meet your specific needs and goals.
-            </p> */}
+            </p>
             <div className={styles.btnContainer}>
               <Button
                 text='Schedule a Call'
