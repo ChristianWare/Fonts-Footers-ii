@@ -18,10 +18,10 @@ const Hero = () => {
         >
           <div className={styles.left}>
             <div className={styles.falseBtnContainer}>
-              <FalseButton btnType='primary' text='Digital Agency' />
+              <FalseButton btnType='secondary' text='Digital Agency' />
             </div>
             <h1 className={styles.heading}>
-              We build interactive and immersive websites
+              We Build Interactive and Immersive Websites
             </h1>
 
             {/* <p className={styles.copy}>

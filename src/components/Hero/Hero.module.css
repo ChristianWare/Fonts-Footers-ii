@@ -26,6 +26,7 @@
 
 .heading {
   color: var(--black);
+  text-transform: none;
 }
 
 .ampersand {
