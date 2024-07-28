@@ -18,7 +18,7 @@ const Hero = () => {
         >
           <div className={styles.left}>
             <div className={styles.falseBtnContainer}>
-              <FalseButton btnType='secondary' text='Digital Agency' />
+              <FalseButton btnType='primary' text='Digital Agency' />
             </div>
             <h1 className={styles.heading}>
               We Build Interactive and Immersive Websites
