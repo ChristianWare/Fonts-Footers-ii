@@ -109,12 +109,5 @@
     margin-top: -12rem;
   }
 
-  .left {
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
-
-  .heading {
-    text-align: left;
-  }
+ 
 }
