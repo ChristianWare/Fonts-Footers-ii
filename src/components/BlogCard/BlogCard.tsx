@@ -29,6 +29,7 @@ const BlogCard = ({ data }: Props) => {
       <p className={styles.desc}>
         {new Date(data?.publishedAt).toDateString()}
       </p>
+      <p className={styles.desc}>{data?.smallDescription}</p>
       </div>
     </article>
   );

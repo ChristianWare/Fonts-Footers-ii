@@ -2,6 +2,10 @@
   background-color: var(--tan);
 }
 
+.content {
+  margin-top: -13rem;
+}
+
 .bottom {
   display: grid;
   grid-template-columns: 1fr;
@@ -13,14 +17,13 @@
   max-width: 850px;
   margin: 10rem auto;
   background-color: var(--black);
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 5rem;
 }
 
 .left h2,
 .left h3 {
   line-height: 120%;
-  font-weight: 600;
   color: var(--tan);
 }
 

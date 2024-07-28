@@ -17,31 +17,37 @@ const BlogContent: React.FC<BlogContentProps> = ({ data, dataii }) => {
   return (
     <section className={styles.container}>
       <LayoutWrapper>
-        <div className={styles.top}>
-          <BlogIntro
-            text={data.title}
-            desc={data.smallDescription}
-            src={data.titleImage}
-            date={new Date(data?.publishedAt).toDateString()}
-          />
-        </div>
-        <div className={styles.z}>
-          <div className={styles.left}>
-            <PortableText
-              value={data.content}
-              components={myPortableTextComponents}
+        <div className={styles.content}>
+          <div className={styles.top}>
+            <BlogIntro
+              text={data.title}
+              desc={data.smallDescription}
+              src={data.titleImage}
+              date={new Date(data?.publishedAt).toDateString()}
             />
           </div>
-          <div className={styles.right}>
-            <span>Popular Posts</span>
-            <div className={styles.rightContent}>
-              {dataii?.length > 0 &&
-                dataii?.map((data: simpleBlogCard) => (
-                  <BlogCardii data={data} key={data.title} />
-                ))}
+          <div className={styles.z}>
+            <div className={styles.left}>
+              <PortableText
+                value={data.content}
+                components={myPortableTextComponents}
+              />
             </div>
-            <div className={styles.btnContainer}>
-              <Button href='/blogs' btnType='primaryii' text='All Blog Posts' />
+            <div className={styles.right}>
+              <span>Popular Posts</span>
+              <div className={styles.rightContent}>
+                {dataii?.length > 0 &&
+                  dataii?.map((data: simpleBlogCard) => (
+                    <BlogCardii data={data} key={data.title} />
+                  ))}
+              </div>
+              <div className={styles.btnContainer}>
+                <Button
+                  href='/blogs'
+                  btnType='primaryii'
+                  text='All Blog Posts'
+                />
+              </div>
             </div>
           </div>
         </div>

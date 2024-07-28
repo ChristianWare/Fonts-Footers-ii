@@ -13,21 +13,19 @@
 }
 
 .card {
-  /* border: 1px solid var(--white); */
   border-radius: 10px;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  /* gap: 1rem; */
-  padding-bottom: 2rem;
+  height: 100%;
 }
 
 .imgContainer {
   position: relative;
   width: 100%;
-  height: 250px;
+  height: 300px;
 }
 
 .img {
@@ -44,14 +42,17 @@
   padding: 2rem;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  height: 100%;
 }
 
 .blogTitle {
   font-size: 2rem;
   text-transform: none;
   margin-top: 1rem;
-  color: var(--white);
-  margin-bottom: 2rem;
+  color: var(--green3);
+  /* margin-bottom: 2rem; */
 }
 
 .blogTitle:hover {
@@ -61,8 +62,8 @@
 .desc {
   opacity: 0.7;
   font-size: 1.4rem;
-  color: var(--white);
-  margin-top: 2rem;
+  color: var(--green3);
+  /* margin-top: 2rem; */
 }
 
 .btnContainer {
