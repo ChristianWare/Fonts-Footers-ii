@@ -5,7 +5,7 @@
 .content {
   margin-top: -13rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 2fr 1.5fr;
   grid-gap: 3rem;
 }
 
