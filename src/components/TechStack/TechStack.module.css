@@ -53,9 +53,14 @@
 }
 
 @media screen and (max-width: 968px) {
+  .top {
+    align-items: center;
+  }
+
   .heading,
   .copy {
     width: 100%;
+    text-align: center;
   }
 
   .bottom {

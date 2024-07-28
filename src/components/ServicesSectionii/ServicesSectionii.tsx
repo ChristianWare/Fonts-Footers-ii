@@ -85,7 +85,7 @@ const ServicesSectionii = () => {
         </div>
         <div className={styles.bottomRight}>
           <div className={styles.box}>
-            <FalseButton text='Add ons' btnType='primary' />
+            <FalseButton text='Add ons' btnType='secondary' />
             <h2 className={styles.heading}>Additional Services</h2>
             <p className={styles.copy}>
               Here are some of the additional services we offer. Please reach

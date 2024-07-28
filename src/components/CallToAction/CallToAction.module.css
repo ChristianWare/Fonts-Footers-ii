@@ -48,9 +48,15 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .btnContainer {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 568px) {
   .content {
-    background-color: var(--white);
+    background-color: var(--gray);
     padding: 3rem;
     border-radius: 10px;
     border: 1px solid var(--lightBlack);

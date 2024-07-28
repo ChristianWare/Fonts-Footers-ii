@@ -17,9 +17,7 @@ export default function BusinessWebsites() {
   return (
     <main>
       <BusinessHero />
-      <ScrollHorizontalText text='Bespoke Websites' bottomBorder={false} />
       <HigherMargins />
-      <ScrollHorizontalText text='Bespoke Websites' bottomBorder={false} />
       <DirectCommunication />
       <BusinessFeatures />
       <BusinessSEO />
@@ -27,10 +25,8 @@ export default function BusinessWebsites() {
       <EveryPlan />
       <Usp />
       <HowItWorks />
-      <Pricing />
-      <ScrollHorizontalText text='Reviews' bottomBorder={false} />
+      <Pricing borderTop='borderTop' />
       <Testimonials />
-      <ScrollHorizontalText text='Reviews' bottomBorder={false} />
       <Faqsiii
         bgColor='gray'
         mapData={businessWebsiteFaqs}

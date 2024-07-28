@@ -19,17 +19,13 @@ export default function BookingPlatformPage() {
       <Mission />
       <BookingScrollText />
       <BookingService />
-      <ScrollHorizontalText text='Notifications' bottomBorder={false} />
       <BookingReminders />
       <IndividualFeature />
-      <ScrollHorizontalText text='Reminders' bottomBorder={false} />
       <EveryPlan />
       <Usp />
       <HowItWorks />
       <Pricing />
-      <ScrollHorizontalText text='Reviews' bottomBorder={false} />
       <Testimonials />
-      <ScrollHorizontalText text='Reviews' bottomBorder={false} />
       <Faqsiii
         bgColor='gray'
         mapData={bookingWebsiteFaqs}

@@ -123,13 +123,14 @@
 .btnContainer {
   display: grid;
   width: fit-content;
-  margin-top: 3rem;
+  margin-top: 0rem;
 }
 
 @media screen and (max-width: 1068px) {
   .content {
     grid-template-columns: repeat(1, 1fr);
     overflow: hidden;
+    gap: 0rem;
   }
 
   .top {
@@ -141,11 +142,6 @@
 
   .heading {
     width: 100%;
-  }
-
-  .content {
-    flex-direction: column;
-    gap: 3rem;
   }
 
   .falseButtonContainer {
@@ -168,11 +164,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .content {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-
   .falseButtonContainer {
     width: fit-content;
   }

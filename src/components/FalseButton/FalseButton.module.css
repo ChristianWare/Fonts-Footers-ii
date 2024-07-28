@@ -15,6 +15,7 @@
   padding: 5px 15px;
   width: fit-content;
   transition: background-color 0.1s ease-in, color 0.1s ease-in;
+  line-height: 2rem;
 }
 
 .primary {
@@ -27,18 +28,12 @@
 .secondary {
   color: var(--green);
   background-color: var(--green3);
-  border: 1px solid var(--gray2);
+  border: 1px solid var(--lightBlack);
   padding: 5px 30px;
+  padding-bottom: 7px;
 }
 
 .secondary:hover {
   background-color: var(--green3);
   color: var(--green);
-}
-
-@media screen and (max-width: 568px) {
-  .btn {
-    font-size: 1.4rem;
-    flex: 1;
-  }
 }

@@ -170,7 +170,7 @@
   .card:nth-child(5) {
     position: relative;
     border-radius: 10px;
-    border-right: 1px solid var(--lightBlack);
+    border-right: 1px solid var(--gray);
     top: -3px;
   }
 

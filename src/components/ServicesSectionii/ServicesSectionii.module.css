@@ -49,7 +49,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .title {
@@ -152,5 +152,10 @@
 
   .imgContainer {
     height: 75px;
+  }
+
+  .title {
+    text-align: center;
+    width: 100%;
   }
 }

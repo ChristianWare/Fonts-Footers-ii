@@ -44,7 +44,7 @@ const Mission = () => {
       <LayoutWrapper>
         <div className={styles.top}>
           <FalseButton text='Booking Details' btnType='secondary' />
-          <h1 className={styles.heading}>
+          <h1 className={`${styles.heading} h2v2`}>
             Custom Booking Platforms For Seemless Reservations
           </h1>
         </div>
