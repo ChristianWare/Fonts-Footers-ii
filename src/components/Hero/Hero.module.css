@@ -29,11 +29,6 @@
   text-transform: none;
 }
 
-.ampersand {
-  font-family: var(--lb);
-  font-style: italic;
-}
-
 .btnContainer {
   display: flex;
   align-items: center;
@@ -127,8 +122,9 @@
     grid-gap: 2rem;
   }
   
-  .imgContainer {
+   .imgContainer {
     width: 100%;
+    height: 350px;
   }
 
   .btnContainer {
