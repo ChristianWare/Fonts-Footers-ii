@@ -58,8 +58,6 @@
 
 .hamburger {
   display: none;
-  padding: 1rem;
-  border-radius: 20px;
   z-index: 999;
   position: relative;
 }
