@@ -15,31 +15,70 @@
   text-align: center;
 }
 
-.mapContainer {
+.mapContainer,
+.mapContainer2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
+  grid-gap: 1rem;
   height: 100%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mapContainer2 {
+  margin-top: 1rem;
+}
+
+.mapContainer3 {
+  display: none;
+  /* background-color: red; */
+  /* display: grid; */
+  /* grid-template-columns: repeat(1, 1fr); */
+}
+
+.article {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .card {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 1rem;
   border: 1px solid var(--lightBlack);
   border-radius: 10px;
   padding: 1rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.miscContainer {
+  filter: url("#goo");
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .imgContainer {
   position: relative;
   width: 100%;
   height: 250px;
+  filter: url("#goo");
+  clip-path: polygon(0% 15%, 15% 0%, 100% 0%, 100% 85%, 85% 100%, 0% 100%);
 }
 
-.img {
-  object-fit: cover;
-  border-radius: 10px;
+.imgContainer::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  background: linear-gradient(
+    to bottom,
+    rgb(123, 8, 255, 0.2),
+    rgb(123, 8, 255, 0.8)
+  );
+  clip-path: polygon(0% 15%, 15% 0%, 100% 0%, 100% 85%, 85% 100%, 0% 100%);
 }
 
 .bottomCard {
@@ -101,12 +140,28 @@
 
   .mapContainer {
     grid-template-columns: repeat(2, 1fr);
+    /* width: 50%; */
+    /* width: 100%; */
+  }
+
+  .mapContainer2 {
+    display: none;
+  }
+
+  .mapContainer3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 668px) {
-  .mapContainer {
+@media screen and (max-width: 568px) {
+  .mapContainer, .mapContainer3 {
     grid-template-columns: repeat(1, 1fr);
+    width: 100%;
   }
 
   .btnContainer {

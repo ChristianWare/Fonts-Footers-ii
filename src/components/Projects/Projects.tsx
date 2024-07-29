@@ -32,11 +32,69 @@ const Projects = ({ borderBottom = "" }: Props) => {
             {projects
               .slice(0, pathname === "/" ? 3 : projects.length)
               .map((x: any, index: number) => (
-                <article key={index} className={styles.card}>
-                  <div className={styles.imgContainer}>
-                    <Image src={x.src} fill alt='' className={styles.img} />
+                <article key={index} className={styles.article}>
+                  <svg
+                    width='0'
+                    height='0'
+                    xmlns='http://www.w3.org/2000/svg'
+                    version='1.1'
+                  >
+                    <defs>
+                      <filter id='goo'>
+                        <feGaussianBlur
+                          in='SourceGraphic'
+                          stdDeviation='5'
+                          result='blur'
+                        />
+                        <feColorMatrix
+                          in='blur'
+                          mode='matrix'
+                          values='1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9'
+                          result='goo'
+                        />
+                        <feComposite
+                          in='SourceGraphic'
+                          in2='goo'
+                          operator='atop'
+                        />
+                      </filter>
+                    </defs>
+                  </svg>
+                  <div className={styles.miscContainer}>
+                    <div className={styles.imgContainer}>
+                      <Image
+                        src={x.src}
+                        alt=''
+                        layout='fill'
+                        objectFit='cover'
+                        className={styles.img}
+                      />
+                    </div>
                   </div>
-                  <div className={styles.bottomCard}>
+                </article>
+              ))}
+          </div>
+          <div className={styles.mapContainer2}>
+            {projects
+              .slice(0, pathname === "/" ? 3 : projects.length)
+              .map((x: any, index: number) => (
+                <article key={index} className={styles.article}>
+                  <div className={`${styles.bottomCard} ${styles.card}`}>
+                    <h3 className={styles.title}>{x.title}</h3>
+                    <p className={styles.desc}>{x.description}</p>
+                    <Link href={x.href} className={styles.btn} target='_blank'>
+                      Live Site
+                    </Link>
+                  </div>
+                </article>
+              ))}
+          </div>
+          <div className={styles.mapContainer3}>
+            {projects
+              .slice(0, pathname === "/" ? 3 : projects.length)
+              .map((x: any, index: number) => (
+                <article key={index} className={styles.article}>
+                  <div className={`${styles.bottomCard} ${styles.card}`}>
                     <h3 className={styles.title}>{x.title}</h3>
                     <p className={styles.desc}>{x.description}</p>
                     <Link href={x.href} className={styles.btn} target='_blank'>

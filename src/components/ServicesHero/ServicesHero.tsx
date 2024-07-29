@@ -18,8 +18,39 @@ const ServicesHero = () => {
             </h1>
           </div>
           <div className={styles.right}>
-            <div className={styles.imgContainer}>
-              <Image src={Img} alt='' fill className={styles.img} />
+            <svg
+              width='0'
+              height='0'
+              xmlns='http://www.w3.org/2000/svg'
+              version='1.1'
+            >
+              <defs>
+                <filter id='goo'>
+                  <feGaussianBlur
+                    in='SourceGraphic'
+                    stdDeviation='5'
+                    result='blur'
+                  />
+                  <feColorMatrix
+                    in='blur'
+                    mode='matrix'
+                    values='1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9'
+                    result='goo'
+                  />
+                  <feComposite in='SourceGraphic' in2='goo' operator='atop' />
+                </filter>
+              </defs>
+            </svg>
+            <div className={styles.miscContainer}>
+              <div className={styles.imgContainer}>
+                <Image
+                  src={Img}
+                  alt=''
+                  layout='fill'
+                  objectFit='cover'
+                  className={styles.img}
+                />
+              </div>
             </div>
             <p className={styles.copy}>
               Welcome to Fonts & Footers, your source for high-performance,

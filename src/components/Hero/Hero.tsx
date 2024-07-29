@@ -25,7 +25,6 @@ const Hero = () => {
             <h1 className={styles.heading}>
               We Build Interactive and Immersive Websites
             </h1>
-
             <p className={styles.copy}>
               Are you looking for a web designer to make your business shine
               online? Our digital agency is here to help. We create beautiful,
@@ -46,40 +45,38 @@ const Hero = () => {
           </div>
           <div className={styles.right}>
             {/* <ShuffleHero /> */}
-            <div>
-              <svg
-                width='0'
-                height='0'
-                xmlns='http://www.w3.org/2000/svg'
-                version='1.1'
-              >
-                <defs>
-                  <filter id='goo'>
-                    <feGaussianBlur
-                      in='SourceGraphic'
-                      stdDeviation='5'
-                      result='blur'
-                    />
-                    <feColorMatrix
-                      in='blur'
-                      mode='matrix'
-                      values='1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9'
-                      result='goo'
-                    />
-                    <feComposite in='SourceGraphic' in2='goo' operator='atop' />
-                  </filter>
-                </defs>
-              </svg>
-              <div className={styles.miscContainer}>
-                <div className={styles.imgContainer}>
-                  <Image
-                    src={img}
-                    alt=''
-                    layout='fill'
-                    objectFit='cover'
-                    className={styles.img}
+            <svg
+              width='0'
+              height='0'
+              xmlns='http://www.w3.org/2000/svg'
+              version='1.1'
+            >
+              <defs>
+                <filter id='goo'>
+                  <feGaussianBlur
+                    in='SourceGraphic'
+                    stdDeviation='5'
+                    result='blur'
                   />
-                </div>
+                  <feColorMatrix
+                    in='blur'
+                    mode='matrix'
+                    values='1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9'
+                    result='goo'
+                  />
+                  <feComposite in='SourceGraphic' in2='goo' operator='atop' />
+                </filter>
+              </defs>
+            </svg>
+            <div className={styles.miscContainer}>
+              <div className={styles.imgContainer}>
+                <Image
+                  src={img}
+                  alt=''
+                  layout='fill'
+                  objectFit='cover'
+                  className={styles.img}
+                />
               </div>
             </div>
           </div>
