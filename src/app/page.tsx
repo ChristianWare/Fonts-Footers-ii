@@ -15,6 +15,7 @@ import EveryPlan from "@/components/EveryPlan/EveryPlan";
 import HowItWorks from "@/components/HowItWorks/HowItWorks";
 import { homePageFaqs } from "@/lib/data";
 import Usp from "@/components/Usp/Usp";
+import TechStack from "@/components/TechStack/TechStack";
 
 async function getData() {
   const query = `
@@ -43,6 +44,7 @@ export default async function Home() {
       <ServicesSection />
       <EveryPlan />
       <Usp />
+      <TechStack />
       <HowItWorks />
       <Testimonials />
       <Projects />

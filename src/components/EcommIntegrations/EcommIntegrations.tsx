@@ -28,22 +28,11 @@ const EcommIntegrations = () => {
   return (
     <section className={styles.container}>
       <LayoutWrapper>
-        {/* <h2>Ecomm Integrations</h2> */}
         <div className={styles.top}>
           <div className={styles.topLeft}>
             <h2 className={styles.heading}>E-commerce Platform Integration</h2>
-            {/* <p className={styles.copy}>
-              We integrate with leading e-commerce platforms like Shopify,
-              WooCommerce, and Magento, ensuring your online store has the
-              functionality and flexibility required to succeed in a competitive
-              market.
-            </p> */}
           </div>
-          <div className={styles.topRight}>
-            {/* <h3 className={styles.headline}>
-              Seamless Integration with Leading Platforms
-            </h3> */}
-          </div>
+          <div className={styles.topRight}></div>
         </div>
         <div className={styles.bottom}>
           {data.map((x) => (

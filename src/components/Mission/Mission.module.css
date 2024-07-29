@@ -8,14 +8,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
   margin-bottom: 5rem;
 }
 
 .heading {
   text-align: center;
   width: 60%;
-  /* font-size: 5.2rem; */
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.leftCopy {
+  text-align: center;
 }
 
 .bottom {
@@ -24,32 +28,33 @@
   grid-gap: 5rem;
 }
 
-.left {
-  background-color: var(--black);
-  border-radius: 10px;
-  padding: 4rem;
+.miscContainer {
+  filter: url("#goo");
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-start;
-  gap: 2rem;
+  justify-content: center;
+}
+
+.imgContainer {
   position: relative;
+  top: -18px;
+  width: 80%;
+  height: 400px;
+  filter: url("#goo");
+  clip-path: polygon(0% 15%, 15% 0%, 100% 0%, 100% 85%, 85% 100%, 0% 100%);
 }
 
-.img {
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.imgOverlay {
-  z-index: 2;
+.imgContainer::after {
+  content: "";
   position: absolute;
-  height: 100%;
   width: 100%;
-  background: linear-gradient(rgba(10, 7, 27, 0.7), rgba(10, 7, 27, 0.7));
-  border-radius: 10px;
-  top: 0;
-  left: 0;
+  height: 400px;
+  background: linear-gradient(
+    to bottom,
+    rgb(123, 8, 255, 0.2),
+    rgb(123, 8, 255, 0.8)
+  );
+  clip-path: polygon(0% 15%, 15% 0%, 100% 0%, 100% 85%, 85% 100%, 0% 100%);
 }
 
 .z3 {
@@ -59,12 +64,6 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: 2rem;
-}
-
-.span,
-.headingii,
-.leftCopy {
-  color: var(--green3);
 }
 
 .right {
@@ -109,8 +108,7 @@
 
 @media screen and (max-width: 1068px) {
   .top {
-    align-items: center;
-    justify-content: center;
+    margin-bottom: 3rem;
   }
 
   .heading {
@@ -120,11 +118,17 @@
 
   .bottom {
     grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
   }
 
-  .left {
-    padding: 6rem;
-    height: 300px;
+  .imgContainer {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .imgContainer {
+    width: 80%;
   }
 }
 
@@ -180,5 +184,9 @@
 
   .heading {
     font-size: 4.5rem;
+  }
+
+  .imgContainer {
+    width: 100%;
   }
 }

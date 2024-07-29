@@ -19,7 +19,6 @@ const data = [
     title: "User-Friendly Navigation",
     desc: "We focus on intuitive navigation and clear calls-to-action, making it easy for customers to find products and complete purchases.",
   },
-  
 ];
 
 const EcommResponsive = () => {
@@ -28,7 +27,9 @@ const EcommResponsive = () => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.left}>
-            <h2 className={styles.heading}>Responsive E-commerce Design</h2>
+            <h2 className={`${styles.heading} h2v2`}>
+              Responsive E-commerce Design
+            </h2>
             <p className={styles.copy}>
               Our e-commerce websites are designed to provide a seamless
               shopping experience across all devices, from desktops to mobile
@@ -46,8 +47,39 @@ const EcommResponsive = () => {
             </div>
           </div>
           <div className={styles.right}>
-            <div className={styles.imgContainer}>
-              <Image src={Img1} alt='' fill className={styles.img} />
+            <svg
+              width='0'
+              height='0'
+              xmlns='http://www.w3.org/2000/svg'
+              version='1.1'
+            >
+              <defs>
+                <filter id='goo'>
+                  <feGaussianBlur
+                    in='SourceGraphic'
+                    stdDeviation='5'
+                    result='blur'
+                  />
+                  <feColorMatrix
+                    in='blur'
+                    mode='matrix'
+                    values='1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9'
+                    result='goo'
+                  />
+                  <feComposite in='SourceGraphic' in2='goo' operator='atop' />
+                </filter>
+              </defs>
+            </svg>
+            <div className={styles.miscContainer}>
+              <div className={styles.imgContainer}>
+                <Image
+                  src={Img1}
+                  alt=''
+                  layout='fill'
+                  objectFit='cover'
+                  className={styles.img}
+                />
+              </div>
             </div>
           </div>
         </div>
