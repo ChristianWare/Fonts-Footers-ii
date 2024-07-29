@@ -41,24 +41,29 @@
   margin-top: 2rem;
 }
 
-.right {
-  display: flex;
-  flex-direction: column;
-  position: relative;
+.miscContainer {
+  filter: url("#goo");
 }
 
 .imgContainer {
   position: relative;
-  height: 450px;
+  width: 80%;
+  height: 400px;
+  filter: url("#goo");
+  clip-path: polygon(0% 15%, 15% 0%, 100% 0%, 100% 85%, 85% 100%, 0% 100%);
 }
 
-.img {
+.imgContainer::after {
+  content: "";
+  position: absolute;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 20px;
-  border: 1px solid var(--lightBlack);
-  border-radius: 20px;
+  height: 400px;
+  background: linear-gradient(
+    to bottom,
+    rgb(123, 8, 255, 0.2),
+    rgb(123, 8, 255, 0.8)
+  );
+  clip-path: polygon(0% 15%, 15% 0%, 100% 0%, 100% 85%, 85% 100%, 0% 100%);
 }
 
 @media screen and (max-width: 1168px) {
@@ -109,6 +114,4 @@
   .content {
     margin-top: -12rem;
   }
-
- 
 }
