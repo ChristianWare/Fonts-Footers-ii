@@ -11,25 +11,25 @@ interface Props {
 const BlogCard = ({ data }: Props) => {
   return (
     <article className={styles.card}>
-      <div className={styles.imgContainer}>
-        <Link href={`/blog/${data?.currentSlug}`}>
+      <div className={styles.miscContainer}>
+        <div className={styles.imgContainer}>
           <Image
             src={urlFor(data.titleImage).url()}
-            alt='image'
-            fill
+            alt=''
+            layout='fill'
+            objectFit='cover'
             className={styles.img}
           />
-        </Link>
+        </div>
       </div>
       <div className={styles.details}>
-
-      <Link href={`/blog/${data?.currentSlug}`} className={styles.link}>
-        <h3 className={styles.blogTitle}>{data?.title}</h3>
-      </Link>
-      <p className={styles.desc}>
-        {new Date(data?.publishedAt).toDateString()}
-      </p>
-      <p className={styles.desc}>{data?.smallDescription}</p>
+        <Link href={`/blog/${data?.currentSlug}`} className={styles.link}>
+          <h3 className={styles.blogTitle}>{data?.title}</h3>
+        </Link>
+        <p className={styles.desc}>
+          {new Date(data?.publishedAt).toDateString()}
+        </p>
+        <p className={styles.desc}>{data?.smallDescription}</p>
       </div>
     </article>
   );
