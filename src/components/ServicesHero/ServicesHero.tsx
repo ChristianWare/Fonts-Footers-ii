@@ -16,6 +16,12 @@ const ServicesHero = () => {
             <h1 className={`${styles.heading} h2v3`}>
               Transform Your Business with our Web Solutions
             </h1>
+            <p className={styles.copy}>
+              Welcome to Fonts & Footers, your source for high-performance,
+              custom websites specializing in booking systems, e-commerce
+              platforms, and business sites. We enhance user experience and SEO,
+              delivering tailored solutions for your needs.
+            </p>
           </div>
           <div className={styles.right}>
             <svg
@@ -52,12 +58,6 @@ const ServicesHero = () => {
                 />
               </div>
             </div>
-            <p className={styles.copy}>
-              Welcome to Fonts & Footers, your source for high-performance,
-              custom websites specializing in booking systems, e-commerce
-              platforms, and business sites. We enhance user experience and SEO,
-              delivering tailored solutions for your needs.
-            </p>
           </div>
         </div>
       </LayoutWrapper>
