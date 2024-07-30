@@ -65,12 +65,13 @@
   width: 3.5rem;
   height: 3.5rem;
   color: var(--black);
+  opacity: 0.7;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
 
 .processContainer:hover .icon2 {
-  color: var(--green);
+  opacity: 1;
 }
 
 .houseContainer {
@@ -105,6 +106,8 @@
   margin-bottom: 2rem;
   color: var(--black);
   transition: all 0.2s ease-in;
+  font-size: 3rem;
+  opacity: 0.7;
 }
 
 .processDescription {
@@ -232,5 +235,11 @@
 
   .copy {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .processName {
+    font-size: 2rem;
   }
 }
