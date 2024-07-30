@@ -2,7 +2,7 @@ import Image from "next/image";
 import FalseButton from "../FalseButton/FalseButton";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./ServicesHero.module.css";
-import Img from "../../../public/images/house10.png";
+import Img from "../../../public/images/house15.png";
 
 const ServicesHero = () => {
   return (
