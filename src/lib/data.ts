@@ -170,6 +170,10 @@ export const pricing = [
         id: 28.5,
         feature: "12 Blog Articles/year",
       },
+      {
+        id: 28.6,
+        feature: "$500 set up fee - one time",
+      },
     ],
     btnType: "tertiary",
   },
@@ -209,6 +213,10 @@ export const pricing = [
         id: 27.6,
         feature: "User Reviews",
       },
+      {
+        id: 27.7,
+        feature: "$500 set up fee - one time",
+      },
     ],
     btnType: "secondary",
   },
@@ -247,6 +255,10 @@ export const pricing = [
       {
         id: 28.5,
         feature: "Sales Charts",
+      },
+      {
+        id: 28.6,
+        feature: "$500 set up fee - one time",
       },
     ],
     btnType: "tertiary",

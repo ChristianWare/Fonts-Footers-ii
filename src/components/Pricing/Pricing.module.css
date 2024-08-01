@@ -168,6 +168,11 @@
   padding-bottom: 1rem;
 }
 
+.feature:nth-child(6) {
+  font-size: 1.7rem;
+  font-family: var(--suisse);
+}
+
 .description {
   color: var(--green);
   font-weight: 500;
