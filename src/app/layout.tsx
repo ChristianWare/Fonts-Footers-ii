@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     template: "%s - Fonts & Footers",
   },
   description:
-    "Fonts & Footers empowers vacation rental owners with direct booking websites, reducing reliance on platforms like Airbnb and VRBO. Elevate your property's online presence with our web development and design expertise!",
+    "Fonts & Footers empowers business owners with e-commerce stores, business websites, and direct booking platforms. Elevate your online presence with our web development and design expertise!",
   twitter: {
     card: "summary_large_image",
   },
