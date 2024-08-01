@@ -1,5 +1,10 @@
-.bgColor {
+/* .bgColor {
   background-color: var(--black);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .falseBtnContainer {
@@ -19,13 +24,7 @@
 }
 
 .text {
-  letter-spacing: -0.01em;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.4;
-  width: 65%;
-  margin-left: auto;
-  margin-right: auto;
+  /
   color: var(--green3);
 }
 
@@ -85,5 +84,119 @@
 @media screen and (max-width: 568px) {
   .content:after {
     content: "";
+  }
+} */
+
+.bgColor {
+  background-color: var(--black);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5rem;
+}
+
+.miscContainer {
+  filter: url("#goo");
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.imgContainer {
+  position: relative;
+  top: -20px;
+  width: 80%;
+  height: 400px;
+  filter: url("#goo");
+  clip-path: polygon(0% 15%, 15% 0%, 100% 0%, 100% 85%, 85% 100%, 0% 100%);
+}
+
+.imgContainer::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgb(123, 8, 255, 0.2),
+    rgb(123, 8, 255, 0.8)
+  );
+  clip-path: polygon(0% 15%, 15% 0%, 100% 0%, 100% 85%, 85% 100%, 0% 100%);
+}
+
+.falseBtnContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: fit-content;
+  margin-bottom: 2rem;
+}
+
+.heading {
+  color: var(--green3);
+  margin-bottom: 2rem;
+}
+
+.text {
+  color: var(--green3);
+}
+
+.authorDetails {
+  color: var(--green3);
+  font-size: 2rem;
+  font-family: var(--suisse);
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 968px) {
+  .content {
+    grid-gap: 3rem;
+  }
+
+  .right {
+    order: -1;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  .imgContainer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .heading,
+  .copy,
+  .authorDetails {
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .falseBtnContainer {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .imgContainer {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .imgContainer {
+    width: 100%;
+    height: 300px;
   }
 }

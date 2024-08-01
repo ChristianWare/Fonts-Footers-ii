@@ -16,6 +16,8 @@ import HowItWorks from "@/components/HowItWorks/HowItWorks";
 import { homePageFaqs } from "@/lib/data";
 import Usp from "@/components/Usp/Usp";
 import TechStack from "@/components/TechStack/TechStack";
+import ShuffleHero from "@/components/ShuffleHero/ShuffleHero";
+import LayoutWrapper from "@/components/LayoutWrapper";
 
 async function getData() {
   const query = `
@@ -26,7 +28,6 @@ async function getData() {
       "currentSlug": slug.current,
       titleImage
     }`;
-
 
   const data = await client.fetch(query);
 
@@ -41,6 +42,9 @@ export default async function Home() {
   return (
     <main>
       <Hero />
+      {/* <ScrollHorizontalText text='FONTS & FOOTERS' bottomBorder={true} /> */}
+      {/* <Slide/r /> */}
+      {/* <ScrollHorizontalText text='FONTS & FOOTERS' /> */}
       <AboutScrollText />
       <ServicesSection />
       <EveryPlan />
