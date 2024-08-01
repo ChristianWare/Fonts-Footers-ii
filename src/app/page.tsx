@@ -27,6 +27,7 @@ async function getData() {
       titleImage
     }`;
 
+
   const data = await client.fetch(query);
 
   return data;
