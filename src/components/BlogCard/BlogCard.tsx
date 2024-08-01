@@ -31,6 +31,13 @@ const BlogCard = ({ data }: Props) => {
         </p>
         <p className={styles.desc}>{data?.smallDescription}</p>
       </div>
+      <Link
+        href={`/blog/${data?.currentSlug}`}
+        className={styles.btn}
+        target='_blank'
+      >
+        Read Article
+      </Link>
     </article>
   );
 };

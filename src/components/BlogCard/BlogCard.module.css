@@ -3,6 +3,7 @@
 }
 
 .card {
+  border: 1px solid var(--gray);
   border-radius: 10px;
   display: block;
   display: grid;
@@ -10,8 +11,6 @@
   grid-gap: 3rem;
   padding: 1rem;
 }
-
-
 
 .details {
   display: flex;
@@ -58,3 +57,26 @@
   clip-path: polygon(0% 15%, 15% 0%, 100% 0%, 100% 85%, 85% 100%, 0% 100%);
 }
 
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: 1px solid var(--green3);
+  background-color: var(--green3);
+  border-radius: 8px;
+  padding: 2rem;
+  transition: all 0.2s ease-in;
+  text-align: center;
+  color: var(--black);
+  font-size: 2rem;
+  line-height: 130%;
+  font-weight: 600;
+  letter-spacing: -1px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--green3);
+}

@@ -33,34 +33,34 @@ const Projects = ({ borderBottom = "" }: Props) => {
               .slice(0, pathname === "/" ? 3 : projects.length)
               .map((x: any, index: number) => (
                 <article key={index} className={styles.article}>
-                  <svg
-                    width='0'
-                    height='0'
-                    xmlns='http://www.w3.org/2000/svg'
-                    version='1.1'
-                  >
-                    <defs>
-                      <filter id='goo'>
-                        <feGaussianBlur
-                          in='SourceGraphic'
-                          stdDeviation='5'
-                          result='blur'
-                        />
-                        <feColorMatrix
-                          in='blur'
-                          mode='matrix'
-                          values='1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9'
-                          result='goo'
-                        />
-                        <feComposite
-                          in='SourceGraphic'
-                          in2='goo'
-                          operator='atop'
-                        />
-                      </filter>
-                    </defs>
-                  </svg>
                   <div className={styles.miscContainer}>
+                    <svg
+                      width='0'
+                      height='0'
+                      xmlns='http://www.w3.org/2000/svg'
+                      version='1.1'
+                    >
+                      <defs>
+                        <filter id='goo'>
+                          <feGaussianBlur
+                            in='SourceGraphic'
+                            stdDeviation='5'
+                            result='blur'
+                          />
+                          <feColorMatrix
+                            in='blur'
+                            mode='matrix'
+                            values='1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9'
+                            result='goo'
+                          />
+                          <feComposite
+                            in='SourceGraphic'
+                            in2='goo'
+                            operator='atop'
+                          />
+                        </filter>
+                      </defs>
+                    </svg>
                     <div className={styles.imgContainer}>
                       <Image
                         src={x.src}
@@ -71,15 +71,7 @@ const Projects = ({ borderBottom = "" }: Props) => {
                       />
                     </div>
                   </div>
-                </article>
-              ))}
-          </div>
-          <div className={styles.mapContainer2}>
-            {projects
-              .slice(0, pathname === "/" ? 3 : projects.length)
-              .map((x: any, index: number) => (
-                <article key={index} className={styles.article}>
-                  <div className={`${styles.bottomCard} ${styles.card}`}>
+                  <div className={styles.bottomCard}>
                     <h3 className={styles.title}>{x.title}</h3>
                     <p className={styles.desc}>{x.description}</p>
                     <Link href={x.href} className={styles.btn} target='_blank'>
@@ -89,21 +81,7 @@ const Projects = ({ borderBottom = "" }: Props) => {
                 </article>
               ))}
           </div>
-          <div className={styles.mapContainer3}>
-            {projects
-              .slice(0, pathname === "/" ? 3 : projects.length)
-              .map((x: any, index: number) => (
-                <article key={index} className={styles.article}>
-                  <div className={`${styles.bottomCard} ${styles.card}`}>
-                    <h3 className={styles.title}>{x.title}</h3>
-                    <p className={styles.desc}>{x.description}</p>
-                    <Link href={x.href} className={styles.btn} target='_blank'>
-                      Live Site
-                    </Link>
-                  </div>
-                </article>
-              ))}
-          </div>
+
           {pathname === "/" && (
             <div className={styles.btnContainer}>
               <Button

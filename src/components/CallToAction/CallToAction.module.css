@@ -18,13 +18,11 @@
 }
 
 .heading {
-  /* width: 50%; */
   font-size: 5rem;
 }
 
 .copy {
   width: 60%;
-  /* text-align: center; */
   font-weight: 500;
   opacity: 0.8;
 }
