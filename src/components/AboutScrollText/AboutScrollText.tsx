@@ -10,6 +10,7 @@ const AboutScrollText = () => {
       <LayoutWrapper color='green3'>
         <div className={styles.content}>
           <div className={styles.left}>
+            <div className={styles.miscContainer}>
             <svg
               width='0'
               height='0'
@@ -33,7 +34,6 @@ const AboutScrollText = () => {
                 </filter>
               </defs>
             </svg>
-            <div className={styles.miscContainer}>
               <div className={styles.imgContainer}>
                 <Image
                   src={Author}

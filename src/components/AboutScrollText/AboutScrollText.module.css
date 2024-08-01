@@ -1,92 +1,3 @@
-/* .bgColor {
-  background-color: var(--black);
-}
-
-.content {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.falseBtnContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: fit-content;
-  margin-bottom: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.heading {
-  color: var(--green3);
-  margin-bottom: 3rem;
-  text-align: center;
-}
-
-.text {
-  /
-  color: var(--green3);
-}
-
-.span1 {
-  font-family: var(--lb);
-  font-style: italic;
-  color: var(--green3);
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.span2 {
-  text-decoration: underline;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  color: var(--green3);
-}
-
-.bottom {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  margin-bottom: 3rem;
-}
-
-.author {
-  border-radius: 50%;
-  border: 2px solid var(--green3);
-  padding: 0.5rem;
-}
-
-.authorDetails {
-  color: var(--green3);
-  font-size: 2rem;
-  font-family: var(--suisse);
-}
-
-@media screen and (max-width: 1068px) {
-  .text {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .bottom {
-    align-items: center;
-    justify-content: center;
-  }
-
-  .heading {
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 568px) {
-  .content:after {
-    content: "";
-  }
-} */
-
 .bgColor {
   background-color: var(--black);
 }
@@ -105,7 +16,6 @@
 }
 .imgContainer {
   position: relative;
-  top: -20px;
   width: 80%;
   height: 400px;
   filter: url("#goo");
