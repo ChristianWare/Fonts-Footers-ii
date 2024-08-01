@@ -7,7 +7,6 @@ import Nav from "@/components/Nav/Nav";
 import CallToAction from "@/components/CallToAction/CallToAction";
 import { Toaster } from "react-hot-toast";
 import PlausibleProvider from "next-plausible";
-import Footerii from "@/components/Footerii/Footerii";
 import ScrollIndicator from "@/components/ScrollIndicator/ScrollIndicator";
 
 const interTight = Inter_Tight({
