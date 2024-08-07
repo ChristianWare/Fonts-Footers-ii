@@ -1,6 +1,7 @@
 import Project1 from "../../public/images/elite.png";
 import Project2 from "../../public/images/nier.png";
 import Project3 from "../../public/images/taco.jpg";
+import Project4 from "../../public/images/weko.jpg";
 import Img1 from "../../public/images/aboutHouse.png";
 
 export const benefits = [
@@ -266,6 +267,15 @@ export const pricing = [
 ] as const;
 
 export const projects = [
+  {
+    src: Project4,
+    title: "AZ Golf Whisperer",
+    description:
+      "AZ Golf Whisperer is a stay and play golf package website, where users can reserve golf tee times in advance, and learn about all golfing services offered.",
+    // moreDetails:
+    //   "Elite Retreat Rentals is a Phoenix, AZ based company that provides lodging services to travelers at an affordable price. They currently provide lodging for multiple properties in the stat of Arizona. They allow clients to booking directly on their website, instead of relying on platform such as Air bnb and VRBO. The Admin is able to see all the bookings, users, properties, and review on the Admin dashboard.",
+    href: "https://golf-guise.vercel.app/",
+  },
   {
     src: Project2,
     title: "Nier Transportaion",
