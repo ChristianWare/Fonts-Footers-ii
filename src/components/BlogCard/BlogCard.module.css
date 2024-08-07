@@ -22,9 +22,10 @@
 }
 
 .blogTitle {
-  font-size: 2rem;
+  font-size: 2.8rem;
   text-transform: none;
-  color: var(--green3);
+  color: var(--white);
+  font-family: var(--PerfectlyNinetiesItalic);
 }
 
 .blogTitle:hover {
@@ -33,7 +34,7 @@
 
 .desc {
   font-size: 1.4rem;
-  color: var(--green3);
+  color: var(--white);
 }
 
 .btnContainer {
@@ -62,8 +63,8 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  border: 1px solid var(--green3);
-  background-color: var(--green3);
+  border: 1px solid var(--white);
+  background-color: var(--white);
   border-radius: 8px;
   padding: 2rem;
   transition: all 0.2s ease-in;
@@ -78,5 +79,5 @@
 
 .btn:hover {
   background-color: transparent;
-  color: var(--green3);
+  color: var(--white);
 }

@@ -150,7 +150,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
           {testimonial.review}
         </h4>
         <p
-          className={`absolute bottom-8 left-8 right-8 mt-2 text-sm italic ${
+          className={`${
             isActive ? styles.textNeutral700 : styles.textNeutral700
           }`}
         >

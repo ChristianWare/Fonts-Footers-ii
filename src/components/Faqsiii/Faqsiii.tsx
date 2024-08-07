@@ -67,6 +67,9 @@ const Faqsiii: FC<Props> = ({ bgColor = "", mapData, text = "" }) => {
                         {x.question}
                       </h3>
                     </div>
+                    <div className={styles.iconBox}>
+                      <Arrow2 width={30} height={30} className={styles.icon} />
+                    </div>
                   </div>
                   <div
                     className={

@@ -55,7 +55,7 @@ const HowItWorks = () => {
           <div className={styles.left}>
             <div className={styles.top}>
               <h2 className={`${styles.heading} h2v2`}>
-                Our approach to each project
+                <span className={styles.em}>Our approach</span> to each project
               </h2>
               <p className={styles.topText}>
                 This is our process for developing the perfect websites for your

@@ -54,7 +54,7 @@ export default async function Home() {
       <Testimonials />
       <Projects />
       <Pricing bgColor='tan' />
-      <Faqsiii mapData={homePageFaqs} text='General Questions' />
+      <Faqsiii mapData={homePageFaqs} text='Frequently Asked Questions' />
       <BlogSection data={data} />
       <ScrollText />
     </main>

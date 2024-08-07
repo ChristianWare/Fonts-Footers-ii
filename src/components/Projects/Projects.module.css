@@ -95,6 +95,8 @@
 .title {
   color: var(--black);
   text-align: center;
+  font-family: var(--PerfectlyNinetiesItalic);
+  font-size: 2.5rem;
 }
 
 .desc {

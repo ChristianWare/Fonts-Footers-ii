@@ -32,7 +32,8 @@
 
 .heading {
   color: var(--black);
-  /* width: 60%; */
+  width: 70%;
+  font-family: var(--PerfectlyNinetiesItalic);
 }
 
 .copy {
@@ -124,6 +125,15 @@
   display: grid;
   width: fit-content;
   margin-top: 0rem;
+}
+
+.icon {
+  transition: transform 0.2s ease-in-out;
+}
+
+.qaContainer.selected .iconBox .icon {
+  transform: rotate(90deg);
+  transform: all 0.2s ease-in;
 }
 
 @media screen and (max-width: 1068px) {

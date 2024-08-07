@@ -4,7 +4,6 @@ import Solutions from "../../../public/icons/solutions.svg";
 import Attention from "../../../public/icons/attention.svg";
 import Team from "../../../public/icons/team.svg";
 import LayoutWrapper from "../LayoutWrapper";
-import ScrollHorizontalText from "../ScrollHorizontalText/ScrollHorizontalText";
 
 const data = [
   {
@@ -40,7 +39,9 @@ const Usp = () => {
         <LayoutWrapper>
           <div className={styles.content}>
             <div className={styles.top}>
-              <h2 className={`${styles.heading} h2v3`}>Why Choose Us?</h2>
+              <h2 className={`${styles.heading} h2v3`}>
+                Why choose <span className={styles.em}> <br /> Fonts & Footers?</span>
+              </h2>
               <p className={styles.copy}>What sets us apart is our...</p>
             </div>
             <div className={styles.bottom}>

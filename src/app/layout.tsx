@@ -8,6 +8,7 @@ import CallToAction from "@/components/CallToAction/CallToAction";
 import { Toaster } from "react-hot-toast";
 import PlausibleProvider from "next-plausible";
 import ScrollIndicator from "@/components/ScrollIndicator/ScrollIndicator";
+import Footerii from "@/components/Footerii/Footerii";
 
 const interTight = Inter_Tight({
   subsets: ["latin"],
@@ -100,6 +101,7 @@ export default function RootLayout({
           <Nav />
           {children}
           <CallToAction />
+          <Footerii />
         </NoiseBg>
       </body>
     </html>

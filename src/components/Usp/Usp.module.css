@@ -21,6 +21,11 @@
   margin-right: auto;
 }
 
+.em {
+  font-family: var(--PerfectlyNinetiesItalic);
+  color: var(--white);
+}
+
 .copy {
   color: var(--white);
   opacity: 0.8;
@@ -33,6 +38,8 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
+  border-top: thick double var(--white);
+  padding-top: 1rem;
 }
 
 .card {
