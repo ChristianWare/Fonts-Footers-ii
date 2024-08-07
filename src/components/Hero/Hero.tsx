@@ -23,7 +23,9 @@ const Hero = () => {
               <FalseButton btnType='primary' text='Digital Agency' />
             </div>
             <h1 className={styles.heading}>
-              We Build Interactive and Immersive Websites
+              We build <em className={styles.em}>interactive</em> and{" "}
+              <em className={styles.em}> immersive </em>
+              websites
             </h1>
             <p className={styles.copy}>
               Are you looking for a web designer to make your business shine
@@ -45,7 +47,6 @@ const Hero = () => {
           </div>
           <div className={styles.right}>
             <ShuffleHero />
-            
           </div>
         </motion.div>
       </LayoutWrapper>

@@ -56,15 +56,18 @@ h6,
 span {
   font-family: var(--suisse);
   color: var(--black);
-  /* hyphens: auto; */
   text-transform: capitalize;
+}
+
+em {
+  line-height: 100%;
+  letter-spacing: -0.04em;
 }
 
 h1 {
   font-size: 8rem;
   line-height: 100%;
   font-weight: 500;
-  line-height: 1;
   letter-spacing: -0.04em;
 }
 

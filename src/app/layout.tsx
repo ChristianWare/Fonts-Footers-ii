@@ -47,6 +47,12 @@ const suissReg = localFont({
   display: "swap",
 });
 
+const PerfectlyNinetiesItalic = localFont({
+  src: "../../public/fonts/PerfectlyNinetiesItalic.woff2",
+  variable: "--PerfectlyNinetiesItalic",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: {
     default: "Fonts & Footers",
@@ -74,7 +80,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${interTight.variable} ${switzer.variable} ${lb.variable} ${cohere.variable} ${suisse.variable} ${suissReg.variable}`}
+        className={`${interTight.variable} ${switzer.variable} ${lb.variable} ${cohere.variable} ${suisse.variable} ${suissReg.variable} ${PerfectlyNinetiesItalic.variable}`}
       >
         <Toaster
           position='top-center'
