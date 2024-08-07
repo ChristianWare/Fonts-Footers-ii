@@ -62,6 +62,7 @@ span {
 em {
   line-height: 100%;
   letter-spacing: -0.04em;
+  font-family: var(--PerfectlyNinetiesItalic);
 }
 
 h1 {

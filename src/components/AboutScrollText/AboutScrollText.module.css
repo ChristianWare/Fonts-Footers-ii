@@ -46,6 +46,7 @@
 .heading {
   color: var(--green3);
   margin-bottom: 2rem;
+  text-transform: none !important;
 }
 
 .text {
