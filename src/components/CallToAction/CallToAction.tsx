@@ -1,9 +1,7 @@
 import Image from "next/image";
 import Button from "../Button/Button";
-import Footerii from "../Footerii/Footerii";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./CallToAction.module.css";
-import img from "../../../public/images/house10.png";
 import Img1 from "../../../public/images/house17.png";
 import Img2 from "../../../public/images/aboutHouse.png";
 
@@ -18,7 +16,6 @@ const data = [
     detail: "Unlimted Edits",
     src: Img2,
   },
- 
 ];
 
 const CallToAction = () => {
@@ -27,7 +24,8 @@ const CallToAction = () => {
       <LayoutWrapper>
         <div className={styles.top}>
           <h2 className={`${styles.heading}`}>
-            Ready to Transform Your Online Presence?
+            Ready to <span className={styles.em}>transform</span> your online
+            presence?
           </h2>
           <p className={styles.topCopy}>
             Boost your online sales with secure, user-friendly, and scalable

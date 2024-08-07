@@ -16,6 +16,10 @@
   font-size: 5.2rem;
 }
 
+.em {
+  font-family: var(--PerfectlyNinetiesItalic);
+}
+
 .topCopy {
   width: 55%;
   text-align: center;
@@ -88,8 +92,8 @@
 
 .detail {
   color: var(--green3);
-  font-size: 2rem;
-  font-family: var(--suisse);
+  font-size: 2.5rem;
+  font-family: var(--PerfectlyNinetiesItalic);
   text-align: center;
 }
 
