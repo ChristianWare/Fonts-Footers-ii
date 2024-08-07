@@ -14,7 +14,8 @@ const ServicesHero = () => {
               <FalseButton text='Services Info' btnType='primary' />
             </div>
             <h1 className={`${styles.heading} h2v3`}>
-              Transform Your Business with our Web Solutions
+              <span className={styles.em}>Transform</span> your business with
+              our <span className={styles.em2}> web solutions</span>
             </h1>
             <p className={styles.copy}>
               Welcome to Fonts & Footers, your source for high-performance,

@@ -12,6 +12,20 @@
 .falseBtnContainer {
   margin-bottom: 1rem;
 }
+.heading {
+  width: 90%;
+}
+
+.em {
+  font-family: var(--PerfectlyNinetiesItalic);
+  line-height: 100%;
+  text-decoration: underline;
+}
+
+.em2 {
+  line-height: 100%;
+  font-family: var(--PerfectlyNinetiesItalic);
+}
 
 .copy {
   color: var(--black);
@@ -53,6 +67,10 @@
   .content {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 0rem;
+  }
+
+  .heading {
+    width: 100%;
   }
 
   .left {
@@ -106,9 +124,7 @@
     width: 100%;
   }
 
-
-
-   .imgContainer {
+  .imgContainer {
     width: 100%;
   }
 }

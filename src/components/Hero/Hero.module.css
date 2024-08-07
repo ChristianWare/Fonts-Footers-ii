@@ -25,6 +25,7 @@
 .em {
   font-family: var(--PerfectlyNinetiesItalic);
   text-transform: lowercase;
+  line-height: 100%;
 }
 
 .copy {
