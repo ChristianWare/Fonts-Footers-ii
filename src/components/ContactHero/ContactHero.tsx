@@ -17,6 +17,11 @@ const ContactHero = () => {
               as you take the next step in transforming your vacation rental
               business.
             </p>
+            <br />
+            <b>
+              The details shared here allow us to dive into details on our
+              discovery call. Anything you share here remains confidential.
+            </b>
           </div>
           <div className={styles.right}>
             <ContactForm />

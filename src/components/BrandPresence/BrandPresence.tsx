@@ -46,7 +46,9 @@ const BrandPresence = () => {
     <section className={styles.container}>
       <LayoutWrapper>
         <div className={styles.top}>
-          <h2 className={styles.heading}>Our Values</h2>
+          <h2 className={styles.heading}>Our <span className={styles.em}>
+            values
+            </span></h2>
           <p className={styles.copy}>
             Our values act as a set of guiding principles and fundamental
             beliefs that influence the behaviors we demonstrate, which shape the

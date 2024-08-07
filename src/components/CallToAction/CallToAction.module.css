@@ -16,8 +16,13 @@
   font-size: 5.2rem;
 }
 
-.em {
+.em,
+.em2 {
   font-family: var(--PerfectlyNinetiesItalic);
+}
+
+.em {
+  text-decoration: underline;
 }
 
 .topCopy {

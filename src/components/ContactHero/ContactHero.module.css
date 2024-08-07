@@ -9,6 +9,10 @@
   margin-top: -13rem;
 }
 
+.heading {
+  font-family: var(--PerfectlyNinetiesItalic);
+}
+
 .copy {
   margin-top: 3rem;
 }

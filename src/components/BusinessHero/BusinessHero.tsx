@@ -32,7 +32,8 @@ const BusinessHero = () => {
         <div className={styles.content}>
           <div className={styles.left}>
             <h1 className={styles.heading}>
-              Professional Business Websites to Elevate Your Online Presence{" "}
+              <span className={styles.em}>Professional business websites</span>{" "}
+              to elevate your online presence{" "}
             </h1>
             <p className={styles.copy}>
               Custom-designed websites that showcase your business and attract

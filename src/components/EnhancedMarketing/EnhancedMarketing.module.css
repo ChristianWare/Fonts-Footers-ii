@@ -65,6 +65,11 @@
   border-radius: 10px;
 }
 
+.em {
+  font-family: var(--PerfectlyNinetiesItalic);
+  line-height: 100%;
+}
+
 .copy {
   margin-top: 1rem;
 }
@@ -76,6 +81,11 @@
 
 .card:nth-last-child() {
   margin-bottom: 0rem;
+}
+
+.title {
+  font-family: var(--PerfectlyNinetiesItalic);
+  font-size: 2.5rem;
 }
 
 .desc {

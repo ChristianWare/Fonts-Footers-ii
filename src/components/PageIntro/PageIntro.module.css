@@ -67,6 +67,7 @@
 .span {
   color: var(--green3);
   line-height: 100%;
+  font-family: var(--PerfectlyNinetiesItalic);
 }
 
 .greenOutline {

@@ -43,6 +43,11 @@
   margin-right: auto;
 }
 
+.em {
+  font-family: var(--PerfectlyNinetiesItalic);
+  color: var(--green3);
+}
+
 .copy {
   color: var(--tan);
 }
@@ -85,7 +90,9 @@
 
 .title {
   margin-bottom: 2rem;
-  color: var(--tan);
+  font-family: var(--PerfectlyNinetiesItalic);
+  font-size: 2.5rem;
+  color: var(--green3);
 }
 
 .desc {

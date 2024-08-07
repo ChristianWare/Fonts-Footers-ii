@@ -11,6 +11,13 @@
 
 .heading {
   font-size: 5.2rem;
+  line-height: 110%;
+}
+
+.em {
+  font-family: var(--PerfectlyNinetiesItalic);
+  line-height: 100%;
+  text-decoration: underline;
 }
 
 .copy {

@@ -1,9 +1,9 @@
 import LayoutWrapper from "@/components/LayoutWrapper";
 import styles from "./MPSection1.module.css";
 import FalseButton from "../FalseButton/FalseButton";
-import Scaleable from '../../../public/icons/scaleable.svg'
-import Performance from '../../../public/icons/performance.svg'
-import Secure from '../../../public/icons/secure.svg'
+import Scaleable from "../../../public/icons/scaleable.svg";
+import Performance from "../../../public/icons/performance.svg";
+import Secure from "../../../public/icons/secure.svg";
 
 const data = [
   {
@@ -32,8 +32,8 @@ const MPSection1 = () => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.top}>
-            <h2 className={`${styles.heading} h2v3`}>
-              Custom E-commerce Development{" "}
+            <h2 className={`${styles.heading} h2v2`}>
+              Custom <span className={styles.em}> E-commerce Development </span>
             </h2>
             {/* <p className={styles.copy}>
               Our custom e-commerce development services ensure that your online

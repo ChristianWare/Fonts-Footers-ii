@@ -6,17 +6,17 @@ import Img1 from "../../public/images/aboutHouse.png";
 
 export const benefits = [
   {
-    heading: "RESPONSIVE",
+    heading: "Responsive",
     description:
       "We build responsive websites that display on all of your devices and screen sizes by automatically adapting to the screen, whether it is a desktop, laptop, tablet, smartphone, or even a smart TV. With our responsive web design approach, all of the elements on your page are scaled appropriately, taking advantage of whatever screen size the user has. This means that your website will look good on any device.",
   },
   {
-    heading: "ACCESSIBLE",
+    heading: "Accessible",
     description:
       "Our websites are accessible, meaning that they are designed and developed so that people with disabilities can use them as well. We build them in a way that allows people with disabilities to perceive, understand, navigate, and interact with your website, especially if they use screen readers. It is essential that the Web be accessible in order to provide equal access and equal opportunity to people with diverse abilities.",
   },
   {
-    heading: "SEARCH ENGINE OPTIMIZED",
+    heading: "Search Engine Optimized",
     description:
       "SEO means Search Engine Optimization and is the process used to optimize a website's technical configuration so its pages can become easily findable, boosting your credibility, earning you more traffic, and improving your online visibility.",
   },

@@ -66,7 +66,7 @@ const EnhancedMarketing = () => {
           <div className={styles.right}>
             <div className={styles.rightTop}>
               <div className={styles.box}>
-                <h2 className={styles.heading}>Our Mission</h2>
+                <h2 className={styles.heading}>Our <span className={styles.em}>mission</span> </h2>
                 <p className={styles.copy}>
                   At Fonts and Footers, our mission is driven by a passion for
                   excellence, innovation, and empowering our clients to achieve

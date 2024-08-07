@@ -36,7 +36,8 @@ const Values = () => {
         <div className={styles.top}>
           <FalseButton text=' E-commerce Details' btnType='primary' />
           <h1 className={`${styles.heading}`}>
-            Custom E-Commerce Solutions For Your Business
+            Custom <span className={styles.em}> E-Commerce Solutions </span>
+            For Your Business
           </h1>
           <p className={styles.topCopy}>
             Boost your online sales with secure, user-friendly, and scalable

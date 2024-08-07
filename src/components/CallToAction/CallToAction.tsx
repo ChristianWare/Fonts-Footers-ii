@@ -24,8 +24,8 @@ const CallToAction = () => {
       <LayoutWrapper>
         <div className={styles.top}>
           <h2 className={`${styles.heading}`}>
-            Ready to <span className={styles.em}>transform</span> your online
-            presence?
+            Ready to <span className={styles.em}>transform</span> your{" "}
+            <span className={styles.em2}>online presence?</span>
           </h2>
           <p className={styles.topCopy}>
             Boost your online sales with secure, user-friendly, and scalable

@@ -51,7 +51,9 @@ const LongTermRelationships = () => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.top}>
-            <h2 className={styles.heading}>Our Vission</h2>
+            <h2 className={styles.heading}>
+              Our <span className={styles.em}>vission</span>
+            </h2>
           </div>
           <div className={styles.bottom}>
             {data.map((x, index) => (

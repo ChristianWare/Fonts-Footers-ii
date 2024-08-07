@@ -45,7 +45,8 @@ const Mission = () => {
         <div className={styles.top}>
           <FalseButton text='Booking Details' btnType='primary' />
           <h1 className={`${styles.heading} h2v2`}>
-            Custom Booking Platforms For Seemless Reservations
+            <span className={styles.em}>Custom booking platforms</span> for
+            seemless reservations
           </h1>
           <p className={styles.leftCopy}>
             Empower your business with efficient and user-friendly booking

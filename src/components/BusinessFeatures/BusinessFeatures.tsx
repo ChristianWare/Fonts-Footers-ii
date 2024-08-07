@@ -5,7 +5,6 @@ import styles from "./BusinessFeatures.module.css";
 import Hexagon from "../../../public/icons/hexagon.svg";
 import SEO from "../../../public/icons/seo.svg";
 import Design from "../../../public/icons/designii.svg";
-import Branding from "../../../public/icons/brandii.svg";
 import LeadGeneration from "../../../public/icons/lead.svg";
 import Social from "../../../public/icons/social.svg";
 import Multiple from "../../../public/icons/multiple.svg";

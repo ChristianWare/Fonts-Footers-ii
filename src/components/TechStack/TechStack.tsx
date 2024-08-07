@@ -57,9 +57,9 @@ const TechStack = () => {
       <LayoutWrapper>
         <div className={styles.top}>
           <FalseButton text='Our Technical Stack' btnType='primary' />
-
           <h2 className={`${styles.heading} h2v2`}>
-            Tools we use to build the perfect website
+            <span className={styles.em1}>Tools</span> we use to build the{" "}
+            <span className={styles.em2}>perfect website</span>
           </h2>
           <p className={styles.copy}>
             We use cutting-edge technology to craft websites that outperform

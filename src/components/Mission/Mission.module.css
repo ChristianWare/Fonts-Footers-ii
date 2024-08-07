@@ -16,6 +16,12 @@
   width: 60%;
   margin-top: 3rem;
   margin-bottom: 2rem;
+  line-height: 110%;
+}
+
+.em {
+  font-family: var(--PerfectlyNinetiesItalic);
+  text-decoration: underline;
 }
 
 .leftCopy {

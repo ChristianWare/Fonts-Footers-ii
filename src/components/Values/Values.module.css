@@ -17,6 +17,12 @@
   font-size: 5.2rem;
 }
 
+.em {
+  font-family: var(--PerfectlyNinetiesItalic);
+  line-height: 100%;
+  margin: 0rem 1rem;
+}
+
 .topCopy {
   width: 55%;
   text-align: center;
@@ -139,7 +145,7 @@
   .top {
     margin-top: -12rem;
   }
-  
+
   .heading {
     font-size: 4.5rem;
   }

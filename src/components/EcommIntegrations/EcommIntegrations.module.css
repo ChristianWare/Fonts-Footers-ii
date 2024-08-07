@@ -1,6 +1,6 @@
 .top {
   display: grid;
-  grid-template-columns: 1.5fr 2fr;
+  grid-template-columns: 2fr 1.5fr;
 }
 
 .topLeft {
@@ -72,9 +72,6 @@
 
 .index {
   font-size: 10rem;
-  font-weight: 400;
-  font-variation-settings: "cuts" 100, "move" 100;
-  font-variant-ligatures: common-ligatures;
 }
 
 .feature {
