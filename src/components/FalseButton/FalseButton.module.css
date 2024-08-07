@@ -19,13 +19,15 @@
 }
 
 .primary {
-  color: var(--green);
   font-family: var(--suisse);
+  color: var(--green);
   font-size: 2rem;
   padding: 0;
 }
 
 .secondary {
+  font-family: var(--PerfectlyNinetiesItalic);
+  line-height: 100%;
   color: var(--green);
   background-color: var(--green3);
   border: 1px solid var(--lightBlack);

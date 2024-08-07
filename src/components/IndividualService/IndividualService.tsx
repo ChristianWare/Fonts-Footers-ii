@@ -2,10 +2,8 @@ import LayoutWrapper from "../LayoutWrapper";
 import styles from "./IndividualService.module.css";
 import Booking from "../../../public/icons/booking.svg";
 import Business from "../../../public/icons/business.svg";
-import Landing from "../../../public/icons/landing.svg";
 import Cart from "../../../public/icons/cart.svg";
 import Link from "next/link";
-import Button from "../Button/Button";
 import ServicesSectionii from "../ServicesSectionii/ServicesSectionii";
 
 const IndividualService = () => {
