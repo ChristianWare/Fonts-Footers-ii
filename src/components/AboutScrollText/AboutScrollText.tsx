@@ -52,7 +52,7 @@ const AboutScrollText = () => {
             <h2 className={`${styles.heading} h2v2`}>
               What is
               <br />
-              <em> Fonts & Footers?</em>
+              <span className={styles.span}> Fonts & Footers?</span>
             </h2>
             <p className={styles.text}>
               Fonts & Footers is a digital agency focusing on web design, web

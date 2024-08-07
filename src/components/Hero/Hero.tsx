@@ -23,8 +23,8 @@ const Hero = () => {
               <FalseButton btnType='primary' text='Digital Agency' />
             </div>
             <h1 className={styles.heading}>
-              We build <em className={styles.em}>interactive</em> and{" "}
-              <em className={styles.em}> immersive </em>
+              We build <span className={styles.em}>interactive</span> and{" "}
+              <span className={styles.em}> immersive </span>
               websites
             </h1>
             <p className={styles.copy}>

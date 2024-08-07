@@ -59,7 +59,7 @@ span {
   text-transform: capitalize;
 }
 
-em {
+.span {
   line-height: 100%;
   letter-spacing: -0.04em;
   font-family: var(--PerfectlyNinetiesItalic);

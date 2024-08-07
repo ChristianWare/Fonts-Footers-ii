@@ -49,6 +49,13 @@
   text-transform: none !important;
 }
 
+.span {
+  line-height: 100%;
+  letter-spacing: -0.04em;
+  font-family: var(--PerfectlyNinetiesItalic);
+  color: var(--green3);
+}
+
 .text {
   color: var(--green3);
 }
