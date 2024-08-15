@@ -2,7 +2,6 @@ import LayoutWrapper from "../LayoutWrapper";
 import styles from "./AboutScrollText.module.css";
 import Author from "../../../public/images/house19.png";
 import Image from "next/image";
-import FalseButton from "../FalseButton/FalseButton";
 
 const AboutScrollText = () => {
   return (

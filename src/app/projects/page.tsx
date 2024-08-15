@@ -34,12 +34,12 @@ export default async function page() {
       <PageIntro
         text='Projects'
         h1Color='black'
-        copy="Here are some commonly asked questions and their answers below. If you don't see your questions here, call us any time."
+        copy="Here are some of our most recent projects."
         copyColor='black'
         orientation='center'
         bgColor='tan'
       />
-      <div style={{ marginTop: "-300px" }}>
+      <div style={{ marginTop: "-350px" }}>
         <Projects borderBottom='borderBottomNone' />
       </div>
       <TechStack />
