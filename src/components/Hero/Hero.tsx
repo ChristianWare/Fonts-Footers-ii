@@ -6,8 +6,8 @@ import Button from "../Button/Button";
 import { motion } from "framer-motion";
 import ShuffleHero from "../ShuffleHero/ShuffleHero";
 import FalseButton from "../FalseButton/FalseButton";
-import Image from "next/image";
-import img from "../../../public/images/house10.png";
+import animationData from "../../../public/lottie/hero.json";
+import Lottie from "lottie-react";
 
 const Hero = () => {
   return (
@@ -46,7 +46,10 @@ const Hero = () => {
             </div>
           </div>
           <div className={styles.right}>
-            <ShuffleHero />
+            {/* <ShuffleHero /> */}
+            <div className={styles.lottieBox}>
+              <Lottie animationData={animationData} className={styles.lottie} />
+            </div>
           </div>
         </motion.div>
       </LayoutWrapper>

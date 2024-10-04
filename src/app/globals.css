@@ -11,7 +11,8 @@
   --gray: #dfdddd;
   --gray2: #d7d0d0;
   --gray3: #93969e;
-  --purple: #7b08ffcc;
+  --purple: #755bf4;
+  --yellow: #fbda68;
 }
 
 * {
@@ -66,7 +67,7 @@ span {
 }
 
 h1 {
-  font-size: 8rem;
+  font-size: 7rem;
   line-height: 100%;
   font-weight: 500;
   letter-spacing: -0.04em;

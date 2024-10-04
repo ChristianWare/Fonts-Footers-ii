@@ -34,7 +34,7 @@ const data = [
 
 const Usp = () => {
   return (
-    <>
+    
       <section className={styles.container}>
         <LayoutWrapper>
           <div className={styles.content}>
@@ -58,7 +58,6 @@ const Usp = () => {
           </div>
         </LayoutWrapper>
       </section>
-    </>
   );
 };
 export default Usp;

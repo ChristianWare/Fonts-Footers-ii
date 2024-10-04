@@ -42,9 +42,9 @@ export default async function Home() {
   return (
     <main>
       <Hero />
-      {/* <ScrollHorizontalText text='FONTS & FOOTERS' bottomBorder={true} /> */}
-      {/* <Slide/r /> */}
-      {/* <ScrollHorizontalText text='FONTS & FOOTERS' /> */}
+      <ScrollHorizontalText text='FONTS & FOOTERS' bottomBorder={true} />
+      <Slider />
+      <ScrollHorizontalText text='FONTS & FOOTERS' />
       <AboutScrollText />
       <ServicesSection />
       <EveryPlan />
