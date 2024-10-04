@@ -44,7 +44,8 @@ const Problem = () => {
         <div className={styles.top}>
           <h1 className={`${styles.heading} h2v2`}>
             Are you <span className={styles.em}>unhappy</span> with your current
-            website?
+            website, or do you not have one{" "}
+            <span className={styles.em}> at all?</span>
           </h1>
           <p className={styles.leftCopy}>
             If so, then these problems probably sound familiar to you:
@@ -64,18 +65,18 @@ const Problem = () => {
           </div>
           <div className={styles.right}>
             {data.map((x, index) => (
-              <motion.div
-                variants={fadeIn(index % 2 === 0 ? "up" : "left", 0.3)}
-                initial='hidden'
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0.3 }}
+              <div
+                // variants={fadeIn(index % 2 === 0 ? "up" : "left", 0.3)}
+                // initial='hidden'
+                // whileInView={"show"}
+                // viewport={{ once: false, amount: 0.3 }}
                 key={index}
                 className={styles.card}
               >
                 {x.icon}
                 <h4 className={styles.title}>{x.title}</h4>
                 <p className={styles.description}>{x.description}</p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>

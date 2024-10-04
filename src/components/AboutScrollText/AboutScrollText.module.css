@@ -1,5 +1,5 @@
 .bgColor {
-  background-color: var(--black);
+  background-color: var(--tan);
 }
 
 .content {
@@ -10,7 +10,7 @@
 
 .lottieBox {
   width: 100%;
-  height: 550px;
+  height: 400px;
 }
 
 .lottie {
@@ -19,7 +19,7 @@
 }
 
 .heading {
-  color: var(--green3);
+  /* color: var(--green3); */
   margin-bottom: 2rem;
   text-transform: none !important;
 }
@@ -28,18 +28,22 @@
   line-height: 100%;
   letter-spacing: -0.04em;
   font-family: var(--PerfectlyNinetiesItalic);
-  color: var(--green3);
+  /* color: var(--green3); */
 }
 
 .text {
-  color: var(--green3);
+  /* color: var(--green3); */
 }
 
 .authorDetails {
-  color: var(--green3);
+  /* color: var(--green3); */
   font-size: 2rem;
   font-family: var(--suisse);
   margin-top: 2rem;
+}
+
+.btnContainer {
+  margin-top: 3rem;
 }
 
 @media screen and (max-width: 968px) {
@@ -73,8 +77,10 @@
     margin-right: auto;
   }
 
-  .right {
-    order: -1;
+  .btnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -82,5 +88,11 @@
   .imgContainer {
     width: 100%;
     height: 300px;
+  }
+
+  .btnContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
   }
 }

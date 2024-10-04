@@ -12,8 +12,9 @@
 }
 
 .heading {
-  text-align: center;
+  text-align: right;
   width: 60%;
+  margin-left: auto;
   margin-top: 3rem;
   margin-bottom: 2rem;
   line-height: 110%;
@@ -22,10 +23,12 @@
 .em {
   font-family: var(--PerfectlyNinetiesItalic);
   text-decoration: underline;
+  line-height: 1;
 }
 
 .leftCopy {
-  text-align: center;
+  text-align: right;
+  margin-left: auto;
 }
 
 .bottom {
@@ -92,6 +95,10 @@
   .heading {
     width: 90%;
     text-align: center;
+  }
+
+  .leftCopy {
+    margin-right: auto;
   }
 
   .bottom {

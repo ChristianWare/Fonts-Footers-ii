@@ -1,7 +1,10 @@
+"use client";
+
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./AboutScrollText.module.css";
 import animationData from "../../../public/lottie/agency.json";
 import Lottie from "lottie-react";
+import Button from "../Button/Button";
 
 const AboutScrollText = () => {
   return (
@@ -34,9 +37,16 @@ const AboutScrollText = () => {
               involves using pure HTML, CSS, and Javascript code, ensuring a
               sleek and efficient website.
             </p>
-            {/* <p className={styles.authorDetails}>
+            <p className={styles.authorDetails}>
               ~ Chris Ware, Founder & CEO ~
-            </p> */}
+            </p>
+            <div className={styles.btnContainer}>
+              <Button
+                text='More About Us'
+                href='/about'
+                btnType='secondary'
+              />{" "}
+            </div>
           </div>
         </div>
       </LayoutWrapper>
