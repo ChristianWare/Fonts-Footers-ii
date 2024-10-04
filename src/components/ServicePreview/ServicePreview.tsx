@@ -3,16 +3,16 @@
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./ServicePreview.module.css";
 import Cart from "../../../public/icons/cart.svg";
-import Business from "../../../public/icons/business.svg";
-import Booking from "../../../public/icons/booking.svg";
 import Button from "../Button/Button";
 import Image from "next/image";
-
+import Ecomm from "../../../public/images/ecomm.png";
+import Business from "../../../public/images/business.png";
+import Booking from "../../../public/images/bookingii.png";
 
 const ServicePreview = () => {
   const businessWebsiteFeatures = [
     {
-      icon: <Cart width={150} height={150} className={styles.icon} />,
+      icon: Ecomm,
       title: "E-Commerce Stores",
       description:
         "We offer bespoke design services that reflect your brand’s identity and provide an engaging user experience.",
@@ -32,7 +32,7 @@ const ServicePreview = () => {
       ],
     },
     {
-      icon: <Business width={150} height={150} className={styles.icon} />,
+      icon: Business,
       title: "Business Websites",
       description:
         "We help strengthen your brand’s visual identity by creating cohesive and attractive designs that leave a lasting impression on your audience.",
@@ -53,7 +53,7 @@ const ServicePreview = () => {
     },
 
     {
-      icon: <Booking width={150} height={150} className={styles.icon} />,
+      icon: Booking,
       title: "Booking Platforms",
       description:
         "Our websites are built with SEO best practices to ensure that your business ranks well in search engine results, driving organic traffic to your site.",
@@ -87,7 +87,16 @@ const ServicePreview = () => {
               <div className={styles.content}>
                 <div className={styles.left}>
                   <h3 className={styles.titleMobile}>{x.title}</h3>
-                  <div className={styles.iconContainer}>{x.icon}</div>
+                  {/* <div className={styles.iconContainer}> */}
+                    <div className={styles.imgContainer}>
+                      <Image
+                        src={x.icon}
+                        alt='image'
+                        fill
+                        className={styles.img}
+                      />
+                    </div>
+                  {/* </div> */}
                 </div>
                 <div className={styles.right}>
                   <h3 className={styles.title}>{x.title}</h3>
@@ -103,13 +112,9 @@ const ServicePreview = () => {
                   </ul>
                 </div>
               </div>
-                  <div className={styles.btnContainer}>
-                    <Button
-                      text='Learn More'
-                      href='/'
-                      btnType='secondary'
-                    />{" "}
-                  </div>
+              <div className={styles.btnContainer}>
+                <Button text='Learn More' href='/' btnType='secondary' />{" "}
+              </div>
             </div>
           ))}
         </div>

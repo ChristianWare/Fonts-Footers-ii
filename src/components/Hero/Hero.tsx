@@ -35,12 +35,12 @@ const Hero = () => {
               <Button
                 text='Schedule a Call'
                 href='/contact/#schedule'
-                btnType='primaryii'
+                btnType='secondary'
               />
               <Button
                 text='Our Services'
                 href='/services'
-                btnType='secondary'
+                btnType='primaryiii'
               />
             </div>
           </div>
