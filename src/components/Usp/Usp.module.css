@@ -1,5 +1,6 @@
 .container {
-  background-color: var(--lightBlack);
+  background-color: var(--tan);
+  border-top: 1px solid var(--lightBlack);
 }
 
 .top {
@@ -13,7 +14,7 @@
 }
 
 .heading {
-  color: var(--white);
+  color: var(--black);
   border-bottom: 4px solid var(--red);
   text-align: center;
   width: fit-content;
@@ -23,11 +24,11 @@
 
 .em {
   font-family: var(--PerfectlyNinetiesItalic);
-  color: var(--white);
+  color: var(--black);
 }
 
 .copy {
-  color: var(--white);
+  color: var(--black);
   opacity: 0.8;
   text-align: center;
   font-weight: 500;
@@ -38,12 +39,12 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
-  border-top: thick double var(--white);
   padding-top: 1rem;
 }
 
 .card {
   padding: 2rem;
+  border: 1px solid var(--lightBlack);
   background-color: var(--white);
   border-radius: 10px;
   display: flex;
@@ -57,6 +58,7 @@
   margin-bottom: 2rem;
   text-align: center;
   opacity: 0.7;
+  color: var(--purple);
 }
 
 .desc {
@@ -64,11 +66,11 @@
 }
 
 .icon {
-  color: var(--black);
+  color: var(--purple);
   margin-top: 1rem;
-  width: 3.5rem;
-  height: 3.5rem;
-  opacity: 0.7;
+  width: 5rem;
+  height: 5rem;
+  /* opacity: 0.7; */
 }
 
 @media screen and (max-width: 1100px) {

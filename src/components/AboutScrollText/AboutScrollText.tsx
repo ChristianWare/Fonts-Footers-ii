@@ -18,7 +18,7 @@ const AboutScrollText = () => {
           </div>
           <div className={styles.right}>
             <h2 className={`${styles.heading} h2v2`}>
-              What is
+              What exactly is
               <br />
               <span className={styles.span}> Fonts & Footers?</span>
             </h2>

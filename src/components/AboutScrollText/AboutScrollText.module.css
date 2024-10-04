@@ -1,5 +1,6 @@
 .bgColor {
   background-color: var(--tan);
+  border-top: 1px solid var(--lightBlack);
 }
 
 .content {

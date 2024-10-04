@@ -43,9 +43,9 @@ export default async function Home() {
       <Problem />
       <Solution />
       <AboutScrollText />
+      <Usp />
       <ServicesSection />
       <EveryPlan />
-      <Usp />
       <TechStack />
       <HowItWorks />
       <Testimonials />

@@ -10,25 +10,25 @@ const data = [
     id: 1,
     usp: "Expert Team of Developers",
     desc: "Skilled professionals with a passion for web design and development.",
-    icon: <Team className={styles.icon} width={60} height={60} />,
+    icon: <Team className={styles.icon} width={80} height={80} />,
   },
   {
     id: 2,
     usp: "Personalized Attention",
     desc: "Building strong relationships with clients to understand their business, goals, and audience.",
-    icon: <Attention className={styles.icon} width={60} height={60} />,
+    icon: <Attention className={styles.icon} width={80} height={80} />,
   },
   {
     id: 3,
     usp: "Innovative & Effective Solutions",
     desc: "Combining the latest technology with creative ideas for top-notch results.",
-    icon: <Solutions className={styles.icon} width={60} height={60} />,
+    icon: <Solutions className={styles.icon} width={80} height={80} />,
   },
   {
     id: 4,
     usp: "Proven Track Record of Success",
     desc: "A portfolio of successful projects and satisfied clients.",
-    icon: <Track className={styles.icon} width={60} height={60} />,
+    icon: <Track className={styles.icon} width={80} height={80} />,
   },
 ];
 

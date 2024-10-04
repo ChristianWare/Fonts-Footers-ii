@@ -64,19 +64,19 @@ const Problem = () => {
             </div>
           </div>
           <div className={styles.right}>
-            {data.map((x, index) => (
-              <div
-                // variants={fadeIn(index % 2 === 0 ? "up" : "left", 0.3)}
-                // initial='hidden'
-                // whileInView={"show"}
-                // viewport={{ once: false, amount: 0.3 }}
+            {data.map((x: any, index) => (
+              <motion.div
+                variants={fadeIn(index % 2 === 0 ? "up" : "left", 0.3)}
+                initial='hidden'
+                whileInView={"show"}
+                viewport={{ once: true, amount: 0.3 }}
                 key={index}
                 className={styles.card}
               >
                 {x.icon}
                 <h4 className={styles.title}>{x.title}</h4>
                 <p className={styles.description}>{x.description}</p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
