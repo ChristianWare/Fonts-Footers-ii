@@ -42,11 +42,11 @@ const Problem = () => {
     <section className={styles.container}>
       <LayoutWrapper>
         <div className={styles.top}>
-          <h1 className={`${styles.heading} h2v2`}>
+          <h2 className={`${styles.heading} h2v2`}>
             Are you <span className={styles.em}>unhappy</span> with your current
             website, or do you not have one{" "}
             <span className={styles.em}> at all?</span>
-          </h1>
+          </h2>
           <p className={styles.leftCopy}>
             If so, then these problems probably sound familiar to you:
           </p>

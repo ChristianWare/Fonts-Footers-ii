@@ -67,7 +67,7 @@
 @media screen and (max-width: 1168px) {
   .content {
     grid-template-columns: repeat(1, 1fr);
-    gap: 3rem;
+    gap: 0rem;
   }
 
   .left {
@@ -126,7 +126,10 @@
 @media screen and (max-width: 568px) {
   .content {
     margin-top: -12rem;
-    grid-gap: 4rem;
+  }
+
+  .copy {
+    text-align: left;
   }
 
   .imgContainer {
@@ -136,5 +139,24 @@
 
   .btnContainer {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .lottieBox {
+    position: relative;
+    top: -50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .lottieBox {
+    position: relative;
+    top: -100px;
+  }
+}
+
+@media screen and (max-width: 368px) {
+  .lottieBox {
+    position: relative;
+    top: -120px;
   }
 }
