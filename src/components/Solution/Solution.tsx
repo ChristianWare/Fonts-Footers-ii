@@ -29,7 +29,7 @@ const Solution = () => {
           <div className={styles.left}>
             <h2 className={`${styles.heading} h2v2`}>
               Work with <span className={styles.em}> Fonts & Footers</span> and
-              we&apos;ll provide <br /> these solutions
+              we&apos;ll provide these solutions
             </h2>
             <p className={styles.copy}>
               Our e-commerce websites are designed to provide a seamless

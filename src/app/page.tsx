@@ -16,6 +16,7 @@ import Usp from "@/components/Usp/Usp";
 import TechStack from "@/components/TechStack/TechStack";
 import Problem from "@/components/Problem/Problem";
 import Solution from "@/components/Solution/Solution";
+import ServicePreview from "@/components/ServicePreview/ServicePreview";
 
 async function getData() {
   const query = `
@@ -43,17 +44,18 @@ export default async function Home() {
       <Problem />
       <Solution />
       <AboutScrollText />
+      <ServicePreview />
+      {/* <ServicesSection /> */}
       <Usp />
-      <ServicesSection />
+      {/* <HowItWorks />
       <EveryPlan />
       <TechStack />
-      <HowItWorks />
       <Testimonials />
       <Projects />
       <Pricing bgColor='tan' />
       <Faqsiii mapData={homePageFaqs} text='Frequently Asked Questions' />
       <BlogSection data={data} />
-      <ScrollText />
+      <ScrollText /> */}
     </main>
   );
 }

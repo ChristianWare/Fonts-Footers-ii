@@ -16,7 +16,7 @@ const services = [
   },
   {
     id: 85,
-    processName: "E-Commerce Solutions",
+    processName: "E-Commerce Stores",
     processDescription:
       "Secure, easy-to-use online stores optimized for conversions and sales growth.",
     icon: <Cart className={styles.icon2} />,
@@ -54,7 +54,9 @@ const ServicesSection = () => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.right}>
-            <h2 className={styles.heading}>What we build</h2>
+            <h2 className={styles.heading}>
+              What we can build <span className={styles.em}> for you</span>{" "}
+            </h2>
           </div>
           <div className={styles.left}>
             {services.map((x) => (
@@ -63,9 +65,9 @@ const ServicesSection = () => {
                 key={x.id}
                 className={styles.processContainer}
               >
-                <>
+                <div>
                   <div className={styles.processTop}>
-                    {x.processName.length >= 1 && <>{x.icon}</>}
+                    {x.processName.length >= 1 && <div>{x.icon}</div>}
                   </div>
                   <div className={styles.processBottom}>
                     {x.processName.length >= 1 && (
@@ -76,7 +78,7 @@ const ServicesSection = () => {
                       {x.processDescription}
                     </p>
                   </div>
-                </>
+                </div>
               </Link>
             ))}
           </div>

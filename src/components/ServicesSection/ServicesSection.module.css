@@ -1,5 +1,6 @@
 .container {
   background-color: var(--tan);
+  border-top: 1px solid var(--lightBlack);
 }
 
 .content {
@@ -119,13 +120,17 @@
 .heading {
   color: var(--black);
   line-height: 100% !important;
-  text-align: right;
-  /* margin-bottom: 3rem; */
-  /* width: 60%; */
-  text-align: right;
-  margin-left: auto;
-  border-bottom: thick double var(--gray);
-  padding-bottom: 1rem;
+  /* text-align: center; */
+  width: 40%;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  margin-bottom: 3rem;
+}
+
+.em {
+  font-family: var(--PerfectlyNinetiesItalic);
+  text-decoration: underline;
+  line-height: 1;
 }
 
 .ampersand {
