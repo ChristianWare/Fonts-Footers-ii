@@ -6,8 +6,6 @@ import BlogSection from "@/components/BlogSection/BlogSection";
 import Testimonials from "@/components/Testimonials/Testimonials";
 import { client } from "@/lib/sanity";
 import { simpleBlogCard } from "@/lib/interface";
-import ScrollHorizontalText from "@/components/ScrollHorizontalText/ScrollHorizontalText";
-import Slider from "@/components/Slider/Slider";
 import ServicesSection from "@/components/ServicesSection/ServicesSection";
 import AboutScrollText from "@/components/AboutScrollText/AboutScrollText";
 import Faqsiii from "@/components/Faqsiii/Faqsiii";
@@ -16,8 +14,8 @@ import HowItWorks from "@/components/HowItWorks/HowItWorks";
 import { homePageFaqs } from "@/lib/data";
 import Usp from "@/components/Usp/Usp";
 import TechStack from "@/components/TechStack/TechStack";
-import ShuffleHero from "@/components/ShuffleHero/ShuffleHero";
-import LayoutWrapper from "@/components/LayoutWrapper";
+import Problem from "@/components/Problem/Problem";
+import Solution from "@/components/Solution/Solution";
 
 async function getData() {
   const query = `
@@ -42,9 +40,8 @@ export default async function Home() {
   return (
     <main>
       <Hero />
-      <ScrollHorizontalText text='FONTS & FOOTERS' bottomBorder={true} />
-      <Slider />
-      <ScrollHorizontalText text='FONTS & FOOTERS' />
+      <Problem />
+      <Solution />
       <AboutScrollText />
       <ServicesSection />
       <EveryPlan />
