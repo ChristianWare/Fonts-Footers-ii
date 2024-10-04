@@ -9,6 +9,8 @@ import Launch from "../../../public/icons/launch.svg";
 import Support from "../../../public/icons/support.svg";
 import Consult from "../../../public/icons/consult.svg";
 import Notes from "../../../public/icons/notes.svg";
+import animationData from "../../../public/lottie/howitworks.json";
+import Lottie from "lottie-react";
 
 const process = [
   {
@@ -55,46 +57,17 @@ const HowItWorks = () => {
           <div className={styles.left}>
             <div className={styles.top}>
               <h2 className={`${styles.heading} h2v2`}>
-                <span className={styles.em}>Our approach</span> to each project
+                How does it work?
+                {/* <span className={styles.em}>How </span> to each project */}
               </h2>
               <p className={styles.topText}>
                 This is our process for developing the perfect websites for your
                 brand. We Keep you in the loop 100% of the time.
               </p>
             </div>
-            <svg
-              width='0'
-              height='0'
-              xmlns='http://www.w3.org/2000/svg'
-              version='1.1'
-            >
-              <defs>
-                <filter id='goo'>
-                  <feGaussianBlur
-                    in='SourceGraphic'
-                    stdDeviation='5'
-                    result='blur'
-                  />
-                  <feColorMatrix
-                    in='blur'
-                    mode='matrix'
-                    values='1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9'
-                    result='goo'
-                  />
-                  <feComposite in='SourceGraphic' in2='goo' operator='atop' />
-                </filter>
-              </defs>
-            </svg>
-            <div className={styles.miscContainer}>
-              <div className={styles.imgContainer}>
-                <Image
-                  src={Process}
-                  alt=''
-                  layout='fill'
-                  objectFit='cover'
-                  className={styles.img}
-                />
-              </div>
+
+            <div className={styles.lottieBox}>
+              <Lottie animationData={animationData} className={styles.lottie} />
             </div>
           </div>
           <div className={styles.right}>

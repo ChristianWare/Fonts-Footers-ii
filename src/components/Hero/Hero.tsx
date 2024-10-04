@@ -45,7 +45,6 @@ const Hero = () => {
             </div>
           </div>
           <div className={styles.right}>
-            {/* <ShuffleHero /> */}
             <div className={styles.lottieBox}>
               <Lottie animationData={animationData} className={styles.lottie} />
             </div>
