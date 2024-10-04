@@ -4,7 +4,6 @@ import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Hero.module.css";
 import Button from "../Button/Button";
 import { motion } from "framer-motion";
-import ShuffleHero from "../ShuffleHero/ShuffleHero";
 import FalseButton from "../FalseButton/FalseButton";
 import animationData from "../../../public/lottie/hero.json";
 import Lottie from "lottie-react";

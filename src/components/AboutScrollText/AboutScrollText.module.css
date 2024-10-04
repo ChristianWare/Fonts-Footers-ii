@@ -8,37 +8,14 @@
   grid-gap: 5rem;
 }
 
-.miscContainer {
-  height: 100%;
-  filter: url("#goo");
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.imgContainer {
-  position: relative;
-  width: 80%;
-  height: 100%;
-  filter: url("#goo");
-  clip-path: polygon(0% 15%, 15% 0%, 100% 0%, 100% 85%, 85% 100%, 0% 100%);
-}
-
-.imgContainer::after {
-  content: "";
-  position: absolute;
+.lottieBox {
   width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    to bottom,
-    rgb(123, 8, 255, 0.2),
-    rgb(123, 8, 255, 0.8)
-  );
-  clip-path: polygon(0% 15%, 15% 0%, 100% 0%, 100% 85%, 85% 100%, 0% 100%);
+  height: 550px;
 }
 
-.img {
-  object-fit: cover;
+.lottie {
+  height: 100%;
+  width: 100%;
 }
 
 .heading {
