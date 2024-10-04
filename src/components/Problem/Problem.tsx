@@ -61,7 +61,6 @@ const Problem = () => {
                 className={styles.img}
               />
             </div>
-            <div className={styles.z3}></div>
           </div>
           <div className={styles.right}>
             {data.map((x, index) => (

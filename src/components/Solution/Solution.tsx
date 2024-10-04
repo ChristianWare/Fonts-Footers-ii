@@ -28,8 +28,8 @@ const Solution = () => {
         <div className={styles.content}>
           <div className={styles.left}>
             <h2 className={`${styles.heading} h2v2`}>
-              Work with us and we&apos;ll provide a{" "}
-              <span className={styles.em}>solution</span>
+              Work with us and we&apos;ll provide these{" "}
+              <span className={styles.em}>solutions</span>
             </h2>
             <p className={styles.copy}>
               Our e-commerce websites are designed to provide a seamless
