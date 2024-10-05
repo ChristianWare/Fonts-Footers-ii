@@ -30,7 +30,6 @@
   margin-bottom: 2rem;
   line-height: 100%;
   color: var(--black);
-  /* text-transform: capitalize; */
 }
 
 .em {
@@ -41,33 +40,6 @@
   color: var(--black);
   width: 80%;
   margin-bottom: 2rem;
-}
-
-.miscContainer {
-  filter: url("#goo");
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.imgContainer {
-  position: relative;
-  width: 80%;
-  height: 400px;
-  filter: url("#goo");
-  clip-path: polygon(0% 15%, 15% 0%, 100% 0%, 100% 85%, 85% 100%, 0% 100%);
-}
-
-.imgContainer::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 400px;
-  background: linear-gradient(
-    to bottom,
-    rgb(123, 8, 255, 0.2),
-    rgb(123, 8, 255, 0.8)
-  );
-  clip-path: polygon(0% 15%, 15% 0%, 100% 0%, 100% 85%, 85% 100%, 0% 100%);
 }
 
 .rtContainer {
@@ -87,8 +59,8 @@
 .card {
   padding: 3rem;
   z-index: 999;
-  background-color: var(--black);
-  border: 1px solid var(--tan);
+  background-color: var(--purple);
+  border: 1px solid var(--black);
   border-radius: 10px;
 }
 
@@ -109,14 +81,17 @@
 }
 
 .icon {
-  color: var(--green3);
-  width: 3.5rem;
-  height: 3.5rem;
+  color: var(--tan);
+  width: 5rem;
+  height: 5rem;
+  padding: 1rem;
+  border: 1px solid var(--tan);
+  border-radius: 50%;
 }
 
 .processName {
   color: var(--tan);
-  font-family: var(--PerfectlyNinetiesItalic);
+  /* font-family: var(--PerfectlyNinetiesItalic); */
   font-size: 2.5rem;
 }
 
@@ -156,24 +131,9 @@
     margin-left: auto;
     margin-right: auto;
   }
-
-  .miscContainer {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    justify-content: center;
-  }
-
-  .imgContainer {
-    width: 70%;
-  }
 }
 
 @media screen and (max-width: 768px) {
-  .imgContainer {
-    width: 80%;
-  }
-
   .topText {
     width: 100%;
   }
@@ -190,9 +150,5 @@
 
   .boxLeft {
     margin-left: 0rem;
-  }
-
-  .imgContainer {
-    width: 100%;
   }
 }

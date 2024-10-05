@@ -8,13 +8,13 @@
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 50%;
   /* margin-bottom: 5rem; */
 }
 
 .em {
   font-family: var(--PerfectlyNinetiesItalic);
-  text-decoration: underline;
+  /* text-decoration: underline; */
   line-height: 1;
 }
 

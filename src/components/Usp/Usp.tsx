@@ -1,9 +1,14 @@
+'use client'
+
 import styles from "./Usp.module.css";
 import Track from "../../../public/icons/track.svg";
 import Solutions from "../../../public/icons/solutions.svg";
 import Attention from "../../../public/icons/attention.svg";
 import Team from "../../../public/icons/team.svg";
 import LayoutWrapper from "../LayoutWrapper";
+import animationData from "../../../public/lottie/usp.json";
+import Lottie from "lottie-react";
+
 
 const data = [
   {
@@ -34,30 +39,36 @@ const data = [
 
 const Usp = () => {
   return (
-    
-      <section className={styles.container}>
-        <LayoutWrapper>
-          <div className={styles.content}>
-            <div className={styles.top}>
-              <h2 className={`${styles.heading} h2v3`}>
-                Why choose <span className={styles.em}> <br /> Fonts & Footers?</span>
-              </h2>
-              <p className={styles.copy}>What sets us apart is our...</p>
+    <section className={styles.container}>
+      <LayoutWrapper>
+        <div className={styles.content}>
+          <div className={styles.top}>
+            <div className={styles.lottieBox}>
+              <Lottie animationData={animationData} className={styles.lottie} />
             </div>
-            <div className={styles.bottom}>
-              {data.map((x) => (
-                <div key={x.id} className={styles.card}>
-                  {x.icon}
-                  <div>
-                    <h3 className={styles.usp}>{x.usp}</h3>
-                    <p className={styles.desc}>{x.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
+            <h2 className={`${styles.heading} h2v3`}>
+              Why choose{" "}
+              <span className={styles.em}>
+                {" "}
+                <br /> Fonts & Footers?
+              </span>
+            </h2>
+            <p className={styles.copy}>What sets us apart is our...</p>
           </div>
-        </LayoutWrapper>
-      </section>
+          <div className={styles.bottom}>
+            {data.map((x) => (
+              <div key={x.id} className={styles.card}>
+                {x.icon}
+                <div>
+                  <h3 className={styles.usp}>{x.usp}</h3>
+                  <p className={styles.desc}>{x.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </LayoutWrapper>
+    </section>
   );
 };
 export default Usp;

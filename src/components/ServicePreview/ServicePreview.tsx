@@ -78,7 +78,7 @@ const ServicePreview = () => {
     <section className={styles.container} id='features'>
       <LayoutWrapper>
         <h2 className={styles.heading}>
-          What we can build <br />
+          Services: what we can build {" "}
           <span className={styles.em}>for you</span>
         </h2>
         <div className={styles.dataContainer}>

@@ -40,13 +40,13 @@ const process = [
     processDescription:
       "Deploying your website and ensuring everything runs smoothly.",
   },
-  {
-    id: 63,
-    icon: <Support className={styles.icon} />,
-    processName: "Support",
-    processDescription:
-      "Ongoing maintenance and support to keep your site at its best.",
-  },
+  // {
+  //   id: 63,
+  //   icon: <Support className={styles.icon} />,
+  //   processName: "Support",
+  //   processDescription:
+  //     "Ongoing maintenance and support to keep your site at its best.",
+  // },
 ];
 
 const HowItWorks = () => {
