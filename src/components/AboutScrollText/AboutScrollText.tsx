@@ -41,11 +41,8 @@ const AboutScrollText = () => {
               ~ Chris Ware, Founder & CEO ~
             </p>
             <div className={styles.btnContainer}>
-              <Button
-                text='More About Us'
-                href='/about'
-                btnType='secondary'
-              />{" "}
+              <Button text='More About Us' href='/about' btnType='secondary' />{" "}
+              <div></div>
             </div>
           </div>
         </div>

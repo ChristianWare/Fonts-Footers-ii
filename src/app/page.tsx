@@ -44,17 +44,18 @@ export default async function Home() {
       <Problem />
       <Solution />
       <AboutScrollText />
-      <ServicePreview />
       <Usp />
+      <ServicePreview />
+      <Pricing bgColor='tan' />
+      <Projects />
       <HowItWorks />
+      <Testimonials />
+      <Faqsiii mapData={homePageFaqs} text='Frequently Asked Questions' />
       {/* <ServicesSection /> */}
       {/* <HowItWorks />
       <EveryPlan />
       <TechStack />
       <Testimonials />
-      <Projects />
-      <Pricing bgColor='tan' />
-      <Faqsiii mapData={homePageFaqs} text='Frequently Asked Questions' />
       <BlogSection data={data} />
       <ScrollText /> */}
     </main>

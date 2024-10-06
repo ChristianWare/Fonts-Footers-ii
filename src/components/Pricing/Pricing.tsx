@@ -3,7 +3,6 @@
 import { pricing } from "@/lib/data";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Pricing.module.css";
-import Button from "../Button/Button";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
@@ -87,22 +86,12 @@ const Pricing = ({ bgColor = "", borderTop = "" }: Props) => {
                     </span>
                   </div>
                 </div>
-                <Link href={x.href} className={styles.moreDetails}>
+                <Link href='/' className={styles.moreDetails}>
                   More Details
                 </Link>
               </div>
             ))}
           </div>
-          {pathname !== "/pricing" && (
-            <div className={styles.btnContainer}>
-              <Button
-                text='More Details'
-                href='/pricing'
-                btnType='primaryii'
-                arrow
-              />
-            </div>
-          )}
         </div>
       </LayoutWrapper>
     </section>

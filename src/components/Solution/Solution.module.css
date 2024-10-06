@@ -19,8 +19,6 @@
   gap: 2rem;
 }
 
-
-
 .em {
   font-family: var(--PerfectlyNinetiesItalic);
   text-decoration: underline;
@@ -60,6 +58,7 @@
   border: 1px solid var(--lightBlack);
   border-radius: 10px;
   padding: 2rem;
+  background-color: var(--white);
 }
 
 .title {
@@ -103,6 +102,7 @@
 @media screen and (max-width: 768px) {
   .copy {
     width: 100%;
+    text-align: left;
   }
 
   .imgContainer {

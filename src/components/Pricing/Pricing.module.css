@@ -1,5 +1,6 @@
 .container {
   background-color: transparent;
+  border-top: 1px solid var(--lightBlack);
 }
 
 .borderTop {
