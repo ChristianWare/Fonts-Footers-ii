@@ -4,11 +4,6 @@ import { projects } from "@/lib/data";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Projects.module.css";
 import Image, { StaticImageData } from "next/image";
-import Project1 from "../../../public/images/elite.png";
-import Project2 from "../../../public/images/nier.png";
-import Project3 from "../../../public/images/taco.jpg";
-import Link from "next/link";
-import { useState, useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Button from "../Button/Button";
 
@@ -56,7 +51,6 @@ const Projects = () => {
                       target='_blank'
                     />
                     <Button text='contact Us' btnType='primaryiii' href='/' />
-                  
                   </div>
                 </div>
               </div>
