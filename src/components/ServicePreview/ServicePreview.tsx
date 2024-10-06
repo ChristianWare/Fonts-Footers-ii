@@ -78,7 +78,9 @@ const ServicePreview = () => {
     <section className={styles.container} id='features'>
       <LayoutWrapper>
         <h2 className={styles.heading}>
-          Services: what we can build <span className={styles.em}>for you</span>
+          <span className={styles.em1}>Services:</span> <br /> What we can build{" "}
+          <br />
+          <span className={styles.em}>for you</span>
         </h2>
         <div className={styles.dataContainer}>
           {businessWebsiteFeatures.map((x, index) => (
@@ -86,7 +88,6 @@ const ServicePreview = () => {
               <div className={styles.content}>
                 <div className={styles.left}>
                   <h3 className={styles.titleMobile}>{x.title}</h3>
-                  {/* <div className={styles.iconContainer}> */}
                   <div className={styles.imgContainer}>
                     <Image
                       src={x.icon}
@@ -95,7 +96,6 @@ const ServicePreview = () => {
                       className={styles.img}
                     />
                   </div>
-                  {/* </div> */}
                 </div>
                 <div className={styles.right}>
                   <h3 className={styles.title}>{x.title}</h3>
@@ -111,10 +111,6 @@ const ServicePreview = () => {
                   </ul>
                 </div>
               </div>
-              {/* <div className={styles.btnContainer}>
-                <Button text='Learn More' href='/' btnType='secondary' />{" "}
-                <div></div>
-              </div> */}
             </div>
           ))}
         </div>

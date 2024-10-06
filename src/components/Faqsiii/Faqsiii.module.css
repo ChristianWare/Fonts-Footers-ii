@@ -1,29 +1,17 @@
 .container {
   background-color: var(--tan);
-  /* border-top: 1px solid var(--lightBlack); */
-}
-
-.white {
-  background-color: var(--white);
-}
-
-.gray {
-  background-color: var(--gray2);
 }
 
 .content {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 3rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5rem;
 }
 
-/* .top {
+.top {
   flex: 1;
-  align-self: flex-start;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 90px;
-} */
+}
 
 .sectionIntroContainer {
   width: fit-content;
@@ -31,44 +19,56 @@
 }
 
 .heading {
+  margin-bottom: 1rem;
   color: var(--black);
-  width: 70%;
-  font-family: var(--PerfectlyNinetiesItalic);
 }
 
 .copy {
-  font-size: 2rem;
+  line-height: 150%;
+  font-weight: 700;
+  width: 90%;
   color: var(--black);
-  opacity: 0.8;
-  width: 60%;
+  opacity: 0.7;
 }
 
-.right {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 1rem;
-  width: 60%;
-  margin-left: auto;
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-top: 3rem;
+  flex: 1;
 }
 
 .qaContainer {
-  padding: 3rem 0rem;
+  padding: 3rem;
+  border: 1px solid gray;
+  border-radius: 10px;
   width: 100%;
   cursor: pointer;
   user-select: none;
   transition: all 0.2s ease-in;
-  border-bottom: 1px solid var(--lightBlack);
 }
 
-/* .qaContainer.selected {
-  border: 1px solid var(--lightBlack);
-  background-color: var(--green3);
-} */
+.active {
+  background-color: var(--purple);
+}
+
+/* Updated styles for question and answer when active */
+.active .question,
+.active .answer,
+.active .iconFlip {
+  color: var(--tan);
+}
+
+.active .answerbox {
+  background-color: var(--light-purple);
+}
 
 .answerContainer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .answerContainer.show {
@@ -76,73 +76,51 @@
 }
 
 .headingArrowContainer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 0.6fr 5fr;
   gap: 2rem;
 }
 
-.h3Container {
-  display: flex;
-  gap: 1rem;
+.icon {
+  color: var(--black);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
-.iconBox {
-  width: 35px;
-  height: 35px;
-  background-color: var(--green3);
-  border-radius: 50%;
-  border: 1px solid var(--green);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
+.iconFlip {
+  color: var(--black);
+  transform: rotate(135deg);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 .question {
-  font-family: var(--suisse);
-  font-size: 2rem;
-  line-height: 110%;
-  hyphens: auto;
-  transition: all 0.2s ease-in;
-  text-transform: none;
-  letter-spacing: -0.2px;
+  color: var(--black);
 }
 
-.index {
-  margin-right: 1rem;
+.answerbox {
+  display: grid;
+  grid-template-columns: 0.6fr 5fr;
+  gap: 2rem;
+  background-color: transparent; /* Default background */
+  transition: background-color 0.2s ease-in-out;
 }
 
 .answer {
-  margin-top: 2rem;
+  color: var(--green2);
+  font-weight: 500;
+  margin-top: 1.5rem;
   hyphens: auto;
-  width: 95%;
-  opacity: 0.7;
-  font-size: 1.6rem;
 }
 
 .btnContainer {
   display: grid;
   width: fit-content;
-  margin-top: 0rem;
+  margin-left: auto;
+  margin-top: 3rem;
 }
 
-.icon {
-  transition: transform 0.2s ease-in-out;
-}
-
-.qaContainer.selected .iconBox .icon {
-  transform: rotate(90deg);
-  transform: all 0.2s ease-in;
-}
-
-@media screen and (max-width: 1068px) {
-  .content {
-    grid-template-columns: repeat(1, 1fr);
-    overflow: hidden;
-    gap: 0rem;
-  }
-
+@media screen and (max-width: 968px) {
   .top {
     display: flex;
     flex-direction: column;
@@ -150,49 +128,27 @@
     justify-content: center;
   }
 
+  .content {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
   .heading {
-    width: 100%;
-  }
-
-  .falseButtonContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .heading,
-  .copy {
     text-align: center;
-    width: 100%;
   }
 
-  .right {
+  .copy {
     width: 100%;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .falseButtonContainer {
-    width: fit-content;
+@media screen and (max-width: 568px) {
+  .container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .bottom {
     gap: 2rem;
-  }
-
-  .answer {
-    width: 100%;
-  }
-
-  .btnContainer {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    width: 100%;
-  }
-
-  .question {
-    font-size: 2.4rem;
   }
 }

@@ -76,11 +76,14 @@
 }
 
 .icon {
-  color: var(--black);
+  color: var(--purple);
   margin-top: 1rem;
   width: 5rem;
   height: 5rem;
-  /* opacity: 0.7; */
+  padding: 1rem;
+  border: 1px solid var(--lightBlack);
+  border-radius: 50%;
+  background-color: var(--tan);
 }
 
 @media screen and (max-width: 1100px) {

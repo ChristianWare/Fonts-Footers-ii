@@ -46,18 +46,13 @@ export default async function Home() {
       <AboutScrollText />
       <Usp />
       <ServicePreview />
+      <EveryPlan />
       <Pricing bgColor='tan' />
       <Projects />
       <HowItWorks />
       <Testimonials />
       <Faqsiii mapData={homePageFaqs} text='Frequently Asked Questions' />
-      {/* <ServicesSection /> */}
-      {/* <HowItWorks />
-      <EveryPlan />
-      <TechStack />
-      <Testimonials />
-      <BlogSection data={data} />
-      <ScrollText /> */}
+      <ScrollText />
     </main>
   );
 }

@@ -58,7 +58,7 @@ const EveryPlan = () => {
     <section className={styles.container}>
       <LayoutWrapper>
         <div className={styles.top}>
-          <h2 className={`${styles.heading} h2v3`}>
+          <h2 className={`${styles.heading}`}>
             <span className={styles.em}>Everything </span> we build includes...
           </h2>
         </div>
