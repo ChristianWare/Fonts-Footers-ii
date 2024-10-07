@@ -1,6 +1,7 @@
 .container {
   border-bottom: 1px solid var(--lightBlack);
   padding-bottom: 5rem;
+  background-color: var(--tan);
 }
 
 .parent {
