@@ -53,7 +53,7 @@ export default async function Home() {
       <HowItWorks />
       <Testimonials />
       <Faqsiii mapData={homePageFaqs} text='Frequently Asked Questions' />
-      <ScrollText />
+      {/* <ScrollText /> */}
       <Calendly />
       <ContactDetails />
       <ContactHero />

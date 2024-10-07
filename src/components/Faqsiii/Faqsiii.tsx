@@ -6,6 +6,7 @@ import LayoutWrapper from "../LayoutWrapper";
 import Plus from "../../../public/icons/plus.svg";
 import Image from "next/image";
 import FAQImage from "../../../public/images/faq.png";
+import ScrollText from "../ScrollText/ScrollText";
 
 interface Props {
   mapData: any;
@@ -70,6 +71,9 @@ const Faqsiii: FC<Props> = ({ bgColor = "", mapData, text = "" }) => {
               </div>
             ))}
           </div>
+        </div>
+        <div className={styles.scrollTextContainer}>
+          <ScrollText />
         </div>
       </LayoutWrapper>
     </section>

@@ -4,7 +4,7 @@ import LayoutWrapper from "../LayoutWrapper";
 const ScrollText = () => {
   return (
     <section className={styles.bgColor}>
-      <LayoutWrapper color='green3'>
+      {/* <LayoutWrapper color='green3'> */}
         <div className={styles.content}>
           <div className={styles.reveal}>
             <h2 className={styles.text}>
@@ -31,7 +31,7 @@ const ScrollText = () => {
             </p>
           </div>
         </div>
-      </LayoutWrapper>
+      {/* </LayoutWrapper> */}
     </section>
   );
 };

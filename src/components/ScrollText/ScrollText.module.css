@@ -1,5 +1,6 @@
 .bgColor {
-  background-color: var(--green);
+  background-color: var(--tan);
+  /* border-top: 1px solid var(--lightBlack); */
 }
 
 .content {
@@ -15,7 +16,7 @@
   width: 50%;
   letter-spacing: 0.01em;
   font-weight: normal;
-  color: var(--green3);
+  /* color: var(--green3); */
   text-transform: none;
 }
 
@@ -37,7 +38,7 @@
   font-style: italic;
   font-size: 5rem;
   font-weight: 500;
-  color: var(--green3) !important;
+  /* color: var(--green3) !important; */
   hyphens: none;
   white-space: nowrap;
   color: inherit;
@@ -45,7 +46,7 @@
 
 .copy {
   width: 40%;
-  color: var(--tan);
+  /* color: var(--tan); */
   font-weight: 600;
 }
 
