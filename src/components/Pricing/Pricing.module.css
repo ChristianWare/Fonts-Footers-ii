@@ -24,6 +24,16 @@
   gap: 1rem;
 }
 
+.lottieBox {
+  width: 100%;
+  height: 350px;
+}
+
+.lottie {
+  height: 100%;
+  width: 100%;
+}
+
 .heading,
 .headingh1 {
   color: var(--green);

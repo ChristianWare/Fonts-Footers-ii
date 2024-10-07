@@ -4,8 +4,9 @@ import { pricing } from "@/lib/data";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Pricing.module.css";
 import { useState } from "react";
-import { usePathname } from "next/navigation";
 import Link from "next/link";
+import animationData from "../../../public/lottie/pricing.json";
+import Lottie from "lottie-react";
 
 interface Props {
   bgColor?: string;
@@ -15,13 +16,6 @@ interface Props {
 const Pricing = ({ bgColor = "", borderTop = "" }: Props) => {
   const [isMonthly, setIsMonthly] = useState(false);
 
-  const pathname = usePathname();
-
-  const isSpecificServicePage =
-    pathname === "/services/business-websites" ||
-    pathname === "/services/ecommerce-stores" ||
-    pathname === "/services/booking-platforms";
-
   return (
     <section
       className={`${styles.container} ${styles[bgColor]} ${styles[borderTop]}`}
@@ -29,11 +23,10 @@ const Pricing = ({ bgColor = "", borderTop = "" }: Props) => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.top}>
-            {pathname === "/pricing" ? (
-              <h1 className={`${styles.headingh1} h2v3`}>Pricing</h1>
-            ) : (
-              <h2 className={`${styles.heading} h2v3`}>Pricing</h2>
-            )}
+            <div className={styles.lottieBox}>
+              <Lottie animationData={animationData} className={styles.lottie} />
+            </div>
+            <h2 className={styles.heading}>Pricing</h2>
 
             <p className={styles.copy}>
               Subscription based pricing. No contracts. Pause or cancel whenever
@@ -57,17 +50,7 @@ const Pricing = ({ bgColor = "", borderTop = "" }: Props) => {
           </div>
           <div className={styles.bottom}>
             {pricing.map((x) => (
-              <div
-                key={x.id}
-                className={styles.priceContainer}
-                style={{
-                  opacity: isSpecificServicePage
-                    ? pathname === x.href
-                      ? 1
-                      : 0.5
-                    : 1,
-                }}
-              >
+              <div key={x.id} className={styles.priceContainer}>
                 <div className={styles.contentParent}>
                   <div className={styles.pcTop}>
                     <h3 className={styles.planName}>{x.plan}</h3>

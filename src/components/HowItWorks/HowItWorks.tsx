@@ -58,14 +58,12 @@ const HowItWorks = () => {
             <div className={styles.top}>
               <h2 className={`${styles.heading} h2v2`}>
                 How does it work?
-                {/* <span className={styles.em}>How </span> to each project */}
               </h2>
               <p className={styles.topText}>
                 This is our process for developing the perfect websites for your
                 brand. We Keep you in the loop 100% of the time.
               </p>
             </div>
-
             <div className={styles.lottieBox}>
               <Lottie animationData={animationData} className={styles.lottie} />
             </div>

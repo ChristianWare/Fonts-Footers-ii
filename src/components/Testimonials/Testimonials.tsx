@@ -1,9 +1,13 @@
+"use client";
+
 import styles from "./Testimonials.module.css";
 import { reviews } from "@/lib/data";
 import StarCluster from "../StarCluster/StarCluster";
 import Person from "../../../public/icons/person.svg";
 import Cart from "../../../public/icons/cart.svg";
 import Calendar from "../../../public/icons/booking.svg";
+import animationData from "../../../public/lottie/reviews.json";
+import Lottie from "lottie-react";
 
 const Testimonials = () => {
   return (
@@ -11,8 +15,9 @@ const Testimonials = () => {
       <div className={styles.content}>
         <div className={styles.bottom}>
           <div className={styles.top}>
-            {/* <Cart className={styles.pasta} /> */}
-            {/* <Calendar className={styles.hamburger} /> */}
+            <div className={styles.lottieBox}>
+              <Lottie animationData={animationData} className={styles.lottie} />
+            </div>
             <h2 className={styles.heading}>What our clients say</h2>
             <p className={styles.copy}>
               Discover What Our Clients Have to Say About Their Dining
