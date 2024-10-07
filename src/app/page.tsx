@@ -1,5 +1,4 @@
 import Hero from "@/components/Hero/Hero";
-import ScrollText from "@/components/ScrollText/ScrollText";
 import Pricing from "@/components/Pricing/Pricing";
 import Projects from "@/components/Projects/Projects";
 import BlogSection from "@/components/BlogSection/BlogSection";
@@ -17,7 +16,6 @@ import Solution from "@/components/Solution/Solution";
 import ServicePreview from "@/components/ServicePreview/ServicePreview";
 import ContactHero from "@/components/ContactHero/ContactHero";
 import Calendly from "@/components/Calendly/Calendly";
-import ContactDetails from "@/components/ContactDetails/ContactDetails";
 
 // async function getData() {
 //   const query = `
@@ -53,9 +51,8 @@ export default async function Home() {
       <HowItWorks />
       <Testimonials />
       <Faqsiii mapData={homePageFaqs} text='Frequently Asked Questions' />
-      {/* <ScrollText /> */}
       <Calendly />
-      <ContactDetails />
+      {/* <ContactDetails /> */}
       <ContactHero />
     </main>
   );

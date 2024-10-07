@@ -1,28 +1,62 @@
 .container {
-  background-color: var(--black);
+  background-color: var(--tan);
   height: 100%;
+  border-top: 1px solid var(--lightBlack);
 }
 
 .heading {
-  color: var(--tan);
   font-size: 4rem;
-  text-align: center;
-  width: 40%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 10rem;
+  width: 80%;
+}
+
+.em {
+  font-family: var(--PerfectlyNinetiesItalic);
+  line-height: 100%;
+  text-decoration: underline;
+}
+
+.imgContainer {
+  position: relative;
+  width: 550px;
+  height: 550px;
+}
+
+.img {
+  object-fit: cover;
 }
 
 .calBox {
-  /* margin-top: 15rem; */
-  padding-bottom: 10rem;
   height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5rem;
 }
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 1068px) {
+  .calBox {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0rem;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   .heading {
-    width: 80%;
-    margin-bottom: 5rem;
+    width: 60%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .imgContainer {
+    width: 300px;
+    height: 300px;
   }
 }
 

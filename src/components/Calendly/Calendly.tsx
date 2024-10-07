@@ -1,27 +1,37 @@
 "use client";
 
 import { InlineWidget } from "react-calendly";
-import ScrollHorizontalText from "../ScrollHorizontalText/ScrollHorizontalText";
 import styles from "./Calendly.module.css";
+import LayoutWrapper from "../LayoutWrapper";
+import CalendlyImage from "../../../public/images/calendly.png";
+import Image from "next/image";
 
 const Calendly = () => {
   return (
-    <>
-      <section className={styles.container}>
+    <section className={styles.container}>
+      <LayoutWrapper>
         <div className={styles.calBox} id='schedule'>
-          <h2 className={styles.heading}>
-            Scehdule a free Discovery Call with us
-          </h2>
-          <InlineWidget
-            url='https://calendly.com/fontsandfooters/discovery-call'
-            styles={{
-              height: "900px",
-              borderRadius: "20px",
-            }}
-          />
+          <div className={styles.left}>
+            <h2 className={styles.heading}>
+              Ready to get started? Scehdule a free{" "}
+              <span className={styles.em}>discovery call</span> with us today
+            </h2>
+            <div className={styles.imgContainer}>
+              <Image src={CalendlyImage} fill alt='' className={styles.img} />
+            </div>
+          </div>
+          <div className={styles.right}>
+            <InlineWidget
+              url='https://calendly.com/fontsandfooters/discovery-call'
+              styles={{
+                height: "900px",
+                borderRadius: "20px",
+              }}
+            />
+          </div>
         </div>
-      </section>
-    </>
+      </LayoutWrapper>
+    </section>
   );
 };
 export default Calendly;

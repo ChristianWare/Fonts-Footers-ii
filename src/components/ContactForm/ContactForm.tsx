@@ -4,7 +4,6 @@ import toast from "react-hot-toast";
 import styles from "./ContactForm.module.css";
 import { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
-import Arrow2 from "../../../public/icons/arrow2.svg";
 
 type Inputs = {
   firstName: string;
