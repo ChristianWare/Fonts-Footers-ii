@@ -199,7 +199,11 @@ textarea:focus {
 @media screen and (max-width: 568px) {
   /* html {
     font-size: 50%;
-  } */
+  } */ 
+   
+* {
+  hyphens: auto;
+}
 
   h1,
   .span1 {

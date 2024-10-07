@@ -4,10 +4,8 @@ import styles from "./Faqsiii.module.css";
 import { FC, useState } from "react";
 import LayoutWrapper from "../LayoutWrapper";
 import Plus from "../../../public/icons/plus.svg";
-import Arrow2 from "../../../public/icons/downArrow.svg";
-import Button from "../Button/Button";
-import { usePathname } from "next/navigation";
-import FalseButton from "../FalseButton/FalseButton";
+import Image from "next/image";
+import FAQImage from "../../../public/images/faq.png";
 
 interface Props {
   mapData: any;
@@ -22,8 +20,6 @@ const Faqsiii: FC<Props> = ({ bgColor = "", mapData, text = "" }) => {
     setSelected(i);
   };
 
-  const pathname = usePathname();
-
   return (
     <section className={`${styles.container} ${styles[bgColor]}`} id='faq'>
       <LayoutWrapper>
@@ -34,6 +30,9 @@ const Faqsiii: FC<Props> = ({ bgColor = "", mapData, text = "" }) => {
               Here are some common questions asked by potential employers. If
               you do not see your question here feel free to reach out.
             </p>
+            <div className={styles.imgContianer}>
+              <Image src={FAQImage} alt='' fill className={styles.img} />
+            </div>
           </div>
           <div className={styles.bottom}>
             {mapData.slice(0, 4).map((x: any, i: number) => (
