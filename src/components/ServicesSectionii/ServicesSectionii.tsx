@@ -1,8 +1,7 @@
 import styles from "./ServicesSectionii.module.css";
-import LayoutWrapper from "../LayoutWrapper";
 import Image from "next/image";
-import Img1 from "../../../public/images/house10.png";
-import FalseButton from "../FalseButton/FalseButton";
+import Img1 from "../../../public/images/additional1.png";
+import Img2 from "../../../public/images/additional2.png";
 
 const ServicesSectionii = () => {
   const data = [
@@ -44,7 +43,7 @@ const ServicesSectionii = () => {
         "Transform your data into insights with our website analytics and reporting services, guiding informed decisions for digital growth.",
     },
     {
-      src: Img1,
+      src: Img2,
     },
     {
       title: "",
@@ -85,7 +84,6 @@ const ServicesSectionii = () => {
         </div>
         <div className={styles.bottomRight}>
           <div className={styles.box}>
-            <FalseButton text='Add ons' btnType='secondary' />
             <h2 className={styles.heading}>Additional Services</h2>
             <p className={styles.copy}>
               Here are some of the additional services we offer. Please reach

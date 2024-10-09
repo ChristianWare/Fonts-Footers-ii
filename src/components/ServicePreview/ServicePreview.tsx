@@ -6,6 +6,7 @@ import Image from "next/image";
 import Ecomm from "../../../public/images/ecomm.png";
 import Business from "../../../public/images/business.png";
 import Booking from "../../../public/images/bookingii.png";
+import ServicesSectionii from "../ServicesSectionii/ServicesSectionii";
 
 const ServicePreview = () => {
   const businessWebsiteFeatures = [
@@ -112,6 +113,7 @@ const ServicePreview = () => {
             </div>
           ))}
         </div>
+        <ServicesSectionii />
       </LayoutWrapper>
     </section>
   );
