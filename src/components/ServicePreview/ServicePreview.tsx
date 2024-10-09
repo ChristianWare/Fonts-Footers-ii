@@ -2,8 +2,6 @@
 
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./ServicePreview.module.css";
-import Cart from "../../../public/icons/cart.svg";
-import Button from "../Button/Button";
 import Image from "next/image";
 import Ecomm from "../../../public/images/ecomm.png";
 import Business from "../../../public/images/business.png";
