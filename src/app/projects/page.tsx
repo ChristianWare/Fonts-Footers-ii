@@ -40,7 +40,7 @@ export default async function page() {
         bgColor='tan'
       />
       <div style={{ marginTop: "-350px" }}>
-        <Projects borderBottom='borderBottomNone' />
+        <Projects />
       </div>
       <TechStack />
       <EveryPlan />
