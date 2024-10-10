@@ -156,6 +156,11 @@
 }
 
 @media screen and (max-width: 568px) {
+  .imgContianer {
+    width: 250px;
+    height: 250px;
+  }
+
   .bottom {
     gap: 2rem;
   }
