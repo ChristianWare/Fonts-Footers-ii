@@ -4,7 +4,6 @@ import { pricing } from "@/lib/data";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Pricing.module.css";
 import { useState } from "react";
-import Link from "next/link";
 import animationData from "../../../public/lottie/pricing.json";
 import Lottie from "lottie-react";
 
@@ -64,14 +63,12 @@ const Pricing = ({ bgColor = "", borderTop = "" }: Props) => {
                       ))}
                     </ul>
                     <p className={styles.description}>{x.description}</p>
+                  </div>
+                </div>
                     <span className={styles.price}>
                       ${!isMonthly ? x.prices[0].price : x.prices[1].price}
                     </span>
-                  </div>
-                </div>
-                <Link href='/' className={styles.moreDetails}>
-                  More Details
-                </Link>
+          
               </div>
             ))}
           </div>
