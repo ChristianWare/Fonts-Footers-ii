@@ -2,40 +2,40 @@
 
 import styles from "./Problem.module.css";
 import LayoutWrapper from "../LayoutWrapper";
-import Design from "../../../public/icons/designii.svg";
-import Reminders from "../../../public/icons/seo.svg";
-import Clock from "../../../public/icons/clock.svg";
-import Card from "../../../public/icons/payment.svg";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../animation/variants";
 import Image from "next/image";
 import ProblemImage from "../../../public/images/problem.png";
+import Outdated from "../../../public/icons/outdatedDesign.svg";
+import Cloud from "../../../public/icons/cloudPresence.svg";
+import Credibility from "../../../public/icons/credibility.svg";
+import Update from "../../../public/icons/update.svg";
 
 const Problem = () => {
   const data = [
     {
-      icon: <Clock width={50} height={50} className={styles.icon} />,
-      title: "Real-Time Availability",
+      icon: <Outdated width={50} height={50} className={styles.icon} />,
+      title: "Outdated Design",
       description:
-        "Clients can view real-time availability and book appointments instantly.",
+        "Your website looks outdated or unprofessional, which doesn’t reflect the quality of your business.",
     },
     {
-      icon: <Reminders width={50} height={50} className={styles.icon} />,
-      title: "Automated Reminders",
+      icon: <Cloud width={50} height={50} className={styles.icon} />,
+      title: "Missed Online Presence",
       description:
-        "Automated email and SMS reminders reduce no-shows and keep clients informed.",
+        "You’re missing out on reaching potential customers because they can’t find you online.",
     },
     {
-      icon: <Design width={50} height={50} className={styles.icon} />,
-      title: "Intuitive Interface",
+      icon: <Credibility width={50} height={50} className={styles.icon} />,
+      title: "Losing Credibility",
       description:
-        "A simple and intuitive interface makes it easy for clients to navigate and book services.",
+        "Not having a website can make your business appear less credible or outdated compared to competitors who have an online presence.",
     },
     {
-      icon: <Card width={50} height={50} className={styles.icon} />,
-      title: "Integrated Payment Systems",
+      icon: <Update width={50} height={50} className={styles.icon} />,
+      title: "Hard to Update or Manage",
       description:
-        "Accept payments from any major credit card with our payment services.",
+        "Every small update requires technical assistance, and it’s holding back your business growth.",
     },
   ];
   return (
