@@ -14,19 +14,19 @@ const ServicePreview = () => {
       icon: Ecomm,
       title: "E-Commerce Stores",
       description:
-        "We offer bespoke design services that reflect your brand’s identity and provide an engaging user experience.",
+        "Our e-commerce platforms grow with your business, ensuring you can add new features and handle increased traffic as needed.",
       whyImportant: [
         {
-          title: "Unique Design",
+          title: "Platform Integration",
         },
         {
-          title: "User-Centered Approach",
+          title: "Custom Website Design",
         },
         {
-          title: "Responsive Layouts",
+          title: "Stripe Payment Gateway",
         },
         {
-          title: "Fast Loading Speeds",
+          title: "Multiple Product Management",
         },
       ],
     },
@@ -34,19 +34,19 @@ const ServicePreview = () => {
       icon: Business,
       title: "Business Websites",
       description:
-        "We help strengthen your brand’s visual identity by creating cohesive and attractive designs that leave a lasting impression on your audience.",
+        "We build professional business websites to elevate your online presence.",
       whyImportant: [
         {
-          title: "Logo Design",
+          title: "Custom Website Design",
         },
         {
-          title: "Color Schemes",
+          title: "Branding and Visual Identity",
         },
         {
-          title: "Typography",
+          title: "Contact and Lead Generation",
         },
         {
-          title: "Imagery and Graphics",
+          title: "Search Engine Optimization",
         },
       ],
     },
@@ -55,19 +55,19 @@ const ServicePreview = () => {
       icon: Booking,
       title: "Booking Platforms",
       description:
-        "Our websites are built with SEO best practices to ensure that your business ranks well in search engine results, driving organic traffic to your site.",
+        "We develop custom booking systems that cater to the unique needs of your business, ensuring a smooth and hassle-free reservation process for your clients.",
       whyImportant: [
         {
-          title: "On-Page SEO",
+          title: "Booking Engine",
         },
         {
-          title: "Keyword Research",
+          title: "Guest Reviews",
         },
         {
-          title: "Performance Monitoring",
+          title: "Interactive Map",
         },
         {
-          title: "Link Building",
+          title: "Admin Dashboard",
         },
       ],
     },
@@ -78,7 +78,6 @@ const ServicePreview = () => {
       <LayoutWrapper>
         <h2 className={styles.heading}>
           <span className={styles.em1}>Services:</span> <br /> What we can build{" "}
-          
           <span className={styles.em}>for you</span>
         </h2>
         <div className={styles.dataContainer}>

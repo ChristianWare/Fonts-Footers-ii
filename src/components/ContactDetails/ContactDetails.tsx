@@ -19,7 +19,7 @@ const ContactDetails = () => {
           <div className={styles.box}>
             <h2 className={styles.title}>Email</h2>
             <Link
-              href='mailto:fontsandfooters@gmail.com'
+              href='mailto:hello@fontsandfooters.com'
               className={styles.detail}
             >
               hello@fontsandfooters.com
