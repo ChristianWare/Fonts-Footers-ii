@@ -21,6 +21,7 @@
   color: var(--black);
   text-transform: none;
   width: 80%;
+  line-height: 110%;
 }
 
 .em {

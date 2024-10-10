@@ -71,7 +71,7 @@
 
 .span {
   display: block;
-  padding-bottom: 1rem;
+  /* padding-bottom: 1rem; */
   font-weight: 700;
   border-bottom: 1px solid var(--lightBlack);
   margin-top: 2rem;
