@@ -98,7 +98,7 @@
 
 .title,
 .desc {
-  color: var(--lightBlack);
+  color: var(--black);
 }
 
 .title {
@@ -106,7 +106,7 @@
 }
 
 .desc {
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 .btnContainer {
