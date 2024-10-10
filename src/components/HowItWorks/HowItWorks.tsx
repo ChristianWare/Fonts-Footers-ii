@@ -2,11 +2,8 @@
 
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./HowItWorks.module.css";
-import Image from "next/image";
-import Process from "../../../public/images/process.png";
 import Develop from "../../../public/icons/develop.svg";
 import Launch from "../../../public/icons/launch.svg";
-import Support from "../../../public/icons/support.svg";
 import Consult from "../../../public/icons/consult.svg";
 import Notes from "../../../public/icons/notes.svg";
 import animationData from "../../../public/lottie/howitworks.json";
