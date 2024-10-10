@@ -11,12 +11,12 @@ import Logo from "../Logo/Logo";
 
 const navItems = [
   {
-    text: "Services",
-    href: "/services",
+    text: "About Us",
+    href: "/#about",
   },
   {
-    text: "About Us",
-    href: "/about",
+    text: "Services",
+    href: "/services",
   },
   {
     text: "Projects",
