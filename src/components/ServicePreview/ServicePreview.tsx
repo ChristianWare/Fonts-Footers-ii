@@ -78,7 +78,7 @@ const ServicePreview = () => {
       <LayoutWrapper>
         <h2 className={styles.heading}>
           <span className={styles.em1}>Services:</span> <br /> What we can build{" "}
-          <br />
+          
           <span className={styles.em}>for you</span>
         </h2>
         <div className={styles.dataContainer}>

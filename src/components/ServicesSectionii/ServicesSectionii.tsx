@@ -94,7 +94,7 @@ const ServicesSectionii = () => {
       </div>
       <div className={styles.bottom2}>
         {data.slice(2, 9).map((x, index) => (
-          <div className={styles.card} key={index}>
+          <div className={styles.card2} key={index}>
             {x.src && (
               <div className={styles.imgContainer}>
                 <Image src={x.src} alt='image' fill className={styles.img} />

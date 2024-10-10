@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import styles from "./Usp.module.css";
 import Track from "../../../public/icons/track.svg";
@@ -8,7 +8,6 @@ import Team from "../../../public/icons/team.svg";
 import LayoutWrapper from "../LayoutWrapper";
 import animationData from "../../../public/lottie/usp.json";
 import Lottie from "lottie-react";
-
 
 const data = [
   {
@@ -46,7 +45,7 @@ const Usp = () => {
             <div className={styles.lottieBox}>
               <Lottie animationData={animationData} className={styles.lottie} />
             </div>
-            <h2 className={`${styles.heading} h2v3`}>
+            <h2 className={styles.heading}>
               Why choose{" "}
               <span className={styles.em}>
                 {" "}

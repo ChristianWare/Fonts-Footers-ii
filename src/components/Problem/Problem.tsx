@@ -42,9 +42,9 @@ const Problem = () => {
     <section className={styles.container}>
       <LayoutWrapper>
         <div className={styles.top}>
-          <h2 className={`${styles.heading} h2v2`}>
-            Are you <span className={styles.em}>unhappy</span> with your current
-            website, or do you not have one{" "}
+          <h2 className={styles.heading}>
+            Are you <span className={styles.em}>unhappy </span> with your
+            current website, or do you not have one{" "}
             <span className={styles.em}> at all?</span>
           </h2>
           <p className={styles.leftCopy}>

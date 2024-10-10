@@ -15,7 +15,8 @@
   grid-gap: 1rem;
 }
 
-.card {
+.card,
+.card2 {
   padding: 2rem;
   border-radius: 10px;
   border: 1px solid var(--lightBlack);
@@ -86,17 +87,16 @@
   object-fit: contain;
 }
 
-.bottom2 .card:nth-child(1),
-.bottom2 .card:nth-child(7),
-.card:nth-child(5) {
+.card2:nth-child(1),
+.card2:nth-child(7),
+.card2:nth-child(5) {
   background-color: transparent;
   border: none;
 }
 
-.card:nth-child(1) .ball,
-.card:nth-child(5) .ball,
-.card:nth-child(6) .ball,
-.bottom2 .card:nth-child(7) .ball {
+.card2:nth-child(1) .ball,
+.card2:nth-child(5) .ball,
+.card2:nth-child(7) .ball {
   display: none;
 }
 
