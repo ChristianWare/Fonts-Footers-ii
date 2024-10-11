@@ -16,28 +16,23 @@ const navItems = [
   },
   {
     text: "Services",
-    href: "/services",
+    href: "/#services",
   },
   {
     text: "Projects",
-    href: "/projects",
+    href: "/#projects",
   },
   {
     text: "Pricing",
-    href: "/pricing",
+    href: "/#pricing",
   },
   {
     text: "Faq's",
-    href: "/faqs",
+    href: "/#faqs",
   },
-  {
-    text: "Blog",
-    href: "/blog",
-  },
-
   {
     text: "Contact",
-    href: "/contact",
+    href: "/#contact",
   },
 ];
 

@@ -74,7 +74,7 @@ const ServicePreview = () => {
   ] as const;
 
   return (
-    <section className={styles.container} id='features'>
+    <section className={styles.container} id='services'>
       <LayoutWrapper>
         <h2 className={styles.heading}>
           <span className={styles.em1}>Services:</span> <br /> What we can build{" "}
