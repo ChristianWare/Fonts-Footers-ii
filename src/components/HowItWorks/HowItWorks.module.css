@@ -26,6 +26,11 @@
   width: 100%;
 }
 
+.lottieBox, .lottie {
+  width: 100%;
+  height: 400px;
+}
+
 .heading {
   margin-bottom: 2rem;
   line-height: 100%;

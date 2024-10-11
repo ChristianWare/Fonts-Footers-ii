@@ -314,28 +314,28 @@ export const projects = [
     href: "https://www.eliteretreatrentals.com/",
     github: "https://github.com/ChristianWare/Case-Study-One",
   },
-  {
-    src: Project4,
-    title: "AZ Golf Whisperer",
-    description:
-      "Golf Guise/AZ Golf Whisperer is a front end project for a client of mine who sells Golf Stay-and-Play packages. The site showcases the details of each package offered, which golf courses they are partnered with, as well as information on golf club rentals. This was built with Next.Js, styled with CSS Modules and Nodemailer was used for the contact form for email notifications.",
-    techStack: [
-      {
-        title: "Next.JS",
-      },
-      {
-        title: "CSS Modules",
-      },
-      {
-        title: "React Hook Form",
-      },
-      {
-        title: "Node Mailer",
-      },
-    ],
-    href: "https://golf-guise.vercel.app/",
-    github: "https://github.com/ChristianWare/golf-guise",
-  },
+  // {
+  //   src: Project4,
+  //   title: "AZ Golf Whisperer",
+  //   description:
+  //     "Golf Guise/AZ Golf Whisperer is a front end project for a client of mine who sells Golf Stay-and-Play packages. The site showcases the details of each package offered, which golf courses they are partnered with, as well as information on golf club rentals. This was built with Next.Js, styled with CSS Modules and Nodemailer was used for the contact form for email notifications.",
+  //   techStack: [
+  //     {
+  //       title: "Next.JS",
+  //     },
+  //     {
+  //       title: "CSS Modules",
+  //     },
+  //     {
+  //       title: "React Hook Form",
+  //     },
+  //     {
+  //       title: "Node Mailer",
+  //     },
+  //   ],
+  //   href: "https://golf-guise.vercel.app/",
+  //   github: "https://github.com/ChristianWare/golf-guise",
+  // },
   {
     src: Project2,
     title: "Nier Transportaion",
