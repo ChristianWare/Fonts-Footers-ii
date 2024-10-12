@@ -5,6 +5,8 @@ import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Projects.module.css";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
+import { useState } from "react";
+import Modal from "../Modal/Modal";
 
 interface Project {
   src: StaticImageData;
@@ -16,6 +18,17 @@ interface Project {
 }
 
 const Projects = () => {
+  const [activeProjectIndex, setActiveProjectIndex] = useState<number | null>(
+    null
+  );
+
+  const handleOpenModal = (index: number) => {
+    setActiveProjectIndex(index); // Set the active project index
+  };
+
+  const handleCloseModal = () => {
+    setActiveProjectIndex(null); // Reset the active project index to close the modal
+  };
   return (
     <section className={styles.container} id='projects'>
       <LayoutWrapper>
@@ -34,24 +47,37 @@ const Projects = () => {
                   <h3 className={styles.title}>{x.title}</h3>
                   <p className={styles.desc}>{x.description}</p>
                   <br />
-                  <span className={styles.span}>Features:</span>
-                  <ul className={styles.box}>
-                    {x.techStack.map((y: any, index: number) => (
-                      <li key={index}>
-                        <h4 className={styles.reasonnTitle}>{y.title}</h4>
-                      </li>
-                    ))}
-                  </ul>
+                  <span className={styles.span}>Links:</span>
                   <div className={styles.links}>
                     <Link href={x.href} target='_blank' className={styles.link}>
                       Live Site <span className={styles.arrow}>→</span>
                     </Link>
-                    <Link href={x.href} target='_blank' className={styles.link}>
+                    <div
+                      className={styles.link}
+                      onClick={() => handleOpenModal(index)} // Open the modal for the specific project
+                    >
                       More details
-                    </Link>
+                    </div>
                   </div>
                 </div>
               </div>
+              {/* Modal logic for the specific project */}
+              {activeProjectIndex === index && (
+                <Modal
+                  isOpen={activeProjectIndex === index}
+                  onClose={handleCloseModal}
+                >
+                  <p className={styles.modalDescription}>{x.description}</p>
+                  <div className={styles.modalLinks}>
+                    <Link href={x.href} target='_blank' className={styles.link}>
+                      Live Site <span className={styles.arrow}>→</span>
+                    </Link>
+                    <div className={styles.link} onClick={handleCloseModal}>
+                      Close
+                    </div>
+                  </div>
+                </Modal>
+              )}
             </div>
           ))}
         </div>
