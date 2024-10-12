@@ -4,8 +4,7 @@ import { projects } from "@/lib/data";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Projects.module.css";
 import Image, { StaticImageData } from "next/image";
-import { motion, useScroll, useTransform } from "framer-motion";
-import Button from "../Button/Button";
+import Link from "next/link";
 
 interface Project {
   src: StaticImageData;
@@ -35,7 +34,7 @@ const Projects = () => {
                   <h3 className={styles.title}>{x.title}</h3>
                   <p className={styles.desc}>{x.description}</p>
                   <br />
-                  <span className={styles.span}>Tech Stack:</span>
+                  <span className={styles.span}>Features:</span>
                   <ul className={styles.box}>
                     {x.techStack.map((y: any, index: number) => (
                       <li key={index}>
@@ -43,14 +42,13 @@ const Projects = () => {
                       </li>
                     ))}
                   </ul>
-                  <div className={styles.btnContainer}>
-                    <Button
-                      text='Live Site'
-                      btnType='secondary'
-                      href={x.href}
-                      target='_blank'
-                    />
-                    <Button text='contact Us' btnType='primaryiii' href='/' />
+                  <div className={styles.links}>
+                    <Link href={x.href} target='_blank' className={styles.link}>
+                      Live Site <span className={styles.arrow}>→</span>
+                    </Link>
+                    <Link href={x.href} target='_blank' className={styles.link}>
+                      More details
+                    </Link>
                   </div>
                 </div>
               </div>

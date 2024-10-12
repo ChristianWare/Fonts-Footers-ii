@@ -9,7 +9,7 @@ import Lottie from "lottie-react";
 
 const ContactHero = () => {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id='contact'>
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.top}>
