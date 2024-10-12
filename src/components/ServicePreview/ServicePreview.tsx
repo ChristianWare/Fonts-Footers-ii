@@ -31,27 +31,6 @@ const ServicePreview = () => {
       ],
     },
     {
-      icon: Business,
-      title: "Business Websites",
-      description:
-        "We build professional business websites to elevate your online presence.",
-      whyImportant: [
-        {
-          title: "Custom Website Design",
-        },
-        {
-          title: "Branding and Visual Identity",
-        },
-        {
-          title: "Contact and Lead Generation",
-        },
-        {
-          title: "Search Engine Optimization",
-        },
-      ],
-    },
-
-    {
       icon: Booking,
       title: "Booking Platforms",
       description:
@@ -71,46 +50,68 @@ const ServicePreview = () => {
         },
       ],
     },
+    {
+      icon: Business,
+      title: "Business Websites",
+      description:
+        "We build professional business websites to elevate your online presence.",
+      whyImportant: [
+        {
+          title: "Custom Website Design",
+        },
+        {
+          title: "Branding and Visual Identity",
+        },
+        {
+          title: "Contact and Lead Generation",
+        },
+        {
+          title: "Search Engine Optimization",
+        },
+      ],
+    },
   ] as const;
 
   return (
     <section className={styles.container} id='services'>
       <LayoutWrapper>
-        <h2 className={styles.heading}>
-          <span className={styles.em1}>Services:</span> <br /> What we can build{" "}
-          <span className={styles.em}>for you</span>
-        </h2>
-        <div className={styles.dataContainer}>
-          {businessWebsiteFeatures.map((x, index) => (
-            <div key={index} className={styles.parent}>
-              <div className={styles.content}>
-                <div className={styles.left}>
-                  <h3 className={styles.titleMobile}>{x.title}</h3>
-                  <div className={styles.imgContainer}>
-                    <Image
-                      src={x.icon}
-                      alt='image'
-                      fill
-                      className={styles.img}
-                    />
+        <div className={styles.parentMain}>
+          <h2 className={styles.heading}>
+            <span className={styles.em1}>Services:</span> <br /> What we can
+            build <span className={styles.em}>for you</span>
+          </h2>
+          <div className={styles.dataContainer}>
+            {businessWebsiteFeatures.map((x, index) => (
+              <div key={index} className={styles.parent}>
+                <div className={styles.content}>
+                  <div className={styles.left}>
+                    <h3 className={styles.titleMobile}>{x.title}</h3>
+                    <div className={styles.imgContainer}>
+                      <Image
+                        src={x.icon}
+                        alt='image'
+                        fill
+                        className={styles.img}
+                      />
+                    </div>
+                  </div>
+                  <div className={styles.right}>
+                    <h3 className={styles.title}>{x.title}</h3>
+                    <p className={styles.desc}>{x.description}</p>
+                    <br />
+                    <span className={styles.span}>Benefits:</span>
+                    <ul className={styles.box}>
+                      {x.whyImportant.map((y, index) => (
+                        <li key={index}>
+                          <h4 className={styles.reasonnTitle}>{y.title}</h4>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
-                <div className={styles.right}>
-                  <h3 className={styles.title}>{x.title}</h3>
-                  <p className={styles.desc}>{x.description}</p>
-                  <br />
-                  <span className={styles.span}>Benefits:</span>
-                  <ul className={styles.box}>
-                    {x.whyImportant.map((y, index) => (
-                      <li key={index}>
-                        <h4 className={styles.reasonnTitle}>{y.title}</h4>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
         <ServicesSectionii />
       </LayoutWrapper>

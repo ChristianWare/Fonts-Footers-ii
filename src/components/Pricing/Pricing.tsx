@@ -18,6 +18,7 @@ const Pricing = ({ bgColor = "", borderTop = "" }: Props) => {
   return (
     <section
       className={`${styles.container} ${styles[bgColor]} ${styles[borderTop]}`}
+      id='pricing'
     >
       <LayoutWrapper>
         <div className={styles.content}>
