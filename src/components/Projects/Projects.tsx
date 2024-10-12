@@ -7,6 +7,8 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import Modal from "../Modal/Modal";
+import animationData from "../../../public/lottie/projects.json";
+import Lottie from "lottie-react";
 
 interface Project {
   src: StaticImageData;
@@ -23,15 +25,18 @@ const Projects = () => {
   );
 
   const handleOpenModal = (index: number) => {
-    setActiveProjectIndex(index); // Set the active project index
+    setActiveProjectIndex(index);
   };
 
   const handleCloseModal = () => {
-    setActiveProjectIndex(null); // Reset the active project index to close the modal
+    setActiveProjectIndex(null);
   };
   return (
-    <section className={styles.container} id='projects'>
+    <section className={styles.container}>
       <LayoutWrapper>
+        <div className={styles.lottieBox} id='projects'>
+          <Lottie animationData={animationData} className={styles.lottie} />
+        </div>
         <h2 className={`${styles.heading} h2v2`}>Projects</h2>
         <div className={styles.dataContainer}>
           {projects.map((x, index) => (
@@ -54,14 +59,13 @@ const Projects = () => {
                     </Link>
                     <div
                       className={styles.link}
-                      onClick={() => handleOpenModal(index)} // Open the modal for the specific project
+                      onClick={() => handleOpenModal(index)}
                     >
                       More details
                     </div>
                   </div>
                 </div>
               </div>
-              {/* Modal logic for the specific project */}
               {activeProjectIndex === index && (
                 <Modal
                   isOpen={activeProjectIndex === index}

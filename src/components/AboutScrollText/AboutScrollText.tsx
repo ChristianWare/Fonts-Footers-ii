@@ -4,15 +4,14 @@ import LayoutWrapper from "../LayoutWrapper";
 import styles from "./AboutScrollText.module.css";
 import animationData from "../../../public/lottie/agency.json";
 import Lottie from "lottie-react";
-import Button from "../Button/Button";
 import Image from "next/image";
 import Author from "../../../public/images/author.png";
 
 const AboutScrollText = () => {
   return (
-    <section className={styles.bgColor} id='about'>
+    <section className={styles.bgColor}>
       <LayoutWrapper color='green3'>
-        <div className={styles.content}>
+        <div className={styles.content} id='about'>
           <div className={styles.left}>
             <div className={styles.lottieBox}>
               <Lottie animationData={animationData} className={styles.lottie} />
@@ -47,10 +46,7 @@ const AboutScrollText = () => {
                 ~ Chris Ware, Founder & CEO ~
               </p>
             </div>
-            {/* <div className={styles.btnContainer}>
-              <Button text='More About Us' href='/about' btnType='secondary' />{" "}
-              <div></div>
-            </div> */}
+            
           </div>
         </div>
       </LayoutWrapper>

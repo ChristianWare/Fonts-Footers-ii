@@ -18,10 +18,9 @@ const Pricing = ({ bgColor = "", borderTop = "" }: Props) => {
   return (
     <section
       className={`${styles.container} ${styles[bgColor]} ${styles[borderTop]}`}
-      id='pricing'
     >
       <LayoutWrapper>
-        <div className={styles.content}>
+        <div className={styles.content} id='pricing'>
           <div className={styles.top}>
             <div className={styles.lottieBox}>
               <Lottie animationData={animationData} className={styles.lottie} />
@@ -66,10 +65,9 @@ const Pricing = ({ bgColor = "", borderTop = "" }: Props) => {
                     <p className={styles.description}>{x.description}</p>
                   </div>
                 </div>
-                    <span className={styles.price}>
-                      ${!isMonthly ? x.prices[0].price : x.prices[1].price}
-                    </span>
-          
+                <span className={styles.price}>
+                  ${!isMonthly ? x.prices[0].price : x.prices[1].price}
+                </span>
               </div>
             ))}
           </div>

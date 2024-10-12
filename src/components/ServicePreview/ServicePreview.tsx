@@ -73,9 +73,9 @@ const ServicePreview = () => {
   ] as const;
 
   return (
-    <section className={styles.container} id='services'>
+    <section className={styles.container}>
       <LayoutWrapper>
-        <div className={styles.parentMain}>
+        <div className={styles.parentMain} id='services'>
           <h2 className={styles.heading}>
             <span className={styles.em1}>Services:</span> <br /> What we can
             build <span className={styles.em}>for you</span>

@@ -3,6 +3,17 @@
   border-top: 1px solid var(--lightBlack);
 }
 
+.lottieBox {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 5rem;
+}
+
+.lottie {
+  height: 100%;
+  width: 100%;
+}
+
 .heading {
   text-align: center;
   width: fit-content;
