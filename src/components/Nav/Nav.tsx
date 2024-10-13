@@ -78,7 +78,12 @@ function Nav() {
   return (
     <>
       <TopNav />
-      <div style={{ height: isFixed ? `${navHeight}px` : 0 }} />
+      <div
+        style={{
+          height: isFixed ? `${navHeight}px` : 0,
+          backgroundColor: "var(--tan)",
+        }}
+      />
       <header
         className={`${styles.header} ${isFixed ? styles.fixed : ""}`}
         ref={navRef}
