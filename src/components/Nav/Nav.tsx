@@ -7,6 +7,7 @@ import TopNav from "../TopNav/TopNav";
 import { usePathname } from "next/navigation";
 import styles from "./Nav.module.css";
 import Arrow from "../../../public/icons/arrow.svg";
+import Logo from "../Logo/Logo";
 
 const navItems = [
   { text: "About Us", href: "/#about" },
@@ -83,6 +84,9 @@ function Nav() {
         ref={navRef}
       >
         <nav className={styles.navbar}>
+          <div className={styles.mobileLogo}>
+            <Logo />
+          </div>
           <ul
             className={
               isOpen === false

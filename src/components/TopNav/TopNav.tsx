@@ -11,7 +11,9 @@ const TopNav = () => {
       {" "}
       {/* Added class topNav */}
       <div className={styles.content}>
-        <Logo />
+        <div className={styles.logoContainer}>
+          <Logo />
+        </div>
         <div className={styles.leftBottom}>
           <Link
             href='https://www.linkedin.com/'

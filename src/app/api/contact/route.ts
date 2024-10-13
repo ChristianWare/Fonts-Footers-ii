@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
-const SEND_EMAIL = "fontsandfooters@gmail.com";
+const SEND_EMAIL = "chris.ware.dev@gmail.com";
 const PASSWORD = "eayw aboq lrso ugqx";
 
 const transporter = nodemailer.createTransport({

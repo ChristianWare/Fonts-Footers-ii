@@ -150,6 +150,10 @@
     position: relative;
     top: -100px;
   }
+
+  .heading {
+    text-align: left;
+  }
 }
 
 @media screen and (max-width: 368px) {

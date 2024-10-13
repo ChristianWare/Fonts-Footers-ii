@@ -46,6 +46,16 @@
   background-color: var(--green3);
 }
 
+@media screen and (max-width: 1168px) {
+  .content {
+    justify-content: flex-end;
+  }
+
+  .logoContainer {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 568px) {
   .header {
     padding-right: 10px;

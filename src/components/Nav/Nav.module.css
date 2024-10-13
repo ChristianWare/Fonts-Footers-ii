@@ -149,7 +149,8 @@
 
 @media screen and (max-width: 1168px) {
   .navbar {
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .navMenu {
@@ -179,8 +180,8 @@
   .mobileLogo {
     display: block;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     width: 100%;
   }
 
@@ -246,6 +247,6 @@
   }
 
   .navbar {
-    padding: 10px 5px;
+    padding: 1.5rem;
   }
 }
