@@ -20,14 +20,6 @@
   line-height: 120%;
 }
 
-.em {
-  font-family: var(--PerfectlyNinetiesItalic);
-  text-decoration: underline;
-  line-height: 1;
-  margin-right: 1rem;
-  margin-left: 1rem;
-}
-
 .leftCopy {
   margin-right: auto;
 }

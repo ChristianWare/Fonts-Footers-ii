@@ -42,9 +42,8 @@ const Problem = () => {
       <LayoutWrapper>
         <div className={styles.top}>
           <h2 className={styles.heading}>
-            Are you <span className={styles.em}>unhappy </span> with your
-            current website, or do you not have one{" "}
-            <span className={styles.em}> at all?</span>
+            Are you unhappy with your current website, or do you not have one at
+            all?
           </h2>
           <p className={styles.leftCopy}>
             If so, then these problems probably sound familiar to you:
@@ -64,10 +63,7 @@ const Problem = () => {
           </div>
           <div className={styles.right}>
             {data.map((x: any, index) => (
-              <div
-                key={index}
-                className={styles.card}
-              >
+              <div key={index} className={styles.card}>
                 {x.icon}
                 <h4 className={styles.title}>{x.title}</h4>
                 <p className={styles.description}>{x.description}</p>
