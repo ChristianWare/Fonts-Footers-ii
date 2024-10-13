@@ -98,8 +98,7 @@ const ServicePreview = () => {
                   <div className={styles.right}>
                     <h3 className={styles.title}>{x.title}</h3>
                     <p className={styles.desc}>{x.description}</p>
-                    <br />
-                    <span className={styles.span}>Benefits:</span>
+                    <span className={styles.span}>Features:</span>
                     <ul className={styles.box}>
                       {x.whyImportant.map((y, index) => (
                         <li key={index}>
