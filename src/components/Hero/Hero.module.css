@@ -57,12 +57,16 @@
 }
 
 @media screen and (max-width: 1368px) {
+  .content {
+    grid-template-columns: 2fr 1fr;
+  }
+
   .heading {
     width: 100%;
   }
 }
 
-@media screen and (max-width: 1168px) {
+@media screen and (max-width: 1068px) {
   .content {
     grid-template-columns: repeat(1, 1fr);
     gap: 0rem;
