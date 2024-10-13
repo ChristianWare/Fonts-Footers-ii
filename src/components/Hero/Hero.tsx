@@ -34,12 +34,12 @@ const Hero = () => {
             <div className={styles.btnContainer}>
               <Button
                 text='Schedule a Call'
-                href='/contact/#schedule'
+                href='/#schedule'
                 btnType='secondary'
               />
               <Button
                 text='Our Services'
-                href='/services'
+                href='/#services'
                 btnType='primaryiii'
               />
             </div>

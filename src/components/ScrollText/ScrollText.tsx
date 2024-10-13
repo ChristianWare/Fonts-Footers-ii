@@ -1,5 +1,4 @@
 import styles from "./ScrollText.module.css";
-import LayoutWrapper from "../LayoutWrapper";
 
 const ScrollText = () => {
   return (

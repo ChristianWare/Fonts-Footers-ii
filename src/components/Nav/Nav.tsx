@@ -37,7 +37,7 @@ function Nav() {
         const topNavHeight = topNav.offsetHeight;
         const navHeight = nav.offsetHeight;
 
-        setNavHeight(navHeight); 
+        setNavHeight(navHeight);
 
         if (window.scrollY > topNavHeight) {
           setIsFixed(true);
@@ -93,9 +93,7 @@ function Nav() {
           >
             <div className={styles.navBox}>
               <li className={styles.navItem} onClick={() => setIsOpen(false)}>
-                <Link href='/#home'>
-                  {pathname === "/" ? <>Home</> : "Home"}
-                </Link>
+                <Link href='/'>{pathname === "/" ? <>Home</> : "Home"}</Link>
               </li>
               {navItems.map((navItem, index) => (
                 <li

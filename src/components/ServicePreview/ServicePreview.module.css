@@ -14,9 +14,11 @@
   margin-right: auto;
   width: 50%;
   line-height: 120%;
+  margin-bottom: 10rem;
 }
 
 .em1 {
+  font-size: 6rem;
   text-decoration: underline;
 }
 
@@ -215,6 +217,10 @@
 @media screen and (max-width: 768px) {
   .parentMain {
     padding: 3rem;
+  }
+
+  .em1 {
+    font-size: 4rem;
   }
 
   .box {

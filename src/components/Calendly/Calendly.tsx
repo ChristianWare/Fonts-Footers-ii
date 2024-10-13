@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const Calendly = () => {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id='schedule'>
       <LayoutWrapper>
         <div className={styles.calBox} id='schedule'>
           <div className={styles.left}>
