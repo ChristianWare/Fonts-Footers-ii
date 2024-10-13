@@ -25,7 +25,8 @@
   line-height: 120%;
   font-family: var(--suisseReg);
   scroll-behavior: smooth;
-  scroll-margin-top: 20px;
+  /* scroll-margin-top: 47px; */
+  /* scroll-margin-top: 200px; */
   overscroll-behavior: none;
   -webkit-tap-highlight-color: transparent;
 }
@@ -200,13 +201,13 @@ textarea:focus {
     font-size: 50%;
   } */
 
-  * {
+  p {
     hyphens: auto;
   }
 
   h1,
   .span1 {
-    font-size: 4rem;
+    font-size: 3.7rem;
     letter-spacing: -0.02em;
   }
 

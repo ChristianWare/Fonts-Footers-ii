@@ -1,77 +1,87 @@
 "use client";
 
-import styles from "./Nav.module.css";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Button from "../Button/Button";
 import TopNav from "../TopNav/TopNav";
 import { usePathname } from "next/navigation";
+import styles from "./Nav.module.css";
 import Arrow from "../../../public/icons/arrow.svg";
-import Logo from "../Logo/Logo";
 
 const navItems = [
-  {
-    text: "About Us",
-    href: "/#about",
-  },
-  {
-    text: "Services",
-    href: "/#services",
-  },
-  {
-    text: "Projects",
-    href: "/#projects",
-  },
-  {
-    text: "Pricing",
-    href: "/#pricing",
-  },
-  {
-    text: "Faq's",
-    href: "/#faqs",
-  },
-  {
-    text: "Contact",
-    href: "/#contact",
-  },
+  { text: "About Us", href: "/#about" },
+  { text: "Services", href: "/#services" },
+  { text: "Pricing", href: "/#pricing" },
+  { text: "Projects", href: "/#projects" },
+  { text: "Faq's", href: "/#faqs" },
+  { text: "Contact", href: "/#contact" },
 ];
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isFixed, setIsFixed] = useState(false);
+  const [activeSection, setActiveSection] = useState(""); // State to track active section
+  const [navHeight, setNavHeight] = useState(0);
+  const navRef = useRef<HTMLElement | null>(null);
 
   const openMenu = () => {
     setIsOpen(!isOpen);
   };
 
   useEffect(() => {
-    const body = document.querySelector("body");
-    if (body) {
-      if (window.innerWidth <= 968 && isOpen) {
-        body.style.overflow = "hidden";
-      } else {
-        body.style.overflow = "auto";
-      }
-    }
+    const handleScroll = () => {
+      const topNav = document.querySelector(".topNav") as HTMLElement;
+      const nav = navRef.current;
 
-    const handleResize = () => {
-      setIsOpen(false);
-      window.addEventListener("resize", handleResize);
+      if (topNav && nav) {
+        const topNavHeight = topNav.offsetHeight;
+        const navHeight = nav.offsetHeight;
+
+        setNavHeight(navHeight); 
+
+        if (window.scrollY > topNavHeight) {
+          setIsFixed(true);
+        } else {
+          setIsFixed(false);
+        }
+      }
     };
+
+    // IntersectionObserver to track section visibility
+    const sections = document.querySelectorAll("section");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id); // Set active section based on section ID
+          }
+        });
+      },
+      { threshold: 0.5 } // Trigger when 50% of the section is visible
+    );
+
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener("resize", handleResize);
-      if (body) {
-        body.style.overflow = "auto";
-      }
+      window.removeEventListener("scroll", handleScroll);
+      sections.forEach((section) => observer.unobserve(section));
     };
-  }, [isOpen]);
+  }, []);
 
   const pathname = usePathname();
 
   return (
     <>
       <TopNav />
-      <header className={styles.header}>
+      <div style={{ height: isFixed ? `${navHeight}px` : 0 }} />
+      <header
+        className={`${styles.header} ${isFixed ? styles.fixed : ""}`}
+        ref={navRef}
+      >
         <nav className={styles.navbar}>
           <ul
             className={
@@ -81,26 +91,20 @@ function Nav() {
             }
             onClick={openMenu}
           >
-            {/* <div className={styles.mobileLogo}>
-              <Logo color='green' />
-            </div> */}
             <div className={styles.navBox}>
               <li className={styles.navItem} onClick={() => setIsOpen(false)}>
-                <Link href='/'>
-                  {pathname === "/" ? (
-                    <>
-                      <Arrow className={styles.icon} />
-                      Home
-                    </>
-                  ) : (
-                    "Home"
-                  )}
+                <Link href='/#home'>
+                  {pathname === "/" ? <>Home</> : "Home"}
                 </Link>
               </li>
               {navItems.map((navItem, index) => (
                 <li
                   key={index}
-                  className={styles.navItem}
+                  className={`${styles.navItem} ${
+                    activeSection === navItem.href.substring(2)
+                      ? styles.active
+                      : ""
+                  }`} // Add the 'active' class when the section is visible
                   onClick={() => setIsOpen(false)}
                 >
                   <Link href={navItem.href}>
@@ -110,13 +114,12 @@ function Nav() {
                         {navItem.text}
                       </>
                     )}
-                    {!pathname.includes(navItem.href) && navItem.text}{" "}
+                    {!pathname.includes(navItem.href) && navItem.text}
                   </Link>
                 </li>
               ))}
             </div>
           </ul>
-
           <div className={styles.btnContainer}>
             <Button
               href='/contact/#schedule'
@@ -141,4 +144,5 @@ function Nav() {
     </>
   );
 }
+
 export default Nav;

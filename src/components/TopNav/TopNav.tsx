@@ -7,7 +7,9 @@ import Logo from "../Logo/Logo";
 
 const TopNav = () => {
   return (
-    <div className={styles.header}>
+    <section className={`${styles.header} topNav`} id='home'>
+      {" "}
+      {/* Added class topNav */}
       <div className={styles.content}>
         <Logo />
         <div className={styles.leftBottom}>
@@ -37,7 +39,8 @@ const TopNav = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
+
 export default TopNav;

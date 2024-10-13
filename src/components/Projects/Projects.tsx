@@ -32,7 +32,7 @@ const Projects = () => {
     setActiveProjectIndex(null);
   };
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id='projects'>
       <LayoutWrapper>
         <div className={styles.lottieBox} id='projects'>
           <Lottie animationData={animationData} className={styles.lottie} />

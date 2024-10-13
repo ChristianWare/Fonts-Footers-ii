@@ -22,9 +22,9 @@ const Faqsiii: FC<Props> = ({ bgColor = "", mapData, text = "" }) => {
   };
 
   return (
-    <section className={`${styles.container} ${styles[bgColor]}`}>
+    <section className={`${styles.container} ${styles[bgColor]}`} id='faqs'>
       <LayoutWrapper>
-        <div className={styles.content} id='faqs'>
+        <div className={styles.content}>
           <div className={styles.top}>
             <h2 className={styles.heading}>You may have wondered</h2>
             <p className={styles.copy}>

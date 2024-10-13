@@ -9,9 +9,11 @@ import Author from "../../../public/images/author.png";
 
 const AboutScrollText = () => {
   return (
-    <section className={styles.bgColor}>
+    <section className={styles.bgColor} id='about'>
+      {" "}
+      {/* Place id here */}
       <LayoutWrapper color='green3'>
-        <div className={styles.content} id='about'>
+        <div className={styles.content}>
           <div className={styles.left}>
             <div className={styles.lottieBox}>
               <Lottie animationData={animationData} className={styles.lottie} />
@@ -28,7 +30,7 @@ const AboutScrollText = () => {
               development, and SEO. We&apos;re experts at blending the latest
               technology with creative ideas for top-notch results. By working
               with us, you get personal care, support, and a website that boosts
-              engagement and sales. We opperate out of sunny Phoenix, AZ.
+              engagement and sales. We operate out of sunny Phoenix, AZ.
             </p>
             <br />
             <p className={styles.text}>
@@ -46,7 +48,6 @@ const AboutScrollText = () => {
                 ~ Chris Ware, Founder & CEO ~
               </p>
             </div>
-            
           </div>
         </div>
       </LayoutWrapper>
