@@ -120,7 +120,7 @@ function Nav() {
           </ul>
           <div className={styles.btnContainer}>
             <Button
-              href='/contact/#schedule'
+              href='/#schedule'
               text='Schedule a call'
               btnType='primaryNav'
             />
