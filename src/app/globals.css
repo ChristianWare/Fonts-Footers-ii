@@ -201,6 +201,10 @@ textarea:focus {
     font-size: 50%;
   } */
 
+  * {
+    scroll-margin-top: -20px;
+  }
+
   p {
     hyphens: auto;
   }
