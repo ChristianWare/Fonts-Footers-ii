@@ -12,7 +12,7 @@ const TopNav = () => {
       {/* Added class topNav */}
       <div className={styles.content}>
         <div className={styles.logoContainer}>
-          <Logo />
+          {/* <Logo /> */}
         </div>
         <div className={styles.leftBottom}>
           <Link

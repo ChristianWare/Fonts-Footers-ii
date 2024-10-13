@@ -11,7 +11,7 @@ import Logo from "../Logo/Logo";
 
 const navItems = [
   { text: "About Us", href: "/#about" },
-  { text: "Services", href: "/#services" },
+  { text: "What We Do", href: "/#services" },
   { text: "Pricing", href: "/#pricing" },
   { text: "Projects", href: "/#projects" },
   { text: "Faq's", href: "/#faqs" },
@@ -92,6 +92,9 @@ function Nav() {
           <div className={styles.mobileLogo}>
             <Logo />
           </div>
+          <div className={styles.desktopLogo}>
+            <Logo />
+          </div>
           <ul
             className={
               isOpen === false
@@ -127,13 +130,13 @@ function Nav() {
               ))}
             </div>
           </ul>
-          <div className={styles.btnContainer}>
+          {/* <div className={styles.btnContainer}>
             <Button
               href='/#schedule'
               text='Schedule a call'
               btnType='primaryNav'
             />
-          </div>
+          </div> */}
           <span
             className={
               isOpen === false
