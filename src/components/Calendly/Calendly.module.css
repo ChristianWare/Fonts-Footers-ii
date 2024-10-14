@@ -9,12 +9,6 @@
   width: 80%;
 }
 
-.em {
-  font-family: var(--PerfectlyNinetiesItalic);
-  line-height: 100%;
-  text-decoration: underline;
-}
-
 .imgContainer {
   position: relative;
   width: 550px;
@@ -62,7 +56,8 @@
 
 @media screen and (max-width: 568px) {
   .heading {
-    width: 80%;
-    margin-bottom: 5rem;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 2rem;
   }
 }

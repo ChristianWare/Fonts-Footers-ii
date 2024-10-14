@@ -3,8 +3,6 @@
 import Button from "../Button/Button";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./CallToAction.module.css";
-import Img1 from "../../../public/images/house17.png";
-import Img2 from "../../../public/images/aboutHouse.png";
 import animationData from "../../../public/lottie/cta.json";
 import Lottie from "lottie-react";
 
@@ -18,9 +16,8 @@ const CallToAction = () => {
           </div>
         </div>
         <div className={styles.bottom}>
-          <h2 className={`${styles.heading}`}>
-            Let your business take <span className={styles.em}>flight</span>{" "}
-            with <span className={styles.em2}> Fonts & Footers</span>
+          <h2 className={styles.heading}>
+            Let your business take flight with Fonts & Footers
           </h2>
           <p className={styles.topCopy}>
             Boost your online sales with secure, user-friendly, and scalable

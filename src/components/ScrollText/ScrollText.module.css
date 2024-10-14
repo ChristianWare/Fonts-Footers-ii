@@ -1,6 +1,5 @@
 .bgColor {
   background-color: var(--tan);
-  /* border-top: 1px solid var(--lightBlack); */
 }
 
 .content {
@@ -38,7 +37,6 @@
   font-style: italic;
   font-size: 5rem;
   font-weight: 500;
-  /* color: var(--green3) !important; */
   hyphens: none;
   white-space: nowrap;
   color: inherit;
@@ -77,5 +75,17 @@
 @media screen and (max-width: 568px) {
   .copy {
     width: 100%;
+  }
+
+  .content {
+    gap: 3rem;
+  }
+
+  .houseContainer {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
   }
 }

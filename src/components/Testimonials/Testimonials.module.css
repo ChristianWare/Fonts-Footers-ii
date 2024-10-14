@@ -130,8 +130,8 @@
   }
 
   .bottom {
-    padding: 3rem;
-    margin-bottom: 0rem;
+    padding: 0rem;
+    margin-bottom: 2rem;
   }
 
   .top {
@@ -150,23 +150,5 @@
     margin-left: 0px;
     margin-right: 0px;
     text-align: left;
-  }
-}
-
-@keyframes move {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes moveReverse {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
   }
 }

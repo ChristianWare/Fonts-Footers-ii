@@ -46,11 +46,7 @@ const Usp = () => {
               <Lottie animationData={animationData} className={styles.lottie} />
             </div>
             <h2 className={styles.heading}>
-              Why choose{" "}
-              <span className={styles.em}>
-                {" "}
-                <br /> Fonts & Footers?
-              </span>
+              Why choose Fonts & Footers to build your online store?
             </h2>
             <p className={styles.copy}>What sets us apart is our...</p>
           </div>

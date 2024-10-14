@@ -14,7 +14,7 @@ const ContactHero = () => {
         <div className={styles.content}>
           <div className={styles.top}>
             <div className={styles.topleft}>
-              <h1 className={styles.heading}>Contact Us</h1>
+              <h2 className={styles.heading}>Contact Us</h2>
               <p className={styles.copy}>
                 Whether you&apos;re a prospective client or have questions about
                 our services, reaching out is simple and quick. We&apos;re ready

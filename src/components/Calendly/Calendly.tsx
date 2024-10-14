@@ -13,8 +13,8 @@ const Calendly = () => {
         <div className={styles.calBox} id='schedule'>
           <div className={styles.left}>
             <h2 className={styles.heading}>
-              Ready to get started? Scehdule a free{" "}
-              <span className={styles.em}>discovery call</span> with us today
+              Ready to get started? Scehdule a free
+              discovery call with us today
             </h2>
             <div className={styles.imgContainer}>
               <Image src={CalendlyImage} fill alt='' className={styles.img} />

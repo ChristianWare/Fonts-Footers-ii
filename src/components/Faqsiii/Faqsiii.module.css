@@ -130,7 +130,7 @@
 }
 
 .scrollTextContainer {
-  margin-top: 20rem;
+  margin-top: 10rem;
 }
 
 @media screen and (max-width: 968px) {
@@ -156,6 +156,11 @@
 }
 
 @media screen and (max-width: 568px) {
+  .heading {
+    text-align: left;
+    width: 100%;
+  }
+
   .imgContianer {
     width: 250px;
     height: 250px;
@@ -163,5 +168,9 @@
 
   .bottom {
     gap: 2rem;
+  }
+
+  .scrollTextContainer {
+    margin-top: 5rem;
   }
 }
