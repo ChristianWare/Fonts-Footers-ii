@@ -5,13 +5,11 @@
 
 .btn {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.6rem;
+  opacity: 0.6;
   font-weight: 500;
-  text-transform: capitalize;
-  white-space: nowrap;
   user-select: none;
   gap: 2rem;
-  border-radius: 50px;
   padding: 5px 15px;
   width: fit-content;
   transition: background-color 0.1s ease-in, color 0.1s ease-in;
@@ -21,7 +19,6 @@
 .primary {
   font-family: var(--suisse);
   color: var(--green);
-  font-size: 2rem;
   padding: 0;
 }
 

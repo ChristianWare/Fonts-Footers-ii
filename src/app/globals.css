@@ -6,7 +6,7 @@
   --green3b: #7fc005;
   --green4: #31715d;
   --tan: #f2efe9;
-  --tan2: #fdfcf9;
+  --tan2: #ddddd5;
   --tanGlass: rgba(242, 236, 221, 0.7);
   --white: #fffdfb;
   --gray: #dfdddd;
@@ -70,14 +70,14 @@ span {
 
 h1 {
   font-size: 7rem;
-  line-height: 90%;
+  line-height: 100%;
   font-weight: 500;
   letter-spacing: -0.04em;
 }
 
 h2 {
   font-size: 4rem;
-  line-height: 100%;
+  line-height: 120%;
   font-weight: 500;
   line-height: 1;
   letter-spacing: -0.04em;
@@ -179,13 +179,13 @@ textarea:focus {
     font-size: 5.5rem;
     letter-spacing: -0.02em;
   }
-
+  /* 
   h2,
   .h2v2,
   .h2v3 {
     font-size: 4.5rem;
     letter-spacing: -0.02em;
-  }
+  } */
 
   h3,
   h4,

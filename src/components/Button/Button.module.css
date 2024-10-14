@@ -4,11 +4,11 @@
 }
 
 .btn {
-  font-family: var(--cohere);
+  font-family: var(--suisse);
   text-align: center;
   font-size: 1.4rem;
   font-weight: 500;
-  /* letter-spacing: 0.1px; */
+  /* letter-spacing: 0.5px; */
   white-space: nowrap;
   user-select: none;
   display: flex;
@@ -24,18 +24,6 @@
   z-index: 1;
   width: 100%;
   transition: all 0.1s ease-in, color 0.1s ease-in;
-}
-
-.icon2 {
-  width: 30px;
-  height: 30px;
-  padding: 5px;
-  color: var(--green3);
-  position: absolute;
-  top: 5px;
-  right: 6px;
-  transform: rotate(-45deg);
-  transition: all 0.1s ease-in-out;
 }
 
 .primary {
@@ -61,10 +49,10 @@
 }
 
 .primaryNav {
-  color: var(--green);
-  background-color: var(--green3);
+  color: var(--tan);
+  background-color: var(--purple);
   border: 1px solid var(--lightBlack);
-  padding: 5px 30px;
+  padding: 5px 15px;
   font-size: 1.4rem;
 }
 
@@ -74,7 +62,8 @@
   border: 1px solid var(--black);
 }
 
-.secondary:hover {
+.secondary:hover,
+.primaryNav:hover {
   background-color: var(--purple2);
   color: var(--tan);
 }

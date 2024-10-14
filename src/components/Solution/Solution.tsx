@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./Solution.module.css";
 import LayoutWrapper from "../LayoutWrapper";
 import Img1 from "../../../public/images/solution.png";
+import FalseButton from "../FalseButton/FalseButton";
 
 const data = [
   {
@@ -32,12 +33,12 @@ const Solution = () => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.left}>
+            <div className={styles.falseBtnContainer}>
+              <FalseButton btnType='primary' text='Our Solutions' />
+            </div>
             <h2 className={`${styles.heading} h2v2`}>
-              Work with <span className={styles.em}> Fonts & Footers</span>{" "}
-              <br />
-              and we&apos;ll provide these solutions:
+              Work with Fonts & Footers and we&apos;ll provide these solutions:
             </h2>
-
             <div className={styles.rightBottom}>
               {data.map((x) => (
                 <div key={x.id} className={styles.card}>

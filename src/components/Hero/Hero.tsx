@@ -19,15 +19,18 @@ const Hero = () => {
         >
           <div className={styles.left}>
             <div className={styles.falseBtnContainer}>
-              {/* <FalseButton btnType='primary' text='Digital Agency' /> */}
+              <FalseButton
+                btnType='primary'
+                text='Looking for an e-commerce website that drives results?'
+              />
             </div>
             <h1 className={styles.heading}>
-              We build interactive and immersive websites
+              We build interactive and immersive online stores
             </h1>
             <p className={styles.copy}>
-              Are you looking for a web designer to make your business shine
-              online? Our digital agency is here to help. We create beautiful,
-              responsive websites that meet your specific needs and goals.
+              We create online stores that engage your customers from the first
+              click to checkout. Our immersive designs and interactive features
+              drive higher conversions and keep your business growing.
             </p>
             <div className={styles.btnContainer}>
               <Button

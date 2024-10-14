@@ -11,10 +11,10 @@ import Logo from "../Logo/Logo";
 
 const navItems = [
   { text: "About Us", href: "/#about" },
-  { text: "What We Do", href: "/#services" },
+  { text: "Features", href: "/#features" },
   { text: "Pricing", href: "/#pricing" },
-  { text: "Projects", href: "/#projects" },
-  { text: "Faq's", href: "/#faqs" },
+  // { text: "Projects", href: "/#projects" },
+  // { text: "Faq's", href: "/#faqs" },
   { text: "Contact", href: "/#contact" },
 ];
 
@@ -130,13 +130,13 @@ function Nav() {
               ))}
             </div>
           </ul>
-          {/* <div className={styles.btnContainer}>
+          <div className={styles.btnContainer}>
             <Button
               href='/#schedule'
-              text='Schedule a call'
+              text='Schedule discovery call'
               btnType='primaryNav'
             />
-          </div> */}
+          </div>
           <span
             className={
               isOpen === false

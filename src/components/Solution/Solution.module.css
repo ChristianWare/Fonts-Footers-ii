@@ -7,7 +7,7 @@
 .content {
   padding-top: 5rem;
   display: grid;
-  grid-template-columns: 2fr 1.5fr;
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 5rem;
 }
 
@@ -20,15 +20,7 @@
 }
 
 .heading {
-  line-height: 120%;
-  /* width: 80%; */
-}
-
-.em {
-  font-family: var(--PerfectlyNinetiesItalic);
-  text-decoration: underline;
-  line-height: 110%;
-  margin-left: 1rem;
+  width: 45%;
 }
 
 .copy {
@@ -54,7 +46,7 @@
 
 .rightBottom {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
   margin-top: 1rem;
 }
@@ -69,17 +61,13 @@
 .title {
   font-size: 2rem;
   margin-bottom: 1rem;
+  width: 100%;
+  text-align: center;
 }
 
 .desc {
   opacity: 0.8;
 }
-
-/* @media screen and (max-width: 1385px) {
-  .imgContainer {
-    height: 500px;
-  }
-} */
 
 @media screen and (max-width: 1068px) {
   .content {
@@ -103,11 +91,21 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .rightBottom {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 768px) {
   .copy {
     width: 100%;
     text-align: left;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .rightBottom {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

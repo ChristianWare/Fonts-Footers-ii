@@ -16,6 +16,7 @@ import Solution from "@/components/Solution/Solution";
 import ServicePreview from "@/components/ServicePreview/ServicePreview";
 import ContactHero from "@/components/ContactHero/ContactHero";
 import Calendly from "@/components/Calendly/Calendly";
+import EcommFeatures from "@/components/EcommFeatures/EcommFeatures";
 
 // async function getData() {
 //   const query = `
@@ -44,7 +45,7 @@ export default async function Home() {
       <Solution />
       <AboutScrollText />
       <Usp />
-      <ServicePreview />
+      <EcommFeatures />
       <EveryPlan />
       <Pricing bgColor='tan' />
       <Projects />
@@ -52,7 +53,6 @@ export default async function Home() {
       <Testimonials />
       <Faqsiii mapData={homePageFaqs} text='Frequently Asked Questions' />
       <Calendly />
-      {/* <ContactDetails /> */}
       <ContactHero />
     </main>
   );
