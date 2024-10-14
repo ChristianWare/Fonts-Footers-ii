@@ -43,9 +43,9 @@ export default async function Home() {
       <Hero />
       <Problem />
       <Solution />
+      <EcommFeatures />
       <AboutScrollText />
       <Usp />
-      <EcommFeatures />
       <EveryPlan />
       <Pricing bgColor='tan' />
       <Projects />
