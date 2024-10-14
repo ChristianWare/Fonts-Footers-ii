@@ -21,14 +21,6 @@
 
 .heading {
   margin-bottom: 2rem;
-  text-transform: none !important;
-  text-align: center;
-}
-
-.span {
-  line-height: 100%;
-  letter-spacing: -0.04em;
-  font-family: var(--PerfectlyNinetiesItalic);
 }
 
 .authorBox {
