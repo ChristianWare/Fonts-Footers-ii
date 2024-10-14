@@ -42,7 +42,8 @@ const Solution = () => {
               <FalseButton btnType='primary' text='Our Solutions' />
             </div>
             <h2 className={`${styles.heading} h2v2`}>
-              Work with Fonts & Footers and we&apos;ll provide these solutions:
+              Work with Fonts & Footers and we&apos;ll provide these solutions
+              for your ecommerce store:
             </h2>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
