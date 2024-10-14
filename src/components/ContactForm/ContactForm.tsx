@@ -46,7 +46,10 @@ const ContactForm = () => {
           <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
             <div className={styles.namesContainer}>
               <div className={styles.labelInputBox}>
-                <label htmlFor='firstName'>First Name</label>
+                <label htmlFor='firstName'>
+                  First Name <span className={styles.required}>*</span>
+                </label>
+
                 <input
                   id='firstName'
                   type='text'
@@ -59,7 +62,9 @@ const ContactForm = () => {
                 )}
               </div>
               <div className={styles.labelInputBox}>
-                <label htmlFor='lastName'>Last Name</label>
+                <label htmlFor='lastName'>
+                  Last Name <span className={styles.required}>*</span>
+                </label>
                 <input
                   id='lastName'
                   type='text'
@@ -74,7 +79,9 @@ const ContactForm = () => {
             </div>
             <div className={styles.everythingElse}>
               <div className={styles.labelInputBox}>
-                <label htmlFor='email'>Email</label>
+                <label htmlFor='email'>
+                  Email <span className={styles.required}>*</span>
+                </label>
                 <input
                   id='senderEmail'
                   type='email'
@@ -111,7 +118,7 @@ const ContactForm = () => {
             <div className={styles.btnBtnContainer}>
               <div className={styles.btnContainer}>
                 <button className={styles.btn}>
-                  {loading ? "Sending..." : "Submit"}
+                  {loading ? "Sending..." : "Submit →"}
                 </button>
               </div>
             </div>

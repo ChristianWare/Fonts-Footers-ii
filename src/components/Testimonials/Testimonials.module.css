@@ -37,6 +37,10 @@
   color: var(--bgColor);
 }
 
+.heading {
+  margin-top: 0.5rem;
+}
+
 .bottom {
   display: flex;
   flex-direction: column;
@@ -44,6 +48,7 @@
   justify-content: space-between;
   overflow: hidden;
   padding: 5rem;
+  padding-bottom: 1rem;
   margin-top: -10rem;
 }
 
@@ -51,24 +56,17 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
-  /* grid-auto-flow: column; */
-  /* animation: moveReverse 60s linear infinite; */
   width: 100%;
   grid-gap: 1rem;
   margin-bottom: 1rem;
   cursor: pointer;
 }
 
-/* .cardContainer1:hover {
-  animation-play-state: paused;
-} */
-
 .card {
   padding: 2rem;
   border-radius: 10px;
   border: 1px solid var(--lightBlack);
   background-color: var(--white);
-  /* width: 465px; */
   position: relative;
   display: flex;
   flex-direction: column;
@@ -77,12 +75,12 @@
 
 .review {
   font-weight: 600;
-  /* color: var(--tan); */
+  opacity: 0.7;
 }
 
 .personBox {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 1rem;
   margin-top: 2rem;
 }
@@ -92,6 +90,7 @@
   border-radius: 50%;
   padding: 0.3rem;
   color: var(--green);
+  opacity: 0.7;
 }
 
 .reviewer {
@@ -105,28 +104,16 @@
 .company {
   color: var(--green);
   display: block;
-  font-weight: 400;
   opacity: 0.7;
 }
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 1068px) {
+  .cardContainer1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .heading,
   .copy {
     width: 100%;
-  }
-
-  .pasta {
-    top: -40px;
-    left: 0;
-    width: 10rem;
-    height: 10rem;
-  }
-
-  .hamburger {
-    top: 20px;
-    right: 0;
-    width: 10rem;
-    height: 10rem;
   }
 }
 
@@ -138,22 +125,13 @@
 }
 
 @media screen and (max-width: 568px) {
-  .content {
-    padding-bottom: 5rem;
-  }
-
-  .cardContainer1,
-  .cardContainer2 {
-    grid-gap: 2rem;
-  }
-
   .cardContainer1 {
-    margin-bottom: 2rem;
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .bottom {
     padding: 3rem;
-    padding-bottom: 5rem;
+    margin-bottom: 0rem;
   }
 
   .top {
@@ -161,23 +139,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 0rem;
   }
 
-  .heading,
-  .copy {
+  .heading {
     text-align: center;
   }
 
-  .pasta {
-    top: 0px;
-    width: 8rem;
-    height: 8rem;
-  }
-
-  .hamburger {
-    top: 200px;
-    width: 8rem;
-    height: 8rem;
+  .copy {
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: left;
   }
 }
 

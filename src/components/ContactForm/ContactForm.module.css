@@ -94,21 +94,13 @@
   width: 100%;
   background-color: var(--tan);
   border: 1px solid var(--lightBlack);
-  border-radius: 30px;
+  border-radius: 8px;
   color: var(--text);
   padding: 2rem;
   padding-left: 2rem;
   width: 100%;
   font-weight: 400;
   inset: none;
-}
-
-.labelInputBox textarea {
-  border-radius: 20px;
-}
-
-.fieldErrors {
-  background-color: red;
 }
 
 .labelInputBox textarea {
@@ -121,7 +113,7 @@
 }
 
 .btnBtnContainer {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .btnContainer {
@@ -142,7 +134,7 @@
   text-align: center;
   flex: 1;
   gap: 2rem;
-  border-radius: 50px;
+  border-radius: 8px;
   padding: 12px;
   padding-left: 15px;
   padding-right: 45px;
@@ -176,13 +168,11 @@
 }
 
 .btn:hover {
-  background-color: var(--green);
-  color: var(--green3);
-  border: 1px solid var(--green3);
+  background-color: transparent;
 }
 
 .error {
-  color: var(--green3);
+  color: red;
   font-size: 1.4rem;
   font-weight: 600;
   margin-top: 0.5rem;

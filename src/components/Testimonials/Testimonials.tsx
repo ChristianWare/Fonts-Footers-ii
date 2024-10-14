@@ -21,6 +21,8 @@ const Testimonials = () => {
                   className={styles.lottie}
                 />
               </div>
+              <StarCluster />
+              {/* <br /> */}
               <h2 className={styles.heading}>What our clients say</h2>
               <p className={styles.copy}>
                 Discover What Our Clients Have to Say About Their Dining
@@ -29,12 +31,11 @@ const Testimonials = () => {
                 delicious, and seamless. Our team is committed to delivering
                 exceptional service, on time and within budget.
               </p>
-              <StarCluster />
             </div>
           </div>
         </div>
         <div className={styles.cardContainer1}>
-          {reviews.slice(0, 5).map((x) => (
+          {reviews.slice(0, 3).map((x) => (
             <div key={x.id} className={styles.card}>
               <p className={styles.review}>&rdquo;{x.review}&rdquo;</p>
               <div className={styles.personBox}>
@@ -42,7 +43,7 @@ const Testimonials = () => {
                 <p className={styles.reviewer}>
                   {x.reviewer}
                   <span className={styles.company}>{x.company}</span>
-                  <StarCluster />
+                  {/* <StarCluster /> */}
                 </p>
               </div>
             </div>
