@@ -210,16 +210,14 @@ textarea:focus {
 
   h1,
   .span1 {
-    font-size: 3.7rem;
+    font-size: 4rem;
     letter-spacing: -0.02em;
   }
 
   h2,
   .h2v2,
   .h2v3 {
-    font-size: 3.5rem;
-    letter-spacing: -0.02em;
-    line-height: 120%;
+    font-size: 3rem;
   }
 
   h3,

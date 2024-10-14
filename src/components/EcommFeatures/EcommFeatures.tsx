@@ -8,6 +8,7 @@ import Design from "../../../public/icons/designii.svg";
 import Integration from "../../../public/icons/integration.svg";
 import Multiple from "../../../public/icons/multiple.svg";
 import Analytics from "../../../public/icons/analytics.svg";
+import FalseButton from "../FalseButton/FalseButton";
 
 const EcommFeatures = () => {
   const ecommerceFeatures = [
@@ -137,9 +138,12 @@ const EcommFeatures = () => {
   return (
     <section className={styles.container} id='features'>
       <LayoutWrapper>
-        <h2 className={`${styles.heading} h2v2`}>
-          Core Features of our E-Commerce Websites
-        </h2>
+        <div className={styles.top}>
+          <FalseButton btnType='primary' text="What's included" />
+          <h2 className={`${styles.heading} h2v2`}>
+            Features of our Ecommerce Websites
+          </h2>
+        </div>
         <div className={styles.dataContainer}>
           {ecommerceFeatures.map((x, index) => (
             <div key={index} className={styles.content}>

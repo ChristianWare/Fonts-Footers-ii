@@ -3,6 +3,21 @@
   border-top: 1px solid var(--lightBlack);
 }
 
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.falseBtnContainer {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .heading {
   text-align: center;
   width: fit-content;
@@ -72,6 +87,17 @@
 }
 
 @media screen and (max-width: 668px) {
+  .top {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .heading {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
   .dataContainer {
     grid-template-columns: repeat(1, 1fr);
   }
