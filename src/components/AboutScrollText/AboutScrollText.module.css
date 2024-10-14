@@ -80,6 +80,11 @@
 }
 
 @media screen and (max-width: 568px) {
+  .heading {
+    text-align: left;
+    width: 100%;
+  }
+
   .btnContainer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);

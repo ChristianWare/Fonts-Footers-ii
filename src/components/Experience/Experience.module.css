@@ -1,12 +1,12 @@
 .parentContainer {
   background-color: var(--tan);
+  margin-top: 2rem;
 }
 
 .container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 5rem;
-  margin-top: -10rem;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1rem;
 }
 
 .span {
@@ -14,18 +14,15 @@
   display: block;
 }
 
+.left {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .heading {
   margin-top: 1.5rem;
   margin-bottom: 2rem;
-}
-
-.em {
-  font-family: var(--PerfectlyNinetiesItalic);
-  line-height: 100%;
-}
-
-.copy {
-  margin-bottom: 3rem;
 }
 
 .qaContainer {
@@ -74,7 +71,7 @@
 .iconBox {
   width: 35px;
   height: 35px;
-  background-color: var(--green3);
+  /* background-color: var(--green3); */
   border-radius: 50%;
   border: 1px solid var(--green);
   display: flex;
@@ -119,58 +116,69 @@
   width: 90%;
 }
 
-.miscContainer {
-  filter: url("#goo");
+.right {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
+}
+
+.authorBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
 }
 
 .imgContainer {
   position: relative;
-  width: 80%;
-  height: 400px;
-  filter: url("#goo");
-  clip-path: polygon(0% 15%, 15% 0%, 100% 0%, 100% 85%, 85% 100%, 0% 100%);
+  width: 250px;
+  height: 250px;
+  border: 2px solid var(--purple);
+  border-radius: 50%;
+  padding: 1rem;
 }
 
-.imgContainer::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 400px;
-  background: linear-gradient(
-    to bottom,
-    rgb(123, 8, 255, 0.2),
-    rgb(123, 8, 255, 0.8)
-  );
-  clip-path: polygon(0% 15%, 15% 0%, 100% 0%, 100% 85%, 85% 100%, 0% 100%);
+.img {
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 1rem;
 }
 
-/* .right {
+.iconContainer {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  width: 100%;
-} */
+  justify-content: center;
+  gap: 2rem;
+}
+
+.socialIconContainer {
+  width: 50px;
+  height: 50px;
+  border: 2px solid var(--purple);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialIcon {
+  color: var(--purple);
+  cursor: pointer;
+}
 
 .mapContainer {
-  /* width: 50%; */
   margin-top: 2rem;
 }
 
 @media screen and (max-width: 1068px) {
-  .imgContainer {
-    width: 100%;
-  }
-
   .container {
     gap: 1rem;
   }
 
-  .copy {
-    margin-bottom: 0rem;
+  .left {
+    width: 100%;
   }
 
   .mapContainer {
@@ -195,25 +203,7 @@
   .copy {
     text-align: center;
   }
-
-  .imgContainer {
-    width: 70%;
-  }
-
   .container {
     grid-gap: 3rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .imgContainer {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 568px) {
-  .imgContainer {
-    width: 100%;
-    height: 350px;
   }
 }

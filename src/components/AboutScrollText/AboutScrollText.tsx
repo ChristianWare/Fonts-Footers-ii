@@ -6,6 +6,7 @@ import animationData from "../../../public/lottie/agency.json";
 import Lottie from "lottie-react";
 import Image from "next/image";
 import Author from "../../../public/images/author.png";
+import Experience from "../Experience/Experience";
 
 const AboutScrollText = () => {
   return (
@@ -21,9 +22,7 @@ const AboutScrollText = () => {
           </div>
           <div className={styles.right}>
             <h2 className={`${styles.heading} h2v2`}>
-              What exactly is
-              <br />
-              <span className={styles.span}> Fonts & Footers?</span>
+              What exactly is Fonts & Footers?
             </h2>
             <p className={styles.text}>
               Fonts & Footers is a digital agency focusing on web design, web
@@ -40,16 +39,10 @@ const AboutScrollText = () => {
               involves using pure HTML, CSS, and Javascript code, ensuring a
               sleek and efficient website.
             </p>
-            <div className={styles.authorBox}>
-              <div className={styles.imgContainer}>
-                <Image src={Author} alt='' fill className={styles.img} />
-              </div>
-              <p className={styles.authorDetails}>
-                ~ Chris Ware, Founder & CEO ~
-              </p>
-            </div>
+            
           </div>
         </div>
+        <Experience />
       </LayoutWrapper>
     </section>
   );

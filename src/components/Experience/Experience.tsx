@@ -1,14 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Experience.module.css";
 import Image from "next/image";
-import Img from "../../../public/images/house11.png";
+import Img from "../../../public/images/author.png";
 import Arrow2 from "../../../public/icons/arrow2.svg";
-// import { motion } from "framer-motion";
-// import { fadeIn } from "../../../animation/variants";
-import FalseButton from "../FalseButton/FalseButton";
+import LinkedIn from "../../../public/icons/linkedin.svg";
+import Email from "../../../public/icons/email.svg";
 
 const Experience = () => {
   const [selected, setSelected] = useState<null | number>(null);
@@ -41,115 +39,79 @@ const Experience = () => {
 
   return (
     <section className={styles.parentContainer}>
-      <LayoutWrapper>
-        <div className={styles.container}>
-          <div className={styles.left}>
-            <FalseButton text='Our Story' btnType='primary' />
-            <h1 className={styles.heading}>
-              About <br /> <span className={styles.em}>Fonts & Footers</span>
-            </h1>
-            <p className={styles.copy}>
-              Welcome to Fonts & Footers! We are a dedicated team of web
-              development experts specializing in custom-coded booking websites,
-              e-commerce platforms, and business websites. Here&lsquo;s why our
-              experience sets us apart:
-            </p>
-            <div className={styles.mapContainer}>
-              {faqs.map((x, index) => (
-                <div
-                  key={index}
-                  className={styles.qaContainer}
-                  onClick={() => toggle(index)}
-                >
-                  <div className={styles.headingArrowContainer}>
-                    <div
-                      // variants={fadeIn("right", 0.3)}
-                      // initial='hidden'
-                      // whileInView={"show"}
-                      // viewport={{ once: false, amount: 0.3 }}
-                      className={styles.h3Container}
-                    >
-                      <h3 className={styles.question} lang='en'>
-                        {x.question}
-                      </h3>
-                    </div>
-                    {selected === index ? (
-                      <div className={styles.iconBox}>
-                        <Arrow2
-                          className={styles.iconFlip}
-                          width={25}
-                          height={25}
-                        />
-                      </div>
-                    ) : (
-                      <div className={styles.iconBox}>
-                        <Arrow2
-                          className={styles.icon}
-                          width={25}
-                          height={25}
-                        />
-                      </div>
-                    )}
-                  </div>
-                  <div
-                    className={
-                      selected === index
-                        ? styles.answerContainer + " " + styles.show
-                        : styles.answerContainer
-                    }
-                  >
-                    <p className={styles.answer} lang='en'>
-                      {x.answer}
-                    </p>
-                  </div>
-                </div>
-              ))}
+      <div className={styles.container}>
+        <div className={styles.right}>
+          <div className={styles.authorBox}>
+            <div className={styles.imgContainer}>
+              <Image
+                src={Img}
+                alt=''
+                layout='fill'
+                objectFit='cover'
+                className={styles.img}
+              />
             </div>
-          </div>
-          <div
-            // variants={fadeIn("left", 0.3)}
-            // initial='hidden'
-            // whileInView={"show"}
-            // viewport={{ once: false, amount: 0.3 }}
-            className={styles.right}
-          >
-            <div className={styles.miscContainer}>
-              <svg
-                width='0'
-                height='0'
-                xmlns='http://www.w3.org/2000/svg'
-                version='1.1'
-              >
-                <defs>
-                  <filter id='goo'>
-                    <feGaussianBlur
-                      in='SourceGraphic'
-                      stdDeviation='5'
-                      result='blur'
-                    />
-                    <feColorMatrix
-                      in='blur'
-                      mode='matrix'
-                      values='1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9'
-                      result='goo'
-                    />
-                    <feComposite in='SourceGraphic' in2='goo' operator='atop' />
-                  </filter>
-                </defs>
-              </svg>
-              <div className={styles.imgContainer}>
-                <Image
-                  src={Img}
-                  alt=''
-                  layout='fill'
-                  objectFit='cover'
-                  className={styles.img}
+            <div className={styles.iconContainer}>
+              <div className={styles.socialIconContainer}>
+                <LinkedIn
+                  width={25}
+                  height={25}
+                  className={styles.socialIcon}
                 />
               </div>
+              <div className={styles.socialIconContainer}>
+                <Email width={25} height={25} className={styles.socialIcon} />
+              </div>
             </div>
+            <h6 className={styles.authorDetails}>
+              ~ Chris Ware, Founder & CEO ~
+            </h6>
           </div>
         </div>
-      </LayoutWrapper>
+        <div className={styles.left}>
+          <div className={styles.mapContainer}>
+            {faqs.map((x, index) => (
+              <div
+                key={index}
+                className={styles.qaContainer}
+                onClick={() => toggle(index)}
+              >
+                <div className={styles.headingArrowContainer}>
+                  <div className={styles.h3Container}>
+                    <h3 className={styles.question} lang='en'>
+                      {x.question}
+                    </h3>
+                  </div>
+                  {selected === index ? (
+                    <div className={styles.iconBox}>
+                      <Arrow2
+                        className={styles.iconFlip}
+                        width={25}
+                        height={25}
+                      />
+                    </div>
+                  ) : (
+                    <div className={styles.iconBox}>
+                      <Arrow2 className={styles.icon} width={25} height={25} />
+                    </div>
+                  )}
+                </div>
+                <div
+                  className={
+                    selected === index
+                      ? styles.answerContainer + " " + styles.show
+                      : styles.answerContainer
+                  }
+                >
+                  <p className={styles.answer} lang='en'>
+                    {x.answer}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
