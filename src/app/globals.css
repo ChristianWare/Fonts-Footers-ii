@@ -12,7 +12,7 @@
   --gray: #dfdddd;
   --gray2: #d7d0d0;
   --gray3: #93969e;
-  --purple: #755bf4;
+  --purple: #5f46df;
   --purple2: #2703db;
   --yellow: #fbda68;
 }
@@ -166,13 +166,13 @@ textarea:focus {
 }
 
 @media screen and (max-width: 768px) {
-  /* html {
+  html {
     font-size: 55%;
-  } */
+  }
 
-  /* p {
+  p {
     font-size: 113.7%;
-  } */
+  }
 
   h1,
   .span1 {
@@ -196,9 +196,9 @@ textarea:focus {
 }
 
 @media screen and (max-width: 568px) {
-  /* html {
+  html {
     font-size: 50%;
-  } */
+  }
 
   * {
     scroll-margin-top: -20px;

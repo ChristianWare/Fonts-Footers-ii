@@ -56,7 +56,6 @@
 }
 
 .option {
-  font-weight: 700;
   font-size: 2rem;
 }
 
@@ -108,7 +107,7 @@
 .bottom {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 3rem;
+  grid-gap: 2rem;
 }
 
 .priceContainer {
@@ -183,11 +182,9 @@
 
 .description {
   color: var(--green);
-  font-weight: 500;
 }
 
 .price {
-  font-weight: 600;
   font-size: 3.5rem;
   color: var(--green);
   text-align: center;

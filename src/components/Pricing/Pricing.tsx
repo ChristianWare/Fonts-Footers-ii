@@ -66,9 +66,9 @@ const Pricing = ({ bgColor = "", borderTop = "" }: Props) => {
                     <p className={styles.description}>{x.description}</p>
                   </div>
                 </div>
-                <span className={styles.price}>
+                <h6 className={styles.price}>
                   ${!isMonthly ? x.prices[0].price : x.prices[1].price}
-                </span>
+                </h6>
               </div>
             ))}
           </div>
