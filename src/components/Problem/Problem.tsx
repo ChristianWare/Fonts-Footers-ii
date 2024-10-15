@@ -2,7 +2,6 @@
 
 import styles from "./Problem.module.css";
 import LayoutWrapper from "../LayoutWrapper";
-
 import Image from "next/image";
 import ProblemImage from "../../../public/images/problem.png";
 import Outdated from "../../../public/icons/outdatedDesign.svg";

@@ -19,6 +19,10 @@
   width: 100%;
 }
 
+.falseBtnContainer {
+  margin-bottom: 0.5rem;
+}
+
 .heading {
   margin-bottom: 2rem;
 }
@@ -46,13 +50,20 @@
 
 @media screen and (max-width: 968px) {
   .content {
-    grid-gap: 3rem;
+    grid-gap: 1rem;
   }
 }
 
 @media screen and (max-width: 968px) {
   .content {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .falseBtnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
 
   .heading,
@@ -72,6 +83,11 @@
 }
 
 @media screen and (max-width: 568px) {
+  .falseBtnContainer {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
   .heading {
     text-align: left;
     width: 100%;

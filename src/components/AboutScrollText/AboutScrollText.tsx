@@ -7,6 +7,7 @@ import Lottie from "lottie-react";
 import Image from "next/image";
 import Author from "../../../public/images/author.png";
 import Experience from "../Experience/Experience";
+import FalseButton from "../FalseButton/FalseButton";
 
 const AboutScrollText = () => {
   return (
@@ -21,6 +22,9 @@ const AboutScrollText = () => {
             </div>
           </div>
           <div className={styles.right}>
+            <div className={styles.falseBtnContainer}>
+              <FalseButton btnType='primary' text='About Us' />
+            </div>
             <h2 className={`${styles.heading} h2v2`}>
               What exactly is Fonts & Footers?
             </h2>
@@ -39,7 +43,6 @@ const AboutScrollText = () => {
               involves using pure HTML, CSS, and Javascript code, ensuring a
               sleek and efficient website.
             </p>
-            
           </div>
         </div>
         <Experience />

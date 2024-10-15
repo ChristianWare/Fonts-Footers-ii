@@ -19,8 +19,13 @@
   gap: 2rem;
 }
 
+.falseBtnContainer {
+  margin-bottom: -1rem;
+}
+
+
 .heading {
-  width: 45%;
+  width: 50%;
 }
 
 .copy {

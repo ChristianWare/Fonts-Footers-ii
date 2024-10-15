@@ -18,6 +18,10 @@
   gap: 2rem;
 }
 
+.falseBtnContainer {
+  margin-bottom: -1rem;
+}
+
 .heading {
   color: var(--black);
   text-transform: none;
