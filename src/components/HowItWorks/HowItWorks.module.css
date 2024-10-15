@@ -17,8 +17,7 @@
   width: 100%;
 }
 
-.left,
-.card {
+.left {
   align-self: flex-start;
   position: -webkit-sticky;
   position: sticky;
@@ -38,10 +37,6 @@
   color: var(--black);
 }
 
-.em {
-  font-family: var(--PerfectlyNinetiesItalic);
-}
-
 .topText {
   color: var(--black);
   width: 80%;
@@ -57,23 +52,23 @@
 }
 
 .right {
-  display: flex;
-  flex-direction: column;
-  gap: 0.9rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
 }
 
 .card {
   padding: 2rem;
   background-color: var(--white);
-  border: 1px solid var(--black);
+  border: 1px solid var(--lightBlack);
   border-radius: 10px;
 }
 
 .box {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   gap: 3rem;
 }
 
@@ -97,10 +92,13 @@
 
 .processName {
   font-size: 2rem;
+  text-align: center;
+  width: 100%;
 }
 
 .copy {
   opacity: 0.5;
+  text-align: center;
 }
 
 @media screen and (max-width: 1068px) {
@@ -153,5 +151,9 @@
 
   .boxLeft {
     margin-left: 0rem;
+  }
+
+  .right {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
