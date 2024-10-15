@@ -4,7 +4,7 @@ import styles from "./Problem.module.css";
 import LayoutWrapper from "../LayoutWrapper";
 
 import Image from "next/image";
-import ProblemImage from "../../../public/images/newProblem.png";
+import ProblemImage from "../../../public/images/problem.png";
 import Outdated from "../../../public/icons/outdatedDesign.svg";
 import Cloud from "../../../public/icons/cloudPresence.svg";
 import Credibility from "../../../public/icons/credibility.svg";

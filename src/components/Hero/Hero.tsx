@@ -7,8 +7,6 @@ import { motion } from "framer-motion";
 import FalseButton from "../FalseButton/FalseButton";
 import animationData from "../../../public/lottie/hero.json";
 import Lottie from "lottie-react";
-import Image from "next/image";
-import HeroImage from "../../../public/images/newHero.png";
 
 const Hero = () => {
   return (
@@ -38,7 +36,7 @@ const Hero = () => {
               <Button
                 text='Schedule Discovery Call'
                 href='/#schedule'
-                btnType='primaryiii'
+                btnType='secondary'
               />
               <Button
                 text='Our Services'
@@ -48,11 +46,8 @@ const Hero = () => {
             </div>
           </div>
           <div className={styles.right}>
-            {/* <div className={styles.lottieBox}>
+            <div className={styles.lottieBox}>
               <Lottie animationData={animationData} className={styles.lottie} />
-            </div> */}
-            <div className={styles.imgContainer}>
-              <Image src={HeroImage} fill alt='img' className={styles.img} />
             </div>
           </div>
         </motion.div>
