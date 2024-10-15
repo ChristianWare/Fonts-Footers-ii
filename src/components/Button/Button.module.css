@@ -18,7 +18,7 @@
   text-transform: uppercase;
   flex: 1;
   gap: 2rem;
-  border-radius: 50px;
+  border-radius: 5px;
   padding: 10px 20px;
   position: relative;
   z-index: 1;

@@ -46,7 +46,7 @@ export default async function Home() {
       <EcommFeatures />
       <AboutScrollText />
       <Usp />
-      <EveryPlan />
+      
       <Pricing bgColor='tan' />
       <Projects />
       <HowItWorks />

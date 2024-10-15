@@ -49,10 +49,20 @@
   width: 100%;
 }
 
+.imgContainer {
+  position: relative;
+  width: 403px;
+  height: 500px;
+}
+
+.img {
+  object-fit: contain;
+}
+
 @media screen and (max-width: 1068px) {
   .content {
     grid-template-columns: repeat(1, 1fr);
-    gap: 0rem;
+    gap: 3rem;
   }
 
   .left {
@@ -79,8 +89,20 @@
     margin-top: 1rem;
   }
 
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
   .lottieBox {
     width: 100%;
+    height: 400px;
+  }
+
+  .imgContainer {
+    width: 303px;
     height: 400px;
   }
 }
@@ -105,7 +127,7 @@
 @media screen and (max-width: 568px) {
   .content {
     gap: 5rem;
-    margin-bottom: -10rem;
+    /* margin-bottom: -10rem; */
   }
 
   .left {
@@ -125,5 +147,10 @@
   .lottieBox {
     position: relative;
     top: -50px;
+  }
+
+  .imgContainer {
+    width: 253px;
+    height: 350px;
   }
 }

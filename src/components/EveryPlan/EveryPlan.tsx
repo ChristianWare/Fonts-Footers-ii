@@ -58,7 +58,7 @@ const EveryPlan = () => {
 
   return (
     <section className={styles.container}>
-      <LayoutWrapper>
+      {/* <LayoutWrapper> */}
         <div className={styles.parent}>
           <div className={styles.top}>
             <h2 className={`${styles.heading}`}>
@@ -79,7 +79,7 @@ const EveryPlan = () => {
             <Image src={EveryPlanImage} alt='' fill className={styles.img} />
           </div>
         </div>
-      </LayoutWrapper>
+      {/* </LayoutWrapper> */}
     </section>
   );
 };
