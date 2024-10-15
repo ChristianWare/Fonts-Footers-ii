@@ -38,7 +38,7 @@ const Hero = () => {
               <Button
                 text='Schedule Discovery Call'
                 href='/#schedule'
-                btnType='secondary'
+                btnType='primaryiii'
               />
               <Button
                 text='Our Services'
