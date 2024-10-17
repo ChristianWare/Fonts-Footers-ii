@@ -25,6 +25,11 @@ function Nav() {
 
   const openMenu = () => {
     setIsOpen(!isOpen);
+
+    // Trigger vibration when the hamburger menu is clicked
+    if ("vibrate" in navigator) {
+      navigator.vibrate(200); // Vibrate for 200 milliseconds
+    }
   };
 
   useEffect(() => {
