@@ -25,7 +25,7 @@ const Hero = () => {
               />
             </div>
             <h1 className={styles.heading}>
-              We build interactive and immersive online stores
+              We build interactive and immersive ecommerce websites
             </h1>
             <p className={styles.copy}>
               We create online stores that engage your customers from the first
